@@ -1,10 +1,9 @@
 
 // Banner slideShow
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
+const swiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  effect: "fade",
 
   // If we need pagination
   pagination: {
