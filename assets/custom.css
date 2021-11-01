@@ -10,6 +10,9 @@
 
 
 /* featured col */
-.featured_col_Swiper li{
+/* .featured_col_Swiper li{
 list-style:none;
+} */
+.swiper-wrapper {
+    padding: 0;
 }
