@@ -31,7 +31,8 @@
         "3f81934b-837c-4b0b-a096-9d30503c5615": {
           "type": "heading",
           "settings": {
-            "image_height": "medium",
+            "image": "shopify:\/\/shop_images\/Asset-11.jpg",
+            "image_height": "large",
             "adapt_height_first_image": false,
             "two_col_banner": false,
             "desktop_text_box_position": "center",
