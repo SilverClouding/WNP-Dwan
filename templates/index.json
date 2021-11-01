@@ -33,7 +33,7 @@
             "image_height": "large",
             "two_col_banner": false,
             "desktop_text_box_position": "center",
-            "show_text_box": true,
+            "show_text_box": false,
             "image_overlay_opacity": 70,
             "color_scheme": "accent-1",
             "stack_images_on_mobile": true,
