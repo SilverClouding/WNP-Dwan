@@ -30,7 +30,7 @@
           "type": "heading",
           "settings": {
             "image": "shopify:\/\/shop_images\/Asset-11.jpg",
-            "image_height": "large",
+            "image_height": "medium",
             "two_col_banner": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
