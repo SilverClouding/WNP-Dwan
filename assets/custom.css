@@ -13,6 +13,7 @@
 /* .featured_col_Swiper li{
 list-style:none;
 } */
-.swiper-wrapper {
+.featured-collection .swiper-wrapper {
     padding: 0;
+  margin-left: -1rem;
 }
