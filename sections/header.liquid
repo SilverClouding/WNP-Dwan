@@ -568,7 +568,7 @@
     hide() {
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
       this.closeMenuDisclosure();
-<!--       this.closeSearchModal(); -->
+
     }
 
     reveal() {
@@ -585,10 +585,7 @@
       this.disclosures.forEach(disclosure => disclosure.close());
     }
 
-    closeSearchModal() {
-      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
-    }
+    
   }
 
   customElements.define('sticky-header', StickyHeader);
