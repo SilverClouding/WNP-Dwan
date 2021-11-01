@@ -7,7 +7,8 @@
           "type": "heading",
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2021-06-28_at_3.20_1.png",
-            "image_height": "medium",
+            "image_2": "shopify:\/\/shop_images\/placeholder_mobile_732x410_DOG.jpg",
+            "image_height": "large",
             "adapt_height_first_image": false,
             "two_col_banner": true,
             "desktop_text_box_position": "center",
