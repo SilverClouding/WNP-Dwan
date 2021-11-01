@@ -4,9 +4,9 @@
       "type": "slideshow",
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2021-06-28_at_3.20_1.png",
-        "image_2": "shopify:\/\/shop_images\/Asset-11.jpg",
-        "image_height": "medium",
-        "adapt_height_first_image": true,
+        "image_2": "shopify:\/\/shop_images\/placeholder_mobile_732x410_SMALL_ANIMALS.jpg",
+        "image_height": "large",
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
         "image_overlay_opacity": 0,
