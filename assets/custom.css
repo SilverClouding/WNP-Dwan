@@ -15,5 +15,6 @@ list-style:none;
 } */
 .featured-collection .swiper-wrapper {
     padding: 0;
-  margin-left: -1rem;
+  
+      flex-wrap: unset;
 }
