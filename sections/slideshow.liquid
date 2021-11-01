@@ -7,10 +7,10 @@
     
 
     <div class="swiper-slide {% if section.settings.two_col_banner %} two-block-section  {% endif %} ">
-    
-      <div class="banner__mediaa media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}">
-       {%- if section.settings.image != blank -%}
-       <img
+
+      <div class="banner__mediaa media">
+        {%- if section.settings.image != blank -%}
+        <img
              srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
                      {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
                      {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
@@ -20,18 +20,18 @@
                      {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
                      {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}
                      {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
-             sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
+             sizes="(min-width: 750px) 50vw, 100vw"
              src="{{ section.settings.image | img_url: '1500x' }}"
              loading="lazy"
              alt="{{ section.settings.image.alt | escape }}"
              width="{{ section.settings.image.width }}"
              height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
              >
-     
-       {%- endif -%}
-      
-      {%- if section.settings.image_2 != blank -%}
-      
+
+        {%- endif -%}
+
+        {%- if section.settings.image_2 != blank -%}
+
         <img
              srcset="{%- if section.settings.image_2.width >= 375 -%}{{ section.settings.image_2 | img_url: '375x' }} 375w,{%- endif -%}
                      {%- if section.settings.image_2.width >= 750 -%}{{ section.settings.image_2 | img_url: '750x' }} 750w,{%- endif -%}
@@ -42,39 +42,41 @@
                      {%- if section.settings.image_2.width >= 3000 -%}{{ section.settings.image_2 | img_url: '3000x' }} 3000w,{%- endif -%}
                      {%- if section.settings.image_2.width >= 3840 -%}{{ section.settings.image_2 | img_url: '3840x' }} 3840w,{%- endif -%}
                      {{ section.settings.image_2 | img_url: 'master' }} {{ section.settings.image_2.width }}w"
-             sizes="{% if section.settings.image != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image != blank %}50vw{% else %}100vw{% endif %}"
+             sizes="(min-width: 750px) 50vw, 100vw"
              src="{{ section.settings.image_2 | img_url: '1500x' }}"
              loading="lazy"
              alt="{{ section.settings.image_2.alt | escape }}"
              width="{{ section.settings.image_2.width }}"
              height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
-      
-      {%- endif -%}
-      </div>
-      <div class="banner__content banner__content--{{ section.settings.desktop_text_box_position }} page-width">
-        <div class="banner__box color-{{ section.settings.color_scheme }}">
 
-          <h2 class="banner__heading {% if section.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ section.shopify_attributes }}>
-            <span>{{ section.settings.heading | escape }}</span>
-          </h2>
+        {%- endif -%}
 
-          <div class="banner__text" {{ section.shopify_attributes }}>
-            <span>{{ section.settings.text | escape }}</span>
+
+
+        <div class="banner__content banner__content--{{ section.settings.desktop_text_box_position }} page-width">
+          <div class="banner__box color-{{ section.settings.color_scheme }}">
+
+            <h2 class="banner__heading {% if section.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ section.shopify_attributes }}>
+              <span>{{ section.settings.heading | escape }}</span>
+            </h2>
+
+            <div class="banner__text" {{ section.shopify_attributes }}>
+              <span>{{ section.settings.text | escape }}</span>
+            </div>
+
+            <div class="banner__buttons{% if section.settings.button_label_1 != blank and section.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ section.shopify_attributes }}>
+              {%- if section.settings.button_label_1 != blank -%}
+              <a{% if section.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_1 | escape }}</a>
+              {%- endif -%}
+              {%- if section.settings.button_label_2 != blank -%}
+              <a{% if section.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_2 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_2 | escape }}</a>
+              {%- endif -%}
+            </div>
+
           </div>
-
-          <div class="banner__buttons{% if section.settings.button_label_1 != blank and section.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ section.shopify_attributes }}>
-            {%- if section.settings.button_label_1 != blank -%}
-            <a{% if section.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_1 | escape }}</a>
-            {%- endif -%}
-            {%- if section.settings.button_label_2 != blank -%}
-            <a{% if section.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_2 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_2 | escape }}</a>
-            {%- endif -%}
-          </div>
-
         </div>
+
       </div>
-
-
 
     </div>
 
