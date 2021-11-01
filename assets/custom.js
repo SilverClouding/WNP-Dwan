@@ -25,7 +25,7 @@ const swiper = new Swiper('.mySwiper', {
 
 
 // Featured collection slider
-const swiper = new Swiper(".featured_col_Swiper", {
+const swiperr = new Swiper(".featured_col_Swiper", {
   slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
