@@ -8,7 +8,7 @@
 
     <div class="swiper-slide {% if section.settings.two_col_banner %} two-block-section  {% endif %} ">
 
-      <div class="banner__mediaa media">
+      <div class="banner__mediaa mediaa">
         {%- if section.settings.image != blank -%}
         <img
              srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
