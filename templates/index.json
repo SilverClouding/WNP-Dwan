@@ -30,7 +30,7 @@
           "type": "heading",
           "settings": {
             "image": "shopify:\/\/shop_images\/Asset-11.jpg",
-            "image_height": "medium",
+            "image_height": "large",
             "two_col_banner": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
@@ -55,7 +55,7 @@
         "3f81934b-837c-4b0b-a096-9d30503c5615"
       ],
       "settings": {
-        "showpagination": false,
+        "showpagination": true,
         "showscrollbar": false,
         "shownextPrevButtom": true
       }
