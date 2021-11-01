@@ -55,8 +55,8 @@
         "3f81934b-837c-4b0b-a096-9d30503c5615"
       ],
       "settings": {
-        "showpagination": true,
-        "showscrollbar": true,
+        "showpagination": false,
+        "showscrollbar": false,
         "shownextPrevButtom": true
       }
     },
