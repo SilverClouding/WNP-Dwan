@@ -20,10 +20,17 @@
               "color_scheme": "background-1",
               "link": ""
             }
+          },
+          "9b70da94-9784-43e2-9c8a-ab1e72d3452c": {
+            "type": "language_selector",
+            "settings": {
+              "enable_language_selector": true
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "9b70da94-9784-43e2-9c8a-ab1e72d3452c"
         ],
         "settings": {
         }
