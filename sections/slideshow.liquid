@@ -114,16 +114,21 @@
 
     {% endfor %}
   </div>
-
+  
+  
+{% if section.settings.showpagination %}
   <!-- If we need pagination -->
+  {% endif %}
   <div class="swiper-pagination"></div>
-
+{% if section.settings.shownextPrevButtom %}
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-
+  {% endif %}
+{% if section.settings.showscrollbar %}
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
+  {% endif %}
 
 </div>
 {% schema %}
@@ -131,7 +136,26 @@
   "name": "Slideshow",
   "tag": "section",
   "class": "spaced-section spaced-section--full-width",
-  "settings": [],
+  "settings": [
+{
+      "type": "checkbox",
+      "id": "showpagination",
+      "default": true,
+      "label": "Show pagination"
+    },
+{
+      "type": "checkbox",
+      "id": "showscrollbar",
+      "default": true,
+      "label": "Show Scrollbar"
+    },
+{
+      "type": "checkbox",
+      "id": "shownextPrevButtom",
+      "default": true,
+      "label": "Show previous and next button"
+    }
+],
   "blocks": [
     {
 	"type": "heading",
