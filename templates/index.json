@@ -4,6 +4,7 @@
       "type": "slideshow",
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2021-06-28_at_3.20_1.png",
+        "image_2": "shopify:\/\/shop_images\/Asset-11.jpg",
         "image_height": "medium",
         "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
