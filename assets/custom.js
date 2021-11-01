@@ -2,7 +2,7 @@
 // Banner slideShow
 
 const swiper = new Swiper('.mySwiper', {
-  spaceBetween: 30,
+  autoHeight: true,
   effect: "fade",
 
   // If we need pagination
