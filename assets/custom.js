@@ -112,7 +112,7 @@ jQuery(function($){
               scrollbar: {
                 el: '.swiper-scrollbar',
               },
-            }).css('opacity', '1');
+            });
             
             
             
