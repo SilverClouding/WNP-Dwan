@@ -8,6 +8,7 @@ jQuery(function($){
     // If we need pagination
     pagination: {
       el: '.mySwiper .swiper-pagination',
+      clickable: true,
     },
 
     // Navigation arrows
