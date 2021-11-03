@@ -83,6 +83,7 @@ function quickView() {
       $('.qv-product-description').html(desc);
       $('.view-product').attr('href', url);
       var imageCount = $(images).length;
+      console.log(imageCount);
       $(images).each(function (i, image) {
         if (i == imageCount - 1) {
           var image_embed = '<div><img src="' + image + '"></div>';
