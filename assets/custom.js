@@ -93,7 +93,7 @@ jQuery(function($){
 //             }).css('opacity', '1');
             
             
-            const qv-product-images = new Swiper('.qv-product-images', {
+            const qvproductimages = new Swiper('.qv-product-images', {
               autoHeight: true,
               effect: "fade",
 
