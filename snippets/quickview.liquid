@@ -26,10 +26,32 @@
         <hr />
         <div class="qv-add-to-cart">
             <div class="qv-product-options"></div>
-            <div class="quantity">
+<!--             <div class="quantity">
                 <span>Quantity</span>
                 <input type="number" class="qv-quantity" value="1" min="1">
-            </div>
+            </div> -->
+          
+          
+          <quantity-input class="quantity">
+                <button class="quantity__button no-js-hidden" name="minus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input class="quantity__input qv-quantity"
+                    type="number"
+                    name="quantity"
+                    id="Quantity-{{ section.id }}"
+                    min="1"
+                    value="1"
+                    form="{{ product_form_id }}"
+                  >
+                <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  {% render 'icon-plus' %}
+                </button>
+              </quantity-input>
+          
+          
             <input type="submit" class="qv-add-button" value="Add to Cart">
             <div class="qv-add-to-cart-response"></div>
         </div>
