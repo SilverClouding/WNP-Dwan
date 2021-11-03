@@ -112,7 +112,7 @@ function quickView() {
       });
       $(product.variants).each(function (i, v) {
         console.log( v);
-        if (v.inventory_quantity == 0) {
+        if (v.available == false) {
           $('.qv-add-button').prop('disabled', true).val('Sold Out');
           $('.qv-add-to-cart').hide();
           $('.qv-product-price').text('Sold Out').show();
