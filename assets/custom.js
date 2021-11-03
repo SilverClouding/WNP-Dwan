@@ -95,6 +95,28 @@ function quickView() {
 //             'respondTo': 'min',
 //             'useTransform': false
 //           }).css('opacity', '1');
+          
+          const swiper = new Swiper('.qv-product-images', {
+            autoHeight: true,
+            effect: "fade",
+
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+          });
+          
 
         } else {
           image_embed = '<div><img src="' + image + '"></div>';
