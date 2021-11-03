@@ -143,6 +143,7 @@ function quickView() {
         }
       });
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+        console.log(product);
         $(product.variants).each(function (i, v) {
           if (v.title == selectedOptions) {
             var price = parseFloat(v.price / 100).toFixed(2);
