@@ -178,16 +178,14 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     
-     {{ 'quickview.css' | asset_url | stylesheet_tag }}
-   
-	
-{{ 'quickview.css' | asset_url | stylesheet_tag }}
-<script>
-  {% capture content %}{% include 'quickview' %}{% endcapture %}
-  var content = {{ content | json }};
-</script>
-    
-    
-     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    {{ 'quickview.css' | asset_url | stylesheet_tag }}
+    <script>
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+    </script>
+
+    <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
+
+    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
