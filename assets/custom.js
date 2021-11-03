@@ -253,7 +253,7 @@ function quickView() {
 
 $(window).resize(function () {
   if ($('#quick-view').is(':visible')) {
-    $('.qv-product-images').slick('setPosition');
+//     $('.qv-product-images').slick('setPosition');
   }
 });
  
