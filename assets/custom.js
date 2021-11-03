@@ -90,33 +90,33 @@ function quickView() {
           image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
           $('.qv-product-images').append(image_embed);
 
-//           $('.qv-product-images').slick({
-//             'dots': false,
-//             'arrows': false,
-//             'respondTo': 'min',
-//             'useTransform': false
-//           }).css('opacity', '1');
+          $('.qv-product-images').slick({
+            'dots': false,
+            'arrows': false,
+            'respondTo': 'min',
+            'useTransform': false
+          }).css('opacity', '1');
           
-          const swiper = new Swiper('.qv_img_slider', {
-            autoHeight: false,
-            effect: "fade",
+//           const swiper = new Swiper('.qv_img_slider', {
+//             autoHeight: false,
+//             effect: "fade",
 
-            // If we need pagination
-            pagination: {
-              el: '.swiper-pagination',
-            },
+//             // If we need pagination
+//             pagination: {
+//               el: '.swiper-pagination',
+//             },
 
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
+//             // Navigation arrows
+//             navigation: {
+//               nextEl: '.swiper-button-next',
+//               prevEl: '.swiper-button-prev',
+//             },
 
-            // And if we need scrollbar
-            scrollbar: {
-              el: '.swiper-scrollbar',
-            },
-          });
+//             // And if we need scrollbar
+//             scrollbar: {
+//               el: '.swiper-scrollbar',
+//             },
+//           });
           
 
         } else {
