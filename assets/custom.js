@@ -55,10 +55,7 @@ jQuery(function($){
 
   // quickview
 
-  $(document).ready(function () {
-    
-    quickView();
-  });
+  
 
   function quickView() {
     $(".quick-view").click(function () {
@@ -243,11 +240,13 @@ jQuery(function($){
     });
   };
 
-  $(window).resize(function () {
-    if ($('#quick-view').is(':visible')) {
-      $('.qv-product-images').slick('setPosition');
-    }
+//   $(window).resize(function () {
+//     if ($('#quick-view').is(':visible')) {
+//       $('.qv-product-images').slick('setPosition');
+//     }
+//   });
+  $(document).ready(function () {
+    quickView();
   });
-
 
 });
