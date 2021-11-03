@@ -80,7 +80,7 @@ function quickView() {
       var url = '/products/' + product_handle;
       $('.qv-product-title').text(title);
       $('.qv-product-type').text(type);
-      $('.qv-product-description').html(desc.substring(0, 300).split(" ").slice(0, -1).join(" ") + "...";);
+      $('.qv-product-description').html(desc.substring(0, 300).split(" ").slice(0, -1).join(" ") + "...");
       $('.view-product').attr('href', url);
       var imageCount = $(images).length;
       console.log(imageCount);
