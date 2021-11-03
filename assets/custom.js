@@ -98,7 +98,7 @@ function quickView() {
 //           }).css('opacity', '1');
           
           const swiper = new Swiper('.qv_img_slider', {
-            autoHeight: true,
+            autoHeight: false,
             effect: "fade",
 
             // If we need pagination
