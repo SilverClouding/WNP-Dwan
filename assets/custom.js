@@ -222,39 +222,19 @@ function quickView() {
             });
           });
           function processCart() {
-//             jQuery.post('/cart/add.js', {
-//               quantity: qty,
-//               id: var_id
-//             },
-//                         null,
-//                         "json"
-//                        ).done(function () {
-//               $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
-//             })
-//             .fail(function ($xhr) {
-//               var data = $xhr.responseJSON;
-//               $('.qv-add-to-cart-response').addClass('error').html('<span><b>ERROR: </b>' + data.description);
-//             });
-            
-            fetch(`${routes.cart_add_url}`, config)
-            .then((response) => response.json())
-            .then((response) => {
-              if (response.status) {
-                this.handleErrorMessage(response.description);
-                return;
-              }
-
-              this.cartNotification.renderContents(response);
+            jQuery.post('/cart/add.js', {
+              quantity: qty,
+              id: var_id
+            },
+                        null,
+                        "json"
+                       ).done(function () {
+              $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
             })
-            .catch((e) => {
-              console.error(e);
-            })
-            .finally(() => {
-                     submitButton.classList.remove('loading');
-            submitButton.removeAttribute('aria-disabled');
-            this.querySelector('.loading-overlay__spinner').classList.add('hidden');
-          });
-        }
+            .fail(function ($xhr) {
+              var data = $xhr.responseJSON;
+              $('.qv-add-to-cart-response').addClass('error').html('<span><b>ERROR: </b>' + data.description);
+            });
             
             
           }
