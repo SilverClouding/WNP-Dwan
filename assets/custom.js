@@ -7,18 +7,18 @@ jQuery(function($){
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.mySwiper .swiper-pagination',
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.mySwiper .swiper-button-next',
+      prevEl: '.mySwiper .swiper-button-prev',
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.mySwiper .swiper-scrollbar',
     },
   });
 
@@ -29,12 +29,12 @@ jQuery(function($){
     slidesPerView: 2,
     spaceBetween: 10,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".featured_col_Swiper .swiper-pagination",
       clickable: true,
     },
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.featured_col_Swiper .swiper-scrollbar',
     },
     breakpoints: {
       640: {
