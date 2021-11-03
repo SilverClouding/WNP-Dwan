@@ -133,7 +133,7 @@
 	 min-width: 100px;
 }
  #quick-view .qv-add-button {
-	 display: block;
+/* 	 display: block;
 	 background-color: red;
 	 font-family: 'proxima-nova-semibold';
 	 text-transform: uppercase;
@@ -142,7 +142,7 @@
 	 padding: 10px 20px;
 	 border: 0;
 	 width: 100%;
-	 color: #fff;
+	 color: #fff; */
 }
  #quick-view .qv-add-button:hover {
 	 background-color: red-hover;
