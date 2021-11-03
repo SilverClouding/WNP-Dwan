@@ -91,6 +91,31 @@ jQuery(function($){
 //               'respondTo': 'min',
 //               'useTransform': false
 //             }).css('opacity', '1');
+            
+            
+            const qv-product-images = new Swiper('.qv-product-images', {
+              autoHeight: true,
+              effect: "fade",
+
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+
+              // And if we need scrollbar
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            }).css('opacity', '1');
+            
+            
+            
           } else {
             image_embed = '<div><img src="' + image + '"></div>';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
