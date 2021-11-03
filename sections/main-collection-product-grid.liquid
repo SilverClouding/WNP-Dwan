@@ -61,6 +61,12 @@
   {%- endpaginate -%}
 </div>
 
+<script>
+{% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+</script>
+
+
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
