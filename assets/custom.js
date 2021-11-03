@@ -64,7 +64,7 @@ $(document).ready(function () {
 });
 
 function quickView() {
-  $(document).click(".quick-view",function () {
+  $(".quick-view").click(function () {
     if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
     var product_handle = $(this).data('handle');
     $('#quick-view').addClass(product_handle);
@@ -253,7 +253,7 @@ function quickView() {
 
 $(window).resize(function () {
   if ($('#quick-view').is(':visible')) {
-//     $('.qv-product-images').slick('setPosition');
+    $('.qv-product-images').slick('setPosition');
   }
 });
  
