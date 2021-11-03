@@ -64,7 +64,7 @@ $(document).ready(function () {
 });
 
 function quickView() {
-  $(document).click(".quick-view", function () {
+  $(document).on('click',".quick-view", function () {
     if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
     var product_handle = $(this).data('handle');
     $('#quick-view').addClass(product_handle);
