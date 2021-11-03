@@ -16,7 +16,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Get FREE Delivery with purchases over $100!",
+              "text": "Get <span>FREE<\/span> Delivery with <span>purchases over $100!<\/span>",
               "color_scheme": "background-2",
               "link": ""
             }
