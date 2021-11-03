@@ -111,6 +111,7 @@ function quickView() {
         });
       });
       $(product.variants).each(function (i, v) {
+        console.log( v);
         if (v.inventory_quantity == 0) {
           $('.qv-add-button').prop('disabled', true).val('Sold Out');
           $('.qv-add-to-cart').hide();
@@ -143,7 +144,7 @@ function quickView() {
         }
       });
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
-        console.log(product);
+        
         $(product.variants).each(function (i, v) {
           if (v.title == selectedOptions) {
             var price = parseFloat(v.price / 100).toFixed(2);
