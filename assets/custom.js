@@ -56,9 +56,8 @@ jQuery(function($){
   // quickview
 
   $(document).ready(function () {
-    $.getScript("//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js").done(function() {
+    
     quickView();
-  });
   });
 
   function quickView() {
@@ -98,6 +97,7 @@ jQuery(function($){
             $('.qv-product-images').append(image_embed);
           }
         });
+        console.log(product);
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
