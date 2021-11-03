@@ -258,6 +258,13 @@ jQuery(function($){
   });
 
 
+  
+//   MIni Cart
+  
+  
+  
+  
+  
 
 
 });
