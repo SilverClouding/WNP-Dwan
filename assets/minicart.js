@@ -55,7 +55,7 @@ function updateItemById(id,quantity,sections) {
   })
   .then((data) => {
     console.log(data);
-    document.getElementById("CartCount").innerHTML= data.item_count;
+//     document.getElementById("CartCount").innerHTML= data.item_count;
     var sectionHtmlData =  data; 
     var SectionHtml = sectionHtmlData.sections['cart-items'] ;
     var IDminiCart = document.getElementById("mini-cart");
