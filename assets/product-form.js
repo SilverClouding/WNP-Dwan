@@ -58,7 +58,7 @@ if (!customElements.get('product-form')) {
         //minicart section end
         console.log("notification off");
         	
-//           this.cartNotification.renderContents(response);
+          this.cartNotification.renderContents(response);
         })
         .catch((e) => {
           console.error(e);
