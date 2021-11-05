@@ -39,11 +39,12 @@ if (!customElements.get('product-form')) {
           }
 			
         //       mini cart section render
+        console.log(response);
+        document.getElementById("CartCount").innerHTML = data.item_count;
         fetch('/?sections=cart-items')
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
-          document.getElementById("CartCount").innerHTML = data.item_count;
+          
           var SectionHtml = data['cart-items'] ;
           var IDminiCart = document.getElementById("mini-cart");
           var IDminiCartMask = document.getElementById("minibag_mask");
