@@ -39,7 +39,7 @@ if (!customElements.get('product-form')) {
           }
 			
         //       mini cart section render
-        console.log(response);
+       
        
         fetch('/?sections=cart-items')
         .then((response) => response.json())
@@ -55,7 +55,7 @@ if (!customElements.get('product-form')) {
           IDminiCartMask.style.display = 'block';
 
           var count = document.querySelector('.count-cross .count').getAttribute('count');
-          
+          console.log(count);
         });
         //minicart section end
         console.log("notification off");
