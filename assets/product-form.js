@@ -54,6 +54,8 @@ if (!customElements.get('product-form')) {
           document.body.style.overflow = "hidden";
           IDminiCartMask.style.display = 'block';
 
+          var count = document.querySelector('.count-cross .count').getAttribute('count');
+          
         });
         //minicart section end
         console.log("notification off");
