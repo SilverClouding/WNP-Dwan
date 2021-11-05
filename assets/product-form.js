@@ -40,7 +40,7 @@ if (!customElements.get('product-form')) {
 			
         //       mini cart section render
         console.log(response);
-        document.getElementById("CartCount").innerHTML = data.item_count;
+       
         fetch('/?sections=cart-items')
         .then((response) => response.json())
         .then((data) => {
