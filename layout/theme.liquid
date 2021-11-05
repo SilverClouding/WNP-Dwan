@@ -184,7 +184,9 @@
       var content = {{ content | json }};
     </script>
 
+    {% unless template contains 'cart' %}
     {% render 'minicart' %}
+    {% endunless %}
  {% comment %}   {% endcomment %}
     
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
