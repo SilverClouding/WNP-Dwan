@@ -37,8 +37,26 @@ if (!customElements.get('product-form')) {
             this.handleErrorMessage(response.description);
             return;
           }
+			
+        //       mini cart section render
+        fetch('/?sections=cart-items')
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("CartCount").innerHTML= data.item_count;
+          var SectionHtml = data['cart-items'] ;
+          var IDminiCart = document.getElementById("mini-cart");
+          var IDminiCartMask = document.getElementById("minibag_mask");
+          IDminiCart.innerHTML = SectionHtml;
+          IDminiCart.classList.add("show-minibag");
+          IDminiCart.classList.remove("hide-minibag");
+          document.body.style.overflow = "hidden";
+          IDminiCartMask.style.display = 'block';
 
-          this.cartNotification.renderContents(response);
+        });
+        //minicart section end
+        console.log("notification off");
+        	
+//           this.cartNotification.renderContents(response);
         })
         .catch((e) => {
           console.error(e);
