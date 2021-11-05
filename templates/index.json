@@ -34,7 +34,7 @@
             "two_col_banner": true,
             "desktop_text_box_position": "center",
             "show_text_box": false,
-            "image_overlay_opacity": 70,
+            "image_overlay_opacity": 20,
             "color_scheme": "accent-1",
             "stack_images_on_mobile": true,
             "show_text_below": true,
