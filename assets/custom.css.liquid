@@ -123,14 +123,19 @@ padding:1.2rem 1.5rem .8rem;
 .two-block-section{}
 .two-block-section .banner__media.media{
 width:50%;
+  order:2;
 }
 .two-block-section .banner__content{
 width:50%;
+  order:1;
+  background:#FFF9EE;
 }
 
-
-
-
+@media screen and (min-width: 750px) {
+.banner--large:not(.banner--adapt) {
+    min-height: unset;
+}
+}
 
 
 
