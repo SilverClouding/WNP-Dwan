@@ -1,18 +1,20 @@
 <!-- start static code -->
 
-<div class="mini-cart-con" id="mini__Cart">
+
 <div class="cart__items">
 <div class="cart__item">
   <div class="cart__image">
- ascasc
+ <img class="cart-notification-product__image" src="//cdn.shopify.com/s/files/1/0018/3176/4077/products/ETT_Product_Origami_black_shark_1_ab47df1d-27df-411c-bf05-65ff22bf34c6_140x.jpg?v=1611105057" alt="" loading="lazy" width="70" height="70">
   </div>
   <div class="cart__item-details">
- sacasc
+<div class="cart__item-title">
+<a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
+  </div>
   </div>
   </div>
 </div>
 
-</div>
+
 
 
 
