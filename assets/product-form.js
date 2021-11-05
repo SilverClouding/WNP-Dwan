@@ -42,7 +42,7 @@ if (!customElements.get('product-form')) {
         fetch('/?sections=cart-items')
         .then((response) => response.json())
         .then((data) => {
-          document.getElementById("CartCount").innerHTML= data.item_count;
+//           document.getElementById("CartCount").innerHTML= data.item_count;
           var SectionHtml = data['cart-items'] ;
           var IDminiCart = document.getElementById("mini-cart");
           var IDminiCartMask = document.getElementById("minibag_mask");
