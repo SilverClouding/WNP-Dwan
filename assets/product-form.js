@@ -55,7 +55,7 @@ if (!customElements.get('product-form')) {
           IDminiCartMask.style.display = 'block';
 
           var count = document.querySelector('.count-cross .count').getAttribute('count');
-          console.log(count);
+          document.getElementById("CartCount").innerHTML= count;
         });
         //minicart section end
         console.log("notification off");
