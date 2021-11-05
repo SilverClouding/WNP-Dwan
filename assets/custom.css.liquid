@@ -43,6 +43,39 @@ body{
   line-height:14px;
   color:#44444D;
 }
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Avenir LT Std';
+}
+
+.h1, h1{
+  font-size:24px;
+  font-weight:500;
+}
+h2{
+  font-size:19px;
+  font-weight:400;
+}
+h3{
+  font-size:17px;
+  font-weight:400;
+}
+h4{
+  font-size:15px;
+  font-weight:500;
+}
+h5{
+  font-size:12px;
+  font-weight:500;
+}
+h6{
+  font-size:12px;
+  font-weight:400;
+}
+
+
+
+
+
 /* placeholder  */
 ::-webkit-placeholder {
   color: #44444D;
@@ -58,6 +91,10 @@ body{
   opacity: 1;
 }
 
+
+
+
+
 /*  announcement bar start */
 #shopify-section-announcement-bar .announcement-bar__message{
   font-family: 'Avenir LT Std';
@@ -68,13 +105,13 @@ body{
   letter-spacing:0;
 }
 #shopify-section-announcement-bar .announcement-bar__message span{
-font-weight:900;
+  font-weight:900;
 }
 
 /* header */
 .header{ 
   display:flex;
-justify-content:center;
+  justify-content:center;
 }
 .header .search-area-con{
   width:60%;
@@ -88,13 +125,13 @@ justify-content:center;
 }
 .header__inline-menu .header__menu-item:hover,
 .header__inline-menu .header__menu-item:focus{
-color:#F5694D;
+  color:#F5694D;
 }
 .customer a:hover, .link:hover{
-text-underline-offset:unset;
+  text-underline-offset:unset;
 }
 .header .header__menu-item:hover span{
-text-decoration:unset;
+  text-decoration:unset;
 }
 .header__search .search .search__input{
   background:#fff;
@@ -109,39 +146,50 @@ text-decoration:unset;
   font-weight:300;
 }
 .header__search .search .search__button svg{
-color:#44444D;
+  color:#44444D;
 }
 .customer .field input:autofill, .customer 
 .field input:focus, .customer 
 .field input:not(:placeholder-shown), 
 .field__input:autofill, .field__input:focus, 
 .field__input:not(:placeholder-shown){
-padding:1.2rem 1.5rem .8rem;
+  padding:1.2rem 1.5rem .8rem;
 }
- 
+
 /* main banner */
+.swiper-wrapper{
+  height:338px !important;
+} 
 .swiper .two-block-section{
-display:flex;
+  display:flex;
   height:100%;
 }
 .two-block-section .banner__media.media{
-width:50%;
+  width:50%;
   order:2;
   position:unset;
 }
 .two-block-section .banner__media.media img{
-position:unset;
+  position:unset;
 }
 .two-block-section .banner__content{
-width:50%;
+  width:50%;
   order:1;
   background:#FFF9EE;
 }
+.swiper .two-block-section .banner__heading.h1{
+  color:#153A33;
+  font-size:50px;
+  font-weight:900;
+  line-height:50px;
+}
+
+
 
 @media screen and (min-width: 750px) {
-.banner--large:not(.banner--adapt) {
+  .banner--large:not(.banner--adapt) {
     min-height: unset !important;
-}
+  }
 }
 
 
@@ -163,7 +211,7 @@ width:50%;
 
 
 
- 
+
 
 
 
