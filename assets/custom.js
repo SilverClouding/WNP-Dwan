@@ -227,7 +227,28 @@ jQuery(function($){
                           null,
                           "json"
                          ).done(function () {
-                $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
+                
+                
+                
+                $.getJSON('/?sections=cart-items', function(data) {      
+                  var sectionHtmlData = data; 
+                  console.log(data);
+                  var SectionHtml = sectionHtmlData['cart-items'] ;
+                  $("#mini-cart").html(SectionHtml);
+                  $('#mini-cart').toggleClass("show-minibag");
+                  $('body').toggleClass("overflow-hidden");
+                  $('.minibag-mask').show();
+                  $('#mini-cart').removeClass("hide-minibag");
+                  $('.crosssell-group .feedback-add_in_modal').each(function(e){
+                    theme.applyAjaxToProductForm($(this));
+                  });
+
+                });
+                
+                
+//                 $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
+              
+              
               })
               .fail(function ($xhr) {
                 var data = $xhr.responseJSON;
