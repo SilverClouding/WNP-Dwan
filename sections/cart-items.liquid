@@ -1,125 +1,7 @@
 <!-- start static code -->
 
 
-<div class="cart__items">
-<div class="cart__item">
-  <div class="cart__image">
- <img class="cart-notification-product__image" src="//cdn.shopify.com/s/files/1/0018/3176/4077/products/ETT_Product_Origami_black_shark_1_ab47df1d-27df-411c-bf05-65ff22bf34c6_140x.jpg?v=1611105057" alt="" loading="lazy">
-  </div>
-  <div class="cart__item-details">
-<div class="cart__item-title">
-  
-  <div class="cart__item-title-left">
-  <a href="#" class="cart__item-name">Original Adult Dog Dry Food Fish</a>
-  <p class="brand">Brand: Plato</p>
-  <p class="size">Size: 30oz</p>
-  </div>
-  
-   <div class="cart__item-title-right">
-<a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
-     <a href="#" class="save-whishlist">Save to wishlist</a>
-  </div>
-  
-    </div>
-    <div class="cart__item-sub">
-      <div class="js-qty__wrapper">+ - </div>
-      <div class="cart__item-price-col text-right">
-        <span class="cart__price-old">$275.00</span>
-        <span class="cart__price-new">$275.00</span>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}
 this section HTML gose to minicart.liquid and minicart.liquid include in theme.liquid
-
-
 <style>
 
 .minibag-mask {
@@ -271,10 +153,9 @@ body.page-your-shopping-cart {
   display:block;
   }
 </style>
-   
 
 <div class="mini-cart-con" id="mini__Cart">
- <div class="count-cross">
+  <div class="count-cross">
     <div class="count" count="{{cart.item_count}}">
       {{cart.item_count}} item(s) in your cart
     </div>
@@ -293,62 +174,38 @@ body.page-your-shopping-cart {
 
     </div>
   </div>
- 
+
   <div class="min-cart-items">
 
-    {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
-
     {% for item in cart.items %}
-
-    {% assign groupFlag = "" %}
-
-    {% for tag in item.product.tags %}
-    {% if tag contains "cart-group" %}
-    {% assign groupFlag = tag | split:"-group:" | last %}
-    {% endif %}
-    {% endfor %}
-
-
     <div class="min-cart-item" index="{{forloop.index}}">
-      <div class="td-image">
-        <img src="{{item.image | img_url: '100x100' }}" />
-        <h2>{{item.product.title }}</h2>
-         <span class="item-price price">{{ item.price  | money }}</span>
-        
-        <div class="buttons-div">
-          <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
-
-        </div>
-        
+      <div class="td-image cart__image">
+        <img src="{{item.image | img_url: '100x100' }}" /> 
       </div>
-      {% comment %}
-      <div class="info">
-        <div class="p-title"> 
-          <h2>{{item.product.title }}</h2>
-          {% assign removeTitle =  item.product.title | append: " /"%}
-          <p>{{ item.variant.title | remove: removeTitle }}</p>
+      <div class="cart__item-details">
+        <div class="cart__item-title">
+          <div class="cart__item-title-left">
+            <a href="{{item.product.url}}"><h2>{{item.product.title }}</h2></a>
+            <p class="brand">Brand: {{item.vendor}}</p>
+            <p class="size">Size: 30oz <p>{{ item.variant.title | remove: removeTitle }}</p></p>
+          </div>
+          <div class="cart__item-title-right">
+            <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
+            <a href="#" class="save-whishlist">Save to wishlist</a>
+          </div>
         </div>
-        <div class="quantity-con">
-          <div class="quantity-val">Qty: {{ item.quantity }}</div>
-          <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
-        </div>
-
-
       </div>
-      <div class="td-price">
-        <span class="item-price price">{{ item.price  | money }}</span>
+      <div class="cart__item-sub">
+           <div class="quantity-val">Qty: {{ item.quantity }}</div>
+        <span class="cart__price-old">{{ item.product.compare_at_price | money }}$275.00</span>
+          <span class="cart__price-new">{{ item.price | money }}$275.00</span>
       </div>
-      {% endcomment %}
+      
 
     </div>	
     {% endfor %}
   </div>
-
-
-
 </div>
-{% endcomment %}
-
 
 
 
