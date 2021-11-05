@@ -31,7 +31,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Asset-11.jpg",
             "image_height": "large",
-            "two_col_banner": false,
+            "two_col_banner": true,
             "desktop_text_box_position": "center",
             "show_text_box": false,
             "image_overlay_opacity": 70,
