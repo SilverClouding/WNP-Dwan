@@ -1,4 +1,4 @@
-<div class="icon-text-controlar">
+<div class="icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <ul class="icon-text-cont">
 {%- for block in section.blocks -%}
           <li>
