@@ -29,7 +29,7 @@
                height="{{ block.settings.image.height }}"
                >
           {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}
           {%- endif -%}
         </div>
 
