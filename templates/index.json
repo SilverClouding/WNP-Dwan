@@ -148,7 +148,7 @@
       ],
       "settings": {
         "title": "",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "primary",
