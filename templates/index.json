@@ -167,10 +167,19 @@
             "title": "",
             "text": "<p>Collagen<\/p>"
           }
+        },
+        "597656e2-0978-448e-b555-46f6090cb2cd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/keto.png",
+            "title": "",
+            "text": "<p>Keto<\/p>"
+          }
         }
       },
       "block_order": [
-        "61f8fc14-e6a9-46fd-9492-5d0666e88c33"
+        "61f8fc14-e6a9-46fd-9492-5d0666e88c33",
+        "597656e2-0978-448e-b555-46f6090cb2cd"
       ],
       "settings": {
       }
