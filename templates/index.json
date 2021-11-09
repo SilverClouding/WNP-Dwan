@@ -190,7 +190,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible tab1",
-            "content": "",
+            "content": "<p>eeeeeeeeeeefdsa eeeeeeeeeeefdsa<\/p><p>eeeeeeeeeeefdsa eeeeeeeeeeefdsaeeeeeeeeeeefdsa<\/p>",
             "page": "",
             "icon": "none"
           }
