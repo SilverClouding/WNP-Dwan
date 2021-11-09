@@ -83,10 +83,12 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
     768: {
       slidesPerView: 4,
       spaceBetween: 10,
+       loop: true,
     },
     1024: {
       slidesPerView: 6,
       spaceBetween: 10,
+       loop: true,
     },
   },
 });
