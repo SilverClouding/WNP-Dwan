@@ -11,15 +11,9 @@
 
 </style>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn background-{{ section.settings.background_style }} no-heading ">
   <div class="page-width ">
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title">
-        {{ section.settings.title | escape }}
-      </h2>
 
-    </div>
-  
     <div class="swiper multicolumn_Swiper section_width">
 
 
@@ -95,13 +89,7 @@
   "class": "spaced-section spaced-section--full-width",
   "tag": "section",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "default": "Multicolumn",
-      "label": "t:sections.multicolumn.settings.title.label"
-    },
-    
+
     {
       "type": "select",
       "id": "column_alignment",
