@@ -72,10 +72,10 @@
                 {%- if block.settings.text != blank -%}
                 <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-                  {%- if section.settings.button_label != blank -%}
-                  <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
-                    {{ section.settings.button_label | escape }}
+                <div class="center">
+                  {%- if block.settings.button_label != blank -%}
+                  <a class="button button--primary"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                    {{ block.settings.button_label | escape }}
                   </a>
                   {%- endif-%}
                 </div>
