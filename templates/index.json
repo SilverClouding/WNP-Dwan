@@ -77,85 +77,80 @@
         "show_rating": true
       }
     },
-    "multi_column": {
-      "type": "multicolumn",
+    "163646666171e43149": {
+      "type": "brand_logos",
       "blocks": {
-        "column1": {
+        "163646666171e43149-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beasty.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "column2": {
+        "163646666171e43149-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/greenies_709034d1-8bd9-451d-9015-bbffb3111a7e.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "column3": {
+        "163646666171e43149-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/orijen_e2238d43-3f69-451f-a241-24c9c9d26f1b.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "5ff2d7c3-1f16-4b90-9607-a2c723b12124": {
+        "163646666171e43149-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wellness-core.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "4fd2ddc8-83d4-4711-89af-82c70ddca570": {
+        "163646666171e43149-4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wellness-core.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "b66badf9-8a40-4919-8e04-10cb06cf7009": {
+        "163646666171e43149-5": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/stella.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
           }
         },
-        "7faacd9b-bf43-439c-a618-308205d6ff0c": {
+        "163646666171e43149-6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beasty.png",
-            "title": "",
-            "text": ""
+            "img_link": ""
+          }
+        },
+        "163646666171e43149-7": {
+          "type": "column",
+          "settings": {
+            "img_link": ""
+          }
+        },
+        "163646666171e43149-8": {
+          "type": "column",
+          "settings": {
+            "img_link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3",
-        "5ff2d7c3-1f16-4b90-9607-a2c723b12124",
-        "4fd2ddc8-83d4-4711-89af-82c70ddca570",
-        "b66badf9-8a40-4919-8e04-10cb06cf7009",
-        "7faacd9b-bf43-439c-a618-308205d6ff0c"
+        "163646666171e43149-0",
+        "163646666171e43149-1",
+        "163646666171e43149-2",
+        "163646666171e43149-3",
+        "163646666171e43149-4",
+        "163646666171e43149-5",
+        "163646666171e43149-6",
+        "163646666171e43149-7",
+        "163646666171e43149-8"
       ],
       "settings": {
-        "title": "",
-        "section_width": 100,
-        "image_width": "third",
-        "image_ratio": "square",
+        "title": "Multicolumn",
+        "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
+        "background_style": "primary"
       }
     },
     "rich_text": {
@@ -318,7 +313,7 @@
   "order": [
     "1635762495f8f522da",
     "featured_products",
-    "multi_column",
+    "163646666171e43149",
     "rich_text",
     "1636457643b982dbbf",
     "16364608963e5cc76f",
