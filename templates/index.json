@@ -205,34 +205,26 @@
         "heading_size": "h1",
         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu.<\/p>",
         "color_scheme": "inverse",
-        "section_width": 100,
-        "image_ratio": "adapt"
+        "section_width": 100
       }
     },
-    "1636470578a33ad6f3": {
+    "16364715337b2e2d80": {
       "type": "column-content-cards",
       "blocks": {
-        "1636470578a33ad6f3-0": {
+        "16364715337b2e2d80-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
             "button_link": ""
           }
         },
-        "1636470578a33ad6f3-1": {
+        "16364715337b2e2d80-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "1636470578a33ad6f3-2": {
-          "type": "column",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_144.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
@@ -241,22 +233,22 @@
         }
       },
       "block_order": [
-        "1636470578a33ad6f3-0",
-        "1636470578a33ad6f3-1",
-        "1636470578a33ad6f3-2"
+        "16364715337b2e2d80-0",
+        "16364715337b2e2d80-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 100,
+        "section_width": 66,
         "swipe_on_mobile": false
       }
     },
     "16364608963e5cc76f": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "16364608963e5cc76f-0": {
           "type": "column",
@@ -330,6 +322,52 @@
       "settings": {
         "title": "Frequently asked questions"
       }
+    },
+    "1636470578a33ad6f3": {
+      "type": "column-content-cards",
+      "blocks": {
+        "1636470578a33ad6f3-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1636470578a33ad6f3-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1636470578a33ad6f3-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1636470578a33ad6f3-0",
+        "1636470578a33ad6f3-1",
+        "1636470578a33ad6f3-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -337,8 +375,9 @@
     "featured_products",
     "163646666171e43149",
     "16364684436965f7cf",
-    "1636470578a33ad6f3",
+    "16364715337b2e2d80",
     "16364608963e5cc76f",
-    "16364545883ef8672a"
+    "16364545883ef8672a",
+    "1636470578a33ad6f3"
   ]
 }
