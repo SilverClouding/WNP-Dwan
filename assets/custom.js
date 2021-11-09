@@ -33,6 +33,11 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
     el: ".featured_col_Swiper .swiper-pagination",
     clickable: true,
   },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.mySwiper .swiper-button-next',
+    prevEl: '.mySwiper .swiper-button-prev',
+  },
   // And if we need scrollbar
   scrollbar: {
     el: '.featured_col_Swiper .swiper-scrollbar',
