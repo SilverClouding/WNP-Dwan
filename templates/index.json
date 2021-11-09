@@ -154,6 +154,59 @@
         "background_style": "primary"
       }
     },
+    "16364684436965f7cf": {
+      "type": "icon-text-section",
+      "blocks": {
+        "86c4d9b0-660f-4b82-8e3e-cc3173289ac0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Icon Text<\/p>"
+          }
+        },
+        "9c908212-0e53-46df-9ef8-021d728b48ad": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Icon Text<\/p>"
+          }
+        },
+        "eca67bd9-e73b-4211-b85f-c4a085660ce5": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Icon Text<\/p>"
+          }
+        },
+        "725613ab-b3ca-43d0-bc8c-69db86903ad9": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Icon Text<\/p>"
+          }
+        },
+        "58763729-9a45-44c3-8770-d8b51863092c": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Icon Text<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "86c4d9b0-660f-4b82-8e3e-cc3173289ac0",
+        "9c908212-0e53-46df-9ef8-021d728b48ad",
+        "eca67bd9-e73b-4211-b85f-c4a085660ce5",
+        "725613ab-b3ca-43d0-bc8c-69db86903ad9",
+        "58763729-9a45-44c3-8770-d8b51863092c"
+      ],
+      "settings": {
+        "heading": "Healthy pet care made easy",
+        "heading_size": "h1",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu.<\/p>",
+        "color_scheme": "background-1"
+      }
+    },
     "16364608963e5cc76f": {
       "type": "multicolumn",
       "blocks": {
@@ -235,6 +288,7 @@
     "1635762495f8f522da",
     "featured_products",
     "163646666171e43149",
+    "16364684436965f7cf",
     "16364608963e5cc76f",
     "16364545883ef8672a"
   ]
