@@ -24,9 +24,8 @@
     <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
-              {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+             
               {% assign spaced_image = true %}
-              {% endif %}
               <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                 <div class="media media--transparent media--adapt"
                      {% if section.settings.image_ratio == 'adapt' %}
