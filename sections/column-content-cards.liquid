@@ -61,6 +61,9 @@
                     >
                   </div>
                 </div>
+              {% else %}
+              
+               <div> {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}</div>
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
