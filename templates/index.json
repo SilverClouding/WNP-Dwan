@@ -182,12 +182,52 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "16364545883ef8672a": {
+      "type": "faq",
+      "blocks": {
+        "dff0aac7-5075-4660-872e-9f4345bc5989": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "886f17c3-f7eb-4e19-864c-819fbe70926a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "dff0aac7-5075-4660-872e-9f4345bc5989",
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
+        "886f17c3-f7eb-4e19-864c-819fbe70926a"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "1635762495f8f522da",
     "featured_products",
     "multi_column",
-    "rich_text"
+    "rich_text",
+    "16364545883ef8672a"
   ]
 }
