@@ -416,17 +416,17 @@ p{
   font-weight:900;
   line-height:16px;
 }
-.collection .swiper{
+.collection.collection .swiper{
   overflow:hidden;
 }
 .collection .swiper-wrapper{
   height:500px !important;
 }
-.swiper-scrollbar-drag{
+.collection .swiper-scrollbar-drag{
   background:##44444D;
   width:173px !important;
 }
-.swiper-horizontal>.swiper-scrollbar{
+.collection .swiper-horizontal>.swiper-scrollbar{
   width:422px !important;
   margin:0 auto;
   transform: translateX(-50%);
@@ -434,13 +434,15 @@ p{
   height:3px;
   background:#D3D6D9;
 }
-.collection .swiper-wrapper .swiper-slide .card-wrapper:hover .quick-view-button{
+/* .collection .swiper-wrapper .swiper-slide .card-wrapper:hover .quick-view-button{
 display:block;
 }
 .quick-view-button{
 display:none;
+} */
+.collection .swiper-wrapper.grid{
+flex-wrap:nowrap;
 }
-
 
 
 
