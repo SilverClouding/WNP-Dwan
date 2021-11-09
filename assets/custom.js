@@ -41,6 +41,7 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: '.featured_col_Swiper .swiper-scrollbar',
+    type: "progressbar",
   },
   breakpoints: {
     640: {
@@ -74,6 +75,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: '.multicolumn_Swiper .swiper-scrollbar',
+    type: "progressbar",
   },
   breakpoints: {
     640: {
