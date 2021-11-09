@@ -208,7 +208,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible tab",
-            "content": "",
+            "content": "<p>Incluude a heading that explains the contede a heading that explains the content.<\/p>",
             "page": "",
             "icon": "none"
           }
