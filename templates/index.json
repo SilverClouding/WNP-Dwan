@@ -163,14 +163,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Healthy pet care made easy",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu. <\/p>"
           }
         },
         "button": {
