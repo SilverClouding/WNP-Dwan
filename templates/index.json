@@ -192,7 +192,7 @@
             "heading": "Collapsible tab1",
             "content": "",
             "page": "",
-            "icon": "leaf"
+            "icon": "none"
           }
         },
         "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
@@ -201,7 +201,7 @@
             "heading": "Collapsible tab",
             "content": "",
             "page": "",
-            "icon": "check_mark"
+            "icon": "none"
           }
         },
         "886f17c3-f7eb-4e19-864c-819fbe70926a": {
@@ -210,7 +210,7 @@
             "heading": "Collapsible tab",
             "content": "",
             "page": "",
-            "icon": "check_mark"
+            "icon": "none"
           }
         }
       },
