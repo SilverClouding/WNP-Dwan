@@ -1,37 +1,58 @@
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
+
 <div section-name="icon-text-section" class="trust-badges icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="section_width custom-section-width">
   <div class="trust-badges_rich-text__blocks">
      <h2 class="{{ section.settings.heading_size }}" {{ section.shopify_attributes }}>{{ section.settings.heading | escape }}</h2>
      <div class="rich-text__text rte" {{ section.shopify_attributes }}>{{ section.settings.text }}</div>
   </div>
   
   
-  <ul class="icon-text-cont">
-    {%- for block in section.blocks -%}
-    <li>
-      <div class="icon-text-con">
-       <div class="image-with-text__media image-with-text__media--{{ block.settings.height }} {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if block.settings.height == 'adapt' and block.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+ <div class="slider-mobile-gutter section_width">
+      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+        id="Slider-{{ section.id }}"
+        role="list"
       >
-        {%- if block.settings.image != blank -%}
-          <img
-            srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-              {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
-              {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {{ block.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
-            src="{{ block.settings.image | img_url: '1500x' }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ block.settings.image.alt | escape }}"
-            loading="lazy"
-            width="{{ block.settings.image.width }}"
-            height="{{ block.settings.image.height }}"
-          >
-        {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
-      </div>
+    {%- for block in section.blocks -%}
+    <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+            <div class="multicolumn-card">
+              {%- if block.settings.image != blank -%}
+              {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+              {% assign spaced_image = true %}
+              {% endif %}
+              <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                     {% if section.settings.image_ratio == 'adapt' %}
+                     style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                     {% endif %}>
+                  <img
+                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                               {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                               {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                               {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}
+                               {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+                       src="{{ block.settings.image | img_url: '550x' }}"
+                       sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                              (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                              calc(100vw - 30px)"
+                       alt="{{ block.settings.image.alt }}"
+                       height="{{ block.settings.image.height }}"
+                       width="{{ block.settings.image.width }}"
+                       loading="lazy"
+                       >
+                </div>
+              </div>
+              {% else %}
+
+              <div> {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}</div>
+              {%- endif -%}
 
         {% if block.settings.title != blank or block.settings.text != blank %}
         <div class="multicolumn-card__info">
@@ -46,7 +67,8 @@
     {%- endfor -%}
   </ul>
 </div>
-
+</div>
+</div>
 
 
 
@@ -113,7 +135,17 @@
       ],
       "default": "background-1",
       "label": "t:sections.rich-text.settings.color_scheme.label"
-    }
+    },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      }
 ],
 "blocks": [
     {
