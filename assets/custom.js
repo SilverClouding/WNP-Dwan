@@ -35,8 +35,8 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.mySwiper .swiper-button-next',
-    prevEl: '.mySwiper .swiper-button-prev',
+    nextEl: '.featured_col_Swiper .swiper-button-next',
+    prevEl: '.featured_col_Swiper .swiper-button-prev',
   },
   // And if we need scrollbar
   scrollbar: {
