@@ -11,7 +11,7 @@
 </style>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="page-width section_width">
+  <div class="page-width ">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
         {{ section.settings.title | escape }}
@@ -21,9 +21,9 @@
       {%- endif -%}
     </div>
     {% if section.settings.swipe_on_mobile %}
-     <div class="slider-mobile-gutter swiper multicolumn_Swiper">
+     <div class="slider-mobile-gutter swiper multicolumn_Swiper section_width">
     {% else %}
-    <slider-component class="slider-mobile-gutter swiper">
+    <slider-component class="slider-mobile-gutter section_width ">
       {% endif %}
       
       
