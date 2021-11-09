@@ -148,6 +148,7 @@
       ],
       "settings": {
         "title": "",
+        "section_width": 100,
         "image_width": "third",
         "image_ratio": "square",
         "column_alignment": "left",
@@ -263,6 +264,7 @@
       ],
       "settings": {
         "title": "",
+        "section_width": 75,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
