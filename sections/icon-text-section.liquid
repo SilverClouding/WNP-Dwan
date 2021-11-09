@@ -38,9 +38,6 @@
           {%- if block.settings.title != blank -%}
           <h3>{{ block.settings.title | escape }}</h3>
           {%- endif -%}
-          {%- if block.settings.text != blank -%}
-          <div class="rte">{{ block.settings.text }}</div>
-          {%- endif -%}
         </div>
         {% endif %}
 
@@ -132,12 +129,6 @@
           "type": "text",
           "id": "title",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Icon Text</p>",
-          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
         }
       ]
     }
