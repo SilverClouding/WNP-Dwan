@@ -59,7 +59,7 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
 });
 
 // Multicolumn slider
-const featured_col_Swiper = new Swiper(".multicolumn_Swiper", {
+const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
