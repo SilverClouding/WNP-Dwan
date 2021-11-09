@@ -1,7 +1,14 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<style>
 
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
@@ -12,7 +19,7 @@
         <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
       {%- endif -%}
     </div>
-    <slider-component class="slider-mobile-gutter">
+    <slider-component class="slider-mobile-gutter section_width">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
@@ -183,6 +190,16 @@
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
     },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      },
     {
       "type": "text",
       "id": "button_label",
