@@ -22,6 +22,7 @@
             "button_label_1": "Shop Dogs",
             "button_link_1": "",
             "button_style_secondary_1": false,
+            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
             "button_label_2": "Shop Cats",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -46,6 +47,7 @@
             "button_label_1": "Shop Dogs",
             "button_link_1": "",
             "button_style_secondary_1": false,
+            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
             "button_label_2": "Shop Cats",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -83,6 +85,7 @@
         "163646666171e43149-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/beasty.png",
             "img_link": ""
           }
         },
@@ -147,8 +150,6 @@
         "163646666171e43149-8"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary"
       }
