@@ -1,46 +1,46 @@
 <div class="icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <ul class="icon-text-cont">
-{%- for block in section.blocks -%}
-          <li>
-            <div class="icon-text-con">
-             <div class="image-with-text__media image-with-text__media--{{ block.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if block.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
-      >
-        {%- if block.settings.image != blank -%}
+    {%- for block in section.blocks -%}
+    <li>
+      <div class="icon-text-con">
+        <div class="image-with-text__media image-with-text__media--{{ block.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+             {% if block.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+             >
+          {%- if block.settings.image != blank -%}
           <img
-            srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-              {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
-              {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
-            src="{{ block.settings.image | img_url: '1500x' }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ block.settings.image.alt | escape }}"
-            loading="lazy"
-            width="{{ block.settings.image.width }}"
-            height="{{ block.settings.image.height }}"
-          >
-        {%- else -%}
+               srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+                       {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+                       {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+                       {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                       {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
+                       {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+                       {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+               src="{{ block.settings.image | img_url: '1500x' }}"
+               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+               alt="{{ block.settings.image.alt | escape }}"
+               loading="lazy"
+               width="{{ block.settings.image.width }}"
+               height="{{ block.settings.image.height }}"
+               >
+          {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+          {%- endif -%}
+        </div>
+
+        {% if block.settings.title != blank or block.settings.text != blank %}
+        <div class="multicolumn-card__info">
+          {%- if block.settings.title != blank -%}
+          <h3>{{ block.settings.title | escape }}</h3>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+          <div class="rte">{{ block.settings.text }}</div>
+          {%- endif -%}
+        </div>
+        {% endif %}
+
       </div>
-              
-              {% if block.settings.title != blank or block.settings.text != blank %}
-              <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-              </div>
-              {% endif %}
-              
-            </div>
-          </li>
-        {%- endfor -%}
+    </li>
+    {%- endfor -%}
   </ul>
 </div>
 
@@ -49,8 +49,40 @@
 
 {% schema %}
   {
-    "name": "Icon text section",
+    "name": "Trust Badges",
     "settings": [
+		{
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
+        },
+	   {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        }
 ],
 "blocks": [
     {
@@ -79,7 +111,7 @@
   ],
   "presets": [
     {
-      "name": "Icon text section",
+      "name": "Trust Badges",
       "blocks": [
         
       ]
