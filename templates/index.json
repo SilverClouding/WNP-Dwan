@@ -184,6 +184,7 @@
         "58763729-9a45-44c3-8770-d8b51863092c": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/feeding-bottle_1.png",
             "title": "Grain Free"
           }
         }
