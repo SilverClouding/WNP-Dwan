@@ -58,6 +58,41 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
   },
 });
 
+// Multicolumn slider
+const featured_col_Swiper = new Swiper(".multicolumn_Swiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: ".multicolumn_Swiper .swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.multicolumn_Swiper .swiper-button-next',
+    prevEl: '.multicolumn_Swiper .swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.multicolumn_Swiper .swiper-scrollbar',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+
 jQuery(function($){
   //Quick View
   $(document).ready(function () {
