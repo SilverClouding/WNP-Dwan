@@ -175,11 +175,38 @@
             "title": "",
             "text": "<p>Keto<\/p>"
           }
+        },
+        "4109f7ca-2e1a-47de-9912-0133c8e42c0e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_413.png",
+            "title": "",
+            "text": "<p>Superfood<\/p>"
+          }
+        },
+        "c1a0b154-b2d4-467f-b313-e4c7b624e07f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector.png",
+            "title": "",
+            "text": "<p>Protein<\/p>"
+          }
+        },
+        "83cbd692-4f46-49fe-ac55-cb3c98631da7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feeding-bottle_1.png",
+            "title": "",
+            "text": "<p>Grain Free<\/p>"
+          }
         }
       },
       "block_order": [
         "61f8fc14-e6a9-46fd-9492-5d0666e88c33",
-        "597656e2-0978-448e-b555-46f6090cb2cd"
+        "597656e2-0978-448e-b555-46f6090cb2cd",
+        "4109f7ca-2e1a-47de-9912-0133c8e42c0e",
+        "c1a0b154-b2d4-467f-b313-e4c7b624e07f",
+        "83cbd692-4f46-49fe-ac55-cb3c98631da7"
       ],
       "settings": {
       }
