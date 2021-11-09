@@ -157,6 +157,24 @@
         "swipe_on_mobile": true
       }
     },
+    "1636457643b982dbbf": {
+      "type": "icon-text-section",
+      "blocks": {
+        "61f8fc14-e6a9-46fd-9492-5d0666e88c33": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collagen.png",
+            "title": "",
+            "text": "<p>Collagen<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "61f8fc14-e6a9-46fd-9492-5d0666e88c33"
+      ],
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -228,6 +246,7 @@
     "1635762495f8f522da",
     "featured_products",
     "multi_column",
+    "1636457643b982dbbf",
     "rich_text",
     "16364545883ef8672a"
   ]
