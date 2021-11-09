@@ -157,6 +157,32 @@
         "swipe_on_mobile": true
       }
     },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Healthy pet care made easy",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "1636457643b982dbbf": {
       "type": "icon-text-section",
       "blocks": {
@@ -211,32 +237,6 @@
       "settings": {
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Healthy pet care made easy",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "16364545883ef8672a": {
       "type": "faq",
       "blocks": {
@@ -282,8 +282,8 @@
     "1635762495f8f522da",
     "featured_products",
     "multi_column",
-    "1636457643b982dbbf",
     "rich_text",
+    "1636457643b982dbbf",
     "16364545883ef8672a"
   ]
 }
