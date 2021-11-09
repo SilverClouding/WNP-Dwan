@@ -245,16 +245,16 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "",
+            "text": "<p>Shop for top dog brands & accessories<\/p>"
           }
         },
         "16364608963e5cc76f-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_144.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "",
+            "text": "<p>Your cat deserves the best of everythingTypography<\/p>"
           }
         }
       },
