@@ -130,6 +130,29 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 });
 
 
+//image and only text slider
+const text_slider = new Swiper('.text_slider', {
+  autoHeight: true,
+  effect: "fade",
+
+  // If we need pagination
+  pagination: {
+    el: '.text_slider .swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.text_slider .swiper-button-next',
+    prevEl: '.text_slider .swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.text_slider .swiper-scrollbar',
+  },
+});
+
 
 
 
