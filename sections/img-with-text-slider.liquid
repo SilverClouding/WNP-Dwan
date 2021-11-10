@@ -37,6 +37,7 @@
         {% case block.type %}
         {%- when 'content' -%}
         <div class="swiper-slide">
+          <h4>{{section.settings.preheading}}</h4>
           <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
             {{ block.settings.heading | escape }}
           </h2>
