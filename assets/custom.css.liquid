@@ -444,7 +444,7 @@ height:358px !important;
 
 }
 
-/* collection */
+/* featured collection */
 .collection .title-wrapper-with-link{
   justify-content:center;
   margin-top:8rem;
@@ -494,6 +494,17 @@ height:358px !important;
 }
 .collection .card--outline:not(.card--soft){
   border:none;
+}
+
+.featured_col_Swiper {
+  visibility: hidden;
+  opacity: 0; 
+  transition: visibility 0s linear 0.33s, opacity 0.33s 
+}
+.featured_col_Swiper.active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 @media(max-width:992px){
