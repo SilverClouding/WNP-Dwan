@@ -68,7 +68,7 @@ const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
   },
   // And if we need scrollbar
   scrollbar: {
-    el: '.featured_col_Swiper .swiper-scrollbar',
+    el: '.featured_col_Swiper2 .swiper-scrollbar',
     type: "progressbar",
   },
   breakpoints: {
