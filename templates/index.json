@@ -69,8 +69,8 @@
       "settings": {
         "title": "What’s in store",
         "collection": "all",
-        "collection2": "3m",
-        "products_to_show": 8,
+        "collection2": "dog-best-sellers",
+        "products_to_show": 12,
         "show_view_all": false,
         "image_ratio": "square",
         "show_secondary_image": false,
