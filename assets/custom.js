@@ -329,6 +329,8 @@ jQuery(function($){
 // featured collection tab
 jQuery(function($){
   $('.col_tab li').on('click', function(){
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
 	var trigger = $(this).attr('triggervalue');
     $('.'+trigger).siblings().removeClass('active');
     $('.'+trigger).addClass('active');
