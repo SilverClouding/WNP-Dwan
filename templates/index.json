@@ -294,7 +294,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "layout": "image_first"
       }
     },
