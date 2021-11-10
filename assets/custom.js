@@ -374,9 +374,38 @@ jQuery(function($){
     var trigger = $(this).attr('triggervalue');
     
     if(trigger == 'col_1'){
-      featured_col_Swiper.on('transitionStart', function () {
-        console.log('transitionStart');
-      });
+    const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: ".featured_col_Swiper .swiper-pagination",
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.featured_col_Swiper .swiper-button-next',
+        prevEl: '.featured_col_Swiper .swiper-button-prev',
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.featured_col_Swiper .swiper-scrollbar',
+        type: "progressbar",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
     }else{
     const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
       slidesPerView: 2,
