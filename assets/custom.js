@@ -54,7 +54,7 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
     },
   },
 });
-const featured_col_Swiper = new Swiper(".featured_col_Swiper2", {
+const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
   slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
