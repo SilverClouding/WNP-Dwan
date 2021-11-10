@@ -22,6 +22,7 @@ const swiper = new Swiper('.mySwiper', {
 });
 
 // Featured collection slider
+function featured_col_Swiper(){
 const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
   slidesPerView: 2,
   spaceBetween: 10,
@@ -54,6 +55,7 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
     },
   },
 });
+}
 const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
   slidesPerView: 2,
   spaceBetween: 10,
