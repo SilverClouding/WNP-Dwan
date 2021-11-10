@@ -95,9 +95,9 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 
 
 
-
+ //Quick View
 jQuery(function($){
-  //Quick View
+ 
   $(document).ready(function () {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js").done(function() {
       quickView();
@@ -322,11 +322,15 @@ jQuery(function($){
   });
 
 
-  
-  
-  
-  
-  
+});
 
 
+
+// featured collection tab
+jQuery(function($){
+  $('.col_tab li').on('click', function(){
+	var trigger = $(this).attr('triggervalue');
+    $('.'+trigger).siblings().removeClass('active');
+    $('.'+trigger).addClass('active');
+  });
 });
