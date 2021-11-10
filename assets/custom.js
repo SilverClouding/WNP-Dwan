@@ -373,7 +373,7 @@ jQuery(function($){
     $(this).addClass('active');
     var trigger = $(this).attr('triggervalue');
     
-    if(trigger == 'col_1'){
+    if(trigger == 'col_1'){ }else{  }
     const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
       slidesPerView: 2,
       spaceBetween: 10,
@@ -406,7 +406,7 @@ jQuery(function($){
         },
       },
     });
-    }else{
+   
     const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
       slidesPerView: 2,
       spaceBetween: 10,
@@ -439,7 +439,7 @@ jQuery(function($){
         },
       },
     });
-    }
+  
     
     $('.'+trigger).siblings().removeClass('active');
     $('.'+trigger).addClass('active');
