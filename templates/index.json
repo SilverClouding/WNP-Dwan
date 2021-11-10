@@ -69,6 +69,7 @@
       "settings": {
         "title": "What’s in store",
         "collection": "all",
+        "collection2": "3m",
         "products_to_show": 8,
         "show_view_all": false,
         "image_ratio": "square",
