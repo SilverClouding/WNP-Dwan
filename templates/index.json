@@ -299,7 +299,7 @@
         "image_link": "",
         "height": "adapt",
         "color_scheme": "accent-1",
-        "full_width": true,
+        "full_width": false,
         "layout": "image_first"
       }
     },
