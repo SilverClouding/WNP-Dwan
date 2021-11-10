@@ -1,6 +1,15 @@
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
-  
-  
+  {%- for block in section.blocks -%}
+  {% case block.type %}
+  {%- when 'icon_text' -%}
+  <div class="icon__text_item">
+    <span>
+      <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}">
+    </span>
+    {{block.settings.svg_icon1_text}}
+  </div>
+  {%- endcase -%}
+  {%- endfor -%}
 </div>
 
 {% schema %}
