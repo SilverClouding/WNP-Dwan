@@ -56,6 +56,7 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
   },
 });
 }
+function featured_col_Swiper2(){
 const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
   slidesPerView: 2,
   spaceBetween: 10,
@@ -88,7 +89,9 @@ const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
     },
   },
 });
-
+}
+featured_col_Swiper();
+featured_col_Swiper2();
 
 // Multicolumn slider
 const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
