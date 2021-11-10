@@ -100,7 +100,9 @@
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
-          "payment_enable": false
+          "payment_enable": false,
+          "image": "shopify:\/\/shop_images\/one_colour_reversed_2_69fad1e4-a243-4373-8f36-36851debb5ff.png",
+          "logoHeading": "Animals can teach us to be better people."
         }
       }
     },
