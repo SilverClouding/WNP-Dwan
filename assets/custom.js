@@ -362,6 +362,8 @@ jQuery(function($){
 // featured collection tab
 jQuery(function($){
   $('.col_tab li').on('click', function(){
+    featured_col_Swiper2();
+    featured_col_Swiper();
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
 	var trigger = $(this).attr('triggervalue');
