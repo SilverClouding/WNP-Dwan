@@ -50,6 +50,27 @@
               "menu": "footer"
             }
           },
+          "c6a862b0-bf42-4945-a8ba-496dfc200391": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "1c039be8-6e83-461c-9115-015f78258b5e": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "8c00c00b-083f-4804-b0fd-c3c274c3a176": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
           "footer-1": {
             "type": "text",
             "settings": {
@@ -60,6 +81,9 @@
         },
         "block_order": [
           "footer-0",
+          "c6a862b0-bf42-4945-a8ba-496dfc200391",
+          "1c039be8-6e83-461c-9115-015f78258b5e",
+          "8c00c00b-083f-4804-b0fd-c3c274c3a176",
           "footer-1"
         ],
         "settings": {
