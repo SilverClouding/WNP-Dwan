@@ -132,7 +132,6 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 
 //image and only text slider
 const text_slider = new Swiper('.text_slider', {
-  autoHeight: true,
   effect: "slide",
 
   // If we need pagination
