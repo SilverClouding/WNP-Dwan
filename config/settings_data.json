@@ -104,6 +104,77 @@
           "image": "shopify:\/\/shop_images\/one_colour_reversed_2_69fad1e4-a243-4373-8f36-36851debb5ff.png",
           "logoHeading": "Animals can teach us to be better people."
         }
+      },
+      "featured-content-block": {
+        "type": "featured-content-block",
+        "blocks": {
+          "6aad0037-229a-4620-bee4-1062816db5cf": {
+            "type": "icon_text",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/freedelivery.png",
+              "svg_icon1_text": "<p>Free Delivery<\/p>"
+            }
+          },
+          "52d5e5ff-c33d-4062-b246-61780b9d829e": {
+            "type": "icon_text",
+            "settings": {
+              "svg_icon1_text": "<p>Free Delivery<\/p>"
+            }
+          },
+          "c10c9531-0b07-4473-996c-723a1204f2b7": {
+            "type": "icon_text",
+            "settings": {
+              "svg_icon1_text": "<p>Free Delivery<\/p>"
+            }
+          },
+          "ce19bb72-db5f-4aed-80c7-96035e5ed571": {
+            "type": "icon_text",
+            "settings": {
+              "svg_icon1_text": "<p>Free Delivery<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "6aad0037-229a-4620-bee4-1062816db5cf",
+          "52d5e5ff-c33d-4062-b246-61780b9d829e",
+          "c10c9531-0b07-4473-996c-723a1204f2b7",
+          "ce19bb72-db5f-4aed-80c7-96035e5ed571"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "full_width": true
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "56b6ee6e-7690-4242-a676-82b85344e523": {
+            "type": "heading",
+            "settings": {
+              "heading": "Subscribe to our emails"
+            }
+          },
+          "2baf3191-b166-4e6a-97b6-9214fd1bd902": {
+            "type": "paragraph",
+            "settings": {
+              "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            }
+          },
+          "2a48a4aa-5870-4a1f-b781-250d1e092874": {
+            "type": "email_form",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "56b6ee6e-7690-4242-a676-82b85344e523",
+          "2baf3191-b166-4e6a-97b6-9214fd1bd902",
+          "2a48a4aa-5870-4a1f-b781-250d1e092874"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "full_width": true
+        }
       }
     },
     "content_for_index": [
