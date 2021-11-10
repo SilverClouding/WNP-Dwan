@@ -1,6 +1,12 @@
+<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+  
+  
+</div>
+
 {% schema %}
   {
     "name": "Featured Content Block",
+ "class": "spaced-section spaced-section--full-width",
     "settings": [
 	{
       "type": "select",
@@ -29,6 +35,12 @@
       ],
       "default": "background-1",
       "label": "t:sections.image-with-text.settings.color_scheme.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
     }
 	],
 	"blocks": [
