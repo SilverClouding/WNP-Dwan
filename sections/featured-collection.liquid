@@ -93,7 +93,7 @@
   
   
   {% if section.settings.collection2 != blank %}
-  <div class="slider-mobile-gutter  swiper featured_col_Swiper col_2">
+  <div class="slider-mobile-gutter  swiper featured_col_Swiper2 col_2">
     <ul class="swiper-wrapper gridd grid--2-col product-grid{% if products_to_display == 4 or section.settings.collection2 == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection2.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection2.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection2.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
       {%- for product2 in section.settings.collection2.products limit: section.settings.products_to_show -%}
       <li class="swiper-slide grid__item{% if section.settings.collection2.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
