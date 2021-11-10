@@ -367,8 +367,70 @@ jQuery(function($){
 // featured collection tab
 jQuery(function($){
   $('.col_tab li').on('click', function(){
-   featured_col_Swiper();
-featured_col_Swiper2();
+    const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: ".featured_col_Swiper .swiper-pagination",
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.featured_col_Swiper .swiper-button-next',
+        prevEl: '.featured_col_Swiper .swiper-button-prev',
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.featured_col_Swiper .swiper-scrollbar',
+        type: "progressbar",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
+    const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: ".featured_col_Swiper2 .swiper-pagination",
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.featured_col_Swiper2 .swiper-button-next',
+        prevEl: '.featured_col_Swiper2 .swiper-button-prev',
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.featured_col_Swiper2 .swiper-scrollbar',
+        type: "progressbar",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     var trigger = $(this).attr('triggervalue');
