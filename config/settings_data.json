@@ -78,9 +78,9 @@
             "type": "contact",
             "settings": {
               "heading": "Contact Us",
-              "svg_icon1": "",
+              "svg_icon1": "shopify:\/\/shop_images\/Vector_198b4903-03d2-484e-8b9b-8c101a979b66.png",
               "svg_icon1_text": "<p><a href=\"tel:+852 2552 6200\" title=\"tel:+852 2552 6200\">+852 2552 6200<\/a><\/p>",
-              "svg_icon2": "",
+              "svg_icon2": "shopify:\/\/shop_images\/whatsapp_1.png",
               "svg_icon2_text": "<p><a href=\"tel:+852 9696 6200\" title=\"tel:+852 9696 6200\">+852 9696 6200<\/a><\/p>",
               "menuItem": "footer"
             }
