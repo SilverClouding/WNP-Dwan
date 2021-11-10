@@ -255,6 +255,48 @@
         "swipe_on_mobile": false
       }
     },
+    "16365383186b9876cd": {
+      "type": "img-with-text-slider",
+      "blocks": {
+        "16365383186b9876cd-0": {
+          "type": "content",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "16365383186b9876cd-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "16365383186b9876cd-2": {
+          "type": "content",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16365383186b9876cd-0",
+        "16365383186b9876cd-1",
+        "16365383186b9876cd-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "16364545883ef8672a": {
       "type": "faq",
       "blocks": {
@@ -348,6 +390,7 @@
     "163646666171e43149",
     "16364684436965f7cf",
     "16364715337b2e2d80",
+    "16365383186b9876cd",
     "16364545883ef8672a",
     "1636470578a33ad6f3"
   ]
