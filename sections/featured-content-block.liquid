@@ -1,7 +1,36 @@
 {% schema %}
   {
     "name": "Featured Content Block",
-    "settings": [],
+    "settings": [
+	{
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "accent-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.image-with-text.settings.color_scheme.label"
+    }
+	],
 	"blocks": [
     {
       "type": "icon_text",
