@@ -26,12 +26,20 @@
     <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
     {%- endif -%}
   </div>
+  
+  {% if section.settings.collection2 != blank %}
   <div class="col_tab">
     <ul>
+
+      {% if section.settings.collection != blank %}
       <li triggerValue="col_1"><h3>{{section.settings.collection.title}}</h3></li>
+      {% elsif section.settings.collection2 != blank %}
       <li triggerValue="col_2"><h3>{{section.settings.collection2.title}}</h3></li>
+
+      {% endif %}
     </ul>
   </div>
+  {% endif %}
   
   
   
