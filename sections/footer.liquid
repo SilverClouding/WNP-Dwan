@@ -51,6 +51,13 @@
                       {%- endfor -%}
                     </ul>
                   {%- endif -%}
+              
+                {%- when 'contact' -%}
+                <ul class="footer-block__details-content list-unstyled">
+
+                </ul>
+              
+              
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
