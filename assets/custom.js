@@ -138,6 +138,7 @@ const text_slider = new Swiper('.text_slider', {
   pagination: {
     el: '.text_slider .swiper-pagination',
     clickable: true,
+    type: 'bullets',
   },
 
   // Navigation arrows
