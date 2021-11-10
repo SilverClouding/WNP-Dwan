@@ -414,77 +414,6 @@
       "settings": {
         "title": "Frequently asked questions"
       }
-    },
-    "16365487286d295827": {
-      "type": "newsletter",
-      "blocks": {
-        "16365487286d295827-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails"
-          }
-        },
-        "16365487286d295827-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "16365487286d295827-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16365487286d295827-0",
-        "16365487286d295827-1",
-        "16365487286d295827-2"
-      ],
-      "settings": {
-        "color_scheme": "background-2",
-        "full_width": true
-      }
-    },
-    "163655177065ab5ac3": {
-      "type": "featured-content-block",
-      "blocks": {
-        "163655177065ab5ac3-0": {
-          "type": "icon_text",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/freedelivery.png",
-            "svg_icon1_text": "<p>Free Delivery<\/p>"
-          }
-        },
-        "163655177065ab5ac3-1": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "<p>Free Delivery<\/p>"
-          }
-        },
-        "163655177065ab5ac3-2": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "<p>Free Delivery<\/p>"
-          }
-        },
-        "163655177065ab5ac3-3": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "<p>Free Delivery<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163655177065ab5ac3-0",
-        "163655177065ab5ac3-1",
-        "163655177065ab5ac3-2",
-        "163655177065ab5ac3-3"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": false
-      }
     }
   },
   "order": [
@@ -496,8 +425,6 @@
     "16365383186b9876cd",
     "1636470578a33ad6f3",
     "16365411454faad6c2",
-    "16364545883ef8672a",
-    "16365487286d295827",
-    "163655177065ab5ac3"
+    "16364545883ef8672a"
   ]
 }
