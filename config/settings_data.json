@@ -49,29 +49,29 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "About Us",
+              "menu": "our-story"
             }
           },
           "c6a862b0-bf42-4945-a8ba-496dfc200391": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Customer Care",
+              "menu": "customer-care"
             }
           },
           "1c039be8-6e83-461c-9115-015f78258b5e": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Service",
+              "menu": "our-services"
             }
           },
           "8c00c00b-083f-4804-b0fd-c3c274c3a176": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Community",
+              "menu": "community"
             }
           },
           "footer-1": {
