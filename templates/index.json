@@ -299,6 +299,7 @@
         "image_link": "",
         "height": "adapt",
         "color_scheme": "accent-1",
+        "full_width": true,
         "layout": "image_first"
       }
     },
@@ -444,6 +445,46 @@
         "color_scheme": "background-2",
         "full_width": true
       }
+    },
+    "163655177065ab5ac3": {
+      "type": "featured-content-block",
+      "blocks": {
+        "163655177065ab5ac3-0": {
+          "type": "icon_text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/freedelivery.png",
+            "svg_icon1_text": "<p>Free Delivery<\/p>"
+          }
+        },
+        "163655177065ab5ac3-1": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "<p>Free Delivery<\/p>"
+          }
+        },
+        "163655177065ab5ac3-2": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "<p>Free Delivery<\/p>"
+          }
+        },
+        "163655177065ab5ac3-3": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "<p>Free Delivery<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163655177065ab5ac3-0",
+        "163655177065ab5ac3-1",
+        "163655177065ab5ac3-2",
+        "163655177065ab5ac3-3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -456,6 +497,7 @@
     "1636470578a33ad6f3",
     "16365411454faad6c2",
     "16364545883ef8672a",
-    "16365487286d295827"
+    "16365487286d295827",
+    "163655177065ab5ac3"
   ]
 }
