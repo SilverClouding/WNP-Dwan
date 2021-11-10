@@ -81,11 +81,15 @@
               "menu": "footer"
             }
           },
-          "footer-1": {
-            "type": "text",
+          "28ec04cd-7720-46b9-b81c-c71f19116be4": {
+            "type": "contact",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "Contact Us",
+              "svg_icon1": "",
+              "svg_icon1_text": "<p>+852 2552 6200<\/p>",
+              "svg_icon2": "",
+              "svg_icon2_text": "<p>+852 9696 6200<\/p>",
+              "menuItem": ""
             }
           }
         },
@@ -95,7 +99,7 @@
           "1c039be8-6e83-461c-9115-015f78258b5e",
           "8c00c00b-083f-4804-b0fd-c3c274c3a176",
           "f728a144-921f-4682-80ab-8c242eca0b9f",
-          "footer-1"
+          "28ec04cd-7720-46b9-b81c-c71f19116be4"
         ],
         "settings": {
           "color_scheme": "accent-1",
