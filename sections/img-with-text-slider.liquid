@@ -27,25 +27,43 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="grid__item">
-      <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
+    <div class="grid__item swiper text_slider">
+      
+      <div class="swiper-wrapper image-with-text__content image-with-text__content--{{ section.settings.height }}">
+     
+        
         {%- for block in section.blocks -%}
-          {% case block.type %}
-            {%- when 'content' -%}
-              <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | escape }}
-              </h2>
-           
-              <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-            
-              {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
-                </a>
-              {%- endif -%}
-          {%- endcase -%}
+        {% case block.type %}
+        {%- when 'content' -%}
+        <div class="swiper-slide">
+          <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+            {{ block.settings.heading | escape }}
+          </h2>
+
+          <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+
+          {%- if block.settings.button_label != blank -%}
+          <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+          {%- endif -%}
+        </div>
+        {%- endcase -%}
         {%- endfor -%}
+        
+        
       </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+      
     </div>
   </div>
 </div>
