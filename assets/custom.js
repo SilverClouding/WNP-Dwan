@@ -1,6 +1,4 @@
-
 // Banner slideShow
-
 const swiper = new Swiper('.mySwiper', {
   autoHeight: true,
   effect: "fade",
@@ -22,8 +20,6 @@ const swiper = new Swiper('.mySwiper', {
     el: '.mySwiper .swiper-scrollbar',
   },
 });
-
-
 
 // Featured collection slider
 const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
@@ -94,6 +90,9 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
     },
   },
 });
+
+
+
 
 
 
