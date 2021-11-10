@@ -255,12 +255,6 @@
         "swipe_on_mobile": false
       }
     },
-    "1636538322f231ac96": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{{}}"
-      }
-    },
     "16365383186b9876cd": {
       "type": "img-with-text-slider",
       "blocks": {
@@ -302,46 +296,6 @@
         "height": "adapt",
         "color_scheme": "accent-1",
         "layout": "image_first"
-      }
-    },
-    "16364545883ef8672a": {
-      "type": "faq",
-      "blocks": {
-        "dff0aac7-5075-4660-872e-9f4345bc5989": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible tab1",
-            "content": "<p>eeeeeeeeeeefdsa eeeeeeeeeeefdsa<\/p><p>eeeeeeeeeeefdsa eeeeeeeeeeefdsaeeeeeeeeeeefdsa<\/p>",
-            "page": "",
-            "icon": "none"
-          }
-        },
-        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible tab",
-            "content": "",
-            "page": "",
-            "icon": "none"
-          }
-        },
-        "886f17c3-f7eb-4e19-864c-819fbe70926a": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible tab",
-            "content": "<p>Incluude a heading that explains the contede a heading that explains the content.<\/p>",
-            "page": "",
-            "icon": "none"
-          }
-        }
-      },
-      "block_order": [
-        "dff0aac7-5075-4660-872e-9f4345bc5989",
-        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
-        "886f17c3-f7eb-4e19-864c-819fbe70926a"
-      ],
-      "settings": {
-        "title": "Frequently asked questions"
       }
     },
     "1636470578a33ad6f3": {
@@ -389,6 +343,72 @@
         "section_width": 100,
         "swipe_on_mobile": false
       }
+    },
+    "16364545883ef8672a": {
+      "type": "faq",
+      "blocks": {
+        "dff0aac7-5075-4660-872e-9f4345bc5989": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab1",
+            "content": "<p>eeeeeeeeeeefdsa eeeeeeeeeeefdsa<\/p><p>eeeeeeeeeeefdsa eeeeeeeeeeefdsaeeeeeeeeeeefdsa<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "886f17c3-f7eb-4e19-864c-819fbe70926a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "<p>Incluude a heading that explains the contede a heading that explains the content.<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "dff0aac7-5075-4660-872e-9f4345bc5989",
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
+        "886f17c3-f7eb-4e19-864c-819fbe70926a"
+      ],
+      "settings": {
+        "title": "Frequently asked questions"
+      }
+    },
+    "16365411454faad6c2": {
+      "type": "rich-text",
+      "blocks": {
+        "16365411454faad6c2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "16365411454faad6c2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16365411454faad6c2-0",
+        "16365411454faad6c2-1"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -397,9 +417,9 @@
     "163646666171e43149",
     "16364684436965f7cf",
     "16364715337b2e2d80",
-    "1636538322f231ac96",
     "16365383186b9876cd",
+    "1636470578a33ad6f3",
     "16364545883ef8672a",
-    "1636470578a33ad6f3"
+    "16365411454faad6c2"
   ]
 }
