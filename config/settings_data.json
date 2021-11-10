@@ -9,6 +9,9 @@
     "colors_background_2": "#fff9ee",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
