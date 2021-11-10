@@ -74,6 +74,13 @@
               "menu": "community"
             }
           },
+          "f728a144-921f-4682-80ab-8c242eca0b9f": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
           "footer-1": {
             "type": "text",
             "settings": {
@@ -87,6 +94,7 @@
           "c6a862b0-bf42-4945-a8ba-496dfc200391",
           "1c039be8-6e83-461c-9115-015f78258b5e",
           "8c00c00b-083f-4804-b0fd-c3c274c3a176",
+          "f728a144-921f-4682-80ab-8c242eca0b9f",
           "footer-1"
         ],
         "settings": {
