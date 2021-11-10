@@ -154,12 +154,6 @@
               "heading": "Get 15% Off"
             }
           },
-          "2baf3191-b166-4e6a-97b6-9214fd1bd902": {
-            "type": "paragraph",
-            "settings": {
-              "text": "<p>Enter your email and get exclusive info and latest offers from us with just 1 click. That’s Pawsome news! <\/p>"
-            }
-          },
           "2a48a4aa-5870-4a1f-b781-250d1e092874": {
             "type": "email_form",
             "settings": {
@@ -168,7 +162,6 @@
         },
         "block_order": [
           "56b6ee6e-7690-4242-a676-82b85344e523",
-          "2baf3191-b166-4e6a-97b6-9214fd1bd902",
           "2a48a4aa-5870-4a1f-b781-250d1e092874"
         ],
         "settings": {
