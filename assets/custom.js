@@ -148,9 +148,9 @@ const text_slider = new Swiper('.text_slider', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.text_slider .swiper-scrollbar',
-  },
+//   scrollbar: {
+//     el: '.text_slider .swiper-scrollbar',
+//   },
 });
 
 
