@@ -261,6 +261,7 @@
         "16365383186b9876cd-0": {
           "type": "content",
           "settings": {
+            "preheading": "Story",
             "heading": "Image with text1",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
@@ -270,6 +271,7 @@
         "16365383186b9876cd-1": {
           "type": "content",
           "settings": {
+            "preheading": "Story",
             "heading": "Image with text2",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
@@ -279,6 +281,7 @@
         "16365383186b9876cd-2": {
           "type": "content",
           "settings": {
+            "preheading": "Story",
             "heading": "Image with text3",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
@@ -293,6 +296,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
+        "image_link": "",
         "height": "adapt",
         "color_scheme": "accent-1",
         "layout": "image_first"
@@ -344,6 +348,32 @@
         "swipe_on_mobile": false
       }
     },
+    "16365411454faad6c2": {
+      "type": "rich-text",
+      "blocks": {
+        "16365411454faad6c2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "16365411454faad6c2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16365411454faad6c2-0",
+        "16365411454faad6c2-1"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": false
+      }
+    },
     "16364545883ef8672a": {
       "type": "faq",
       "blocks": {
@@ -384,30 +414,35 @@
         "title": "Frequently asked questions"
       }
     },
-    "16365411454faad6c2": {
-      "type": "rich-text",
+    "16365487286d295827": {
+      "type": "newsletter",
       "blocks": {
-        "16365411454faad6c2-0": {
+        "16365487286d295827-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "Subscribe to our emails"
           }
         },
-        "16365411454faad6c2-1": {
-          "type": "text",
+        "16365487286d295827-1": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16365487286d295827-2": {
+          "type": "email_form",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "16365411454faad6c2-0",
-        "16365411454faad6c2-1"
+        "16365487286d295827-0",
+        "16365487286d295827-1",
+        "16365487286d295827-2"
       ],
       "settings": {
         "color_scheme": "background-2",
-        "full_width": false
+        "full_width": true
       }
     }
   },
@@ -419,7 +454,8 @@
     "16364715337b2e2d80",
     "16365383186b9876cd",
     "1636470578a33ad6f3",
+    "16365411454faad6c2",
     "16364545883ef8672a",
-    "16365411454faad6c2"
+    "16365487286d295827"
   ]
 }
