@@ -54,6 +54,39 @@ const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
     },
   },
 });
+const featured_col_Swiper = new Swiper(".featured_col_Swiper2", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: ".featured_col_Swiper2 .swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.featured_col_Swiper2 .swiper-button-next',
+    prevEl: '.featured_col_Swiper2 .swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.featured_col_Swiper .swiper-scrollbar',
+    type: "progressbar",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+  },
+});
+
 
 // Multicolumn slider
 const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
