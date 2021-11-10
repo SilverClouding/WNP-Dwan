@@ -6,7 +6,8 @@
       <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
-        {%- if section.settings.image != blank -%}
+       <a href="{{section.settings.image_link}}"> 
+         {%- if section.settings.image != blank -%}
           <img
             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
               {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
@@ -25,6 +26,7 @@
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
+        </a>
       </div>
     </div>
     
@@ -82,6 +84,11 @@
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
     },
+{
+          "type": "url",
+          "id": "image_link",
+          "label": "image link"
+        },
     {
       "type": "select",
       "id": "height",
