@@ -379,15 +379,21 @@ a.btn.close-bag svg {
   top:0.4rem;
   bottom:unset;
 }
+.header__icon, .header__icon--cart .icon {
+  height: 30px;
+  width: 30px;
+}
 .header .header__icon svg, .header .header__icon--cart .icon svg{
-    height: 30px;
+  height: 30px;
   width: 30px;
 }
 .header .header__icon--account svg{
   height: 24px;
   width: 24px;
 }
-.header__icon--account{}
+.header .header__icons a{
+border-right:1px solid #fff;
+}
 /* search bar */
 .search-focused{
   width:100%;
@@ -440,7 +446,7 @@ a.btn.close-bag svg {
 
   }
   .header .header__icon--cart{
-  margin-right:0;
+    margin-right:0;
   }
 
 }
