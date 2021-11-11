@@ -395,18 +395,22 @@ a.btn.close-bag svg {
 border-right:1px solid #fff;
 } */
 .header .header__icon--account{
-position:relative;
+  position:relative;
+}
+.header .header__icon--account:before, .header .header__icon--account:after{
+  border-left: 1px solid #fff;
+  position: absolute;
+  content: '';
+  width: 1px;
+  height:25px;
+  background: #fff;
 }
 .header .header__icon--account:before{
-    border-left: 1px solid #fff;
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 1px;
-    background: #fff;
+  left: -15px;
 }
-
-
+.header .header__icon--account:before{
+  right: -15px;
+}
 
 
 /* search bar */
