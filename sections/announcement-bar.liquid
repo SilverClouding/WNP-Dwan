@@ -55,19 +55,7 @@
   "name": "t:sections.announcement-bar.name",
   "max_blocks": 12,
 	"settings": [
-  ],
-  "blocks": [
-    {
-      "type": "announcement",
-      "name": "t:sections.announcement-bar.blocks.announcement.name",
-      "settings": [
-        {
-          "type": "html",
-          "id": "text",
-"default": "<p>Welcome to our store</p>",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        },
-        {
+	{
           "type": "select",
           "id": "color_scheme",
           "options": [
@@ -94,6 +82,18 @@
           ],
           "default": "accent-1",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.label"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "html",
+          "id": "text",
+"default": "<p>Welcome to our store</p>",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
           "type": "url",
