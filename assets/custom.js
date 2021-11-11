@@ -36,72 +36,72 @@ const swiper = new Swiper('.mySwiper', {
 
 // Featured collection slider
 function featured_col_Swiper(){
-const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
-  slidesPerView: 2,
-  spaceBetween: 10,
-  pagination: {
-    el: ".featured_col_Swiper .swiper-pagination",
-    clickable: true,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.featured_col_Swiper .swiper-button-next',
-    prevEl: '.featured_col_Swiper .swiper-button-prev',
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.featured_col_Swiper .swiper-scrollbar',
-    type: "progressbar",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+  const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: ".featured_col_Swiper .swiper-pagination",
+      clickable: true,
     },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 10,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.featured_col_Swiper .swiper-button-next',
+      prevEl: '.featured_col_Swiper .swiper-button-prev',
     },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.featured_col_Swiper .swiper-scrollbar',
+      type: "progressbar",
     },
-  },
-});
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+    },
+  });
 }
 function featured_col_Swiper2(){
-const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
-  slidesPerView: 2,
-  spaceBetween: 10,
-  pagination: {
-    el: ".featured_col_Swiper2 .swiper-pagination",
-    clickable: true,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.featured_col_Swiper2 .swiper-button-next',
-    prevEl: '.featured_col_Swiper2 .swiper-button-prev',
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.featured_col_Swiper2 .swiper-scrollbar',
-    type: "progressbar",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+  const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: ".featured_col_Swiper2 .swiper-pagination",
+      clickable: true,
     },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 10,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.featured_col_Swiper2 .swiper-button-next',
+      prevEl: '.featured_col_Swiper2 .swiper-button-prev',
     },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.featured_col_Swiper2 .swiper-scrollbar',
+      type: "progressbar",
     },
-  },
-});
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+    },
+  });
 }
 featured_col_Swiper();
 featured_col_Swiper2();
@@ -132,12 +132,12 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
     768: {
       slidesPerView: 4,
       spaceBetween: 10,
-//        loop: true,
+      //        loop: true,
     },
     1024: {
       slidesPerView: 6,
       spaceBetween: 10,
-//        loop: true,
+      //        loop: true,
     },
   },
 });
@@ -161,17 +161,17 @@ const text_slider = new Swiper('.text_slider', {
   },
 
   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.text_slider .swiper-scrollbar',
-//   },
+  //   scrollbar: {
+  //     el: '.text_slider .swiper-scrollbar',
+  //   },
 });
 
 
 
 
- //Quick View
+//Quick View
 jQuery(function($){
- 
+
   $(document).ready(function () {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js").done(function() {
       quickView();
@@ -344,9 +344,9 @@ jQuery(function($){
                           null,
                           "json"
                          ).done(function () {
-                
-                
-                
+
+
+
                 $.getJSON('/?sections=cart-items', function(data) {      
                   var sectionHtmlData = data; 
                   console.log(data);
@@ -361,11 +361,11 @@ jQuery(function($){
                   });
 
                 });
-                
-                
-//                 $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
-              
-              
+
+
+                //                 $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
+
+
               })
               .fail(function ($xhr) {
                 var data = $xhr.responseJSON;
@@ -403,12 +403,12 @@ jQuery(function($){
 // featured collection tab
 jQuery(function($){
   $('.col_tab li').on('click', function(){
-    
-    
+
+
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     var trigger = $(this).attr('triggervalue');
-    
+
     if(trigger == 'col_1'){ }else{  }
     const featured_col_Swiper = new Swiper(".featured_col_Swiper", {
       slidesPerView: 2,
@@ -442,7 +442,7 @@ jQuery(function($){
         },
       },
     });
-   
+
     const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
       slidesPerView: 2,
       spaceBetween: 10,
@@ -475,8 +475,8 @@ jQuery(function($){
         },
       },
     });
-  
-    
+
+
     $('.'+trigger).siblings().removeClass('active');
     $('.'+trigger).addClass('active');
   });
