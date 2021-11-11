@@ -344,7 +344,6 @@ margin-right:13px;
 /* custom select box  */
 
 select {
-  appearance: none;
   outline: 0;
   border: 0;
   box-shadow: none;
@@ -357,7 +356,7 @@ select {
   display: flex;
   overflow: hidden;
 }
-select:after{
+/* select:after{
  position:absolute;
   right:0;
   top:0px;
@@ -365,7 +364,7 @@ select:after{
   background:url({{ 'arrow.png' | asset_url }}) center no-repeat;
   width:8px;
   height:5px;
-}
+} */
 /* Remove IE arrow */
 select::-ms-expand {
   display: none;
