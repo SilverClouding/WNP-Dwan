@@ -25,17 +25,15 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
   padding: 0;
   position: fixed;
   z-index: 9999;
-  height: 100vh; }
+  height: 100vh; transition: all .5s ease-in-out;}
 
 .hide-minibag {
   transform: translateX(110%);
-  transition: all .5s ease-in-out;
   visibility: hidden;
   width: 0 !important;
   overflow-x: hidden; }
 
 .show-minibag {
-  transition: all .5s ease-in-out;
   transform: translateX(0%);
   visibility: visible;
   overflow-x: hidden; }
