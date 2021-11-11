@@ -1,3 +1,14 @@
+// announcement slideShow
+const swiper = new Swiper('.announcement_text_slider', {
+  autoHeight: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+
 // Banner slideShow
 const swiper = new Swiper('.mySwiper', {
   autoHeight: true,
