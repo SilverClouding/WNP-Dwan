@@ -9,13 +9,13 @@
     {%- if block.settings.link != blank -%}
     <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
       {%- endif -%}
-      {{block.settings.icon}}
-      <p class="announcement-bar__message h5">
-        {{ block.settings.text }}
+     
+      <div class="announcement-bar__message h5">
+        {{block.settings.icon}} {{ block.settings.text }}
         {%- if block.settings.link != blank -%}
         {% render 'icon-arrow' %}
         {%- endif -%}
-      </p>
+      </div>
       {%- if block.settings.link != blank -%}
     </a>
     {%- endif -%}
