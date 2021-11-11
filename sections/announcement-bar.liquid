@@ -1,6 +1,6 @@
 
 <div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ section.shopify_attributes }}>
-  <div class="page-width announcement-bar-con swiper announcement_text_slider">
+  <div class="page-width announcement-bar-con swiper {% if section.blocks.size > 1 %}announcement_text_slider{% endif %}">
     <div class="announcement_content-wrap swiper-wrapper">
     {%- for block in section.blocks -%}
     {%- case block.type -%}
