@@ -1,5 +1,5 @@
 
-<div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+<div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ section.shopify_attributes }}>
   <div class="page-width announcement-bar-con">
     {%- for block in section.blocks -%}
 {%- case block.type -%}
