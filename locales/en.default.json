@@ -36,8 +36,7 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search",
-      "placeholder": "Let’s search something for your pet..."
+      "search": "Let’s search something for your pet..."
     },
     "cart": {
       "view": "View my cart ({{ count }})",
