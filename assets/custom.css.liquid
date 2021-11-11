@@ -362,7 +362,7 @@ select::-ms-expand {
   display: none;
 }
 /* Custom Select wrapper */
-.select {
+select {
   position: relative;
   display: flex;
   width: 20em;
@@ -370,7 +370,10 @@ select::-ms-expand {
   border-radius: .25em;
   overflow: hidden;
 }
-
+select:focus, select:hover{
+border:none;
+  box-shadow:none;
+}
 
 
 
