@@ -391,9 +391,24 @@ a.btn.close-bag svg {
   height: 24px;
   width: 24px;
 }
-.header .header__icons a{
+/* .header .header__icons a{
 border-right:1px solid #fff;
+} */
+.header .header__icon--account{
+position:relative;
 }
+.header .header__icon--account:before{
+    border-left: 1px solid #fff;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 1px;
+    background: #fff;
+}
+
+
+
+
 /* search bar */
 .search-focused{
   width:100%;
