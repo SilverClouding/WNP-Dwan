@@ -2,6 +2,8 @@
 const announcement_text_slider = new Swiper('.announcement_text_slider', {
   autoHeight: true,
   centeredSlides: true,
+  freeMode: true,
+  loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
