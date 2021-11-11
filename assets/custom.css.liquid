@@ -357,7 +357,19 @@ select {
   display: flex;
   overflow: hidden;
 }
-
+select:after{
+ position:absolute;
+  right:0;
+  top:0px;
+  content:'';
+  background:url({{ 'arrow.png' | asset_url }}) center no-repeat;
+  width:8px;
+  height:5px;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
 
 select:focus, select:hover{
 border:none;
