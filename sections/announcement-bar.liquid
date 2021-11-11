@@ -13,9 +13,11 @@
 
         <div class="announcement-bar__message h5">
           {{block.settings.icon}} {{ block.settings.text }}
+          {%- comment -%}
           {%- if block.settings.link != blank -%}
           {% render 'icon-arrow' %}
           {%- endif -%}
+           {%- endcomment -%}
         </div>
         {%- if block.settings.link != blank -%}
       </a>
