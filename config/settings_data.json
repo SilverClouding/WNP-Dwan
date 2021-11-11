@@ -15,6 +15,18 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "8bdda846-35bb-495c-a642-c491e301205b": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Get FREE Delivery with purchases over $100!<\/p>",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "8bdda846-35bb-495c-a642-c491e301205b"
+        ],
         "settings": {
           "color_scheme": "background-2"
         }
