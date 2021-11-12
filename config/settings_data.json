@@ -191,9 +191,10 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8": {
             "type": "column",
             "settings": {
-              "image_caption_bottom": "",
+              "image_bottom": "shopify:\/\/shop_images\/Rectangle_144.png",
+              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
               "image_link_bottom": "",
-              "richtext_bottom": ""
+              "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>"
             }
           }
         },
