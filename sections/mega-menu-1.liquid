@@ -16,7 +16,7 @@
               {% comment %}Menu 1{% endcomment %}
               {% if block.settings.parent != blank %}
                 <div class="dropdown_column__menu">
-                 
+                 {{section.settings.parent | handle}}
                     <ul class>
                       {% for link in linklists[section.settings.parent].links %}
                       <li>
