@@ -21,18 +21,18 @@
                 {% for link in linklists[section.settings.main_link_list].links %}
 
                 {% assign linkHandle = link.title | handle %}
-                
+
                 {{parentLink}}-{{linkHandle}}
                 {% if linkHandle == parentLink %}
                 <div class="" parentLink='{{parentLink}}'>
-                  <h3>{{link.title}}</h3>
-                  <ul>
-                    {% for sublink in link.links %}
+                  {% for sublink in link.links %}
+                  <ul> 
+                    <h3>{{sublink.title}}</h3>
                     <li>
-                      <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                    <a href="{{ sublink.url }}">{{ sublink.title }}</a>
                     </li>
-                    {% endfor%}
                   </ul>
+                  {% endfor%}
                 </div>
                 {% endif %}
                 {% endfor %}
