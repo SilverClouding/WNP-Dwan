@@ -193,8 +193,9 @@
             "settings": {
               "image_bottom": "shopify:\/\/shop_images\/Rectangle_144.png",
               "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "image_link_bottom": "",
-              "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>"
+              "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
+              "btn_text": "More about loppy",
+              "button_link": "shopify:\/\/collections\/alfa-pet"
             }
           }
         },
