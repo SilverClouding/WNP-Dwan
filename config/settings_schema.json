@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "2.3.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -83,6 +83,40 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      }
+    ]
+  },
+  {
+    "name": "Mega menus",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Select the number of custom mega menus to enable. [Learn more](https:\/\/help.outofthesandbox.com\/hc\/en-us\/articles\/115008690607)"
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_menu_1",
+        "label": "Enable mega menu 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_menu_2",
+        "label": "Enable mega menu 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_menu_3",
+        "label": "Enable mega menu 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_menu_4",
+        "label": "Enable mega menu 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_menu_5",
+        "label": "Enable mega menu 5"
       }
     ]
   },
