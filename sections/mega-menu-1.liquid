@@ -16,17 +16,19 @@
               {% comment %}Menu 1{% endcomment %}
               {% if block.settings.menu_1 != blank %}
                 <div class="dropdown_column__menu">
-                  <ul class="dropdown_title">
-                    <li>
-                      <a {% if block.settings.menu_1_link %}href="{{ block.settings.menu_1_link }}"{% endif %}>{{ linklists[block.settings.menu_1].title }}</a>
-                    </li>
-                  </ul>
                   {% if linklists[block.settings.menu_1] != empty %}
                     <ul>
-                      {% for sublink in linklists[block.settings.menu_1].links %}
+                      {% for link in linklists[block.settings.menu_1].links %}
+                      <li>
+                        <h3>{{link.title}}</h3>
+                        <ul>
+                        {% for sublink in link.links %}
                         <li>
                           <a href="{{ sublink.url }}">{{ sublink.title }}</a>
                         </li>
+                     	{% endfor%}
+                        </ul>
+                      </li>
                       {% endfor %}
                     </ul>
                   {% endif %}
