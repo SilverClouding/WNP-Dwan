@@ -156,6 +156,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
+          "section_width": 80,
           "full_width": false
         }
       },
@@ -200,6 +201,7 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8"
         ],
         "settings": {
+          "main_link_list": "",
           "parent": "Dog",
           "height": "adapt"
         }
