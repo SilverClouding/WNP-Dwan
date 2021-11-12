@@ -201,7 +201,7 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8"
         ],
         "settings": {
-          "main_link_list": "",
+          "main_link_list": "main-menu",
           "parent": "Dog",
           "height": "adapt"
         }
