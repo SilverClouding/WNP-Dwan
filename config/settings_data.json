@@ -137,14 +137,14 @@
             "type": "icon_text",
             "settings": {
               "img": "shopify:\/\/shop_images\/curated.png",
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
+              "svg_icon1_text": "<p>Curated products ensuring they are of high quality!<\/p>"
             }
           },
           "ce19bb72-db5f-4aed-80c7-96035e5ed571": {
             "type": "icon_text",
             "settings": {
               "img": "shopify:\/\/shop_images\/prices.png",
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
+              "svg_icon1_text": "<p>Prices are lower than or at least the same as competitors<\/p>"
             }
           }
         },

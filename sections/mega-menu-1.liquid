@@ -12,7 +12,7 @@
         {% for block in section.blocks %}
           <div class="dropdown_column" {{ block.shopify_attributes }}>
             {% if block.type == 'column' %}
-
+{{section.settings.main_link_list}}
               {% comment %}Menu 1{% endcomment %}
               {% if section.settings.parent != blank %}
               <div class="dropdown_column__menu">
