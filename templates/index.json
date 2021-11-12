@@ -273,6 +273,7 @@
         "16365383186b9876cd-1": {
           "type": "content",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide2.jpg",
             "image_link": "",
             "preheading": "Cafe",
             "heading": "Dine with your paw friends!",
@@ -283,6 +284,7 @@
         },
         "16365383186b9876cd-2": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image_link": "",
             "preheading": "Story",
