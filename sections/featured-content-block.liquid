@@ -1,3 +1,12 @@
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
+<div class="section_width">
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   {%- for block in section.blocks -%}
   {% case block.type %}
@@ -11,7 +20,7 @@
   {%- endcase -%}
   {%- endfor -%}
 </div>
-
+</div>
 {% schema %}
   {
     "name": "Featured Content Block",
