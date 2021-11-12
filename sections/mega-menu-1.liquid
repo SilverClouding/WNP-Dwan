@@ -23,9 +23,9 @@
               {% if block.settings.image_top != nil or block.settings.image_caption_top != blank %}
                 <div class="mega-menu__image-caption-link">
                   <a {% if block.settings.image_link_top != blank %}href="{{ block.settings.image_link_top }}"{% endif %} >
-                    {% if block.settings.image_top != nil %}
+                    
                       {% include 'image-element', image: block.settings.image_top, alt: block.settings.image_top.alt %}
-                    {% endif %}
+                   
                     {% if block.settings.image_caption_top != blank %}
                       <p class="mega-menu__image-caption">{{ block.settings.image_caption_top }}</p>
                     {% endif %}
@@ -117,9 +117,9 @@
               {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
                 <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
                   <a {% if block.settings.image_link_bottom != blank %}href="{{ block.settings.image_link_bottom }}"{% endif %} >
-                    {% if block.settings.image_bottom != nil %}
+                   
                       {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
-                    {% endif %}
+                    
                     
                     
                     
@@ -157,9 +157,9 @@
         {% if block.settings.image_top != nil or block.settings.image_caption_top != blank %}
           <li class="mobile-mega-menu_block">
             <a {% if block.settings.image_link_top != blank %}href="{{ block.settings.image_link_top }}"{% endif %} >
-              {% if block.settings.image_top != nil %}
+             
                 {% include 'image-element', image: block.settings.image_top, alt: block.settings.image_top.alt %}
-              {% endif %}
+             
               {% if block.settings.image_caption_top != blank %}
                 <p class="mobile-mega-menu__image-caption">{{ block.settings.image_caption_top }}</p>
               {% endif %}
@@ -254,9 +254,9 @@
         {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
           <li class="mobile-mega-menu_block"  >
             <a {% if block.settings.image_link_bottom != blank %}href="{{ block.settings.image_link_bottom }}"{% endif %} >
-              {% if block.settings.image_bottom != nil %}
+
                 {% include 'image-element', image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
-              {% endif %}
+              
               {% if block.settings.image_caption_bottom != blank %}
                 <p class="mobile-mega-menu__image-caption">{{ block.settings.image_caption_bottom }}</p>
               {% endif %}
