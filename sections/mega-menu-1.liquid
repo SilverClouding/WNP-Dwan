@@ -17,7 +17,7 @@
               {% if section.settings.parent != blank %}
                 <div class="dropdown_column__menu">
                  {% assign parentLink = section.settings.parent | handle | json %}
-                    <ul class>
+                    <ul class="" parentLink="{{parentLink}}">
                       {% for link in linklists[parentLink].links %}
                       <li>
                         <h3>{{link.title}}</h3>
