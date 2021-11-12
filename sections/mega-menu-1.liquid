@@ -118,7 +118,7 @@
                 <div class="mega-menu__image-caption-link">
                   <a {% if block.settings.image_link_bottom != blank %}href="{{ block.settings.image_link_bottom }}"{% endif %} >
                     {% if block.settings.image_bottom != nil %}
-                      {% include 'image-element', image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
+                      {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
                     {% endif %}
                     
                     
