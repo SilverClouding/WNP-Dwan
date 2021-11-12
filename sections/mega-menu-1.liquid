@@ -14,7 +14,7 @@
             {% if block.type == 'column' %}
 
               {% comment %}Menu 1{% endcomment %}
-              {% if block.settings.parent != blank %}
+              {% if section.settings.parent != blank %}
                 <div class="dropdown_column__menu">
                  {{section.settings.parent | handle}}
                     <ul class>
