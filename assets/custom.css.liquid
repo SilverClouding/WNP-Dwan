@@ -892,27 +892,37 @@ background:rgba(255, 255, 255, 0.5);
   transition-delay: 0s;
 }
 
-.col_tab ul {
+.collection .col_tab ul {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
   padding: 0;
+  margin:0;
 }
 
-.col_tab ul li {
+.collection .col_tab ul li {
   padding: 0 13px;
   position: relative;
   cursor: pointer;
 }
 
-.col_tab ul li:first-child:after {content: "";position: absolute;width: 2px;height: 15px;background-color: #44444D;top: 50%;right: 0;transform: translateY(-50%);}
+.collection .col_tab ul li:first-child:after {
+  content: "";
+  positio n: absolute;
+  width: 2px;
+  height: 15px;
+  background-color: #44444D;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
 
-.col_tab ul li.active h3 {
+.collection .col_tab ul li.active h3 {
   font-weight: 900!important;
   text-decoration: underline;
 }
-.col_tab ul li h3 {
+.collection .col_tab ul li h3 {
   padding: 0;
   margin: 0!important;
 }
