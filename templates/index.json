@@ -311,27 +311,30 @@
         "1636470578a33ad6f3-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/Rectangle_143.png",
+            "title": "",
+            "text": "<p>We are firm advocates of pet adoption<\/p>",
+            "button_label": "Adoption",
             "button_link": ""
           }
         },
         "1636470578a33ad6f3-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/Rectangle_144.png",
+            "title": "",
+            "text": "<p>We have grooming services<\/p>",
+            "button_label": "Grooming",
             "button_link": ""
           }
         },
         "1636470578a33ad6f3-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/Rectangle_147.png",
+            "title": "",
+            "text": "<p>Come enjoy our community space<\/p>",
+            "button_label": "Self-dog wash",
             "button_link": ""
           }
         }
