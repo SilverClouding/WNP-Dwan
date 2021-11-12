@@ -44,7 +44,7 @@
               {% comment %}Image with caption and link{% endcomment %}
               {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
                 <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-                  <a {% if block.settings.image_link_bottom != blank %}href="{{ block.settings.image_link_bottom }}"{% endif %} >
+                  <a {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %} >
                    
                       {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
                     
@@ -58,12 +58,17 @@
                 </div>
               {% endif %}
 
-              {% comment %}Richtext{% endcomment %}
-              {% if block.settings.richtext_bottom %}
-                <div class="mega-menu__richtext">
-                  {{ block.settings.richtext_bottom }}
-                </div>
-              {% endif %}
+            {% comment %}Richtext{% endcomment %}
+            {% if block.settings.richtext_bottom %}
+            <div class="mega-menu__richtext">
+              {{ block.settings.richtext_bottom }}
+            </div>
+            {% endif %}
+
+            {% comment %}button{% endcomment %}
+            {% if block.settings.button_link != blank %}
+            <a href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
+            {% endif %}
 
             {% endif %}
           </div>
@@ -209,15 +214,20 @@
           "id": "image_caption_bottom",
           "label": "Image caption"
         },
-        {
-          "type": "url",
-          "id": "image_link_bottom",
-          "label": "Image link"
-        },
+        
         {
           "type": "richtext",
           "id": "richtext_bottom",
           "label": "Text area"
+        },
+	{
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text"
+    },{
+          "type": "url",
+          "id": "button_link",
+          "label": "link"
         }
       ]
     }
