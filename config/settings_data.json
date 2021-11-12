@@ -202,7 +202,7 @@
         ],
         "settings": {
           "main_link_list": "main-menu",
-          "parent": "Dog",
+          "parent": "Dogs",
           "height": "adapt"
         }
       }
