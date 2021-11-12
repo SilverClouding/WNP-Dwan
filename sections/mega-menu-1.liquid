@@ -53,65 +53,7 @@
                 </div>
               {% endif %}
 
-              {% comment %}Menu 2{% endcomment %}
-              {% if block.settings.menu_2 != blank %}
-                <div class="dropdown_column__menu">
-                  <ul class="dropdown_title">
-                    <li>
-                      <a {% if block.settings.menu_2_link %}href="{{ block.settings.menu_2_link }}"{% endif %}>{{ linklists[block.settings.menu_2].title }}</a>
-                    </li>
-                  </ul>
-                  {% if linklists[block.settings.menu_2] != empty %}
-                    <ul>
-                      {% for sublink in linklists[block.settings.menu_2].links %}
-                        <li>
-                          <a href="{{ sublink.url }}">{{ sublink.title }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-              {% endif %}
-
-              {% comment %}Menu 3{% endcomment %}
-              {% if block.settings.menu_3 != blank %}
-                <div class="dropdown_column__menu">
-                  <ul class="dropdown_title">
-                    <li>
-                      <a {% if block.settings.menu_3_link %}href="{{ block.settings.menu_3_link }}"{% endif %}>{{ linklists[block.settings.menu_3].title }}</a>
-                    </li>
-                  </ul>
-                  {% if linklists[block.settings.menu_3] != empty %}
-                    <ul>
-                      {% for sublink in linklists[block.settings.menu_3].links %}
-                        <li>
-                          <a href="{{ sublink.url }}">{{ sublink.title }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-              {% endif %}
-
-              {% comment %}Menu 4{% endcomment %}
-              {% if block.settings.menu_4 != blank %}
-                <div class="dropdown_column__menu">
-                  <ul class="dropdown_title">
-                    <li>
-                      <a {% if block.settings.menu_4_link %}href="{{ block.settings.menu_4_link }}"{% endif %}>{{ linklists[block.settings.menu_4].title }}</a>
-                    </li>
-                  </ul>
-                  {% if linklists[block.settings.menu_4] != empty %}
-                    <ul>
-                      {% for sublink in linklists[block.settings.menu_4].links %}
-                        <li>
-                          <a href="{{ sublink.url }}">{{ sublink.title }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-              {% endif %}
+            
 
               {% comment %}Image with caption and link{% endcomment %}
               {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
@@ -219,7 +161,7 @@
 {
   "name": "Mega menu 1",
   "class": "mega-menu-section",
-  "max_blocks": 5,
+  "max_blocks": 1,
   "settings": [
     {
       "type": "text",
