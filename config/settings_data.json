@@ -184,53 +184,13 @@
       "mega-menu-1": {
         "type": "mega-menu-1",
         "blocks": {
-          "mega-menu-1-0": {
+          "a8e27b05-84be-4109-b2e2-482ee8038cf8": {
             "type": "column",
             "settings": {
-              "richtext_top": "<p>Add description, images, menus and links to your mega menu<\/p>",
-              "image_top": "shopify:\/\/shop_images\/Rectangle_143.png",
+              "richtext_top": "",
               "image_caption_top": "",
               "image_link_top": "",
-              "menu_1": "",
-              "menu_1_link": "",
-              "menu_2": "",
-              "menu_2_link": "",
-              "menu_3": "",
-              "menu_3_link": "",
-              "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "shopify:\/\/shop_images\/Rectangle_147.png",
-              "image_caption_bottom": "",
-              "image_link_bottom": "",
-              "richtext_bottom": ""
-            }
-          },
-          "mega-menu-1-3": {
-            "type": "column",
-            "settings": {
-              "richtext_top": "<p>Link to your collections, sales and even external links<\/p>",
-              "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "",
-              "menu_1_link": "",
-              "menu_2": "",
-              "menu_2_link": "",
-              "menu_3": "",
-              "menu_3_link": "",
-              "menu_4": "",
-              "menu_4_link": "",
-              "image_caption_bottom": "",
-              "image_link_bottom": "",
-              "richtext_bottom": ""
-            }
-          },
-          "mega-menu-1-4": {
-            "type": "column",
-            "settings": {
-              "richtext_top": "<p>Add up to five columns<\/p>",
-              "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "",
+              "menu_1": "main-menu",
               "menu_1_link": "",
               "menu_2": "",
               "menu_2_link": "",
@@ -245,12 +205,10 @@
           }
         },
         "block_order": [
-          "mega-menu-1-0",
-          "mega-menu-1-3",
-          "mega-menu-1-4"
+          "a8e27b05-84be-4109-b2e2-482ee8038cf8"
         ],
         "settings": {
-          "parent": "",
+          "parent": "Dog",
           "height": "adapt"
         }
       }
