@@ -350,7 +350,7 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 80,
+        "section_width": 84,
         "swipe_on_mobile": false
       }
     },
