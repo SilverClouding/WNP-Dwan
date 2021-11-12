@@ -12,26 +12,6 @@
         {% for block in section.blocks %}
           <div class="dropdown_column" {{ block.shopify_attributes }}>
             {% if block.type == 'column' %}
-              {% comment %}Richtext{% endcomment %}
-              {% if block.settings.richtext_top %}
-                <div class="mega-menu__richtext">
-                  {{ block.settings.richtext_top }}
-                </div>
-              {% endif %}
-
-              {% comment %}Image with caption and link{% endcomment %}
-              {% if block.settings.image_top != nil or block.settings.image_caption_top != blank %}
-                <div class="mega-menu__image-caption-link">
-                  <a {% if block.settings.image_link_top != blank %}href="{{ block.settings.image_link_top }}"{% endif %} >
-                    
-                      {% include 'image-element', image: block.settings.image_top, alt: block.settings.image_top.alt %}
-                   
-                    {% if block.settings.image_caption_top != blank %}
-                      <p class="mega-menu__image-caption">{{ block.settings.image_caption_top }}</p>
-                    {% endif %}
-                  </a>
-                </div>
-              {% endif %}
 
               {% comment %}Menu 1{% endcomment %}
               {% if block.settings.menu_1 != blank %}
@@ -187,30 +167,7 @@
       "type": "column",
       "name": "Column",
       "settings": [
-        {
-          "type": "header",
-          "content": "Top content"
-        },
-        {
-          "type": "richtext",
-          "id": "richtext_top",
-          "label": "Text area"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_top",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "image_caption_top",
-          "label": "Image caption"
-        },
-        {
-          "type": "url",
-          "id": "image_link_top",
-          "label": "Image link"
-        },
+        
         {
           "type": "header",
           "content": "Navigation"
@@ -255,32 +212,9 @@
   ],
   "default": {
     "blocks": [
-      {
-        "type": "column",
-        "settings": {
-          "richtext_top": "<p>Add description, images, menus and links to your mega menu</p>"
-        }
-      },
-      {
-        "type": "column",
-        "settings": {
-          "richtext_top": "<p>A column with no settings can be used as a spacer</p>"
-        }
-      },
+      
       {
         "type": "column"
-      },
-      {
-        "type": "column",
-        "settings": {
-          "richtext_top": "<p>Link to your collections, sales and even external links</p>"
-        }
-      },
-      {
-        "type": "column",
-        "settings": {
-          "richtext_top": "<p>Add up to five columns</p>"
-        }
       }
     ]
   }
