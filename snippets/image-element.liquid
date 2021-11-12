@@ -5,8 +5,6 @@
 
 
 
-{{alt}}
-
 <div class="image-with-text__media image-with-text__media--{{ imageHight }} {% if image!= blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
      {% if imageHight == 'adapt' and image != blank %} style="padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;"{% endif %}
      >
