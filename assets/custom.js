@@ -488,5 +488,6 @@ jQuery(function($){
 $(document).on('click','.mega_parent',function(e){
   e.preventDefault();
   var targetData = $(this).attr('terget_megamenu');
+  $('[data-dropdown='+targetData+']').parents().addClass('active');
 console.log(targetData)
 });
