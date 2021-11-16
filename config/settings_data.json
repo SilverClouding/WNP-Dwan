@@ -235,6 +235,94 @@
           "parent": "cats",
           "height": "adapt"
         }
+      },
+      "mega-menu-3": {
+        "type": "mega-menu-3",
+        "blocks": {
+          "mega-menu-3-0": {
+            "type": "column",
+            "settings": {
+              "image_caption_bottom": "",
+              "richtext_bottom": "",
+              "btn_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-3-0"
+        ],
+        "settings": {
+          "main_link_list": "main-menu",
+          "parent": "small animals",
+          "height": "adapt"
+        }
+      },
+      "mega-menu-4": {
+        "type": "mega-menu-4",
+        "blocks": {
+          "mega-menu-4-0": {
+            "type": "column",
+            "settings": {
+              "image_caption_bottom": "",
+              "richtext_bottom": "",
+              "btn_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-4-0"
+        ],
+        "settings": {
+          "main_link_list": "main-menu",
+          "parent": "shop by brand",
+          "height": "adapt"
+        }
+      },
+      "mega-menu-5": {
+        "type": "mega-menu-5",
+        "blocks": {
+          "mega-menu-5-0": {
+            "type": "column",
+            "settings": {
+              "image_caption_bottom": "",
+              "richtext_bottom": "",
+              "btn_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-5-0"
+        ],
+        "settings": {
+          "main_link_list": "main-menu",
+          "parent": "discover",
+          "height": "adapt"
+        }
+      },
+      "mega-menu-6": {
+        "type": "mega-menu-6",
+        "blocks": {
+          "mega-menu-6-0": {
+            "type": "column",
+            "settings": {
+              "image_caption_bottom": "",
+              "richtext_bottom": "",
+              "btn_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-6-0"
+        ],
+        "settings": {
+          "main_link_list": "main-menu",
+          "parent": "",
+          "height": "adapt"
+        }
       }
     },
     "content_for_index": [
