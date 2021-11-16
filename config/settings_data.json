@@ -242,10 +242,11 @@
           "mega-menu-3-0": {
             "type": "column",
             "settings": {
-              "image_caption_bottom": "",
-              "richtext_bottom": "",
-              "btn_text": "",
-              "button_link": ""
+              "image_bottom": "shopify:\/\/shop_images\/Rectangle_147.png",
+              "image_caption_bottom": "Image caption",
+              "richtext_bottom": "<p>Image captionImage captionImage captionImage caption<\/p>",
+              "btn_text": "Shop now",
+              "button_link": "#"
             }
           }
         },
