@@ -412,6 +412,9 @@
             <nav class="header__inline-menu">
               <ul class="list-menu list-menu--inline" role="list">
                 {%- for link in section.settings.menu.links -%}
+                
+                <li terget_megamenu="{{ link.title | handle }}"><a href="{{link.url}}" class="header__menu-item list-menu__item link focus-inset"><span>{{link.title}}</span></a></li>
+                {% comment %}
                 <li terget_megamenu="{{ link.title | handle }}">
                   {%- if link.links != blank -%}
                   <details-disclosure>
@@ -420,6 +423,7 @@
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
                               </summary>
+                        
                         <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                           {%- for childlink in link.links -%}
                           <li>
@@ -447,6 +451,7 @@
                           </li>
                           {%- endfor -%}
                         </ul>
+                       
                         </details>
                       </details-disclosure>
                     {%- else -%}
@@ -455,6 +460,8 @@
                 </a>
                       {%- endif -%}
                       </li>
+                    {% endcomment %}
+                    
                     {%- endfor -%}
                     </ul>
                 </nav>
