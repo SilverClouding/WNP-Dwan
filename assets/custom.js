@@ -485,6 +485,8 @@ jQuery(function($){
 
 // megamenu
 
-$(document).on('click','.mega_parent',function(){
-
+$(document).on('click','.mega_parent',function(e){
+  e.preventDefault();
+  var targetData = $(this).attr('terget_megamenu');
+console.log(targetData)
 });
