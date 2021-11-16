@@ -1,1 +1,7 @@
-mega-menu-section
+.mega-menu-section{
+display:none;
+}
+
+.mega-menu-section.active{
+display:block;
+}
