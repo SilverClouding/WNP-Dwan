@@ -5,7 +5,7 @@
 - Must be enabled through general settings
 {% endcomment %}
 
-{% if section.blocks.size > 0 %}
+{% if section.blocks.size > 0 %}{% endif %}
   <div class="dropdown_container mega-menu mega-menu-1" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
@@ -148,7 +148,7 @@
     {% endfor %}
   </ul>
 {% endcomment %}
-{% endif %}
+
 
 {% schema %}
 
