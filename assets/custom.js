@@ -481,3 +481,10 @@ jQuery(function($){
     $('.'+trigger).addClass('active');
   });
 });
+
+
+// megamenu
+
+$(document).on('click','.mega_parent',function(){
+
+});
