@@ -5,6 +5,7 @@
 - Must be enabled through general settings
 {% endcomment %}
 
+
 {% assign Level_1 = "" %}
 {% assign Level_2 = "" %}
 {% assign Level_3 = "" %}
@@ -22,14 +23,8 @@
 {% endif %}
 {% endfor%}
 
-
-
-1st level- {{ Level_1 }}<br>
-2nd level- {{ Level_2 }}<br>
-3rd level- {{ Level_3 }}
-
 {% if section.blocks.size > 0 %}{% endif %}
-  <div class="dropdown_container mega-menu mega-menu-6" data-dropdown="{{ section.settings.parent | handleize }}">
+  <div class="dropdown_container mega-menu mega-menu-1" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
         {% for block in section.blocks %}
@@ -39,28 +34,20 @@
               {% if section.settings.parent != blank %}
               <div class="dropdown_column__menu">
                 {% assign parentLink = section.settings.parent | handle %}
-                
-                
 
-                
                 {% for link in linklists[section.settings.main_link_list].links %}
                   {% assign linkHandle = link.title | handle %}
-               
                   {% if linkHandle == parentLink %}
                   <div class="" parentLink='{{parentLink}}'>
-                  <ul class="level_1 {% if Level_3 == blank %} no-submenu {% endif %}"  sublinklsize="{{link.links.size}}">   
+                  <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
                     {% for sublink in link.links %}
-                   
                        <li> 
                          <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
-                         {% if sublink.links.size > 0 %}
                          <ul class="level_2">
                          {% for sub_sublink in sublink.links %}
-                         
                            <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
                            {% endfor %}
                          </ul>
-                         {% endif %}
                       </li>
                     
                     {% endfor%}
@@ -184,7 +171,7 @@
 {% schema %}
 
 {
-  "name": "Mega menu 6",
+  "name": "Mega menu 1",
   "class": "mega-menu-section",
   "max_blocks": 1,
   "settings": [
