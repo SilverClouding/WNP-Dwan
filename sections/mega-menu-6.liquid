@@ -5,19 +5,24 @@
 - Must be enabled through general settings
 {% endcomment %}
 
-{% assign 1stLevel = "" %}
-{% assign 2ndLevel = "" %}
-{% assign 3rdLevel = "" %}
+{% assign Level_1 = "" %}
+{% assign Level_2 = "" %}
+{% assign Level_3 = "" %}
 {% for link in linklists[section.settings.main_link_list].links %}
-{% assign 1stLevel = link.links.size %}
+{% assign Level_1 = link.links.size %}
 {% for sublink in link.links %}
-{% assign 2ndLevel = sublink.links.size  %}
+{% assign Level_2 = sublink.links.size  %}
 {% for sub_sublink in sublink.links %}
-{% assign 3rdLevel = sub_sublink.links.size %}
+{% assign Level_3 = sub_sublink.links.size %}
 {% endfor%}
 {% endfor%}
 {% endfor%}
 
+
+
+{{ Level_1 }}
+{{ Level_2 }}
+{{ Level_3 }}
 
 
 {% if section.blocks.size > 0 %}{% endif %}
