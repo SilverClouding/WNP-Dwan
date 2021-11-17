@@ -126,17 +126,12 @@
            
            
            {% elsif block.type == 'col_img' %}
-           colimg
              {% for link in linklists[section.settings.main_link_list].links %} 
                {% assign linkHandle = link.title | handle %}
                {% if linkHandle == parentLink %}
-           {{link.title}}
                  {% for sub_link in link.links %}
-           {{sub_link.handle}}<br>
                    {% if sub_link.type == 'collection_link' %}
-                     {% assign linkCollection = sub_link.object %}
-           
-           
+                     {% assign linkCollection = sub_link.object %}          
                      <div class="featured-prod-item">
                        <a href="{{ sub_link.url }}">
                          {% if linkCollection.image %}
