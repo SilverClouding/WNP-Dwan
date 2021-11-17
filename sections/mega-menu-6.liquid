@@ -16,10 +16,13 @@
               {% if section.settings.parent != blank %}
               <div class="dropdown_column__menu">
                 {% assign parentLink = section.settings.parent | handle %}
-
+                
+                
+ 1st for -  {{link.links.size}}
+                
                 {% for link in linklists[section.settings.main_link_list].links %}
                   {% assign linkHandle = link.title | handle %}
-                1st for -  {{link.links.size}}
+               
                   {% if linkHandle == parentLink %}
                   <div class="" parentLink='{{parentLink}}'>
                   <ul>   
