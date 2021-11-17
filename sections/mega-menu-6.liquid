@@ -24,10 +24,12 @@
                   <div class="" parentLink='{{parentLink}}'>
                   <ul>   
                     {% for sublink in link.links %}
+                    2ndfor - {{sublink.links.size}}
                        <li> 
                          <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
                          <ul>
                          {% for sub_sublink in sublink.links %}
+                            3rdfor - {{sub_sublink.links.size}}
                            <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
                            {% endfor %}
                          </ul>
