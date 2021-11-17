@@ -27,71 +27,132 @@
   <div class="dropdown_container mega-menu mega-menu-4" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
-        {% for block in section.blocks %}
-          <div class="dropdown_column" {{ block.shopify_attributes }}>
-            {% if block.type == 'column' %}
-              {% comment %}Menu 1{% endcomment %}
-              {% if section.settings.parent != blank %}
-              <div class="dropdown_column__menu">
-                {% assign parentLink = section.settings.parent | handle %}
+         <div class="dropdown_column" {{ block.shopify_attributes }}>
+         
+           
+           {% for block in section.blocks %} 
+           {% if block.type == 'column' %}
+             <div class="mega-menu-image-con">
+               {% comment %}Image with caption and link{% endcomment %}
+               {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
+               <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
+                 <a {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %} >
 
-                {% for link in linklists[section.settings.main_link_list].links %}
-                  {% assign linkHandle = link.title | handle %}
-                  {% if linkHandle == parentLink %}
-                  <div class="" parentLink='{{parentLink}}'>
-                  <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
-                    {% for sublink in link.links %}
-                       <li> 
-                         <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
-                         <ul class="level_2">
-                         {% for sub_sublink in sublink.links %}
-                           <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
-                           {% endfor %}
-                         </ul>
-                      </li>
-                    
-                    {% endfor%}
-                    </ul>
-                  </div>
-                  {% endif %}
-                {% endfor %}
+                   {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
 
 
-              </div>
-              {% endif %}
-            <div class="mega-menu-image-con">
-              {% comment %}Image with caption and link{% endcomment %}
-              {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
-                <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-                  <a {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %} >
-                   
-                      {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
-                    
-                    
-                    
-                    
-                    {% if block.settings.image_caption_bottom != blank %}
-                      <p class="mega-menu__image-caption">{{ block.settings.image_caption_bottom }}</p>
-                    {% endif %}
-                  </a>
-                </div>
-              {% endif %}
 
-            {% comment %}Richtext{% endcomment %}
-            {% if block.settings.richtext_bottom %}
-            <div class="mega-menu__richtext">
-              {{ block.settings.richtext_bottom }}
-            </div>
+
+                   {% if block.settings.image_caption_bottom != blank %}
+                   <p class="mega-menu__image-caption">{{ block.settings.image_caption_bottom }}</p>
+                   {% endif %}
+                 </a>
+               </div>
+               {% endif %}
+
+               {% comment %}Richtext{% endcomment %}
+               {% if block.settings.richtext_bottom %}
+               <div class="mega-menu__richtext">
+                 {{ block.settings.richtext_bottom }}
+               </div>
+               {% endif %}
+
+               {% comment %}button{% endcomment %}
+               {% if block.settings.button_link != blank %}
+               <a class="more-btn" href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
+               {% endif %}
+             </div>
+            
+          {% elsif block.type == 'products'%}
+          
+           {% for link in linklists[section.settings.main_link_list].links %} 
+           {% assign linkHandle = link.title | handle %}
+           {% if linkHandle == parentLink %}
+           {% if link.type == 'collection_link' %}
+           {% assign linkCollection = link.object %}
+           <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
+             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
+
+               {% for product in collections[linkCollection.handle].products limit:3 %}
+               <li class="grid__item">
+                 {% render 'product-card',
+                product_card_product: product,
+                 media_size: "adapt",
+                 show_secondary_image: false,
+                 add_image_padding: false,
+                 show_vendor: false,
+                 show_image_outline: true,
+                 show_rating: false
+                 %}
+               </li>
+               {% endfor %}
+             </ul>
+           </div>
+           {% endif %}
+           {% endif %}
+           {% endfor%}
+           
+           
+           {% elsif block.type == 'col_img'%}
+           
+           {% for link in linklists[section.settings.main_link_list].links %} 
+           {% assign linkHandle = link.title | handle %}
+           {% if linkHandle == parentLink %}
+           {% if link.type == 'collection_link' %}
+           {% assign linkCollection = link.object %}
+           <div class="featured-prod-item">
+             <a href="{{ link.url }}">
+               {% if linkCollection.image %}
+               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% else %}
+               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% endif %}
+             </a>
+             <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
+           </div>
+           {% endif %}
             {% endif %}
+           {% endfor%}
+          
+        {% else %}
+        
+           {% comment %}Menu 1{% endcomment %}
+           {% if section.settings.parent != blank %}
+           <div class="dropdown_column__menu">
+             {% assign parentLink = section.settings.parent | handle %}
 
-            {% comment %}button{% endcomment %}
-            {% if block.settings.button_link != blank %}
-            <a class="more-btn" href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
-            {% endif %}
-				</div>
-            {% endif %}
-          </div>
-        {% endfor %}
+             {% for link in linklists[section.settings.main_link_list].links %}
+             {% assign linkHandle = link.title | handle %}
+             {% if linkHandle == parentLink %}
+             <div class="" parentLink='{{parentLink}}'>
+               <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
+                 {% for sublink in link.links %}
+                 <li> 
+                   <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
+                   <ul class="level_2">
+                     {% for sub_sublink in sublink.links %}
+                     <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
+                     {% endfor %}
+                   </ul>
+                 </li>
+
+                 {% endfor%}
+               </ul>
+             </div>
+             {% endif %}
+             {% endfor %}
+
+
+           </div>
+           {% endif %}
+          
+         {% endif %}
+           
+             {% endfor %}
+           
+        
+        </div>
+        
       </div>
     </div>
   </div>
@@ -173,7 +234,7 @@
 {
   "name": "Mega menu 4",
   "class": "mega-menu-section",
-  "max_blocks": 1,
+  "max_blocks": 2,
   "settings": [
 {
           "type": "link_list",
@@ -198,29 +259,18 @@
       ],
       "default": "adapt",
       "label": "t:sections.image-with-text.settings.height.label"
-    }
+    },
+	{
+        "type": "checkbox",
+        "id": "showproduct",
+        "label": "Show 1st level menu's product"
+      }
   ],
   "blocks": [
     {
       "type": "column",
       "name": "Column",
       "settings": [
-        
-     /**   {
-          "type": "header",
-          "content": "Navigation"
-        },
-        {
-          "type": "link_list",
-          "id": "menu_1",
-          "label": "Menu 1"
-        },
-        {
-          "type": "url",
-          "id": "menu_1_link",
-          "label": "Menu 1 link",
-          "info": "Add a link to the title of the menu."
-        },**/
         {
           "type": "header",
           "content": "Bottom content"
@@ -251,7 +301,17 @@
           "label": "link"
         }
       ]
-    }
+    },
+ {
+      "type": "products",
+      "name": "Products",
+      "settings": []
+},
+ {
+      "type": "col_img",
+      "name": "Collection img:2nd level",
+      "settings": []
+}
   ],
   "default": {
     "blocks": [
