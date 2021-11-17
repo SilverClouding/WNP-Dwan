@@ -24,11 +24,40 @@
 {% endfor%}
 
 {% if section.blocks.size > 0 %}{% endif %}
-  <div class="dropdown_container mega-menu mega-menu-2" data-dropdown="{{ section.settings.parent | handleize }}">
+  <div class="dropdown_container mega-menu mega-menu-3" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column" {{ block.shopify_attributes }}>
          
+            {% comment %}Menu 1{% endcomment %}
+           {% if section.settings.parent != blank %}
+           <div class="dropdown_column__menu">
+             {% assign parentLink = section.settings.parent | handle %}
+
+             {% for link in linklists[section.settings.main_link_list].links %}
+             {% assign linkHandle = link.title | handle %}
+             {% if linkHandle == parentLink %}
+             <div class="" parentLink='{{parentLink}}'>
+               <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
+                 {% for sublink in link.links %}
+                 <li> 
+                   <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
+                   <ul class="level_2">
+                     {% for sub_sublink in sublink.links %}
+                     <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
+                     {% endfor %}
+                   </ul>
+                 </li>
+
+                 {% endfor%}
+               </ul>
+             </div>
+             {% endif %}
+             {% endfor %}
+
+
+           </div>
+           {% endif %}
            
            {% for block in section.blocks %} 
            {% if block.type == 'column' %}
@@ -116,35 +145,7 @@
           
         {% else %}
         
-           {% comment %}Menu 1{% endcomment %}
-           {% if section.settings.parent != blank %}
-           <div class="dropdown_column__menu">
-             {% assign parentLink = section.settings.parent | handle %}
-
-             {% for link in linklists[section.settings.main_link_list].links %}
-             {% assign linkHandle = link.title | handle %}
-             {% if linkHandle == parentLink %}
-             <div class="" parentLink='{{parentLink}}'>
-               <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
-                 {% for sublink in link.links %}
-                 <li> 
-                   <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
-                   <ul class="level_2">
-                     {% for sub_sublink in sublink.links %}
-                     <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
-                     {% endfor %}
-                   </ul>
-                 </li>
-
-                 {% endfor%}
-               </ul>
-             </div>
-             {% endif %}
-             {% endfor %}
-
-
-           </div>
-           {% endif %}
+          
           
          {% endif %}
            
@@ -232,7 +233,7 @@
 {% schema %}
 
 {
-  "name": "Mega menu 2",
+  "name": "Mega menu 3",
   "class": "mega-menu-section",
   "max_blocks": 2,
   "settings": [
