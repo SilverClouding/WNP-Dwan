@@ -35,7 +35,7 @@
            {% if linkHandle == parentLink %}
            {% if link.type == 'collection_link' %}
            {% assign linkCollection = link.object %}
-           <div class="featured-prod-item" linkCollection="{{linkCollection}}">
+           <div class="featured-prod-item" linkCollection="{{linkCollection.title}}">
              <a href="{{ link.url }}">
                {% if linkCollection.image %}
                <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
