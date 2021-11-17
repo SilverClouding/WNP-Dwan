@@ -98,34 +98,34 @@
           {% elsif block.type == 'products'%}
           
            {% for link in linklists[section.settings.main_link_list].links %} 
-           {% assign linkHandle = link.title | handle %}
-           {% if linkHandle == parentLink %}
-           {% if link.type == 'collection_link' %}
-           {% assign linkCollection = link.object %}
-           <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
-             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
+             {% assign linkHandle = link.title | handle %}
+             {% if linkHandle == parentLink %}
+               {% if link.type == 'collection_link' %}
+                 {% assign linkCollection = link.object %}
+                 <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
+                   <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
 
-               {% for product in collections[linkCollection.handle].products limit:3 %}
-               <li class="grid__item">
-                 {% render 'product-card',
-                product_card_product: product,
-                 media_size: "adapt",
-                 show_secondary_image: false,
-                 add_image_padding: false,
-                 show_vendor: false,
-                 show_image_outline: true,
-                 show_rating: false
-                 %}
-               </li>
-               {% endfor %}
-             </ul>
-           </div>
-           {% endif %}
-           {% endif %}
+                     {% for product in collections[linkCollection.handle].products limit:3 %}
+                     <li class="grid__item">
+                       {% render 'product-card',
+                      product_card_product: product,
+                       media_size: "adapt",
+                       show_secondary_image: false,
+                       add_image_padding: false,
+                       show_vendor: false,
+                       show_image_outline: true,
+                       show_rating: false
+                       %}
+                     </li>
+                     {% endfor %}
+                   </ul>
+                 </div>
+               {% endif %}
+             {% endif %}
            {% endfor%}
            
            
-           {% elsif block.type == 'col_img'%}
+           {% elsif block.type == 'col_img' %}
            
              {% for link in linklists[section.settings.main_link_list].links %} 
                {% assign linkHandle = link.title | handle %}
