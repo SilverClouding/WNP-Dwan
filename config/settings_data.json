@@ -301,7 +301,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "Sale",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": true
         }
       },
       "mega-menu-6": {
