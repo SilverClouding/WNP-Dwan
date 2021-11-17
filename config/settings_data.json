@@ -193,6 +193,11 @@
       "mega-menu-1": {
         "type": "mega-menu-1",
         "blocks": {
+          "2623c58e-0af1-4d1f-8b2a-7b46604f3687": {
+            "type": "menus",
+            "settings": {
+            }
+          },
           "a8e27b05-84be-4109-b2e2-482ee8038cf8": {
             "type": "column",
             "settings": {
@@ -205,6 +210,7 @@
           }
         },
         "block_order": [
+          "2623c58e-0af1-4d1f-8b2a-7b46604f3687",
           "a8e27b05-84be-4109-b2e2-482ee8038cf8"
         ],
         "settings": {
@@ -217,6 +223,11 @@
       "mega-menu-2": {
         "type": "mega-menu-2",
         "blocks": {
+          "9f4b8adf-1142-4e2f-8160-9fdb1ce03e48": {
+            "type": "menus",
+            "settings": {
+            }
+          },
           "mega-menu-2-0": {
             "type": "column",
             "settings": {
@@ -229,6 +240,7 @@
           }
         },
         "block_order": [
+          "9f4b8adf-1142-4e2f-8160-9fdb1ce03e48",
           "mega-menu-2-0"
         ],
         "settings": {
@@ -241,6 +253,11 @@
       "mega-menu-3": {
         "type": "mega-menu-3",
         "blocks": {
+          "42659433-5420-41e5-8303-502ae8746476": {
+            "type": "menus",
+            "settings": {
+            }
+          },
           "mega-menu-3-0": {
             "type": "column",
             "settings": {
@@ -253,6 +270,7 @@
           }
         },
         "block_order": [
+          "42659433-5420-41e5-8303-502ae8746476",
           "mega-menu-3-0"
         ],
         "settings": {
@@ -295,6 +313,11 @@
       "mega-menu-5": {
         "type": "mega-menu-5",
         "blocks": {
+          "9fe32dfd-c952-4dc4-b4a8-f9ce105aae82": {
+            "type": "products",
+            "settings": {
+            }
+          },
           "mega-menu-5-0": {
             "type": "column",
             "settings": {
@@ -307,6 +330,7 @@
           }
         },
         "block_order": [
+          "9fe32dfd-c952-4dc4-b4a8-f9ce105aae82",
           "mega-menu-5-0"
         ],
         "settings": {
@@ -319,26 +343,14 @@
       "mega-menu-6": {
         "type": "mega-menu-6",
         "blocks": {
-          "mega-menu-6-0": {
-            "type": "column",
-            "disabled": true,
-            "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/Rectangle_144.png",
-              "image_caption_bottom": "Image caption",
-              "richtext_bottom": "<p>Image captionImage captionImage captionImage caption<\/p>",
-              "btn_text": "Button text",
-              "button_link": "#"
-            }
-          },
-          "cd128095-37d8-43dd-b18f-31c03c38b822": {
-            "type": "col_img",
+          "cadc0ed7-0a77-4380-ae5e-4c45b4d8c95d": {
+            "type": "menus",
             "settings": {
             }
           }
         },
         "block_order": [
-          "mega-menu-6-0",
-          "cd128095-37d8-43dd-b18f-31c03c38b822"
+          "cadc0ed7-0a77-4380-ae5e-4c45b4d8c95d"
         ],
         "settings": {
           "main_link_list": "main-menu",
