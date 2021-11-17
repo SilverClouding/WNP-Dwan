@@ -126,7 +126,7 @@
            
            
            {% elsif block.type == 'col_img' %}
-           
+           colimg
              {% for link in linklists[section.settings.main_link_list].links %} 
                {% assign linkHandle = link.title | handle %}
                {% if linkHandle == parentLink %}
