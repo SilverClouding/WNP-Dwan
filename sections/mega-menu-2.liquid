@@ -5,8 +5,26 @@
 - Must be enabled through general settings
 {% endcomment %}
 
+
+{% assign Level_1 = "" %}
+{% assign Level_2 = "" %}
+{% assign Level_3 = "" %}
+{% assign parentLink = section.settings.parent | handle %}
+{% for link in linklists[section.settings.main_link_list].links %}
+ {% assign linkHandle = link.title | handle %}
+                  {% if linkHandle == parentLink %}
+{% assign Level_1 = linklists[section.settings.main_link_list].links.size %}
+{% for sublink in link.links %}
+{% assign Level_2 = link.links.size  %}
+{% for sub_sublink in sublink.links %}
+{% assign Level_3 = sublink.links.size %}
+{% endfor%}
+{% endfor%}
+{% endif %}
+{% endfor%}
+
 {% if section.blocks.size > 0 %}{% endif %}
-  <div class="dropdown_container mega-menu mega-menu-2" data-dropdown="{{ section.settings.parent | handleize }}">
+  <div class="dropdown_container mega-menu mega-menu-1" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
         {% for block in section.blocks %}
@@ -21,11 +39,11 @@
                   {% assign linkHandle = link.title | handle %}
                   {% if linkHandle == parentLink %}
                   <div class="" parentLink='{{parentLink}}'>
-                  <ul>   
+                  <ul class="leve_1 {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
                     {% for sublink in link.links %}
                        <li> 
                          <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
-                         <ul>
+                         <ul class="level_2">
                          {% for sub_sublink in sublink.links %}
                            <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
                            {% endfor %}
@@ -153,7 +171,7 @@
 {% schema %}
 
 {
-  "name": "Mega menu 2",
+  "name": "Mega menu 1",
   "class": "mega-menu-section",
   "max_blocks": 1,
   "settings": [
