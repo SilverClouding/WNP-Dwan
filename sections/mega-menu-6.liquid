@@ -5,6 +5,21 @@
 - Must be enabled through general settings
 {% endcomment %}
 
+{% assign 1stLevel = "" %}
+{% assign 2ndLevel = "" %}
+{% assign 3rdLevel = "" %}
+{% for link in linklists[section.settings.main_link_list].links %}
+{% assign 1stLevel = link.links.size %}
+{% for sublink in link.links %}
+{% assign 2ndLevel = sublink.links.size  %}
+{% for sub_sublink in sublink.links %}
+{% assign 3rdLevel = sub_sublink.links.size %}
+{% endfor%}
+{% endfor%}
+{% endfor%}
+
+
+
 {% if section.blocks.size > 0 %}{% endif %}
   <div class="dropdown_container mega-menu mega-menu-6" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
