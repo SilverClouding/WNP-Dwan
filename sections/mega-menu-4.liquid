@@ -132,7 +132,7 @@
                {% if linkHandle == parentLink %}
            {{link.title}}
                  {% for sub_link in link.links %}
-           {{sub_link.title}}
+           {{sub_link.handle}}<br>
                    {% if link.type == 'collection_link' %}
                      {% assign linkCollection = sub_link.object %}
            
