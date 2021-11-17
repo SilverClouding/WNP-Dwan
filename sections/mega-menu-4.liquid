@@ -127,39 +127,31 @@
            
            {% elsif block.type == 'col_img'%}
            
-           {% for link in linklists[section.settings.main_link_list].links %} 
-           {% assign linkHandle = link.title | handle %}
-             {% if linkHandle == parentLink %}
-               
-           
+             {% for link in linklists[section.settings.main_link_list].links %} 
+               {% assign linkHandle = link.title | handle %}
+               {% if linkHandle == parentLink %}
+                 {% for sub_link in link.links %}
+                   {% if link.type == 'collection_link' %}
+                     {% assign linkCollection = sub_link.object %}
+                     <div class="featured-prod-item">
+                       <a href="{{ sub_link.url }}">
+                         {% if linkCollection.image %}
+                         <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                         {% else %}
+                         <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                         {% endif %}
+                       </a>
+                       <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
+                     </div>
+                   {% endif %}
+                 {% endfor %}
+               {% endif %}
+             {% endfor%}
           
-             {% for sub_link in link.links %}
-             {% if link.type == 'collection_link' %}
-             {% assign linkCollection = link.object %}
-             <div class="featured-prod-item">
-               <a href="{{ sub_link.url }}">
-                 {% if linkCollection.image %}
-                 <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-                 {% else %}
-                 <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-                 {% endif %}
-               </a>
-               <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
-             </div>
-
-             {% endif %}
-             {% endfor %}
            
            
-              {% endif %}
-           {% endfor%}
-          
-        {% else %}
-        
-          
-          
-         {% endif %}
            
+          {% endif %}
              {% endfor %}
            
         
