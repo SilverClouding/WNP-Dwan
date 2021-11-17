@@ -130,6 +130,7 @@
              {% for link in linklists[section.settings.main_link_list].links %} 
                {% assign linkHandle = link.title | handle %}
                {% if linkHandle == parentLink %}
+           {{link.title}}
                  {% for sub_link in link.links %}
                    {% if link.type == 'collection_link' %}
                      {% assign linkCollection = sub_link.object %}
