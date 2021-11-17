@@ -36,14 +36,9 @@
            {% if link.type == 'collection_link' %}
            {% assign linkCollection = link.object %}
            <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
-             <a href="{{ link.url }}">
-               {% if linkCollection.image %}
-               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-               {% else %}
-               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-               {% endif %}
-             </a>
-             <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
+             {% for product in collections[linkCollection.handle].products %}
+             {{ product.title }}
+             {% endfor %}
            </div>
            {% endif %}
            {% endif %}
