@@ -299,7 +299,7 @@
         ],
         "settings": {
           "main_link_list": "main-menu",
-          "parent": "Dogs",
+          "parent": "Sale",
           "height": "adapt"
         }
       },
