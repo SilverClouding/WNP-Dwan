@@ -25,12 +25,12 @@
                
                   {% if linkHandle == parentLink %}
                   <div class="" parentLink='{{parentLink}}'>
-                  <ul>   
+                  <ul class="1stlevel">   
                     {% for sublink in link.links %}
                    
                        <li> 
                          <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
-                         <ul>
+                         <ul class="2ndlevel">
                          {% for sub_sublink in sublink.links %}
                          
                            <li>  <a href="{{ sub_sublink.url }}">{{ sub_sublink.title }}</a></li>
