@@ -29,7 +29,14 @@
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column" {{ block.shopify_attributes }}>
         {% if section.settings.showproduct %}
-        
+           {% if linkHandle == parentLink %}
+           {% for link in linklists[section.settings.main_link_list].links %}
+           
+           {{ link.object}}
+
+            {% endfor%}
+           {% endif %}
+           
         {% else %}
         
            {% comment %}Menu 1{% endcomment %}
