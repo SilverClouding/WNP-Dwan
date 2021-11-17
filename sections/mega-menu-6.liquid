@@ -14,7 +14,7 @@
 {% for sublink in link.links %}
 {% assign Level_2 = link.links.size  %}{{sublink.title}}
 {% for sub_sublink in sublink.links %}
-{% assign Level_3 = sublink.links.size %}
+{% assign Level_3 = sublink.links.size %}{{sub_sublink.title}}
 {% endfor%}
 {% endfor%}
 {% endfor%}
