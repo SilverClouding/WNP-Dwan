@@ -24,12 +24,15 @@
 {% endfor%}
 
 {% if section.blocks.size > 0 %}{% endif %}
-  <div class="dropdown_container mega-menu mega-menu-1" data-dropdown="{{ section.settings.parent | handleize }}">
+  <div class="dropdown_container mega-menu mega-menu-2" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column" {{ block.shopify_attributes }}>
-         
-            {% comment %}Menu 1{% endcomment %}
+           
+           
+          {% for block in section.blocks %} 
+           {% if block.type == 'menu' %}
+            
            {% if section.settings.parent != blank %}
            <div class="dropdown_column__menu">
              {% assign parentLink = section.settings.parent | handle %}
@@ -59,8 +62,8 @@
            </div>
            {% endif %}
            
-           {% for block in section.blocks %} 
-           {% if block.type == 'column' %}
+          
+           {% elsif block.type == 'column' %}
              <div class="mega-menu-image-con">
                {% comment %}Image with caption and link{% endcomment %}
                {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
@@ -93,62 +96,62 @@
              </div>
             
           {% elsif block.type == 'products'%}
-          
+          <div class="dropdown_column__products">
            {% for link in linklists[section.settings.main_link_list].links %} 
-           {% assign linkHandle = link.title | handle %}
-           {% if linkHandle == parentLink %}
-           {% if link.type == 'collection_link' %}
-           {% assign linkCollection = link.object %}
-           <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
-             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
+             {% assign linkHandle = link.title | handle %}
+             {% if linkHandle == parentLink %}
+               {% if link.type == 'collection_link' %}
+                 {% assign linkCollection = link.object %}
+                 <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
+                   <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
 
-               {% for product in collections[linkCollection.handle].products limit:3 %}
-               <li class="grid__item">
-                 {% render 'product-card',
-                product_card_product: product,
-                 media_size: "adapt",
-                 show_secondary_image: false,
-                 add_image_padding: false,
-                 show_vendor: false,
-                 show_image_outline: true,
-                 show_rating: false
-                 %}
-               </li>
-               {% endfor %}
-             </ul>
-           </div>
-           {% endif %}
-           {% endif %}
-           {% endfor%}
-           
-           
-           {% elsif block.type == 'col_img'%}
-           
-           {% for link in linklists[section.settings.main_link_list].links %} 
-           {% assign linkHandle = link.title | handle %}
-           {% if linkHandle == parentLink %}
-           {% if link.type == 'collection_link' %}
-           {% assign linkCollection = link.object %}
-           <div class="featured-prod-item">
-             <a href="{{ link.url }}">
-               {% if linkCollection.image %}
-               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-               {% else %}
-               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                     {% for product in collections[linkCollection.handle].products limit:3 %}
+                     <li class="grid__item">
+                       {% render 'product-card',
+                      product_card_product: product,
+                       media_size: "adapt",
+                       show_secondary_image: false,
+                       add_image_padding: false,
+                       show_vendor: false,
+                       show_image_outline: true,
+                       show_rating: false
+                       %}
+                     </li>
+                     {% endfor %}
+                   </ul>
+                 </div>
                {% endif %}
-             </a>
-             <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
-           </div>
-           {% endif %}
-            {% endif %}
+             {% endif %}
            {% endfor%}
-          
-        {% else %}
-        
-          
-          
-         {% endif %}
+           </div>
            
+           
+           {% elsif block.type == 'col_img' %}
+           <div class="dropdown_column__col-img">
+             {% for link in linklists[section.settings.main_link_list].links %} 
+               {% assign linkHandle = link.title | handle %}
+               {% if linkHandle == parentLink %}
+                 {% for sub_link in link.links %}
+                   {% if sub_link.type == 'collection_link' %}
+                     {% assign linkCollection = sub_link.object %}          
+                     <div class="featured-prod-item">
+                       <a href="{{ sub_link.url }}">
+                         {% if linkCollection.image %}
+                         <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                         {% else %}
+                         <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                         {% endif %}
+                       </a>
+                     </div>
+                   {% endif %}
+                 {% endfor %}
+               {% endif %}
+             {% endfor%}
+           </div>
+           
+           
+           
+          {% endif %}
              {% endfor %}
            
         
@@ -233,7 +236,7 @@
 {% schema %}
 
 {
-  "name": "Mega menu 1",
+  "name": "Mega menu 2",
   "class": "mega-menu-section",
   "max_blocks": 2,
   "settings": [
@@ -311,6 +314,11 @@
  {
       "type": "col_img",
       "name": "Collection img:2nd level",
+      "settings": []
+},
+ {
+      "type": "menus",
+      "name": "Menus",
       "settings": []
 }
   ],
