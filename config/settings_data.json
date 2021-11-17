@@ -210,7 +210,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "Dogs",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": false
         }
       },
       "mega-menu-2": {
@@ -233,7 +234,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "cats",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": false
         }
       },
       "mega-menu-3": {
@@ -256,7 +258,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "small animals",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": false
         }
       },
       "mega-menu-4": {
@@ -279,7 +282,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "shop by brand",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": false
         }
       },
       "mega-menu-5": {
@@ -312,10 +316,11 @@
           "mega-menu-6-0": {
             "type": "column",
             "settings": {
-              "image_caption_bottom": "",
-              "richtext_bottom": "",
-              "btn_text": "",
-              "button_link": ""
+              "image_bottom": "shopify:\/\/shop_images\/Rectangle_144.png",
+              "image_caption_bottom": "Image caption",
+              "richtext_bottom": "<p>Image captionImage captionImage captionImage caption<\/p>",
+              "btn_text": "Button text",
+              "button_link": "#"
             }
           }
         },
@@ -325,7 +330,8 @@
         "settings": {
           "main_link_list": "main-menu",
           "parent": "Services",
-          "height": "adapt"
+          "height": "adapt",
+          "showproduct": false
         }
       }
     },
