@@ -46,7 +46,7 @@
                   {% assign linkHandle = link.title | handle %}
                   {% if linkHandle == parentLink %}
                   <div class="" parentLink='{{parentLink}}'>
-                  <ul class="1stlevel" sublinklsize="{{link.links.size}}">   
+                  <ul class="1stlevel {% if Level_3 == blank %} no-submenu {% endif %}" sublinklsize="{{link.links.size}}">   
                     {% for sublink in link.links %}
                        <li> 
                          <a href="{{ sublink.url }}"><h3>{{ sublink.title }}</h3></a>
