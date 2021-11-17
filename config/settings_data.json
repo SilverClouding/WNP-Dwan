@@ -287,7 +287,8 @@
           "mega-menu-5-0": {
             "type": "column",
             "settings": {
-              "image_caption_bottom": "",
+              "image_bottom": "shopify:\/\/shop_images\/slide2.jpg",
+              "image_caption_bottom": "Image caption",
               "richtext_bottom": "",
               "btn_text": "",
               "button_link": ""
