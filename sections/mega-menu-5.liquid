@@ -28,10 +28,10 @@
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column" {{ block.shopify_attributes }}>
+         
            
-           {% capture imgBlock %}
-           {% for block in section.blocks %}
-             {% if block.type == 'column' %}
+           {% for block in section.blocks %} 
+           {% if block.type == 'column' %}
              <div class="mega-menu-image-con">
                {% comment %}Image with caption and link{% endcomment %}
                {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
@@ -62,12 +62,8 @@
                <a class="more-btn" href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
                {% endif %}
              </div>
-             {% endif %}
-           {% endfor %}
-           {% endcapture %}
-           
-           
-        {% if section.settings.showproduct %}
+            
+          {% elsif block.type == 'products'%}
           
            {% for link in linklists[section.settings.main_link_list].links %} 
            {% assign linkHandle = link.title | handle %}
@@ -96,7 +92,28 @@
            {% endif %}
            {% endfor%}
            
-           {{imgBlock}}
+           
+           {% elsif block.type == 'col_img'%}
+           
+           {% for link in linklists[section.settings.main_link_list].links %} 
+           {% assign linkHandle = link.title | handle %}
+           {% if linkHandle == parentLink %}
+           {% if link.type == 'collection_link' %}
+           {% assign linkCollection = link.object %}
+           <div class="featured-prod-item">
+             <a href="{{ link.url }}">
+               {% if linkCollection.image %}
+               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% else %}
+               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% endif %}
+             </a>
+             <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
+           </div>
+           {% endif %}
+            {% endif %}
+           {% endfor%}
+          
         {% else %}
         
            {% comment %}Menu 1{% endcomment %}
@@ -129,10 +146,11 @@
            </div>
            {% endif %}
           
-           {{imgBlock}}
+         {% endif %}
            
+             {% endfor %}
            
-        {% endif %}
+        
         </div>
         
       </div>
