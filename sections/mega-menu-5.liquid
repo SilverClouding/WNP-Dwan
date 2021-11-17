@@ -37,7 +37,7 @@
            {% assign linkCollection = link.object %}
            <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
              {% for product in collections[linkCollection.handle].products %}
-             {{ product.title }}
+             <a href="{{product.url}}">{{ product.title }}</a>
              {% endfor %}
            </div>
            {% endif %}
