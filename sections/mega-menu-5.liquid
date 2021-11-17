@@ -28,6 +28,45 @@
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column" {{ block.shopify_attributes }}>
+           
+           {% capture imgBlock %}
+           {% for block in section.blocks %}
+             {% if block.type == 'column' %}
+             <div class="mega-menu-image-con">
+               {% comment %}Image with caption and link{% endcomment %}
+               {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
+               <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
+                 <a {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %} >
+
+                   {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
+
+
+
+
+                   {% if block.settings.image_caption_bottom != blank %}
+                   <p class="mega-menu__image-caption">{{ block.settings.image_caption_bottom }}</p>
+                   {% endif %}
+                 </a>
+               </div>
+               {% endif %}
+
+               {% comment %}Richtext{% endcomment %}
+               {% if block.settings.richtext_bottom %}
+               <div class="mega-menu__richtext">
+                 {{ block.settings.richtext_bottom }}
+               </div>
+               {% endif %}
+
+               {% comment %}button{% endcomment %}
+               {% if block.settings.button_link != blank %}
+               <a class="more-btn" href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
+               {% endif %}
+             </div>
+             {% endif %}
+           {% endfor %}
+           {% endcapture %}
+           
+           
         {% if section.settings.showproduct %}
           
            {% for link in linklists[section.settings.main_link_list].links %} 
@@ -36,7 +75,7 @@
            {% if link.type == 'collection_link' %}
            {% assign linkCollection = link.object %}
            <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
-             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid">
+             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--3-col negative-margin product-grid">
 
                {% for product in collections[linkCollection.handle].products limit:3 %}
                <li class="grid__item">
@@ -57,7 +96,7 @@
            {% endif %}
            {% endfor%}
            
-           
+           {{imgBlock}}
         {% else %}
         
            {% comment %}Menu 1{% endcomment %}
@@ -89,42 +128,8 @@
 
            </div>
            {% endif %}
-           {% for block in section.blocks %}
-
-           {% if block.type == 'column' %}
-           <div class="mega-menu-image-con">
-             {% comment %}Image with caption and link{% endcomment %}
-             {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
-             <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-               <a {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %} >
-
-                 {% include 'image-element',imageHight: section.settings.height, image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}
-
-
-
-
-                 {% if block.settings.image_caption_bottom != blank %}
-                 <p class="mega-menu__image-caption">{{ block.settings.image_caption_bottom }}</p>
-                 {% endif %}
-               </a>
-             </div>
-             {% endif %}
-
-             {% comment %}Richtext{% endcomment %}
-             {% if block.settings.richtext_bottom %}
-             <div class="mega-menu__richtext">
-               {{ block.settings.richtext_bottom }}
-             </div>
-             {% endif %}
-
-             {% comment %}button{% endcomment %}
-             {% if block.settings.button_link != blank %}
-             <a class="more-btn" href="{{block.settings.button_link}}">{{block.settings.btn_text}}</a> 
-             {% endif %}
-           </div>
-           {% endif %}
-
-           {% endfor %}
+          
+           {{imgBlock}}
            
            
         {% endif %}
