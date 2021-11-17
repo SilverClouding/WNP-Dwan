@@ -12,9 +12,9 @@
 {% for link in linklists[section.settings.main_link_list].links %}
 {% assign Level_1 = linklists[section.settings.main_link_list].links.size %}
 {% for sublink in link.links %}
-{% assign Level_2 = sublink.links.size  %}{{sublink.title}}
+{% assign Level_2 = link.links.size  %}
 {% for sub_sublink in sublink.links %}
-{% assign Level_3 = sub_sublink.links.size %}
+{% assign Level_3 = sublink.links.size %}
 {% endfor%}
 {% endfor%}
 {% endfor%}
