@@ -36,9 +36,22 @@
            {% if link.type == 'collection_link' %}
            {% assign linkCollection = link.object %}
            <div class="featured-prod-item" linkCollectionHandle="{{linkCollection.handle}}">
-             {% for product in collections[linkCollection.handle].products %}
-             <a href="{{product.url}}">{{ product.title }}</a>
-             {% endfor %}
+             <ul id="product-grid" data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid">
+
+               {% for product in collections[linkCollection.handle].products limit:3 %}
+               <li class="grid__item">
+                 {% render 'product-card',
+                product_card_product: product,
+                 media_size: section.settings.image_ratio,
+                 show_secondary_image: section.settings.show_secondary_image,
+                 add_image_padding: section.settings.add_image_padding,
+                 show_vendor: section.settings.show_vendor,
+                 show_image_outline: section.settings.show_image_outline,
+                 show_rating: section.settings.show_rating
+                 %}
+               </li>
+               {% endfor %}
+             </ul>
            </div>
            {% endif %}
            {% endif %}
