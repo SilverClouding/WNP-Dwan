@@ -315,6 +315,7 @@
         "blocks": {
           "mega-menu-6-0": {
             "type": "column",
+            "disabled": true,
             "settings": {
               "image_bottom": "shopify:\/\/shop_images\/Rectangle_144.png",
               "image_caption_bottom": "Image caption",
@@ -322,10 +323,16 @@
               "btn_text": "Button text",
               "button_link": "#"
             }
+          },
+          "cd128095-37d8-43dd-b18f-31c03c38b822": {
+            "type": "col_img",
+            "settings": {
+            }
           }
         },
         "block_order": [
-          "mega-menu-6-0"
+          "mega-menu-6-0",
+          "cd128095-37d8-43dd-b18f-31c03c38b822"
         ],
         "settings": {
           "main_link_list": "main-menu",
