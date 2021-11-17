@@ -265,6 +265,11 @@
       "mega-menu-4": {
         "type": "mega-menu-4",
         "blocks": {
+          "44950e8a-9566-4a81-9cfe-47ab7dd9a8f9": {
+            "type": "col_img",
+            "settings": {
+            }
+          },
           "mega-menu-4-0": {
             "type": "column",
             "settings": {
@@ -277,6 +282,7 @@
           }
         },
         "block_order": [
+          "44950e8a-9566-4a81-9cfe-47ab7dd9a8f9",
           "mega-menu-4-0"
         ],
         "settings": {
