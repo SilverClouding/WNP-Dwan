@@ -32,7 +32,7 @@
            {% if linkHandle == parentLink %}
            {% for link in linklists[section.settings.main_link_list].links %}
            
-           {{ link.object}}
+           {{ link.object |json }}
 
             {% endfor%}
            {% endif %}
