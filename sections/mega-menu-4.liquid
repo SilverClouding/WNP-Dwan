@@ -32,7 +32,7 @@
            
           {% for block in section.blocks %} 
            {% if block.type == 'menu' %}
-            {% comment %}Menu 1{% endcomment %}
+            
            {% if section.settings.parent != blank %}
            <div class="dropdown_column__menu">
              {% assign parentLink = section.settings.parent | handle %}
@@ -96,7 +96,7 @@
              </div>
             
           {% elsif block.type == 'products'%}
-          
+          <div class="dropdown_column__products">
            {% for link in linklists[section.settings.main_link_list].links %} 
              {% assign linkHandle = link.title | handle %}
              {% if linkHandle == parentLink %}
@@ -123,9 +123,11 @@
                {% endif %}
              {% endif %}
            {% endfor%}
+           </div>
            
            
            {% elsif block.type == 'col_img' %}
+           <div class="dropdown_column__col-img">
              {% for link in linklists[section.settings.main_link_list].links %} 
                {% assign linkHandle = link.title | handle %}
                {% if linkHandle == parentLink %}
@@ -145,7 +147,7 @@
                  {% endfor %}
                {% endif %}
              {% endfor%}
-          
+           </div>
            
            
            
