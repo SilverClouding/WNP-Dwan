@@ -5,11 +5,13 @@
 - Must be enabled through general settings
 {% endcomment %}
 
-
 {% assign Level_1 = "" %}
 {% assign Level_2 = "" %}
 {% assign Level_3 = "" %}
+{% assign parentLink = section.settings.parent | handle %}
 {% for link in linklists[section.settings.main_link_list].links %}
+ {% assign linkHandle = link.title | handle %}
+                  {% if linkHandle == parentLink %}
 {% assign Level_1 = linklists[section.settings.main_link_list].links.size %}
 {% for sublink in link.links %}
 {% assign Level_2 = link.links.size  %}
@@ -17,6 +19,7 @@
 {% assign Level_3 = sublink.links.size %}
 {% endfor%}
 {% endfor%}
+{% endif %}
 {% endfor%}
 
 
@@ -24,7 +27,6 @@
 1st level- {{ Level_1 }}<br>
 2nd level- {{ Level_2 }}<br>
 3rd level- {{ Level_3 }}
-
 
 {% if section.blocks.size > 0 %}{% endif %}
   <div class="dropdown_container mega-menu mega-menu-6" data-dropdown="{{ section.settings.parent | handleize }}">
