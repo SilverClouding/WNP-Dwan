@@ -31,11 +31,23 @@
         {% if section.settings.showproduct %}
           
            {% for link in linklists[section.settings.main_link_list].links %} 
-            {% assign linkHandle = link.title | handle %}
-            {% if linkHandle == parentLink %}
-           {{ link.type }}
-			{% endif %}
-            {% endfor%}
+           {% assign linkHandle = link.title | handle %}
+           {% if linkHandle == parentLink %}
+           {% if link.type == 'collection_link' %}
+           {% assign linkCollection = link.object %}
+           <div class="featured-prod-item">
+             <a href="{{ link.url }}">
+               {% if linkCollection.image %}
+               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% else %}
+               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+               {% endif %}
+             </a>
+             <h4><a href="{{ link.url }}">{{link.title }}</a></h4>
+           </div>
+           {% endif %}
+           {% endif %}
+           {% endfor%}
            
            
         {% else %}
