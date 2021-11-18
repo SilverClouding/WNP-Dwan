@@ -372,6 +372,13 @@
             {%- endif -%}
 
             {%- if request.page_type == 'index' -%}
+            <div class="logo_and_humberger">
+            <div class="humbergerfor_sticky">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76406 8.93132C5.35169 8.93132 5.0174 8.59703 5.0174 8.18465C5.0174 7.77228 5.35169 7.43799 5.76406 7.43799H27.3025C27.7149 7.43799 28.0492 7.77228 28.0492 8.18465C28.0492 8.59703 27.7149 8.93132 27.3025 8.93132H5.76406ZM5.76406 24.7262C5.35169 24.7262 5.0174 24.3919 5.0174 23.9795C5.0174 23.5672 5.35169 23.2329 5.76406 23.2329H27.3025C27.7149 23.2329 28.0492 23.5672 28.0492 23.9795C28.0492 24.3919 27.7149 24.7262 27.3025 24.7262H5.76406ZM5.0174 16.0821C5.0174 16.4945 5.35169 16.8288 5.76406 16.8288H27.3025C27.7149 16.8288 28.0492 16.4945 28.0492 16.0821C28.0492 15.6697 27.7149 15.3354 27.3025 15.3354H5.76406C5.35169 15.3354 5.0174 15.6697 5.0174 16.0821Z" fill="white"/>
+            </svg>
+            </div>
+            
             <h1 class="header__heading">
               {%- endif -%}
               <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
@@ -404,6 +411,7 @@
               {%- if request.page_type == 'index' -%}
             </h1>
             {%- endif -%}
+            </div>
 
             <div class="search-area-con">
             <div class="search-focused-wrap">
