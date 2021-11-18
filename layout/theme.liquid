@@ -142,10 +142,10 @@
     {% section 'header' %}
     
     <div class="mega-menu-container">
-      <div class="level_1_for_sticky">
+      <div class="level_1_for_sticky mega-menu-section">
         <ul>
           {% for link in linklists[settings.menu].links %}
-          <li class="level_1_item mega-menu-section" triger_megamenu="{{link.handle}}"> {{link.title}}</li>
+          <li class="level_1_item " triger_megamenu="{{link.handle}}"> {{link.title}}</li>
           {% endfor %}
         </ul>
       </div>
