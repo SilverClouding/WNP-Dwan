@@ -35,17 +35,21 @@ display:block;
 
 
 .humber{
-display:block;
+  display:block;
 }
 .close_humb{
-display:none;
+  display:none;
 }
 
 .humbergerfor_sticky.open .humber{
-display:none;
+  display:none;
 }
 .humbergerfor_sticky.open .close_humb{
-display:block;
+  display:block;
+}
+
+.mega-menu-container.do-sticky {
+  position: sticky;  top: 80px;
 }
 
 /* silver edit */
