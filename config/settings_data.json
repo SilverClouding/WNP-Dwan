@@ -52,6 +52,7 @@
         "settings": {
           "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/logo.png",
+          "sticky_logo": "shopify:\/\/shop_images\/sticky_logo.png",
           "logo_width": 150,
           "logo_position": "top-left",
           "menu": "main-menu",
@@ -286,6 +287,8 @@
           "44950e8a-9566-4a81-9cfe-47ab7dd9a8f9": {
             "type": "col_img",
             "settings": {
+              "btn_text": "Shop All Brands",
+              "button_link": ""
             }
           },
           "mega-menu-4-0": {
