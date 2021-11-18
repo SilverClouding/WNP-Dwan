@@ -64,7 +64,7 @@
       padding-top: 0.5rem;
     }
   }
-  {% unless section.settings.enable_sticky_header %}
+  {% if section.settings.enable_sticky_header %}
   div#shopify-section-header {
     position: sticky!important;
     top: 0;
@@ -92,7 +92,7 @@
     padding-right: 30px;
   }
   
-  {% endunless %}
+  {% endif %}
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
