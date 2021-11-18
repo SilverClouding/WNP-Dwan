@@ -369,6 +369,17 @@
                      height="{{ section.settings.logo.height }}"
                      alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
                      >
+                
+               
+                <img srcset="{{ section.settings.sticky_logo | img_url: image_size }} 1x, {{ section.settings.sticky_logo | img_url: image_size, scale: 2 }} 2x"
+                     src="{{ section.settings.sticky_logo | img_url: image_size }}"
+                     loading="lazy"
+                     class="header__heading-logo sticky_logo"
+                     width="{{ section.settings.sticky_logo.width }}"
+                     height="{{ section.settings.sticky_logo.height }}"
+                     alt="{{ section.settings.sticky_logo.alt | default: shop.name | escape }}"
+                     >
+                
                 {%- else -%}
                 <span class="h2">{{ shop.name }}</span>
                 {%- endif -%}
