@@ -628,6 +628,7 @@
           
 
 {% javascript %}
+            var megamenu_container = document.getElementsByClassName("mega-menu-container")[0];
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -692,8 +693,9 @@
 
     hide() {
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+                                                   megamenu_container.classList.add('do-sticky');
       this.closeMenuDisclosure();
-
+	
     }
 
     reveal() {
