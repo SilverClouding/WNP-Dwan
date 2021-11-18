@@ -64,6 +64,14 @@
       padding-top: 0.5rem;
     }
   }
+  {% unless section.settings.enable_sticky_header %}
+  div#shopify-section-header {
+    position: sticky!important;
+    top: 0;
+    z-index: 3;
+    transform: translateY(0);
+  }
+  {% endunless %}
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
