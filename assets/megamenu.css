@@ -7,49 +7,51 @@ display:block;
 } */
 
 /* Silver edit */
-.mega-menu-section {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: transform .1s,opacity .1s;
-  -webkit-transition: transform .1s,opacity .1s;  
-  -moz-transition: transform .1s,opacity .1s;  
-  -o-transition: transform .1s,opacity .1s;  
-  -ms-transition: transform .1s,opacity .1s;
-  transition-delay: 0s;
-}
+@media screen and (min-width: 750px) {
+  .mega-menu-section {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: transform .1s,opacity .1s;
+    -webkit-transition: transform .1s,opacity .1s;  
+    -moz-transition: transform .1s,opacity .1s;  
+    -o-transition: transform .1s,opacity .1s;  
+    -ms-transition: transform .1s,opacity .1s;
+    transition-delay: 0s;
+  }
 
-.mega-menu-section.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: transform .3s ease,opacity .2s linear;
-  -webkit-transition: transform .3s ease,opacity .2s linear;
-  -moz-transition: transform .3s ease,opacity .2s linear;
-  -o-transition: transform .3s ease,opacity .2s linear;
-  -ms-transition: transform .3s ease,opacity .2s linear;
-  transition-delay: .2s;
-  z-index: 2;
-}
+  .mega-menu-section.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform .3s ease,opacity .2s linear;
+    -webkit-transition: transform .3s ease,opacity .2s linear;
+    -moz-transition: transform .3s ease,opacity .2s linear;
+    -o-transition: transform .3s ease,opacity .2s linear;
+    -ms-transition: transform .3s ease,opacity .2s linear;
+    transition-delay: .2s;
+    z-index: 2;
+  }
 
 
-.humber{
-  display:block;
-}
-.close_humb{
-  display:none;
-}
+  .humber{
+    display:block;
+  }
+  .close_humb{
+    display:none;
+  }
 
-.humbergerfor_sticky.open .humber{
-  display:none;
-}
-.humbergerfor_sticky.open .close_humb{
-  display:block;
-}
+  .humbergerfor_sticky.open .humber{
+    display:none;
+  }
+  .humbergerfor_sticky.open .close_humb{
+    display:block;
+  }
 
-.mega-menu-container.do-sticky {
-  position: sticky;  top: 80px;
+  .mega-menu-container.do-sticky {
+    position: sticky;  top: 80px;
+  }
 }
 
 /* silver edit */
