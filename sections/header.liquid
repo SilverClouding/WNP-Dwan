@@ -70,61 +70,64 @@
   }
   
   {% if section.settings.enable_sticky_header %}
-  div#shopify-section-header {
-    position: sticky!important;
-    top: 0;
-    z-index: 3;
-    transform: translateY(0);
-  }
-
-  .shopify-section-header-sticky .header__icons-inner {
-    order: 2;
-  }
-
-  .shopify-section-header-sticky .re-order-link {
-    order: 1;
-  }
-
-  .shopify-section-header-sticky .header__icons {
-    justify-content: space-between!important;
-    align-items: center!important;
-    flex-wrap: wrap;
-    flex-direction: unset!important;
-  }
-
-  .shopify-section-header-sticky .re-order-link .re-order {
-    margin: 0!important;
-    padding-right: 30px;
-    padding-right: 10px;
-  }
-  .shopify-section-header-sticky .sticky_logo{
-    display:block;
-  }
-
-  .shopify-section-header-sticky .main-logo{
-    display:none;
-  }
-  .shopify-section-header-sticky header {
-    padding-top: 12px!important;
-    padding-bottom: 12px!important;
-  }
   
-  .shopify-section-header-sticky  .header__icons {
-        width: 325px;
-  }
+  @media screen and (min-width: 750px) {
+    div#shopify-section-header {
+      position: sticky!important;
+      top: 0;
+      z-index: 3;
+      transform: translateY(0);
+    }
 
-  .shopify-section-header-sticky  .logo_and_humberger {
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5%;
-  }
+    .shopify-section-header-sticky .header__icons-inner {
+      order: 2;
+    }
 
-  .shopify-section-header-sticky .search-area-con {
-    width: 50%!important;
-  }
-   .shopify-section-header-sticky .humbergerfor_sticky{
-  display:block
+    .shopify-section-header-sticky .re-order-link {
+      order: 1;
+    }
+
+    .shopify-section-header-sticky .header__icons {
+      justify-content: space-between!important;
+      align-items: center!important;
+      flex-wrap: wrap;
+      flex-direction: unset!important;
+    }
+
+    .shopify-section-header-sticky .re-order-link .re-order {
+      margin: 0!important;
+      padding-right: 30px;
+      padding-right: 10px;
+    }
+    .shopify-section-header-sticky .sticky_logo{
+      display:block;
+    }
+
+    .shopify-section-header-sticky .main-logo{
+      display:none;
+    }
+    .shopify-section-header-sticky header {
+      padding-top: 12px!important;
+      padding-bottom: 12px!important;
+    }
+
+    .shopify-section-header-sticky  .header__icons {
+      width: 325px;
+    }
+
+    .shopify-section-header-sticky  .logo_and_humberger {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 5%;
+    }
+
+    .shopify-section-header-sticky .search-area-con {
+      width: 50%!important;
+    }
+    .shopify-section-header-sticky .humbergerfor_sticky{
+      display:block
+    }
   }
 
   {% endif %}
