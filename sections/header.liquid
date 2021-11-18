@@ -701,10 +701,12 @@
     reveal() {
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
+                                                   megamenu_container.classList.add('do-sticky');
     }
 
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+                                                   megamenu_container.classList.remove('do-sticky');
     }
 
     closeMenuDisclosure() {
