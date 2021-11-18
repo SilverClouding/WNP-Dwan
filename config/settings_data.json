@@ -322,9 +322,9 @@
             "type": "column",
             "settings": {
               "image_bottom": "shopify:\/\/shop_images\/slide2.jpg",
-              "image_caption_bottom": "Image caption",
-              "richtext_bottom": "",
-              "btn_text": "",
+              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
+              "richtext_bottom": "<p>Hello hoomans! <br\/>My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
+              "btn_text": "More about loopy",
               "button_link": ""
             }
           }
