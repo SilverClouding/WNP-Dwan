@@ -492,3 +492,10 @@ $(document).on('click','.mega_parent',function(e){
   $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
 console.log(targetData)
 });
+
+
+$(document).on('click','.humbergerfor_sticky svg',function(e){
+  
+  $('this').toggleClass('open');
+  
+});
