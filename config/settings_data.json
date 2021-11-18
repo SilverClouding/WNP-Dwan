@@ -347,10 +347,21 @@
             "type": "menus",
             "settings": {
             }
+          },
+          "b31c3040-11d9-4b40-80f4-6a272e7bf995": {
+            "type": "column",
+            "settings": {
+              "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
+              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
+              "richtext_bottom": "<p>Hello hoomans! <br\/>My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
+              "btn_text": "More about loopy",
+              "button_link": "#"
+            }
           }
         },
         "block_order": [
-          "cadc0ed7-0a77-4380-ae5e-4c45b4d8c95d"
+          "cadc0ed7-0a77-4380-ae5e-4c45b4d8c95d",
+          "b31c3040-11d9-4b40-80f4-6a272e7bf995"
         ],
         "settings": {
           "main_link_list": "main-menu",
