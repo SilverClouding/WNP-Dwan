@@ -64,6 +64,11 @@
       padding-top: 0.5rem;
     }
   }
+  
+  .sticky_logo{
+  display:none;
+  }
+  
   {% if section.settings.enable_sticky_header %}
   div#shopify-section-header {
     position: sticky!important;
@@ -90,6 +95,9 @@
   .shopify-section-header-sticky .re-order-link .re-order {
     margin: 0!important;
     padding-right: 30px;
+  }
+  .shopify-section-header-sticky .sticky_logo{
+  display:block;
   }
   
   {% endif %}
@@ -370,7 +378,7 @@
                      alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
                      >
                 
-               
+               {%- if section.settings.sticky_logo  != blank -%}
                 <img srcset="{{ section.settings.sticky_logo | img_url: image_size }} 1x, {{ section.settings.sticky_logo | img_url: image_size, scale: 2 }} 2x"
                      src="{{ section.settings.sticky_logo | img_url: image_size }}"
                      loading="lazy"
@@ -379,6 +387,7 @@
                      height="{{ section.settings.sticky_logo.height }}"
                      alt="{{ section.settings.sticky_logo.alt | default: shop.name | escape }}"
                      >
+                {% endif %}
                 
                 {%- else -%}
                 <span class="h2">{{ shop.name }}</span>
