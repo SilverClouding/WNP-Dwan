@@ -10,10 +10,10 @@
 {% assign Level_2 = "" %}
 {% assign Level_3 = "" %}
 {% assign parentLink = section.settings.parent | handle %}
-{% for link in linklists[section.settings.main_link_list].links %}
+{% for link in linklists[settings.menu].links %}
  {% assign linkHandle = link.title | handle %}
                   {% if linkHandle == parentLink %}
-{% assign Level_1 = linklists[section.settings.main_link_list].links.size %}
+{% assign Level_1 = linklists[settings.menu].links.size %}
 {% for sublink in link.links %}
 {% assign Level_2 = link.links.size  %}
 {% for sub_sublink in sublink.links %}
@@ -37,7 +37,7 @@
            <div class="dropdown_column__menu">
              {% assign parentLink = section.settings.parent | handle %}
 
-             {% for link in linklists[section.settings.main_link_list].links %}
+             {% for link in linklists[settings.menu].links %}
              {% assign linkHandle = link.title | handle %}
              {% if linkHandle == parentLink %}
              <div class="" parentLink='{{parentLink}}'>
@@ -97,7 +97,7 @@
             
           {% elsif block.type == 'products'%}
           <div class="dropdown_column__products">
-           {% for link in linklists[section.settings.main_link_list].links %} 
+           {% for link in linklists[settings.menu].links %} 
              {% assign linkHandle = link.title | handle %}
              {% if linkHandle == parentLink %}
                {% if link.type == 'collection_link' %}
@@ -128,7 +128,7 @@
            
            {% elsif block.type == 'col_img' %}
            <div class="dropdown_column__col-img">
-             {% for link in linklists[section.settings.main_link_list].links %} 
+             {% for link in linklists[settings.menu].links %} 
                {% assign linkHandle = link.title | handle %}
                {% if linkHandle == parentLink %}
                  {% for sub_link in link.links %}
@@ -241,12 +241,12 @@
   "class": "mega-menu-section",
   "max_blocks": 2,
   "settings": [
-{
+/**{
           "type": "link_list",
           "id": "main_link_list",
           "label": "Main Menu",
 		  "default": "main-menu"
-        },
+        },**/
     {
       "type": "text",
       "id": "parent",
