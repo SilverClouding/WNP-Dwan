@@ -147,6 +147,7 @@
                  {% endfor %}
                {% endif %}
              {% endfor%}
+             <a class="button btn shopallbutton" href="{{block.settings.button_link}}">{{block.settings.btn_text}} </a>
            </div>
            
            
@@ -314,7 +315,17 @@
  {
       "type": "col_img",
       "name": "Collection img:2nd level",
-      "settings": []
+      "settings": [
+            {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text"
+            },{
+            "type": "url",
+            "id": "button_link",
+            "label": "link"
+            }
+		]
 },
  {
       "type": "menus",
