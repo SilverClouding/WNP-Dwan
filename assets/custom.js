@@ -498,6 +498,6 @@ $(document).on('click','.humbergerfor_sticky svg',function(e){
   
   $(this).parent().toggleClass('open');
   $(".mega-menu-container.do-sticky").toggleClass('active');
-  $('#shopify-section-mega-menu-1').addCalss('active');
-  $('.main_nav_1').addCalss('active');
+  $('#shopify-section-mega-menu-1').addClass('active');
+  $('.main_nav_1').addClass('active');
 });
