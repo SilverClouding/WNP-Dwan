@@ -496,6 +496,6 @@ console.log(targetData)
 
 $(document).on('click','.humbergerfor_sticky svg',function(e){
   
-  $(this).toggleClass('open');
+  $(this).parent().toggleClass('open');
   
 });
