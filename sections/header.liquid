@@ -632,6 +632,9 @@
  
 {% javascript %}
             var megamenu_container = document.getElementsByClassName("mega-menu-container")[0];
+            var firstMegamenu =  document.getElementById('shopify-section-mega-menu-1');
+            
+            
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -697,6 +700,7 @@
     hide() {
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
                                                    megamenu_container.classList.add('do-sticky');
+                                                   firstMegamenu.classList.remove('active');
       this.closeMenuDisclosure();
 	
     }
@@ -705,11 +709,13 @@
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
                                                    megamenu_container.classList.add('do-sticky');
+                                                   firstMegamenu.classList.remove('active');
     }
 
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
                                                    megamenu_container.classList.remove('do-sticky');
+                                                   firstMegamenu.classList.remove('active');
     }
 
     closeMenuDisclosure() {
