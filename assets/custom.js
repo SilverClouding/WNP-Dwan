@@ -497,9 +497,9 @@ jQuery(function($){
   // for sticky menu
   $(document).on('click','level_1_item ',function(e){
     e.preventDefault();
-    var targetData = $(this).attr('triger_megamenu');
-    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
-    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
+    var triger_megamenu = $(this).attr('triger_megamenu');
+    $('[data-dropdown='+triger_megamenu+']').parents(".mega-menu-section").siblings().removeClass('active');
+    $('[data-dropdown='+triger_megamenu+']').parents(".mega-menu-section").toggleClass('active');
   });
 
 
