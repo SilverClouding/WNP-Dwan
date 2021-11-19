@@ -169,8 +169,8 @@ const text_slider = new Swiper('.text_slider', {
 
 // always page go top after page load
 jQuery(function($){
-  $(function() {
-    $('body').scrollTop(0);
+  $(window).load(function() {
+    $('html, body').animate({scrollTop: $(".first-section").offset().top}, 2000);
   });
 });
 //Quick View
