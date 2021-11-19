@@ -168,11 +168,8 @@ const text_slider = new Swiper('.text_slider', {
 
 
 // always page go top after page load
-jQuery(function($){
-//   $(window).load(function() { });
-    $('html, body').animate({scrollTop: $(".first-section").offset().top}, 2000);
- 
-});
+ document.body.scrollTop = document.documentElement.scrollTop = 0;
+
 //Quick View
 jQuery(function($){
 
