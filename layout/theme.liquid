@@ -145,7 +145,7 @@
       <div class="level_1_for_sticky">
         <ul>
           {% for link in linklists[settings.menu].links %}
-          <li class="level_1_item main_nav_{{forloop.index}}" triger_megamenu="{{link.handle}}"> {{link.title}}</li>
+          <li class="level_1_item main_nav_{{forloop.index}}" id="main_nav_{{forloop.index}}" triger_megamenu="{{link.handle}}"> {{link.title}}</li>
           {% endfor %}
         </ul>
       </div>
