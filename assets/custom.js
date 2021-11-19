@@ -485,26 +485,29 @@ jQuery(function($){
 
 
 // megamenu
+jQuery(function($){
+  $(document).on('click','.mega_parent',function(e){
+    e.preventDefault();
+    var targetData = $(this).attr('terget_megamenu');
+    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
+    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
+    console.log(targetData)
+  });
 
-$(document).on('click','.mega_parent',function(e){
-  e.preventDefault();
-  var targetData = $(this).attr('terget_megamenu');
-  $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
-  $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
-console.log(targetData)
-});
-
-// for sticky menu
-$(document).on('click','level_1_item ',function(e){
-  e.preventDefault();
-  var targetData = $(this).attr('triger_megamenu');
-});
+  // for sticky menu
+  $(document).on('click','level_1_item ',function(e){
+    e.preventDefault();
+    var targetData = $(this).attr('triger_megamenu');
+    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
+    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
+  });
 
 
-$(document).on('click','.humbergerfor_sticky svg',function(e){
-  
-  $(this).parent().toggleClass('open');
-  $(".mega-menu-container.do-sticky").toggleClass('active');
-  $('#shopify-section-mega-menu-1').addClass('active');
-  $('.main_nav_1').addClass('active');
+  $(document).on('click','.humbergerfor_sticky svg',function(e){
+
+    $(this).parent().toggleClass('open');
+    $(".mega-menu-container.do-sticky").toggleClass('active');
+    $('#shopify-section-mega-menu-1').addClass('active');
+    $('.main_nav_1').addClass('active');
+  });
 });
