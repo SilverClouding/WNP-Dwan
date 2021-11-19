@@ -6,7 +6,7 @@ display:none;
 display:block;
 } */
 @media screen and (min-width: 750px) {
-/* Silver edit */
+  /* Silver edit */
 
   .mega-menu-section, .level_1_item,.mega-menu-container.do-sticky  {
     position: absolute;
@@ -55,14 +55,19 @@ display:block;
 
 
 
-.mega-menu-container.do-sticky.active #shopify-section-mega-menu-1,
-.mega-menu-container.do-sticky.active .level_1_item{
-  opacity: 1;
-  visibility: visible;
- 
-  z-index: 2;
-  width: 100%;
-  position: unset;
-}
-/* silver edit */
+  .mega-menu-container.do-sticky.active #shopify-section-mega-menu-1,
+  .mega-menu-container.do-sticky.active .level_1_item{
+    opacity: 1;
+    visibility: visible;
+
+    z-index: 2;
+    width: 100%;
+    position: unset;
+  }
+
+  li.level_1_item.active {
+    color: #f5694d!important;
+    background-color: #fff;
+  }
+  /* silver edit */
 }
