@@ -494,11 +494,17 @@ $(document).on('click','.mega_parent',function(e){
 console.log(targetData)
 });
 
+// for sticky menu
+$(document).on('click','level_1_item ',function(e){
+  e.preventDefault();
+  var targetData = $(this).attr('triger_megamenu');
+});
+
 
 $(document).on('click','.humbergerfor_sticky svg',function(e){
   
   $(this).parent().toggleClass('open');
   $(".mega-menu-container.do-sticky").toggleClass('active');
-//   $('#shopify-section-mega-menu-1').addClass('active');
+  $('#shopify-section-mega-menu-1').addClass('active');
   $('.main_nav_1').addClass('active');
 });
