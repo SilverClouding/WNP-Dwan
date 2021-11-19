@@ -495,7 +495,7 @@ jQuery(function($){
   });
 
   // for sticky menu
-  $(document).on('click','level_1_item ',function(e){
+  $(document).on('click','.level_1_item ',function(e){
     e.preventDefault();
     var triger_megamenu = $(this).attr('triger_megamenu');
     $(this).siblings().removeClass('active');
