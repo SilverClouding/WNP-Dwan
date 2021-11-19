@@ -640,12 +640,12 @@
             var sixtMegamenu = document.getElementById('shopify-section-mega-menu-6');
              var humberger = document.getElementById("humbergerfor_sticky");
             
-             var firstMegamenu = document.getElementById('shopify-section-mega-menu-1');
-            var secMegamenu = document.getElementById('shopify-section-mega-menu-2');
-            var trdMegamenu = document.getElementById('shopify-section-mega-menu-3');
-            var fortMegamenu = document.getElementById('shopify-section-mega-menu-4');
-            var fivMegamenu = document.getElementById('shopify-section-mega-menu-5');
-            var sixtMegamenu = document.getElementById('shopify-section-mega-menu-6');
+             var firstlinav = document.getElementById('main_nav_1');
+            var seclinav = document.getElementById('main_nav_2');
+            var trdlinav = document.getElementById('main_nav_3');
+            var fortlinav = document.getElementById('main_nav_4');
+            var fivlinav = document.getElementById('main_nav_5');
+            var sixtlinav = document.getElementById('main_nav_6');
             
             
   class StickyHeader extends HTMLElement {
@@ -735,6 +735,13 @@
                                                    fivMegamenu.classList.remove('active');
                                                    sixtMegamenu.classList.remove('active');
                                                    humberger.classList.remove('open');
+                                                   firstlinav.classList.remove('active');
+                                                   seclinav.classList.remove('active');
+                                                   trdlinav.classList.remove('active');
+                                                   fortlinav.classList.remove('active');
+                                                   fivlinav.classList.remove('active');
+                                                   sixtlinav.classList.remove('active');
+                                                   
     }
 
     closeMenuDisclosure() {
