@@ -8,7 +8,7 @@ display:block;
 
 /* Silver edit */
 @media screen and (min-width: 750px) {
-  .mega-menu-section {
+  .mega-menu-section, .level_1_item  {
     position: absolute;
     opacity: 0;
     visibility: hidden;
