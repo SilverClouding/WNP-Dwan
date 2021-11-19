@@ -56,7 +56,7 @@ display:block;
 
 
 .mega-menu-container.do-sticky.active #shopify-section-mega-menu-1,
-.mega-menu-container.do-sticky.active .main_nav_1,{
+.mega-menu-container.do-sticky.active .main_nav_1{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
