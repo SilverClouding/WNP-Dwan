@@ -633,6 +633,11 @@
 {% javascript %}
             var megamenu_container = document.getElementsByClassName("mega-menu-container")[0];
             var firstMegamenu = document.getElementById('shopify-section-mega-menu-1');
+            var secMegamenu = document.getElementById('shopify-section-mega-menu-2');
+            var trdMegamenu = document.getElementById('shopify-section-mega-menu-3');
+            var fortMegamenu = document.getElementById('shopify-section-mega-menu-4');
+            var fivMegamenu = document.getElementById('shopify-section-mega-menu-5');
+            var sixtMegamenu = document.getElementById('shopify-section-mega-menu-6');
              var humberger = document.getElementById("humbergerfor_sticky");
             
             
@@ -716,12 +721,12 @@
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
                                                    megamenu_container.classList.remove('do-sticky','active');
-                                                   document.getElementById('shopify-section-mega-menu-1').classList.remove('active');
-                                                    document.getElementById('shopify-section-mega-menu-2').classList.remove('active');
-                                                    document.getElementById('shopify-section-mega-menu-3').classList.remove('active');
-                                                    document.getElementById('shopify-section-mega-menu-4').classList.remove('active');
-                                                    document.getElementById('shopify-section-mega-menu-5').classList.remove('active');
-                                                    document.getElementById('shopify-section-mega-menu-6').classList.remove('active');
+                                                 firstMegamenu.classList.remove('active');
+                                                  secMegamenu.classList.remove('active');
+                                                    trdMegamenu.classList.remove('active');
+                                                  fortMegamenu.classList.remove('active');
+                                                   fivMegamenu.classList.remove('active');
+                                                   sixtMegamenu.classList.remove('active');
                                                    humberger.classList.remove('open');
     }
 
