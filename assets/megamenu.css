@@ -5,10 +5,10 @@ display:none;
 .mega-menu-section.active{
 display:block;
 } */
-
-/* Silver edit */
 @media screen and (min-width: 750px) {
-  .mega-menu-section, .level_1_item  {
+/* Silver edit */
+
+  .mega-menu-section, .level_1_item,.mega-menu-container.do-sticky  {
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -21,7 +21,7 @@ display:block;
     transition-delay: 0s;
   }
 
-  .mega-menu-section.active {
+  .mega-menu-section.active,.mega-menu-container.do-sticky.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -52,7 +52,7 @@ display:block;
   .mega-menu-container.do-sticky {
     position: sticky;  top: 80px;    z-index: 9;
   }
-}
+
 
 
 .mega-menu-container.do-sticky.active #shopify-section-mega-menu-1,
@@ -65,3 +65,4 @@ display:block;
   position: unset;
 }
 /* silver edit */
+}
