@@ -30,6 +30,9 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 {% assign tab_texts = tab_texts | remove_first: ",," | split: ",," %}
 
 {% assign index =  1  %}
+
+<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+
 <div class="tab-for-desktop">
   {% if pretext != blank and combine_pretext == false %}
   {% comment %}
@@ -137,7 +140,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
   
 
 </div>
-
+</div>
 
 <script>
   function openTab(evt, cityName) {
@@ -299,7 +302,36 @@ BUT I NEED MORE TABS! -->
 {% schema %}
   {
     "name": "Product Details",
-    "settings": []
+    "settings": [
+	{
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "accent-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.image-with-text.settings.color_scheme.label"
+    }
+]
   }
 {% endschema %}
 
