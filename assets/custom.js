@@ -172,7 +172,7 @@ const text_slider = new Swiper('.text_slider', {
 var galleryThumbs = new Swiper(".gallery-thumbs", {
   centeredSlides: true,
   centeredSlidesBounds: true,
-  slidesPerView: 4,
+  slidesPerView: 3,
   watchOverflow: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
