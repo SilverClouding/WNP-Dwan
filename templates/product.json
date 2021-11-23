@@ -104,10 +104,61 @@
         "show_vendor": true,
         "show_rating": true
       }
+    },
+    "1637669479d78c349e": {
+      "type": "img-with-text-slider",
+      "blocks": {
+        "1637669479a8e4be19-0": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_46_629ef9f9-9746-4c5f-ae10-6bc78631b375.png",
+            "image_link": "",
+            "preheading": "Our services",
+            "heading": "Grooming - is more than a good look",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1637669479a8e4be19-1": {
+          "type": "content",
+          "settings": {
+            "image_link": "",
+            "preheading": "Story",
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1637669479a8e4be19-2": {
+          "type": "content",
+          "settings": {
+            "image_link": "",
+            "preheading": "Story",
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637669479a8e4be19-0",
+        "1637669479a8e4be19-1",
+        "1637669479a8e4be19-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1637669479d78c349e"
   ]
 }
