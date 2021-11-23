@@ -194,8 +194,11 @@
           {%- when 'description' -%}
             {%- if product.description != blank -%}
             <div class="ProductMeta_Description small__height bottomImg" {{ block.shopify_attributes }}>
-              <div class="product__description rte">
-                {{ product.description | strip_html}}
+              <div class="product__description short_des rte">
+                {{ product.description | strip_html | truncate: 50}}
+              </div>
+              <div class="product__description long_des rte">
+                {{ product.description }}
               </div>
               <div class="des_bottom_div">
                 <div class="dec-overlayy"></div>
