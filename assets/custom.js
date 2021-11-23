@@ -545,15 +545,15 @@ jQuery(function($){
 $(document).on('click', '.show_more',function(){
   $(this).addClass('hide');
   $(this).siblings('.show_less').removeClass('hide');
-    $(this).parents('.des_bottom_div').siblings('.short_des').hide();
-  $(this).parents('.des_bottom_div').siblings('.long_des').show();
+    $(this).parents('.des_bottom_div').siblings('.short_des').addclass('hide');
+  $(this).parents('.des_bottom_div').siblings('.long_des').removeClass('hide');
   $(this).parents('.bottomImg').removeAttr('style');
 });
 
 $(document).on('click', '.show_less',function(){
   $(this).addClass('hide');
   $(this).siblings('.show_more').removeClass('hide');
-  $(this).parents('.des_bottom_div').siblings('.short_des').show();
- $(this).parents('.des_bottom_div').siblings('.long_des').hide();
+  $(this).parents('.des_bottom_div').siblings('.short_des').removeClass('hide');
+ $(this).parents('.des_bottom_div').siblings('.long_des').addclass('hide');
   $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
 });
