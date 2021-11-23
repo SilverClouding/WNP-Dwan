@@ -195,7 +195,7 @@
             {%- if product.description != blank -%}
             <div class="ProductMeta_Description small__heightt bottomImg" {{ block.shopify_attributes }}>
               <div class="product__description short_des rte">
-                {{ product.description | strip_html | truncate: 150}}
+                <p>  {{ product.description | strip_html | truncate: 150}}</p>
               </div>
               <div class="product__description long_des rte">
                 {{ product.description }}
