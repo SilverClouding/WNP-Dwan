@@ -75,6 +75,8 @@
     "product-details-tab": {
       "type": "product-details-tab",
       "settings": {
+        "full_width": false,
+        "color_scheme": "background-2"
       }
     },
     "product-recommendations": {
