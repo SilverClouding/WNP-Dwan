@@ -539,3 +539,19 @@ jQuery(function($){
   });
   
 });
+
+
+// product description learn more , show more
+$(document).on('click', '.show_more',function(){
+  $(this).addClass('hide');
+  $(this).siblings('.show_less').removeClass('hide');
+  $(this).parents('.bottomImg').removeClass('small__height');
+  $(this).parents('.bottomImg').removeAttr('style');
+});
+
+$(document).on('click', '.show_less',function(){
+  $(this).addClass('hide');
+  $(this).siblings('.show_more').removeClass('hide');
+  $(this).parents('.bottomImg').addClass('small__height');
+  $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
+});
