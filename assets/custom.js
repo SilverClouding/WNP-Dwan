@@ -545,7 +545,7 @@ jQuery(function($){
 $(document).on('click', '.show_more',function(){
   $(this).addClass('hide');
   $(this).siblings('.show_less').removeClass('hide');
-    $(this).parents('.des_bottom_div').siblings('.short_des').addclass('hide');
+    $(this).parents('.des_bottom_div').siblings('.short_des').addClass('hide');
   $(this).parents('.des_bottom_div').siblings('.long_des').removeClass('hide');
   $(this).parents('.bottomImg').removeAttr('style');
 });
