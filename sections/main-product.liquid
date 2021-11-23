@@ -71,26 +71,28 @@
     margin-right: 15px;
     padding-left: 15px;
 
-    .swiper-slide {
-      img {
-        transition: 0.3s;
-      }
-
-      &-active {
-        opacity: 0.9;
-      }
-
-      &-thumb-active {
-        opacity: 1;
-
-        img {
-          margin-left: -15px;
-        }
-      }
-    }
+    
   }
 
 
+ .gallery-thumbs .swiper-slide {   }
+  .gallery-thumbs .swiper-slide img {
+    transition: 0.3s;
+  }
+
+  .gallery-thumbs .swiper-slide .active {
+    opacity: 0.9;
+  }
+
+  .gallery-thumbs .swiper-slide .thumb-active {
+    opacity: 1;
+
+
+  }
+  .gallery-thumbs .swiper-slide .thumb-active img {
+    margin-left: -15px;
+  }
+  
 
   @keyframes slide-in {
     from {
