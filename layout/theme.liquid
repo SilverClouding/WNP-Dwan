@@ -116,7 +116,8 @@
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
      {{ 'fancybox.min.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
-   
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+      {{ 'megamenu.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -140,40 +141,7 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     
-    <div class="mega-menu-container">
-      <div class="level_1_for_sticky">
-        <ul>
-          {% for link in linklists[settings.menu].links %}
-          <li class="level_1_item main_nav_{{forloop.index}}" id="main_nav_{{forloop.index}}" triger_megamenu="{{link.handle}}"> {{link.title}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="mega-menus">
-      {% if settings.mega_menu_1 %}
-      {% section 'mega-menu-1' %}
-      {% endif %}
-
-      {% if settings.mega_menu_2 %}
-      {% section 'mega-menu-2' %}
-      {% endif %}
-
-      {% if settings.mega_menu_3 %}
-      {% section 'mega-menu-3' %}
-      {% endif %}
-
-      {% if settings.mega_menu_4 %}
-      {% section 'mega-menu-4' %}
-      {% endif %}
-
-      {% if settings.mega_menu_5 %}
-      {% section 'mega-menu-5' %}
-      {% endif %}
-      {% if settings.mega_menu_6 %}
-      {% section 'mega-menu-6' %}
-      {% endif %}
-      </div>
-
-    </div>
+   
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
