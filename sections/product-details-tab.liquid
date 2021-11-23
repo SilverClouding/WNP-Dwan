@@ -8,29 +8,18 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 
 <div class="tab-for-desktop">
   <div class="tab-customize">
-    {% if product.metafields.my_fields.description != blank %}
-    <button class="tablinks-cus pretext" onclick="openTab(event, 'pretext_tab')" {% if product.metafields.my_fields.description != blank %}id="tab-cus-active" {% endif %}>Description</button>
-    {% endif %}
     
-
-    <button class="tablinks-cus" onclick="openTab(event, 'tab-2')" >Ingredients</button>
-    <button class="tablinks-cus" onclick="openTab(event, 'tab-3')" >About Orijen</button>
-   
-    <button class="tablinks-cus" onclick="openTab(event, 'tab-4')">Delivery & Returns</button>
+    {% for block in section.blocks %}
+     <button class="tablinks-cus" onclick="openTab(event, 'tab-{{forloop.index}}')" >{{block.settings.heading}}</button>
+    {% endfor %}
 
   </div>
-  {% assign index =  1  %}
-  {% if product.metafields.my_fields.description != blank %}
-  <div id="pretext_tab" class="tabcontent-cus">{{ product.metafields.my_fields.description }}</div>
-   {% endif %}
   
-
-  <div id="tab-2" class="tabcontent-cus">{{ text }}</div>
-<div id="tab-3" class="tabcontent-cus">{{ text }}</div>
+    {% for block in section.blocks %}
+   <div id="tab-{{forloop.index}}" class="tabcontent-cus">{{ block.settings.text }}</div>
+  {% endfor %}
   
-  <div id="tab-4" class="tabcontent-cus">
-    <a href="https://support.aimshop.com/faq/categories" target="_blank" rel="noopener" title="FAQ Centre"><img src="https://support.aimshop.com/images/faqimg.png" alt="FAQ Centre" width="175" height="174" style="display: block; margin-left: auto; margin-right: auto;"></a>
-  </div>
+  
 
 
 </div>
@@ -304,6 +293,25 @@ BUT I NEED MORE TABS! -->
       "default": "background-1",
       "label": "t:sections.image-with-text.settings.color_scheme.label"
     }
+],
+"blocks": [
+    {
+      "type": "content",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "settings": [
+	{
+          "type": "text",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        },
+		{
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+		]
+}
 ]
   }
 {% endschema %}
