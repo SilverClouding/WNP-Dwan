@@ -4,61 +4,31 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 {% endcomment %}
 <div class="product-tabs {% if section.settings.full_width %}product-tabs--full-width{% else %}page-width{% endif %} color-{{ section.settings.color_scheme }}  gradient color-scheme-{{ section.settings.color_scheme }}">
 
-{% assign combine_pretext = false %}
 
-{% assign description = tabbed-description | default: product.description %}
-{% if description contains "<h5>" %}
-{% assign tab_heads = '' %}
-{% assign tab_texts = '' %}
-{% assign pretext = '' %}
-
-{% assign chunks = description | strip | split: "<h5>" %}
-{% for c in chunks %}
-{% if c contains "</h5>" %}
-{% assign chunk = c | split: "</h5>" %}
-{% assign tab_heads = tab_heads | append: ",," | append: chunk.first %}
-{% assign tab_texts = tab_texts | append: ",," %}
-{% if pretext != blank  and combine_pretext %}
-{% assign tab_texts = tab_texts | append: pretext | append: "<br>" %}
-{% assign pretext = '' %}
-{% endif %}
-{% assign tab_texts = tab_texts | append: chunk.last  %}
-{% elsif forloop.first %}
-{% assign pretext =  c %}
-{% endif %}
-{% endfor %}
-
-{% assign tab_heads = tab_heads | remove_first: ",," | split: ",," %}
-{% assign tab_texts = tab_texts | remove_first: ",," | split: ",," %}
-
-{% assign index =  1  %}
 
 <div class="tab-for-desktop">
-  {% if pretext != blank and combine_pretext == false %}
-  {% comment %}
-  <span class=pretext>{{ pretext }}</span>
-  {% endcomment %}
-  {% endif %}
   <div class="tab-customize">
-    {% if pretext != blank %}
-    <button class="tablinks-cus pretext" onclick="openTab(event, 'pretext_tab')" {% if pretext != blank %}id="tab-cus-active" {% endif %}>Description</button>
+    {% if product.metafields.my_fields.description != blank %}
+    <button class="tablinks-cus pretext" onclick="openTab(event, 'pretext_tab')" {% if product.metafields.my_fields.description != blank %}id="tab-cus-active" {% endif %}>Description</button>
     {% endif %}
-    {% for head in tab_heads %}
-    <button class="tablinks-cus" onclick="openTab(event, 'tab-{{- index -}}')" {% if forloop.index == 1 and pretext == blank %}id="tab-cus-active" {% endif %}>{{ head }}</button>
-    {% assign index =  index | plus: 1  %}
-    {% endfor %}
-    <button class="tablinks-cus" onclick="openTab(event, 'tab-{{- index -}}')">FAQ Centre</button>
+    
+
+    <button class="tablinks-cus" onclick="openTab(event, 'tab-2')" >Ingredients</button>
+    <button class="tablinks-cus" onclick="openTab(event, 'tab-3')" >About Orijen</button>
+   
+    <button class="tablinks-cus" onclick="openTab(event, 'tab-4')">Delivery & Returns</button>
 
   </div>
   {% assign index =  1  %}
-  {% if pretext != blank %}
-  <div id="pretext_tab" class="tabcontent-cus">{{ pretext }}</div>
+  {% if product.metafields.my_fields.description != blank %}
+  <div id="pretext_tab" class="tabcontent-cus">{{ product.metafields.my_fields.description }}</div>
    {% endif %}
-  {% for text in tab_texts %}
-  <div id="tab-{{- index -}}" class="tabcontent-cus">{{ text }}</div>
-  {% assign index =  index | plus: 1  %}
-  {% endfor %}
-  <div id="tab-{{- index -}}" class="tabcontent-cus">
+  
+
+  <div id="tab-2" class="tabcontent-cus">{{ text }}</div>
+<div id="tab-3" class="tabcontent-cus">{{ text }}</div>
+  
+  <div id="tab-4" class="tabcontent-cus">
     <a href="https://support.aimshop.com/faq/categories" target="_blank" rel="noopener" title="FAQ Centre"><img src="https://support.aimshop.com/images/faqimg.png" alt="FAQ Centre" width="175" height="174" style="display: block; margin-left: auto; margin-right: auto;"></a>
   </div>
 
@@ -261,11 +231,6 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
     width: 100%;
 }
 </style>
-
-{% else %}
-{{ description }}
-{% endif %}
-
 
 
 {% comment %}
