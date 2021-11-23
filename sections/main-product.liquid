@@ -195,7 +195,7 @@
             {%- if product.description != blank -%}
             <div class="ProductMeta_Description small__height bottomImg" {{ block.shopify_attributes }}>
               <div class="product__description rte">
-                {{ product.description | escape}}
+                {{ product.description | strip_html}}
               </div>
               <div class="des_bottom_div">
                 <div class="dec-overlayy"></div>
