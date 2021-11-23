@@ -519,6 +519,7 @@ jQuery(function($){
     $(".mega-menu-container.do-sticky").removeClass('active');
     $('.mega-menu-section').removeClass('active');
     $('.main_nav_1').removeClass('active');
+     $('.level_1_item').removeClass('active');
   });
   
 });
