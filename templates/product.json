@@ -96,13 +96,13 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Pet-Lovers Also Bought",
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "show_vendor": true,
+        "show_rating": true
       }
     }
   },
