@@ -60,7 +60,7 @@
 </noscript>
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
-  <span class="product__media-icon motion-reduce" aria-hidden="true">
+ {% unless hide_icon %} <span class="product__media-icon motion-reduce" aria-hidden="true">
     {%- liquid
       case media.media_type
       when 'video' or 'external_video'
@@ -71,7 +71,7 @@
         render 'icon-zoom'
       endcase
     -%}
-  </span>
+  </span>{% endunless %}
 
   <div class="product__media media media--transparent" style="padding-top: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
     <img
