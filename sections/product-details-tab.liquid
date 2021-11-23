@@ -222,35 +222,6 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 </style>
 
 
-{% comment %}
-<!-- 
-BUT I NEED MORE TABS! -->
-{% capture more-tabs %}
-{{product.description }}
-<h5>Reviews</h5>
-<div id="shopify-product-reviews" 
-     data-id="{{product.id}}"
-     >
-  {{ product.metafields.spr.reviews }}
-</div>
-{% endcapture %}
-
-{% render 'tabbed-description' with more-tabs %}
-
-<!-- In the same way you can pull in a Page content too: -->
-{% capture even-more-tabs %}
-<h6>About Us</h6>
-{{ pages['about-us'].content }}
-{{ product.description }}
-<h6>Reviews</h6>
-<div id="shopify-product-reviews" 
-     data-id="{{product.id}}"
-     >
-  {{ product.metafields.spr.reviews }}
-</div>
-{% endcapture %}
-{% render 'tabbed-description' with even-more-tabs %}
-{% endcomment %}
 
 
 {% schema %}
