@@ -2,6 +2,8 @@
 {% comment %}
 if combine_pretext is false, the text before the first <H6> will be shown above all tabs, otherwise added to the first tab
 {% endcomment %}
+<div class="product-tabs {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+
 {% assign combine_pretext = false %}
 
 {% assign description = tabbed-description | default: product.description %}
@@ -30,8 +32,6 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 {% assign tab_texts = tab_texts | remove_first: ",," | split: ",," %}
 
 {% assign index =  1  %}
-
-<div class="product-tabs {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
 
 <div class="tab-for-desktop">
   {% if pretext != blank and combine_pretext == false %}
