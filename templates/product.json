@@ -72,6 +72,11 @@
         "enable_video_looping": false
       }
     },
+    "product-details-tab": {
+      "type": "product-details-tab",
+      "settings": {
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -137,6 +142,7 @@
   },
   "order": [
     "main",
+    "product-details-tab",
     "product-recommendations",
     "1637669479d78c349e"
   ]
