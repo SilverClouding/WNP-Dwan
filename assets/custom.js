@@ -507,9 +507,18 @@ jQuery(function($){
 
   $(document).on('click','.humbergerfor_sticky svg',function(e){
 
-    $(this).parent().toggleClass('open');
-    $(".mega-menu-container.do-sticky").toggleClass('active');
+    $(this).parent().addClass('open');
+    $(".mega-menu-container.do-sticky").addClass('active');
     $('#shopify-section-mega-menu-1').addClass('active');
     $('.main_nav_1').addClass('active');
   });
+  
+   $(document).on('click','.humbergerfor_sticky.open svg',function(e){
+
+    $(this).parent().removeClass('open');
+    $(".mega-menu-container.do-sticky").removeClass('active');
+    $('.mega-menu-section').removeClass('active');
+    $('.main_nav_1').removeClass('active');
+  });
+  
 });
