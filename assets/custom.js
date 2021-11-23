@@ -554,6 +554,6 @@ $(document).on('click', '.show_less',function(){
   $(this).addClass('hide');
   $(this).siblings('.show_more').removeClass('hide');
   $(this).parents('.des_bottom_div').siblings('.short_des').removeClass('hide');
- $(this).parents('.des_bottom_div').siblings('.long_des').addclass('hide');
+ $(this).parents('.des_bottom_div').siblings('.long_des').addClass('hide');
   $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
 });
