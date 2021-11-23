@@ -193,7 +193,7 @@
             </div>
           {%- when 'description' -%}
             {%- if product.description != blank -%}
-        <div class="ProductMeta__Description small__height bottomImg" {{ block.shopify_attributes }}>
+            <div class="ProductMeta_Description small__height bottomImg" {{ block.shopify_attributes }}>
               <div class="product__description rte">
                 {{ product.description }}
               </div>
@@ -202,7 +202,7 @@
                 <a class="show_more">Show more</a>
                 <a class="show_less hide">Show less</a>
               </div>
-        </div>
+            </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
