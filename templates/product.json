@@ -27,6 +27,16 @@
           "settings": {
           }
         },
+        "437eaed0-d3f7-456d-8118-fb3ad4e61ece": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -44,11 +54,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -61,10 +66,11 @@
         "title",
         "subtitle",
         "price",
+        "437eaed0-d3f7-456d-8118-fb3ad4e61ece",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
