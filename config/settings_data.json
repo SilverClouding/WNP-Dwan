@@ -55,7 +55,6 @@
           "sticky_logo": "shopify:\/\/shop_images\/sticky_logo.png",
           "logo_width": 150,
           "logo_position": "top-left",
-          "menu": "main-menu",
           "show_line_separator": true,
           "enable_sticky_header": true
         }
@@ -215,10 +214,8 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "Dogs",
-          "height": "adapt",
-          "showproduct": false
+          "height": "adapt"
         }
       },
       "mega-menu-2": {
@@ -245,10 +242,8 @@
           "mega-menu-2-0"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "cats",
-          "height": "adapt",
-          "showproduct": false
+          "height": "adapt"
         }
       },
       "mega-menu-3": {
@@ -275,10 +270,8 @@
           "mega-menu-3-0"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "small animals",
-          "height": "adapt",
-          "showproduct": false
+          "height": "adapt"
         }
       },
       "mega-menu-4": {
@@ -307,10 +300,8 @@
           "mega-menu-4-0"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "shop by brand",
-          "height": "adapt",
-          "showproduct": false
+          "height": "adapt"
         }
       },
       "mega-menu-5": {
@@ -337,10 +328,8 @@
           "mega-menu-5-0"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "Sale",
-          "height": "adapt",
-          "showproduct": true
+          "height": "adapt"
         }
       },
       "mega-menu-6": {
@@ -367,10 +356,8 @@
           "b31c3040-11d9-4b40-80f4-6a272e7bf995"
         ],
         "settings": {
-          "main_link_list": "main-menu",
           "parent": "Services",
-          "height": "adapt",
-          "showproduct": false
+          "height": "adapt"
         }
       }
     },
