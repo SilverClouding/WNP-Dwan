@@ -584,6 +584,8 @@ jQuery(function($){
         localStorage.setItem('tmx-newsletter', date );
       }
     }
+    
+    console.log(localStorage);
   }
 
   $(document).ready(function(){
