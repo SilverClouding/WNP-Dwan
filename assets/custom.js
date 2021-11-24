@@ -577,7 +577,7 @@ jQuery(function($){
       var ms = check_time % 1000;
       check_time = (check_time - ms) / 1000;
       var days = Math.floor(check_time / 86400);
-      console.log(days);
+      console.log(check_time);
       if(days > 2){
         $("#newsletter-popup").modal({
           fadeDuration: 500
@@ -585,7 +585,7 @@ jQuery(function($){
         localStorage.setItem('tmx-newsletter', date );
       }
     }
-    
+     console.log(date);
     console.log(localStorage);
   }
 
