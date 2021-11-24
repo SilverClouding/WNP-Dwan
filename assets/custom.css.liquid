@@ -1662,18 +1662,26 @@ select:focus, select:hover{
     line-height:22px;
     padding-right:5px;
   }
- @media(max-width:992px){
- .footer .footer__content-top{
-    padding:4rem 20px;
-  }  
-   .footer .grid--5-col .footer-block {
-    width: 100%;
-}
-   
- }
-  
-  
-  
+  @media(max-width:992px){
+    .footer{
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .footer .footer__content-bottom{
+      order:1;
+    }  
+    .footer .footer__content-top{
+      padding:4rem 20px;
+      order:2;
+    }  
+    .footer .grid--5-col .footer-block {
+      width: 100%;
+    }
+
+  }
+
+
+
   /* mini cart  */
   /* mini cart */
   .minibag-mask {
