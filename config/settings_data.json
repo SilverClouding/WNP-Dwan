@@ -381,7 +381,7 @@
           "snippet_mode": "default",
           "text": "Reviews",
           "line_break": false,
-          "show_popup": true,
+          "show_popup": false,
           "anchor_to_reviews_widget": true
         }
       }
