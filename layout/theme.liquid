@@ -183,10 +183,11 @@
     {% section 'newsletter' %}
     {% section 'footer' %}
 
-    {% comment %}  {% endcomment %}
+    {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
-    {% section 'cart-items' %}
+      {% section 'cart-items' %}
     </div>
+    {% endif %}
   
     
     
