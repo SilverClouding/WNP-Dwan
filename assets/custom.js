@@ -544,18 +544,50 @@ jQuery(function($){
 
 
 // product description learn more , show more
-$(document).on('click', '.show_more',function(){
-  $(this).addClass('hide');
-  $(this).siblings('.show_less').removeClass('hide');
+jQuery(function($){
+  $(document).on('click', '.show_more',function(){
+    $(this).addClass('hide');
+    $(this).siblings('.show_less').removeClass('hide');
     $(this).parents('.des_bottom_div').siblings('.short_des').addClass('hide');
-  $(this).parents('.des_bottom_div').siblings('.long_des').removeClass('hide');
-  $(this).parents('.bottomImg').removeAttr('style');
-});
+    $(this).parents('.des_bottom_div').siblings('.long_des').removeClass('hide');
+    $(this).parents('.bottomImg').removeAttr('style');
+  });
 
-$(document).on('click', '.show_less',function(){
-  $(this).addClass('hide');
-  $(this).siblings('.show_more').removeClass('hide');
-  $(this).parents('.des_bottom_div').siblings('.short_des').removeClass('hide');
- $(this).parents('.des_bottom_div').siblings('.long_des').addClass('hide');
-  $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
+  $(document).on('click', '.show_less',function(){
+    $(this).addClass('hide');
+    $(this).siblings('.show_more').removeClass('hide');
+    $(this).parents('.des_bottom_div').siblings('.short_des').removeClass('hide');
+    $(this).parents('.des_bottom_div').siblings('.long_des').addClass('hide');
+    $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
+  });
+  )};
+
+// newsletter popup
+jQuery(function($){
+  var checkNewsletter = function(){
+    var date = new Date();
+    if(localStorage.getItem('tmx-newsletter') == null || localStorage.getItem('tmx-newsletter') == "undefined" ){
+      $("#newsletter-popup").modal({
+        fadeDuration: 500
+      });
+      localStorage.setItem('tmx-newsletter', date );
+    }
+    else{
+      var check_time = new Date(date) - new Date(localStorage.getItem('tmx-newsletter'));
+      var ms = check_time % 1000;
+      check_time = (check_time - ms) / 1000;
+      var days = Math.floor(check_time / 86400);
+      if(days > 2){
+        $("#newsletter-popup").modal({
+          fadeDuration: 500
+        });
+        localStorage.setItem('tmx-newsletter', date );
+      }
+    }
+  }
+
+  $(document).ready(function(){
+    if($("#newsletter-popup").length > 0) checkNewsletter();
+  });
+
 });
