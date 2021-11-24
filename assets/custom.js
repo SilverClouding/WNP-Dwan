@@ -560,7 +560,7 @@ jQuery(function($){
     $(this).parents('.des_bottom_div').siblings('.long_des').addClass('hide');
     $(this).parents('.bottomImg').css('height',$(this).parents('.bottomImg').height());
   });
-  )};
+});
 
 // newsletter popup
 jQuery(function($){
