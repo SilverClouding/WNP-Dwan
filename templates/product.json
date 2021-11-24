@@ -182,6 +182,7 @@
       "blocks": {
         "19b5bf93-6632-436d-b16a-940301bbd777": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {
             "star": "#f5694d",
             "review_type": "product_review,questions",
