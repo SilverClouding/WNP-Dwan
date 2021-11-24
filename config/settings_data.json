@@ -366,8 +366,8 @@
           "ece452ee-7d19-48ab-8d8a-5d024f4abd04": {
             "type": "shop_button",
             "settings": {
-              "button_label": "",
-              "button_link": ""
+              "button_label": "Shop Dogs",
+              "button_link": "shopify:\/\/collections\/dogs"
             }
           },
           "e10d0f74-32a3-47ba-acb2-99c27ee18830": {
