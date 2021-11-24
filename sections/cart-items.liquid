@@ -212,7 +212,7 @@ body.page-your-shopping-cart {
   {% for block in section.blocks %}
    {% case block.type %}
    {%- when 'shop_button' -%}
-  <a href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
+  <a role="link" aria-disabled="true" class="button button--primary" href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
   {%- endcase -%}
   {% endfor%}
 </div>
