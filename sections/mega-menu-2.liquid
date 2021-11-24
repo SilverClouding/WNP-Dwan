@@ -137,14 +137,11 @@
                      <div class="featured-prod-item">
                        <a href="{{ sub_link.url }}">
                          {% if linkCollection.image %}
-                         <img srcset="{%- if linkCollection.image.width >= 165 -%}{{ linkCollection.image | img_url: '165x' }} 165w,{%- endif -%}
-                                       {%- if linkCollection.image.width >= 360 -%}{{ linkCollection.image | img_url: '360x' }} 360w,{%- endif -%}
-                                       {%- if linkCollection.image.width >= 535 -%}{{ linkCollection.image | img_url: '535x' }} 535w,{%- endif -%}
-                                       {%- if linkCollection.image.width >= 750 -%}{{ linkCollection.image | img_url: '750x' }} 750w,{%- endif -%}
-                                       {%- if linkCollection.image.width >= 1070 -%}{{ linkCollection.image | img_url: '1070x' }} 1070w,{%- endif -%}
-                                       {%- if linkCollection.image.width >= 1500 -%}{{ linkCollection.image | img_url: '1500x' }} 1500w,{%- endif -%}
-                                       {{ linkCollection.image | img_url: 'master' }} {{linkCollection.image.width }}w"
-                              src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                         
+                         {% include 'image-element',imageHight: section.settings.height, image: linkCollection.image.src, alt: linkCollection.title  %}
+
+                         
+                        
                          {% else %}
                          <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
                          {% endif %}
