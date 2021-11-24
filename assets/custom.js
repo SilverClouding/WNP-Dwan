@@ -504,6 +504,8 @@ jQuery(function($){
 jQuery(function($){
   $(document).on('click','.mega_parent',function(e){
     e.preventDefault();
+    $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
     var targetData = $(this).attr('terget_megamenu');
     $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
     $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
