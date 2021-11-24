@@ -108,7 +108,7 @@ new ReviewsWidget('#ReviewsWidget', {
         
         /* Toggle Options */
         questions:{
-            hide_if_no_results:true,
+            hide_if_no_results:false,
             enable_ask_question:true,
             show_dates:true,
             grouping:"{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"
