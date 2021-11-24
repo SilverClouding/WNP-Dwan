@@ -163,7 +163,8 @@ body.page-your-shopping-cart {
   </div>
 
   {{cart.item_count}}
-
+{% if cart.item_count > 0 %}
+  
   <div class="min-cart-items">
 
     {% for item in cart.items %}
@@ -183,17 +184,16 @@ body.page-your-shopping-cart {
           <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
           <a href="#" class="save-whishlist">Save to wishlist</a>
           <div class="cart__item-sub">
-      <span class="cart__price-old">{{ item.product.compare_at_price | money }}</span>
-      <span class="cart__price-new">{{ item.price | money }}</span>
-    </div>
+            <span class="cart__price-old">{{ item.product.compare_at_price | money }}</span>
+            <span class="cart__price-new">{{ item.price | money }}</span>
+          </div>
         </div>
       </div>
     </div>
-    
+
   </div>	
   {% endfor %}
 </div>
-
 <div class="bottom-part">
   <div class="subtotal">
     <strong>Subtotal </strong>
@@ -205,6 +205,18 @@ body.page-your-shopping-cart {
 
   </div>
 </div>
+
+{% else %}
+
+<div class="empty-cart-items">
+
+  <a>Shop Dogs</a>
+  <a>Shop Cat</a>
+  
+</div>
+
+
+{% endif %}
 
 </div>
 
