@@ -378,7 +378,7 @@
         "disabled": false,
         "settings": {
           "star": "#f5694d",
-          "snippet_mode": "extended",
+          "snippet_mode": "default",
           "text": "Reviews",
           "line_break": false,
           "show_popup": true,
