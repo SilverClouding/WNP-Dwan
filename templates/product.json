@@ -27,8 +27,8 @@
           "settings": {
           }
         },
-        "437eaed0-d3f7-456d-8118-fb3ad4e61ece": {
-          "type": "rating",
+        "9a58edf8-f215-48ea-a1fe-391720705425": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
           }
         },
@@ -60,7 +60,7 @@
         "title",
         "subtitle",
         "price",
-        "437eaed0-d3f7-456d-8118-fb3ad4e61ece",
+        "9a58edf8-f215-48ea-a1fe-391720705425",
         "description",
         "variant_picker",
         "quantity_selector",
