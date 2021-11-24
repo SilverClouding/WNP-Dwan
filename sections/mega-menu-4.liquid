@@ -137,7 +137,10 @@
                      <div class="featured-prod-item">
                        <a href="{{ sub_link.url }}">
                          {% if linkCollection.image %}
-                         <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+                          
+                         {% include 'image-element',imageHight: section.settings.height, image: linkCollection.image.src, alt: linkCollection.title  %}
+
+                        
                          {% else %}
                          <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
                          {% endif %}
