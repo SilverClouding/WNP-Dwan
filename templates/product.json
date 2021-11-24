@@ -15,13 +15,6 @@
           "settings": {
           }
         },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -58,7 +51,6 @@
       "block_order": [
         "vendor",
         "title",
-        "subtitle",
         "price",
         "9a58edf8-f215-48ea-a1fe-391720705425",
         "description",
