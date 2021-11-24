@@ -9,7 +9,7 @@ new ReviewsWidget('#ReviewsWidget', {
     options: {
         types: "product_review, questions",
         lang: "en",
-        per_page: 20,
+        per_page: 3,
         product_review: {
             sku: "{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}",
             enable_rich_snippets: true,
@@ -129,9 +129,9 @@ new ReviewsWidget('#ReviewsWidget', {
 
         //Filtering settings:
         filtering:{
-            enable:true, //Show filtering options
+            enable:false, //Show filtering options
             enable_text_search:true, //Show search field
-            enable_sorting:true, //Show sorting options (most recent, most popular)
+            enable_sorting:false, //Show sorting options (most recent, most popular)
             enable_overall_rating_filter:true, //Show overall rating breakdown filter
             enable_ratings_filters:true, //Show product attributes filter
             enable_attributes_filters:true, //Show author attributes filter
