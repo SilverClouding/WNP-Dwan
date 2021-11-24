@@ -209,10 +209,12 @@ body.page-your-shopping-cart {
 {% else %}
 
 <div class="empty-cart-items">
-
-  <a>Shop Dogs</a>
-  <a>Shop Cat</a>
-  
+  {% for block in section.blocks %}
+   {% case block.type %}
+   {%- when 'heading' -%}
+  <a href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
+  {%- endcase -%}
+  {% endfor%}
 </div>
 
 
