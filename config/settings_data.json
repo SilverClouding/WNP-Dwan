@@ -380,8 +380,8 @@
           "c117a247-a018-4b01-94eb-7dc7916fe339": {
             "type": "shop_button",
             "settings": {
-              "button_label": "",
-              "button_link": ""
+              "button_label": "Shop Small Animals",
+              "button_link": "shopify:\/\/collections\/small-animals"
             }
           },
           "d8327dfa-3104-40ad-994d-182fd885cabd": {
