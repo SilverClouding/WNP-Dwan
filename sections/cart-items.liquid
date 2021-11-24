@@ -211,7 +211,7 @@ body.page-your-shopping-cart {
 <div class="empty-cart-items">
   {% for block in section.blocks %}
    {% case block.type %}
-   {%- when 'heading' -%}
+   {%- when 'shop_button' -%}
   <a href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
   {%- endcase -%}
   {% endfor%}
