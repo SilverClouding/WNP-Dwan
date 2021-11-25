@@ -5,6 +5,7 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   freeMode: false,
   loop: true,
   allowSlideNext:true,
+  allowSlidePrev:false,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
