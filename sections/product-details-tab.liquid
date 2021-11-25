@@ -10,7 +10,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
   <div class="tab-customize">
     
     {% for block in section.blocks %}
-     <button class="tablinks-cus" onclick="openTab(event, 'tab-{{forloop.index}}')" {% if forloop.index == 1 %}id="tab-cus-active" {% endif %} >{{block.settings.heading}}</button>
+     <div class="tablinks-cus" onclick="openTab(event, 'tab-{{forloop.index}}')" {% if forloop.index == 1 %}id="tab-cus-active" {% endif %} >{{block.settings.heading}}</div>
     {% endfor %}
 
   </div>
