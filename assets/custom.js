@@ -1,5 +1,4 @@
 // announcement slideShow
-document.getElementById("announcement_text_slider").style.direction = "rtl";
 const announcement_text_slider = new Swiper('.announcement_text_slider', {
   autoHeight: false,
   centeredSlides: true,
