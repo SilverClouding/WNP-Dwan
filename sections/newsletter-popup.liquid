@@ -10,7 +10,7 @@
  {% include 'image-element', image: section.settings.image, alt: section.settings.image.alt %}
         </div>
         <div class="nl-wraper-popup-right">
-          <h3 class="title">Subscribe to our newsletter</h3>    
+          <h3 class="title">{{section.settings.heading}}</h3>    
           {%- assign formId = 'Contact_' | append: section.id -%}
           {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
           {%- if form.posted_successfully? -%}
