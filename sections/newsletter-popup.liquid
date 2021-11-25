@@ -11,6 +11,7 @@
         </div>
         <div class="nl-wraper-popup-right">
           <h3 class="title">{{section.settings.heading}}</h3>    
+          {{section.settings.text}}
           {%- assign formId = 'Contact_' | append: section.id -%}
           {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
           {%- if form.posted_successfully? -%}
