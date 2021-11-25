@@ -20,9 +20,10 @@
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="input-group {% if form.errors %} input-group--error{% endif %}">
             <div class="first-name">
-              <label for="first-name">First name</label>
+              {% comment %}<label for="first-name">First name</label>{% endcomment %}
               <input id="first-name" type="text" name="customer[first_name]" />
             </div>
+            <div class="email-con">
             <input type="email"
                    name="contact[email]"
                    id="{{ formId }}-email"
@@ -44,6 +45,7 @@
                 <span>{{ 'newsletter.button_label' | t }}</span>
               </button>
             </span>
+            </div>
           </div>
           {%- if form.errors contains 'email' -%}
           <span id="{{ formId }}-email-error" class="input-error-message">
