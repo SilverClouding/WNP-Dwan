@@ -7,7 +7,7 @@
       </div>
       <div class="nl-wraper-popup-inner">
         <div class="nl-wraper-popup-left">
-
+ {% include 'image-element', image: section.settings.image, alt: section.settings.image.alt %}
         </div>
         <div class="nl-wraper-popup-right">
           <h3 class="title">Subscribe to our newsletter</h3>    
@@ -88,7 +88,7 @@
       },
 		{
           "type": "image_picker",
-          "id": "image_bottom",
+          "id": "image",
           "label": "Image"
         },
 {
