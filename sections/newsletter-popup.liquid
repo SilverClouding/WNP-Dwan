@@ -21,6 +21,10 @@
           {%- endif -%}
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+            <div class="first-name">
+              <label for="first-name">First name</label>
+              <input id="first-name" type="text" name="customer[first_name]" />
+            </div>
             <input type="email"
                    name="contact[email]"
                    id="{{ formId }}-email"
