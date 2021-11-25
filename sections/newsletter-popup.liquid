@@ -1,40 +1,41 @@
 {% if section.settings.show_popup %}
-<div id="newsletter-popup" class="modal fade in" style="" tabindex="-1" role="dialog" aria-hidden="false">
-  <div class="nl-wraper-popup bounceInDown animated">
-    <div class="nl-popup-close">
-      <span rel="modal:close" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"><i class="cs-icon icon-icon_close"></i></span>
-    </div>
-    <div class="nl-wraper-popup-inner">
-      <div class="nl-wraper-popup-left" style="background-image: url(//cdn.shopify.com/s/files/1/1545/1705/files/200625PR_KRONSTADT_SS21_GOODTIMES_MAZE_1153.jpg?v=1594820791);">
-        
+<div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient">
+  <div id="newsletter-popup" class="modal fade in" style="" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="nl-wraper-popup bounceInDown animated">
+      <div class="nl-popup-close">
+        <span rel="modal:close" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"><i class="cs-icon icon-icon_close"></i></span>
       </div>
-      <div class="nl-wraper-popup-right">
-        <h3 class="title">Subscribe to our newsletter</h3>    
-        {%- assign formId = 'Contact_' | append: section.id -%}
-        {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+      <div class="nl-wraper-popup-inner">
+        <div class="nl-wraper-popup-left" style="background-image: url(//cdn.shopify.com/s/files/1/1545/1705/files/200625PR_KRONSTADT_SS21_GOODTIMES_MAZE_1153.jpg?v=1594820791);">
+
+        </div>
+        <div class="nl-wraper-popup-right">
+          <h3 class="title">Subscribe to our newsletter</h3>    
+          {%- assign formId = 'Contact_' | append: section.id -%}
+          {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
           {%- if form.posted_successfully? -%}
-            <p class="form-message form-message--success" tabindex="-1" data-form-status>
-              {{ 'general.newsletter_form.confirmation' | t }}
-            </p>
+          <p class="form-message form-message--success" tabindex="-1" data-form-status>
+            {{ 'general.newsletter_form.confirmation' | t }}
+          </p>
           {%- endif -%}
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="input-group {% if form.errors %} input-group--error{% endif %}">
             <input type="email"
-              name="contact[email]"
-              id="{{ formId }}-email"
-              class="input-group__field{% if form.errors %} input--error{% endif %}"
-              value="{{ form.email }}"
-              placeholder="{{ 'newsletter.label' | t }}"
-              aria-label="{{ 'newsletter.label' | t }}"
-              aria-required="true"
-              autocorrect="off"
-              autocapitalize="off"
-              {% if form.errors %}
-                aria-invalid="true"
-                aria-describedby="{{ formId }}-email-error"
-                data-form-status
-              {% endif %}
-              >
+                   name="contact[email]"
+                   id="{{ formId }}-email"
+                   class="input-group__field{% if form.errors %} input--error{% endif %}"
+                   value="{{ form.email }}"
+                   placeholder="{{ 'newsletter.label' | t }}"
+                   aria-label="{{ 'newsletter.label' | t }}"
+                   aria-required="true"
+                   autocorrect="off"
+                   autocapitalize="off"
+                   {% if form.errors %}
+                   aria-invalid="true"
+                   aria-describedby="{{ formId }}-email-error"
+                   data-form-status
+                   {% endif %}
+                   >
             <span class="input-group__btn">
               <button type="submit" class="btn" name="commit" id="Subscribe">
                 <span>{{ 'newsletter.button_label' | t }}</span>
@@ -42,18 +43,18 @@
             </span>
           </div>
           {%- if form.errors contains 'email' -%}
-            <span id="{{ formId }}-email-error" class="input-error-message">
-              <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-              {% include 'icon-error' %}
-              <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-            </span>
+          <span id="{{ formId }}-email-error" class="input-error-message">
+            <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+            {% include 'icon-error' %}
+            <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+          </span>
           {%- endif -%}
-        {% endform %}
+          {% endform %}
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <style>
   .blocker{position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:auto;z-index:1;padding:20px;box-sizing:border-box;background-color:#000;background-color:rgba(0,0,0,0.75);text-align:center}
   .blocker:before{content:"";display:inline-block;height:100%;vertical-align:middle;margin-right:-0.05em}.blocker.behind{background-color:transparent}
