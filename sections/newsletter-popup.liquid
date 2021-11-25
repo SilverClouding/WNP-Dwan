@@ -2,9 +2,7 @@
 <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient">
   <div id="newsletter-popup" class="modal fade in" style="" tabindex="-1" role="dialog" aria-hidden="false">
     <div class="nl-wraper-popup bounceInDown animated">
-      <div class="nl-popup-close">
-        <span rel="modal:close" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"><i class="cs-icon icon-icon_close"></i></span>
-      </div>
+      
       <div class="nl-wraper-popup-inner">
         <div class="nl-wraper-popup-left">
  {% include 'image-element', image: section.settings.image, alt: section.settings.image.alt %}
@@ -54,7 +52,13 @@
             <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
           </span>
           {%- endif -%}
+          
           {% endform %}
+          
+          <div class="nl-popup-close">
+        <span rel="modal:close" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"><i class="cs-icon icon-icon_close"></i></span>
+      </div>
+          
         </div>
       </div>
     </div>
