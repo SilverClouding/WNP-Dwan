@@ -412,8 +412,9 @@
         "type": "newsletter-popup",
         "settings": {
           "show_popup": true,
-          "heading": "Subscribe to our emails",
-          "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
+          "image": "shopify:\/\/shop_images\/Rectangle_46_629ef9f9-9746-4c5f-ae10-6bc78631b375.png",
+          "heading": "15% off your first order",
+          "text": "<p>Sign up to receive 15% off your first order and stay up to date on new arrivals & special offers<\/p>",
           "color_scheme": "background-1"
         }
       }
