@@ -1,7 +1,7 @@
 // announcement slideShow
 const announcement_text_slider = new Swiper('.announcement_text_slider', {
   autoHeight: false,
-  centeredSlides: false,
+  centeredSlides: true,
   freeMode: false,
   loop: true,
   autoplay: {
