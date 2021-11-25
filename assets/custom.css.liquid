@@ -2408,6 +2408,8 @@ select:focus, select:hover{
     line-height:30px;
     font-weight:900;
     font-style:normal;
+    padding: 10px 0;
+    margin: 0;
   }
   .product .product__info-container .price{
     justify-content: flex-start;
@@ -2440,28 +2442,15 @@ select:focus, select:hover{
   line-height:18px;
   padding:14px 20px;
   font-weight:500;
- /* font-style:normal;
-  text-align:center;
-  padding:14px 20px;
-  box-shadow:none;
-  border:1px solid #44444D;
-   min-height:unset;
-  max-width:unset;
-  flex-grow:unset !important;
-  opacity:unset;
-  cursor:pointer;
-  box-shadow:none;
-  -webkit-border-radius:2px;
-  -o-border-radius:2px;
-  -ms-border-radius:2px;
-  border-radius:2px; */
 }
 .product .product__info-wrapper .product-form__submit.button.button--primary:hover,
 .product .product__info-wrapper .product-form__submit.button.button--primary:focus{
   background:transparent;
   color:#44444D;
 }
-
+.product .product__info-container>*+* {
+    margin: 0.5rem 0;
+}
 
 
 
