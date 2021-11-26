@@ -9,7 +9,7 @@
   }
 
 </style>
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn {{ section.settings.section_class}} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -210,6 +210,12 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
+    },
+	{
+      "type": "text",
+      "id": "section_class",
+      "default": "Multicolumn",
+      "label": "t:sections.multicolumn.settings.section_class.label"
     }
   ],
   "blocks": [
