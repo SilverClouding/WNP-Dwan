@@ -13,6 +13,8 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   },
 });
 
+const announcement_text_slider = announcement_text_slider.direction('vertical');
+
 
 // Banner slideShow
 const swiper = new Swiper('.mySwiper', {
