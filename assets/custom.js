@@ -15,10 +15,10 @@ let isVertical = true,
 let swiper = initSwiper(direction);
 
 function initSwiper(direction) {
-  return new Swiper('.swiper-container', {
+  return new Swiper('.announcement_text_slider', {
     spaceBetween: 50,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.announcement_text_slider',
       clickable: true,
     },
     direction: direction
