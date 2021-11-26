@@ -2391,9 +2391,6 @@ select:focus, select:hover{
   }
 
   /* product page  */
-  .product__info-container--sticky{
-  z-index:1;
-  }
   .product .product__info-container .product__text{
     color:#F5694D;
     font-size:17px;
@@ -2586,7 +2583,11 @@ select:focus, select:hover{
     font-weight:300;
   }
 
-
+ @media screen and (min-width: 750px){
+  .product__info-container--sticky{
+  z-index:1;
+  }
+  }
   @media screen and (min-width: 990px) {
     .product-section .product {
       margin:0 40px;
