@@ -252,7 +252,8 @@
         "column_alignment": "center",
         "background_style": "primary",
         "section_width": 66,
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "section_class": "multi-custom"
       }
     },
     "16365383186b9876cd": {
@@ -353,7 +354,8 @@
         "column_alignment": "center",
         "background_style": "primary",
         "section_width": 85,
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "section_class": "Multicolumn"
       }
     },
     "16365411454faad6c2": {
