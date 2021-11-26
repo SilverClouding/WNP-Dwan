@@ -1,6 +1,7 @@
 // announcement slideShow
 
 const announcement_text_slider = new Swiper('.announcement_text_slider', {
+  direction: 'horizontal ',
   autoHeight: false,
   centeredSlides: true,
   freeMode: false,
@@ -8,6 +9,7 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+    
   },
 });
 
