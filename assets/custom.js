@@ -13,8 +13,6 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
 });
 
 
-
-
 // Banner slideShow
 const swiper = new Swiper('.mySwiper', {
   autoHeight: true,
