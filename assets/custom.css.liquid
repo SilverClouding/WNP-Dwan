@@ -2514,7 +2514,7 @@ select:focus, select:hover{
     margin-top:6% !important;
     border:none;
   }
-  
+
   .product-section .product .product__media-list .product__media.media{
     padding-top:100% !important;
   }
@@ -2618,24 +2618,24 @@ select:focus, select:hover{
   }
   .shopify-app-block .u-displayInlineBlock .R-TextHeading, 
   .shopify-app-block .u-displayInlineBlock .R-TextBody{
-  color:#44444D;
+    color:#44444D;
     font-size:14px;
     line-height:16px;
     font-weight:300;
   }
 
-/* newsletter popup  */
+  /* newsletter popup  */
   .blocker{
-  background:rgba(68, 68, 77, 0.3) !important;
+    background:rgba(68, 68, 77, 0.3) !important;
   }
   #newsletter-popup{
-  margin-top:70px !important;
+    margin-top:70px !important;
   }
   #newsletter-popup .nl-wraper-popup-right{
-  text-align:center;
+    text-align:center;
   }
   .modal{
-  z-index:9999!important;
+    z-index:9999!important;
   }
   #newsletter-popup {
     border-radius:0;
@@ -2702,13 +2702,15 @@ select:focus, select:hover{
     box-shadow:none !important;
     text-decoration: none;
   }
-input:focus-visible{
+  input:focus-visible{
     outline:none !important;
     box-shadow:none !important;
     text-decoration: none;
   }
   .modal a.close-modal{
-  background:url({{ 'cross.png' | asset_url }}) center no-repeat;
+    background-image:url({{ 'cross.png' | asset_url }}) center no-repeat !important;
+    width:15px;
+    height:15px;
   }
 
 
