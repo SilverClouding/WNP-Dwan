@@ -35,8 +35,8 @@
 	 position: absolute;
 	 top: 50%;
 	 left: 50%;
-	 width: auto;
-	 height: auto;
+	 width: 100%;
+	 height: 100%;
 	 -webkit-transform: translate(-50%, -50%);
 	 transform: translate(-50%, -50%);
 }
@@ -230,7 +230,7 @@
 		 -webkit-transform: none;
 		 transform: none;
 		 height: 100%;
-		 width: 100%;
+		 width: auto;
 	}
 	 #quick-view .slick-dots {
 		 bottom: 0;
