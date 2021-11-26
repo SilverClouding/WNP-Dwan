@@ -80,7 +80,8 @@
 }
  #quick-view .qv-product-type {
 	 color: #F5694D;
-	 text-transform: lowercase;
+   font-size:16px;
+   font-weight:500;
 }
  #quick-view .qv-product-price, #quick-view .qv-product-original-price {
 	 display: inline-block;
