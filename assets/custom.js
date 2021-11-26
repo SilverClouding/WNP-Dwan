@@ -1,14 +1,4 @@
 // announcement slideShow
-const announcement_text_slider = new Swiper('.announcement_text_slider', {
-  autoHeight: false,
-  centeredSlides: true,
-  freeMode: false,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
 
 let isVertical = true,
   direction = 'vertical';
