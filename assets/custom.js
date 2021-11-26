@@ -5,6 +5,7 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   centeredSlides: true,
   freeMode: false,
   loop: true,
+  direction: 'horizontal',
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -12,8 +13,6 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   },
 });
 
-const announcement_text_slider = new Swiper('.announcement_text_slider', {
-  direction('vertical')};
 
 
 
