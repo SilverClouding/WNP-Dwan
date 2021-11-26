@@ -4,12 +4,38 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   centeredSlides: true,
   freeMode: false,
   loop: true,
-   direction: "left",
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
 });
+
+let isVertical = true,
+  direction = 'vertical';
+let swiper = initSwiper(direction);
+
+function initSwiper(direction) {
+  return new Swiper('.swiper-container', {
+    spaceBetween: 50,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    direction: direction
+  });
+
+}
+
+function changeDirection() {
+  isVertical = !isVertical;
+  direction = isVertical ? 'vertical' : 'horizontal';
+  let slideIndex = swiper.activeIndex;
+  swiper.destroy(true, true);
+  swiper = initSwiper(direction);
+  swiper.slideTo(slideIndex,0);
+}
+
+
 
 
 // Banner slideShow
