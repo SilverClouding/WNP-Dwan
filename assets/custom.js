@@ -13,7 +13,12 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
 
 });
 
-
+$(".announcement_text_slider").mouseenter(function () {
+                      swiper.autoplay.start();
+});
+$(".announcement_text_slider").mouseleave(function () {
+                       swiper.autoplay.stop();
+});
 
 
 // Banner slideShow
