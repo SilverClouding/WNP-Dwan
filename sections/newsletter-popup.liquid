@@ -59,6 +59,10 @@
           <a href="{{ section.setting.close_link }}">{{ section.settings.closeit }}</a>
           {% endif %}
           
+          {% if section.settings.terms != blank %}
+          <a href="{{ section.setting.terms }}">{{ section.settings.terms }}</a>
+          {% endif %}
+          
           
           {% endform %}
           
