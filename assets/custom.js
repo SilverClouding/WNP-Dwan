@@ -10,6 +10,7 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
     disableOnInteraction: false,
     reverseDirection: true,
   },
+ 
 
 });
 
