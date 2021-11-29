@@ -16,10 +16,6 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
     mySwiper.stopAutoplay();
   })
 
-  $('.announcement_text_slider').on('mouseleave', function(e){
-    console.log('start autoplay');
-    mySwiper.startAutoplay();
-  })  
 });
 
 
