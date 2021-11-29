@@ -415,6 +415,9 @@
           "image": "shopify:\/\/shop_images\/Rectangle_46_629ef9f9-9746-4c5f-ae10-6bc78631b375.png",
           "heading": "15% off your first order",
           "text": "<p>Sign up to receive 15% off your first order and stay up to date on new arrivals & special offers<\/p>",
+          "closeit": "No thank you, close this",
+          "close_link": "https:\/\/wnp.pet",
+          "terms": "<p>By submitting, you agree to our &lt;a href=\"#\"&gt;Terms & Conditions&lt;\/a&gt;<\/p>",
           "color_scheme": "background-1"
         }
       }
