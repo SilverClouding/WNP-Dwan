@@ -60,7 +60,7 @@
           {% endif %}
           
           {% if section.settings.terms != blank %}
-          <a href="{{ section.setting.terms_link }}">{{ section.settings.terms }}</a>
+          <div class="terms-and-condition">{{ section.settings.terms }}</div>
           {% endif %}
           
           
@@ -134,6 +134,12 @@
           "id": "close_link",
           "default": "Close Link",
 		  "label": "Close Link"
+        },
+		{
+          "type": "richtext",
+          "id": "terms",
+		  "default": "<p></p>",
+		  "label": "Terms and Codition"
         },
 		{
       "type": "select",
