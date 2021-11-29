@@ -2666,12 +2666,7 @@ select:focus, select:hover{
     align-items: center;
     padding:0;
   }
-  #newsletter-popup .nl-wraper-popup{
-  padding:0 30px;
-  }
-  #newsletter-popup .nl-wraper-popup-right{
-    text-align:center;
-  }
+  
   .modal{
     z-index:9999!important;
   }
@@ -2777,15 +2772,22 @@ select:focus, select:hover{
     font-weight: 300;
   }
   #newsletter-popup .nl-wraper-popup-right{
-  width:65%;
+  width:calc(65% - 30px);
     order:1;
+     text-align:center;
+    margin-right:30px;
   }
   #newsletter-popup .nl-wraper-popup-left{
   width:35%;
     order:2;
-   min-height:451px;
   }
-
+ #newsletter-popup .nl-wraper-popup-left .image-with-text__media{
+  padding-top:100%;
+  }
+  
+  
+  
+  
 
   /* mini cart */
   .mini-cart-con .empty-cart-items{
