@@ -55,6 +55,11 @@
           </span>
           {%- endif -%}
           
+          {% if section.settings.closeit != blank %}
+          <a href="{{ section.setting.close_btn }}">{{ section.settings.closeit }}</a>
+          {% endif %}
+          
+          
           {% endform %}
           
           <div class="nl-popup-close">
