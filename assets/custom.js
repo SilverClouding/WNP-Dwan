@@ -15,10 +15,10 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
 });
 
 $(".announcement_text_slider").mouseenter(function () {
-                      new swiper.autoplay.stop();
+                       swiper.autoplay.stop();
 });
 $(".announcement_text_slider").mouseleave(function () {
-                      new swiper.autoplay.start();
+                       swiper.autoplay.start();
 });
 
 
