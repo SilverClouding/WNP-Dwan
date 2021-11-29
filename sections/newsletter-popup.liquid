@@ -72,7 +72,10 @@
           
         </div>
       </div>
-      <div class="newsletter-image">
+     
+    
+    </div>
+     <div class="newsletter-image">
 {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}>
         {%- if section.settings.image != blank -%}
           <img
@@ -94,8 +97,6 @@
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
-    
-    </div>
   </div>
 </div>
 <style>
