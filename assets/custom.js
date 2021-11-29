@@ -13,12 +13,12 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
   
   $('.announcement_text_slider').on('mouseenter', function(e){
     console.log('stop autoplay');
-    newSwiper.stopAutoplay();
+    mySwiper.stopAutoplay();
   })
 
   $('.announcement_text_slider').on('mouseleave', function(e){
     console.log('start autoplay');
-    newSwiper.startAutoplay();
+    mySwiper.startAutoplay();
   })  
 });
 
