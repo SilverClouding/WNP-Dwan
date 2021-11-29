@@ -10,11 +10,6 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
     disableOnInteraction: false,
     reverseDirection: true,
   },
-  
-  $('.announcement_text_slider').on('mouseenter', function(e){
-    console.log('stop autoplay');
-    mySwiper.stopAutoplay();
-  })
 
 });
 
