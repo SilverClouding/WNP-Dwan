@@ -234,6 +234,32 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "163844781875398cff": {
+      "type": "rich-text",
+      "blocks": {
+        "1638447818ccc7776f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Life at Whiskers N Paws",
+            "heading_size": "h1"
+          }
+        },
+        "1638447818ccc7776f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We still pinch ourselves thinking how lucky we are to do what we love! And that's why we think this is the best place to work. HERE'S OUR APPROACH:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1638447818ccc7776f-0",
+        "1638447818ccc7776f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -244,6 +270,7 @@
     "1638442037a72cd96a",
     "16384462346d0d0284",
     "1638447520c7d2c592",
-    "main"
+    "main",
+    "163844781875398cff"
   ]
 }
