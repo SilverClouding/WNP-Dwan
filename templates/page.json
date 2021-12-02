@@ -197,8 +197,8 @@
       ],
       "settings": {
         "title": "Multicolumn",
-        "section_width": 80,
-        "image_width": "full",
+        "section_width": 100,
+        "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
