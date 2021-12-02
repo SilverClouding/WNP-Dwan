@@ -125,6 +125,32 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1638442037a72cd96a": {
+      "type": "rich-text",
+      "blocks": {
+        "1638442037250169f1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We work as a team to unite likeminded people to leave a positive paw print in places we go and people we encounter.",
+            "heading_size": "h1"
+          }
+        },
+        "1638442037250169f1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vada Chung, Founder<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1638442037250169f1-0",
+        "1638442037250169f1-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -132,6 +158,7 @@
     "1638426342c59892bd",
     "16384269895954df72",
     "16384414226ce52222",
-    "main"
+    "main",
+    "1638442037a72cd96a"
   ]
 }
