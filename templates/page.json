@@ -148,11 +148,6 @@
         "full_width": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "16384462346d0d0284": {
       "type": "multicolumn",
       "blocks": {
@@ -207,6 +202,11 @@
         "swipe_on_mobile": false,
         "sec_class": ""
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -215,7 +215,7 @@
     "16384269895954df72",
     "16384414226ce52222",
     "1638442037a72cd96a",
-    "main",
-    "16384462346d0d0284"
+    "16384462346d0d0284",
+    "main"
   ]
 }
