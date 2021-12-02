@@ -5,24 +5,27 @@
       "blocks": {
         "163842596510ff1666-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Image banner",
+            "heading": "",
             "heading_size": "medium"
           }
         },
         "163842596510ff1666-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": ""
           }
         },
         "163842596510ff1666-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -34,7 +37,8 @@
         "163842596510ff1666-2"
       ],
       "settings": {
-        "image_height": "medium",
+        "image": "shopify:\/\/shop_images\/about-banner.jpg",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
