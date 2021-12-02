@@ -85,11 +85,6 @@
         "layout": "image_first"
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "16384414226ce52222": {
       "type": "multicolumn",
       "blocks": {
@@ -125,13 +120,18 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
     }
   },
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
     "16384269895954df72",
-    "main",
-    "16384414226ce52222"
+    "16384414226ce52222",
+    "main"
   ]
 }
