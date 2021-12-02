@@ -104,6 +104,7 @@
         "16384414225707b0ab-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/house_1.png",
             "title": "",
             "text": "<p><strong>1800+<\/strong> puppies &<strong> 900+<\/strong> cats homed<\/p>"
           }
