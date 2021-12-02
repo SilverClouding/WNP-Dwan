@@ -48,11 +48,6 @@
         "show_text_below": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "1638426342c59892bd": {
       "type": "rich-text",
       "blocks": {
@@ -87,11 +82,16 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
     }
   },
   "order": [
     "16384259656000056e",
-    "main",
-    "1638426342c59892bd"
+    "1638426342c59892bd",
+    "main"
   ]
 }
