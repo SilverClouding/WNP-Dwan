@@ -46,7 +46,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "sec_class": "cus-our-story"
       }
     },
     "16384269895954df72": {
@@ -145,7 +146,8 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "full_width": true
+        "full_width": true,
+        "sec_class": ""
       }
     },
     "16384462346d0d0284": {
@@ -253,7 +255,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "sec_class": ""
       }
     },
     "16384478795d002435": {
