@@ -2,40 +2,6 @@
   "sections": {
     "16384259656000056e": {
       "type": "image-banner",
-      "blocks": {
-        "163842596510ff1666-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "heading_size": "medium"
-          }
-        },
-        "163842596510ff1666-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "163842596510ff1666-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163842596510ff1666-0",
-        "163842596510ff1666-1",
-        "163842596510ff1666-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-banner.jpg",
         "image_height": "small",
@@ -43,7 +9,7 @@
         "desktop_text_box_position": "center",
         "show_text_box": true,
         "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
