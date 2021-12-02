@@ -11,7 +11,7 @@
 
 </style>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn {{ section.settings.sec_class }} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width ">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -245,6 +245,11 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "Enable swipe"
+    },
+	{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
     }
   ],
   "blocks": [
