@@ -256,11 +256,6 @@
         "full_width": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "16384478795d002435": {
       "type": "multicolumn",
       "blocks": {
@@ -310,10 +305,15 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "sec_class": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
       }
     }
   },
@@ -326,7 +326,7 @@
     "16384462346d0d0284",
     "1638447520c7d2c592",
     "163844781875398cff",
-    "main",
-    "16384478795d002435"
+    "16384478795d002435",
+    "main"
   ]
 }
