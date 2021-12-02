@@ -55,17 +55,18 @@
         "16384269892b584b49-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "We love our community"
           }
         },
         "16384269892b584b49-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Aside from animals, we care deeply about our community too. What we do or how we do things matters to us.<\/p>"
           }
         },
         "16384269892b584b49-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": ""
@@ -78,6 +79,7 @@
         "16384269892b584b49-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/community.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
