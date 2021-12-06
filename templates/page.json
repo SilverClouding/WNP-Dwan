@@ -188,7 +188,7 @@
       "settings": {
         "title": "",
         "section_width": 80,
-        "image_width": "third",
+        "image_width": "half",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
