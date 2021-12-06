@@ -313,7 +313,7 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "page_title": true
+        "page_title": false
       }
     }
   },
