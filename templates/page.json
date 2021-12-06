@@ -72,6 +72,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/community.jpg",
+        "section_width": 100,
         "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first",
@@ -219,6 +220,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/app.jpg",
+        "section_width": 80,
         "height": "small",
         "color_scheme": "accent-1",
         "layout": "image_first",
