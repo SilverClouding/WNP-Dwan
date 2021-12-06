@@ -4,8 +4,9 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- if section.settings.page_title or page.content != blank -%}
 <div class="page-width page-width--narrow">
- {%- if section.settings.page_title != blank -%}
+  {%- if section.settings.page_title -%}
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
@@ -14,6 +15,7 @@
     {{ page.content }}
   </div>
 </div>
+{% endif %}
 
 {% schema %}
 {
