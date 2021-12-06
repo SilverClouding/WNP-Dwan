@@ -72,7 +72,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/community.jpg",
-        "section_width": 100,
+        "section_width": 80,
         "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first",
