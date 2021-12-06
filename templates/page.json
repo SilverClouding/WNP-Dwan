@@ -219,7 +219,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/app.jpg",
-        "height": "small",
+        "height": "large",
         "color_scheme": "accent-1",
         "layout": "image_first",
         "sec_class": "img-text-custom"
