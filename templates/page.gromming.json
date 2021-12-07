@@ -89,106 +89,20 @@
         "sec_class": "image-text-full"
       }
     },
-    "16384478795d002435": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "163844787962d7d61e-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image.jpg",
-            "title": "Meet Commando",
-            "text": "<p>Meow! I'm Commando, a 3-months-old friendly boy! I love attention from hooman! If you have treats for me, I'll love you even more! Want to take me home? I can't wait...<\/p>"
-          }
-        },
-        "163844787962d7d61e-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-2.jpg",
-            "title": "Meet Chotto",
-            "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>"
-          }
-        },
-        "163844787962d7d61e-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-1.jpg",
-            "title": "Meet Lego",
-            "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163844787962d7d61e-0",
-        "163844787962d7d61e-1",
-        "163844787962d7d61e-2"
-      ],
-      "settings": {
-        "title": "",
-        "section_width": 100,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "#",
-        "swipe_on_mobile": false,
-        "sec_class": ""
-      }
-    },
-    "16384414226ce52222": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16384414225707b0ab-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hand.png",
-            "title": "",
-            "text": "<p><strong>Collaborative adoption<\/strong> efforts since 2008<\/p>"
-          }
-        },
-        "16384414225707b0ab-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/house_1.png",
-            "title": "",
-            "text": "<p><strong>1800+<\/strong> puppies &<strong> 900+<\/strong> cats homed<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16384414225707b0ab-1",
-        "16384414225707b0ab-2"
-      ],
-      "settings": {
-        "title": "",
-        "section_width": 35,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "sec_class": "custom-multi-icon"
-      }
-    },
     "1638442037a72cd96a": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1638442037250169f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "We work as a team to unite likeminded people to leave a positive paw print in places we go and people we encounter.",
-            "heading_size": "h2"
+            "heading": "Operating Hours",
+            "heading_size": "h1"
           }
         },
         "1638442037250169f1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Vada Chung, Founder<\/p>"
+            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
           }
         }
       },
@@ -197,9 +111,9 @@
         "1638442037250169f1-1"
       ],
       "settings": {
-        "color_scheme": "background-2",
-        "full_width": true,
-        "sec_class": "team-con"
+        "color_scheme": "background-1",
+        "full_width": false,
+        "sec_class": "operating-hours"
       }
     },
     "16384462346d0d0284": {
@@ -328,8 +242,6 @@
     "16384259656000056e",
     "1638426342c59892bd",
     "16384269895954df72",
-    "16384478795d002435",
-    "16384414226ce52222",
     "1638442037a72cd96a",
     "16384462346d0d0284",
     "1638447520c7d2c592",
