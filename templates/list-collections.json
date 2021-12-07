@@ -6,13 +6,15 @@
         "25632995-38e1-4262-b349-b4c2ddd370ee": {
           "type": "collection",
           "settings": {
-            "col_link": "3m"
+            "url": "all-four-paws",
+            "featured_image": "shopify:\/\/shop_images\/img3.jpg"
           }
         },
         "c5bb5384-2375-4a6c-a8d0-4c1b0be106c1": {
           "type": "collection",
           "settings": {
-            "col_link": "aatu"
+            "url": "aatu",
+            "featured_image": "shopify:\/\/shop_images\/img1.jpg"
           }
         }
       },
