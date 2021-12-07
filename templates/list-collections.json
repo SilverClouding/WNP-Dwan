@@ -22,12 +22,103 @@
           "settings": {
             "url": "3m"
           }
+        },
+        "004ee1c5-9213-4ea7-9b6d-0628d00b9cff": {
+          "type": "collection",
+          "settings": {
+            "url": "adaptil"
+          }
+        },
+        "34897283-dea5-47a3-91e1-54ce202d0a76": {
+          "type": "collection",
+          "settings": {
+            "url": "animals-asia"
+          }
+        },
+        "555801aa-6c2b-4747-a6d9-29805d8f339b": {
+          "type": "collection",
+          "settings": {
+            "url": "zippypaws"
+          }
+        },
+        "0e28c833-1610-4238-8a8d-bf6337162b82": {
+          "type": "collection",
+          "settings": {
+            "url": "bell-rock-growers"
+          }
+        },
+        "bc0df957-8ff4-4f7a-93db-6a7d3265b65f": {
+          "type": "collection",
+          "settings": {
+            "url": "benevo"
+          }
+        },
+        "f1f06e67-9fac-4f2b-b521-0a7d39ca85ea": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "213f135c-1f4d-4284-8e45-54c8d9f7419c": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "d4b410f3-1253-43cf-a53d-87a588d0599b": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "ec445de2-de57-465d-ab3d-767bd5a859f0": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "7e3d0bd3-d134-4490-9c73-e49e0d8accae": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "5f263fcd-7d09-43f8-8a1e-bb65c5dbff38": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "b0f6158a-7f85-40f7-b985-95f79b165a27": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
+        },
+        "0d40fef1-3abf-41d4-b79f-02b2ca4035a2": {
+          "type": "collection",
+          "settings": {
+            "url": ""
+          }
         }
       },
       "block_order": [
         "25632995-38e1-4262-b349-b4c2ddd370ee",
         "c5bb5384-2375-4a6c-a8d0-4c1b0be106c1",
-        "3e179422-672f-4f3e-8d5a-63ecdd636977"
+        "3e179422-672f-4f3e-8d5a-63ecdd636977",
+        "004ee1c5-9213-4ea7-9b6d-0628d00b9cff",
+        "34897283-dea5-47a3-91e1-54ce202d0a76",
+        "555801aa-6c2b-4747-a6d9-29805d8f339b",
+        "0e28c833-1610-4238-8a8d-bf6337162b82",
+        "bc0df957-8ff4-4f7a-93db-6a7d3265b65f",
+        "f1f06e67-9fac-4f2b-b521-0a7d39ca85ea",
+        "213f135c-1f4d-4284-8e45-54c8d9f7419c",
+        "d4b410f3-1253-43cf-a53d-87a588d0599b",
+        "ec445de2-de57-465d-ab3d-767bd5a859f0",
+        "7e3d0bd3-d134-4490-9c73-e49e0d8accae",
+        "5f263fcd-7d09-43f8-8a1e-bb65c5dbff38",
+        "b0f6158a-7f85-40f7-b985-95f79b165a27",
+        "0d40fef1-3abf-41d4-b79f-02b2ca4035a2"
       ],
       "settings": {
         "title": "Collections",
