@@ -71,7 +71,7 @@
     {%- endfor -%}
   </ul>
   <div class="pagination-and-count">
-    <div class="total-Product">{{ 'collections.showing' | t |replace:"number", collections.size}}{{collections.size}}</div>
+    <div class="total-Product">{{ 'collections.showing' | t :number:collections.size}}</div>
    {%- if paginate.pages > 1 -%}
           {% render 'pagination', paginate: paginate, anchor: '' %}
         {%- endif -%}
