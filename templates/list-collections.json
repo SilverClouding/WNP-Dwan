@@ -3,6 +3,13 @@
     "main": {
       "type": "main-list-collections",
       "blocks": {
+        "957166b6-7ca9-43e6-92e5-44afb62c8a52": {
+          "type": "collection",
+          "settings": {
+            "url": "addiction",
+            "featured_image": "shopify:\/\/shop_images\/dog1.jpg"
+          }
+        },
         "25632995-38e1-4262-b349-b4c2ddd370ee": {
           "type": "collection",
           "settings": {
@@ -94,15 +101,10 @@
           "settings": {
             "url": "addiction"
           }
-        },
-        "0d40fef1-3abf-41d4-b79f-02b2ca4035a2": {
-          "type": "collection",
-          "settings": {
-            "url": "cloud-star"
-          }
         }
       },
       "block_order": [
+        "957166b6-7ca9-43e6-92e5-44afb62c8a52",
         "25632995-38e1-4262-b349-b4c2ddd370ee",
         "c5bb5384-2375-4a6c-a8d0-4c1b0be106c1",
         "3e179422-672f-4f3e-8d5a-63ecdd636977",
@@ -117,12 +119,11 @@
         "ec445de2-de57-465d-ab3d-767bd5a859f0",
         "7e3d0bd3-d134-4490-9c73-e49e0d8accae",
         "5f263fcd-7d09-43f8-8a1e-bb65c5dbff38",
-        "b0f6158a-7f85-40f7-b985-95f79b165a27",
-        "0d40fef1-3abf-41d4-b79f-02b2ca4035a2"
+        "b0f6158a-7f85-40f7-b985-95f79b165a27"
       ],
       "settings": {
         "title": "Collections",
-        "display_collection": "display_all",
+        "display_collection": "display_selected",
         "sort": "alphabetical",
         "image_ratio": "square",
         "color_scheme": "background-1",
