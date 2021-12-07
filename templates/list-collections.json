@@ -16,11 +16,18 @@
             "url": "aatu",
             "featured_image": "shopify:\/\/shop_images\/img1.jpg"
           }
+        },
+        "3e179422-672f-4f3e-8d5a-63ecdd636977": {
+          "type": "collection",
+          "settings": {
+            "url": "3m"
+          }
         }
       },
       "block_order": [
         "25632995-38e1-4262-b349-b4c2ddd370ee",
-        "c5bb5384-2375-4a6c-a8d0-4c1b0be106c1"
+        "c5bb5384-2375-4a6c-a8d0-4c1b0be106c1",
+        "3e179422-672f-4f3e-8d5a-63ecdd636977"
       ],
       "settings": {
         "title": "Collections",
