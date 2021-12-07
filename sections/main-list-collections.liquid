@@ -92,7 +92,7 @@
       {% for block in section.blocks %}
      {% assign collection = block.settings %} 
      <li class="collection-list__item grid__item">
-       <a href="/collections/{{ collection.url }}"class="card animate-arrow  card--media {% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}">
+       <a href="/collections/{{ collection.url }}"class="card animate-arrow {% if section.settings.image_ratio != 'adapt' %} card--stretch {% else %}  card--media  {% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}">
          <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
           {%- if collection.featured_image != blank -%}
           <div {% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
