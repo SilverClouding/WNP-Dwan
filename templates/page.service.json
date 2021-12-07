@@ -89,7 +89,7 @@
             "title": "Meet Commando",
             "text": "<p>Meow! I'm Commando, a 3-months-old friendly boy! I love attention from hooman! If you have treats for me, I'll love you even more! Want to take me home? I can't wait...<\/p>",
             "button_label": "Read More",
-            "button_link": ""
+            "button_link": "#"
           }
         },
         "1638861690b4c8facd-1": {
@@ -99,7 +99,7 @@
             "title": "Meet Chotto",
             "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>",
             "button_label": "Read More",
-            "button_link": ""
+            "button_link": "#"
           }
         },
         "1638861690b4c8facd-2": {
@@ -109,7 +109,7 @@
             "title": "Meet Lego",
             "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>",
             "button_label": "Read More",
-            "button_link": ""
+            "button_link": "#"
           }
         }
       },
@@ -170,9 +170,9 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "View All",
+        "button_label": "",
         "button_link": "#",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "sec_class": ""
       }
     },
