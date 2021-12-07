@@ -135,7 +135,7 @@
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
               {% assign colHandle = block.settings.url %}
-             {{collections[colHandle].title}}
+            else -  {{collections[colHandle].title}}
              
               <img
                    srcset="{%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
