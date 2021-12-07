@@ -28,7 +28,7 @@
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>"
+            "text": "<p>Pawrents can look through the glass window and take ease at seeing their dog being groomed with full transparency on our processes and procedures. Our pet groomers are specially trained to handle your furry friend gently to create a pleasant experience that is essential to your companion's health and well-being. Choose from a Mini Groom or Full Groom to suit your preferences. Grooming is not just about smelling good, but it is also about removing loose fur, trimming nails, maintaining good dental hygiene, and preventing ear infections.<br\/><br\/>Regular grooming can be done once a month, but it is recommended to bring your dog in for a grooming session if your furry friend shows tear stains, has long nails, has matted fur or has full anal glands. For more grooming questions, please see our FAQs.<\/p>"
           }
         },
         "1d025c24-b599-46a5-b80a-4250f397d7c5": {
@@ -51,93 +51,42 @@
         "sec_class": "grooming-textcon"
       }
     },
-    "163886166197cb2a7e": {
-      "type": "brand_logos",
-      "disabled": true,
+    "16384269895954df72": {
+      "type": "image-with-text",
       "blocks": {
-        "1638861661efc699ec-0": {
-          "type": "column",
+        "16384269892b584b49-0": {
+          "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/spca.png",
-            "img_link": "#"
+            "heading": ""
           }
         },
-        "1638861661efc699ec-1": {
-          "type": "column",
+        "16384269892b584b49-1": {
+          "type": "text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hkdr.png",
-            "img_link": "#"
+            "text": "<p>Aside from animals, we care deeply about our community too. What we do or how we do things matters to us.<\/p>"
           }
         },
-        "1638861661efc699ec-2": {
-          "type": "column",
+        "16384269892b584b49-2": {
+          "type": "button",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/lap.png",
-            "img_link": "#"
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "1638861661efc699ec-0",
-        "1638861661efc699ec-1",
-        "1638861661efc699ec-2"
+        "16384269892b584b49-0",
+        "16384269892b584b49-1",
+        "16384269892b584b49-2"
       ],
       "settings": {
-        "column_alignment": "center",
-        "background_style": "primary",
-        "section_width": 100,
-        "sec_class": "service-logos"
-      }
-    },
-    "163886169115439e4e": {
-      "type": "column-content-cards",
-      "disabled": true,
-      "blocks": {
-        "1638861690b4c8facd-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image.jpg",
-            "title": "Meet Commando",
-            "text": "<p>Meow! I'm Commando, a 3-months-old friendly boy! I love attention from hooman! If you have treats for me, I'll love you even more! Want to take me home? I can't wait...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        },
-        "1638861690b4c8facd-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-2.jpg",
-            "title": "Meet Chotto",
-            "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        },
-        "1638861690b4c8facd-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-1.jpg",
-            "title": "Meet Lego",
-            "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1638861690b4c8facd-0",
-        "1638861690b4c8facd-1",
-        "1638861690b4c8facd-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "section_width": 100,
-        "swipe_on_mobile": false,
-        "section_class": "adoption-cust-column"
+        "image": "shopify:\/\/shop_images\/dog1.jpg",
+        "section_width": 80,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "sec_class": ""
       }
     },
     "16384478795d002435": {
@@ -223,45 +172,6 @@
         "button_link": "",
         "swipe_on_mobile": false,
         "sec_class": "custom-multi-icon"
-      }
-    },
-    "16384269895954df72": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "16384269892b584b49-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "We love our community"
-          }
-        },
-        "16384269892b584b49-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Aside from animals, we care deeply about our community too. What we do or how we do things matters to us.<\/p>"
-          }
-        },
-        "16384269892b584b49-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16384269892b584b49-0",
-        "16384269892b584b49-1",
-        "16384269892b584b49-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/community.jpg",
-        "section_width": 80,
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "layout": "image_first",
-        "sec_class": ""
       }
     },
     "1638442037a72cd96a": {
@@ -417,11 +327,9 @@
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
-    "163886166197cb2a7e",
-    "163886169115439e4e",
+    "16384269895954df72",
     "16384478795d002435",
     "16384414226ce52222",
-    "16384269895954df72",
     "1638442037a72cd96a",
     "16384462346d0d0284",
     "1638447520c7d2c592",
