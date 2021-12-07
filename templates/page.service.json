@@ -124,6 +124,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
+        "view_all": "View All",
+        "view_link": "#",
         "section_width": 100,
         "swipe_on_mobile": false,
         "section_class": "adoption-cust-column"
