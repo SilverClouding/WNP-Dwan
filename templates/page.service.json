@@ -75,8 +75,8 @@
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 60,
-        "sec_class": ""
+        "section_width": 100,
+        "sec_class": "service-logos"
       }
     },
     "163886169115439e4e": {
