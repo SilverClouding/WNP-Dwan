@@ -50,7 +50,7 @@
               <div class="card__text card__text-spacing card__text-hover">
                 {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
                 <h2 class="h3">{{- collection.title -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></h2>
-                <p>{{- collection.size -}}</p>
+                <p>{{ collection.all_products_count }}</p>
               </div>
             {%- else -%}
               <div class="overlay-card"></div>
