@@ -70,7 +70,7 @@
       </li>
     {%- endfor -%}
   </ul>
-  <div>
+  <div class="pagination-and-count">
     <div class="total-Product">{{collections.size}}</div>
    {%- if paginate.pages > 1 -%}
           {% render 'pagination', paginate: paginate, anchor: '' %}
