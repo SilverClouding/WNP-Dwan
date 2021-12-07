@@ -56,14 +56,14 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/hkdr.png",
-            "img_link": ""
+            "img_link": "#"
           }
         },
         "1638861661efc699ec-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/lap.png",
-            "img_link": ""
+            "img_link": "#"
           }
         }
       },
