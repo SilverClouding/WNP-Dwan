@@ -581,7 +581,7 @@ jQuery(function($){
       var check_time = new Date(date) - new Date(localStorage.getItem('tmx-newsletter'));
       var ms = check_time % 1000;
       check_time = (check_time - ms) / 1000;
-      var days = Math.floor(check_time / 60);//200 is sec for day set
+      var days = Math.floor(check_time / 86400);//200 is sec for day set
       console.log('check_time:- '+check_time);
       console.log('days:- '+days);
       if(days > 2){
