@@ -2,6 +2,7 @@
   "sections": {
     "16384259656000056e": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/about-banner.jpg",
         "sec_class": "cust-image-banner",
