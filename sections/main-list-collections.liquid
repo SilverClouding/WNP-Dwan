@@ -16,8 +16,8 @@
       assign collections = collections | reverse
     endif
   -%}
-{%- paginate collections by 25 -%}
-  <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
+{%- paginate collections by 32 -%}
+  <ul class="collection-list grid grid--1-col grid--4-col-tablet" role="list">
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item">
         <a{% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}
