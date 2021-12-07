@@ -97,6 +97,9 @@
     "product_title": "Example product title",
     "collection_title": "Your collection's name"
   },
+  "collections": {
+    "showing": "Showing {{number}} Items"
+  },
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
