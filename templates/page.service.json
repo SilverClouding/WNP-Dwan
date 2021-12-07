@@ -165,10 +165,10 @@
       ],
       "settings": {
         "title": "",
-        "section_width": 80,
+        "section_width": 100,
         "image_width": "full",
         "image_ratio": "adapt",
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
