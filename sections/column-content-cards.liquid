@@ -97,8 +97,8 @@
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
         </div>
       {%- endif -%}
-      {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+      {%- if section.settings.view_all != blank -%}
+        <a href="{{ section.settings.view_link }}" class="link underlined-link large-up-hide">{{ section.settings.view_all | escape }}</a>
       {%- endif -%}
       
     </slider-component>
