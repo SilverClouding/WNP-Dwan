@@ -170,8 +170,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "View All",
+        "button_link": "#",
         "swipe_on_mobile": false,
         "sec_class": ""
       }
