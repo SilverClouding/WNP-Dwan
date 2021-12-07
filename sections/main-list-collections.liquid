@@ -87,7 +87,20 @@
   
     {%- when 'display_selected' -%}
   
-  display_selected
+
+   <ul class="collection-list grid grid--1-col grid--4-col-tablet" role="list">
+      {% for block in section.blocks %}
+     {% assign collection = block.settings %}
+     <li class="collection-list__item grid__item">
+       <a href="{{ collection.url }}"class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         >
+         
+       </a>
+     </li>
+     {% endfor %}
+  </ul>
+  
+  
   
   {%- endcase -%}
 
@@ -228,7 +241,7 @@
           "label": "Select collection"
         },{
           "type": "image_picker",
-          "id": "image",
+          "id": "featured_image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         }
 		]
