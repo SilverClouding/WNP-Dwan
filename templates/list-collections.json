@@ -4,7 +4,7 @@
       "type": "main-list-collections",
       "settings": {
         "title": "Collections",
-        "display_collection": "display_selected",
+        "display_collection": "display_all",
         "sort": "alphabetical",
         "image_ratio": "square",
         "color_scheme": "background-1",
