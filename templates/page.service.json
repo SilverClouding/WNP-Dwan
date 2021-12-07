@@ -74,7 +74,9 @@
       ],
       "settings": {
         "column_alignment": "center",
-        "background_style": "primary"
+        "background_style": "primary",
+        "section_width": 60,
+        "sec_class": ""
       }
     },
     "163886169115439e4e": {
