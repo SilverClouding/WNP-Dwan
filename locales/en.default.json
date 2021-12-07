@@ -98,7 +98,8 @@
     "collection_title": "Your collection's name"
   },
   "collections": {
-    "showing": "Showing {{number}} Items"
+    "showing": "Showing {{number}} Items",
+    "shopall": "Shop All ({{number}})"
   },
   "products": {
     "product": {
