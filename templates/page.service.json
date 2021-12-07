@@ -313,6 +313,41 @@
       "settings": {
         "page_title": false
       }
+    },
+    "163886166197cb2a7e": {
+      "type": "brand_logos",
+      "blocks": {
+        "1638861661efc699ec-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spca.png",
+            "img_link": "#"
+          }
+        },
+        "1638861661efc699ec-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hkdr.png",
+            "img_link": ""
+          }
+        },
+        "1638861661efc699ec-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lap.png",
+            "img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638861661efc699ec-0",
+        "1638861661efc699ec-1",
+        "1638861661efc699ec-2"
+      ],
+      "settings": {
+        "column_alignment": "left",
+        "background_style": "primary"
+      }
     }
   },
   "order": [
@@ -325,6 +360,7 @@
     "16384462346d0d0284",
     "1638447520c7d2c592",
     "163844781875398cff",
-    "main"
+    "main",
+    "163886166197cb2a7e"
   ]
 }
