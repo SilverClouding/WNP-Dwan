@@ -11,7 +11,7 @@
 
 </style>
 
-<div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading ">
+<div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
 
     <div class="swiper multicolumn_Swiper section_width">
@@ -127,6 +127,11 @@
       ],
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
+    },
+	{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
     }
   ],
   "blocks": [
