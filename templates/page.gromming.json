@@ -104,11 +104,20 @@
           "settings": {
             "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
           }
+        },
+        "7fe12759-4b59-4100-ad9a-e2001c0e1f69": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book An Appointment",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
         }
       },
       "block_order": [
         "1638442037250169f1-0",
-        "1638442037250169f1-1"
+        "1638442037250169f1-1",
+        "7fe12759-4b59-4100-ad9a-e2001c0e1f69"
       ],
       "settings": {
         "color_scheme": "background-1",
