@@ -56,33 +56,24 @@
         "163844787962d7d61e-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-1.png",
-            "title": "",
-            "text": "<p><strong>“Always show those who love you how excited we are to see them”<\/strong> is how we treat each other and our friends<\/p>"
+            "image": "shopify:\/\/shop_images\/Image-2.jpg",
+            "title": "Meet Chotto",
+            "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>"
           }
         },
         "163844787962d7d61e-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-2.png",
-            "title": "",
-            "text": "<p><strong>“Walk away if you can’t chew it, eat it or pee on it”<\/strong> is how we make every problem work for us.<br\/><br\/><strong>“We have 9 lives’<\/strong> and we aren’t afraid of to try new things.<\/p>"
-          }
-        },
-        "507593bf-8f66-4d9b-b8a0-630569058ae4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-3.png",
-            "title": "",
-            "text": "<p><strong>“Live with a pure heart and act with integrity” <\/strong>is our approach to every decision about our product choices and the things we do.<\/p>"
+            "image": "shopify:\/\/shop_images\/Image-1.jpg",
+            "title": "Meet Lego",
+            "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>"
           }
         }
       },
       "block_order": [
         "163844787962d7d61e-0",
         "163844787962d7d61e-1",
-        "163844787962d7d61e-2",
-        "507593bf-8f66-4d9b-b8a0-630569058ae4"
+        "163844787962d7d61e-2"
       ],
       "settings": {
         "title": "",
