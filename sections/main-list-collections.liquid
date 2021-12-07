@@ -19,6 +19,9 @@
   
   {{section.settings.display_collection}}
   
+   {%- case section.settings.display_collection -%}
+  
+    {%- when 'display_all' -%}
   {%- paginate collections by 32 -%}
   <ul class="collection-list grid grid--1-col grid--4-col-tablet" role="list">
     {%- for collection in collections -%}
@@ -81,6 +84,12 @@
     {%- endif -%}
   </div>
   {%- endpaginate -%}
+  
+    {%- when 'display_selected' -%}
+  
+  display_selected
+  
+  {%- endcase -%}
 
 
   
