@@ -53,6 +53,7 @@
     },
     "163886166197cb2a7e": {
       "type": "brand_logos",
+      "disabled": true,
       "blocks": {
         "1638861661efc699ec-0": {
           "type": "column",
@@ -90,6 +91,7 @@
     },
     "163886169115439e4e": {
       "type": "column-content-cards",
+      "disabled": true,
       "blocks": {
         "1638861690b4c8facd-0": {
           "type": "column",
