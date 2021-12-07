@@ -77,8 +77,59 @@
         "background_style": "primary"
       }
     },
+    "163886169115439e4e": {
+      "type": "column-content-cards",
+      "blocks": {
+        "1638861690b4c8facd-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image.jpg",
+            "title": "Meet Commando",
+            "text": "<p>Meow! I'm Commando, a 3-months-old friendly boy! I love attention from hooman! If you have treats for me, I'll love you even more! Want to take me home? I can't wait...<\/p>",
+            "button_label": "Read More",
+            "button_link": ""
+          }
+        },
+        "1638861690b4c8facd-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image-2.jpg",
+            "title": "Meet Chotto",
+            "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>",
+            "button_label": "Read More",
+            "button_link": ""
+          }
+        },
+        "1638861690b4c8facd-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image-1.jpg",
+            "title": "Meet Lego",
+            "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>",
+            "button_label": "Read More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638861690b4c8facd-0",
+        "1638861690b4c8facd-1",
+        "1638861690b4c8facd-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 100,
+        "swipe_on_mobile": false,
+        "section_class": "adoption-cust-column"
+      }
+    },
     "16384478795d002435": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "163844787962d7d61e-0": {
           "type": "column",
@@ -348,59 +399,13 @@
       "settings": {
         "page_title": false
       }
-    },
-    "163886169115439e4e": {
-      "type": "column-content-cards",
-      "blocks": {
-        "1638861690b4c8facd-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "1638861690b4c8facd-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "1638861690b4c8facd-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1638861690b4c8facd-0",
-        "1638861690b4c8facd-1",
-        "1638861690b4c8facd-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "section_width": 100,
-        "swipe_on_mobile": false,
-        "section_class": "Multicolumn"
-      }
     }
   },
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
     "163886166197cb2a7e",
+    "163886169115439e4e",
     "16384478795d002435",
     "16384414226ce52222",
     "16384269895954df72",
@@ -408,7 +413,6 @@
     "16384462346d0d0284",
     "1638447520c7d2c592",
     "163844781875398cff",
-    "main",
-    "163886169115439e4e"
+    "main"
   ]
 }
