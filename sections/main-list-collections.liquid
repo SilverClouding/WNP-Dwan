@@ -5,9 +5,9 @@
 
 <div class="page-width listCollection">
   <div class="left-section">
-  
+    <div class="show-in-desktop">
     {% render 'breadcrumb' %}
-    
+    </div>
   </div>
 
   <div class="right-section" >
@@ -64,6 +64,11 @@
     {% else %}
     <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
     {% endif %}
+    
+    <div class="show-in-mobile">
+    {% render 'breadcrumb' %}
+    </div>
+    
 
     {%- liquid
     case section.settings.sort
