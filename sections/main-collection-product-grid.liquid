@@ -46,7 +46,7 @@
   </ul>
 </div>
 {% endcapture %}
-{{collection.image}}
+
 {% capture banner %}
  <div class="cols-banner">
   {%- if collection.image != blank -%}
@@ -87,7 +87,7 @@
   <div class="right-section" >
     
     <div class="show-in-desktop">
-      {% if section.settings.image != blank %}
+      {% if collection.image != blank %}
       {{banner}}
       {% else %}
       <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
