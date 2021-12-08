@@ -187,6 +187,7 @@
   
     
     {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
+    {{selected_handles.size}}
     <div class="swiper main-collection-page_Swiper">
       <ul class="swiper-wrapper collection_page_linklist" role="list">
         {% for selected_handle in selected_handles %}
@@ -210,6 +211,9 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+    
+    
+    
     
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
