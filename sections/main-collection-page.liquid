@@ -103,9 +103,9 @@
         {% for link in linklists[block.settings.main_link_list].links %} 
         <li class="collection-list__item grid__item">
           {% if link.type == 'collection_link' %}
-          {% assign linkCollection = sub_link.object %}          
+          {% assign linkCollection = link.object %}          
           <div class="featured-prod-item">
-            <a href="{{ sub_link.url }}">
+            <a href="{{ link.url }}">
               {% if linkCollection.image %}
               <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
               {% else %}
