@@ -48,7 +48,7 @@
              loading="lazy"
              alt="{{ section.settings.image_2.alt | escape }}"
              width="{{ section.settings.image_2.width }}"
-             height="{{ section.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}">
+             height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
       {% endif %}
       
       
