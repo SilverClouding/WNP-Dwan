@@ -2,7 +2,20 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width">
+  {% if section.settings.image != blank %}
+  
+  <div class="cols-banner">
+  
+    <div class="info">
+    <h1 class="title cols-banner-title title--primary">{{ section.settings.title | escape }}</h1>
+      <div class="cols-banner-description">{{section.settings.text}}</div>
+    </div>
+    
+  </div>
+  
+  {% else %}
   <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+  {% endif %}
 
   {%- liquid
     case section.settings.sort
