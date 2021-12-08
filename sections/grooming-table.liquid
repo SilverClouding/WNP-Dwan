@@ -4,17 +4,30 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+       
       <div class="grooming-inner-row">
         <div class="grooming-icontext">
+          {%- if block.settings.image != blank -%}
         <div class="g-icon">{{ block.settings.image }}</div>
+          {% endif %}
+          
+          {%- if block.settings.heading1 != blank -%}
         <div class="head-text1">{{ block.settings.heading1 }}</div>
+           {% endif %}
         </div>
         
+         {%- if block.settings.heading2 != blank -%}
        <div class="head-text2">{{ block.settings.heading2 }}</div>
+          {% endif %}
         
+        {%- if block.settings.heading3 != blank -%}
         <div class="head-text3">{{ block.settings.heading3 }}</div>
+        {% endif %}
         
+        {%- if block.settings.tick_sign != blank -%}
         <div class="tick-sign">{{ block.settings.tick_sign }}</div>
+        {% endif %}
+        
         
       </div>
       
