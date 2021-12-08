@@ -207,11 +207,23 @@
             "tick_sign": false,
             "heading_size": "h1"
           }
+        },
+        "647bf514-8480-47c8-b892-8d8b19e19d7e": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_284.png",
+            "heading1": "<p>De-shedding to remove loose fur\t<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
         }
       },
       "block_order": [
         "163895760093f1a58f-0",
-        "68724ac8-828e-456d-a37e-22a9bbf39b08"
+        "68724ac8-828e-456d-a37e-22a9bbf39b08",
+        "647bf514-8480-47c8-b892-8d8b19e19d7e"
       ],
       "settings": {
         "color_scheme": "background-1",
