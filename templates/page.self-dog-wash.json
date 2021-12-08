@@ -95,6 +95,16 @@
         "sec_class": "grooming-textcon"
       }
     },
+    "16389683664bc495b8": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
+    },
     "16384269895954df72": {
       "type": "image-with-text",
       "blocks": {
@@ -395,6 +405,7 @@
     "main",
     "163896747815618038",
     "1638426342c59892bd",
+    "16389683664bc495b8",
     "16384269895954df72",
     "1638957600d7b2d304",
     "1638442037a72cd96a",
