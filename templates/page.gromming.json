@@ -182,6 +182,30 @@
         "swipe_on_mobile": false,
         "section_class": "our-professional"
       }
+    },
+    "1638957600d7b2d304": {
+      "type": "grooming-table",
+      "blocks": {
+        "163895760093f1a58f-0": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
+            "heading1": "heading",
+            "heading2": "heading",
+            "heading3": "heading",
+            "tick_sign": false,
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "163895760093f1a58f-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -190,6 +214,7 @@
     "16384269895954df72",
     "1638442037a72cd96a",
     "main",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "1638957600d7b2d304"
   ]
 }
