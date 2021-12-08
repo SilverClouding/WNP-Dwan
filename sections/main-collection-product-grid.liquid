@@ -153,7 +153,20 @@
     
     {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
     {% for selected_handle in selected_handles %}
-    <p><a href="{{ collections[selected_handle].url }}">{{ collections[selected_handle].title }}</a></p>
+
+    {% assign linkCollection = collections[selected_handle] %}    
+
+    <div class="featured-prod-item">
+      <a href="{{ linkCollection.url }}">
+        {% if linkCollection.image %}
+        <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+        {% else %}
+        <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+        {% endif %}
+        <h2>{{ linkCollection.title }}</h2>
+      </a>
+    </div>
+
     {% endfor %}
     
     
