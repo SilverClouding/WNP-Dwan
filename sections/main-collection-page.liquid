@@ -98,10 +98,10 @@
 
 
     {% for block in section.blocks %}
-    <div>
-      <ul class="collection-list grid grid--2-col grid--4-col-tablet" role="list">
+    <div class="swiper">
+      <ul class="swiper-wrapper collection_page_linklist" role="list">
         {% for link in linklists[block.settings.main_link_list].links %} 
-        <li class="collection-list__item grid__item">
+        <li class="swiper-slide">
           {% if link.type == 'collection_link' %}
           {% assign linkCollection = link.object %}          
           <div class="featured-prod-item">
@@ -111,13 +111,10 @@
               {% else %}
               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
               {% endif %}
-              
               <h2>{{ link.title }}</h2>
-              
             </a>
           </div>
           {% endif %}
-
         </li> 
         {% endfor %}
       </ul>
