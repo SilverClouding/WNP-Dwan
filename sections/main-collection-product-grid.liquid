@@ -70,6 +70,14 @@
   }
 </style>
 
+<div class="show-in-mobile">
+  {% if section.settings.image != blank %}
+  {{banner}}
+  {% else %}
+  <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+  {% endif %}
+</div>
+
 {% capture breadcrumb %}
 {% render 'breadcrumb' %}
 <div class="main-collection--page left-side-menu">  
