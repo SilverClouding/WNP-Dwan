@@ -147,6 +147,9 @@ img.banner__media-for-mobile {
   .cols-banner .info h1{
   margin:0;
   }
+  .cols-banner .info{
+  left:20px;
+  }
 }
 
 .listCollection{
