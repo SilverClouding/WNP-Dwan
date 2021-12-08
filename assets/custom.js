@@ -14,6 +14,15 @@ const announcement_text_slider = new Swiper('.announcement_text_slider', {
 
 });
 
+$(".announcement_text_slider").each(function(elem, target){
+    var swp = target.swiper;
+    $(this).hover(function() {
+        swp.autoplay.stop();
+    }, function() {
+        swp.autoplay.start();
+    });
+})
+
 
 
 // Banner slideShow
