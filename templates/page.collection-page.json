@@ -26,13 +26,20 @@
           "settings": {
             "main_link_list": "cats-products"
           }
+        },
+        "1f644d7e-b74b-4e57-be39-38695cfb7d2f": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog"
+          }
         }
       },
       "block_order": [
         "2f363a43-b55b-436a-9adc-8deacf1882d0",
         "7c970b5b-c885-494b-a079-972908be1ffb",
         "22bb1386-830b-4bf7-9e2d-5cca1ba642ef",
-        "73e1edd6-3391-4f1c-9b71-80657d02135d"
+        "73e1edd6-3391-4f1c-9b71-80657d02135d",
+        "1f644d7e-b74b-4e57-be39-38695cfb7d2f"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_197_f3a41c32-2b99-496b-9b79-577e092a539a.png",
