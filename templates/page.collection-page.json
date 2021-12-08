@@ -2,6 +2,17 @@
   "sections": {
     "mainCollectioPage": {
       "type": "main-collection-page",
+      "blocks": {
+        "2f363a43-b55b-436a-9adc-8deacf1882d0": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": ""
+          }
+        }
+      },
+      "block_order": [
+        "2f363a43-b55b-436a-9adc-8deacf1882d0"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_197_f3a41c32-2b99-496b-9b79-577e092a539a.png",
         "image_2": "shopify:\/\/shop_images\/Group_1d9s7.png",
