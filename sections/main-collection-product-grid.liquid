@@ -187,7 +187,7 @@
   
     
     {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
-    {{selected_handles.size}}
+    {% if selected_handles.size > 0 %}
     <div class="swiper main-collection-page_Swiper">
       <ul class="swiper-wrapper collection_page_linklist" role="list">
         {% for selected_handle in selected_handles %}
@@ -211,7 +211,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    
+    {% endif %}
     
     
     
