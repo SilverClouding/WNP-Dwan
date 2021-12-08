@@ -194,4 +194,7 @@ img.banner__media-for-mobile {
     left:20px;
     width: 50%;
   }
+  .cols-banner img {
+    object-fit: cover;
+  }
 }
