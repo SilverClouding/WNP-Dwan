@@ -119,12 +119,62 @@
             "tick_sign_col1": true,
             "tick_sign_col2": true
           }
+        },
+        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet-shampoo_1.png",
+            "heading1": "<p>Double Shampoo Rinse & Conditioning<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "9930b969-2766-45ac-9eb7-a01e7cdf9246": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nail-scissors_1.png",
+            "heading1": "<p>Nails trimmed and paws cleaned\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cotton-swabs_1.png",
+            "heading1": "<p>Ear cleansing & fur removal if necessary<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "248aeccf-20f8-4631-899f-b16000bc75de": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "heading1": "<p>Anal gland expressing\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "9e12aed7-aa51-4a31-adef-3f7093cb2004": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hair-dryer_1.png",
+            "heading1": "<p>Hand fluffing & drying\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
         }
       },
       "block_order": [
         "163895760093f1a58f-0",
         "4933c5e0-8c3e-4b05-bf39-c99066c6df66",
-        "5b1cfe38-9170-4259-972c-9db0e135324a"
+        "5b1cfe38-9170-4259-972c-9db0e135324a",
+        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5",
+        "9930b969-2766-45ac-9eb7-a01e7cdf9246",
+        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b",
+        "248aeccf-20f8-4631-899f-b16000bc75de",
+        "9e12aed7-aa51-4a31-adef-3f7093cb2004"
       ],
       "settings": {
         "color_scheme": "background-1",
