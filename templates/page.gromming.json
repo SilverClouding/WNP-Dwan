@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/grooming.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/g-mob.jpg",
         "sec_class": "grooming-page",
         "image_height": "small",
         "adapt_height_first_image": false,
