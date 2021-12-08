@@ -119,3 +119,8 @@
 .collection-list__item .card-colored {
   position: relative;
 }
+
+
+.cols-banner img {
+    width: 100%;
+}
