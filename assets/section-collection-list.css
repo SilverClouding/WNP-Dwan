@@ -199,7 +199,7 @@ img.banner__media-for-mobile {
     object-position: 80%;
   }
   .spaced-section {
-    margin-top: 0rem;
+    margin-top: 0rem!important;
   }
 }
 
