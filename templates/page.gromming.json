@@ -190,16 +190,28 @@
           "type": "heading",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
-            "heading1": "Service",
-            "heading2": "Mini - Groom",
-            "heading3": "Full - Groom",
+            "heading1": "<p>Service<\/p>",
+            "heading2": "<p>Mini - Groom<\/p>",
+            "heading3": "<p>Full - Groom<\/p>",
             "tick_sign": true,
+            "heading_size": "h1"
+          }
+        },
+        "68724ac8-828e-456d-a37e-22a9bbf39b08": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_1_2.png",
+            "heading1": "<p>Thorough brush out\t<\/p>",
+            "heading2": "<p>wwqdwq<\/p>",
+            "heading3": "<p>qwdwqd<\/p>",
+            "tick_sign": false,
             "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "163895760093f1a58f-0"
+        "163895760093f1a58f-0",
+        "68724ac8-828e-456d-a37e-22a9bbf39b08"
       ],
       "settings": {
         "color_scheme": "background-1",
