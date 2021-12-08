@@ -121,6 +121,11 @@
 }
 
 
+/* custom add */
+.listCollection{
+  display:flex;
+  flex-wrap:wrap;
+}
 .cols-banner img {
-    width: 100%;
+  width: 100%;
 }
