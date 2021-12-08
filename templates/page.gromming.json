@@ -190,10 +190,10 @@
           "type": "heading",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
-            "heading1": "heading",
-            "heading2": "heading",
-            "heading3": "heading",
-            "tick_sign": false,
+            "heading1": "Service",
+            "heading2": "Mini - Groom",
+            "heading3": "Full - Groom",
+            "tick_sign": true,
             "heading_size": "h1"
           }
         }
