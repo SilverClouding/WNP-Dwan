@@ -2,21 +2,9 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
 {% capture breadcrumb %}{% render 'breadcrumb' %}{% endcapture %}
-
-<div class="page-width listCollection">
-  <div class="left-section">
-    <div class="show-in-desktop">
-    {{breadcrumb}}
-    </div>
-  </div>
-
-  <div class="right-section" >
-    {% if section.settings.image != blank %}
-
-    <div class="cols-banner">
-   
-      
-      {%- if section.settings.image != blank -%}
+{% capture banner %}
+ <div class="cols-banner">
+  {%- if section.settings.image != blank -%}
       <img class="{%- if section.settings.image_2 != blank -%}banner__media-for-desktop{%- endif -%}" srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
                    {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
                    {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
@@ -49,24 +37,42 @@
              alt="{{ section.settings.image_2.alt | escape }}"
              width="{{ section.settings.image_2.width }}"
              height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
-      {% endif %}
-      
-      
-      
-      
+      {% endif %}     
       <div class="info">
         <h1 class="title cols-banner-title title--primary">{{ section.settings.title | escape }}</h1>
         <div class="cols-banner-description">{{section.settings.text}}</div>
       </div>
 
     </div>
+{% endcapture %}
 
+
+<div class="show-in-mobile">
+    {% if section.settings.image != blank %}
+    {{banner}}
     {% else %}
     <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
     {% endif %}
-    
-    <div class="show-in-mobile">
+    </div>
+
+
+<div class="page-width listCollection">
+  <div class="left-section">
+    <div class="show-in-desktop">
     {{breadcrumb}}
+    </div>
+  </div>
+
+  <div class="right-section" >
+    <div class="show-in-desktop">
+    {% if section.settings.image != blank %}
+    {{banner}}
+    {% else %}
+    <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+    {% endif %}
+    </div>
+    <div class="show-in-mobile">
+      {{breadcrumb}}
     </div>
     
 
