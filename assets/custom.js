@@ -160,6 +160,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
   slidesPerView: 7,
   spaceBetween: 10,
+    loop: true,
   pagination: {
     el: ".main-collection-page_Swiper .swiper-pagination",
     clickable: true,
@@ -182,12 +183,12 @@ const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
     768: {
       slidesPerView: 4,
       spaceBetween: 10,
-      //        loop: true,
+             loop: true,
     },
     1024: {
       slidesPerView: 7,
       spaceBetween: 10,
-      //        loop: true,
+             loop: true,
     },
   },
 });
