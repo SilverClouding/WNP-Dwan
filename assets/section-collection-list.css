@@ -196,5 +196,6 @@ img.banner__media-for-mobile {
   }
   .cols-banner img {
     object-fit: cover;
+    object-position: 80%;
   }
 }
