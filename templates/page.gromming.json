@@ -240,6 +240,61 @@
             "tick_sign": false,
             "heading_size": "h1"
           }
+        },
+        "690540e9-3640-4a31-aa09-f6f3457473f2": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cotton-swabs_1.png",
+            "heading1": "<p>Ear cleansing & fur removal if necessary<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
+        },
+        "2702f478-92d8-4022-81aa-ca9bb94e69a9": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brush-teeth_1.png",
+            "heading1": "<p>Tooth brushing<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
+        },
+        "da3812f7-2b23-440e-a377-3e150b73c034": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "heading1": "<p>Anal gland expressing<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
+        },
+        "c157e42d-2aeb-436c-b022-a38dfff788f6": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hair-dryer_1.png",
+            "heading1": "<p>Hand fluffing & drying<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
+        },
+        "094f821d-c667-42a7-b02f-90a69b77bc03": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clipper_1.png",
+            "heading1": "<p>Coat clipping<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
         }
       },
       "block_order": [
@@ -247,7 +302,12 @@
         "68724ac8-828e-456d-a37e-22a9bbf39b08",
         "647bf514-8480-47c8-b892-8d8b19e19d7e",
         "5f60d44a-433b-40c2-ab65-bbdf1f27c5fd",
-        "21fef270-eb93-4ebb-9e67-5ebc36a9fcf2"
+        "21fef270-eb93-4ebb-9e67-5ebc36a9fcf2",
+        "690540e9-3640-4a31-aa09-f6f3457473f2",
+        "2702f478-92d8-4022-81aa-ca9bb94e69a9",
+        "da3812f7-2b23-440e-a377-3e150b73c034",
+        "c157e42d-2aeb-436c-b022-a38dfff788f6",
+        "094f821d-c667-42a7-b02f-90a69b77bc03"
       ],
       "settings": {
         "color_scheme": "background-1",
