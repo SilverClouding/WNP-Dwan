@@ -24,12 +24,90 @@
     }
   }
 </style>
+
+{% capture breadcrumb %}
+{% render 'breadcrumb' %}
+<div class="main-collection--page left-side-menu">  
+  <ul class="level_1">
+  {% for link in linklists[section.settings.main_link_list].links %} 
+    <li>  
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      <ul class="level_2">
+        {% for sublink in link.links %}
+        <li>  <a href="{{ sublink.url }}">{{ sublink.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endcapture %}
+{% capture banner %}
+ <div class="cols-banner">
+  {%- if section.settings.image != blank -%}
+      <img class="{%- if section.settings.image_2 != blank -%}banner__media-for-desktop{%- endif -%}" srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+                   {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                   {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
+                   {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+                   {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
+                   {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
+                   {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
+                   {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}
+                   {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+           sizes="(min-width: 750px) 50vw, 100vw"
+           src="{{ section.settings.image | img_url: '1500x' }}"
+           loading="lazy"
+           alt="{{ section.settings.image.alt | escape }}"
+           width="{{ section.settings.image.width }}"
+           height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}">
+      {% endif %}
+      {%- if section.settings.image_2 != blank -%}
+      <img class="banner__media-for-mobile" srcset="{%- if section.settings.image_2.width >= 375 -%}{{ section.settings.image_2 | img_url: '375x' }} 375w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 750 -%}{{ section.settings.image_2 | img_url: '750x' }} 750w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 1100 -%}{{ section.settings.image_2 | img_url: '1100x' }} 1100w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 1500 -%}{{ section.settings.image_2 | img_url: '1500x' }} 1500w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 1780 -%}{{ section.settings.image_2 | img_url: '1780x' }} 1780w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 2000 -%}{{ section.settings.image_2 | img_url: '2000x' }} 2000w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 3000 -%}{{ section.settings.image_2 | img_url: '3000x' }} 3000w,{%- endif -%}
+                     {%- if section.settings.image_2.width >= 3840 -%}{{ section.settings.image_2 | img_url: '3840x' }} 3840w,{%- endif -%}
+                     {{ section.settings.image_2 | img_url: 'master' }} {{ section.settings.image_2.width }}w"
+             sizes="(min-width: 750px) 50vw, 100vw"
+             src="{{ section.settings.image_2 | img_url: '1500x' }}"
+             loading="lazy"
+             alt="{{ section.settings.image_2.alt | escape }}"
+             width="{{ section.settings.image_2.width }}"
+             height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
+      {% endif %}     
+      <div class="info">
+        <h1 class="title cols-banner-title title--primary">{{ section.settings.title | escape }}</h1>
+        <div class="cols-banner-description">{{section.settings.text}}</div>
+      </div>
+
+    </div>
+{% endcapture %}
+
+
 <div class="page-width listCollection">
   <div class="left-section">
-
+    <div class="show-in-desktop">
+      {{breadcrumb}}
+    </div>
   </div>
 
   <div class="right-section" >
+    
+    <div class="show-in-desktop">
+      {% if section.settings.image != blank %}
+      {{banner}}
+      {% else %}
+      <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+    </div>
+    <div class="show-in-mobile">
+      {{breadcrumb}}
+    </div>
+    
+    
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
