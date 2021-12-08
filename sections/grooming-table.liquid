@@ -6,19 +6,19 @@
           {%- when 'heading' -%}
       <div class="grooming-inner-row">
         <div class="grooming-icontext">
-        <div class="g-icon">{{ section.settings.image }}</div>
-        <div class="head-text1">{{ section.settings.heading1 }}</div>
+        <div class="g-icon">{{ block.settings.image }}</div>
+        <div class="head-text1">{{ block.settings.heading1 }}</div>
         </div>
         
-       <div class="head-text2">{{ section.settings.heading2 }}</div>
+       <div class="head-text2">{{ block.settings.heading2 }}</div>
         
-        <div class="head-text3">{{ section.settings.heading3 }}</div>
+        <div class="head-text3">{{ block.settings.heading3 }}</div>
         
-        <div class="tick-sign">{{ section.settings.tick_sign }}</div>
+        <div class="tick-sign">{{ block.settings.tick_sign }}</div>
         
       </div>
       
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+            
          
         {%- endcase -%}
       {%- endfor -%}
