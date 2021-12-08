@@ -50,8 +50,8 @@
         <div class="head-text3">{{ block.settings.heading3 }}</div>
         {% endif %}
         
-        {%- if block.settings.tick_sign != blank -%}
-        <div class="tick-sign">{{ block.settings.tick_sign }}</div>
+        {%- if block.settings.tick_sign -%}
+        <div class="tick-sign"><img src="{{section.settings.tick_sign | img_url: '50px'}}" /></div>
         {% endif %}
         
         
