@@ -156,6 +156,42 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   },
 });
 
+// Multicolumn slider
+const multicolumn_Swiper = new Swiper(".main-collection-page_Swiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: ".main-collection-page_Swiper .swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.main-collection-page_Swiper .swiper-button-next',
+    prevEl: '.main-collection-page_Swiper .swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.main-collection-page_Swiper .swiper-scrollbar',
+    type: "progressbar",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      //        loop: true,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+      //        loop: true,
+    },
+  },
+});
+
 
 //image and only text slider
 const text_slider = new Swiper('.text_slider', {
