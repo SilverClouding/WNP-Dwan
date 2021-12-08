@@ -111,6 +111,9 @@
               {% else %}
               <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
               {% endif %}
+              
+              <h2>{{ link.title }}</h2>
+              
             </a>
           </div>
           {% endif %}
