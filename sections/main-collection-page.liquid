@@ -77,78 +77,53 @@
 <div class="page-width listCollection">
   <div class="left-section">
     <div class="show-in-desktop">
-    {{breadcrumb}}
+      {{breadcrumb}}
     </div>
   </div>
 
   <div class="right-section" >
     <div class="show-in-desktop">
-    {% if section.settings.image != blank %}
-    {{banner}}
-    {% else %}
-    <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
-    {% endif %}
+      {% if section.settings.image != blank %}
+      {{banner}}
+      {% else %}
+      <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+      {% endif %}
     </div>
     <div class="show-in-mobile">
       {{breadcrumb}}
     </div>
-    
 
 
 
-    <ul class="collection-list grid grid--2-col grid--4-col-tablet" role="list">
-      {% for block in section.blocks %}
-      {% assign collection = block.settings %} 
-      <li class="collection-list__item grid__item">
-        <a href="/collections/{{ collection.url }}"class="card animate-arrow  card--media {% if section.settings.image_ratio != 'adapt' %} card--stretch   {% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}">
-          <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
-            
-            <div {% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
-              {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
-              <div class="media media--{{ section.settings.image_ratio }} media--hover-effect overflow-hidden"
-                   {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
 
-
-                <img
-                     srcset="{%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
-                             {%- if collection.featured_image.width >= 360 -%}{{ collection.featured_image | img_url: '360x' }} 360w,{%- endif -%}
-                             {%- if collection.featured_image.width >= 535 -%}{{ collection.featured_image | img_url: '535x' }} 535w,{%- endif -%}
-                             {%- if collection.featured_image.width >= 750 -%}{{ collection.featured_image | img_url: '750x' }} 750w,{%- endif -%}
-                             {%- if collection.featured_image.width >= 1000 -%}{{ collection.featured_image | img_url: '1000x' }} 1000w,{%- endif -%}
-                             {%- if collection.featured_image.width >= 1500 -%}{{ collection.featured_image | img_url: '1500x' }} 1500w,{%- endif -%}
-                             {{ collection.featured_image | img_url: 'master' }} {{ collection.featured_image.width }}w"
-                     src="{{ collection.featured_image | img_url: '1500x' }}"
-                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
-                     alt="{{ collection.title | escape }}"
-                     height="{{ collection.featured_image.height }}"
-                     width="{{ collection.featured_image.width }}"
-                     loading="lazy"
-                     >
-
-
-
-              </div>
-            </div>
-            <div class="card__text card__text-spacing card__text-hover">
-              {% assign colHandle = block.settings.url %}
-              {% assign collection = collections[colHandle] %}
-              {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
-              <h2 class="h3">{{- collection.title -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></h2>
-              <p>{{ 'collections.shopall' | t :number:collection.all_products_count}}</p>
-            </div>
-           
+    {% for block in section.blocks %}
+    <div>
+      <ul class="collection-list grid grid--2-col grid--4-col-tablet" role="list">
+        {% for link in linklists[block.settings.main_link_list].links %} 
+        <li class="collection-list__item grid__item">
+          {% if link.type == 'collection_link' %}
+          {% assign linkCollection = sub_link.object %}          
+          <div class="featured-prod-item">
+            <a href="{{ sub_link.url }}">
+              {% if linkCollection.image %}
+              <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% else %}
+              <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% endif %}
+            </a>
           </div>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>  
-  
+          {% endif %}
+
+        </li> 
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+
 
   </div>
-
-
-
 </div>
 
 {% schema %}
