@@ -14,7 +14,7 @@
     {% if section.settings.image != blank %}
 
     <div class="cols-banner">
-     {%- if section.settings.image != blank or section.settings.image_2 != blank -%}
+   
       
       {%- if section.settings.image != blank -%}
       <img class="banner__media-for-desktop" srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
@@ -51,11 +51,7 @@
              height="{{ section.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}">
       {% endif %}
       
-      {% else %}
-       <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}">
-        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-      </div>
-       {% endif %}
+      
       
       
       <div class="info">
