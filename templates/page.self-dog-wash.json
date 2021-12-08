@@ -19,7 +19,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title": false
+        "page_title": true
       }
     },
     "163896747815618038": {
