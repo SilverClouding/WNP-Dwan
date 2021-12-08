@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+
 <div class="{% unless section.settings.full_width %}page-width{% endunless %} {{ section.settings.sec_class }}">
   <div class="grooming-row color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} grooming--full-width{% endif %}">
     <div class="grooming__blocks">
