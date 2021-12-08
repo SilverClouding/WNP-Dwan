@@ -82,7 +82,7 @@
   
   
   {%- if section.settings.mobile_image != blank -%}
-    <div class="banner__media about-banner-mob media{% if section.settings.mobile_image != blank %} banner__media-half{% endif %}">
+    <div class="banner__media about-banner-mob media">
       <img
         srcset="{%- if section.settings.mobile_image.width >= 375 -%}{{ section.settings.mobile_image | img_url: '375x' }} 375w,{%- endif -%}
           {%- if section.settings.mobile_image.width >= 750 -%}{{ section.settings.mobile_image | img_url: '750x' }} 750w,{%- endif -%}
