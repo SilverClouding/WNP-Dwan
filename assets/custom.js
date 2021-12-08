@@ -156,8 +156,8 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   },
 });
 
-// Multicolumn slider
-const multicolumn_Swiper = new Swiper(".main-collection-page_Swiper", {
+// main-collection-page_Swiper
+const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
   slidesPerView: 7,
   spaceBetween: 10,
   pagination: {
