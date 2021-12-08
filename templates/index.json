@@ -160,7 +160,9 @@
       ],
       "settings": {
         "column_alignment": "left",
-        "background_style": "primary"
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": ""
       }
     },
     "16364684436965f7cf": {
@@ -381,7 +383,8 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "full_width": false
+        "full_width": false,
+        "sec_class": "get-the-best"
       }
     },
     "16364545883ef8672a": {
