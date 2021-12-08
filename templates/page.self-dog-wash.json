@@ -16,6 +16,12 @@
         "show_text_below": true
       }
     },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_title": false
+      }
+    },
     "163896747815618038": {
       "type": "multicolumn",
       "blocks": {
@@ -332,13 +338,6 @@
         "sec_class": "operating-hours"
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "page_title": false
-      }
-    },
     "16388773760b7fb856": {
       "type": "column-content-cards",
       "disabled": true,
@@ -393,12 +392,12 @@
   },
   "order": [
     "16384259656000056e",
+    "main",
     "163896747815618038",
     "1638426342c59892bd",
     "16384269895954df72",
     "1638957600d7b2d304",
     "1638442037a72cd96a",
-    "main",
     "16388773760b7fb856"
   ]
 }
