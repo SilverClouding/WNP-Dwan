@@ -192,5 +192,6 @@ img.banner__media-for-mobile {
   }
   .cols-banner .info{
     left:20px;
+    width: 50%;
   }
 }
