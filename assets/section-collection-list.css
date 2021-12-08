@@ -128,12 +128,21 @@
 .right-section{
   width:80%;
 }
+img.banner__media-for-mobile {
+    display: none;
+}
 @media screen and (max-width: 989px) {
   .left-section{
     width:100%;
   }
   .right-section{
     width:100%;
+  }
+  img.banner__media-for-mobile {
+    display: block;
+  }
+  img.banner__media-for-desktop{
+  display:none;
   }
 }
 
