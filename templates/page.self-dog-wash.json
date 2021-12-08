@@ -3,7 +3,7 @@
     "16384259656000056e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/self-dog-wash.jpg",
+        "image": "shopify:\/\/shop_images\/self-dong-banner.jpg",
         "mobile_image": "shopify:\/\/shop_images\/g-mob.jpg",
         "sec_class": "cust-image-banner",
         "image_height": "small",
@@ -22,14 +22,14 @@
         "163842634207ed9d0c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Grooming",
+            "heading": "Self Dog-Wash",
             "heading_size": "h1"
           }
         },
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using <em><strong>top-quality dog grooming products <\/strong><\/em>and state-of-the-art equipment for a professional finish each and every time.<\/p>"
+            "text": "<p>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together.<br\/>No more furry bathrooms to tidy up at home.<\/p>"
           }
         },
         "1d025c24-b599-46a5-b80a-4250f397d7c5": {
@@ -351,6 +351,49 @@
         "swipe_on_mobile": false,
         "section_class": "our-professional"
       }
+    },
+    "163896747815618038": {
+      "type": "multicolumn",
+      "blocks": {
+        "163896747886605c55-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163896747886605c55-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163896747886605c55-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163896747886605c55-0",
+        "163896747886605c55-1",
+        "163896747886605c55-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "section_width": 100,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -360,6 +403,7 @@
     "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "163896747815618038"
   ]
 }
