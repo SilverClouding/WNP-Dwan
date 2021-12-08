@@ -1,16 +1,25 @@
 <div class="{% unless section.settings.full_width %}page-width{% endunless %} {{ section.settings.sec_class }}">
   <div class="grooming-row color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} grooming--full-width{% endif %}">
-    <div class="rich-text__blocks">
+    <div class="grooming__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+      <div class="grooming-inner-row">
+        <div class="grooming-icontext">
+        <div class="g-icon">{{ section.settings.image }}</div>
+        <div class="head-text1">{{ section.settings.heading1 }}</div>
+        </div>
+        
+       <div class="head-text2">{{ section.settings.heading2 }}</div>
+        
+        <div class="head-text3">{{ section.settings.heading3 }}</div>
+        
+        <div class="tick-sign">{{ section.settings.tick_sign }}</div>
+        
+      </div>
+      
             <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-          {%- when 'text' -%}
-            <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-          {%- when 'button' -%}
-            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-              {{ block.settings.button_label | escape }}
-            </a>
+         
         {%- endcase -%}
       {%- endfor -%}
     </div>
