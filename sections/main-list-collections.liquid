@@ -4,7 +4,11 @@
 
 
 <div class="page-width listCollection">
-  <div style="width:20%;"></div>
+  <div style="width:20%;">
+  
+    {% render 'breadcrumb' %}
+    
+  </div>
 
   <div style="width:80%;">
     {% if section.settings.image != blank %}
