@@ -176,19 +176,19 @@ const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
     type: "progressbar",
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    1024: {
+      slidesPerView: 7,
       spaceBetween: 10,
+//              loop: true,
     },
     768: {
       slidesPerView: 4,
       spaceBetween: 10,
 //              loop: true,
     },
-    1024: {
-      slidesPerView: 7,
+     640: {
+      slidesPerView: 2,
       spaceBetween: 10,
-//              loop: true,
     },
   },
 });
