@@ -139,7 +139,7 @@ img.banner__media-for-mobile {
 }
 .cols-banner img {
   width: 100%;
-  object-fit: contain;
+ 
 }
 .cols-banner .info {
   position: absolute;
