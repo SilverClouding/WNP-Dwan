@@ -3,6 +3,11 @@
     "mainCollectioPage": {
       "type": "main-collection-page",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Group_197_f3a41c32-2b99-496b-9b79-577e092a539a.png",
+        "title": "Everything related to Dogs",
+        "text": "Here at whiskers n paws, we got you and your paw friend covered",
+        "color_scheme": "background-1",
+        "image_padding": false
       }
     },
     "1638951039c767e2d1": {
