@@ -4,6 +4,13 @@
 {% capture breadcrumb %}
 {% render 'breadcrumb' %}
 
+<style>
+.swiper.main-collection-page_Swiper img {
+    width: 100%;
+}
+</style>
+     
+
 <div class="main-collection--page left-side-menu">  
   <ul class="level_1">
   {% for link in linklists[section.settings.main_link_list].links %} 
