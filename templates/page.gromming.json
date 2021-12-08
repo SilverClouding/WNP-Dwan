@@ -317,6 +317,17 @@
             "tick_sign": true,
             "heading_size": "h1"
           }
+        },
+        "32dc9372-7bd2-411f-9ff8-c0daa11ed301": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_2_1.png",
+            "heading1": "<p>Hand finishing\t<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
         }
       },
       "block_order": [
@@ -331,7 +342,8 @@
         "c157e42d-2aeb-436c-b022-a38dfff788f6",
         "094f821d-c667-42a7-b02f-90a69b77bc03",
         "5e47676d-76d8-458e-85bb-7a04ee2656d8",
-        "cfd9eefb-ecaf-4c80-9958-c4badd90add0"
+        "cfd9eefb-ecaf-4c80-9958-c4badd90add0",
+        "32dc9372-7bd2-411f-9ff8-c0daa11ed301"
       ],
       "settings": {
         "color_scheme": "background-1",
