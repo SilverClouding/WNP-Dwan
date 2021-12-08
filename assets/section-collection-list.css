@@ -198,6 +198,9 @@ img.banner__media-for-mobile {
     object-fit: cover;
     object-position: 80%;
   }
+  .spaced-section {
+    margin-top: 0rem;
+  }
 }
 
 
