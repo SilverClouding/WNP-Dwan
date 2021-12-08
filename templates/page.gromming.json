@@ -193,7 +193,7 @@
             "heading1": "<p>Service<\/p>",
             "heading2": "<p>Mini - Groom<\/p>",
             "heading3": "<p>Full - Groom<\/p>",
-            "tick_sign": true,
+            "tick_sign": false,
             "heading_size": "h1"
           }
         },
