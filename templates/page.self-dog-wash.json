@@ -24,7 +24,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/dog_1.png",
             "title": "",
-            "text": "<p>Over 1365 dogs tried self dog was since 2017<\/p>"
+            "text": "<p><strong>Over 1365 dogs tried self dog was since 2017<\/strong><\/p>"
           }
         },
         "163896747886605c55-1": {
@@ -32,7 +32,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/support_1.png",
             "title": "",
-            "text": "<p>100% proceeds go towards our community work! <\/p>"
+            "text": "<p><strong>100% proceeds go towards our community work! <\/strong><\/p>"
           }
         }
       },
