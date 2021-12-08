@@ -217,7 +217,7 @@
         "background_style": "primary",
         "section_width": 80,
         "swipe_on_mobile": false,
-        "section_class": ""
+        "section_class": "two-image-column"
       }
     }
   },
