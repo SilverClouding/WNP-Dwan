@@ -122,7 +122,9 @@
         "b0f6158a-7f85-40f7-b985-95f79b165a27"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Group_197.png",
         "title": "Collections",
+        "text": "“Here at whiskers n paws...",
         "display_collection": "display_selected",
         "sort": "alphabetical",
         "image_ratio": "square",
