@@ -10,7 +10,7 @@
        
       <div class="grooming-inner-row">
         <div class="grooming-icontext">
-          <div class="image-with-text__media image-with-text__media--{{ block.settings.height }} {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+          <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if block.settings.height == 'adapt' and block.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if block.settings.image != blank -%}
