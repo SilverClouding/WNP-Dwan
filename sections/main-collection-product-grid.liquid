@@ -112,19 +112,8 @@
 
 {% capture breadcrumb %}
 {% render 'breadcrumb' %}
-<div class="main-collection--page left-side-menu">  
-  <ul class="level_1">
-  {% for link in linklists[section.settings.main_link_list].links %} 
-    <li>  
-      <a href="{{ link.url }}">{{ link.title }}</a>
-      <ul class="level_2">
-        {% for sublink in link.links %}
-        <li>  <a href="{{ sublink.url }}">{{ sublink.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-  </ul>
+<div class="main-collection--product-grid left-side-sidebar">  
+  
 </div>
 {% endcapture %}
 
