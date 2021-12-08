@@ -128,7 +128,7 @@
         "display_collection": "display_selected",
         "sort": "alphabetical",
         "image_ratio": "square",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "image_padding": false
       }
     }
