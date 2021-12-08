@@ -1,7 +1,14 @@
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+<style>
 
-<div class=" {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} {{ section.settings.sec_class }}">
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
+<div class=" {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} section_width {{ section.settings.sec_class }}">
   <div class="grooming-row color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} grooming--full-width{% endif %}">
     <div class="grooming__blocks">
       {%- for block in section.blocks -%}
@@ -101,6 +108,16 @@
       "default": "background-1",
       "label": "t:sections.rich-text.settings.color_scheme.label"
     },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      },
     {
       "type": "checkbox",
       "id": "full_width",
