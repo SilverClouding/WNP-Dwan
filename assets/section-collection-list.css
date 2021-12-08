@@ -122,6 +122,21 @@
 
 
 /* custom add */
+.left-section{
+  width:20%;
+}
+.right-section{
+  width:80%;
+}
+@media screen and (max-width: 989px) {
+  .left-section{
+    width:100%;
+  }
+  .right-section{
+    width:100%;
+  }
+}
+
 .listCollection{
   display:flex;
   flex-wrap:wrap;
