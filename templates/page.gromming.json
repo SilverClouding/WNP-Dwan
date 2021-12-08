@@ -202,9 +202,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/dog_1_2.png",
             "heading1": "<p>Thorough brush out\t<\/p>",
-            "heading2": "<p>wwqdwq<\/p>",
-            "heading3": "<p>qwdwqd<\/p>",
-            "tick_sign": false,
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
             "heading_size": "h1"
           }
         },
