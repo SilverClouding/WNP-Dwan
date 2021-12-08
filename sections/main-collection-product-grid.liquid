@@ -149,26 +149,28 @@
     </div>
     
     
-    {{collection.metafields.accentuate.collections}}
+  
     
     {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
-    {% for selected_handle in selected_handles %}
-
-    {% assign linkCollection = collections[selected_handle] %}    
-
-    <div class="featured-prod-item">
-      <a href="{{ linkCollection.url }}">
-        {% if linkCollection.image %}
-        <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-        {% else %}
-        <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
-        {% endif %}
-        <h2>{{ linkCollection.title }}</h2>
-      </a>
+    <div class="swiper main-collection-page_Swiper">
+      <ul class="swiper-wrapper collection_page_linklist" role="list">
+        {% for selected_handle in selected_handles %}
+        {% assign linkCollection = collections[selected_handle] %}  
+        <li class="swiper-slide">
+          <div class="featured-prod-item">
+            <a href="{{ linkCollection.url }}">
+              {% if linkCollection.image %}
+              <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% else %}
+              <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% endif %}
+              <h2>{{ linkCollection.title }}</h2>
+            </a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-
-    {% endfor %}
-    
     
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
