@@ -10,7 +10,7 @@
 @media screen and (min-width: 750px) {
   .collage-section + .collection-list-section .no-heading {
     margin-top: calc(-4rem - var(--page-width-margin));
-  }
+      }
 }
 
 .collection-list-title {
@@ -42,7 +42,7 @@
 @media screen and (min-width: 750px) {
   .collection-list-wrapper.no-heading {
     margin-top: calc(6rem + var(--page-width-margin));
-  }
+      }
 }
 
 .collection-list__item:only-child {
@@ -52,7 +52,7 @@
 
 .collection-list__item .card--light-border:hover {
   border: 0.1rem solid rgba(var(--color-foreground), 0.04);
-}
+    }
 
 .collection-list__item:only-child .media {
   height: 35rem;
@@ -143,6 +143,7 @@
 }
 .cols-banner img {
   width: 100%;
+  object-fit: contain;
 }
 .cols-banner .info {
   position: absolute;
