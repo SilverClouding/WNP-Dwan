@@ -91,14 +91,14 @@
     margin: 0;
     padding: 0;
   }
-  .swiper.main-collection-page_Swiper {
+/*   .swiper.main-collection-page_Swiper {
     border-bottom: 1px solid #D3D6D9;
     padding-bottom: 70px;
-  }
+  } */
 
-  .swiper.main-collection-page_Swiper .swiper-scrollbar {
+/*   .swiper.main-collection-page_Swiper .swiper-scrollbar {
     margin-bottom: 35px;
-  }
+  } */
   .swiper.main-collection-page_Swiper:last-child {
     margin-bottom: 40px;
   }
@@ -205,6 +205,10 @@
         </li>
         {% endfor %}
       </ul>
+      <div class="swiper-scrollbar"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
