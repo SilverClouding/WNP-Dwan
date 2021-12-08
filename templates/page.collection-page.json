@@ -105,19 +105,19 @@
         "163895856608fdfa54-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Dine with your paw friends!"
           }
         },
         "163895856608fdfa54-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
           }
         },
         "163895856608fdfa54-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Learn More",
             "button_link": ""
           }
         }
