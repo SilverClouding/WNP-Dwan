@@ -144,6 +144,9 @@ img.banner__media-for-mobile {
   img.banner__media-for-desktop{
   display:none;
   }
+  .cols-banner .info h1{
+  margin:0;
+  }
 }
 
 .listCollection{
