@@ -47,7 +47,7 @@
         "163896747886605c55-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "section_width": 35,
         "image_width": "full",
         "image_ratio": "adapt",
@@ -65,7 +65,7 @@
         "163842634207ed9d0c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Self Dog-Wash",
+            "heading": "",
             "heading_size": "h1"
           }
         },
