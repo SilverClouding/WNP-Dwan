@@ -295,6 +295,28 @@
             "tick_sign": true,
             "heading_size": "h1"
           }
+        },
+        "5e47676d-76d8-458e-85bb-7a04ee2656d8": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_1_1.png",
+            "heading1": "<p>Coat styling to breed standard or your preference<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": false,
+            "heading_size": "h1"
+          }
+        },
+        "cfd9eefb-ecaf-4c80-9958-c4badd90add0": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scissor_1.png",
+            "heading1": "<p>Scissoring<\/p>",
+            "heading2": "",
+            "heading3": "",
+            "tick_sign": true,
+            "heading_size": "h1"
+          }
         }
       },
       "block_order": [
@@ -307,7 +329,9 @@
         "2702f478-92d8-4022-81aa-ca9bb94e69a9",
         "da3812f7-2b23-440e-a377-3e150b73c034",
         "c157e42d-2aeb-436c-b022-a38dfff788f6",
-        "094f821d-c667-42a7-b02f-90a69b77bc03"
+        "094f821d-c667-42a7-b02f-90a69b77bc03",
+        "5e47676d-76d8-458e-85bb-7a04ee2656d8",
+        "cfd9eefb-ecaf-4c80-9958-c4badd90add0"
       ],
       "settings": {
         "color_scheme": "background-1",
