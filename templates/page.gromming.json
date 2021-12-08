@@ -347,6 +347,7 @@
       ],
       "settings": {
         "color_scheme": "background-1",
+        "section_width": 80,
         "full_width": false,
         "sec_class": "grooming-t-con"
       }
