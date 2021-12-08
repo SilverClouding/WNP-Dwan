@@ -16,7 +16,7 @@
           {%- when 'heading' -%}
        
       <div class="grooming-inner-row">
-        <div class="grooming-icontext">
+        <div class="grooming-icontext col-1">
           <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if block.settings.height == 'adapt' and block.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
@@ -49,17 +49,21 @@
            {% endif %}
         </div>
         
-         {%- if block.settings.heading2 != blank -%}
-       <div class="head-text2">{{ block.settings.heading2 }}</div>
-          {% endif %}
+         
+       <div class="head-text2 col-2">
+        {%- if block.settings.heading2 != blank -%} {{ block.settings.heading2 }} {% endif %}
+          {%- if block.settings.tick_sign -%}<div class="tick-sign"><img src="{{block.settings.tick_sign | img_url: '40px'}}" /></div>{% endif %}
+        </div>
+         
         
-        {%- if block.settings.heading3 != blank -%}
-        <div class="head-text3">{{ block.settings.heading3 }}</div>
-        {% endif %}
+       
+        <div class="head-text3 col-3">
+          {%- if block.settings.heading3 != blank -%} {{ block.settings.heading3 }}  {% endif %}
+          {%- if block.settings.tick_sign -%}<div class="tick-sign"><img src="{{block.settings.tick_sign | img_url: '40px'}}" /></div>{% endif %}
+        </div>
+      
         
-        {%- if block.settings.tick_sign -%}
-        <div class="tick-sign"><img src="{{block.settings.tick_sign | img_url: '40px'}}" /></div>
-        {% endif %}
+        
         
         
       </div>
@@ -135,6 +139,10 @@
       "type": "heading",
       "name": "Heading",
       "settings": [
+{
+        "type": "header",
+        "content": "Column 1"
+      },
 		{
           "type": "image_picker",
           "id": "image",
@@ -145,11 +153,26 @@
           "id": "heading1",
 		  "label": "Column1"
         },
+{
+        "type": "header",
+        "content": "Column 2"
+      },
         {
           "type": "richtext",
           "id": "heading2",
           "label": "Column2"
         },
+{
+          "type": "checkbox",
+          "id": "tick_sign_col1",
+          "default": false,
+          "label": "Tick Icon"
+        },
+
+{
+        "type": "header",
+        "content": "Column 3"
+      },
 		{
           "type": "richtext",
           "id": "heading3",
@@ -157,29 +180,9 @@
         },
 		{
           "type": "checkbox",
-          "id": "tick_sign",
+          "id": "tick_sign_col2",
           "default": false,
           "label": "Tick Icon"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
         }
       ]
     }
