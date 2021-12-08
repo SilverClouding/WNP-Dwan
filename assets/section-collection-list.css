@@ -143,3 +143,20 @@
 .cols-banner .info h1 {
   margin-top: 0;
 }
+.color-none .card__text.card__text-spacing.card__text-hover p {
+  margin: 0;
+}
+
+.color-none .card__text.card__text-spacing.card__text-hover {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.color-none .card__text.card__text-spacing.card__text-hover .h3 {
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.color-none .card__text.card__text-spacing.card__text-hover .h3 .icon-wrap {
+  display: none;
+}
