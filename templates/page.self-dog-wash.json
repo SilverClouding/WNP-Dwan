@@ -295,6 +295,22 @@
         "sec_class": "facility-con"
       }
     },
+    "163905749726fb2691": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Products",
+        "collection": "orijen",
+        "collection2": "",
+        "products_to_show": 4,
+        "show_view_all": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1639055992aadcf97f": {
       "type": "rich-text",
       "blocks": {
@@ -321,22 +337,6 @@
         "full_width": true,
         "sec_class": "get-the-best"
       }
-    },
-    "163905749726fb2691": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured Products",
-        "collection": "orijen",
-        "collection2": "",
-        "products_to_show": 4,
-        "show_view_all": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
     }
   },
   "order": [
@@ -351,7 +351,7 @@
     "1638442037a72cd96a",
     "16388773760b7fb856",
     "1639042835bcbec2f1",
-    "1639055992aadcf97f",
-    "163905749726fb2691"
+    "163905749726fb2691",
+    "1639055992aadcf97f"
   ]
 }
