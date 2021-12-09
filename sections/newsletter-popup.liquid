@@ -24,6 +24,7 @@
               <input id="first-name" type="text" name="customer[first_name]" placeholder="Name"  oninput="this.value = this.value.toUpperCase()" />
             </div>
             <div class="email-con">
+              <span id="lblError" style="color: red"></span>
             <input type="email"
                    name="contact[email]"
                    id="{{ formId }}-email"
@@ -40,7 +41,7 @@
                    data-form-status
                    {% endif %}  
                    onkeyup="ValidateEmail();">
-              <span id="lblError" style="color: red"></span>
+              
             <span class="input-group__btn">
               <button type="submit" class="btn" name="commit" id="Subscribe">
                 <span>{{ 'newsletter.button_label' | t }}</span>
