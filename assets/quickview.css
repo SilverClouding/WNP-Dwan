@@ -8,6 +8,7 @@
 }
  #quick-view .qv-product-images {
 	 width: 48%;
+   position:relative;
 	 
 }
 
