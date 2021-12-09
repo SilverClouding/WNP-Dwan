@@ -30,11 +30,11 @@ jQuery(function($){
         console.log(imageCount);
         $(images).each(function (i, image) {
           if (i == imageCount - 1) {
-            var image_embed = '<img src="' + image + '">';
+            var image_embed = '<div class="slide"><img src="' + image + '"></div>';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
             $('.qv-product-main-images').append(image_embed);
 
-            var image_embed_thumb = '<img src="' + image + '">';
+            var image_embed_thumb = '<div class="slide"><img src="' + image + '"></div>';
             image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
             $('.qv-product-thumb-images').append(image_embed_thumb);
 
@@ -78,9 +78,13 @@ jQuery(function($){
 
 
           } else {
-            image_embed = '<div class="swiper-slide"><img src="' + image + '"></div>';
+            image_embed = '<div class="slide"><img src="' + image + '"></div>';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
             $('.qv-product-main-images').append(image_embed);
+            
+            image_embed_thumb = '<div class="slide"><img src="' + image + '"></div>';
+            image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
+            $('.qv-product-thumb-images').append(image_embed_thumb);
           }
         });
         $(options).each(function (i, option) {
