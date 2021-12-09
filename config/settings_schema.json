@@ -19,7 +19,8 @@
       {
         "type": "link_list",
         "id": "main_link_list",
-        "label": "Our Services linklist"
+        "label": "Our Services linklist",
+        "info": "This menu use in 'pages\/Grooming','blogs\/adoption','\/pages\/self-dog-wash','\/pages\/cafe'"
       },
       {
         "type": "checkbox",
