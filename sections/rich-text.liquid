@@ -13,10 +13,7 @@
             <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
           {%- when 'text' -%}
             <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-           {%- when 'html' -%}
-            <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_area }}</div>
-      
-      {%- when 'button' -%}
+          {%- when 'button' -%}
             <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
             </a>
@@ -117,12 +114,6 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
-        },
-		{
-          "type": "html",
-          "id": "custom_area",
-          "default": "<p>Custom area</p>",
-          "label": "Custom text"
         }
       ]
     },
