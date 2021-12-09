@@ -39,6 +39,15 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow {
   right: 0;
 }
+.qv-product-thumb-images .slide {
+    opacity: 0.4;
+}
+
+.qv-product-thumb-images .slide.slick-current {
+    opacity: 1;
+}
+
+
 
  #quick-view .slick-list, #quick-view .slick-track {
 	 height: calc(100% - 12px);
