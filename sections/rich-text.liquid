@@ -20,7 +20,7 @@
       
       {%- when 'linklist' -%}
       <ul>
-        {% for link in linklists[block.settings.main_link_list].links %}
+        {% for link in linklists[settings.main_link_list].links %}
         <li class="{% if link.active %} active {% endif %}">
           <a href="{{ link.url }}"><h3>{{ link.title }}</h3></a>
         </li>
@@ -156,11 +156,7 @@
       "name": "Link list",
       "limit": 1,
       "settings": [
-        {
-          "type": "link_list",
-          "id": "main_link_list",
-          "label": "Our services linklist"
-        }
+       
       ]
     }
   ],
