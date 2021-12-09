@@ -275,7 +275,7 @@ jQuery(function($){
 
             $('.qv-product-images').slick({
               'dots': false,
-              'arrows': true,
+              arrows: true,
               'respondTo': 'min',
               'useTransform': false
             }).css('opacity', '1');
