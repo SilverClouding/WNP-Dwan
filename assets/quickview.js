@@ -47,7 +47,7 @@ jQuery(function($){
             }).css('opacity', '1');
 
             $('.slider-nav').slick({
-              slidesToShow: 3,
+              slidesToShow: 4,
               slidesToScroll: 1,
               asNavFor: '.qv-product-main-images',
               dots: false,
