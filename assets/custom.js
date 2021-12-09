@@ -645,7 +645,7 @@ jQuery(function($){
     if($("#newsletter-popup").length > 0) checkNewsletter();
   });
 
-  $(document).on('click', 'false_btn',function(){
+  $(document).on('click', '.false_btn',function(){
     $(".error-fields").text("Please fill the filds");
   });
   
