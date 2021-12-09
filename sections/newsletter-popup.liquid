@@ -43,7 +43,7 @@
                    onkeyup="ValidateEmail();">
               
             <span class="input-group__btn">
-              <button class="disabled" type="submit" class="btn" name="commit" id="Subscribe">
+              <button disabled type="submit" class="btn" name="commit" id="Subscribe">
                 <span>{{ 'newsletter.button_label' | t }}</span>
               </button>
             </span>
@@ -90,7 +90,7 @@
     if (!expr.test(emaill)) {
       lblError.innerHTML = "Invalid email address.";
     }else{ console.log("else");
-          document.getElementById("Subscribe").classList.remove("disabled"); 
+          document.getElementById("Subscribe").classList.remove("disabledd"); 
          }
 
   }
