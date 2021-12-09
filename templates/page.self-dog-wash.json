@@ -72,8 +72,7 @@
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together.<br\/>No more furry bathrooms to tidy up at home.<\/p>",
-            "custom_area": "<p>Custom area<\/p>"
+            "text": "<p>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together.<br\/>No more furry bathrooms to tidy up at home.<\/p>"
           }
         },
         "1d025c24-b599-46a5-b80a-4250f397d7c5": {
@@ -107,45 +106,6 @@
         "section_width": 80
       }
     },
-    "16384269895954df72": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "16384269892b584b49-0": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "16384269892b584b49-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pawrents can look through the glass window and take ease at seeing their dog being groomed with full transparency on our processes and procedures. Our pet groomers are specially trained to handle your furry friend gently to create a pleasant experience that is essential to your companion's health and well-being. Choose from a Mini Groom or Full Groom to suit your preferences. Grooming is not just about smelling good, but it is also about removing loose fur, trimming nails, maintaining good dental hygiene, and preventing ear infections.<br\/><br\/>Regular grooming can be done once a month, but it is recommended to bring your dog in for a grooming session if your furry friend shows tear stains, has long nails, has matted fur or has full anal glands. For more grooming questions, please see our FAQs.<\/p>"
-          }
-        },
-        "16384269892b584b49-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16384269892b584b49-0",
-        "16384269892b584b49-1",
-        "16384269892b584b49-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/dog1.jpg",
-        "section_width": 80,
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "sec_class": "image-text-full"
-      }
-    },
     "16390286139d4adc54": {
       "type": "rich-text",
       "blocks": {
@@ -159,8 +119,7 @@
         "16390286133aa0930d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p>",
-            "custom_area": "<p>Custom area<\/p>"
+            "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p>"
           }
         }
       },
@@ -172,34 +131,6 @@
         "color_scheme": "background-1",
         "full_width": false,
         "sec_class": "flat-free"
-      }
-    },
-    "16390287523ab098b2": {
-      "type": "rich-text",
-      "blocks": {
-        "1639028752f1134735-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Size of Dog",
-            "heading_size": "h2"
-          }
-        },
-        "1639028752f1134735-1": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "custom_area": "Small (up to 7kg)  50 minsMedium (Up to 15kg)  1.5 hourLarge (15kg onwards)  2 hours"
-          }
-        }
-      },
-      "block_order": [
-        "1639028752f1134735-0",
-        "1639028752f1134735-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "sec_class": ""
       }
     },
     "1638442037a72cd96a": {
@@ -215,8 +146,7 @@
         "1638442037250169f1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>",
-            "custom_area": "<p>Custom area<\/p>"
+            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
           }
         },
         "7fe12759-4b59-4100-ad9a-e2001c0e1f69": {
@@ -237,6 +167,12 @@
         "color_scheme": "background-1",
         "full_width": false,
         "sec_class": "operating-hours"
+      }
+    },
+    "163903484555fca6d9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\"><\/div>"
       }
     },
     "16388773760b7fb856": {
@@ -285,10 +221,9 @@
     "163896747815618038",
     "1638426342c59892bd",
     "16389683664bc495b8",
-    "16384269895954df72",
     "16390286139d4adc54",
-    "16390287523ab098b2",
     "1638442037a72cd96a",
+    "163903484555fca6d9",
     "16388773760b7fb856"
   ]
 }
