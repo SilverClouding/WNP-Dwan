@@ -242,6 +242,7 @@
     },
     "163904184270c31b0a": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "163904184214ad4f11-0": {
           "type": "column",
@@ -303,6 +304,60 @@
         "swipe_on_mobile": false,
         "sec_class": ""
       }
+    },
+    "1639042835bcbec2f1": {
+      "type": "icon-text-section",
+      "blocks": {
+        "75501909-2378-4e3c-949d-1189ac134221": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unit.png",
+            "title": "Self contained  unit"
+          }
+        },
+        "d7f16c68-8181-4281-9dd1-395c5832db3c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/carpet_1.png",
+            "title": "Non-slip  floor"
+          }
+        },
+        "3cd83085-1062-4245-a18f-84f78ba388a6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hair-dryer_2.png",
+            "title": "Professional  dryer"
+          }
+        },
+        "fde2f0c3-0618-4c7c-80ea-c974201b4935": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group.png",
+            "title": "Drying & grooming platform"
+          }
+        },
+        "61cc39c1-73d3-45ad-8009-94a6071928cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vitruvian-man_1.png",
+            "title": "Ergonomic design to suit dogs"
+          }
+        }
+      },
+      "block_order": [
+        "75501909-2378-4e3c-949d-1189ac134221",
+        "d7f16c68-8181-4281-9dd1-395c5832db3c",
+        "3cd83085-1062-4245-a18f-84f78ba388a6",
+        "fde2f0c3-0618-4c7c-80ea-c974201b4935",
+        "61cc39c1-73d3-45ad-8009-94a6071928cb"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "heading_size": "h1",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "color_scheme": "background-1",
+        "section_width": 100
+      }
     }
   },
   "order": [
@@ -316,6 +371,7 @@
     "163903484555fca6d9",
     "1638442037a72cd96a",
     "16388773760b7fb856",
-    "163904184270c31b0a"
+    "163904184270c31b0a",
+    "1639042835bcbec2f1"
   ]
 }
