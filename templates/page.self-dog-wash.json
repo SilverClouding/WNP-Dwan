@@ -160,26 +160,43 @@
           "settings": {
             "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p>"
           }
-        },
-        "16390286133aa0930d-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "16390286133aa0930d-0",
-        "16390286133aa0930d-1",
-        "16390286133aa0930d-2"
+        "16390286133aa0930d-1"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
         "sec_class": "flat-free"
+      }
+    },
+    "16390287523ab098b2": {
+      "type": "rich-text",
+      "blocks": {
+        "1639028752f1134735-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Size of Dog",
+            "heading_size": "h2"
+          }
+        },
+        "1639028752f1134735-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Small (up to 7kg)<br\/>Medium (Up to 15kg)<br\/>Large (15kg onwards)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639028752f1134735-0",
+        "1639028752f1134735-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
       }
     },
     "1638442037a72cd96a": {
@@ -266,6 +283,7 @@
     "16389683664bc495b8",
     "16384269895954df72",
     "16390286139d4adc54",
+    "16390287523ab098b2",
     "1638442037a72cd96a",
     "16388773760b7fb856"
   ]
