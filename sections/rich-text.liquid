@@ -20,7 +20,7 @@
       
       {%- when 'linklist' -%}
       <ul>
-        {% for link in linklists[settings.menu].links %}
+        {% for link in linklists[block.settings.menu].links %}
         <li class="{% if link.active %} active {% endif %}">
           <a href="{{ link.url }}"><h3>{{ link.title }}</h3></a>
         </li>
