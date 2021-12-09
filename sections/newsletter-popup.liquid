@@ -38,10 +38,10 @@
                    aria-invalid="true"
                    aria-describedby="{{ formId }}-email-error"
                    data-form-status
-                   {% endif %}
+                   {% endif %}  onchange="controle(this.value)"
                    >
             <span class="input-group__btn">
-              <button type="submit" class="btn" name="commit" id="Subscribe">
+              <button type="submit" class="btn" name="commit" id="Subscribe" onclick="ValidateEmail(document.form-single-field.input-group__field)">
                 <span>{{ 'newsletter.button_label' | t }}</span>
               </button>
             </span>
