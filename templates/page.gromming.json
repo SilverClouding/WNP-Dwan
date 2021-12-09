@@ -26,6 +26,12 @@
             "heading_size": "h1"
           }
         },
+        "011561ee-aacd-49be-97c9-f3bb19b95abd": {
+          "type": "linklist",
+          "settings": {
+            "main_link_list": "our-services"
+          }
+        },
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
@@ -39,19 +45,13 @@
             "button_link": "#",
             "button_style_secondary": true
           }
-        },
-        "011561ee-aacd-49be-97c9-f3bb19b95abd": {
-          "type": "linklist",
-          "settings": {
-            "main_link_list": "our-services"
-          }
         }
       },
       "block_order": [
         "163842634207ed9d0c-0",
+        "011561ee-aacd-49be-97c9-f3bb19b95abd",
         "163842634207ed9d0c-1",
-        "1d025c24-b599-46a5-b80a-4250f397d7c5",
-        "011561ee-aacd-49be-97c9-f3bb19b95abd"
+        "1d025c24-b599-46a5-b80a-4250f397d7c5"
       ],
       "settings": {
         "color_scheme": "background-1",
