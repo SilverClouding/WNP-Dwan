@@ -291,7 +291,8 @@
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
-        "section_width": 90
+        "section_width": 90,
+        "sec_class": "facility-con"
       }
     }
   },
