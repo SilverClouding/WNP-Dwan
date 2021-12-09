@@ -29,7 +29,6 @@
         "011561ee-aacd-49be-97c9-f3bb19b95abd": {
           "type": "linklist",
           "settings": {
-            "main_link_list": "our-services"
           }
         },
         "163842634207ed9d0c-1": {
@@ -90,7 +89,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/dog1.jpg",
-        "section_width": 80,
+        "section_width": 85,
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
