@@ -34,25 +34,25 @@ jQuery(function($){
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
             $('.qv-product-main-images').append(image_embed);
 
-            var image_embed_thumb = '<div class="swiper-slide"><img src="' + image + '"></div>';
+            var image_embed_thumb = '<img src="' + image + '">';
             image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
             $('.qv-product-thumb-images').append(image_embed_thumb);
 
-            $('.qv-product-main-images').slick({
-              dots: false,
-              arrows: true,
-              respondTo: 'min',
-              useTransform: false
-            }).css('opacity', '1');
+//             $('.qv-product-main-images').slick({
+//               dots: false,
+//               arrows: true,
+//               respondTo: 'min',
+//               useTransform: false
+//             }).css('opacity', '1');
 
-            $('.slider-nav').slick({
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              asNavFor: '.slider-for',
-              dots: true,
-              centerMode: true,
-              focusOnSelect: true
-            });
+//             $('.slider-nav').slick({
+//               slidesToShow: 3,
+//               slidesToScroll: 1,
+//               asNavFor: '.slider-for',
+//               dots: true,
+//               centerMode: true,
+//               focusOnSelect: true
+//             });
 
 
             //           const swiper = new Swiper('.qv_img_slider', {
