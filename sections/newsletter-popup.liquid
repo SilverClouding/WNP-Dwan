@@ -83,11 +83,11 @@
 <script>
   function ValidateEmail() {
     var btn = document.getElementById("Subscribe");
-    var email = document.getElementById("{{ formId }}-email").value;
-                                        var lblError = document.getElementById("lblError");
+    var emaill = document.getElementById("{{ formId }}-email").value;
+                                         var lblError = document.getElementById("lblError");
     lblError.innerHTML = "";
     var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    if (!expr.test(email)) {
+    if (!expr.test(emaill)) {
       lblError.innerHTML = "Invalid email address.";
     }else{ console.log("else");
           document.getElementById("Subscribe").removeAttribute("disabled"); 
