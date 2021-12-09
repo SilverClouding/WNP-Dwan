@@ -187,8 +187,8 @@
         "1639028752f1134735-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Small (up to 7kg)  50 mins<br\/>Medium (Up to 15kg)  1.5 hour<br\/>Large (15kg onwards)  2 hours<\/p>",
-            "custom_area": "<p>Custom area dsadsas<\/p>"
+            "text": "",
+            "custom_area": "Small (up to 7kg)  50 minsMedium (Up to 15kg)  1.5 hourLarge (15kg onwards)  2 hours"
           }
         }
       },
