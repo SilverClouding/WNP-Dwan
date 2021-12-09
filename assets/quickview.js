@@ -51,7 +51,7 @@ jQuery(function($){
               slidesToScroll: 1,
               asNavFor: '.qv-product-main-images',
               dots: false,
-              centerMode: true,
+              centerMode: false,
               focusOnSelect: true,
               arrows: false,
             });
