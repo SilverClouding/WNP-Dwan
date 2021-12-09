@@ -274,10 +274,10 @@ jQuery(function($){
             $('.qv-product-images').append(image_embed);
 
             $('.qv-product-images').slick({
-              'dots': false,
+              dots: false,
               arrows: true,
-              'respondTo': 'min',
-              'useTransform': false
+              respondTo: 'min',
+              useTransform: false
             }).css('opacity', '1');
             
             $('.slider-nav').slick({
