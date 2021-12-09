@@ -271,7 +271,7 @@ jQuery(function($){
           if (i == imageCount - 1) {
             var image_embed = '<img src="' + image + '">';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
-            $('.qv-product-images').append(image_embed);
+            $('.qv-product-main-images').append(image_embed);
             
             var image_embed_thumb = '<div class="swiper-slide"><img src="' + image + '"></div>';
             image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
