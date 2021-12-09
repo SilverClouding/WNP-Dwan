@@ -13,7 +13,7 @@
 }
 
 .fancybox-inner {
-    height: 650px!important;
+    height: 650px!important;overflow:hidden;
 }
 
 .qv-product-main-images{
