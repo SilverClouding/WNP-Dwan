@@ -277,7 +277,7 @@ jQuery(function($){
             image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
             $('.qv-product-thumb-images').append(image_embed_thumb);
 
-            $('.qv-product-images').slick({
+            $('.qv-product-main-images').slick({
               dots: false,
               arrows: true,
               respondTo: 'min',
