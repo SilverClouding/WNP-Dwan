@@ -275,10 +275,20 @@ jQuery(function($){
 
             $('.qv-product-images').slick({
               'dots': false,
-              'arrows': false,
+              'arrows': true,
               'respondTo': 'min',
               'useTransform': false
             }).css('opacity', '1');
+            
+            $('.slider-nav').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              asNavFor: '.slider-for',
+              dots: true,
+              centerMode: true,
+              focusOnSelect: true
+            });
+            
 
             //           const swiper = new Swiper('.qv_img_slider', {
             //             autoHeight: false,
