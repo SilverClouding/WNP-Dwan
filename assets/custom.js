@@ -319,7 +319,7 @@ jQuery(function($){
           } else {
             image_embed = '<div class="swiper-slide"><img src="' + image + '"></div>';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
-            $('.qv-product-images').append(image_embed);
+            $('.qv-product-main-images').append(image_embed);
           }
         });
         $(options).each(function (i, option) {
@@ -461,7 +461,7 @@ jQuery(function($){
         },
         'afterShow': function () {
           $('#quick-view').hide().html(content).css('opacity', '1').fadeIn(function () {
-            $('.qv-product-images').addClass('loaded');
+            $('.qv-product-main-images').addClass('loaded');
           });
         },
         'afterClose': function () {
@@ -473,7 +473,7 @@ jQuery(function($){
 
   $(window).resize(function () {
     if ($('#quick-view').is(':visible')) {
-      $('.qv-product-images').slick('setPosition');
+      $('.qv-product-main-images').slick('setPosition');
     }
   });
 
