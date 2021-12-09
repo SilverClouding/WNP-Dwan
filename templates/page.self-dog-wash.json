@@ -22,6 +22,24 @@
         "page_title": true
       }
     },
+    "1639036736f746daec": {
+      "type": "rich-text",
+      "blocks": {
+        "6d823805-e8c4-40be-88da-e2ae637e44bc": {
+          "type": "linklist",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "6d823805-e8c4-40be-88da-e2ae637e44bc"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "163896747815618038": {
       "type": "multicolumn",
       "blocks": {
@@ -218,6 +236,7 @@
   "order": [
     "16384259656000056e",
     "main",
+    "1639036736f746daec",
     "163896747815618038",
     "1638426342c59892bd",
     "16389683664bc495b8",
