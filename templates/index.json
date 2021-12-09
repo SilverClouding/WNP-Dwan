@@ -61,7 +61,7 @@
       "settings": {
         "showpagination": true,
         "showscrollbar": false,
-        "shownextPrevButtom": true
+        "shownextPrevButtom": false
       }
     },
     "featured_products": {
