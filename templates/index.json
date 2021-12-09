@@ -68,7 +68,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "What’s in store",
-        "collection": "all",
+        "collection": "new-arrivals",
         "collection2": "dog-best-sellers",
         "products_to_show": 12,
         "show_view_all": false,
