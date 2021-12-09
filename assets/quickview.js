@@ -42,7 +42,8 @@ jQuery(function($){
               dots: false,
               arrows: true,
               respondTo: 'min',
-              useTransform: false
+              useTransform: false,
+              asNavFor: '.slider-nav'
             }).css('opacity', '1');
 
             $('.slider-nav').slick({
