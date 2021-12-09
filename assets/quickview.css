@@ -8,14 +8,20 @@
 }
  #quick-view .qv-product-images {
 	 width: 48%;
-	 height: auto;
-	 display: inline-block;
-	 position: absolute;
-	 margin: 0 auto;
-	 left: 30px;
-	 top: 0;
-	 height: 100%;
+	 
 }
+
+.qv-product-main-images{
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+  left: 30px;
+  top: 0;
+  height: 100%;
+  width:100%;
+}
+
  #quick-view .slick-list, #quick-view .slick-track {
 	 height: calc(100% - 12px);
 }

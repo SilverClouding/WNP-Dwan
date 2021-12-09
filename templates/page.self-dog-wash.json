@@ -294,6 +294,42 @@
         "section_width": 90,
         "sec_class": "facility-con"
       }
+    },
+    "1639055992aadcf97f": {
+      "type": "rich-text",
+      "blocks": {
+        "16390559925ff71e05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Terms & Conditions",
+            "heading_size": "h1"
+          }
+        },
+        "16390559925ff71e05-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This booking only permits 1 dog per session. After all, you must give your four-legged friend your undivided attention. It's a bath, not a pool pawty!<br\/><br\/>All confirmations will be made via call or WhatsApp. Bookings will be forfeited if a response is not received after our confirmation. We welcome dogs of all sizes regardless of age, however, no aggressive dogs or dogs in-season will be permitted. Dogs with flea\/tick infestations must also be treated before entering the facility.<br\/><br\/>Shampoo and conditioner are not provided. Towels are available for purchase. Have fun!<\/p>"
+          }
+        },
+        "16390559925ff71e05-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16390559925ff71e05-0",
+        "16390559925ff71e05-1",
+        "16390559925ff71e05-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "sec_class": "get-the-best"
+      }
     }
   },
   "order": [
@@ -307,6 +343,7 @@
     "163903484555fca6d9",
     "1638442037a72cd96a",
     "16388773760b7fb856",
-    "1639042835bcbec2f1"
+    "1639042835bcbec2f1",
+    "1639055992aadcf97f"
   ]
 }
