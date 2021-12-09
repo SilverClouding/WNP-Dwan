@@ -25,6 +25,21 @@
     height: 148px;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+}
+
+button.slick-prev.slick-arrow {
+  left: 0;
+}
+
+button.slick-next.slick-arrow {
+  right: 0;
+}
+
  #quick-view .slick-list, #quick-view .slick-track {
 	 height: calc(100% - 12px);
 }
