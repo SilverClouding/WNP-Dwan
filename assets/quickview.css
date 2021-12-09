@@ -1,7 +1,7 @@
 #quick-view {
 	 display: flex;
 /* 	 height: 100%; */
-	 justify-content: flex-end;
+	 justify-content: space-between;
 	 flex-wrap: wrap;
 	 position: relative;
 	 -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -19,7 +19,7 @@
   margin: 0 auto;
   left: 0px;
   top: 0;
-/*   height: 100%; */
+  height: 100%;
   width:100%;
 }
 
