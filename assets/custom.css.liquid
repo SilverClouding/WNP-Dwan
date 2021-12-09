@@ -3522,7 +3522,7 @@ display: grid;
       display:none;
     }
 .grooming-t-con .grooming-inner-row {
-    grid-template-columns: 40% 30%;
+    grid-template-columns: 50% 25%;
 }
     .grooming-t-con .grooming-inner-row .tick-sign,
     .grooming-t-con .grooming-inner-row .tick-sign svg{
@@ -3539,7 +3539,11 @@ display: grid;
     }
   }
 
-
+ @media(max-width:360px){
+.grooming-t-con .grooming-inner-row {
+    grid-template-columns: 40% 30%;
+}
+ }
 
 
   /* self dog wash */
