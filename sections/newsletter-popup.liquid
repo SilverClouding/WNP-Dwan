@@ -27,7 +27,7 @@
             <input type="email"
                    name="contact[email]"
                    id="{{ formId }}-email"
-                   class="input-group__field{% if form.errors %} input--error{% endif %}"
+                   class="emailValid input-group__field{% if form.errors %} input--error{% endif %}"
                    value="{{ form.email }}"
                    placeholder="{{ 'newsletter.label' | t }}"
                    aria-label="{{ 'newsletter.label' | t }}"
@@ -39,7 +39,7 @@
                    aria-describedby="{{ formId }}-email-error"
                    data-form-status
                    {% endif %}  
-                   onchange="controle(this.value)">
+                   onkeyup="ValidateEmail();">
             <span class="input-group__btn">
               <button type="submit" class="btn" name="commit" id="Subscribe">
                 <span>{{ 'newsletter.button_label' | t }}</span>
@@ -79,6 +79,11 @@
   </div>
 </div>
 <script>
+  
+  $(".emailValid").on("keyup",function(){
+    //your logic
+  })
+
   function controle(mail) {
     if (IsEmail(mail) == true) {
       alert("good");
