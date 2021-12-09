@@ -12,7 +12,7 @@
   
 </style>
 
-<div section-name="icon-text-section" class="trust-badges icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+<div section-name="icon-text-section" class="trust-badges icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
   <div class="section_width custom-section-width">
   <div class="trust-badges_rich-text__blocks">
      <h2 class="{{ section.settings.heading_size }}" {{ section.shopify_attributes }}>{{ section.settings.heading | escape }}</h2>
@@ -146,7 +146,12 @@
         "unit": "%",
         "label": "Section Width",
         "default": 100
-      }
+      },
+{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
+    }
 ],
 "blocks": [
     {
