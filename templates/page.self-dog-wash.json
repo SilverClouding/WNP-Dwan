@@ -239,6 +239,70 @@
         "swipe_on_mobile": false,
         "section_class": "two-image-column"
       }
+    },
+    "163904184270c31b0a": {
+      "type": "multicolumn",
+      "blocks": {
+        "163904184214ad4f11-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unit.png",
+            "title": "",
+            "text": "<p><strong>Self contained <br\/>unit<\/strong><\/p>"
+          }
+        },
+        "163904184214ad4f11-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/carpet_1.png",
+            "title": "",
+            "text": "<p><strong>Non-slip <br\/>floor<\/strong><\/p>"
+          }
+        },
+        "163904184214ad4f11-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hair-dryer_2.png",
+            "title": "",
+            "text": "<p><strong>Professional <br\/>dryer<\/strong><\/p>"
+          }
+        },
+        "20ff3d21-c41c-416a-b646-d8bc0bb6d8c9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group.png",
+            "title": "",
+            "text": "<p><strong>Drying &<br\/>grooming platform<\/strong><\/p>"
+          }
+        },
+        "7e33fb3b-5df8-42cc-90d5-ddd443b9bb8c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vitruvian-man_1.png",
+            "title": "",
+            "text": "<p><strong>Ergonomic design<br\/>to suit dogs<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163904184214ad4f11-0",
+        "163904184214ad4f11-1",
+        "163904184214ad4f11-2",
+        "20ff3d21-c41c-416a-b646-d8bc0bb6d8c9",
+        "7e33fb3b-5df8-42cc-90d5-ddd443b9bb8c"
+      ],
+      "settings": {
+        "title": "The facility",
+        "section_width": 100,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -251,6 +315,7 @@
     "16390286139d4adc54",
     "163903484555fca6d9",
     "1638442037a72cd96a",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "163904184270c31b0a"
   ]
 }
