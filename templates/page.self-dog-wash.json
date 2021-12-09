@@ -293,8 +293,8 @@
       ],
       "settings": {
         "title": "The facility",
-        "section_width": 100,
-        "image_width": "third",
+        "section_width": 80,
+        "image_width": "half",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
