@@ -89,7 +89,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/dog1.jpg",
-        "section_width": 85,
+        "section_width": 82,
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
