@@ -12,6 +12,10 @@
 	 
 }
 
+.fancybox-inner {
+    height: 650px!important;
+}
+
 .qv-product-main-images{
   display: inline-block;
 /*   position: absolute; */
