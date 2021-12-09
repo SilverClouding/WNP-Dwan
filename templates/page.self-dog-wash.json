@@ -168,7 +168,7 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true,
+        "full_width": false,
         "sec_class": "flat-free"
       }
     },
