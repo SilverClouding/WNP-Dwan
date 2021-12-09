@@ -50,9 +50,10 @@ jQuery(function($){
               slidesToShow: 3,
               slidesToScroll: 1,
               asNavFor: '.qv-product-main-images',
-              dots: true,
+              dots: false,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
+              arrows: false,
             });
 
 
