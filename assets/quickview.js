@@ -49,7 +49,7 @@ jQuery(function($){
             $('.slider-nav').slick({
               slidesToShow: 3,
               slidesToScroll: 1,
-              asNavFor: '.slider-for',
+              asNavFor: '.qv-product-main-images',
               dots: true,
               centerMode: true,
               focusOnSelect: true
