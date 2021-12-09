@@ -145,6 +145,43 @@
         "sec_class": "image-text-full"
       }
     },
+    "16390286139d4adc54": {
+      "type": "rich-text",
+      "blocks": {
+        "16390286133aa0930d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why a flat fee?",
+            "heading_size": "h2"
+          }
+        },
+        "16390286133aa0930d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p>"
+          }
+        },
+        "16390286133aa0930d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16390286133aa0930d-0",
+        "16390286133aa0930d-1",
+        "16390286133aa0930d-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": "flat-free"
+      }
+    },
     "1638442037a72cd96a": {
       "type": "rich-text",
       "blocks": {
@@ -219,12 +256,6 @@
         "swipe_on_mobile": false,
         "section_class": "two-image-column"
       }
-    },
-    "1639028281627de455": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<span>Why a flat fee?<\/span>\nWe believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work."
-      }
     }
   },
   "order": [
@@ -234,8 +265,8 @@
     "1638426342c59892bd",
     "16389683664bc495b8",
     "16384269895954df72",
+    "16390286139d4adc54",
     "1638442037a72cd96a",
-    "16388773760b7fb856",
-    "1639028281627de455"
+    "16388773760b7fb856"
   ]
 }
