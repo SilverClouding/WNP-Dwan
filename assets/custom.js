@@ -269,7 +269,7 @@ jQuery(function($){
         console.log(imageCount);
         $(images).each(function (i, image) {
           if (i == imageCount - 1) {
-            var image_embed = '<div class="swiper-slide"><img src="' + image + '"></div>';
+            var image_embed = '<img src="' + image + '">';
             image_embed = image_embed.replace('.jpg', '_800x.jpg').replace('.png', '_800x.png');
             $('.qv-product-images').append(image_embed);
             
