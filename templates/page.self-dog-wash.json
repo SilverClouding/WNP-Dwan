@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/self-dong-banner.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/g-mob.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/mob.jpg",
         "sec_class": "cust-image-banner",
         "image_height": "small",
         "adapt_height_first_image": false,
