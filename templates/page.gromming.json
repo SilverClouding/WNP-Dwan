@@ -89,7 +89,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/dog1.jpg",
-        "section_width": 82,
+        "section_width": 90,
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
@@ -234,7 +234,7 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "section_width": 82,
+        "section_width": 90,
         "full_width": false,
         "sec_class": "grooming-t-con"
       }
@@ -327,7 +327,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "section_width": 82,
+        "section_width": 90,
         "swipe_on_mobile": false,
         "section_class": "our-professional"
       }
