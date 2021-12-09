@@ -219,6 +219,12 @@
         "swipe_on_mobile": false,
         "section_class": "two-image-column"
       }
+    },
+    "1639028281627de455": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span>Why a flat fee?<\/span>\nWe believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work."
+      }
     }
   },
   "order": [
@@ -229,6 +235,7 @@
     "16389683664bc495b8",
     "16384269895954df72",
     "1638442037a72cd96a",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "1639028281627de455"
   ]
 }
