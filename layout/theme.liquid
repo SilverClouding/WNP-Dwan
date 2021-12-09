@@ -182,8 +182,9 @@
     {% section 'featured-content-block' %}
     {% section 'newsletter' %}
     {% section 'footer' %}
-
+{% unless customer %}
     {% section 'newsletter-popup' %}
+    {% endunless %}
     
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
