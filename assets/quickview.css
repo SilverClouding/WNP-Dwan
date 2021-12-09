@@ -13,14 +13,16 @@
 }
 
 .qv-product-main-images{
-  height: auto;
   display: inline-block;
-  position: absolute;
+/*   position: absolute; */
   margin: 0 auto;
   left: 0px;
   top: 0;
   height: 100%;
   width:100%;
+}
+.qv-product-thumb-images {
+    height: 148px;
 }
 
  #quick-view .slick-list, #quick-view .slick-track {
