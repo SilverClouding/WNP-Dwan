@@ -17,6 +17,11 @@
         "label": "t:sections.header.settings.menu.label"
       },
       {
+        "type": "link_list",
+        "id": "main_link_list",
+        "label": "Our Services linklist"
+      },
+      {
         "type": "checkbox",
         "id": "minicart",
         "label": "Show minicart section in customise theme",
