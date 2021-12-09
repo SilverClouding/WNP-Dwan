@@ -128,8 +128,8 @@
         "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": false,
-        "section_width": 90
+        "full_width": true,
+        "section_width": 80
       }
     },
     "16390286139d4adc54": {
@@ -235,7 +235,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "section_width": 90,
+        "section_width": 80,
         "swipe_on_mobile": false,
         "section_class": "two-image-column"
       }
@@ -291,7 +291,7 @@
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
-        "section_width": 90,
+        "section_width": 80,
         "sec_class": "facility-con"
       }
     },
