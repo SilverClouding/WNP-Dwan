@@ -1,28 +1,12 @@
 {
   "sections": {
-    "16384259656000056e": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/grooming.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/g-mob.jpg",
-        "sec_class": "cust-image-banner",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1638426342c59892bd": {
       "type": "rich-text",
       "blocks": {
         "163842634207ed9d0c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Grooming",
+            "heading": "Customer Care",
             "heading_size": "h1"
           }
         },
@@ -334,7 +318,6 @@
     }
   },
   "order": [
-    "16384259656000056e",
     "1638426342c59892bd",
     "16384269895954df72",
     "1638957600d7b2d304",
