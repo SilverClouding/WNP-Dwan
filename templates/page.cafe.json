@@ -30,27 +30,11 @@
           "type": "linklist",
           "settings": {
           }
-        },
-        "163842634207ed9d0c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using <em><strong>top-quality dog grooming products <\/strong><\/em>and state-of-the-art equipment for a professional finish each and every time.<\/p>"
-          }
-        },
-        "1d025c24-b599-46a5-b80a-4250f397d7c5": {
-          "type": "button",
-          "settings": {
-            "button_label": "Book An Appointment",
-            "button_link": "#",
-            "button_style_secondary": true
-          }
         }
       },
       "block_order": [
         "163842634207ed9d0c-0",
-        "011561ee-aacd-49be-97c9-f3bb19b95abd",
-        "163842634207ed9d0c-1",
-        "1d025c24-b599-46a5-b80a-4250f397d7c5"
+        "011561ee-aacd-49be-97c9-f3bb19b95abd"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -60,6 +44,7 @@
     },
     "16384269895954df72": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16384269892b584b49-0": {
           "type": "heading",
@@ -98,6 +83,7 @@
     },
     "1638957600d7b2d304": {
       "type": "grooming-table",
+      "disabled": true,
       "blocks": {
         "163895760093f1a58f-0": {
           "type": "heading",
@@ -241,6 +227,7 @@
     },
     "1638442037a72cd96a": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1638442037250169f1-0": {
           "type": "heading",
@@ -284,6 +271,7 @@
     },
     "16388773760b7fb856": {
       "type": "column-content-cards",
+      "disabled": true,
       "blocks": {
         "1638877376cf53eb2a-0": {
           "type": "column",
@@ -331,6 +319,33 @@
         "swipe_on_mobile": false,
         "section_class": "our-professional"
       }
+    },
+    "163911584016bfbb09": {
+      "type": "rich-text",
+      "blocks": {
+        "1639115840dafc7f3c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Monday to Friday: 10AM - 6PM Weekends & Public Holidays: 10AM - 7PM 10\/F Horizon Plaza, Ap Lei Chau, HK",
+            "heading_size": "h1"
+          }
+        },
+        "1639115840dafc7f3c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Limited hot dishes available on Monday : Check here for Monday Special Menu<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639115840dafc7f3c-0",
+        "1639115840dafc7f3c-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "sec_class": "cafe-con"
+      }
     }
   },
   "order": [
@@ -340,6 +355,7 @@
     "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "163911584016bfbb09"
   ]
 }
