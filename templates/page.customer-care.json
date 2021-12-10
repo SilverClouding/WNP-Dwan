@@ -1,0 +1,345 @@
+{
+  "sections": {
+    "16384259656000056e": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/grooming.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/g-mob.jpg",
+        "sec_class": "cust-image-banner",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1638426342c59892bd": {
+      "type": "rich-text",
+      "blocks": {
+        "163842634207ed9d0c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Grooming",
+            "heading_size": "h1"
+          }
+        },
+        "011561ee-aacd-49be-97c9-f3bb19b95abd": {
+          "type": "linklist",
+          "settings": {
+          }
+        },
+        "163842634207ed9d0c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using <em><strong>top-quality dog grooming products <\/strong><\/em>and state-of-the-art equipment for a professional finish each and every time.<\/p>"
+          }
+        },
+        "1d025c24-b599-46a5-b80a-4250f397d7c5": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book An Appointment",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "163842634207ed9d0c-0",
+        "011561ee-aacd-49be-97c9-f3bb19b95abd",
+        "163842634207ed9d0c-1",
+        "1d025c24-b599-46a5-b80a-4250f397d7c5"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": "grooming-textcon"
+      }
+    },
+    "16384269895954df72": {
+      "type": "image-with-text",
+      "blocks": {
+        "16384269892b584b49-0": {
+          "type": "heading",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "16384269892b584b49-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pawrents can look through the glass window and take ease at seeing their dog being groomed with full transparency on our processes and procedures. Our pet groomers are specially trained to handle your furry friend gently to create a pleasant experience that is essential to your companion's health and well-being. Choose from a Mini Groom or Full Groom to suit your preferences. Grooming is not just about smelling good, but it is also about removing loose fur, trimming nails, maintaining good dental hygiene, and preventing ear infections.<br\/><br\/>Regular grooming can be done once a month, but it is recommended to bring your dog in for a grooming session if your furry friend shows tear stains, has long nails, has matted fur or has full anal glands. For more grooming questions, please see our FAQs.<\/p>"
+          }
+        },
+        "16384269892b584b49-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16384269892b584b49-0",
+        "16384269892b584b49-1",
+        "16384269892b584b49-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/dog1.jpg",
+        "section_width": 90,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "sec_class": "image-text-full"
+      }
+    },
+    "1638957600d7b2d304": {
+      "type": "grooming-table",
+      "blocks": {
+        "163895760093f1a58f-0": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
+            "heading1": "<p>Service<\/p>",
+            "heading2": "<p>Mini - Groom<\/p>",
+            "heading3": "<p>Full - Groom<\/p>"
+          }
+        },
+        "4933c5e0-8c3e-4b05-bf39-c99066c6df66": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_1_2.png",
+            "heading1": "<p>Thorough brush out<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "5b1cfe38-9170-4259-972c-9db0e135324a": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_284.png",
+            "heading1": "<p>De-shedding to remove loose fur<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet-shampoo_1.png",
+            "heading1": "<p>Double Shampoo Rinse & Conditioning<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "9930b969-2766-45ac-9eb7-a01e7cdf9246": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nail-scissors_1.png",
+            "heading1": "<p>Nails trimmed and paws cleaned\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cotton-swabs_1.png",
+            "heading1": "<p>Ear cleansing & fur removal if necessary<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "b6a3462c-f5e4-4efe-96d6-a796b517f80a": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brush-teeth_1.png",
+            "heading1": "<p>Tooth brushing<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "248aeccf-20f8-4631-899f-b16000bc75de": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "heading1": "<p>Anal gland expressing\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "9e12aed7-aa51-4a31-adef-3f7093cb2004": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hair-dryer_1.png",
+            "heading1": "<p>Hand fluffing & drying\t<\/p>",
+            "tick_sign_col1": true,
+            "tick_sign_col2": true
+          }
+        },
+        "7544acc3-82b0-4854-9f91-eff3e5967519": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clipper_1.png",
+            "heading1": "<p>Coat clipping<\/p>",
+            "tick_sign_col1": false,
+            "tick_sign_col2": true
+          }
+        },
+        "016b80b0-4a01-45b3-a439-cb1df4074092": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_1_1.png",
+            "heading1": "<p>Coat styling to breed standard or your preference<\/p>",
+            "tick_sign_col1": false,
+            "tick_sign_col2": true
+          }
+        },
+        "06080b20-3359-47bd-8cae-4284025fe4ac": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scissor_1.png",
+            "heading1": "<p>Scissoring<\/p>",
+            "tick_sign_col1": false,
+            "tick_sign_col2": true
+          }
+        },
+        "e1dc1559-0a0c-4f41-b081-671f0e55f96c": {
+          "type": "other_row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_2_1.png",
+            "heading1": "<p>Hand finishing<\/p>",
+            "tick_sign_col1": false,
+            "tick_sign_col2": true
+          }
+        }
+      },
+      "block_order": [
+        "163895760093f1a58f-0",
+        "4933c5e0-8c3e-4b05-bf39-c99066c6df66",
+        "5b1cfe38-9170-4259-972c-9db0e135324a",
+        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5",
+        "9930b969-2766-45ac-9eb7-a01e7cdf9246",
+        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b",
+        "b6a3462c-f5e4-4efe-96d6-a796b517f80a",
+        "248aeccf-20f8-4631-899f-b16000bc75de",
+        "9e12aed7-aa51-4a31-adef-3f7093cb2004",
+        "7544acc3-82b0-4854-9f91-eff3e5967519",
+        "016b80b0-4a01-45b3-a439-cb1df4074092",
+        "06080b20-3359-47bd-8cae-4284025fe4ac",
+        "e1dc1559-0a0c-4f41-b081-671f0e55f96c"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "section_width": 90,
+        "full_width": false,
+        "sec_class": "grooming-t-con"
+      }
+    },
+    "1638442037a72cd96a": {
+      "type": "rich-text",
+      "blocks": {
+        "1638442037250169f1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Operating Hours",
+            "heading_size": "h1"
+          }
+        },
+        "1638442037250169f1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
+          }
+        },
+        "7fe12759-4b59-4100-ad9a-e2001c0e1f69": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book An Appointment",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "1638442037250169f1-0",
+        "1638442037250169f1-1",
+        "7fe12759-4b59-4100-ad9a-e2001c0e1f69"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "sec_class": "operating-hours"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "page_title": false
+      }
+    },
+    "16388773760b7fb856": {
+      "type": "column-content-cards",
+      "blocks": {
+        "1638877376cf53eb2a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img1.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1638877376cf53eb2a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img2.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1638877376cf53eb2a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img3.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638877376cf53eb2a-0",
+        "1638877376cf53eb2a-1",
+        "1638877376cf53eb2a-2"
+      ],
+      "settings": {
+        "title": "Our professional grooming team works to ensure that this important ritual is pleasant & enjoyable for every canine friend.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 90,
+        "swipe_on_mobile": false,
+        "section_class": "our-professional"
+      }
+    }
+  },
+  "order": [
+    "16384259656000056e",
+    "1638426342c59892bd",
+    "16384269895954df72",
+    "1638957600d7b2d304",
+    "1638442037a72cd96a",
+    "main",
+    "16388773760b7fb856"
+  ]
+}
