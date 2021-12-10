@@ -45,7 +45,7 @@
     "1639116499c44666da": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "Whiskers N Paws Café Opening Hours:"
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"cafehead-cont\"><h2>Whiskers N Paws Café Opening Hours:<\/h2><\/div>"
       }
     },
     "163911584016bfbb09": {
