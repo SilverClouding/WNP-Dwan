@@ -42,6 +42,12 @@
         "sec_class": "grooming-textcon"
       }
     },
+    "1639116499c44666da": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Whiskers N Paws Café Opening Hours:"
+      }
+    },
     "163911584016bfbb09": {
       "type": "rich-text",
       "blocks": {
@@ -341,6 +347,7 @@
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
+    "1639116499c44666da",
     "163911584016bfbb09",
     "16384269895954df72",
     "1638957600d7b2d304",
