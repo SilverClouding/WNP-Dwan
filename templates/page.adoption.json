@@ -248,6 +248,110 @@
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
+    },
+    "163938824283985989": {
+      "type": "rich-text",
+      "blocks": {
+        "163938824280798705-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Puppy adoption sunday",
+            "heading_size": "h1"
+          }
+        },
+        "163938824280798705-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Every Sunday 2pm - 4pm <\/strong><\/p><p>Over 1800 puppies are homed through this event. HKDR brings puppies that are ready to be homed to Whiskers N Paws. Starting a friendship is easier than you think!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163938824280798705-0",
+        "163938824280798705-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
+    "1639388359b939a1e1": {
+      "type": "column-content-cards",
+      "blocks": {
+        "1639388358b9c550c2-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1639388358b9c550c2-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1639388358b9c550c2-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "c393cecd-e13b-4453-b99e-eb99f70cfa99": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "0551595b-ec16-442b-adfe-d613f5169883": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "941b0232-6423-43a2-90a9-704b6130dc2e": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639388358b9c550c2-0",
+        "1639388358b9c550c2-1",
+        "1639388358b9c550c2-2",
+        "c393cecd-e13b-4453-b99e-eb99f70cfa99",
+        "0551595b-ec16-442b-adfe-d613f5169883",
+        "941b0232-6423-43a2-90a9-704b6130dc2e"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "section_width": 100,
+        "swipe_on_mobile": false,
+        "section_class": "Multicolumn"
+      }
     }
   },
   "order": [
@@ -260,6 +364,8 @@
     "1639385897b8a7a6a9",
     "16393863577a5ae4a0",
     "16393866196725b26b",
-    "163938668074ea1a46"
+    "163938668074ea1a46",
+    "163938824283985989",
+    "1639388359b939a1e1"
   ]
 }
