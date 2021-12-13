@@ -35,6 +35,7 @@
         "6d823805-e8c4-40be-88da-e2ae637e44bc": {
           "type": "linklist",
           "settings": {
+            "main_link_list": "our-services"
           }
         }
       },
