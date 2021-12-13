@@ -131,7 +131,7 @@
       ],
       "settings": {
         "column_alignment": "center",
-        "background_style": "primary",
+        "background_style": "none",
         "section_width": 100,
         "sec_class": ""
       }
