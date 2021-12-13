@@ -154,6 +154,42 @@
         "sec_class": "service-logos",
         "slider": false
       }
+    },
+    "16393863577a5ae4a0": {
+      "type": "collage",
+      "blocks": {
+        "c49afaaa-cf51-4776-8857-8961ccb96780": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "5390fb3c-545b-4260-8f89-b69ee6cc20f0": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "b6a46501-6c90-4a9c-bedc-aa6bf60b6164": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "c49afaaa-cf51-4776-8857-8961ccb96780",
+        "5390fb3c-545b-4260-8f89-b69ee6cc20f0",
+        "b6a46501-6c90-4a9c-bedc-aa6bf60b6164"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
@@ -163,6 +199,7 @@
     "1639385432343a7373",
     "main",
     "16393858930aa1f067",
-    "1639385897b8a7a6a9"
+    "1639385897b8a7a6a9",
+    "16393863577a5ae4a0"
   ]
 }
