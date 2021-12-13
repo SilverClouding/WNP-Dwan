@@ -131,9 +131,10 @@ jQuery(function($){
       });
 
       $(document).on("change", "#quick-view select, .radio_butt", function () {
-        console.log($(this).val());
+        
         var selectedOptions = '';
         $('#quick-view  select, .radio_butt').each(function (i) {
+          console.log($(this:checked).val());
           if (selectedOptions == '') {
             selectedOptions = $(this).val();
           } else {
