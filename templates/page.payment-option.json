@@ -44,6 +44,7 @@
     },
     "16384269895954df72": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16384269892b584b49-0": {
           "type": "heading",
@@ -78,149 +79,6 @@
         "color_scheme": "background-1",
         "layout": "image_first",
         "sec_class": "image-text-full"
-      }
-    },
-    "1638957600d7b2d304": {
-      "type": "grooming-table",
-      "blocks": {
-        "163895760093f1a58f-0": {
-          "type": "heading",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
-            "heading1": "<p>Service<\/p>",
-            "heading2": "<p>Mini - Groom<\/p>",
-            "heading3": "<p>Full - Groom<\/p>"
-          }
-        },
-        "4933c5e0-8c3e-4b05-bf39-c99066c6df66": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_1_2.png",
-            "heading1": "<p>Thorough brush out<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "5b1cfe38-9170-4259-972c-9db0e135324a": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_284.png",
-            "heading1": "<p>De-shedding to remove loose fur<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pet-shampoo_1.png",
-            "heading1": "<p>Double Shampoo Rinse & Conditioning<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "9930b969-2766-45ac-9eb7-a01e7cdf9246": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nail-scissors_1.png",
-            "heading1": "<p>Nails trimmed and paws cleaned\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cotton-swabs_1.png",
-            "heading1": "<p>Ear cleansing & fur removal if necessary<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "b6a3462c-f5e4-4efe-96d6-a796b517f80a": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brush-teeth_1.png",
-            "heading1": "<p>Tooth brushing<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "248aeccf-20f8-4631-899f-b16000bc75de": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_2.png",
-            "heading1": "<p>Anal gland expressing\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "9e12aed7-aa51-4a31-adef-3f7093cb2004": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hair-dryer_1.png",
-            "heading1": "<p>Hand fluffing & drying\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "7544acc3-82b0-4854-9f91-eff3e5967519": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/clipper_1.png",
-            "heading1": "<p>Coat clipping<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "016b80b0-4a01-45b3-a439-cb1df4074092": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_1_1.png",
-            "heading1": "<p>Coat styling to breed standard or your preference<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "06080b20-3359-47bd-8cae-4284025fe4ac": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/scissor_1.png",
-            "heading1": "<p>Scissoring<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "e1dc1559-0a0c-4f41-b081-671f0e55f96c": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_2_1.png",
-            "heading1": "<p>Hand finishing<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        }
-      },
-      "block_order": [
-        "163895760093f1a58f-0",
-        "4933c5e0-8c3e-4b05-bf39-c99066c6df66",
-        "5b1cfe38-9170-4259-972c-9db0e135324a",
-        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5",
-        "9930b969-2766-45ac-9eb7-a01e7cdf9246",
-        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b",
-        "b6a3462c-f5e4-4efe-96d6-a796b517f80a",
-        "248aeccf-20f8-4631-899f-b16000bc75de",
-        "9e12aed7-aa51-4a31-adef-3f7093cb2004",
-        "7544acc3-82b0-4854-9f91-eff3e5967519",
-        "016b80b0-4a01-45b3-a439-cb1df4074092",
-        "06080b20-3359-47bd-8cae-4284025fe4ac",
-        "e1dc1559-0a0c-4f41-b081-671f0e55f96c"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "section_width": 90,
-        "full_width": false,
-        "sec_class": "grooming-t-con"
       }
     },
     "1638442037a72cd96a": {
@@ -268,6 +126,7 @@
     },
     "16388773760b7fb856": {
       "type": "column-content-cards",
+      "disabled": true,
       "blocks": {
         "1638877376cf53eb2a-0": {
           "type": "column",
@@ -320,7 +179,6 @@
   "order": [
     "1638426342c59892bd",
     "16384269895954df72",
-    "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
     "16388773760b7fb856"
