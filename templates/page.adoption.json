@@ -99,6 +99,43 @@
         "show_view_all": true
       }
     },
+    "163939206952b859af": {
+      "type": "custom-buttons",
+      "blocks": {
+        "1639392069fccd0b13-0": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Dogs",
+            "button_link": "shopify:\/\/pages\/dog"
+          }
+        },
+        "1639392069fccd0b13-1": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Cats",
+            "button_link": "#"
+          }
+        },
+        "1639392069fccd0b13-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Small Animals",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1639392069fccd0b13-0",
+        "1639392069fccd0b13-1",
+        "1639392069fccd0b13-2"
+      ],
+      "settings": {
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -355,44 +392,6 @@
         "swipe_on_mobile": false,
         "section_class": "Multicolumn"
       }
-    },
-    "163939206952b859af": {
-      "type": "custom-buttons",
-      "blocks": {
-        "1639392069fccd0b13-0": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Dogs",
-            "button_link": "shopify:\/\/pages\/dog"
-          }
-        },
-        "1639392069fccd0b13-1": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Cats",
-            "button_link": "#"
-          }
-        },
-        "1639392069fccd0b13-2": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Small Animals",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1639392069fccd0b13-0",
-        "1639392069fccd0b13-1",
-        "1639392069fccd0b13-2"
-      ],
-      "settings": {
-        "column_alignment": "center",
-        "background_style": "primary",
-        "section_width": 100,
-        "sec_class": "",
-        "slider": false
-      }
     }
   },
   "order": [
@@ -400,6 +399,7 @@
     "1638426342c59892bd",
     "163886166197cb2a7e",
     "1639385432343a7373",
+    "163939206952b859af",
     "main",
     "16393858930aa1f067",
     "1639385897b8a7a6a9",
@@ -407,7 +407,6 @@
     "16393866196725b26b",
     "163938668074ea1a46",
     "163938824283985989",
-    "1639388359b939a1e1",
-    "163939206952b859af"
+    "1639388359b939a1e1"
   ]
 }
