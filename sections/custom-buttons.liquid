@@ -14,7 +14,7 @@
           >
 
         {%- for block in section.blocks -%}
-        <li class="swiper-slide" {{ block.shopify_attributes }}>
+        <li class="button_item" {{ block.shopify_attributes }}>
 
           {% if block.settings.button_text != blank %}
           <a class="button button--primary" aria-disabled="true" role="link" href="{{block.settings.button_text}}">{{block.settings.button_text}}</a>  
