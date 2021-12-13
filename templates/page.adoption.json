@@ -190,6 +190,27 @@
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
+    },
+    "16393866196725b26b": {
+      "type": "collage",
+      "blocks": {
+        "163938661982f1051c-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "163938661982f1051c-0"
+      ],
+      "settings": {
+        "heading": "Whiskers N Paws adoption space",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
@@ -200,6 +221,7 @@
     "main",
     "16393858930aa1f067",
     "1639385897b8a7a6a9",
-    "16393863577a5ae4a0"
+    "16393863577a5ae4a0",
+    "16393866196725b26b"
   ]
 }
