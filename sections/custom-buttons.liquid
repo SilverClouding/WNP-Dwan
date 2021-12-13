@@ -11,7 +11,7 @@
 
 </style>
 
-<div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
+<div class="multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
 
     <div class="{% if section.settings.slider %}swiper  multicolumn_Swiper {% else %} custom-class-for-design {% endif %}section_width">
@@ -26,8 +26,8 @@
         {%- for block in section.blocks -%}
         <li class="swiper-slide" {{ block.shopify_attributes }}>
 
-          {% if block.settings.title != blank or block.settings.text != blank %}
-          <a href=""></a>  
+          {% if block.settings.button_text != blank %}
+          <a class="button button--primary" aria-disabled="true" role="link" href="{{block.settings.button_text}}">{{block.settings.button_text}}</a>  
           {% endif %}
 
         </li>
