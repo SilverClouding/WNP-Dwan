@@ -13,6 +13,7 @@
         "964209c1-43b0-4178-a685-bfbd96fc1fa8": {
           "type": "linklist",
           "settings": {
+            "main_link_list": "customer-care-1"
           }
         }
       },
