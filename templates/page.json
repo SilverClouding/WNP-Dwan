@@ -1,12 +1,40 @@
 {
   "sections": {
+    "16393953318db2df51": {
+      "type": "rich-text",
+      "blocks": {
+        "163939533134c94be3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "964209c1-43b0-4178-a685-bfbd96fc1fa8": {
+          "type": "linklist",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "163939533134c94be3-0",
+        "964209c1-43b0-4178-a685-bfbd96fc1fa8"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
+        "page_title": false
       }
     }
   },
   "order": [
+    "16393953318db2df51",
     "main"
   ]
 }
