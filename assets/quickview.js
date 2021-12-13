@@ -130,7 +130,7 @@ jQuery(function($){
         });
       });
 
-      $(document).on("change", "#quick-view select", function () {
+      $(document).on("change", "#quick-view  [type=radio]", function () {
         var selectedOptions = '';
         $('#quick-view select').each(function (i) {
           if (selectedOptions == '') {
