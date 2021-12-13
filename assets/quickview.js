@@ -100,7 +100,7 @@ jQuery(function($){
             console.log("value"+value);
              console.log('opt'+opt);
             
-//       <input type="radio" name="{{ option.name }}" value="{{ value | escape }}" form="{{ product_form_id }}"><label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{{ value }}</label>
+    '<input type="radio" id="'+opt.toLowerCase()+'"_"'+value.toLowerCase()'" name="'+opt+'" value="'+value+'" form=""><label for=""'+opt.toLowerCase()+'"_"'+value.toLowerCase()'"">{{ value }}</label>'
             
           });
         });
