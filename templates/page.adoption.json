@@ -25,6 +25,11 @@
             "heading_size": "h1"
           }
         },
+        "dd48b041-ca56-44ce-b79d-2a1e837e46e5": {
+          "type": "linklist",
+          "settings": {
+          }
+        },
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
@@ -34,6 +39,7 @@
       },
       "block_order": [
         "163842634207ed9d0c-0",
+        "dd48b041-ca56-44ce-b79d-2a1e837e46e5",
         "163842634207ed9d0c-1"
       ],
       "settings": {
@@ -124,8 +130,6 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "view_all": "View All",
-        "view_link": "#",
         "section_width": 100,
         "swipe_on_mobile": false,
         "section_class": "adoption-cust-column"
