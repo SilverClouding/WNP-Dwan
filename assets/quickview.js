@@ -165,9 +165,9 @@ jQuery(function($){
                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
               } else {
                 if (v.available) {
-                  $('.qv-add-button').prop('disabled', true).val('Sold Out');
+                $('.qv-add-button').prop('disabled', false).val('Add to Cart');
                 } else {
-                  $('.qv-add-button').prop('disabled', false).val('Add to Cart');
+                   $('.qv-add-button').prop('disabled', true).val('Sold Out'); 
                 }
               }
             }
