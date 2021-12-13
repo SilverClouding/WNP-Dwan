@@ -29,6 +29,7 @@
         "011561ee-aacd-49be-97c9-f3bb19b95abd": {
           "type": "linklist",
           "settings": {
+            "main_link_list": "our-services"
           }
         }
       },
