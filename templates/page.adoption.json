@@ -85,55 +85,17 @@
         "sec_class": "service-logos"
       }
     },
-    "163886169115439e4e": {
-      "type": "column-content-cards",
-      "disabled": true,
-      "blocks": {
-        "1638861690b4c8facd-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image.jpg",
-            "title": "Meet Commando",
-            "text": "<p>Meow! I'm Commando, a 3-months-old friendly boy! I love attention from hooman! If you have treats for me, I'll love you even more! Want to take me home? I can't wait...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        },
-        "1638861690b4c8facd-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-2.jpg",
-            "title": "Meet Chotto",
-            "text": "<p>Meow, I'm Chotto, a 3-months-old sweet girl! I am clingy and love to sit on your lap. I'm a happy cat and love playing. If you're looking for...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        },
-        "1638861690b4c8facd-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image-1.jpg",
-            "title": "Meet Lego",
-            "text": "<p>Hello! I am Lego, a 4-months-old dwarf rabbit. People at WNP said I look like Peter the rabbit. I am a hay lover. Bring me home and serve me unlimited hay...<\/p>",
-            "button_label": "Read More",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1638861690b4c8facd-0",
-        "1638861690b4c8facd-1",
-        "1638861690b4c8facd-2"
-      ],
+    "1639385432343a7373": {
+      "type": "featured-blog",
       "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "section_width": 100,
-        "swipe_on_mobile": false,
-        "section_class": "adoption-cust-column"
+        "heading": "",
+        "blog": "adoption",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
       }
     },
     "main": {
@@ -142,13 +104,62 @@
       "settings": {
         "page_title": false
       }
+    },
+    "16393858930aa1f067": {
+      "type": "rich-text",
+      "blocks": {
+        "163938589375ed3445-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "163938589375ed3445-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Every Sunday 2pm - 4pm <\/strong><\/p><p>Over 1800 puppies are homed through this event. HKDR brings puppies that are ready to be homed to Whiskers N Paws. Starting a friendship is easier than you think!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163938589375ed3445-0",
+        "163938589375ed3445-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
+    "1639385897b8a7a6a9": {
+      "type": "brand_logos",
+      "blocks": {
+        "163938589737f1f79e-0": {
+          "type": "column",
+          "settings": {
+            "img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163938589737f1f79e-0"
+      ],
+      "settings": {
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": "service-logos"
+      }
     }
   },
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
     "163886166197cb2a7e",
-    "163886169115439e4e",
-    "main"
+    "1639385432343a7373",
+    "main",
+    "16393858930aa1f067",
+    "1639385897b8a7a6a9"
   ]
 }
