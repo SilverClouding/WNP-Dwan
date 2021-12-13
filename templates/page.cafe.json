@@ -42,243 +42,26 @@
         "sec_class": "grooming-textcon"
       }
     },
-    "1639116499c44666da": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n<div class=\"cafe-inner-cont\">\n<div class=\"cafehead-cont\"><h2>Whiskers N Paws Café Opening Hours:<\/h2><\/div>\n<div class=\"time-con\">\n<h3>Monday To Friday: <span>10AM - 6PM<\/span><br> \nWeekends & Public Holidays: <span>10AM - 7PM<\/span><br> \n10\/F Horizon Plaza, Ap Lei Chau, HK<\/h3>\n<\/div>\n<p>Limited hot dishes available on Monday : <a href=\"#\" class=\"checkhere\">Check here for Monday Special Menu<\/a><\/p>\n<\/div>\n<\/div>"
-      }
-    },
-    "163911584016bfbb09": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1639115840dafc7f3c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Monday to Friday: 10AM - 6PM Weekends & Public Holidays: 10AM - 7PM 10\/F Horizon Plaza, Ap Lei Chau, HK",
-            "heading_size": "h1"
-          }
-        },
-        "1639115840dafc7f3c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Limited hot dishes available on Monday : Check here for Monday Special Menu<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1639115840dafc7f3c-0",
-        "1639115840dafc7f3c-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": false,
-        "sec_class": "cafe-con"
-      }
-    },
-    "16384269895954df72": {
-      "type": "image-with-text",
-      "blocks": {
-        "16384269892b584b49-0": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "16384269892b584b49-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "16384269892b584b49-0",
-        "16384269892b584b49-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image_8.jpg",
-        "section_width": 80,
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "sec_class": "image-text-full"
-      }
-    },
-    "1638957600d7b2d304": {
-      "type": "grooming-table",
-      "disabled": true,
-      "blocks": {
-        "163895760093f1a58f-0": {
-          "type": "heading",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beauty-saloon_1.png",
-            "heading1": "<p>Service<\/p>",
-            "heading2": "<p>Mini - Groom<\/p>",
-            "heading3": "<p>Full - Groom<\/p>"
-          }
-        },
-        "4933c5e0-8c3e-4b05-bf39-c99066c6df66": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_1_2.png",
-            "heading1": "<p>Thorough brush out<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "5b1cfe38-9170-4259-972c-9db0e135324a": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_284.png",
-            "heading1": "<p>De-shedding to remove loose fur<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pet-shampoo_1.png",
-            "heading1": "<p>Double Shampoo Rinse & Conditioning<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "9930b969-2766-45ac-9eb7-a01e7cdf9246": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nail-scissors_1.png",
-            "heading1": "<p>Nails trimmed and paws cleaned\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cotton-swabs_1.png",
-            "heading1": "<p>Ear cleansing & fur removal if necessary<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "b6a3462c-f5e4-4efe-96d6-a796b517f80a": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brush-teeth_1.png",
-            "heading1": "<p>Tooth brushing<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "248aeccf-20f8-4631-899f-b16000bc75de": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_2.png",
-            "heading1": "<p>Anal gland expressing\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "9e12aed7-aa51-4a31-adef-3f7093cb2004": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hair-dryer_1.png",
-            "heading1": "<p>Hand fluffing & drying\t<\/p>",
-            "tick_sign_col1": true,
-            "tick_sign_col2": true
-          }
-        },
-        "7544acc3-82b0-4854-9f91-eff3e5967519": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/clipper_1.png",
-            "heading1": "<p>Coat clipping<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "016b80b0-4a01-45b3-a439-cb1df4074092": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_1_1.png",
-            "heading1": "<p>Coat styling to breed standard or your preference<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "06080b20-3359-47bd-8cae-4284025fe4ac": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/scissor_1.png",
-            "heading1": "<p>Scissoring<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        },
-        "e1dc1559-0a0c-4f41-b081-671f0e55f96c": {
-          "type": "other_row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dog_2_1.png",
-            "heading1": "<p>Hand finishing<\/p>",
-            "tick_sign_col1": false,
-            "tick_sign_col2": true
-          }
-        }
-      },
-      "block_order": [
-        "163895760093f1a58f-0",
-        "4933c5e0-8c3e-4b05-bf39-c99066c6df66",
-        "5b1cfe38-9170-4259-972c-9db0e135324a",
-        "06e87ea5-b32e-4dec-a8b4-fdde04d2b3a5",
-        "9930b969-2766-45ac-9eb7-a01e7cdf9246",
-        "b1b9a0fa-d260-4ae9-94fc-65c72630b03b",
-        "b6a3462c-f5e4-4efe-96d6-a796b517f80a",
-        "248aeccf-20f8-4631-899f-b16000bc75de",
-        "9e12aed7-aa51-4a31-adef-3f7093cb2004",
-        "7544acc3-82b0-4854-9f91-eff3e5967519",
-        "016b80b0-4a01-45b3-a439-cb1df4074092",
-        "06080b20-3359-47bd-8cae-4284025fe4ac",
-        "e1dc1559-0a0c-4f41-b081-671f0e55f96c"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "section_width": 90,
-        "full_width": false,
-        "sec_class": "grooming-t-con"
-      }
-    },
     "1638442037a72cd96a": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1638442037250169f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "Operating Hours",
+            "heading": "Whiskers N Paws Café Opening Hours:",
             "heading_size": "h1"
           }
         },
         "1638442037250169f1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
-          }
-        },
-        "7fe12759-4b59-4100-ad9a-e2001c0e1f69": {
-          "type": "button",
-          "settings": {
-            "button_label": "Book An Appointment",
-            "button_link": "#",
-            "button_style_secondary": true
+            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p><p>10\/F Horizon Plaza, Ap Lei Chau, HK<\/p><p><\/p><p>Limited hot dishes available on Monday :<a href=\"https:\/\/wnp-store-dev.myshopify.com\/pages\/cafe?#\">Check here for Monday Special Menu<\/a><\/p>"
           }
         }
       },
       "block_order": [
         "1638442037250169f1-0",
-        "1638442037250169f1-1",
-        "7fe12759-4b59-4100-ad9a-e2001c0e1f69"
+        "1638442037250169f1-1"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -292,68 +75,12 @@
       "settings": {
         "page_title": false
       }
-    },
-    "16388773760b7fb856": {
-      "type": "column-content-cards",
-      "disabled": true,
-      "blocks": {
-        "1638877376cf53eb2a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img1.jpg",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "1638877376cf53eb2a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img2.jpg",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "1638877376cf53eb2a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img3.jpg",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1638877376cf53eb2a-0",
-        "1638877376cf53eb2a-1",
-        "1638877376cf53eb2a-2"
-      ],
-      "settings": {
-        "title": "Our professional grooming team works to ensure that this important ritual is pleasant & enjoyable for every canine friend.",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "section_width": 90,
-        "swipe_on_mobile": false,
-        "section_class": "our-professional"
-      }
     }
   },
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
-    "1639116499c44666da",
-    "163911584016bfbb09",
-    "16384269895954df72",
-    "1638957600d7b2d304",
     "1638442037a72cd96a",
-    "main",
-    "16388773760b7fb856"
+    "main"
   ]
 }
