@@ -362,22 +362,22 @@
         "1639392069fccd0b13-0": {
           "type": "buttons",
           "settings": {
-            "button_text": "",
-            "button_link": ""
+            "button_text": "Shop Dogs",
+            "button_link": "shopify:\/\/pages\/dog"
           }
         },
         "1639392069fccd0b13-1": {
           "type": "buttons",
           "settings": {
-            "button_text": "",
-            "button_link": ""
+            "button_text": "Shop Cats",
+            "button_link": "#"
           }
         },
         "1639392069fccd0b13-2": {
           "type": "buttons",
           "settings": {
-            "button_text": "",
-            "button_link": ""
+            "button_text": "Shop Small Animals",
+            "button_link": "#"
           }
         }
       },
