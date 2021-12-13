@@ -95,6 +95,13 @@ jQuery(function($){
           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
           $(option.values).each(function (i, value) {
             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
+            
+            console.log(option);
+            console.log("value"+value);
+             console.log('opt'+opt);
+            
+//       <input type="radio" name="{{ option.name }}" value="{{ value | escape }}" form="{{ product_form_id }}"><label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{{ value }}</label>
+            
           });
         });
         $(product.variants).each(function (i, v) {
