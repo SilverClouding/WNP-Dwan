@@ -140,6 +140,8 @@ jQuery(function($){
             selectedOptions = selectedOptions + ' / ' + $(this).val();
           }
         });
+        console.log( selectedOptions );
+        
         jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
 
           $(product.variants).each(function (i, v) {
