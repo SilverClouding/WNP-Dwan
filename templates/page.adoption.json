@@ -187,6 +187,7 @@
       ],
       "settings": {
         "heading": "",
+        "text_align": "center",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -209,6 +210,7 @@
       ],
       "settings": {
         "heading": "Whiskers N Paws adoption space",
+        "text_align": "center",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -245,6 +247,7 @@
       ],
       "settings": {
         "heading": "",
+        "text_align": "center",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -352,6 +355,44 @@
         "swipe_on_mobile": false,
         "section_class": "Multicolumn"
       }
+    },
+    "163939206952b859af": {
+      "type": "custom-buttons",
+      "blocks": {
+        "1639392069fccd0b13-0": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1639392069fccd0b13-1": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1639392069fccd0b13-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639392069fccd0b13-0",
+        "1639392069fccd0b13-1",
+        "1639392069fccd0b13-2"
+      ],
+      "settings": {
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": "",
+        "slider": true
+      }
     }
   },
   "order": [
@@ -366,6 +407,7 @@
     "16393866196725b26b",
     "163938668074ea1a46",
     "163938824283985989",
-    "1639388359b939a1e1"
+    "1639388359b939a1e1",
+    "163939206952b859af"
   ]
 }
