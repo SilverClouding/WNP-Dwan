@@ -92,17 +92,17 @@ jQuery(function($){
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
-          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
-//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
+//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
+          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
        
           $(option.values).each(function (i, value) {
-            $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
+//             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
             
             console.log(option);
             console.log("value"+value);
              console.log('opt'+opt);
             
-//     $('.option.' + opt.toLowerCase()).append('<input class="radio_butt" type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
+    $('.option.' + opt.toLowerCase()).append('<input class="radio_butt" type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
             
           });
         });
@@ -131,9 +131,9 @@ jQuery(function($){
       });
 
       $(document).on("change", "#quick-view select, .radio_butt", function () {
-         console.log($('.radio_butt:checked').val());
+         console.log($('.radio_butt').val());
         var selectedOptions = '';
-        $('#quick-view  select, .radio_butt').each(function (i) {
+        $('#quick-view  select, .radio_butt:checked').each(function (i) {
           if (selectedOptions == '') {
             selectedOptions = $(this).val();
           } else {
