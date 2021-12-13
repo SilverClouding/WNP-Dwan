@@ -102,7 +102,7 @@ jQuery(function($){
             console.log("value"+value);
              console.log('opt'+opt);
             
-            $('.option.' + opt.toLowerCase()).append('<input '+ if(i==0){"checked"}+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
+            $('.option.' + opt.toLowerCase()).append('<input '+ if(i==0){+'"checked"'+}+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
             
           });
         });
