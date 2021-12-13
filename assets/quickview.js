@@ -130,10 +130,10 @@ jQuery(function($){
         });
       });
 
-      $(document).on("change", "#quick-view select, .radio_butt", function () {
+      $(document).on("change", "#quick-view select, .radio_butt['checked']", function () {
         console.log($(this).val());
         var selectedOptions = '';
-        $('#quick-view  select, .radio_butt').each(function (i) {
+        $('#quick-view  select, .radio_butt["checked"]').each(function (i) {
           if (selectedOptions == '') {
             selectedOptions = $(this).val();
           } else {
