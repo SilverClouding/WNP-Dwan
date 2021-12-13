@@ -94,13 +94,13 @@ jQuery(function($){
           var selectClass = '.option.' + opt.toLowerCase();
           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
           $(option.values).each(function (i, value) {
-            $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
+//             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
             
             console.log(option);
             console.log("value"+value);
              console.log('opt'+opt);
             
-    '<input type="radio" id="'+opt.toLowerCase()+'"_"'+value.toLowerCase()'" name="'+opt+'" value="'+value+'" form=""><label for=""'+opt.toLowerCase()+'"_"'+value.toLowerCase()'"">{{ value }}</label>'
+    $('.option.' + opt.toLowerCase()).append('<input type="radio" id="'+opt.toLowerCase()+'"_"'+value.toLowerCase()'" name="'+opt+'" value="'+value+'" form=""><label for=""'+opt.toLowerCase()+'"_"'+value.toLowerCase()'"">{{ value }}</label>');
             
           });
         });
