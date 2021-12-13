@@ -100,7 +100,7 @@ jQuery(function($){
             console.log("value"+value);
              console.log('opt'+opt);
             
-    $('.option.' + opt.toLowerCase()).append('<input type="radio" id="'+opt.toLowerCase()+'"_"'+value.toLowerCase()'" name="'+opt+'" value="'+value+'" form=""><label for=""'+opt.toLowerCase()+'"_"'+value.toLowerCase()'"">{{ value }}</label>');
+    $('.option.' + opt.toLowerCase()).append('<input type="radio" id="'+opt.toLowerCase()+'"_"'+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'"_"'+value.toLowerCase()+'">{{ value }}</label>');
             
           });
         });
