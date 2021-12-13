@@ -1,0 +1,7 @@
+.rte .grid {
+    flex-wrap: wrap;
+}
+
+.rte .grid img, .rte .grid h2, .rte .grid div {
+    width: 100%;
+}
