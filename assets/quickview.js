@@ -101,8 +101,15 @@ jQuery(function($){
             console.log(option);
             console.log("value"+value);
              console.log('opt'+opt);
+            var checked = '';
+            if(i == 0){
+            checked = 'checked';
+            }else{
+             checked = '';
+            }
             
-            $('.option.' + opt.toLowerCase()).append('<input '+if(i==0){}+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
+            
+            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
             
           });
         });
