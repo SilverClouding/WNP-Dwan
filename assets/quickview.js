@@ -153,17 +153,18 @@ jQuery(function($){
 
           $(product.variants).each(function (i, v) {
            
-            if (v.title == selectedOptions) { console.log(v);
+            if (v.title == selectedOptions) { 
               var price = parseFloat(v.price / 100).toFixed(2);
               var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
               var v_qty = v.inventory_quantity;
               var v_inv = v.inventory_management;
+              console.log(v);
               $('.qv-product-price').text('$' + price);
               $('.qv-product-original-price').text('$' + original_price);
               if (v_inv == null) {
                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
               } else {
-                if (v.inventory_quantity < 1) {
+                if (v.available) {
                   $('.qv-add-button').prop('disabled', true).val('Sold Out');
                 } else {
                   $('.qv-add-button').prop('disabled', false).val('Add to Cart');
@@ -201,9 +202,8 @@ jQuery(function($){
               $(product.variants).each(function (i, v) {
                 if (v.title == selectedOptions) {
                   var_id = v.id;
-                  if(v.available){
                   processCart();
-                  }
+                  
                 }
               });
             });
