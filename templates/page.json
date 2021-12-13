@@ -1,5 +1,10 @@
 {
   "sections": {
+    "16393980993262203f": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
     "16393953318db2df51": {
       "type": "rich-text",
       "blocks": {
@@ -35,6 +40,7 @@
     }
   },
   "order": [
+    "16393980993262203f",
     "16393953318db2df51",
     "main"
   ]
