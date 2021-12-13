@@ -28,6 +28,7 @@
         "dd48b041-ca56-44ce-b79d-2a1e837e46e5": {
           "type": "linklist",
           "settings": {
+            "main_link_list": "our-services"
           }
         },
         "163842634207ed9d0c-1": {
