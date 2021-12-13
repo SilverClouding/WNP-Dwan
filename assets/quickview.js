@@ -201,7 +201,9 @@ jQuery(function($){
               $(product.variants).each(function (i, v) {
                 if (v.title == selectedOptions) {
                   var_id = v.id;
+                  if(v.available){
                   processCart();
+                  }
                 }
               });
             });
