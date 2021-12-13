@@ -145,6 +145,7 @@ jQuery(function($){
         jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
 
           $(product.variants).each(function (i, v) {
+            console.log(v.title);
             if (v.title == selectedOptions) {
               var price = parseFloat(v.price / 100).toFixed(2);
               var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
