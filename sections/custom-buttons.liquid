@@ -1,24 +1,14 @@
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<style>
 
-  #shopify-section-{{section.id}} .section_width{
-    width:{{section.settings.section_width}}%;
-    margin: 0 auto;
-  }
 
-</style>
-
-<div class="multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
+<div class="background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
 
-    <div class="{% if section.settings.slider %}swiper  multicolumn_Swiper {% else %} custom-class-for-design {% endif %}section_width">
+    <div class="section_width">
 
 
 
-      <ul class="swiper-wrapper multicolumn-list grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"
+      <ul class="grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"
           id="Slider-{{ section.id }}"
           role="list"
           >
@@ -34,14 +24,7 @@
         {%- endfor -%}
       </ul>
 
-      {% if section.settings.slider %}
-      <div class="swiper-scrollbar"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      {% endif %}
-
+   
 
 
     </div>
@@ -107,12 +90,6 @@
       "type": "text",
       "id": "sec_class",
       "label": "Section Class"
-    },
-	{
-      "type": "checkbox",
-      "id": "slider",
-      "label": "Show slider",
-      "default": true
     }
   ],
   "blocks": [
