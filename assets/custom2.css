@@ -27,3 +27,6 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
     width: 12px;
     margin-bottom: -2px;
 }
+.bottom-part li {
+    color: red;
+}
