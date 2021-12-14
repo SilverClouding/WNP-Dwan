@@ -30,3 +30,12 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
 .bottom-part li {
     color: red;
 }
+
+.card__badge.sold_out_right {
+    left: auto;
+    right: 0;
+}
+
+.card__badge.sold_out_right .badge {
+    margin-right: 0;
+}
