@@ -159,12 +159,30 @@
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
+        {% assign newTagFlag =  false %}
+        {% for tag in product.tags %}
+        {% assign tagHanlde =  tag | handle %}
         
+        {% if tagHanlde == 'new' %}
+        {% assign newTagFlag =  true %}
+        {% endif %}
+        
+        {% endfor %}
+        
+        {% if newTagFlag %}
+          <span class="badge price__badge-new color-{{ settings.sale_badge_color_scheme }}">
+          {{ 'products.product.new' | t }}
+        </span>
+        {% else %}
        {%- if product.compare_at_price > product.price %} 
         <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
           {{ 'products.product.on_sale' | t }}
         </span>
         {%- endif -%}
+        
+        {% endif %}
+        
+        
         
         
         {%- for block in section.blocks -%}
