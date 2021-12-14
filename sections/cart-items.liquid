@@ -197,7 +197,7 @@ body.page-your-shopping-cart {
 <div class="bottom-part">
   <div class="subtotal">
     <strong>Subtotal </strong>
-    <strong class="amount price">{{ cart.total_price  | money }}</strong>
+    <strong class="amount price" total="{{ cart.total_price  | money }}">{{ cart.total_price  | money }}</strong>
   </div>
 
   <div class="buttons">
