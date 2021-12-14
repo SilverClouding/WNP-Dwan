@@ -147,11 +147,11 @@
       
       {% endif %}
       
-      <div class="card__badge">
-        {%- if product_card_product.available == false -%}
+     
+        {%- if product_card_product.available == false -%} <div class="card__badge sold_out_right">
           <span class="badge badge--bottom-right color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
-         {%- endif -%}
-      </div>
+            </div> {%- endif -%}
+  
       
       
     </div>
