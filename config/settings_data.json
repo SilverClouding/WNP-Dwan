@@ -378,7 +378,7 @@
             "type": "shop_button",
             "settings": {
               "button_label": "Shop Dogs",
-              "button_link": "shopify:\/\/collections\/dogs"
+              "button_link": "shopify:\/\/pages\/dog"
             }
           },
           "e10d0f74-32a3-47ba-acb2-99c27ee18830": {
