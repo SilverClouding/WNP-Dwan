@@ -20,11 +20,6 @@
           "settings": {
           }
         },
-        "9a58edf8-f215-48ea-a1fe-391720705425": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -52,7 +47,6 @@
         "vendor",
         "title",
         "price",
-        "9a58edf8-f215-48ea-a1fe-391720705425",
         "description",
         "variant_picker",
         "quantity_selector",
@@ -184,11 +178,14 @@
             "secondary_btn_bg_color": "rgba(0,0,0,0)",
             "secondary_btn_border_color": "#000000",
             "secondary_btn_text_color": "#000000",
+            "border_color": "rgba(0,0,0,0.15)",
             "heading_font": "helvetica_n4",
             "enable_rich_snippets": true,
             "show_location": true,
             "show_avatar": true,
             "enable_replies": false,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
             "default_sort": "date_desc"
           }
         }
