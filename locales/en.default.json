@@ -106,6 +106,7 @@
       "add_to_cart": "Add to cart",
       "description": "Description",
       "on_sale": "Sale",
+      "new": "New",
       "product_variants": "Product variants",
       "media": {
         "open_featured_media": "Open featured media in gallery view",
