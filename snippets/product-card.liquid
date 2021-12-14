@@ -121,6 +121,23 @@
         </div>
       {%- endif -%}
   
+      
+       {% assign newTagFlag =  false %}
+        {% for tag in product.tags %}
+        {% assign tagHanlde =  tag | handle %}
+        
+        {% if tagHanlde == 'new' %}
+        {% assign newTagFlag =  true %}
+        {% endif %}
+        
+        {% endfor %}
+        
+        {% if newTagFlag %}
+      
+      <div class="card__badge">
+        <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.new' | t }}</span>
+      </div>
+      {% else %}
       <div class="card__badge">
         {%- if product_card_product.available == false -%}
           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
@@ -128,6 +145,8 @@
           <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
         {%- endif -%}
       </div>
+      
+      {% endif %}
     </div>
   </div>
 </div>
