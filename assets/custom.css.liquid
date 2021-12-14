@@ -118,18 +118,18 @@ p{
   letter-spacing:0;
 }
 ::-webkit-placeholder {
-    color: #737373;
-  }
-  ::-moz-placeholder {
-    color: #737373;
-  }
-  ::-ms-placeholder {
-    color: #737373;
-  }
-  ::placeholder { 
-    color: #737373;
-    opacity: 1;
-  }
+  color: #737373;
+}
+::-moz-placeholder {
+  color: #737373;
+}
+::-ms-placeholder {
+  color: #737373;
+}
+::placeholder { 
+  color: #737373;
+  opacity: 1;
+}
 
 
 
@@ -4042,7 +4042,6 @@ select:focus, select:hover{
     font-weight:900;
     margin: 6.7rem 0 5.5rem;
   }
-
   .customer .field input, .customer select, .field__input, .select__select{
     border:1px solid #D9D9D9;
     height:50px;
@@ -4070,19 +4069,31 @@ select:focus, select:hover{
     line-height:22px;
     top:1.3rem;
   }
-
-  
-
-@media screen and (min-width: 990px){
-  .contact.page-width--narrow{
-     max-width: 51.2rem;
+  .contact__button .button{
+    padding: 15px 50px;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    line-height:18px;
+    letter-spacing:0;
+    border:none;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    border-radius:2px;
   }
-  .contact .field {
-    margin-bottom: 1.7rem;
-}
-  .contact__button {
-    margin-top: 25px;
-}
+
+
+  @media screen and (min-width: 990px){
+    .contact.page-width--narrow{
+      max-width: 51.2rem;
+    }
+    .contact .field {
+      margin-bottom: 1.7rem;
+    }
+    .contact__button {
+      margin-top: 25px;
+    }
   }
 
 
