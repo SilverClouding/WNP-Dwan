@@ -123,7 +123,7 @@
   
       
        {% assign newTagFlag =  false %}
-        {% for tag in product.tags %}
+        {% for tag in product_card_product.tags %}
         {% assign tagHanlde =  tag | handle %}
         
         {% if tagHanlde == 'new' %}
