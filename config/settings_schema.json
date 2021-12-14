@@ -227,6 +227,14 @@
         "id": "sold_out_badge_color_scheme",
         "options": [
           {
+            "value": "accent-1",
+            "label": "t:settings_schema.styles.settings.sale_badge_color_scheme.options__2.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:settings_schema.styles.settings.sale_badge_color_scheme.options__3.label"
+          },
+          {
             "value": "background-1",
             "label": "t:settings_schema.styles.settings.sold_out_badge_color_scheme.options__1.label"
           },
