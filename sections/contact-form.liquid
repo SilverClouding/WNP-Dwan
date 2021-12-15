@@ -55,7 +55,7 @@
   <div class="field"> 
     <select name="Subject" id="ContactForm-subject" class="field__input">
       <option value="">Subject</option>
-      {% assign values = section.settings.dropdown_values %}
+      {% assign values = section.settings.dropdown_values | split: ',' %}
       {% for value in values %}
       <option value="{{value}}">{{value}}</option>
       {% endfor %}
