@@ -434,11 +434,11 @@
       ],
       "settings": {
         "title": "Multicolumn",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 100,
+        "section_width": 38,
         "swipe_on_mobile": false
       }
     }
