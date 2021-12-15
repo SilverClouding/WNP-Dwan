@@ -188,7 +188,7 @@
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 32,
+        "section_width": 34,
         "sec_class": "hkdr-logos",
         "slider": false
       }
