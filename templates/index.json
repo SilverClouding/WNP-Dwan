@@ -20,11 +20,11 @@
             "heading_size": "medium",
             "text": "Improving the quality of life of everyone when it comes to sharing the love of animals",
             "button_label_1": "Shop Dogs",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/pages\/dog",
             "button_style_secondary_1": false,
             "btn_bg_color": "#ffffff",
             "button_label_2": "Shop Cats",
-            "button_link_2": "",
+            "button_link_2": "#",
             "button_style_secondary_2": false
           }
         },
@@ -162,7 +162,8 @@
         "column_alignment": "left",
         "background_style": "primary",
         "section_width": 100,
-        "sec_class": ""
+        "sec_class": "",
+        "slider": true
       }
     },
     "16364684436965f7cf": {
