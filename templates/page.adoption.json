@@ -397,7 +397,7 @@
         "title": "",
         "image_width": "third",
         "image_ratio": "adapt",
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "section_width": 100,
         "swipe_on_mobile": false,
