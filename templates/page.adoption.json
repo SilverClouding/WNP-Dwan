@@ -82,7 +82,7 @@
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 100,
+        "section_width": 50,
         "sec_class": "adoption-logos",
         "slider": false
       }
