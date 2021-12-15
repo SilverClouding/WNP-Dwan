@@ -57,7 +57,7 @@
       <option value="">Subject</option>
       {% assign values = section.settings.dropdown_values | split: ',' %}
       {% for value in values %}
-      <option value="{{value | strip }}">{{value}}</option>
+      <option value="{{value | strip }}">{{value | strip }}</option>
       {% endfor %}
     </select>
   
