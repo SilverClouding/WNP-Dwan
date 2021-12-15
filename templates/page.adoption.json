@@ -368,6 +368,7 @@
         },
         "0551595b-ec16-442b-adfe-d613f5169883": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -377,6 +378,7 @@
         },
         "941b0232-6423-43a2-90a9-704b6130dc2e": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
