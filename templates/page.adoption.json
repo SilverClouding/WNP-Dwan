@@ -421,6 +421,7 @@
         "1639577218a0aad59e-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/house-1.png",
             "title": "",
             "text": "<p><strong>1800+<\/strong> puppies & <br\/><strong>900+<\/strong> cats homed<\/p>",
             "button_label": "",
@@ -433,12 +434,12 @@
         "1639577218a0aad59e-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Thank you for choosing WnP Adoption!",
         "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 38,
+        "section_width": 42,
         "swipe_on_mobile": false
       }
     }
