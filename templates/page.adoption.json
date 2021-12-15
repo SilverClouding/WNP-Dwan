@@ -402,8 +402,44 @@
         "column_alignment": "center",
         "background_style": "none",
         "section_width": 100,
-        "swipe_on_mobile": false,
-        "section_class": "puppy-adoption-icon"
+        "swipe_on_mobile": false
+      }
+    },
+    "16395772189326842d": {
+      "type": "column-content-cards",
+      "blocks": {
+        "1639577218a0aad59e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/united_1.png",
+            "title": "",
+            "text": "<p><strong>Collaborative adoption<\/strong> efforts since 2008<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1639577218a0aad59e-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>1800+<\/strong> puppies & <br\/><strong>900+<\/strong> cats homed<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639577218a0aad59e-0",
+        "1639577218a0aad59e-1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 100,
+        "swipe_on_mobile": false
       }
     }
   },
@@ -420,6 +456,7 @@
     "16393866196725b26b",
     "163938668074ea1a46",
     "163938824283985989",
-    "1639388359b939a1e1"
+    "1639388359b939a1e1",
+    "16395772189326842d"
   ]
 }
