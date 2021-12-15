@@ -199,6 +199,7 @@
         "c49afaaa-cf51-4776-8857-8961ccb96780": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-pic1.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
@@ -206,6 +207,7 @@
         "5390fb3c-545b-4260-8f89-b69ee6cc20f0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-pic2.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
@@ -213,6 +215,7 @@
         "b6a46501-6c90-4a9c-bedc-aa6bf60b6164": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-pic3.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
