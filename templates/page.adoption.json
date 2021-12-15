@@ -332,7 +332,7 @@
             "image": "shopify:\/\/shop_images\/step1.png",
             "title": "",
             "text": "<p><strong>Step 1: Plan Your Visit<\/strong><br\/>Pop over and visit the animals available for adoption. <br\/>Find out more about your furry friend and get to know their personalities to see if it’s a match!<\/p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -342,7 +342,7 @@
             "image": "shopify:\/\/shop_images\/step2.png",
             "title": "",
             "text": "<p><strong>Step 2: Apply<\/strong><br\/>Now that you have found a furry friend you are interested in bringing home, fill out the application form. An adoption coordinator will get in touch with you for the next step.<\/p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -352,7 +352,7 @@
             "image": "shopify:\/\/shop_images\/step3.png",
             "title": "",
             "text": "<p><strong>Step 3: Adoption Free<\/strong><br\/>Once your application is received & processed, a Homing Assistant will be in touch. A quick chat on the phone or home visit may be required. Different adoption fees will apply dependant on the species. *100% adoption fee goes to the shelter<\/p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -362,7 +362,7 @@
             "image": "shopify:\/\/shop_images\/step4.png",
             "title": "",
             "text": "<p><strong>Step 4: Bring Your Paw Friend Home<\/strong><br\/>Congratulations! You have made a new best friend. Spread the word and refer other animals in need to your friends. Let’s help clear the shelters!<\/p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
