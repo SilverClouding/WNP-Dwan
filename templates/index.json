@@ -257,7 +257,7 @@
         "background_style": "primary",
         "section_width": 66,
         "swipe_on_mobile": false,
-        "section_class": "multi-custom"
+        "section_class": ""
       }
     },
     "16365383186b9876cd": {
