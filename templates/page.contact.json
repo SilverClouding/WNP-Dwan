@@ -26,7 +26,8 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact Us"
+        "heading": "Contact Us",
+        "dropdown_values": "Subject 1, Subject 2, Subject 3, Subject 4"
       }
     }
   },
