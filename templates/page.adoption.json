@@ -257,7 +257,7 @@
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "top_padding": 65,
-        "bottom_padding": 0
+        "bottom_padding": 10
       }
     },
     "163938668074ea1a46": {
