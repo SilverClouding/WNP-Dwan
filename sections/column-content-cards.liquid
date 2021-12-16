@@ -14,6 +14,12 @@
     margin-top:{{section.settings.top_padding}}px;
     margin-bottom:{{section.settings.bottom_padding}}px;
   }
+  @media screen and (min-width: 750px){
+    #shopify-section-{{section.id}} .multicolumn.no-heading:not(.background-secondary) {
+      margin-top:0;
+      margin-bottom:0;
+    }
+  }
 </style>
 
 <div class="multicolumn {{ section.settings.section_class}} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
