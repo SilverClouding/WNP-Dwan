@@ -8,11 +8,13 @@
     margin: 0 auto;
   }
 
-
-
   #shopify-section-{{section.id}}{
     margin-top:{{section.settings.top_padding}}px;
     margin-bottom:{{section.settings.bottom_padding}}px;
+  }
+  
+  .title{
+    color:{{section.settings.title_color}};
   }
   @media screen and (min-width: 750px){
     #shopify-section-{{section.id}} .multicolumn.no-heading:not(.background-secondary) {
@@ -232,7 +234,8 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
-    },{
+    },
+	{
         "type": "range",
         "id": "top_padding",
         "min": 0,
@@ -241,7 +244,8 @@
         "unit": "%",
         "label": "Top margin",
         "default": 65
-      },{
+      },
+	  {
         "type": "range",
         "id": "bottom_padding",
         "min": 0,
@@ -250,6 +254,15 @@
         "unit": "%",
         "label": "Bottom margin",
         "default": 65
+      },
+	{
+        "type": "range",
+        "id": "title_color",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "label": "title Color",
+        "default": 35
       }
   ],
   "blocks": [
