@@ -8,10 +8,13 @@
     margin: 0 auto;
   }
 
+
+
+  #shopify-section-{{section.id}}{
+    padding-top:{{section.settings.top_padding}};
+    padding-bottom:{{section.settings.bottom_padding}};
+  }
 </style>
-
- #shopify-section-{{section.id}}
-
 
 <div class="multicolumn {{ section.settings.section_class}} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
