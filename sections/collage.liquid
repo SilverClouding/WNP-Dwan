@@ -1,7 +1,12 @@
 {{ 'collage.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-
+<style>
+  #shopify-section-{{section.id}}{
+    margin-top:{{section.settings.top_padding}}px;
+    margin-bottom:{{section.settings.bottom_padding}}px;
+  }
+</style>
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <div class="collage-wrapper page-width{% if section.settings.heading == blank %} no-heading{% endif %}">
@@ -409,7 +414,27 @@
       ],
       "default": "collage",
       "label": "t:sections.collage.settings.mobile_layout.label"
-    }
+    },
+	{
+        "type": "range",
+        "id": "top_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Top margin",
+        "default": 65
+      },
+	  {
+        "type": "range",
+        "id": "bottom_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Bottom margin",
+        "default": 65
+      }
   ],
   "blocks": [
     {

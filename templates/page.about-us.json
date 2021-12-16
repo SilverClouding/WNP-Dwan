@@ -316,44 +316,57 @@
         "16396596689bdc6722-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/Rectangle_159.png",
+            "title": "",
             "text": "<p><strong>“Be the person your dog thinks you are”<\/strong> is the motto we bring into work everyday.<\/p>"
           }
         },
         "16396596689bdc6722-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Rectangle_159-1.png",
+            "title": "",
+            "text": "<p><strong>“Always show those who love you how excited we are to see them”<\/strong> is how we treat each other and our friends<\/p>"
           }
         },
         "16396596689bdc6722-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Rectangle_159-2.png",
+            "title": "",
+            "text": "<p><strong>“Walk away if you can’t chew it, eat it or pee on it”<\/strong> is how we make every problem work for us.<br\/><br\/><strong>“We have 9 lives’<\/strong> and we aren’t afraid of to try new things.<\/p>"
+          }
+        },
+        "16507dec-6531-4600-95de-90b21943b32c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_159-3.png",
+            "title": "",
+            "text": "<p><strong>“Live with a pure heart and act with integrity” <\/strong>is our approach to every decision about our product choices and the things we do.<\/p>"
           }
         }
       },
       "block_order": [
         "16396596689bdc6722-0",
         "16396596689bdc6722-1",
-        "16396596689bdc6722-2"
+        "16396596689bdc6722-2",
+        "16507dec-6531-4600-95de-90b21943b32c"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "section_width": 100,
-        "image_width": "full",
+        "title": "",
+        "section_width": 80,
+        "image_width": "half",
         "image_ratio": "adapt",
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "16384478795d002435": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "163844787962d7d61e-0": {
           "type": "column",
