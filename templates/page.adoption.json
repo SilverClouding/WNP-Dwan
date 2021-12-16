@@ -231,7 +231,7 @@
         "text_align": "center",
         "desktop_layout": "left",
         "mobile_layout": "collage",
-        "top_padding": 27,
+        "top_padding": 24,
         "bottom_padding": 65
       }
     },
