@@ -396,7 +396,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/united_1.png",
             "title": "",
-            "text": "<p><strong>Collaborative adoption<\/strong> efforts since 2008<\/p>",
+            "text": "<p><strong>Collaborative <br\/>adoption<\/strong> efforts <br\/>since 2008<\/p>",
             "button_label": "",
             "button_link": ""
           }
