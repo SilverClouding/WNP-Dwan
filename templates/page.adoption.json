@@ -423,7 +423,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "item_in_row": 4,
-        "section_width": 40,
+        "section_width": 33,
         "swipe_on_mobile": false,
         "top_padding": 25,
         "bottom_padding": 37,
