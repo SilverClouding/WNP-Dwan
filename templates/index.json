@@ -254,10 +254,11 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
-        "background_style": "primary",
+        "background_style": "none",
         "section_width": 66,
         "swipe_on_mobile": false,
-        "section_class": ""
+        "top_padding": 0,
+        "bottom_padding": 0
       }
     },
     "16365383186b9876cd": {
@@ -359,7 +360,8 @@
         "background_style": "primary",
         "section_width": 85,
         "swipe_on_mobile": false,
-        "section_class": "Multicolumn"
+        "top_padding": 65,
+        "bottom_padding": 65
       }
     },
     "16365411454faad6c2": {
