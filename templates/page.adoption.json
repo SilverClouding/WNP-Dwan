@@ -404,7 +404,7 @@
         "item_in_row": 4,
         "section_width": 100,
         "swipe_on_mobile": false,
-        "top_padding": 2,
+        "top_padding": 0,
         "bottom_padding": 65
       }
     },
