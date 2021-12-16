@@ -254,7 +254,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
-        "background_style": "none",
+        "background_style": "primary",
         "section_width": 66,
         "swipe_on_mobile": false,
         "top_padding": 0,
