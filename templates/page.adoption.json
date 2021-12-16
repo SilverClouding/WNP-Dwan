@@ -230,7 +230,9 @@
         "heading": "",
         "text_align": "center",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "mobile_layout": "collage",
+        "top_padding": 65,
+        "bottom_padding": 65
       }
     },
     "16393866196725b26b": {
@@ -253,7 +255,9 @@
         "heading": "Whiskers N Paws adoption space",
         "text_align": "center",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "mobile_layout": "collage",
+        "top_padding": 65,
+        "bottom_padding": 65
       }
     },
     "163938668074ea1a46": {
@@ -293,7 +297,9 @@
         "heading": "",
         "text_align": "center",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "mobile_layout": "collage",
+        "top_padding": 20,
+        "bottom_padding": 65
       }
     },
     "163938824283985989": {
