@@ -22,7 +22,7 @@
 
       {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
         <a href="{{ section.settings.blog.url }}"
-          class="link underlined-link large-up-hide"
+          class="link underlined-link small-hide medium-hide large-up-hide"
         >
           {{ 'sections.featured_blog.view_all' | t }}
         </a>
