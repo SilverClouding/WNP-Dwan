@@ -384,7 +384,7 @@
         "swipe_on_mobile": false,
         "top_padding": 0,
         "bottom_padding": 65,
-        "title_color": 35,
+        "title_color": "",
         "title_font_size": 35
       }
     },
@@ -427,7 +427,7 @@
         "swipe_on_mobile": false,
         "top_padding": 65,
         "bottom_padding": 65,
-        "title_color": 35,
+        "title_color": "#f5694d",
         "title_font_size": 19
       }
     }
