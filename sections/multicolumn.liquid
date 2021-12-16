@@ -41,7 +41,7 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="swiper-slidem multicolumn-list__itemm grid__item {% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          <li class="swiper-slide multicolumn-list__item grid__item {% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -87,7 +87,7 @@
         {%- endfor -%}
       </ul>
       
-           {%- if section.settings.swipe_on_mobilej -%}
+           {%- if section.settings.swipe_on_mobile -%}
     <div class="swiper-scrollbar"></div>
     
     <!-- If we need navigation buttons -->
@@ -95,7 +95,7 @@
   <div class="swiper-button-next"></div>
       {%- endif -%}
       
-      {% comment %}{% endcomment %}
+      {% comment %}
 
       {%- if section.settings.swipe_on_mobile -%}
         <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
@@ -110,7 +110,7 @@
         </div>
       {%- endif -%}
       
-      
+      {% endcomment %}
       
        {% if section.settings.swipe_on_mobile %}
       </div>
