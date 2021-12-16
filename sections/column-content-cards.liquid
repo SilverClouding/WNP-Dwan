@@ -16,6 +16,9 @@
   .title{
     color:{{section.settings.title_color}};
   }
+  .title{
+    color:{{section.settings.title_font_size}};
+  }
   @media screen and (min-width: 750px){
     #shopify-section-{{section.id}} .multicolumn.no-heading:not(.background-secondary) {
       margin-top:0;
@@ -262,6 +265,16 @@
         "max": 100,
         "step": 1,
         "label": "title Color",
+        "default": 35
+      },
+	  {
+        "type": "range",
+        "id": "title_font_size",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Title Font Size",
         "default": 35
       }
   ],
