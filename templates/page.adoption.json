@@ -331,7 +331,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/step1.png",
             "title": "",
-            "text": "<p><strong>Step 1: Plan Your Visit<\/strong><br\/>Pop over and visit the animals available for adoption. <br\/>Find out more about your furry friend and get to know their personalities to see if it’s a match!<\/p>",
+            "text": "<p><strong>Step 1: Plan Your Visit<\/strong><br\/>Pop over and visit the <br\/>animals available for <br\/>adoption. <br\/>Find out more about your <br\/>furry friend and get to <br\/>know their personalities to <br\/>see if it’s a match!<\/p>",
             "button_label": "",
             "button_link": ""
           }
