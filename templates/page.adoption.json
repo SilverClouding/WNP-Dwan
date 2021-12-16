@@ -351,7 +351,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/step3.png",
             "title": "",
-            "text": "<p><strong>Step 3: Adoption Free<\/strong><br\/>Once your application is received & processed, a Homing Assistant will be in touch. A quick chat on the phone or home visit may be required. Different adoption fees will apply dependant on the species. *100% adoption fee goes to the shelter<\/p>",
+            "text": "<p><strong>Step 3: Adoption Free<\/strong><br\/>Once your application is <br\/>received & processed, a <br\/>Homing Assistant will be <br\/>in touch. A quick chat on <br\/>the phone or home visit <br\/>may be required. Different <br\/>adoption fees will apply <br\/>dependant on the <br\/>species. *100% adoption <br\/>fee goes to the shelter<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -361,7 +361,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/step4.png",
             "title": "",
-            "text": "<p><strong>Step 4: Bring Your Paw Friend Home<\/strong><br\/>Congratulations! You have made a new best friend. Spread the word and refer other animals in need to your friends. Let’s help clear the shelters!<\/p>",
+            "text": "<p><strong>Step 4: Bring Your Paw Friend Home<\/strong><br\/>Congratulations! You have <br\/>made a new best friend. <br\/>Spread the word and refer <br\/>other animals in need to <br\/>your friends. Let’s help <br\/>clear the shelters!<\/p>",
             "button_label": "",
             "button_link": ""
           }
