@@ -383,7 +383,7 @@
         "section_width": 100,
         "swipe_on_mobile": false,
         "top_padding": 0,
-        "bottom_padding": 65,
+        "bottom_padding": 0,
         "title_color": "",
         "title_font_size": 35
       }
