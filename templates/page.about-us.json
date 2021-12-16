@@ -200,6 +200,59 @@
         "sec_class": "multi-four-images"
       }
     },
+    "1639658963cbfe40f4": {
+      "type": "theme-multicolumn",
+      "blocks": {
+        "16396589631c784c0c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pic2.jpg",
+            "title": "We are proud",
+            "text": "<p>to be the first pet shop in hong kong to not only host regular adoption events but to build in-store adoption stations to connect homeless puppies and kittens with loving parents.<\/p>"
+          }
+        },
+        "16396589631c784c0c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pic3.jpg",
+            "title": "We stand tall",
+            "text": "<p>to know that all proceeds from our self-dog wash go back to our community work.<\/p>"
+          }
+        },
+        "16396589631c784c0c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pic4.jpg",
+            "title": "We are thankful",
+            "text": "<p>that customers, vets, restaurants, shops and suppliers have joined hands to make our annual event, Operation Santa Paws, successful in delivering food, beds, toys, and supplies to animals shelters around Hong Kong.<\/p>"
+          }
+        },
+        "5425c256-5ed5-4ff6-8692-a0f587520fd6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pic1.jpg",
+            "title": "We are grateful",
+            "text": "<p>to given chance to work with so many dedicated and amazing leaders and volunteers in animal and children non-profits.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16396589631c784c0c-0",
+        "16396589631c784c0c-1",
+        "16396589631c784c0c-2",
+        "5425c256-5ed5-4ff6-8692-a0f587520fd6"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
     "1638447520c7d2c592": {
       "type": "image-with-text",
       "blocks": {
@@ -326,6 +379,7 @@
     "16384414226ce52222",
     "1638442037a72cd96a",
     "16384462346d0d0284",
+    "1639658963cbfe40f4",
     "1638447520c7d2c592",
     "163844781875398cff",
     "16384478795d002435",
