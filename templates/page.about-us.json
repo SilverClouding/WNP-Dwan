@@ -310,6 +310,48 @@
         "sec_class": "whiskers-paw"
       }
     },
+    "1639659668d4ed86a3": {
+      "type": "theme-multicolumn",
+      "blocks": {
+        "16396596689bdc6722-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><strong>“Be the person your dog thinks you are”<\/strong> is the motto we bring into work everyday.<\/p>"
+          }
+        },
+        "16396596689bdc6722-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16396596689bdc6722-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16396596689bdc6722-0",
+        "16396596689bdc6722-1",
+        "16396596689bdc6722-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "section_width": 100,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "16384478795d002435": {
       "type": "multicolumn",
       "blocks": {
@@ -383,6 +425,7 @@
     "1639658963cbfe40f4",
     "1638447520c7d2c592",
     "163844781875398cff",
+    "1639659668d4ed86a3",
     "16384478795d002435",
     "main"
   ]
