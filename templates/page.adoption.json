@@ -383,7 +383,9 @@
         "section_width": 100,
         "swipe_on_mobile": false,
         "top_padding": 0,
-        "bottom_padding": 65
+        "bottom_padding": 65,
+        "title_color": 35,
+        "title_font_size": 35
       }
     },
     "16395772189326842d": {
@@ -424,7 +426,9 @@
         "section_width": 42,
         "swipe_on_mobile": false,
         "top_padding": 65,
-        "bottom_padding": 65
+        "bottom_padding": 65,
+        "title_color": 35,
+        "title_font_size": 19
       }
     }
   },
