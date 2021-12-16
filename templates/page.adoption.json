@@ -341,7 +341,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/step2.png",
             "title": "",
-            "text": "<p><strong>Step 2: Apply<\/strong><br\/>Now that you have found a furry friend you are interested in bringing home, fill out the application form. An adoption coordinator will get in touch with you for the next step.<\/p>",
+            "text": "<p><strong>Step 2: Apply<\/strong><br\/>Now that you have found <br\/>a furry friend you are <br\/>interested in bringing <br\/>home, fill out the <br\/>application form. An <br\/>adoption coordinator will <br\/>get in touch with you for <br\/>the next step.<\/p>",
             "button_label": "",
             "button_link": ""
           }
