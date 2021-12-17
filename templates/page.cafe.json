@@ -81,7 +81,7 @@
       "type": "main-page",
       "settings": {
         "page_title": false,
-        "section_width": 90
+        "section_width": 75
       }
     }
   },
