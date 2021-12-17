@@ -167,8 +167,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/pic1.jpg",
-            "title": "We are grateful",
-            "text": "<p>to given chance to work with so many dedicated and amazing leaders and volunteers in animal and children non-profits.<\/p>"
+            "title": "",
+            "text": "<p><strong>We are grateful<\/strong> <br\/>to given chance to work with so many dedicated and amazing leaders and volunteers in animal and children non-profits.<\/p>"
           }
         }
       },
