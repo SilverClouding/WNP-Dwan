@@ -143,8 +143,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/pic2.jpg",
-            "title": "We are proud",
-            "text": "<p>to be the first pet shop in hong kong to not only host regular adoption events but to build in-store adoption stations to connect homeless puppies and kittens with loving parents.<\/p>"
+            "title": "",
+            "text": "<p><strong>We are proud<\/strong> <br\/>to be the first pet shop in hong kong to not only host regular adoption events but to build in-store adoption stations to connect homeless puppies and kittens with loving parents.<\/p>"
           }
         },
         "16396589631c784c0c-1": {
