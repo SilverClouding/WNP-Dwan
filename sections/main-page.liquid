@@ -4,6 +4,14 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
 {%- if section.settings.page_title or page.content != blank -%}
 <div class="page-width page-width--narrow">
   {%- if section.settings.page_title -%}
@@ -11,7 +19,7 @@
     {{ page.title | escape }}
   </h1>
   {% endif %}
-  <div class="rte">
+  <div class="rte section_width">
     {{ page.content }}
   </div>
 </div>
@@ -29,7 +37,17 @@
       "id": "page_title",
       "default": false,
       "label": "Page Title"
-    }
+    },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      }
 ]
 }
 {% endschema %}
