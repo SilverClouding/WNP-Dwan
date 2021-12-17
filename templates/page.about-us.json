@@ -57,20 +57,11 @@
           "settings": {
             "text": "<p>Aside from animals, we care deeply about our community too. What we do or how we do things matters to us.<\/p>"
           }
-        },
-        "16384269892b584b49-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
         "16384269892b584b49-0",
-        "16384269892b584b49-1",
-        "16384269892b584b49-2"
+        "16384269892b584b49-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/community.jpg",
@@ -143,62 +134,6 @@
         "color_scheme": "background-2",
         "full_width": true,
         "sec_class": "team-con"
-      }
-    },
-    "16384462346d0d0284": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16384462346bc5d7d6-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pic2.jpg",
-            "title": "We are proud",
-            "text": "<p>to be the first pet shop in hong kong to not only host regular adoption events but to build in-store adoption stations to connect homeless puppies and kittens with loving parents.<\/p>"
-          }
-        },
-        "16384462346bc5d7d6-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pic3.jpg",
-            "title": "We stand tall",
-            "text": "<p>to know that all proceeds from our self-dog wash go back to our community work.<\/p>"
-          }
-        },
-        "16384462346bc5d7d6-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pic4.jpg",
-            "title": "We are thankful",
-            "text": "<p>that customers, vets, restaurants, shops and suppliers have joined hands to make our annual event, Operation Santa Paws, successful in delivering food, beds, toys, and supplies to animals shelters around Hong Kong.<\/p>"
-          }
-        },
-        "23c6e60e-7011-4d69-9422-b2f4e957785d": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pic1.jpg",
-            "title": "We are grateful",
-            "text": "<p>to given chance to work with so many dedicated and amazing leaders and volunteers in animal and children non-profits.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16384462346bc5d7d6-0",
-        "16384462346bc5d7d6-1",
-        "16384462346bc5d7d6-2",
-        "23c6e60e-7011-4d69-9422-b2f4e957785d"
-      ],
-      "settings": {
-        "title": "",
-        "section_width": 80,
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true,
-        "sec_class": "multi-four-images"
       }
     },
     "1639658963cbfe40f4": {
@@ -365,62 +300,6 @@
         "swipe_on_mobile": true
       }
     },
-    "16384478795d002435": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "163844787962d7d61e-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159.png",
-            "title": "",
-            "text": "<p><strong>“Be the person your dog thinks you are”<\/strong> is the motto we bring into work everyday.<\/p>"
-          }
-        },
-        "163844787962d7d61e-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-1.png",
-            "title": "",
-            "text": "<p><strong>“Always show those who love you how excited we are to see them”<\/strong> is how we treat each other and our friends<\/p>"
-          }
-        },
-        "163844787962d7d61e-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-2.png",
-            "title": "",
-            "text": "<p><strong>“Walk away if you can’t chew it, eat it or pee on it”<\/strong> is how we make every problem work for us.<br\/><br\/><strong>“We have 9 lives’<\/strong> and we aren’t afraid of to try new things.<\/p>"
-          }
-        },
-        "507593bf-8f66-4d9b-b8a0-630569058ae4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_159-3.png",
-            "title": "",
-            "text": "<p><strong>“Live with a pure heart and act with integrity” <\/strong>is our approach to every decision about our product choices and the things we do.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163844787962d7d61e-0",
-        "163844787962d7d61e-1",
-        "163844787962d7d61e-2",
-        "507593bf-8f66-4d9b-b8a0-630569058ae4"
-      ],
-      "settings": {
-        "title": "",
-        "section_width": 80,
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "sec_class": "multi-circle-images"
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -435,12 +314,10 @@
     "16384269895954df72",
     "16384414226ce52222",
     "1638442037a72cd96a",
-    "16384462346d0d0284",
     "1639658963cbfe40f4",
     "1638447520c7d2c592",
     "163844781875398cff",
     "1639659668d4ed86a3",
-    "16384478795d002435",
     "main"
   ]
 }
