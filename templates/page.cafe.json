@@ -46,7 +46,7 @@
     "16397245896b773390": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n<div class=\"cust-content\"><h2>Whiskers N Paws Café Opening Hours:<\/h2>\n\n<div class=\"address-con\">Monday - Friday 10AM - 6PM<br>\nWeekends & Public Holiday  10AM - 7PM <br>\n10\/F Horizon Plaza, Ap Lei Chau, HK<\/div>\n<br><br><br><br>\n<p>Limited hot dishes available on Monday :<a href=\"#\">Check here for Monday Special Menu<\/a><\/p><\/div>"
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"cust-content\"><h2>Whiskers N Paws Café Opening Hours:<\/h2>\n\n<div class=\"address-con\">Monday - Friday 10AM - 6PM<br>\nWeekends & Public Holiday  10AM - 7PM <br>\n10\/F Horizon Plaza, Ap Lei Chau, HK<\/div>\n<p class=\"cust-paragraph\">Limited hot dishes available on Monday :<a href=\"#\">Check here for Monday Special Menu<\/a><\/p><\/div><\/div>"
       }
     },
     "1638442037a72cd96a": {
