@@ -137,10 +137,10 @@ jQuery(function($){
           }
         });
         
-        
+        $('.qv-content .price__badge-new').hide();
         $(product.tags).each(function (i, v) {
            if (v.indexOf('New') > -1){
-             console.log(v);
+              $('.qv-content .price__badge-new').show();
              }
         });
         
