@@ -243,6 +243,13 @@ body.page-your-shopping-cart {
 
 {% endif %}
 
+{% for block in section.blocks %}
+{% case block.type %}
+{%- when 'shop_button' -%}
+
+{%- endcase -%}
+{% endfor%}
+
 </div>
 
 
