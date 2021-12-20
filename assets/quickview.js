@@ -122,13 +122,14 @@ jQuery(function($){
           });
         });
         $(product.variants).each(function (i, v) {
-          console.log( v);
+         
           if (v.available == false) {
             $('.qv-add-button').prop('disabled', true).val('Sold Out');
             $('.qv-add-to-cart').hide();
             $('.qv-product-price').text('Sold Out').show();
             return true
-          } else {
+          } else { 
+            console.log( v);
             price = parseFloat(v.price / 100).toFixed(2);
             original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
             $('.qv-product-price').text('$' + price);
