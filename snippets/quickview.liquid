@@ -21,6 +21,15 @@
 
 <div class="qv-content">
     <div class="holder"> 
+      
+       <span class="badge price__badge-new color-{{ settings.sale_badge_color_scheme }}">
+          {{ 'products.product.new' | t }}
+        </span>
+       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+          {{ 'products.product.on_sale' | t }}
+        </span>
+      
+      
       <h4 class="qv-product-vendor"></h4>
         <h3 class="qv-product-title"></h3>  
       <h5 class="qv-product-price"></h5>
