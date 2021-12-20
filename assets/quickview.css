@@ -291,3 +291,12 @@ button.slick-next.slick-arrow {
 	}
 }
  
+
+.qv-content .badge {
+    display: none;
+    border-radius: inherit;
+}
+
+.qv-content .badge.show {
+    display: inline-flex;
+}
