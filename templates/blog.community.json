@@ -75,6 +75,8 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_title": false,
+        "show_readmore": true,
         "layout": "collage",
         "show_image": true,
         "image_height": "medium",
