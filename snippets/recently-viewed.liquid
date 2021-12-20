@@ -22,9 +22,7 @@
 </script>
 {% endraw %}
 
-<script>
-  showRecentlyViewed( { howManyToShow:1 } );
-</script>
+
 
 <style>
   /* Some styles to get you started */
@@ -263,7 +261,7 @@ font-weight: normal;
 
       showRecentlyViewed: function(params) {
 
-        var params = params || {};
+        var params = 1 || {};
 
         // Update defaults.
         jQuery.extend(config, params);
