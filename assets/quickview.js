@@ -107,7 +107,7 @@ jQuery(function($){
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
             
 //             console.log(option);
-            console.log("value"+value);
+//             console.log("value"+value);
 //              console.log('opt'+opt);
             var checked = '';
             if(i == 0){
@@ -122,7 +122,7 @@ jQuery(function($){
           });
         });
         $(product.variants).each(function (i, v) {
-//           console.log( v);
+          console.log( v);
           if (v.available == false) {
             $('.qv-add-button').prop('disabled', true).val('Sold Out');
             $('.qv-add-to-cart').hide();
