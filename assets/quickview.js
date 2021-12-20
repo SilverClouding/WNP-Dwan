@@ -13,6 +13,7 @@ jQuery(function($){
       var product_handle = $(this).data('handle');
       $('#quick-view').addClass(product_handle);
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+        console.log(product);
         var title = product.title;
         var type = product.vendor;
         var price = 0;
@@ -27,7 +28,7 @@ jQuery(function($){
         $('.qv-product-description').html(desc.substring(0, 300).split(" ").slice(0, -1).join(" ") + "...");
         $('.view-product').attr('href', url);
         var imageCount = $(images).length;
-        console.log(imageCount);
+//         console.log(imageCount);
         $(images).each(function (i, image) {
           if (i == imageCount - 1) {
             var image_embed = '<div class="slide"><img src="' + image + '"></div>';
@@ -98,9 +99,9 @@ jQuery(function($){
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
             
-            console.log(option);
-            console.log("value"+value);
-             console.log('opt'+opt);
+//             console.log(option);
+//             console.log("value"+value);
+//              console.log('opt'+opt);
             var checked = '';
             if(i == 0){
             checked = 'checked';
@@ -114,7 +115,7 @@ jQuery(function($){
           });
         });
         $(product.variants).each(function (i, v) {
-          console.log( v);
+//           console.log( v);
           if (v.available == false) {
             $('.qv-add-button').prop('disabled', true).val('Sold Out');
             $('.qv-add-to-cart').hide();
