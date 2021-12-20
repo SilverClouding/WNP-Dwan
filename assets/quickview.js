@@ -28,7 +28,7 @@ jQuery(function($){
         $('.qv-product-title').text(title);
         $('.qv-product-vendor').text(type);
         
-        if (desc != null){
+        if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
         }
         
