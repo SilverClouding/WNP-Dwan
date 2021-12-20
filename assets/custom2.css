@@ -44,3 +44,13 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
 .card__badge.sold_out_right .badge {
     margin-right: 0;
 }
+
+.featured_col_Swiper2 li.swiper-slide {
+   max-width: 90%!important;
+    width: 100%!important;
+}
+
+.featured_col_Swiper li.swiper-slide {
+    max-width: 90%!important;
+    width: 100%!important;
+}
