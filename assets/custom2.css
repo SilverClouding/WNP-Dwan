@@ -58,3 +58,7 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
     width: 100%!important;
   }
 }
+
+.rich-text__blocks li.active a h3 {
+    color: #f5694d!important;
+}
