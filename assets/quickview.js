@@ -30,9 +30,10 @@ jQuery(function($){
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
+          $('.view-product').attr('href', url);
         }
         
-        $('.view-product').attr('href', url);
+        
         var imageCount = $(images).length;
         $(images).each(function (i, image) {
           if (i == imageCount - 1) {
