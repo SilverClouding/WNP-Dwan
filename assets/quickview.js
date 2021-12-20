@@ -136,6 +136,16 @@ jQuery(function($){
             return false
           }
         });
+        
+        
+        $(product.tags).each(function (i, v) {
+           if (v.indexOf('New') > -1){
+             console.log(v);
+             }
+        });
+        
+        
+        
       });
 
       $(document).on("change", "#quick-view select, .radio_butt", function () {
