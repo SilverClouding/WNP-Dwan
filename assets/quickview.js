@@ -144,7 +144,7 @@ jQuery(function($){
           
            if (v.indexOf('New') > -1){
              console.log(v);
-              $('.qv_price__badge-new').show();
+              $('.qv_price__badge-new').addClass('show');
              }
         });
         
