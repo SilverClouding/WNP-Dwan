@@ -37,12 +37,13 @@
         </div>
       </div>
     {%- endif -%}
+     </a>
 
     <div class="article-card__info">
       <header class="article-card__header">
-        <h2 class="article-card__title" id="Article-{{ article.id }}">
+        <a href="{{ article.url }}"> <h2 class="article-card__title" id="Article-{{ article.id }}">
           {{ article.title | escape }}
-        </h2>
+        </h2> </a>
         {%- if show_date -%}
           <span class="circle-divider caption-with-letter-spacing">
             {{- article.published_at | time_tag: format: 'date' -}}
@@ -71,5 +72,5 @@
   {% if section.settings.show_readmore %}
   <a class="readmore_article" href="{{ article.url }}">Read More</a>
   {% endif %}  
-  </a>
+ 
 </article>
