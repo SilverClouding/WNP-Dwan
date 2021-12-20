@@ -30,6 +30,7 @@ jQuery(function($){
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
+          $('.view-product').removeClass('hide');
           $('.view-product').attr('href', url);
         }
         
