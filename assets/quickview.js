@@ -8,8 +8,8 @@ jQuery(function($){
   });
 
   function quickView() {
-    $('.qv-content .price__badge-new').hide();
-    $('.qv-content .price__badge-sale').hide();
+    $('.qv_price__badge-new').hide();
+    $('.qv_price__badge-sale').hide();
     $(document).on('click',".quick-view", function () {
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
@@ -142,7 +142,7 @@ jQuery(function($){
         
         $(product.tags).each(function (i, v) {
            if (v.indexOf('New') > -1){
-              $('.qv-content .price__badge-new').show();
+              $('.qv_price__badge-new').show();
              }
         });
         
