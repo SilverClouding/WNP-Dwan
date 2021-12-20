@@ -107,7 +107,7 @@ jQuery(function($){
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
             
 //             console.log(option);
-//             console.log("value"+value);
+            console.log("value"+value);
 //              console.log('opt'+opt);
             var checked = '';
             if(i == 0){
