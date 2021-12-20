@@ -1,12 +1,91 @@
 {
   "sections": {
+    "16400067371713362a": {
+      "type": "image-banner",
+      "blocks": {
+        "1640006737c89402ce-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1640006737c89402ce-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1640006737c89402ce-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1640006737c89402ce-0",
+        "1640006737c89402ce-1",
+        "1640006737c89402ce-2"
+      ],
+      "settings": {
+        "sec_class": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "164000675884203c84": {
+      "type": "rich-text",
+      "blocks": {
+        "1640006758e015d420-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "5860a260-7ffd-43e0-ac5d-419059a26813": {
+          "type": "linklist",
+          "settings": {
+            "main_link_list": "community"
+          }
+        }
+      },
+      "block_order": [
+        "1640006758e015d420-0",
+        "5860a260-7ffd-43e0-ac5d-419059a26813"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false
       }
     }
   },
   "order": [
+    "16400067371713362a",
+    "164000675884203c84",
     "main"
   ]
 }
