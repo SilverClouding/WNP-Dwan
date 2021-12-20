@@ -49,12 +49,12 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
 @media(max-width:680px){
 
   .featured_col_Swiper2 li.swiper-slide {
-    max-width: 90%!important;
-    width: 100%!important;
+    max-width: auto!important;
+/*     width: 100%!important; */
   }
 
   .featured_col_Swiper li.swiper-slide {
-    max-width: 90%!important;
-    width: 100%!important;
+    max-width: auto!important;
+/*     width: 100%!important; */
   }
 }
