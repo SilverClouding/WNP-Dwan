@@ -141,15 +141,17 @@ jQuery(function($){
         
         
         $(product.tags).each(function (i, v) {
-           if (v.indexOf('New') > -1){
-             console.log(v);
-              $('.qv_price__badge-new').addClass('show');
-             }
+          if (v.indexOf('New') > -1){
+            console.log(v);
+            $('.qv_price__badge-new').addClass('show');
+          }else{
+            if(product.compare_at_price > product.price ){
+              $('.qv_price__badge-sale').addClass('show');
+            }
+
+          }
         });
         
-        if(product.compare_at_price > product.price ){
-        $('.qv_price__badge-sale').addClass('show');
-        }
         
         
       });
