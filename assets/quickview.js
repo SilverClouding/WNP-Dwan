@@ -117,7 +117,7 @@ jQuery(function($){
             }
             
             
-            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+''+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+''+value.toLowerCase()+'">'+value+'</label>');
+            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase()+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase()+'">'+value+'</label>');
             
           });
         });
