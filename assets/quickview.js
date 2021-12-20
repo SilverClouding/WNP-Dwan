@@ -14,7 +14,7 @@ jQuery(function($){
       $('#quick-view').addClass(product_handle);
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         var title = product.title;
-        var type = product.type;
+        var type = product.vendor;
         var price = 0;
         var original_price = 0;
         var desc = product.description;
@@ -23,7 +23,7 @@ jQuery(function($){
         var options = product.options;
         var url = '/products/' + product_handle;
         $('.qv-product-title').text(title);
-        $('.qv-product-type').text(type);
+        $('.qv-product-vendor').text(type);
         $('.qv-product-description').html(desc.substring(0, 300).split(" ").slice(0, -1).join(" ") + "...");
         $('.view-product').attr('href', url);
         var imageCount = $(images).length;
