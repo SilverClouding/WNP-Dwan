@@ -65,7 +65,7 @@
           "type": "content",
           "settings": {
             "heading": "{{ product.metafields.my_fields.title_for_1st_tab.value }}",
-            "text": "<p>{{ product.metafields.my_fields.description | metafield_tag }}<\/p>"
+            "text": "<p>{{ product.metafields.my_fields.tab_1_content.value }}<\/p>"
           }
         },
         "caaa1210-0d12-4b90-ad24-6cc6d346b71a": {
@@ -178,7 +178,7 @@
             "secondary_btn_bg_color": "rgba(0,0,0,0)",
             "secondary_btn_border_color": "#000000",
             "secondary_btn_text_color": "#000000",
-            "border_color": "rgba(0,0,0,0.15)",
+            "border_color": "#000000",
             "heading_font": "helvetica_n4",
             "enable_rich_snippets": true,
             "show_location": true,
