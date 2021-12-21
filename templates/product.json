@@ -65,7 +65,7 @@
           "type": "content",
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_1_title.value }}",
-            "text": "<p>{{ product.metafields.my_fields.tab_1_content.value }}<\/p>"
+            "text": ""
           }
         },
         "caaa1210-0d12-4b90-ad24-6cc6d346b71a": {
