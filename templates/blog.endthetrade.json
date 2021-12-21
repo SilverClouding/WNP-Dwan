@@ -337,6 +337,25 @@
         "top_padding": 10,
         "bottom_padding": 25
       }
+    },
+    "1640077444aef1daad": {
+      "type": "rich-text",
+      "blocks": {
+        "1640077444b41e792b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WildAid enlists popular Asian, African and Western stars to spread the message about wildlife crime. Currently working with more than 100 ambassadors, we deliver high-impact, culturally sensitive campaigns that reach hundreds of millions of people each year. Our ambassadors represent film, television, music, sports, politics, religion, business and more.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640077444b41e792b-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -357,6 +376,7 @@
     "1640070251fa08ca3a",
     "main",
     "1640076947a75dd97b",
-    "164007695350e2b98e"
+    "164007695350e2b98e",
+    "1640077444aef1daad"
   ]
 }
