@@ -1,7 +1,5 @@
 <div class="{% if section.settings.include_margins %}page-width{% endif %}">
-  {%- for block in section.blocks -%}
-    {% render block %}
-  {%- endfor -%}
+  <div style="margin-top:{{section.settings.top_padding}}; margin-bottom:{{section.settings.bottom_padding}} "></div>
 </div>
 
 {% schema %}
@@ -15,7 +13,28 @@
       "id": "include_margins",
       "default": true,
       "label": "t:sections.apps.settings.include_margins.label"
-    }
+    },
+
+	{
+        "type": "range",
+        "id": "top_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Top margin",
+        "default": 65
+      },
+	  {
+        "type": "range",
+        "id": "bottom_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Bottom margin",
+        "default": 65
+      }
   ],
   "presets": [
     {
