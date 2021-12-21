@@ -169,6 +169,33 @@
         "show_date": true,
         "show_author": false
       }
+    },
+    "1640069784319e024b": {
+      "type": "rich-text",
+      "blocks": {
+        "1640069784542fb11b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "#LoveAnimalsLoveLife Collection",
+            "heading_size": "h1"
+          }
+        },
+        "1640069784542fb11b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our limited edition #LoveAnimalsLoveLife collection packs include a stylish drawstring bag and an #ENDTHETRADE T-shirt. Cat, Dog, Rhino and Shark packs also include a custom-designed 3D Origami that you can make in the comfort of your home. Decorate your animal to express your individuality and creativity. Share with us on Facebook and Instagram by tagging @whiskersnpaws and @wildaidhk. (100% net proceeds goes towards WildAid HK)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640069784542fb11b-0",
+        "1640069784542fb11b-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -180,6 +207,7 @@
     "1640067299060d358c",
     "1640069747c1c75b6a",
     "1640068262e98b8790",
-    "main"
+    "main",
+    "1640069784319e024b"
   ]
 }
