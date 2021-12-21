@@ -63,6 +63,34 @@
         "slider": false
       }
     },
+    "164006715555c60445": {
+      "type": "image-with-text",
+      "blocks": {
+        "1640067155eb7912bd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Together we can put a final end to the wildlife trade."
+          }
+        },
+        "1640067155eb7912bd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whiskers N Paws is partnering with WildAid, a renowned global environmental organisation, to help spread awareness on #EndTheTrade and garner 1 million signatures on the petition.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640067155eb7912bd-0",
+        "1640067155eb7912bd-1"
+      ],
+      "settings": {
+        "section_width": 100,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -80,6 +108,7 @@
     "1640066805964d9d4f",
     "1640066819eb24625f",
     "164006682368642e55",
+    "164006715555c60445",
     "main"
   ]
 }
