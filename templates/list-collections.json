@@ -126,7 +126,7 @@
         "image_2": "shopify:\/\/shop_images\/Group_1d97.png",
         "title": "Collections",
         "text": "Here at whiskers n paws, we got you and your paw friend covered",
-        "display_collection": "display_all",
+        "display_collection": "display_selected",
         "sort": "alphabetical",
         "image_ratio": "square",
         "color_scheme": "none",
