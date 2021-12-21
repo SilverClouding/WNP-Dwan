@@ -16,7 +16,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
   </div>
   
     {% for block in section.blocks %}
-   <div id="tab-{{forloop.index}}" class="tabcontent-cus">{{ block.settings.text }}</div>
+   <div id="tab-{{forloop.index}}" class="tabcontent-cus">{% if block.settings.show_desc %} {{product.description}} {% else %}{{ block.settings.text }}{% endif %}</div>
   {% endfor %}
   
   
@@ -37,7 +37,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
         </div>
         {% render 'icon-caret' %}
       </summary>
-      <div title="{{product.title}}" class="accordion__content rte">{{product.description}} {% if block.settings.show_desc %} {% else %}{{ block.settings.text }}{% endif %}</div>
+      <div title="{{product.title}}" class="accordion__content rte">{% if block.settings.show_desc %} {{product.description}} {% else %}{{ block.settings.text }}{% endif %}</div>
     </details>
   </div>
  {% endfor %}   
