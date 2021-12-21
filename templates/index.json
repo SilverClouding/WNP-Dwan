@@ -13,7 +13,7 @@
             "desktop_text_box_position": "center",
             "show_text_box": false,
             "image_overlay_opacity": 0,
-            "color_scheme": "accent-1",
+            "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
             "show_text_below": true,
             "heading": "Curated because we  are fur parents too.",
@@ -259,7 +259,9 @@
         "section_width": 66,
         "swipe_on_mobile": false,
         "top_padding": 0,
-        "bottom_padding": 0
+        "bottom_padding": 0,
+        "title_color": "",
+        "title_font_size": 35
       }
     },
     "16365383186b9876cd": {
@@ -363,7 +365,9 @@
         "section_width": 85,
         "swipe_on_mobile": false,
         "top_padding": 65,
-        "bottom_padding": 65
+        "bottom_padding": 65,
+        "title_color": "",
+        "title_font_size": 35
       }
     },
     "16365411454faad6c2": {
