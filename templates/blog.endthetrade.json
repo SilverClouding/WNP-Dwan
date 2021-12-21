@@ -84,9 +84,10 @@
         "1640067155eb7912bd-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2021-07-14_at_11.48_1_89a5f844-62b6-4ab8-b462-32da0648913f.png",
         "section_width": 100,
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "layout": "image_first",
         "sec_class": ""
       }
