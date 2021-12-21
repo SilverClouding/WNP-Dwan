@@ -127,6 +127,14 @@
         "sec_class": ""
       }
     },
+    "1640069747c1c75b6a": {
+      "type": "divider",
+      "settings": {
+        "include_margins": true,
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
     "1640068262e98b8790": {
       "type": "custom-buttons",
       "blocks": {
@@ -135,6 +143,7 @@
           "settings": {
             "button_text": "#Signtosave",
             "button_link": "",
+            "button_width": 20,
             "color_scheme": "accent-1"
           }
         }
@@ -169,6 +178,7 @@
     "164006715555c60445",
     "1640068257f7044721",
     "1640067299060d358c",
+    "1640069747c1c75b6a",
     "1640068262e98b8790",
     "main"
   ]
