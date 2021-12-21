@@ -4675,8 +4675,17 @@ select:focus, select:hover{
   display:block !important;
   }
   .collection-list__item .card--light-border:hover .media--hover-effect{
+  position:relative;
+  }
+  .collection-list__item .card--light-border:hover .media--hover-effect:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
    background:#44444d !important;
-    position:relative;
   }
 
 
