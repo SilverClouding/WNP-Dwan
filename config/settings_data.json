@@ -315,6 +315,8 @@
           "9fe32dfd-c952-4dc4-b4a8-f9ce105aae82": {
             "type": "products",
             "settings": {
+              "btn_text": "Shop All Brands",
+              "button_link": "#"
             }
           },
           "mega-menu-5-0": {
