@@ -21,6 +21,7 @@
       {%- if paginate.previous -%}
         <li>
           <a href="{{ paginate.previous.url }}{{ anchor }}" class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.previous' | t }}">
+            Previous
             {% render 'icon-caret' %}
           </a>
         </li>
@@ -43,6 +44,7 @@
       {%- if paginate.next -%}
         <li>
           <a href="{{ paginate.next.url }}{{ anchor }}" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.next' | t }}" >
+           Next
             {%- render 'icon-caret' -%}
           </a>
         </li>
