@@ -135,7 +135,9 @@
             <div class="overlay-card"></div>
             <div class="card__text-spacing card__text-hover">
               <h2 class="h1 a">
-                {{- collection.title -}}{%- if collection.description == blank -%}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endif %}
+                <a href="{{ collection.url }}">
+                  {{- collection.title -}}{%- if collection.description == blank -%}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endif %}
+                </a>
               </h2>
 
               {%- if collection.description != blank -%}
