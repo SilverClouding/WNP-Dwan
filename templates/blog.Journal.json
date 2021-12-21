@@ -80,10 +80,10 @@
       "type": "main-blog",
       "settings": {
         "show_title": false,
-        "show_readmore": false,
+        "show_readmore": true,
         "layout": "collage",
         "show_image": true,
-        "image_height": "medium",
+        "image_height": "adapt",
         "show_date": true,
         "show_author": false
       }
