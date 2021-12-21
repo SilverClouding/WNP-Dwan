@@ -58,6 +58,11 @@
         "enable_video_looping": false
       }
     },
+    "metafield-icon-text": {
+      "type": "metafield-icon-text",
+      "settings": {
+      }
+    },
     "product-details-tab": {
       "type": "product-details-tab",
       "blocks": {
@@ -205,6 +210,7 @@
   "order": [
     "main",
     "product-details-tab",
+    "metafield-icon-text",
     "product-recommendations",
     "1637669479d78c349e",
     "1637740585579a4231"
