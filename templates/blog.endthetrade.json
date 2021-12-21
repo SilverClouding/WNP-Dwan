@@ -240,6 +240,37 @@
         "sec_class": ""
       }
     },
+    "16400703110fc2fe9e": {
+      "type": "divider",
+      "settings": {
+        "include_margins": true,
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "1640070251fa08ca3a": {
+      "type": "custom-buttons",
+      "blocks": {
+        "1640070251401d799f-0": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Donation",
+            "button_link": "",
+            "button_width": 20,
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1640070251401d799f-0"
+      ],
+      "settings": {
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -267,6 +298,8 @@
     "1640069976922bfe06",
     "1640070225a5dfc3a9",
     "1640070222d5d9f851",
+    "16400703110fc2fe9e",
+    "1640070251fa08ca3a",
     "main"
   ]
 }
