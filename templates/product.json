@@ -107,6 +107,7 @@
     },
     "metafield-icon-text": {
       "type": "metafield-icon-text",
+      "disabled": true,
       "blocks": {
         "17320d80-23f0-45fc-ba4f-4f3194c47e1c": {
           "type": "column",
