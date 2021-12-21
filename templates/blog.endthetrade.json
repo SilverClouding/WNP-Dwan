@@ -158,18 +158,6 @@
         "sec_class": ""
       }
     },
-    "main": {
-      "type": "main-blog",
-      "settings": {
-        "show_title": false,
-        "show_readmore": false,
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false
-      }
-    },
     "1640069784319e024b": {
       "type": "rich-text",
       "blocks": {
@@ -212,6 +200,29 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1640069976922bfe06": {
+      "type": "video",
+      "settings": {
+        "heading": "about wildaid",
+        "cover_image": "shopify:\/\/shop_images\/Screenshot_2021-07-14_at_11.48_2.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "section_width": 100
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_title": false,
+        "show_readmore": false,
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false
+      }
     }
   },
   "order": [
@@ -223,8 +234,9 @@
     "1640067299060d358c",
     "1640069747c1c75b6a",
     "1640068262e98b8790",
-    "main",
     "1640069784319e024b",
-    "16400698433e6a11c1"
+    "16400698433e6a11c1",
+    "1640069976922bfe06",
+    "main"
   ]
 }
