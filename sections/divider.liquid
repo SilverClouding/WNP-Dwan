@@ -1,5 +1,5 @@
 <div class="{% if section.settings.include_margins %}page-width{% endif %}">
-  <div style="margin-top:{{section.settings.top_padding}}; margin-bottom:{{section.settings.bottom_padding}} "></div>
+  <div style="margin-top:{{section.settings.top_padding}}px; margin-bottom:{{section.settings.bottom_padding}}px;"></div>
 </div>
 
 {% schema %}
@@ -21,7 +21,7 @@
         "min": 0,
         "max": 100,
         "step": 1,
-        "unit": "%",
+        "unit": "px",
         "label": "Top margin",
         "default": 65
       },
@@ -31,7 +31,7 @@
         "min": 0,
         "max": 100,
         "step": 1,
-        "unit": "%",
+        "unit": "px",
         "label": "Bottom margin",
         "default": 65
       }
