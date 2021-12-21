@@ -1,7 +1,182 @@
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+@media screen and (min-width: 990px){
+  .grid--5-col-desktop .multicolumn-list__item {
+    max-width: 20%!important;
+  }
+  }
+  
+</style>
+
+<div section-name="icon-text-section" class="trust-badges icon-text-controlar {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
+  <div class="section_width custom-section-width">
+  <div class="trust-badges_rich-text__blocks">
+     <h2 class="{{ section.settings.heading_size }}" {{ section.shopify_attributes }}>{{ section.settings.heading | escape }}</h2>
+     <div class="rich-text__text rte" {{ section.shopify_attributes }}>{{ section.settings.text }}</div>
+  </div>
+  
+  
+ <div class="slider-mobile-gutter">
+      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--5-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+        id="Slider-{{ section.id }}"
+        role="list"
+      >
+    
+    {%- for block in section.blocks -%}
+    <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+            <div class="multicolumn-card">
+              {%- if block.settings.image != blank -%}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                <div class="">
+                    
+                  <img
+                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                               {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                               {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                               {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}
+                               {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+                       src="{{ block.settings.image | img_url: '550x' }}"
+                       sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                              (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                              calc(100vw - 30px)"
+                       alt="{{ block.settings.image.alt }}"
+                       height="{{ block.settings.image.height }}"
+                       width="{{ block.settings.image.width }}"
+                       loading="lazy"
+                       >
+                </div>
+              </div>
+              {% else %}
+
+              <div> {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}</div>
+              {%- endif -%}
+
+        {% if block.settings.title != blank or block.settings.text != blank %}
+        <div class="multicolumn-card__info">
+          {%- if block.settings.title != blank -%}
+          {%- if block.settings.link != blank -%}
+          <a href="{{block.settings.link}}">
+            {%- endif -%}
+            <h3>{{ block.settings.title | escape }}</h3>
+            {%- if block.settings.link != blank -%}
+          </a>
+          {%- endif -%}
+          {%- endif -%}
+        </div>
+        {% endif %}
+
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+</div>
+</div>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Metafield icon text",
+    "settings": [
+		{
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
+        },
+	   {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+		{
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.rich-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.rich-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.rich-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.rich-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.rich-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.rich-text.settings.color_scheme.label"
+    },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      },
+{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
+    }
+],
+"blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        }
+      ]
+    }
+  ]
   }
 {% endschema %}
 
