@@ -4,9 +4,15 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "storeCode": {
+      "type": "store-details",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "storeCode"
   ]
 }
