@@ -392,18 +392,18 @@
         "1640078707f8cbb6b7-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "title": "",
+            "text": "<p><strong>Art Auction & Exhibitions<\/strong> <\/p><p>Wildlife photography exhibition and art installation from WildAid, and celebrity collaboration on 3D origami of wildlife with art decoration, display, and auction.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "10552fd1-ac64-484b-9f62-e77aa9198b65": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "title": "",
+            "text": "<p><strong>Communication <\/strong><\/p><p>Marketing and advertising support on WildAid’s public service announcement to further inform the global community on the campaign to grow more petition signatures.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         }
