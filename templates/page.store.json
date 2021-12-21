@@ -2,12 +2,52 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "page_title": false,
+        "section_width": 100
       }
     },
     "storeCode": {
       "type": "store-details",
+      "blocks": {
+        "5cb693bf-166a-42b1-b38f-94f8ad0b5380": {
+          "type": "filter",
+          "settings": {
+            "title": "",
+            "tag": "",
+            "color_icon": "apricot",
+            "icon_title": ""
+          }
+        },
+        "63bbf753-6805-4509-9909-1dfd838c5417": {
+          "type": "filter",
+          "settings": {
+            "title": "",
+            "tag": "",
+            "color_icon": "apricot",
+            "icon_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "5cb693bf-166a-42b1-b38f-94f8ad0b5380",
+        "63bbf753-6805-4509-9909-1dfd838c5417"
+      ],
       "settings": {
+        "title": "Store Locator",
+        "subtitle": "Please select a region to view store information.",
+        "filter_title": "Filter by services:",
+        "search_title": "Search:",
+        "group_title": "Filter by region:",
+        "find_me_title": "Or find a store nearest you",
+        "contact_title": "Contact information:",
+        "hours_title": "Shop hours:",
+        "no_stores_found_text": "No stores found matching your selected filters.",
+        "marker_icon_title": "location-pin",
+        "cluster_icon_title": "location-pin",
+        "user_icon_title": "user-location",
+        "search_icon_title": "search-location"
       }
     }
   },
