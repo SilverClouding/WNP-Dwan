@@ -164,6 +164,8 @@
     <ul class="collection-list grid grid--2-col grid--4-col-tablet" role="list">
       {% for block in section.blocks %}
       {% assign collection = block.settings %} 
+      {% assign colHandle = block.settings.url %}
+      {% assign collection = collections[colHandle] %}
       <li class="collection-list__item grid__item">
         <a href="/collections/{{ collection.url }}"class="card animate-arrow  card--media {% if section.settings.image_ratio != 'adapt' %} card--stretch   {% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}">
           <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
@@ -196,8 +198,7 @@
               </div>
             </div>
             <div class="card__text card__text-spacing card__text-hover">
-              {% assign colHandle = block.settings.url %}
-              {% assign collection = collections[colHandle] %}
+             
               {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
               <h2 class="h3">{{- collection.title -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></h2>
               <p>{{ 'collections.shopall' | t :number:collection.all_products_count}}</p>
