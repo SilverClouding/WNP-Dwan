@@ -72,24 +72,24 @@
         "caaa1210-0d12-4b90-ad24-6cc6d346b71a": {
           "type": "content",
           "settings": {
-            "heading": "Image with text",
-            "text": "",
+            "heading": "{{ product.metafields.my_fields.tab_2_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_2_content.value }}<\/p>",
             "show_desc": false
           }
         },
         "08d6b74e-e309-4797-aba1-ec35f123e229": {
           "type": "content",
           "settings": {
-            "heading": "Image with text",
-            "text": "",
+            "heading": "{{ product.metafields.my_fields.tab_3_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_3_content.value }}<\/p>",
             "show_desc": false
           }
         },
         "35016f0b-244a-4bef-9949-cd00119b63b6": {
           "type": "content",
           "settings": {
-            "heading": "Image with text",
-            "text": "",
+            "heading": "{{ product.metafields.my_fields.tab_4_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_4_content.value }}<\/p>",
             "show_desc": false
           }
         }
