@@ -134,7 +134,8 @@
           "type": "buttons",
           "settings": {
             "button_text": "#Signtosave",
-            "button_link": ""
+            "button_link": "",
+            "color_scheme": "accent-1"
           }
         }
       },
