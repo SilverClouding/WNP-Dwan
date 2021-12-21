@@ -1,12 +1,503 @@
+{%- capture store_additional_details %}
+
+  {% comment %}<div class="store-locator-contact">
+    <p class="store-locator-contact__title h5 h5--body-text">{{ section.settings.contact_title }}</p>
+    <p rv-if="store.phone" class="store-locator-contact__text">Ph <a rv-href="store.phone | format_tel | prepend 'tel:'" rv-html="store.phone"  target="_blank"></a></p>
+    <p rv-if="store.fax" class="store-locator-contact__text">F. <a rv-href="store.fax | format_tel | prepend 'tel:'" rv-html="store.phone"  target="_blank"></a></p>
+    <p rv-if="store.email" class="store-locator-contact__text"><a rv-href="store.email | prepend 'mailto:'" rv-html="store.email"  target="_blank"></a></p>
+  </div>{% endcomment %}
+
+  {% comment %}<div rv-hide="store.opening_hours | length | eq 1" class="store-locator-hours">
+    <p class="store-locator-hours__title h5 h5--body-text">{{ section.settings.hours_title }}</p>
+    <p class="store-locator-hours__periods"
+      rv-each-hours="store.opening_hours">
+      <span class="store-locator-hours__period">{ hours }</span>
+      <span class="store-locator-hours__period-title">{ hours | array_element 0 }:</span>
+      <span class="store-locator-hours__period-times">{ hours | array_element 1 }</span></p>
+  </div>{% endcomment %}
+
+{% endcapture -%}
+
+
+<div data-section-id="{{ section.id }}"
+  data-section-type="store-locator"
+  data-maps-key="{{ shop.metafields.stores.google_maps_api_key }}"
+  class="store-locator"
+  rv-class-is-ready="data.is_ready"
+  id="{{ section.id }}"
+  data-mobile-tab="{{ section.id }}"
+  >
+
+{% comment %}  <div class="container">
+    <div class="store-locator__titles">
+
+      <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
+      {%- if section.settings.subtitle -%}
+        <p>{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+
+    </div>
+  </div>{% endcomment %}
+
+  <div class="store-locator-wrap container">
+    <div class="store-locator__head">
+      <div class="store-locator__titles">
+
+        <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
+        {%- if section.settings.subtitle -%}
+          <p>{{ section.settings.subtitle }}</p>
+        {%- endif -%}
+
+      </div>
+
+
+      <div
+        class="store-locator__filters"
+        rv-if="data.filters | size | gt 0">
+
+        <div class="store-locator__filters-list">
+          <div class="store-locator-filter"
+            rv-each-filter="data.filters"
+            rv-data-filter="filter.string"
+            rv-data-filter-id="filter.id"
+            rv-on-click="methods.selectFilter"
+            rv-class-is-active="filter.active"
+            >
+
+              <div class="store-locator-filter__checkbox"></div>
+              <div class="store-locator-filter__icon" rv-html="filter.icon"></div>
+              <div class="store-locator-filter__title" rv-html="filter.title"></div>
+
+            </div>
+        </div>
+
+      </div>
+
+      <div class="store-locator__search control has-icons-right is-relative" rv-if="data.searchEnabled">
+
+        {% comment %}<p class="store-locator__search-title h5 h5--body-text">{{ section.settings.search_title }}</p>{% endcomment %}
+
+        <input type="search"
+               id="store-locator-search"
+               class="store-locator-search__input"
+               placeholder="Enter a location">
+        {%- include 'icon', name:"search" -%}
+
+      </div>
+
+      <div class="store-locator__group">
+
+        {% comment %}<p class="store-locator__group-title h5 h5--body-text">{{ section.settings.group_title }}</p>{% endcomment %}
+
+        <div class="store-locator__group-select-wrapper">
+
+          {% comment %}<select
+            class="store-locator__group-select"
+            rv-on-change="methods.selectGroup"
+            rv-data-active-group="data.activeGroup.title">
+
+            <option
+              value="none"
+              rv-selected="data.activeGroup | not">
+              {{ 'store_locator.text.placeholder' | t }}
+            </option>
+
+            <option
+              rv-each-group="data.groups"
+              rv-value="group.id"
+              rv-html="group.title"
+              rv-selected="group.active">
+            </option>
+          </select>{% endcomment %}
+
+          <div class="store-locator__group-find-me" rv-if="data.geolocationEnabled">
+            <button
+              rv-on-click="methods.findUser"
+              rv-class-loading="data.geolocationLoading"
+              class="button is-small is-uppercase">{{ section.settings.find_me_title }}</buton>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="store-locator__map-view">
+      <div class="store-locator__map" id="Map-{{ section.id }}">
+      </div>
+    </div>
+
+    <div class="store-locator__stores-list-container column">
+      <div
+        class="store-locator__stores-list"
+        rv-class-filters-active="data.storesAreFiltered"
+        >
+
+        <div class="store-locator-store"
+          rv-each-store="data.stores"
+          rv-data-store-id="store.id"
+          rv-class-in-view="store.in_view"
+          rv-class-in-filter="store.in_filter"
+          rv-class-is-loading="store.is_loading"
+          rv-class-loading="store.is_loading"
+          rv-class-is-active="store.active"
+          rv-class-in-active-group="store.in_active_group"
+          rv-on-click="methods.focusStore"
+          rv-scroll-to="store.is_loading | not | and store.active"
+          >
+
+          <div class="store-locator-store__details">
+
+            <div class="store-locator-store__icon" data-loads rv-html="store.icon"></div>
+
+            <div class="store-locator-store__contact-details">
+
+              <div class="store-locator-store__head">
+                <p rv-class-active="store.active" class="store-locator-store__title h4">
+                  <span rv-html="store.title"></span>
+                  <span
+                    rv-each-tag="store.tags"
+                    rv-html="tag.icon"></span>
+                </p>
+                {% comment %}<div class="store-locator-store__tag"
+                  rv-each-tag="store.tags"
+                  rv-html="tag.icon">
+                </div>{% endcomment %}
+              </div>
+
+              <div class="store-locator-store__street-address">
+                <p>
+                  <a rv-href="store.google_url" target="_blank">
+                    <span rv-html="store.street"></span> <span rv-html="store.city"></span>, <span rv-html="store.province"> <span rv-html="store.zip"></span>
+                  </a>
+                </p>
+              </div>
+
+            </div>
+
+            {% comment %}<div class="store-locator-store__tags">
+              <div class="store-locator-store__tag"
+                rv-each-tag="store.tags"
+                rv-html="tag.icon">
+              </div>
+            </div>{% endcomment %}
+
+          </div>
+
+          <div class="store-locator-store__additional-details">
+
+            {{ store_additional_details }}
+
+          </div>
+          <a href="#Map-store-locator" class="view-on-map btn btn-primary-o">
+            {{ 'store_locator.text.view_map' | t }}
+          </a>
+
+        </div>
+
+        <div
+          class="store-locator__no-stores-found"
+          rv-if="data.filterNoResults">
+
+          <p>{{ section.settings.no_stores_found_text }}</p>
+          <button
+            class="btn btn--text btn-text-u"
+            rv-on-click="methods.clearFilter"
+            >
+            {{ 'store_locator.text.clear_filter' | t }}
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    $(document).on('click', '.store-locator-store',function() {
+      setTimeout(function(){
+        $('.store-locator__stores-list').not('.scroll-wrapper').scrollTop(0);
+      }, 50)
+    })
+  });
+</script>
+
+<script id="store-locations">
+
+ {{- shop.metafields.stores.stores | json -}}
+
+</script>
+
+{%- capture store_location_filters %}
+  {%- for block in section.blocks -%}
+    {%- if block.type != 'filter' -%}
+      {%- continue -%}
+    {%- endif -%}
+
+    {%- capture icon %}
+      {% comment %}{%- include 'icon' with block.settings.icon_title -%}{% endcomment %}
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+      </svg>
+    {% endcapture -%}
+
+    {%- assign icon_class = 'class="icon' -%}
+    {%- assign icon_class_replace = icon_class | append: ' icon' | append: '-' | append: section.id | append: '-' | append: block.id -%}
+
+    {%- assign icon = icon | replace: icon_class, icon_class_replace -%}
+
+    {
+      "title": {{ block.settings.title | json }},
+      "tag": {{ block.settings.tag | handle | json }},
+      "icon": {{ icon | json }}
+    },
+
+  {%- endfor -%}
+{% endcapture -%}
+
+{%- style -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type != 'filter' -%}
+      {%- continue -%}
+    {%- endif -%}
+
+    {% comment %}.icon-{{ section.id }}-{{ block.id }} {
+      color: {%- include 'color-var' with block.settings.color_icon -%}
+    }{% endcomment %}
+
+  {%- endfor -%}
+{%- endstyle -%}
+
+{%- assign store_location_filters = store_location_filters | strip | split: "" | reverse | join: "" | remove_first: ',' | split: "" | reverse | join: "" -%}
+
+<script id="store-location-filters" type="application/json">
+
+  [
+    {{- store_location_filters -}}
+  ]
+
+</script>
+<script src="{{ 'z__jsStoreLocator.js' | asset_url }}" defer></script>
+<script src="{{ 'iziToast.min.js' | asset_url }}"></script>
+<link rel="stylesheet" href="{{ 'iziToast.min.css' | asset_url }}">
+
+<template class="js-template" data-template-for="store-location-marker-icon" tabindex="-1" aria-hidden="true">
+  {% comment %}{%- include 'icon' with section.settings.marker_icon_title -%}{% endcomment %}
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+  </svg>
+</template>
+
+<template class="js-template" data-template-for="store-location-cluster-icon" tabindex="-1" aria-hidden="true">
+  {% comment %}{%- include 'icon' with section.settings.cluster_icon_title -%}{% endcomment %}
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+  </svg>
+</template>
+
+<template class="js-template" data-template-for="user-location-marker-icon" tabindex="-1" aria-hidden="true">
+  {% comment %}{%- include 'icon' with section.settings.user_icon_title -%}{% endcomment %}
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+  </svg>
+</template>
+
+<template class="js-template" data-template-for="search-location-marker-icon" tabindex="-1" aria-hidden="true">
+  {% comment %}{%- include 'icon' with section.settings.search_icon_title -%}{% endcomment %}
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+  </svg>
+</template>
+
+{% comment %}<template class="js-template" data-template-for="store-location-info-popup" tabindex="-1" aria-hidden="true">
+
+  <div class="store-info-window">
+
+    <p class="store-info-window__title h4" rv-html="store.title"></p>
+
+    <div class="store-info-window__street-address">
+      <p>
+        <a rv-href="store.google_url" target="_blank">
+          <span rv-html="store.street"></span><br>
+          <span rv-html="store.city"></span>, <span rv-html="store.province"> <span rv-html="store.zip"></span>
+        </a>
+      </p>
+    </div>
+
+    <div class="store-info-window__additional-details">
+      {{ store_additional_details }}
+    </div>
+
+  </div>
+</template>{% endcomment %}
+<template class="js-template" data-template-for="store-location-info-popup" tabindex="-1" aria-hidden="true">
+
+  <div class="store-info-window">
+
+    <p class="store-locator-store__title h4">
+      <span rv-html="store.title"></span>
+      <span
+        rv-each-tag="store.tags"
+        rv-html="tag.icon"></span>
+    </p>
+
+    <div class="store-locator-store__street-address">
+      <div class="store-locator-window-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+            <path d="M17.697 9.627v.013c-.001 1.093-.312 2.163-.905 3.101l-3.86 5.738c-.125.184-.284.343-.469.468-.79.532-1.862.322-2.394-.468l-3.87-5.752c-.584-.924-.895-1.994-.896-3.1.07-3.359 2.849-6.026 6.186-5.96 3.359-.066 6.137 2.601 6.208 5.96zm-6.208-4.81C8.764 4.763 6.51 6.927 6.453 9.64c.001.876.25 1.733.71 2.46l3.86 5.738c.177.263.535.333.798.156.062-.042.115-.095.156-.156l3.852-5.724c.467-.739.716-1.594.718-2.468-.06-2.722-2.313-4.881-5.058-4.828zm.011 1.927c1.424 0 2.589 1.11 2.589 2.492s-1.165 2.491-2.589 2.491-2.589-1.109-2.589-2.491c0-1.383 1.165-2.492 2.589-2.492zm0 1.15c-.8 0-1.439.607-1.439 1.342 0 .734.638 1.341 1.439 1.341.8 0 1.439-.607 1.439-1.341 0-.735-.638-1.342-1.439-1.342z"/>
+        </svg>
+        <a rv-href="store.google_url" target="_blank">
+          <span rv-html="store.street"></span> <br> <span rv-html="store.city"></span><br><span rv-html="store.province"> <span rv-html="store.zip"></span>
+        </a>
+      </div>
+      <div class="store-locator-contact store-locator-window-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+            <path d="M18.194 15.998c-.01-.057-.046-.107-.11-.142l-2.783-1.646c-.036-.019-.076-.028-.152-.025-.09-.001-.177.032-.222.072l-.86.874c-.091.078-.198.135-.314.165l-.135.017h-.096l-.102-.01-.226-.046c-.219-.062-.429-.15-.615-.257-.32-.173-.627-.37-.919-.59-.439-.333-.85-.7-1.213-1.085-.39-.378-.747-.787-1.066-1.22-.22-.291-.415-.599-.583-.915-.145-.263-.251-.546-.323-.874-.014-.09-.014-.184.012-.33.03-.114.085-.22.19-.338l.713-.714c.051-.051.086-.117.104-.208.01-.041.004-.085-.021-.13l-1.548-2.91c-.03-.048-.07-.09-.12-.129h-.006c-.03 0-.057.012-.09.046L5.756 7.547c-.053.05-.096.108-.134.192-.035.07-.06.143-.075.219v.253c-.003.204.014.408.053.616.06.344.146.683.258 1.014.155.46.348.906.575 1.331.307.566.655 1.109 1.041 1.625.494.661 1.04 1.283 1.645 1.87.706.73 1.485 1.383 2.327 1.95.612.414 1.26.771 1.943 1.069.695.313 1.445.487 2.188.514h.227c.077-.015.153-.041.239-.083.065-.03.123-.072.187-.14l1.949-1.933c.008-.008.015-.016.02-.025l-.004-.02zm1.084-.224c.058.39-.079.784-.355 1.042L17 18.723c-.146.156-.321.282-.498.363-.18.09-.374.15-.573.181l-.081.006h-.292c-.901-.032-1.787-.238-2.604-.606-.736-.321-1.442-.71-2.108-1.16-.904-.609-1.741-1.311-2.486-2.082-.634-.614-1.218-1.279-1.746-1.986-.417-.557-.793-1.143-1.126-1.758-.257-.48-.474-.981-.647-1.498-.129-.382-.229-.774-.297-1.164-.051-.273-.075-.55-.07-.818v-.288l.006-.08c.03-.2.092-.394.174-.557.088-.194.214-.37.358-.502l1.93-1.92c.221-.235.53-.37.85-.37.24-.003.475.075.661.218.15.112.28.251.4.445l1.563 2.935c.15.27.195.587.129.87-.055.28-.193.54-.395.741l-.58.578c.043.14.1.277.173.41.145.271.311.532.5.782.287.39.606.755.969 1.108.338.357.706.686 1.097.983.247.187.509.355.793.509.121.07.25.124.341.151l.02.004.72-.733c.268-.245.618-.378.945-.372.233-.013.465.038.696.16l2.795 1.652c.237.131.422.333.534.574.064.072.109.164.126.275z"/>
+        </svg>
+
+        {% comment %}<p class="store-locator-contact__title h5 h5--body-text">{{ section.settings.contact_title }}</p>{% endcomment %}
+        <p rv-if="store.phone" class="store-locator-contact__text">P: <a rv-href="store.phone | format_tel | prepend 'tel:'" rv-html="store.phone"  target="_blank"></a></p>
+        <p rv-if="store.fax" class="store-locator-contact__text">F: <a rv-href="store.fax | format_tel | prepend 'tel:'" rv-html="store.phone"  target="_blank"></a></p>
+        <p rv-if="store.email" class="store-locator-contact__text">E: <a rv-href="store.email | prepend 'mailto:'" rv-html="store.email"  target="_blank"></a></p>
+      </div>
+
+      <div rv-if="store.opening_hours" class="store-locator-hours store-locator-window-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+            <path d="M10.5 2.571c4.379 0 7.929 3.55 7.929 7.929 0 4.379-3.55 7.929-7.929 7.929-4.379 0-7.929-3.55-7.929-7.929 0-4.379 3.55-7.929 7.929-7.929zm0 1.05c-3.8 0-6.879 3.08-6.879 6.879 0 3.8 3.08 6.879 6.879 6.879 3.8 0 6.879-3.08 6.879-6.879 0-3.8-3.08-6.879-6.879-6.879zm0 .82c.29 0 .525.236.525.526v5.316l2.887 2.886c.205.205.205.538 0 .743-.205.205-.538.205-.743 0l-3.04-3.04c-.099-.1-.154-.233-.154-.372V4.967c0-.29.235-.525.525-.525z"/>
+        </svg>
+        <p class="store-locator-hours__periods" rv-html="store.opening_hours"></p>
+      </div>
+      <p class="store-locator-notes" rv-if="store.notes">{store.notes}</p>
+    </div>
+
+    {% comment %}<div class="store-locator-store__additional-details">
+
+      {{ store_additional_details }}
+
+    </div>{% endcomment %}
+
+  </div>
+
+</template>
+
 {% schema %}
   {
-    "name": "Store details",
-    "settings": []
+    "name": "Store Locator",
+    "class": "store-locator-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Store Locator"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Please select a region to view store information."
+      },
+      {
+        "type": "text",
+        "id": "filter_title",
+        "label": "Filter title",
+        "default": "Filter by services:"
+      },
+      {
+        "type": "text",
+        "id": "search_title",
+        "label": "Search title",
+        "default": "Search:"
+      },
+      {
+        "type": "text",
+        "id": "group_title",
+        "label": "Group title",
+        "default": "Filter by region:"
+      },
+      {
+        "type": "text",
+        "id": "find_me_title",
+        "label": "Find me title",
+        "default": "Or find a store nearest you"
+      },
+      {
+        "type": "text",
+        "id": "contact_title",
+        "label": "Contact title",
+        "default": "Contact information:"
+      },
+      {
+        "type": "text",
+        "id": "hours_title",
+        "label": "Hours title",
+        "default": "Shop hours:"
+      },
+      {
+        "type": "text",
+        "id": "no_stores_found_text",
+        "label": "No stores found text",
+        "default": "No stores found matching your selected filters."
+      },
+      {
+        "type": "text",
+        "id": "marker_icon_title",
+        "label": "Marker icon title",
+        "default": "location-pin"
+      },
+      {
+        "type": "text",
+        "id": "cluster_icon_title",
+        "label": "Cluster icon title",
+        "default": "location-pin"
+      },
+      {
+        "type": "text",
+        "id": "user_icon_title",
+        "label": "User location icon title",
+        "default": "user-location"
+      },
+      {
+        "type": "text",
+        "id": "search_icon_title",
+        "label": "Search location icon title",
+        "default": "search-location"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Filter",
+        "type": "filter",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "tag",
+            "label": "Tag"
+          },
+          {
+            "type": "text",
+            "id": "color_icon",
+            "label": "Icon color",
+            "default": "apricot",
+            "info": "Colour defined in 'Custom Styles' section"
+          },
+          {
+            "type": "text",
+            "id": "icon_title",
+            "label": "Icon title"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
