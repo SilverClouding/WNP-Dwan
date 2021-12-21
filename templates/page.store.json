@@ -14,19 +14,19 @@
         "5cb693bf-166a-42b1-b38f-94f8ad0b5380": {
           "type": "filter",
           "settings": {
-            "title": "",
-            "tag": "",
+            "title": "ASDC",
+            "tag": "aas",
             "color_icon": "apricot",
-            "icon_title": ""
+            "icon_title": "das"
           }
         },
         "63bbf753-6805-4509-9909-1dfd838c5417": {
           "type": "filter",
           "settings": {
-            "title": "",
-            "tag": "",
+            "title": "das",
+            "tag": "dsad",
             "color_icon": "apricot",
-            "icon_title": ""
+            "icon_title": "das"
           }
         }
       },
