@@ -272,18 +272,6 @@
         "sec_class": ""
       }
     },
-    "main": {
-      "type": "main-blog",
-      "settings": {
-        "show_title": false,
-        "show_readmore": false,
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false
-      }
-    },
     "1640076947a75dd97b": {
       "type": "video",
       "settings": {
@@ -352,9 +340,45 @@
         "1640077444b41e792b-1"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "full_width": true,
         "sec_class": ""
+      }
+    },
+    "1640077448c540e64d": {
+      "type": "custom-buttons",
+      "blocks": {
+        "164007744788f5ba9a-0": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more about WildAid",
+            "button_link": "",
+            "button_width": 20,
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "164007744788f5ba9a-0"
+      ],
+      "settings": {
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "show_readmore": false,
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false
       }
     }
   },
@@ -374,9 +398,10 @@
     "1640070222d5d9f851",
     "16400703110fc2fe9e",
     "1640070251fa08ca3a",
-    "main",
     "1640076947a75dd97b",
     "164007695350e2b98e",
-    "1640077444aef1daad"
+    "1640077444aef1daad",
+    "1640077448c540e64d",
+    "main"
   ]
 }
