@@ -1,6 +1,14 @@
 <div class="{% if section.settings.include_margins %}page-width{% endif %}">
-  <div style="margin-top:{{section.settings.top_padding}}px; margin-bottom:{{section.settings.bottom_padding}}px;"></div>
+  <div style=""></div>
 </div>
+
+<style>
+
+  #shopify-section-{{section.id}}{
+   margin-top:{{section.settings.top_padding}}px; 
+   margin-bottom:{{section.settings.bottom_padding}}px;
+  }
+</style>
 
 {% schema %}
 {
