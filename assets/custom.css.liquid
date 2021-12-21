@@ -4524,9 +4524,6 @@ color:#F5694D;
     flex-wrap: wrap;
     height:fit-content;
   }
-  /*   .cafe-inner-content ul li:nth-child(n+1){
-  padding-left:60px;
-} */
   .cafe-head{
     display:flex;
     justify-content:space-between;
@@ -4584,6 +4581,17 @@ color:#F5694D;
     .cafe-cont h2{
       font-size:30px;
       line-height:38px;
+      border-bottom:none;
+      position:relative;
+    }
+    .cafe-cont h2:before{
+    padding-bottom: 25px;
+      content:'';
+      background:#d3d6d9;
+      position:absolute;
+      left:0;
+      width:100%;
+      height:1px;
     }
     .cust-content h2 {
       letter-spacing: -0.08rem;
