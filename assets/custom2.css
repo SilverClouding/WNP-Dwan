@@ -63,6 +63,6 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
     color: #f5694d!important;
 }
 
-.tabcontent-cus h4 {
+.tabcontent-cus h4, .accordion__content h4 {
     margin-bottom: 0;
 }
