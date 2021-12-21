@@ -295,6 +295,45 @@
         "full_width": false,
         "section_width": 100
       }
+    },
+    "164007695350e2b98e": {
+      "type": "collage",
+      "blocks": {
+        "4ffea5aa-eb4f-47f9-8b38-0be25717885c": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "7b564dfa-37ba-4268-8c3a-1affa786c0ee": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "b3ac5d5d-e6da-48dd-b7f0-124a2b06a849": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "4ffea5aa-eb4f-47f9-8b38-0be25717885c",
+        "7b564dfa-37ba-4268-8c3a-1affa786c0ee",
+        "b3ac5d5d-e6da-48dd-b7f0-124a2b06a849"
+      ],
+      "settings": {
+        "heading": "",
+        "text_align": "center",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "top_padding": 10,
+        "bottom_padding": 25
+      }
     }
   },
   "order": [
@@ -314,6 +353,7 @@
     "16400703110fc2fe9e",
     "1640070251fa08ca3a",
     "main",
-    "1640076947a75dd97b"
+    "1640076947a75dd97b",
+    "164007695350e2b98e"
   ]
 }
