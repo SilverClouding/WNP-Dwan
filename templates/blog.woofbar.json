@@ -3,9 +3,10 @@
     "1640066706f9ba3038": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Mask_Group_e6ffcdb2-e92d-458a-a80b-4e1dee99230f.png",
         "sec_class": "",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
+        "image_height": "large",
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
