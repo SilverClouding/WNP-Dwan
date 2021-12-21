@@ -58,11 +58,6 @@
         "enable_video_looping": false
       }
     },
-    "metafield-icon-text": {
-      "type": "metafield-icon-text",
-      "settings": {
-      }
-    },
     "product-details-tab": {
       "type": "product-details-tab",
       "blocks": {
@@ -108,6 +103,49 @@
       "settings": {
         "full_width": false,
         "color_scheme": "background-2"
+      }
+    },
+    "metafield-icon-text": {
+      "type": "metafield-icon-text",
+      "blocks": {
+        "17320d80-23f0-45fc-ba4f-4f3194c47e1c": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "2464531f-3874-4232-81c1-22878466a08b": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "4f426fb0-646d-43bc-ba79-2231896d6002": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "de433e20-3f19-41fc-bbdc-27606cf0adca": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "17320d80-23f0-45fc-ba4f-4f3194c47e1c",
+        "2464531f-3874-4232-81c1-22878466a08b",
+        "4f426fb0-646d-43bc-ba79-2231896d6002",
+        "de433e20-3f19-41fc-bbdc-27606cf0adca"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "heading_size": "h1",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "color_scheme": "background-1",
+        "section_width": 100,
+        "sec_class": ""
       }
     },
     "product-recommendations": {
