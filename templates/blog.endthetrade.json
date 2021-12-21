@@ -383,9 +383,9 @@
         "1640078707f8cbb6b7-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "title": "",
+            "text": "<p><strong>Public Awareness <\/strong><\/p><p>To spread the word on the campaign offline and online to an existing community of animal lovers and beyond via partnerships - charities, veterinarians, pet-friendly businesses.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
