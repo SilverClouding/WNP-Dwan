@@ -1,12 +1,85 @@
 {
   "sections": {
+    "1640066805964d9d4f": {
+      "type": "image-banner",
+      "settings": {
+        "sec_class": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1640066819eb24625f": {
+      "type": "rich-text",
+      "blocks": {
+        "16400668191ab81d01-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "bf9aedc0-a61a-406f-b3f7-0dc29446da30": {
+          "type": "linklist",
+          "settings": {
+            "main_link_list": "community"
+          }
+        }
+      },
+      "block_order": [
+        "16400668191ab81d01-0",
+        "bf9aedc0-a61a-406f-b3f7-0dc29446da30"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
+    "164006682368642e55": {
+      "type": "brand_logos",
+      "blocks": {
+        "164006682366501ff7-7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_457.png",
+            "img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164006682366501ff7-7"
+      ],
+      "settings": {
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": "",
+        "slider": false
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_title": false,
+        "show_readmore": false,
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false
       }
     }
   },
   "order": [
+    "1640066805964d9d4f",
+    "1640066819eb24625f",
+    "164006682368642e55",
     "main"
   ]
 }
