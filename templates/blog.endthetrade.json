@@ -103,6 +103,33 @@
         "show_date": true,
         "show_author": false
       }
+    },
+    "1640067299060d358c": {
+      "type": "rich-text",
+      "blocks": {
+        "1640067299c2d4ecba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "87,401 Signatures collected",
+            "heading_size": "h1"
+          }
+        },
+        "1640067299c2d4ecba-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What are you waiting for? Make a difference today!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640067299c2d4ecba-0",
+        "1640067299c2d4ecba-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
@@ -110,6 +137,7 @@
     "1640066819eb24625f",
     "164006682368642e55",
     "164006715555c60445",
-    "main"
+    "main",
+    "1640067299060d358c"
   ]
 }
