@@ -213,6 +213,33 @@
         "section_width": 100
       }
     },
+    "1640070225a5dfc3a9": {
+      "type": "divider",
+      "settings": {
+        "include_margins": true,
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "1640070222d5d9f851": {
+      "type": "rich-text",
+      "blocks": {
+        "16400702222686cacf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The illegal wildlife trade is a multi-billion dollar global industry largely driven by consumer demand in expanding economies. While most wildlife conservation groups focus on scientific studies and anti-poaching efforts, WildAid works to reduce global consumption of wildlife products and to increase local support for conservation efforts. We also work with governments and partners to protect fragile marine reserves from illegal fishing and shark finning, to enhance public and political will for anti-poaching efforts, and to reduce climate change impacts.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16400702222686cacf-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -238,6 +265,8 @@
     "1640069784319e024b",
     "16400698433e6a11c1",
     "1640069976922bfe06",
+    "1640070225a5dfc3a9",
+    "1640070222d5d9f851",
     "main"
   ]
 }
