@@ -367,19 +367,6 @@
         "section_width": 100,
         "sec_class": ""
       }
-    },
-    "main": {
-      "type": "main-blog",
-      "disabled": true,
-      "settings": {
-        "show_title": false,
-        "show_readmore": false,
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false
-      }
     }
   },
   "order": [
@@ -401,7 +388,6 @@
     "1640076947a75dd97b",
     "164007695350e2b98e",
     "1640077444aef1daad",
-    "1640077448c540e64d",
-    "main"
+    "1640077448c540e64d"
   ]
 }
