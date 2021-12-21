@@ -1,12 +1,62 @@
 {
   "sections": {
+    "1640066706f9ba3038": {
+      "type": "image-banner",
+      "settings": {
+        "sec_class": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "164006672444d36547": {
+      "type": "rich-text",
+      "blocks": {
+        "164006672429df4980-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "#woofbar",
+            "heading_size": "h1"
+          }
+        },
+        "4376cdf1-7b14-4ef5-94e3-caf88da45fea": {
+          "type": "linklist",
+          "settings": {
+            "main_link_list": "community"
+          }
+        }
+      },
+      "block_order": [
+        "164006672429df4980-0",
+        "4376cdf1-7b14-4ef5-94e3-caf88da45fea"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_title": false,
+        "show_readmore": false,
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false
       }
     }
   },
   "order": [
+    "1640066706f9ba3038",
+    "164006672444d36547",
     "main"
   ]
 }
