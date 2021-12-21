@@ -196,6 +196,22 @@
         "full_width": true,
         "sec_class": ""
       }
+    },
+    "16400698433e6a11c1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "new-arrivals",
+        "collection2": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
@@ -208,6 +224,7 @@
     "1640069747c1c75b6a",
     "1640068262e98b8790",
     "main",
-    "1640069784319e024b"
+    "1640069784319e024b",
+    "16400698433e6a11c1"
   ]
 }
