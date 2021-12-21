@@ -130,6 +130,7 @@
         "de433e20-3f19-41fc-bbdc-27606cf0adca": {
           "type": "column",
           "settings": {
+            "image": "{{ product.metafields.my_fields.icon_image_1.value }}",
             "title": ""
           }
         }
