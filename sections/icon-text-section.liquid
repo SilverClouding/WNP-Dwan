@@ -58,7 +58,7 @@
         {% if block.settings.title != blank or block.settings.text != blank %}
         <div class="multicolumn-card__info">
           {%- if block.settings.title != blank -%}
-          <h3>{{ block.settings.title | escape }}</h3>
+          <a href="{{block.settings.link}}"><h3>{{ block.settings.title | escape }}</h3></a>
           {%- endif -%}
         </div>
         {% endif %}
@@ -167,7 +167,12 @@
           "type": "text",
           "id": "title",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        }
+        },
+		{
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
       ]
     }
   ],
