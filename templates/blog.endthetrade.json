@@ -283,6 +283,18 @@
         "show_date": true,
         "show_author": false
       }
+    },
+    "1640076947a75dd97b": {
+      "type": "video",
+      "settings": {
+        "heading": "wildaid ambassadors",
+        "text_alignment": "center",
+        "cover_image": "shopify:\/\/shop_images\/Screenshot_2021-07-14_at_11.48_2_f5d84a1f-589e-4ee8-881c-07df3dd5db9d.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "section_width": 100
+      }
     }
   },
   "order": [
@@ -301,6 +313,7 @@
     "1640070222d5d9f851",
     "16400703110fc2fe9e",
     "1640070251fa08ca3a",
-    "main"
+    "main",
+    "1640076947a75dd97b"
   ]
 }
