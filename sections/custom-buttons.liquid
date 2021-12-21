@@ -10,9 +10,9 @@
     <div class="section_width">
       <ul class="grid col_{{section.settings.column_alignment}} grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"role="list">
         {%- for block in section.blocks -%}
-        <li class="button_item" {{ block.shopify_attributes }}>
+        <li  style="width:{{block.settings.button_width}}%;" class="button_item" {{ block.shopify_attributes }}>
           {% if block.settings.button_text != blank %}
-          <a style="width:{{block.settings.button_width}}%;" class="button button--primary color-{{ block.settings.color_scheme }}" aria-disabled="true" role="link" href="{{block.settings.button_link}}">{{block.settings.button_text}}</a>  
+          <a class="button button--primary color-{{ block.settings.color_scheme }}" aria-disabled="true" role="link" href="{{block.settings.button_link}}">{{block.settings.button_text}}</a>  
           {% endif %}
         </li>
         {%- endfor -%}
