@@ -49,6 +49,11 @@
       "success_message": "Link copied to clipboard"
     }
   },
+  "store_locator": {
+    "text": {
+      "clear_filter": "View store"
+    }
+  },
   "newsletter": {
     "label": "Email",
     "success": "Thanks for subscribing",
