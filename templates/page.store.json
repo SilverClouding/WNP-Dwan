@@ -10,30 +10,6 @@
     },
     "storeCode": {
       "type": "store-details",
-      "blocks": {
-        "5cb693bf-166a-42b1-b38f-94f8ad0b5380": {
-          "type": "filter",
-          "settings": {
-            "title": "Bonifacio High Street",
-            "tag": "aas",
-            "color_icon": "apricot",
-            "icon_title": "das"
-          }
-        },
-        "63bbf753-6805-4509-9909-1dfd838c5417": {
-          "type": "filter",
-          "settings": {
-            "title": "das",
-            "tag": "dsad",
-            "color_icon": "apricot",
-            "icon_title": "das"
-          }
-        }
-      },
-      "block_order": [
-        "5cb693bf-166a-42b1-b38f-94f8ad0b5380",
-        "63bbf753-6805-4509-9909-1dfd838c5417"
-      ],
       "settings": {
         "title": "Store Locator",
         "subtitle": "Please select a region to view store information.",
