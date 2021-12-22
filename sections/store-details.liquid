@@ -81,8 +81,9 @@
                id="store-locator-search"
                class="store-locator-search__input"
                placeholder="Enter a location">
-        {%- include 'icon', name:"search" -%}
-
+         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+              <use href="#icon-search"></use>
+            </svg>
       </div>
 
       <div class="store-locator__group">
