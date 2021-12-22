@@ -119,6 +119,8 @@
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'custom2.css' | asset_url | stylesheet_tag }}
       {{ 'megamenu.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'store_locator.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
