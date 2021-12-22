@@ -51,7 +51,8 @@
   },
   "store_locator": {
     "text": {
-      "clear_filter": "View store"
+      "clear_filter": "Clear filter",
+      "view_map": "View Map"
     }
   },
   "newsletter": {
