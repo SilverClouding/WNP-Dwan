@@ -423,7 +423,7 @@
           "text": "<p>Sign up to receive 15% off your first order and stay up to date on new arrivals & special offers<\/p>",
           "closeit": "No thank you, close this",
           "close_link": "https:\/\/wnp.pet",
-          "terms": "By submitting, you agree to our <a href=\"#\">Terms &amp; Conditions<\/a>",
+          "terms": "By submitting, you agree to our <a href=\"https:\/\/wnp.pet\/pages\/terms-conditions\">Terms &amp; Conditions<\/a>",
           "color_scheme": "background-1"
         }
       }
