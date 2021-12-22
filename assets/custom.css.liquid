@@ -3079,7 +3079,9 @@ color:#F5694D;
   .option-selection-size input[type=radio]:checked+label,
   .option-selection-size input[type=radio]+label,
   .option-selection-color input[type=radio]:checked+label,
-  .option-selection-color input[type=radio]+label{
+  .option-selection-color input[type=radio]+label,
+  .option-selection-style input[type=radio]:checked+label,
+  .option-selection-style input[type=radio]+label{
     border:1px solid #D3D6D9;
     -o-border-radius:2px;
     -webkit-border-radius:2px;
@@ -3090,7 +3092,8 @@ color:#F5694D;
     padding:1rem;
   }
   .option-selection-size input[type=radio],
-  .option-selection-color input[type=radio]{
+  .option-selection-color input[type=radio],
+  .option-selection-style input[type=radio]{
     clip: rect(0,0,0,0);
     overflow: hidden;
     position: absolute;
@@ -3098,15 +3101,17 @@ color:#F5694D;
     width: 1px;
   }
   .option-selection-size span.option,
-  .option-selection-color span.option{
+  .option-selection-color span.option,
+  .option-selection-style span.option{
     color: #44444d;
     font-size: 15px;
     font-weight: 800;
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     padding-bottom: 10px;
   }
   .option-selection-size input[type=radio]+label,
-  .option-selection-color input[type=radio]+label{
+  .option-selection-color input[type=radio]+label,
+  .option-selection-style input[type=radio]+label{
     display: inline-block;
     margin: 0.7rem 8px 8px 0;
     font-size:14px;
@@ -3117,10 +3122,13 @@ color:#F5694D;
     cursor: pointer;
   }
   .option-selection-size input[type=radio]:checked+label,
-  .option-selection-color input[type=radio]:checked+label{
+  .option-selection-color input[type=radio]:checked+label,
+  .option-selection-style input[type=radio]:checked+label{
     border: 1px solid #000!important;
   }
-  .option-selection-size{
+  .option-selection-size, 
+  .option-selection-color,
+  .option-selection-style{
     margin-bottom:25px;
   }
   #quick-view .qv-content{
