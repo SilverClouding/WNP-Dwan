@@ -3136,7 +3136,7 @@ color:#F5694D;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 0;
     border: 1px solid #d3d6d9;
     padding: 10px;
    position:relative;
@@ -3151,9 +3151,16 @@ color:#F5694D;
     background:url({{'left-arrow.png' | asset_url }}) center no-repeat;
     width:7px;
     height:13px;
-/*     transform: translateX(-50%); */
   }
-
+.qv-product-main-images .slick-next:before{
+    position:absolute;
+    right:7;
+    top:9px;
+    content:'';
+    background:url({{'left-arrow.png' | asset_url }}) center no-repeat;
+    width:7px;
+    height:13px;
+  }
 
 
 
