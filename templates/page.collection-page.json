@@ -14,11 +14,18 @@
           "settings": {
             "main_link_list": "health-care"
           }
+        },
+        "2b24b05a-06d1-490b-adab-fb206fe052e4": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-grooming"
+          }
         }
       },
       "block_order": [
         "2f363a43-b55b-436a-9adc-8deacf1882d0",
-        "7c970b5b-c885-494b-a079-972908be1ffb"
+        "7c970b5b-c885-494b-a079-972908be1ffb",
+        "2b24b05a-06d1-490b-adab-fb206fe052e4"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_197_f3a41c32-2b99-496b-9b79-577e092a539a.png",
@@ -96,7 +103,8 @@
         "column_alignment": "left",
         "background_style": "primary",
         "section_width": 100,
-        "sec_class": ""
+        "sec_class": "",
+        "slider": true
       }
     },
     "16389585667234d795": {
@@ -139,7 +147,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title": false
+        "page_title": false,
+        "section_width": 100
       }
     }
   },
