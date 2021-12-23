@@ -330,12 +330,20 @@ jQuery(function($){
     
 //     e.preventDefault();
     $(this).siblings().removeClass('active');
-    $(this).toggleClass('active');
+    $(this).addClass('active');
     var targetData = $(this).attr('terget_megamenu');
     $('[data-dropdown='+targetData+']').parents(".mega-menu-section").siblings().removeClass('active');
-    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").toggleClass('active');
+    $('[data-dropdown='+targetData+']').parents(".mega-menu-section").addClass('active');
     console.log(targetData)
   });
+  
+  
+  $( ".mega-menu-section.active" ).mouseleave(function() {
+    $(this).removeClass('active');
+    $('.mega_parent.active').removeClass('active');
+  });
+
+  
 
   // for sticky menu
 //   $(document).on('click','.level_1_item ',function(e){
