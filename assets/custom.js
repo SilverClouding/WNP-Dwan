@@ -324,7 +324,10 @@ jQuery(function($){
 
 // megamenu
 jQuery(function($){
-  $(document).on('hover','.mega_parent',function(e){
+//   $(document).on('click','.mega_parent',function(e){
+    
+    $( ".mega_parent" ).mouseover(function() {
+    
     e.preventDefault();
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
