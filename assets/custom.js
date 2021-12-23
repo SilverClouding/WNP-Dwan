@@ -338,7 +338,7 @@ jQuery(function($){
   });
   
   
-  $( ".mega-menu-section.active .dropdown_container" ).mouseleave(function() {
+  $( ".dropdown_container" ).mouseleave(function() {
     console.log('leave');
     $(this).parents(".mega-menu-section").removeClass('active');
     var targetData1 = $(this).attr('data-dropdown');
