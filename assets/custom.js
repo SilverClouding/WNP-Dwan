@@ -328,7 +328,7 @@ jQuery(function($){
     
     $( ".mega_parent" ).mouseover(function() {
     
-    e.preventDefault();
+//     e.preventDefault();
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
     var targetData = $(this).attr('terget_megamenu');
