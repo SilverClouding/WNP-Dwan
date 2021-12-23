@@ -338,10 +338,11 @@ jQuery(function($){
   });
   
   
-  $( ".mega-menu-section.active" ).mouseleave(function() {
+  $( ".mega-menu-section.active .dropdown_container" ).mouseleave(function() {
     console.log('leave');
-    $(this).removeClass('active');
-    $('.mega_parent.active').removeClass('active');
+    $(this).parents(".mega-menu-section").removeClass('active');
+    var targetData1 = $(this).attr('data-dropdown');
+    $('[terget_megamenu='+targetData1+']').removeClass('active');
   });
 
   
