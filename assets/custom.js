@@ -326,7 +326,7 @@ jQuery(function($){
 jQuery(function($){
 //   $(document).on('click','.mega_parent',function(e){
     
-    $( ".mega_parent" ).mouseover(function() {
+    $( ".mega_parent" ).mouseenter(function() {
     
 //     e.preventDefault();
     $(this).siblings().removeClass('active');
