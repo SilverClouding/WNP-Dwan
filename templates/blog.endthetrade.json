@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/image_31.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_193.jpg",
         "sec_class": "",
         "image_height": "large",
         "adapt_height_first_image": true,
