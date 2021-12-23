@@ -90,7 +90,7 @@
         "height": "adapt",
         "color_scheme": "accent-2",
         "layout": "image_first",
-        "sec_class": "endthetrade-image-text"
+        "sec_class": "endthetrade-image-text cust-textcon"
       }
     },
     "1640068257f7044721": {
