@@ -38,6 +38,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_452.png",
+        "mobile_image": "shopify:\/\/shop_images\/1801.jpg",
         "sec_class": "",
         "image_height": "large",
         "adapt_height_first_image": true,
