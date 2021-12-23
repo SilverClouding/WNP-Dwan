@@ -430,7 +430,7 @@
         "background_style": "primary",
         "item_in_row": 4,
         "section_width": 100,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "top_padding": 65,
         "bottom_padding": 65,
         "title_color": "",
