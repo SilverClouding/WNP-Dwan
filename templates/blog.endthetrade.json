@@ -211,7 +211,8 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
-        "section_width": 100
+        "section_width": 100,
+        "sec_class": "endthetrade-video"
       }
     },
     "1640070225a5dfc3a9": {
@@ -281,7 +282,8 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
-        "section_width": 100
+        "section_width": 100,
+        "sec_class": ""
       }
     },
     "164007695350e2b98e": {
