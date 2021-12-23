@@ -125,7 +125,7 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
-        "sec_class": ""
+        "sec_class": "cust-textcon"
       }
     },
     "1640069747c1c75b6a": {
@@ -183,7 +183,7 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "sec_class": ""
+        "sec_class": "cust-textcon"
       }
     },
     "16400698433e6a11c1": {
@@ -238,7 +238,7 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
-        "sec_class": ""
+        "sec_class": "cust-textcon"
       }
     },
     "16400703110fc2fe9e": {
@@ -269,7 +269,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "section_width": 100,
-        "sec_class": ""
+        "sec_class": "cust-btn-sec"
       }
     },
     "1640076947a75dd97b": {
@@ -342,7 +342,7 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
-        "sec_class": ""
+        "sec_class": "cust-textcon"
       }
     },
     "1640077448c540e64d": {
@@ -365,7 +365,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "section_width": 100,
-        "sec_class": ""
+        "sec_class": "cust-btn-sec"
       }
     },
     "1640078707076cb665": {
