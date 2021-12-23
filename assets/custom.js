@@ -339,6 +339,7 @@ jQuery(function($){
   
   
   $( ".mega-menu-section.active" ).mouseleave(function() {
+    console.log('leave');
     $(this).removeClass('active');
     $('.mega_parent.active').removeClass('active');
   });
