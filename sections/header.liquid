@@ -714,6 +714,7 @@
     hide() {
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
                                                    megamenu_container.classList.add('do-sticky');
+                                                   megamenu_container.classList.remove('not-sticky');
                                                   
       this.closeMenuDisclosure();
 	
@@ -723,12 +724,14 @@
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
                                                    megamenu_container.classList.add('do-sticky');
+                                                   megamenu_container.classList.remove('not-sticky');
                                                   
     }
 
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
                                                    megamenu_container.classList.remove('do-sticky','active');
+                                                   megamenu_container.classList.add('not-sticky');
                                                  firstMegamenu.classList.remove('active');
                                                   secMegamenu.classList.remove('active');
                                                     trdMegamenu.classList.remove('active');
