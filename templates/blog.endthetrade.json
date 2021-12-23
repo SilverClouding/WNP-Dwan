@@ -59,7 +59,7 @@
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
-        "section_width": 30,
+        "section_width": 40,
         "sec_class": "",
         "slider": false
       }
