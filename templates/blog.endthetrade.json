@@ -125,7 +125,7 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
-        "sec_class": "cust-textcon"
+        "sec_class": "cust-textcon text-width"
       }
     },
     "1640069747c1c75b6a": {
@@ -238,7 +238,7 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
-        "sec_class": "cust-textcon"
+        "sec_class": "cust-textcon text-width"
       }
     },
     "16400703110fc2fe9e": {
