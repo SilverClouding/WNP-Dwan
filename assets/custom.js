@@ -338,8 +338,9 @@ jQuery(function($){
   });
 
   // for sticky menu
-  $(document).on('click','.level_1_item ',function(e){
-    e.preventDefault();
+//   $(document).on('click','.level_1_item ',function(e){
+//     e.preventDefault();
+  $( ".level_1_item" ).mouseenter(function() {
     var triger_megamenu = $(this).attr('triger_megamenu');
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
