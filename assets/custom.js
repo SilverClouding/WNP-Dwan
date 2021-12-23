@@ -340,7 +340,7 @@ jQuery(function($){
   
   $( ".dropdown_container" ).mouseleave(function() {
     console.log('leave');
-    $(this).parents(".mega-menu-section").removeClass('active');
+    $(this).parents(".not-sticky .mega-menu-section").removeClass('active');
     var targetData1 = $(this).attr('data-dropdown');
     $('[terget_megamenu='+targetData1+']').removeClass('active');
   });
