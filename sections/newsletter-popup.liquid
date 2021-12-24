@@ -111,8 +111,12 @@
 //       console.log("else");  
       emailCkech = true;
     }
+    if (name != "" ){
      document.getElementById("valError").classList.remove("show");
       console.log(name);
+    }else{
+      document.getElementById("valError").classList.add("show");
+    }
   
     if (name != "" && emailCkech ) {
      document.getElementById("button_sub").classList.remove("disabled");
