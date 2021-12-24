@@ -62,6 +62,22 @@
         
       </ul>
     </div>
+    
+    <div class="section_width">
+
+      <ul>
+        {% assign vendor_list = '' %}
+        {% for product in collection.all_products %}
+        {% if vendor_list contains product.vendor %}
+        {% else %}
+        <li><a title="{{ product.vendor }}">{{ product.vendor }}</a></li>
+        {% capture temp %}{{ vendor_list }}{{ product.vendor }}{% endcapture %}{% assign vendor_list = temp %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+    
   </div>
 </div>
 
