@@ -86,7 +86,7 @@ span#button_sub {
   margin-top: 30px;
 }
 
-span.error-fields.show, #valError.show {
+span.error-fields.show, #valError.show, #elError.show {
   display: block;
   text-align: left;
 }
