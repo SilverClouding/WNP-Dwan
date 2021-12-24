@@ -5388,9 +5388,36 @@ select:focus, select:hover{
     padding:15px 0;
   }
   .article-template__content .content{
-  padding:15px 0;
+  padding:10px 0;
   }
+.article-template__content .collapsible:before{
+  width: 10px;
+height: 10px;
+position: absolute;
+content: '';
+color: #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+transform: rotate(312deg);
+right: 15px;
+top: 17px;
+     
+    }
 
+.article-template__content .collapsible.active:before{display:none;}   
+ .article-template__content .collapsible:after{
+  width: 10px;
+height: 10px;
+position: absolute;
+content: '';
+color: #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+transform: rotate(40deg);
+right: 15px;
+top: 17px;
+   
+    } 
 
 
 
