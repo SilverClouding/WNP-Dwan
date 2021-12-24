@@ -5440,7 +5440,12 @@ select:focus, select:hover{
   background:url({{ 'back-arrow.png' | asset_url }}) center no-repeat;
   } */
 
-
+@media screen and (min-width: 750px){
+.blog-articles--collage>:nth-child(3n+2):last-child {
+    grid-column: span 1;
+    text-align: center;
+}
+}
 
 
 
