@@ -65,16 +65,29 @@
     
     <div class="section_width">
 
-      <ul>
-        {% assign vendor_list = '' %}
-        {% for product in collection.all_products %}
-        {% if vendor_list contains product.vendor %}
+      
+      
+      <ul class="vendor-list block-grid three-up mobile one-up">
+        {% for product_vendor in shop.vendors %}
+        {% assign its_a_match = false %}
+        {% capture my_collection_handle %} {{ product_vendor | handleize | strip | escape  }} {% endcapture %}
+        {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+        {% for collection in collections %}
+        {% if my_collection_handle_stripped == collection.handle %}
+        {% assign its_a_match = true %}
+        {% endif %}
+        {% endfor %}
+
+        {% if its_a_match %}
+        <li class="vendor-list-item"><a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a></li>
         {% else %}
-        <li><a title="{{ product.vendor }}">{{ product.vendor }}</a></li>
-        {% capture temp %}{{ vendor_list }}{{ product.vendor }}{% endcapture %}{% assign vendor_list = temp %}
+        <li class="vendor-list-item">{{ product_vendor | link_to_vendor }}</li>
         {% endif %}
         {% endfor %}
       </ul>
+      
+      
 
     </div>
     
