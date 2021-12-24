@@ -67,26 +67,6 @@
 
       
       
-      <ul class="vendor-list block-grid three-up mobile one-up">
-        {% for product_vendor in shop.vendors %}
-        {% assign its_a_match = false %}
-        {% capture my_collection_handle %} {{ product_vendor | handleize | strip | escape  }} {% endcapture %}
-        {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
-
-        {% for collection in collections %}
-        {% if my_collection_handle_stripped == collection.handle %}
-        {% assign its_a_match = true %}
-        {% endif %}
-        {% endfor %}
-
-        {% if its_a_match %}
-        <li class="vendor-list-item"><a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a></li>
-        {% else %}
-        <li class="vendor-list-item">{{ product_vendor | link_to_vendor }}</li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-      
       {% assign chars = '' %}
       {% for vendor in shop.vendors %}
       {% capture first_char %}{{ vendor | truncate: 1, ''  | upcase}}{% endcapture %}
@@ -95,7 +75,6 @@
       <div>
         <ul id="vendorlist">
           {% endif %}
-
           {% unless chars contains first_char %}
           {% unless forloop.first %}
           <div style="clear:both;"></div>
