@@ -50,7 +50,7 @@
         ],
         "settings": {
           "link": "shopify:\/\/pages\/retail",
-          "show_n_window": true,
+          "show_n_window": false,
           "color_scheme": "background-2"
         }
       },
