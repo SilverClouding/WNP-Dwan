@@ -1,5 +1,12 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_title": true,
+        "section_width": 100
+      }
+    },
     "brand-page": {
       "type": "brand-page",
       "blocks": {
@@ -66,17 +73,10 @@
         "column_alignment": "left",
         "background_style": "primary"
       }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "page_title": false,
-        "section_width": 100
-      }
     }
   },
   "order": [
-    "brand-page",
-    "main"
+    "main",
+    "brand-page"
   ]
 }
