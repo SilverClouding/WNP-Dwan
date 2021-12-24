@@ -87,10 +87,15 @@
 
       <div>
         <h2 class="char">
+            {% assign noumberFound = false %}
           {% for i in (0..9) %}
-          {{i}}
+          {% assign vnumber = first_char | plus: 0 %}
+          {% if i == vnumber %}
+          {% assign noumberFound = true %}
+          {% endif %}
           {% endfor %}
-          {% if first_char contains number %} 0-9 {% else %}
+          
+          {% if noumberFound %} 0-9 {% else %}
           {{ first_char }}
           {% endif %}
         
