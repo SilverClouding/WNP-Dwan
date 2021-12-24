@@ -18,6 +18,7 @@
 
 {% endcapture -%}
 
+
 <div data-section-id="{{ section.id }}"
   data-section-type="store-locator"
   data-maps-key="{{ shop.metafields.stores.google_maps_api_key }}"
@@ -27,7 +28,7 @@
   data-mobile-tab="{{ section.id }}"
   >
 
-{% comment %}  <div class="container page-width">
+{% comment %}  <div class="container">
     <div class="store-locator__titles">
 
       <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
@@ -80,9 +81,8 @@
                id="store-locator-search"
                class="store-locator-search__input"
                placeholder="Enter a location">
-         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-              <use href="#icon-search"></use>
-            </svg>
+        {%- include 'icon', name:"search" -%}
+
       </div>
 
       <div class="store-locator__group">
@@ -240,7 +240,7 @@
     {%- endif -%}
 
     {%- capture icon %}
-     
+      {% comment %}{%- include 'icon' with block.settings.icon_title -%}{% endcomment %}
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
           <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
       </svg>
@@ -352,8 +352,7 @@
             <path d="M17.697 9.627v.013c-.001 1.093-.312 2.163-.905 3.101l-3.86 5.738c-.125.184-.284.343-.469.468-.79.532-1.862.322-2.394-.468l-3.87-5.752c-.584-.924-.895-1.994-.896-3.1.07-3.359 2.849-6.026 6.186-5.96 3.359-.066 6.137 2.601 6.208 5.96zm-6.208-4.81C8.764 4.763 6.51 6.927 6.453 9.64c.001.876.25 1.733.71 2.46l3.86 5.738c.177.263.535.333.798.156.062-.042.115-.095.156-.156l3.852-5.724c.467-.739.716-1.594.718-2.468-.06-2.722-2.313-4.881-5.058-4.828zm.011 1.927c1.424 0 2.589 1.11 2.589 2.492s-1.165 2.491-2.589 2.491-2.589-1.109-2.589-2.491c0-1.383 1.165-2.492 2.589-2.492zm0 1.15c-.8 0-1.439.607-1.439 1.342 0 .734.638 1.341 1.439 1.341.8 0 1.439-.607 1.439-1.341 0-.735-.638-1.342-1.439-1.342z"/>
         </svg>
         <a rv-href="store.google_url" target="_blank">
-          <span rv-html="store.street"></span> <br> <span rv-html="store.city"></span><br>
-          <span rv-html="store.province"> </span><br><span rv-html="store.zip"></span>
+          <span rv-html="store.street"></span> <br> <span rv-html="store.city"></span><br><span rv-html="store.province"> <span rv-html="store.zip"></span>
         </a>
       </div>
       <div class="store-locator-contact store-locator-window-block">
