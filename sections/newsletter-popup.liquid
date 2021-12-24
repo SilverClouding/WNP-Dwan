@@ -43,8 +43,8 @@
                    data-form-status
                    {% endif %}  
                    onkeyup="ValidateEmail();">
-               <span id="lblError" style="color: red"></span>
-                <span id="elError" style="color: red">This field is required</span>
+               <span id="lblError" style="color: red">Please enter a valid email address.</span>
+<!--                 <span id="elError" style="color: red">This field is required</span> -->
               
              
             <span class="input-group__btn disabled" id="button_sub">
@@ -105,7 +105,7 @@
     
     
     if (!expr.test(emaill)) {
-      lblError.innerHTML = "Please enter a valid email address.";
+//       lblError.innerHTML = "Please enter a valid email address.";
   elerror.classList.remove("show");
     }else{ 
 //       console.log("else");  
