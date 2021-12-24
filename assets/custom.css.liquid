@@ -294,23 +294,27 @@ p{
   text-decoration: none;
   font-family: 'Avenir LT Std';
 }
+.announcement-con li{
+  display:flex;
+  align-items:center;
+}
 #shopify-section-announcement-bar .announcement-right ul li svg{
   margin-right:9px;
   width:20px !important;
   height:20px !important;
 }
 .announcement-right .wg-drop.country-selector .wgcurrent{
-border:none!important;
+  border:none!important;
 }
 .announcement-right .wg-drop.country-selector{
-background:transparent !important;
+  background:transparent !important;
 }
 
 .wg-drop.country-selector.closed ul{
-    display: none;
+  display: none;
 }
 .wg-drop.country-selector.wg-mouse-click.weg-openleft ul{
-	display:block;
+  display:block;
 }
 
 @media(max-width:767px){
@@ -2873,9 +2877,9 @@ select:focus, select:hover{
     width:100%;
   }
   #newsletter-popup .contact-form .btn:hover{
-/*     background:#fff; */
+    /*     background:#fff; */
     border:1px solid #44444D;
-/*     color:#44444D; */
+    /*     color:#44444D; */
     outline:none !important;
     box-shadow:none !important;
     text-decoration: none;
@@ -5376,7 +5380,7 @@ select:focus, select:hover{
   }
   .element-margin .article-template__link:hover,
   .element-margin .article-template__link:focus{
-  color:#153A33;
+    color:#153A33;
     text-underline-offset:3px;
   }
   .article-template__content p a{
@@ -5462,7 +5466,7 @@ select:focus, select:hover{
     width: 160px;
   }
   .article-template__link.animate-arrow .icon-wrap{
-  display:none;
+    display:none;
   }
   .article-template__link.animate-arrow:before{
     content:'';
@@ -5474,35 +5478,35 @@ select:focus, select:hover{
     height:11px;
     background:url({{ 'back-arrow.png' | asset_url }}) center no-repeat;
   } 
- @media(max-width:992px){
-  .article-template__title, 
-  .article-template__content h1, 
-  .article-template__content h1 strong{
-    font-size:30px;
-    line-height:38px;
-    margin-bottom: 1.8rem !important;
-  } 
-  .article-template__content span strong,
-  .article-template__content strong,
-   .article-template__content span,
-   .article-template__content p a,
-   .article-template__content .collapsible{
-    font-size:18px;
+  @media(max-width:992px){
+    .article-template__title, 
+    .article-template__content h1, 
+    .article-template__content h1 strong{
+      font-size:30px;
+      line-height:38px;
+      margin-bottom: 1.8rem !important;
+    } 
+    .article-template__content span strong,
+    .article-template__content strong,
+    .article-template__content span,
+    .article-template__content p a,
+    .article-template__content .collapsible{
+      font-size:18px;
+    }
+    .article-template__content em, 
+    .article-template__content p,
+    .article-template__content b,
+    .article-template__content div{
+      font-size:18px;
+    }
+
   }
-   .article-template__content em, 
-  .article-template__content p,
-  .article-template__content b,
-  .article-template__content div{
-    font-size:18px;
-  }
-   
- }
-  
-   
-  
-  
-  
-  
+
+
+
+
+
+
   @media screen and (min-width: 750px){
     .blog-articles--collage .blog-articles__article.article:last-child {
       grid-column:span 1;
