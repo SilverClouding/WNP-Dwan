@@ -4,9 +4,15 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "brand-page": {
+      "type": "brand-page",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "brand-page"
   ]
 }
