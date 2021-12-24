@@ -447,6 +447,12 @@ jQuery(function($){
   $(document).on('click', '.false_btn',function(){
     var inputval = $('#first-name').val();
     console.log(inputval);
+    if(inputval == "" ){
+      $("#valError").addClass('show');
+      $("#valError").text("This field is required");
+    }
+    
+    
     $(".error-fields").addClass("show");
     $(".error-fields").text("Please fill the filds");
   });
