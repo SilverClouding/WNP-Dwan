@@ -72,7 +72,7 @@
       ],
       "settings": {
         "text": "Shop by brand",
-        "column_alignment": "left",
+        "column_alignment": "flex-start",
         "background_style": "primary"
       }
     }
