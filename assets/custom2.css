@@ -85,7 +85,7 @@ span#lblError {
 span#button_sub {
   margin-top: 30px;
 }
-#elError{
+#elError,#valError{
 display:none;
 }
 span.error-fields.show, #valError.show, #elError.show {
