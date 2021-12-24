@@ -108,7 +108,10 @@
           {% assign chars = temp %}
           {% endunless %}
 
-          <li><a href="/collections/vendors?q={{ vendor }}&sort_by=created-descending">{{vendor | capitalize}}</a></li>
+          <li>
+<!--             <a href="/collections/vendors?q={{ vendor }}&sort_by=created-descending">{{vendor | capitalize}}</a> -->
+             <a href="/collections/{{ vendor |handle }}">{{vendor | capitalize}}</a>
+          </li>
           {% endfor %}
       
 
