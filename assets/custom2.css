@@ -108,11 +108,10 @@ input#first-name {
 
 
 .cols-banner img {
-    width: 100px;
-    height: auto;
+    width: 100px!important;
+    height: auto!important;
     min-height: auto!important;
-    text-align: right;
-    float: right;
+    float: right!important;
 }
 
 .cols-banner {
