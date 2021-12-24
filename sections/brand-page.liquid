@@ -67,9 +67,8 @@
 
       
       
-    {% assign noumberFound = false %}
-          {% for i in (0..9) %} 
-      
+    
+    
       {% assign chars = '' %}
       {% for vendor in shop.vendors %}
       {% capture first_char %}{{ vendor | truncate: 1, ''  | upcase}}{% endcapture %}
@@ -88,13 +87,8 @@
 
       <div>
         <h2 class="char">
-         
-          {% assign vnumber = first_char | plus: 0 %}
-         
-{{i}} == {{first_char}}
-          {% if first_char == i %} 
-          0-9 
-          {% else %}
+          
+          {% if first_char contains number %} 0-9 {% else %}
           {{ first_char }}
           {% endif %}
         
@@ -109,7 +103,7 @@
       
 
     </div>
-     {% endfor %}
+    
   </div>
 </div>
 
