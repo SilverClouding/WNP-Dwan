@@ -445,6 +445,7 @@ jQuery(function($){
   });
 
   $(document).on('click', '.false_btn',function(){
+    $(".error-fields").addClass("show");
     $(".error-fields").text("Please fill the filds");
   });
   
