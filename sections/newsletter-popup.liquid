@@ -22,6 +22,7 @@
             <div class="first-name">
               {% comment %}<label for="first-name">First name</label>{% endcomment %}
               <input id="first-name" type="text" name="customer[first_name]" placeholder="Name"  oninput="this.value = this.value.toUpperCase()" onkeyup="ValidateEmail();"/>
+              <span class="error-fields"style="color: red"></span>
             </div>
             <div class="email-con">
              
@@ -44,7 +45,7 @@
                <span id="lblError" style="color: red"></span>
              
             <span class="input-group__btn disabled" id="button_sub">
-               <span class="error-fields"style="color: red"></span>
+               
               <a class="btn false_btn" name="commit" id="false_Subscribe">
                 <span>{{ 'newsletter.button_label' | t }}</span>
               </a>
