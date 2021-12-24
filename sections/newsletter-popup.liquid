@@ -22,7 +22,8 @@
             <div class="first-name">
               {% comment %}<label for="first-name">First name</label>{% endcomment %}
               <input id="first-name" type="text" name="customer[first_name]" placeholder="Name"  oninput="this.value = this.value.toUpperCase()" onkeyup="ValidateEmail();"/>
-              <span class="error-fields"style="color: red"></span>
+<!--               <span class="error-fields"style="color: red"></span> -->
+              <span id="valError" style="color: red"></span>
             </div>
             <div class="email-con">
              
@@ -42,9 +43,9 @@
                    data-form-status
                    {% endif %}  
                    onkeyup="ValidateEmail();">
-<!--                <span id="lblError" style="color: red"></span> -->
+               <span id="lblError" style="color: red"></span>
               
-              <span id="valError" style="color: red"></span>
+              
              
             <span class="input-group__btn disabled" id="button_sub">
                
