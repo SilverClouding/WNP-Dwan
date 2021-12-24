@@ -446,10 +446,15 @@ jQuery(function($){
 
   $(document).on('click', '.false_btn',function(){
     var inputval = $('#first-name').val();
+    var emailVal = $('.emailValid').val();
     console.log(inputval);
     if(inputval == "" ){
       $("#valError").addClass('show');
       $("#valError").text("This field is required");
+    }
+    if(emailVal == "" ){
+      $("#elError").addClass('show');
+      $("#elError").text("This field is required");
     }
     
     
