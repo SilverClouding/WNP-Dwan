@@ -68,7 +68,7 @@
       
       
     
-      {% assign number = "1,2,3,4,5,6,7,8,9,0" %}
+      
       {% assign chars = '' %}
       {% for vendor in shop.vendors %}
       {% capture first_char %}{{ vendor | truncate: 1, ''  | upcase}}{% endcapture %}
@@ -86,7 +86,15 @@
       {% endunless %}
 
       <div>
-        <h2 class="char">{% if first_char contains number %} 0-9 {% else %}{{ first_char }}{% endif %}</h2>
+        <h2 class="char">
+          {% for i in (0..9) %}
+          {{i}}
+          {% endfor %}
+          {% if first_char contains number %} 0-9 {% else %}
+          {{ first_char }}
+          {% endif %}
+        
+        </h2>
         <ul>
           {% capture temp %}{{ chars }}{{ first_char }}{% endcapture %}
           {% assign chars = temp %}
