@@ -450,11 +450,9 @@ jQuery(function($){
     console.log(inputval);
     if(inputval == "" ){
       $("#valError").addClass('show');
-      $("#valError").text("This field is required");
     }
     if(emailVal == "" ){
       $("#elError").addClass('show');
-      $("#elError").text("This field is required");
     }
     
     
