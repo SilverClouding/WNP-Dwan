@@ -1,13 +1,16 @@
 <style>
-.brand-page .grid--5-col-desktop li {
-    width: 20%;
-}
+  .brand-page .grid--5-col-desktop li {
+    width: calc(20% - 10px);
+    margin-right: 10px;
+    margin-bottom: 6px;
+    padding-bottom: 0!important;
+  }
 
-.brand-page .multicolumn-list {
+  .brand-page .multicolumn-list {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
+  }
 </style>
 <div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
