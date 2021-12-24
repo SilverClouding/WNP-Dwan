@@ -73,3 +73,15 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
     display: none;
   }
 }
+
+input#Contact_newsletter-popup-email {
+    margin-bottom: 0!important;
+}
+
+span#lblError {
+    text-align: left;
+}
+
+span#button_sub {
+    margin-top: 30px;
+}
