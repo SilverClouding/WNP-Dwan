@@ -87,6 +87,33 @@
         {% endfor %}
       </ul>
       
+      {% assign chars = '' %}
+      {% for vendor in shop.vendors %}
+      {% capture first_char %}{{ vendor | truncate: 1, ''  | upcase}}{% endcapture %}
+
+      {% if forloop.first %}
+      <div>
+        <ul id="vendorlist">
+          {% endif %}
+
+          {% unless chars contains first_char %}
+          {% unless forloop.first %}
+          <div style="clear:both;"></div>
+        </ul>
+      </div>
+      {% endunless %}
+
+      <div>
+        <h2>{{ first_char }}</h2>
+        <ul>
+          {% capture temp %}{{ chars }}{{ first_char }}{% endcapture %}
+          {% assign chars = temp %}
+          {% endunless %}
+
+          <li><a href="/collections/vendors?q={{ vendor }}&sort_by=created-descending">{{vendor | capitalize}}</a></li>
+        </ul>
+      </div>
+      {% endfor %}
       
 
     </div>
