@@ -8,7 +8,7 @@
 
   .brand-page .multicolumn-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: {{section.settings.column_alignment}};
     flex-wrap: wrap;
   }
 </style>
@@ -76,7 +76,7 @@
       "id": "column_alignment",
       "options": [
         {
-          "value": "left",
+          "value": "flex-start",
           "label": "t:sections.multicolumn.settings.column_alignment.options__1.label"
         },
         {
@@ -84,7 +84,7 @@
           "label": "t:sections.multicolumn.settings.column_alignment.options__2.label"
         }
       ],
-      "default": "left",
+      "default": "flex-start",
       "label": "t:sections.multicolumn.settings.column_alignment.label"
     },
     {
