@@ -288,7 +288,7 @@
             "type": "col_img",
             "settings": {
               "btn_text": "Shop All Brands",
-              "button_link": ""
+              "button_link": "shopify:\/\/pages\/shop-by-brand"
             }
           },
           "mega-menu-4-0": {
