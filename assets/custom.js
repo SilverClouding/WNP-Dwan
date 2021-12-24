@@ -452,7 +452,7 @@ jQuery(function($){
       $("#valError").addClass('show');
     }
     if(emailVal == "" ){
-      $("#elError").addClass('show');
+      $("#lblError").text('Please enter a valid email address.');
     }
     
     
