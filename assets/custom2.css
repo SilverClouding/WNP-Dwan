@@ -105,3 +105,17 @@ input#first-name {
     background: #153A33;
     color: #fff!important;
 }
+
+
+.cols-banner img {
+    width: 100px;
+    height: auto;
+    min-height: auto!important;
+    text-align: right;
+    float: right;
+}
+
+.cols-banner {
+    min-height: 110px;
+    border: 1px solid #000;
+}
