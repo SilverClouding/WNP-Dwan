@@ -456,8 +456,7 @@ jQuery(function($){
     }
     
     
-    $(".error-fields").addClass("show");
-    $(".error-fields").text("Please fill the filds");
+//     $(".error-fields").addClass("show");
   });
   
   
