@@ -65,12 +65,7 @@
     
     <div class="section_width">
 
-      {% assign counter = 0 %}
-{% for vendor in shop.vendors %}
-  {% assign counter = counter | plus: 1 %}
-{% endfor %}
-
-{% assign counter_divided_by_3 = counter | divided_by: 3 | floor %}
+      
       
       <ul class="vendor-list block-grid three-up mobile one-up">
         {% for product_vendor in shop.vendors %}
