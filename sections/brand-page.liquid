@@ -1,3 +1,14 @@
+<style>
+.brand-page .grid--5-col-desktop li {
+    width: 20%;
+}
+
+.brand-page .multicolumn-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+</style>
 <div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
     <div class="section_width">
@@ -54,7 +65,7 @@
 {% schema %}
 {
   "name": "Brand Logos",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section spaced-section--full-width brand-page",
   "tag": "section",
   "settings": [
     {
