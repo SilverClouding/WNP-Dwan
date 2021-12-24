@@ -1,4 +1,3 @@
-<script src="{{ 'z__jsStoreLocator.js' | asset_url }}"></script>
 {%- capture store_additional_details %}
 
   {% comment %}<div class="store-locator-contact">
@@ -284,7 +283,7 @@
   ]
 
 </script>
-
+<script src="{{ 'z__jsStoreLocator.js' | asset_url }}" defer></script>
 <script src="{{ 'iziToast.min.js' | asset_url }}"></script>
 <link rel="stylesheet" href="{{ 'iziToast.min.css' | asset_url }}">
 
