@@ -66,3 +66,10 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
 .tabcontent-cus h4, .accordion__content h4 {
     margin-bottom: 0;
 }
+
+
+@media(max-width:680px){
+  ul.footer-block__details-content {
+    display: none;
+  }
+}
