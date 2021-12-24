@@ -5451,7 +5451,23 @@ select:focus, select:hover{
     height:11px;
     background:url({{ 'back-arrow.png' | asset_url }}) center no-repeat;
   } 
-
+ @media(max-width:992px){
+  .article-template__title, 
+  .article-template__content h1, 
+  .article-template__content h1 strong{
+    font-size:30px;
+    line-height:38px;
+    margin-bottom: 1.8rem;
+  } 
+   
+   
+ }
+  
+  
+  
+  
+  
+  
   @media screen and (min-width: 750px){
     .blog-articles--collage .blog-articles__article.article:last-child {
       grid-column:span 1;
