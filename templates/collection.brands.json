@@ -81,6 +81,13 @@
             "image": "shopify:\/\/shop_images\/Rectangle_156.png",
             "img_link": ""
           }
+        },
+        "12073bfa-afe3-4dd7-a74c-2fd04dd685f5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_157.png",
+            "img_link": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +99,8 @@
         "5d123591-dbee-4d66-b7a8-48b83552e8cd",
         "d1438cd9-c850-4af2-b745-80e6ae5aea93",
         "145ce5c2-ed91-464d-abe0-e257e19d3bd1",
-        "9686b134-9d55-4795-91f2-0b6629f965e7"
+        "9686b134-9d55-4795-91f2-0b6629f965e7",
+        "12073bfa-afe3-4dd7-a74c-2fd04dd685f5"
       ],
       "settings": {
         "text": "Shop by brand",
