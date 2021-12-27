@@ -37,7 +37,7 @@ container.onmouseenter = showView;
 
 function qty_plus_updateItemById(id,quantity,sections) {
   quantity = quantity + 1;
-  document.getElementById("mini_Quantity-cart-items").value = txt;
+  document.getElementById("mini_Quantity-cart-items").value = quantity;
   console.log(quantity);
   updateItemById(id,quantity,sections);
 }
