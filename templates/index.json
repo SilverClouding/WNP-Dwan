@@ -77,7 +77,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
-        "show_rating": true
+        "show_rating": true,
+        "sec_class": ""
       }
     },
     "163646666171e43149": {
@@ -162,7 +163,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "section_width": 100,
-        "sec_class": "",
+        "sec_class": "logo-size-con",
         "slider": true
       }
     },
