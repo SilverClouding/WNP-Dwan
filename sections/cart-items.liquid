@@ -180,6 +180,27 @@ body.page-your-shopping-cart {
             <p class="brand">Brand: {{item.vendor}}</p>
             <p class="size"><p>{{ item.variant.title | remove: removeTitle }}</p></p>
           <div class="quantity-val">Qty: {{ item.quantity }}</div>
+          
+          <quantity-input class="quantity">
+            <button class="quantity__button no-js-hidden" name="minus" type="button">
+              <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+              {% render 'icon-minus' %}
+            </button>
+            <input class="quantity__input qv-quantity"
+                   type="number"
+                   name="quantity"
+                   id="Quantity-{{ section.id }}"
+                   min="1"
+                   value="1"
+                   form="{{ product_form_id }}"
+                   >
+            <button class="quantity__button no-js-hidden" name="plus" type="button">
+              <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+              {% render 'icon-plus' %}
+            </button>
+          </quantity-input>
+          
+          
         </div>
         <div class="cart__item-title-right">
           <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
