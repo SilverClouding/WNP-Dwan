@@ -64,12 +64,14 @@
         "d1438cd9-c850-4af2-b745-80e6ae5aea93": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/open_farm.png",
             "img_link": ""
           }
         },
         "145ce5c2-ed91-464d-abe0-e257e19d3bd1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Kong_c42d2e46-7a2f-4268-9088-ca14a304fbad.png",
             "img_link": ""
           }
         }
