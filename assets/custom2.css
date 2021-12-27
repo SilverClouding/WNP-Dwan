@@ -114,7 +114,11 @@ input#first-name {
     height: auto!important;
     min-height: auto!important;
     float: right!important;
-      margin-right: 60px;
+    
+}
+
+.cols-banner.collection img:not('.metafields_banner'){
+  margin-right: 60px;
 }
 .cols-banner.collection{
 background-color:#f4f4f4;
