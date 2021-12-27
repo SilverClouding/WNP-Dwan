@@ -280,7 +280,7 @@ body.page-your-shopping-cart {
               <a href="{{product.url}}"><h5>{{product.title}}</h5></a>
               <p>Brand: {{product.vendor}}</p>
               <div class="minicart_var_addtocart">
-              
+               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <div class="minicart_variant">
 
                   {% if product.has_only_default_variant %}
@@ -294,6 +294,8 @@ body.page-your-shopping-cart {
                   {% endif %}
 
                 </div>
+                 {%- endform -%}
+                
                 <div class="minicart_add_to_cart">
                  <input type="submit" class="qv-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
                 </div>
