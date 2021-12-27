@@ -1005,15 +1005,7 @@ select:focus, select:hover{
   .quick-view-button{
     display:none;
   }
-  #product-grid .grid__item:hover .quick-view-button{
-    position:absolute;
-    top:90px; 
-    left:50%;
-    transform:translate(-50%);
-    z-index:9;
-    display:block;
-    width:130px;
-  }
+  
   .swiper-slide:hover .quick-view-button{
     position:absolute;
     top:90px; 
@@ -5553,8 +5545,19 @@ select:focus, select:hover{
   padding:0;
   }
 
-
-
+/*   .dropdown_column__products #product-grid .grid__item:hover .quick-view-button{
+  
+  } */
+#ProductGridContainer #product-grid .grid__item:hover .quick-view-button{
+    position:absolute;
+    top:90px; 
+    left:50%;
+    transform:translate(-50%);
+    z-index:9;
+    display:block;
+    width:130px;
+  margin-left:1.4rem;
+  }
 
 
 
