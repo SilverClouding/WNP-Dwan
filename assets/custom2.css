@@ -117,13 +117,11 @@ input#first-name {
     
 }
 
-.cols-banner.collection img:not('.metafields_banner'){
-  margin-right: 60px;
-}
+
 .cols-banner.collection{
 background-color:#f4f4f4;
 }
 
 img.metafields_banner.banner__media-for-desktop {
-    width: 100%!important;
+    width: 100%!important; margin-right: 60px;
 }
