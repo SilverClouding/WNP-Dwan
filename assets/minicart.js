@@ -34,19 +34,17 @@ container.onmouseenter = showView;
 
 
 //qty change
-function qty_minus_updateItemById(id,quantity,sections) {
-  
-  quantity = quantity - 1;
-  console.log(quantity);
-  updateItemById(id,quantity,sections);
-}
 
 function qty_plus_updateItemById(id,quantity,sections) {
   quantity = quantity + 1;
   console.log(quantity);
   updateItemById(id,quantity,sections);
 }
-
+function qty_minus_updateItemById(id,quantity,sections) {  
+  quantity = quantity - 1;
+  console.log(quantity);
+  updateItemById(id,quantity,sections);
+}
 
 // Item remove
 function updateItemById(id,quantity,sections) {
