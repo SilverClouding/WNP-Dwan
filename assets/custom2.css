@@ -123,5 +123,5 @@ background-color:#f4f4f4;
 }
 
 img.metafields_banner.banner__media-for-desktop {
-    width: 100%!important; 
+    width: 100%!important;   margin-right: 0px!important;
 }
