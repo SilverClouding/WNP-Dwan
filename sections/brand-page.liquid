@@ -18,6 +18,10 @@
   .brand-page ul {
     padding-left: 0;
 }
+   .brand-page ul.logo-li-wrap img {
+  width:{{section.settings.image_width}}%;
+   }
+  
 </style>
 <div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
@@ -25,7 +29,7 @@
       {% if section.settings.text != blank %}
       <h2>{{section.settings.text}}</h2>
       {% endif %}
-      <ul class="multicolumn-list grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--5-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"
+      <ul class="multicolumn-list logo-li-wrap grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--5-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"
           id="Slider-{{ section.id }}"
           role="list">
 
