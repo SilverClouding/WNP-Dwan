@@ -140,3 +140,7 @@ ul.minicart_you_may_also li {
 ul.minicart_you_may_also {
     padding: 0;
 }
+
+.min-cart-items quantity-input.quantity {
+    width: 100px;
+}
