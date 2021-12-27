@@ -4,6 +4,16 @@
       "type": "main-collection-product-grid",
       "disabled": true,
       "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
       }
     },
     "brand-page": {
@@ -12,6 +22,7 @@
         "7b4b559e-d437-46a5-bf53-bb0ac4d9ab1a": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Kong_c42d2e46-7a2f-4268-9088-ca14a304fbad.png",
             "img_link": ""
           }
         },
@@ -24,6 +35,7 @@
         "3627c4d7-b15a-4f85-9501-0e488ad5859a": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/open_farm.png",
             "img_link": ""
           }
         },
@@ -36,6 +48,7 @@
         "42ff0e2a-3676-4165-9a51-c07994ec9d5e": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Stella_Freeze_Dried_Logo.png",
             "img_link": ""
           }
         },
@@ -48,6 +61,7 @@
         "a88e8ab9-6195-4f98-a391-769887cb7543": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wellness.png",
             "img_link": ""
           }
         },
