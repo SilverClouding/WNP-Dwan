@@ -125,3 +125,18 @@ background-color:#f4f4f4;
 img.metafields_banner.banner__media-for-desktop {
     width: 100%!important;   margin-right: 0px!important;
 }
+
+ul.minicart_you_may_also li {
+    width: 100%;
+    max-width: 100%;
+}
+
+.main_prod_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ul.minicart_you_may_also {
+    padding: 0;
+}
