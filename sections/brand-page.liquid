@@ -22,7 +22,9 @@
   width:{{section.settings.image_width}}%!important;
     margin: 0 auto;
    }
-  
+  li.no-margin-right {
+    margin-right: 0!important;
+}
 </style>
 <div class="brand_logos multicolumn background-{{ section.settings.background_style }} no-heading {{ section.settings.sec_class }}">
   <div class="page-width ">
@@ -35,7 +37,7 @@
           role="list">
 
         {%- for block in section.blocks -%}
-        <li class="{% cycle '', '', '','no-margin-right' %}" {{ block.shopify_attributes }}>
+        <li class="{% cycle '', '', '', '','no-margin-right' %}" {{ block.shopify_attributes }}>
           <div class="multicolumn-card">
             <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width">
               {% if block.settings.image != blank %}
