@@ -124,7 +124,7 @@
    {% if collection.metafields.collection.banner_image != blank %}
    
          {% for image in collection.metafields.collection.banner_image %}
-{{image.src}}
+{{image}}
          <img class="{%- if image != blank -%}banner__media-for-desktop{%- endif -%}" 
               srcset="{%- if image.width >= 375 -%}{{ image.src | img_url: '375x' }} 375w,{%- endif -%}
                       {%- if image.width >= 750 -%}{{ image.src| img_url: '750x' }} 750w,{%- endif -%}
