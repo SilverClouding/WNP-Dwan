@@ -34,7 +34,7 @@ container.onmouseenter = showView;
 
 
 //qty change
-const container = document.querySelector('.header__icon--cart');
+const container = document.querySelector('.quantity__button');
 const updateQty = (event) => {
 console.log('click button');
 }
