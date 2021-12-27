@@ -108,7 +108,7 @@ input#first-name {
     color: #fff!important;
 }
 
-
+/* 
 .cols-banner img {
     width: 100px!important;
     height: auto!important;
@@ -119,4 +119,8 @@ input#first-name {
 .cols-banner {
     min-height: 110px;
     border: 1px solid #000;
+} */
+
+img.metafields_banner.banner__media-for-desktop {
+    width: 100%!important;
 }
