@@ -126,9 +126,9 @@
          {% for image in collection.metafields.collection.banner_image %}
 {{image}}
          <img class="{%- if image.src != blank -%}banner__media-for-desktop{%- endif -%}" 
-              srcset="{{ image.src | img_url: '1500x' }}"
+              srcset="{{ image.src }}"
               sizes="(min-width: 750px) 50vw, 100vw"
-              src="{{ image.src | img_url: '1500x' }}"
+              src="{{ image.src}}"
               loading="lazy"
               alt="{{ image.alt | escape }}"
               width="{{ image.width }}"
