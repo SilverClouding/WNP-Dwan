@@ -34,11 +34,11 @@ container.onmouseenter = showView;
 
 
 //qty change
-const container = document.querySelector('.quantity__button');
+const qtyBtn = document.querySelector('.quantity__button');
 const updateQty = (event) => {
 console.log('click button');
 }
-container.onclick = updateQty;
+qtyBtn.onclick = updateQty;
 
 // Item remove
 function updateItemById(id,quantity,sections) {
