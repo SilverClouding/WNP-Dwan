@@ -29,6 +29,7 @@
         "1f007911-1b89-4265-9513-258a6add6f2f": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Orijen_logo.jpg",
             "img_link": ""
           }
         },
