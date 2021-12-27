@@ -114,7 +114,7 @@ input#first-name {
     height: auto!important;
     min-height: auto!important;
     float: right!important;
-    
+    margin-right: 60px;
 }
 
 
@@ -123,5 +123,5 @@ background-color:#f4f4f4;
 }
 
 img.metafields_banner.banner__media-for-desktop {
-    width: 100%!important; margin-right: 60px;
+    width: 100%!important; 
 }
