@@ -252,7 +252,7 @@ body.page-your-shopping-cart {
       {% for product in collections[block.settings.recomended_col].products limit: 4 %}
         <li class="grid__item">
           <div class="main_prod_wrap">
-            <div class="minicart_may_also-img"></div>
+            <div class="minicart_may_also-img"><img src="{{product.featured_image | img_url:'100x'}}" ></div>
             <div class="minicart_may_also_info">
               <h5>{{product.title}}</h5>
               <p>Brand: {{product.vendor}}</p>
