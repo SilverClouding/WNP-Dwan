@@ -168,7 +168,7 @@ body.page-your-shopping-cart {
   <div class="min-cart-items">
 
     {% for item in cart.items %}
-     {% assign product_id = item.id %}
+     {% assign product_id = item.product_id %}
     <div itemid="{{product_id}}" class="min-cart-item" index="{{forloop.index}}">
       <div class="td-image cart__image">
         <img src="{{item.image | img_url: '100x100' }}" /> 
