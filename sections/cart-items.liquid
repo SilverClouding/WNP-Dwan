@@ -253,12 +253,12 @@ body.page-your-shopping-cart {
         <li class="grid__item">
           {% render 'product-card',
             product_card_product: recommendation,
-            media_size: section.settings.image_ratio,
-            show_secondary_image: section.settings.show_secondary_image,
-            add_image_padding: section.settings.add_image_padding,
-            show_vendor: section.settings.show_vendor,
-            show_image_outline: section.settings.show_image_outline,
-            show_rating: section.settings.show_rating
+            media_size: 'adapt',
+            show_secondary_image: false,
+            add_image_padding: true,
+            show_vendor: true,
+            show_image_outline: false,
+            show_rating: false
           %}
         </li>
       {% endfor %}
