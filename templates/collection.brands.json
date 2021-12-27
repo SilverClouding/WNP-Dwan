@@ -22,7 +22,7 @@
         "7b4b559e-d437-46a5-bf53-bb0ac4d9ab1a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kong_c42d2e46-7a2f-4268-9088-ca14a304fbad.png",
+            "image": "shopify:\/\/shop_images\/Stella_Freeze_Dried_Logo.png",
             "img_link": ""
           }
         },
@@ -74,6 +74,13 @@
             "image": "shopify:\/\/shop_images\/Kong_c42d2e46-7a2f-4268-9088-ca14a304fbad.png",
             "img_link": ""
           }
+        },
+        "9686b134-9d55-4795-91f2-0b6629f965e7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_159_1bad4672-8f3a-4b0a-be25-21e1fc52a4b4.png",
+            "img_link": ""
+          }
         }
       },
       "block_order": [
@@ -84,7 +91,8 @@
         "a88e8ab9-6195-4f98-a391-769887cb7543",
         "5d123591-dbee-4d66-b7a8-48b83552e8cd",
         "d1438cd9-c850-4af2-b745-80e6ae5aea93",
-        "145ce5c2-ed91-464d-abe0-e257e19d3bd1"
+        "145ce5c2-ed91-464d-abe0-e257e19d3bd1",
+        "9686b134-9d55-4795-91f2-0b6629f965e7"
       ],
       "settings": {
         "text": "Shop by brand",
