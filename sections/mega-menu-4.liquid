@@ -134,12 +134,12 @@
                  {% for sub_link in link.links %}
                    {% if sub_link.type == 'collection_link' %}
                      {% assign linkCollection = sub_link.object %}  
-           {{  linkCollection.image.src }}
+          
                      <div class="featured-prod-item">
                        <a href="{{ sub_link.url }}">
                          {% if linkCollection.image %}
                          
-                       
+                        {{  linkCollection.image.src }}
                           
                          {% include 'image-element',imageHight: section.settings.height, image: linkCollection.image.src, alt: linkCollection.title  %}
 
