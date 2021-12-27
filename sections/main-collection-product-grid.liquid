@@ -125,8 +125,8 @@
    
          {% for image in collection.metafields.collection.banner_image %}
 {{image}}
-         <img class="{%- if image != blank -%}banner__media-for-desktop{%- endif -%}" 
-              srcset="{%- if image.width >= 375 -%}{{ image.src | img_url: '375x' }} 375w,{%- endif -%}
+         <img class="{%- if image.src != blank -%}banner__media-for-desktop{%- endif -%}" 
+              srcset="{%- if image.width >= 375 -%}{{ image.src }} 375w,{%- endif -%}
                       {%- if image.width >= 750 -%}{{ image.src| img_url: '750x' }} 750w,{%- endif -%}
                       {%- if image.width >= 1100 -%}{{ image.src | img_url: '1100x' }} 1100w,{%- endif -%}
                       {%- if image.width >= 1500 -%}{{ image.src | img_url: '1500x' }} 1500w,{%- endif -%}
@@ -134,7 +134,7 @@
                       {%- if image.width >= 2000 -%}{{image.src | img_url: '2000x' }} 2000w,{%- endif -%}
                       {%- if image.width >= 3000 -%}{{ image.src | img_url: '3000x' }} 3000w,{%- endif -%}
                       {%- if image.width >= 3840 -%}{{ image.src | img_url: '3840x' }} 3840w,{%- endif -%}
-                      {{ collection.image | img_url: 'master' }} {{ mage.width }}w"
+                      {{ image.src | img_url: 'master' }} {{ mage.width }}w"
               sizes="(min-width: 750px) 50vw, 100vw"
               src="{{ image.src | img_url: '1500x' }}"
               loading="lazy"
