@@ -114,12 +114,9 @@ input#first-name {
     height: auto!important;
     min-height: auto!important;
     float: right!important;
+      margin-right: 25px;
 }
 
-.cols-banner.collection {
-    min-height: 110px;
-/*     border: 1px solid #000; */
-}
 
 img.metafields_banner.banner__media-for-desktop {
     width: 100%!important;
