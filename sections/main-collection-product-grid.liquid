@@ -124,22 +124,27 @@
    
    {% if collection.metafields.collection.banner_image != blank %}
    
-    <img class="{%- if section.settings.image_2 != blank -%}banner__media-for-desktop{%- endif -%}" 
-           srcset="{%- if collection.image.width >= 375 -%}{{ collection.metafields.collection.banner_image.src | img_url: '375x' }} 375w,{%- endif -%}
-                   {%- if collection.image.width >= 750 -%}{{ collection.image | img_url: '750x' }} 750w,{%- endif -%}
-                   {%- if collection.image.width >= 1100 -%}{{ collection.image | img_url: '1100x' }} 1100w,{%- endif -%}
-                   {%- if collection.image.width >= 1500 -%}{{ collection.image | img_url: '1500x' }} 1500w,{%- endif -%}
-                   {%- if collection.image.width >= 1780 -%}{{ collection.image | img_url: '1780x' }} 1780w,{%- endif -%}
-                   {%- if collection.image.width >= 2000 -%}{{ collection.image | img_url: '2000x' }} 2000w,{%- endif -%}
-                   {%- if collection.image.width >= 3000 -%}{{ collection.image | img_url: '3000x' }} 3000w,{%- endif -%}
-                   {%- if collection.image.width >= 3840 -%}{{ collection.image | img_url: '3840x' }} 3840w,{%- endif -%}
-                   {{ collection.image | img_url: 'master' }} {{ collection.image.width }}w"
-           sizes="(min-width: 750px) 50vw, 100vw"
-           src="{{ collection.image | img_url: '1500x' }}"
-           loading="lazy"
-           alt="{{ collection.image.alt | escape }}"
-           width="{{ collection.image.width }}"
-           height="{{ collection.image.width | divided_by: collection.image.aspect_ratio }}">
+         {% for image in product.metafields.accentuate.multi_images %}
+
+         <img class="{%- if image != blank -%}banner__media-for-desktop{%- endif -%}" 
+              srcset="{%- if image.width >= 375 -%}{{ image.src | img_url: '375x' }} 375w,{%- endif -%}
+                      {%- if image.width >= 750 -%}{{ image.src| img_url: '750x' }} 750w,{%- endif -%}
+                      {%- if image.width >= 1100 -%}{{ image.src | img_url: '1100x' }} 1100w,{%- endif -%}
+                      {%- if image.width >= 1500 -%}{{ image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+                      {%- if image.width >= 1780 -%}{{ image.src  | img_url: '1780x' }} 1780w,{%- endif -%}
+                      {%- if image.width >= 2000 -%}{{image.src | img_url: '2000x' }} 2000w,{%- endif -%}
+                      {%- if image.width >= 3000 -%}{{ image.src | img_url: '3000x' }} 3000w,{%- endif -%}
+                      {%- if image.width >= 3840 -%}{{ image.src | img_url: '3840x' }} 3840w,{%- endif -%}
+                      {{ collection.image | img_url: 'master' }} {{ mage.width }}w"
+              sizes="(min-width: 750px) 50vw, 100vw"
+              src="{{ image.src | img_url: '1500x' }}"
+              loading="lazy"
+              alt="{{ image.alt | escape }}"
+              width="{{ image.width }}"
+              height="{{ image.width | divided_by: image.aspect_ratio }}">
+
+         {% endfor %}
+   
    {% else %}
    
   {%- if collection.image != blank -%}
