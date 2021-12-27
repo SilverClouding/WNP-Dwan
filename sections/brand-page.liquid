@@ -171,7 +171,17 @@
       ],
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
-    }
+    },
+    {
+        "type": "range",
+        "id": "image_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "image Width",
+        "default": 100
+      }
   ],
   "blocks": [
     {
@@ -187,17 +197,7 @@
         "type": "url",
         "id": "img_link",
         "label": "Image Link"
-        },
-    {
-        "type": "range",
-        "id": "image_width",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "%",
-        "label": "image Width",
-        "default": 100
-      }
+        }
       ]
     }
   ]
