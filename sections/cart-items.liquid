@@ -191,7 +191,7 @@ body.page-your-shopping-cart {
                    name="quantity"
                    id="mini_Quantity-{{ section.id }}"
                    min="1"
-                   value=" {{item.quantity}}"
+                   value="{{item.quantity}}"
                    form="{{ product_form_id }}"
                    >
             <button class="quantity__button plus no-js-hidden" name="plus" type="button" onclick="qty_plus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
