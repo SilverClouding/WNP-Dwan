@@ -247,7 +247,7 @@ body.page-your-shopping-cart {
 {% for block in section.blocks %}
 {% case block.type %}
 {%- when 'recentview' -%}
-<product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?product_id={{ product_id }}&limit=4">
+<product-recommendations class="product-recommendations page-width" data-urll="{{ routes.product_recommendations_url }}?product_id={{ product_id }}&limit=4">
   <ul class="minicart_you_may_also" role="list">
       {% for product in collections[block.settings.recomended_col].products limit: 4 %}
         <li class="grid__item">
