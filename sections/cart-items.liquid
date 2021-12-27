@@ -284,7 +284,7 @@ body.page-your-shopping-cart {
                 <div class="minicart_variant">
 
                   {% if product.has_only_default_variant %}
-                  <input name="id" value="{{ variant.id }}" type="hidden">
+                  <input name="id" value="{{ product.selected_or_first_available_variant }}" type="hidden">
                   {% else %}
                   <select name="id">
                     {% for variant in product.variants %}
