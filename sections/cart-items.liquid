@@ -249,7 +249,10 @@ body.page-your-shopping-cart {
 {%- when 'recentview' -%}
 <product-recommendations class="product-recommendations page-width" data-urll="{{ routes.product_recommendations_url }}?product_id={{ product_id }}&limit=4">
   <ul class="minicart_you_may_also" role="list">
+    {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
+    
       {% for product in collections[block.settings.recomended_col].products limit: 4 %}
+     {% unless allreadyInCart contains product.id  %}
         <li class="grid__item">
           <div class="main_prod_wrap">
             <div class="minicart_may_also-img"><img src="{{product.featured_image | img_url:'100x'}}" ></div>
@@ -277,6 +280,7 @@ body.page-your-shopping-cart {
             </div>
           </div>
         </li>
+    {% endunless %}
       {% endfor %}
     </ul>
 </product-recommendations>
