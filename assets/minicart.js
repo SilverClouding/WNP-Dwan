@@ -34,7 +34,7 @@ container.onmouseenter = showView;
 
 
 //qty change
-class QuantityInput extends HTMLElement {
+class QuantityInputMini extends HTMLElement {
   constructor() {
     super();
     this.input = this.querySelector('input');
@@ -54,9 +54,9 @@ class QuantityInput extends HTMLElement {
   }
 }
 
-customElements.define('quantity-input', QuantityInput);
+customElements.define('quantity-input', QuantityInputMini);
 
-console.log(QuantityInput);
+console.log(QuantityInputMini);
 
 
 // Item remove
