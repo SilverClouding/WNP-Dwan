@@ -40,12 +40,6 @@
             "img_link": ""
           }
         },
-        "5d123591-dbee-4d66-b7a8-48b83552e8cd": {
-          "type": "column",
-          "settings": {
-            "img_link": ""
-          }
-        },
         "42ff0e2a-3676-4165-9a51-c07994ec9d5e": {
           "type": "column",
           "settings": {
@@ -53,16 +47,23 @@
             "img_link": ""
           }
         },
-        "d1438cd9-c850-4af2-b745-80e6ae5aea93": {
-          "type": "column",
-          "settings": {
-            "img_link": ""
-          }
-        },
         "a88e8ab9-6195-4f98-a391-769887cb7543": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wellness.png",
+            "img_link": ""
+          }
+        },
+        "5d123591-dbee-4d66-b7a8-48b83552e8cd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Orijen_logo.jpg",
+            "img_link": ""
+          }
+        },
+        "d1438cd9-c850-4af2-b745-80e6ae5aea93": {
+          "type": "column",
+          "settings": {
             "img_link": ""
           }
         },
@@ -77,10 +78,10 @@
         "7b4b559e-d437-46a5-bf53-bb0ac4d9ab1a",
         "1f007911-1b89-4265-9513-258a6add6f2f",
         "3627c4d7-b15a-4f85-9501-0e488ad5859a",
-        "5d123591-dbee-4d66-b7a8-48b83552e8cd",
         "42ff0e2a-3676-4165-9a51-c07994ec9d5e",
-        "d1438cd9-c850-4af2-b745-80e6ae5aea93",
         "a88e8ab9-6195-4f98-a391-769887cb7543",
+        "5d123591-dbee-4d66-b7a8-48b83552e8cd",
+        "d1438cd9-c850-4af2-b745-80e6ae5aea93",
         "145ce5c2-ed91-464d-abe0-e257e19d3bd1"
       ],
       "settings": {
