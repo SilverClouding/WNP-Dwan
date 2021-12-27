@@ -117,12 +117,13 @@
 </div>
 {% endcapture %}
 
-    {{collection.metafields.collection.banner_image}}
+    {{collection.metafields.collection.banner_image.size}}
+{{collection.metafields.collection.banner_image.src}}
 {% capture banner %}
  <div class="cols-banner">
    
    {% if collection.metafields.collection.banner_image != blank %}
-   {{collection.metafields.collection.banner_image.src}}
+   
     <img class="{%- if section.settings.image_2 != blank -%}banner__media-for-desktop{%- endif -%}" 
            srcset="{%- if collection.image.width >= 375 -%}{{ collection.metafields.collection.banner_image.src | img_url: '375x' }} 375w,{%- endif -%}
                    {%- if collection.image.width >= 750 -%}{{ collection.image | img_url: '750x' }} 750w,{%- endif -%}
