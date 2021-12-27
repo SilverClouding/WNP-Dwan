@@ -133,7 +133,8 @@
                {% if linkHandle == parentLink %}
                  {% for sub_link in link.links %}
                    {% if sub_link.type == 'collection_link' %}
-                     {% assign linkCollection = sub_link.object %}          
+                     {% assign linkCollection = sub_link.object %}  
+           {{  linkCollection}}
                      <div class="featured-prod-item">
                        <a href="{{ sub_link.url }}">
                          {% if linkCollection.image %}
