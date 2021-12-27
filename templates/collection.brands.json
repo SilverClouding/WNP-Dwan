@@ -86,7 +86,8 @@
       "settings": {
         "text": "Shop by brand",
         "column_alignment": "flex-start",
-        "background_style": "primary"
+        "background_style": "primary",
+        "image_width": 57
       }
     }
   },
