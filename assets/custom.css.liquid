@@ -1877,6 +1877,46 @@ select:focus, select:hover{
       margin-bottom:0;
       line-height:26px;
     }
+    
+    
+    .footer .footer-block__heading:before{
+  width: 10px;
+height: 10px;
+position: absolute;
+content: '';
+color: #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+transform: rotate(312deg);
+right: 15px;
+top: 17px;
+     
+    }
+
+.footer .footer-block__heading.active:before{display:none;}   
+ .footer .footer-block__heading:after{
+  display:none;
+  }
+ .footer .footer-block__heading.active:after{
+  display:block;
+  }
+ .footer .footer-block__heading:after{
+  width: 10px;
+height: 10px;
+position: absolute;
+content: '';
+color: #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+transform: rotate(40deg);
+right: 15px;
+top: 17px;
+   
+    } 
+    
+    
+    
+    
 
   }
 
