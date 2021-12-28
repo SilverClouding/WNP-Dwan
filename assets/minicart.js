@@ -105,9 +105,84 @@ function addItemFromForm (form_id, callback) {
 
 
 jQuery(function(){
- $(document).on('click',".mini-add-button", function (e) {
-   e.preventDefault();
-   console.log('click work');
- });
+  $(document).on('click',".mini-add-button", function (e) {
+    e.preventDefault();
+    console.log('click work');
+     var product_handle = $(this).data('handle');
+    jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+      console.log(product);
+      var title = product.title;
+      var type = product.vendor;
+      var price = 0;
+      var original_price = 0;
+      var desc = product.description;
+      var images = product.images;
+      var variants = product.variants;
+      var options = product.options;
+      var url = '/products/' + product_handle;
+  
+     
+      var qty = 1;
+      var selectedOptions = '';
+      var var_id = '';
+      $('.minicart_variant select, .radio_butt:checked').each(function (i) {
+        if (selectedOptions == '') {
+          selectedOptions = $(this).val();
+        } else {
+          selectedOptions = selectedOptions + ' / ' + $(this).val();
+        }
+      });
+      jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+        $(product.variants).each(function (i, v) {
+          if (v.title == selectedOptions) {
+            var_id = v.id;
+            processCart();
+
+          }
+        });
+      });
+      function processCart() {
+        jQuery.post('/cart/add.js', {
+          quantity: qty,
+          id: var_id
+        },
+                    null,
+                    "json"
+                   ).done(function () {
+
+
+
+          $.getJSON('/?sections=cart-items', function(data) {      
+            var sectionHtmlData = data; 
+            console.log(data);
+            var SectionHtml = sectionHtmlData['cart-items'] ;
+            $("#mini-cart").html(SectionHtml);
+            $('#mini-cart').toggleClass("show-minibag");
+            $('body').toggleClass("overflow-hidden");
+            $('.minibag-mask').show();
+            $('#mini-cart').removeClass("hide-minibag");
+            $('.crosssell-group .feedback-add_in_modal').each(function(e){
+              theme.applyAjaxToProductForm($(this));
+            });
+
+          });
+
+
+          // $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
+
+
+        })
+        .fail(function ($xhr) {
+          var data = $xhr.responseJSON;
+          $('.qv-add-to-cart-response').addClass('error').html('<span><b>ERROR: </b>' + data.description);
+        });
+
+
+      }
+
+
+
+    });
+  });
 
 });
