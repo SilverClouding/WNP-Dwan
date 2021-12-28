@@ -108,7 +108,15 @@ function addItemFromForm (form_id, callback) {
 
 jQuery(function($){ 
   var selectedOptions = '';
- 
+  $(document).on('change', '.minicart_variant select', function() {
+        //Use $option (with the "$") to see that the variable is a jQuery object
+        var $option = $(this).find('option:selected');
+        //Added with the EDIT
+        var value = $option.val();//to get content of "value" attrib
+        var text = $option.text();//to get <option>Text</option> content
+        selectedOptions = value;
+      });
+       console.log(selectedOptions);
   
   $(document).on('click',".mini-add-button", function (e) {
     e.preventDefault();
