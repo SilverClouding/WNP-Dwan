@@ -278,7 +278,7 @@ body.page-your-shopping-cart {
 {%- when 'recentview' -%}
  <ul class="minicart_you_may_also" role="list">
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
-      {% for product in collections[block.settings.recomended_col].products limit: 30%}
+      {% for product in collections[block.settings.recomended_col].products limit: 100%}
    {% if product.available %}
      {% unless allreadyInCart contains product.id  %}
         <li class="grid__item">
@@ -294,7 +294,7 @@ body.page-your-shopping-cart {
                   {% if product.has_only_default_variant %}
                   <input name="id" value="{{ product.selected_or_first_available_variant.id }}" type="hidden">
                   {% else %}
-                  <select name="id">
+                  <select name="id" >
                     {% for variant in product.variants %}
                     {% if variant.available %}
                     <option value="{{ variant.id }}">{{ variant.title }}</option>
