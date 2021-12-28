@@ -36,7 +36,7 @@ const showView = (event) => {
     //Added with the EDIT
     var value = $option.val();//to get content of "value" attrib
     var text = $option.text();//to get <option>Text</option> content
-    console.log(value);
+    console.log(text);
   });
   
 }
