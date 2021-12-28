@@ -107,7 +107,7 @@ function addItemFromForm (form_id, callback) {
 
 
 jQuery(function($){ 
-  var selectedOptions = '';
+  var selectedOptions = $('.minicart_variant').attr('var_default_id');
   $(document).on('change', '.minicart_variant select', function() {
         //Use $option (with the "$") to see that the variable is a jQuery object
         var $option = $(this).find('option:selected');
