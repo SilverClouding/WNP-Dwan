@@ -116,6 +116,16 @@ jQuery(function(){
       var url = '/products/' + product_handle;
   	  var qty = 1;
       var var_id = 0;
+      var selectedOptions = '';
+      
+      $('#quick-view select, .radio_butt:checked').each(function (i) {
+              if (selectedOptions == '') {
+                selectedOptions = $(this).val();
+              } else {
+                selectedOptions = selectedOptions + ' / ' + $(this).val();
+              }
+            });
+      console.log(selectedOptions);
       
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) {
