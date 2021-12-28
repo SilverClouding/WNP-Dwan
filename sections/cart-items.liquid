@@ -278,7 +278,6 @@ body.page-your-shopping-cart {
 {%- when 'recentview' -%}
  <ul class="minicart_you_may_also" role="list">
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
-    {{allreadyInCart}}
       {% for product in collections[block.settings.recomended_col].products limit: 30%}
      {% unless allreadyInCart contains product.id  %}
         <li class="grid__item">
@@ -305,7 +304,7 @@ body.page-your-shopping-cart {
                 
                 
                 <div class="minicart_add_to_cart">
-                 <input type="submit" class="qv-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
+                 <input type="submit" class="mini-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
                 </div>
                  {%- endform -%}
               </div>
