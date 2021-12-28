@@ -131,7 +131,7 @@ jQuery(function($){
       var var_id = 0;
      
       
-      $('.minicart_variant select option:selected').each(function (i) {
+      $('#select_'+product.id+' option:selected').each(function (i) {
 
         selectedOptions = $(this).val();
 
