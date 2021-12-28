@@ -103,8 +103,21 @@ function addItemFromForm (form_id, callback) {
     jQuery.ajax(params);
 };
 
+ 
 
-jQuery(function($){
+
+jQuery(function($){ 
+  var selectedOptions = '';
+  $(document).on('change', '.minicart_variant select', function() {
+        //Use $option (with the "$") to see that the variable is a jQuery object
+        var $option = $(this).find('option:selected');
+        //Added with the EDIT
+        var value = $option.val();//to get content of "value" attrib
+        var text = $option.text();//to get <option>Text</option> content
+        selectedOptions = value;
+      });
+       console.log(selectedOptions);
+  
   $(document).on('click',".mini-add-button", function (e) {
     e.preventDefault();
     console.log('click work');
@@ -116,7 +129,7 @@ jQuery(function($){
       var url = '/products/' + product_handle;
   	  var qty = 1;
       var var_id = 0;
-      var selectedOptions = '';
+     
       
       $('.minicart_variant select:selected').each(function (i) {
 
@@ -124,15 +137,7 @@ jQuery(function($){
 
       });
 
-     $(document).on('change', '.minicart_variant select', function() {
-        //Use $option (with the "$") to see that the variable is a jQuery object
-        var $option = $(this).find('option:selected');
-        //Added with the EDIT
-        var value = $option.val();//to get content of "value" attrib
-        var text = $option.text();//to get <option>Text</option> content
-        selectedOptions = value;
-      });
-       console.log(selectedOptions);
+    
       
       
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
