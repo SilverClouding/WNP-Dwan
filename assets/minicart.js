@@ -145,7 +145,7 @@ jQuery(function($){
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) { 
          
-            console.log(i)
+            console.log(product.variants.size)
           if ( v.id == selectedOptions ){ 
             var_id = v.id;
             processCart();
