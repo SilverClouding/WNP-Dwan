@@ -1837,15 +1837,16 @@ select:focus, select:hover{
     padding-right:5px;
   }
   .copyright-web{
-      display:block;
-    }
-    .copyright-mob{
-      display:none;
-    }
+    display:block;
+  }
+  .copyright-mob{
+    display:none;
+  }
   @media(max-width:992px){
     .footer{
       display:flex;
       flex-wrap:wrap;
+      padding-bottom:50px;
     }
     .footer .footer__content-bottom{
       order:1;
@@ -1930,7 +1931,12 @@ select:focus, select:hover{
     .copyright-mob{
       display:block;
     }
-
+    .footer .footer__copyright.copyright-mob {
+      text-align: center;
+      margin-right: 0px;
+      font-size:18px;
+      line-height:22px;
+    }
 
 
   }
