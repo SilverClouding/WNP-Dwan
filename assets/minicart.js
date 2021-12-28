@@ -150,9 +150,9 @@ jQuery(function($){
          
             console.log(product.variants.length);
           
-          if(product.variants.length > 1){ }else{
-            selectedOptions = $('.minicart_variant').attr('var_default_id');
-          }
+//           if(product.variants.length > 1){ }else{
+//             selectedOptions = $('.minicart_variant').attr('var_default_id');
+//           }
             if ( v.id == selectedOptions ){ 
               var_id = v.id;
               processCart();
