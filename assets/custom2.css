@@ -144,3 +144,11 @@ ul.minicart_you_may_also {
 .min-cart-items quantity-input.quantity {
     width: 100px;
 }
+
+ul.minicart_you_may_also li:first-child {
+    display: block;
+}
+
+ul.minicart_you_may_also li {
+    display: none;
+}
