@@ -307,6 +307,7 @@ body.page-your-shopping-cart {
                 
                 
                 <div class="minicart_add_to_cart">
+                   {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
                  <input type="submit" data-handle="{{product.handle}}" class="mini-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
                 </div>
                  {%- endform -%}
