@@ -290,7 +290,7 @@ body.page-your-shopping-cart {
               <div class="minicart_var_addtocart">
                {%- form 'product', product, id: 'mini_product-form-installment', class: 'installment caption-large' -%}
                 <div class="minicart_variant" var_default_id="{{ product.selected_or_first_available_variant.id }}">
-
+                  <div>Size: <span>{{ product.selected_or_first_available_variant.title }}</span></div>
                   {% if product.has_only_default_variant %}
                   <input name="id" value="{{ product.selected_or_first_available_variant.id }}" type="hidden">
                   {% else %}
