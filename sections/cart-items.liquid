@@ -295,7 +295,9 @@ body.page-your-shopping-cart {
                   {% else %}
                   <select name="id">
                     {% for variant in product.variants %}
+                    {% if variant.available %}
                     <option value="{{ variant.id }}">{{ variant.title }}</option>
+                    {% endif %}
                     {% endfor%}
                   </select>
                   {% endif %}
