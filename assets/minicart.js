@@ -130,8 +130,9 @@ jQuery(function($){
   	  var qty = 1;
       var var_id = 0;
      
-      var select = $(this).parent('.minicart_add_to_cart').siblings('.minicart_variant').children('select'); 
+      var select = $(this).parents('.minicart_add_to_cart').siblings('.minicart_variant').children('select'); 
       $(select).addClass('ok');
+      
 //       $(select+' option:selected').each(function (i) {
 
 //         selectedOptions = $(this).val();
