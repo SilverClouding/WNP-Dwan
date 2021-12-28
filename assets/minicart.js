@@ -77,3 +77,27 @@ function updateItemById(id,quantity,sections) {
     console.error('Error:', error);
   });
 }
+
+// ---------------------------------------------------------
+// POST to cart/add.js returns the JSON of the line item.
+// ---------------------------------------------------------
+Shopify.addItemFromForm = function(form_id, callback) {
+    var params = {
+      type: 'POST',
+      url: '/cart/add.js',
+      data: jQuery('#' + form_id).serialize(),
+      dataType: 'json',
+      success: function(line_item) { 
+        if ((typeof callback) === 'function') {
+          callback(line_item);
+        }
+        else {
+          Shopify.onItemAdded(line_item);
+        }
+      },
+      error: function(XMLHttpRequest, textStatus) {
+        Shopify.onError(XMLHttpRequest, textStatus);
+      }
+    };
+    jQuery.ajax(params);
+};
