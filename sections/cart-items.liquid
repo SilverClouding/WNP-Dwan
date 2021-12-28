@@ -241,9 +241,9 @@ body.page-your-shopping-cart {
     <a href="/cart" class="button-custom button">View Cart</a>
 
   </div>
-  <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-    {{ content_for_additional_checkout_buttons }}
-  </div>
+<button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                  {{ 'sections.cart.checkout' | t }}
+                </button>
 </div>
 
 {% else %}
