@@ -105,7 +105,8 @@ function addItemFromForm = function(form_id, callback) {
 
 
 jQuery(function(){
- $(document).on('click',".mini-add-button", function () {
+ $(document).on('click',".mini-add-button", function (e) {
+   e.preventDefault();
    console.log('click work');
  });
 
