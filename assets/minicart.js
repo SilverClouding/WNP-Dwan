@@ -29,6 +29,16 @@ const showView = (event) => {
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
   });
+  
+  jQuery(document).on('change', '.minicart_variant select', function() {
+    //Use $option (with the "$") to see that the variable is a jQuery object
+    var $option = $(this).find('option:selected');
+    //Added with the EDIT
+    var value = $option.val();//to get content of "value" attrib
+    var text = $option.text();//to get <option>Text</option> content
+    cosnole.log(value);
+  });
+  
 }
 container.onmouseenter = showView;
 
@@ -78,30 +88,6 @@ function updateItemById(id,quantity,sections) {
   });
 }
 
-// ---------------------------------------------------------
-// POST to cart/add.js returns the JSON of the line item.
-// ---------------------------------------------------------
-function addItemFromForm (form_id, callback) {
-  console.log(form_id);console.log(callback);
-    var params = {
-      type: 'POST',
-      url: '/cart/add.js',
-      data: jQuery('#' + form_id).serialize(),
-      dataType: 'json',
-      success: function(line_item) { 
-        if ((typeof callback) === 'function') {
-          callback(line_item);
-        }
-        else {
-          Shopify.onItemAdded(line_item);
-        }
-      },
-      error: function(XMLHttpRequest, textStatus) {
-        Shopify.onError(XMLHttpRequest, textStatus);
-      }
-    };
-    jQuery.ajax(params);
-};
 
  
 
