@@ -153,7 +153,8 @@ jQuery(function($){
 //           if(product.variants.length > 1){ }else{
 //             selectedOptions = $('.minicart_variant').attr('var_default_id');
 //           }
-            if ( v.id == selectedOptions ){ 
+//             if ( v.id == selectedOptions ){ 
+           if(product.variants.length > 1){
               var_id = v.id;
               processCart();
               console.log(v.available+"-"+v.title);
