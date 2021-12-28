@@ -160,6 +160,7 @@ jQuery(function($){
               console.log(v.id); 
               console.log(selectedOptions);
             }else{
+              console.log('else');
              var_id = v.id;
             }
          
