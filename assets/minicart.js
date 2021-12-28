@@ -144,11 +144,12 @@ jQuery(function($){
         $(product.variants).each(function (i, v) { 
          
             console.log(v.available+"-"+v.title);
+          console.log(var_id); 
+          console.log(selectedOptions);
           if ( v.id == selectedOptions ){ 
             var_id = v.id;
             processCart();
-            console.log(var_id); 
-          console.log(selectedOptions);
+            
           }
           
         });
