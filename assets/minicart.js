@@ -104,7 +104,7 @@ function addItemFromForm (form_id, callback) {
 };
 
 
-jQuery(function(){
+jQuery(function($){
   $(document).on('click',".mini-add-button", function (e) {
     e.preventDefault();
     console.log('click work');
@@ -129,9 +129,11 @@ jQuery(function(){
       
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) {
+          if (v.title == selectedOptions) {
             var_id = v.id;
             processCart();
-          console.log(var_id);
+            console.log(var_id);
+          }
         });
       });
       
