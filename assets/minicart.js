@@ -118,7 +118,7 @@ jQuery(function(){
       var var_id = 0;
       var selectedOptions = '';
       
-      $('.minicart_variant select, .radio_butt:checked').each(function (i) {
+      $('.minicart_variant select').each(function (i) {
               if (selectedOptions == '') {
                 selectedOptions = $(this).val();
               } else {
