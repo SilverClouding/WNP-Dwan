@@ -144,7 +144,6 @@ jQuery(function($){
         $(product.variants).each(function (i, v) { 
          
           if ( v.id == selectedOptions ){ 
-            console.log(v.available+"-"+v.title);
             var_id = v.id;
             processCart();
             console.log(var_id); 
