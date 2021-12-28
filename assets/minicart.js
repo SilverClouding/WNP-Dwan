@@ -128,11 +128,10 @@ jQuery(function($){
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) { 
           console.log(v);
-          if (v.id == selectedOptions) {
+         
             var_id = v.id;
             processCart();
-           
-          }
+          
           console.log(var_id); 
           console.log(selectedOptions);
         });
