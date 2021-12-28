@@ -107,7 +107,7 @@ function addItemFromForm (form_id, callback) {
 
 
 jQuery(function($){ 
-  var selectedOptions = $('.minicart_variant').attr('var_default_id');
+  var selectedOptions = '';
   $(document).on('change', '.minicart_variant select', function() {
         //Use $option (with the "$") to see that the variable is a jQuery object
         var $option = $(this).find('option:selected');
@@ -119,6 +119,9 @@ jQuery(function($){
        console.log(selectedOptions);
   
   $(document).on('click',".mini-add-button", function (e) {
+    
+    
+    
     e.preventDefault();
     console.log('click work');
      var product_handle = $(this).data('handle');
@@ -146,13 +149,19 @@ jQuery(function($){
         $(product.variants).each(function (i, v) { 
          
             console.log(product.variants.length);
-          if ( v.id == selectedOptions ){ 
-            var_id = v.id;
-            processCart();
-            console.log(v.available+"-"+v.title);
-          console.log(v.id); 
-          console.log(selectedOptions);
+          
+          if(product.variants.length > 1){
+            if ( v.id == selectedOptions ){ 
+              var_id = v.id;
+              processCart();
+              console.log(v.available+"-"+v.title);
+              console.log(v.id); 
+              console.log(selectedOptions);
+            }
+          }else{
+            selectedOptions = $('.minicart_variant').attr('var_default_id');
           }
+          
           
         });
       });
