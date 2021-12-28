@@ -81,7 +81,7 @@ function updateItemById(id,quantity,sections) {
 // ---------------------------------------------------------
 // POST to cart/add.js returns the JSON of the line item.
 // ---------------------------------------------------------
-function addItemFromForm = function(form_id, callback) {
+function addItemFromForm (form_id, callback) {
   console.log(form_id);console.log(callback);
     var params = {
       type: 'POST',
