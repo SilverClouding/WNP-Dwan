@@ -81,7 +81,7 @@ function updateItemById(id,quantity,sections) {
 // ---------------------------------------------------------
 // POST to cart/add.js returns the JSON of the line item.
 // ---------------------------------------------------------
-Shopify.addItemFromForm = function(form_id, callback) {
+function addItemFromForm = function(form_id, callback) {
   console.log(form_id);console.log(callback);
     var params = {
       type: 'POST',
@@ -102,3 +102,11 @@ Shopify.addItemFromForm = function(form_id, callback) {
     };
     jQuery.ajax(params);
 };
+
+
+jQuery(function(){
+ $(document).on('click',".mini-add-button", function () {
+   console.log('click work');
+ });
+
+});
