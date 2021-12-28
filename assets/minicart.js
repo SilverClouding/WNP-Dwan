@@ -127,7 +127,7 @@ jQuery(function($){
       
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) { 
-          console.log(v);
+          console.log(v.available+"-"+v.title);
          
             var_id = v.id;
             processCart();
