@@ -162,6 +162,7 @@ jQuery(function($){
             }else{
               console.log('else');
              var_id = v.id;
+               processCart();
             }
          console.log(var_id); 
           
