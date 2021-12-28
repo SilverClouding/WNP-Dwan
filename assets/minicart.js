@@ -119,11 +119,21 @@ jQuery(function($){
       var selectedOptions = '';
       
       $('.minicart_variant select:selected').each(function (i) {
-             
-                selectedOptions = $(this).val();
-             
-            });
- 
+
+        selectedOptions = $(this).val();
+
+      });
+
+      $('.minicart_variant select').change(function() {
+        //Use $option (with the "$") to see that the variable is a jQuery object
+        var $option = $(this).find('option:selected');
+        //Added with the EDIT
+        var value = $option.val();//to get content of "value" attrib
+        var text = $option.text();//to get <option>Text</option> content
+        selectedOptions = value;
+      });
+       console.log(selectedOptions);
+      
       
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) { 
