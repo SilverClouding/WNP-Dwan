@@ -241,7 +241,14 @@ body.page-your-shopping-cart {
     <a href="/cart" class="button-custom button">{{ 'general.cart.view' | t }}</a>
 
   </div>
-  <a href="/checkout" class="button-custom button">{{ 'sections.cart.checkout' | t }}</a>
+<!--   <a href="/checkout" class="button-custom button">{{ 'sections.cart.checkout' | t }}</a> -->
+  
+  <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+    <button class="button button--primary button--full-width" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
+  </form>
+  <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+
+
 </div>
 
 {% else %}
