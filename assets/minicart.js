@@ -124,7 +124,7 @@ jQuery(function($){
 
       });
 
-      $('.minicart_variant select').change(function() {
+     $(document).on('change', '.minicart_variant select', function() {
         //Use $option (with the "$") to see that the variable is a jQuery object
         var $option = $(this).find('option:selected');
         //Added with the EDIT
