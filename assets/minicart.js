@@ -131,7 +131,7 @@ jQuery(function($){
       var var_id = 0;
      
       
-      $((this.parent('.minicart_add_to_cart').siblings('.minicart_variant').children('select'))+'option:selected').each(function (i) {
+      $($(this).parent('.minicart_add_to_cart').siblings('.minicart_variant').children('select')+'option:selected').each(function (i) {
 
         selectedOptions = $(this).val();
 
