@@ -119,11 +119,9 @@ jQuery(function($){
       var selectedOptions = '';
       
       $('.minicart_variant select').each(function (i) {
-              if (selectedOptions == '') {
+             
                 selectedOptions = $(this).val();
-              } else {
-                selectedOptions = selectedOptions + ' / ' + $(this).val();
-              }
+             
             });
       console.log(selectedOptions);
       
