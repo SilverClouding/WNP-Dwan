@@ -150,17 +150,19 @@ jQuery(function($){
          
             console.log(product.variants.length);
           
-          if(product.variants.length > 1){
+          if(product.variants.length > 1){ }else{
+            selectedOptions = $('.minicart_variant').attr('var_default_id');
+          }
             if ( v.id == selectedOptions ){ 
               var_id = v.id;
               processCart();
               console.log(v.available+"-"+v.title);
               console.log(v.id); 
               console.log(selectedOptions);
+            }else{
+             var_id = v.id;
             }
-          }else{
-            selectedOptions = $('.minicart_variant').attr('var_default_id');
-          }
+         
           
           
         });
