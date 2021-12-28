@@ -116,7 +116,7 @@ jQuery(function($){
         var text = $option.text();//to get <option>Text</option> content
         selectedOptions = value;
       });
-       console.log(selectedOptions);
+//        console.log(selectedOptions);
   
   $(document).on('click',".mini-add-button", function (e) {
     
@@ -158,16 +158,16 @@ jQuery(function($){
               if ( v.id == selectedOptions ){ 
               var_id = v.id;
               processCart();
-              console.log(v.available+"-"+v.title);
-              console.log(v.id); 
-              console.log(selectedOptions);
+//               console.log(v.available+"-"+v.title);
+              console.log(v.id+'='+selectedOptions); 
+//               console.log(selectedOptions);
               }
             }else{
               console.log('else');
              var_id = v.id;
                processCart();
             }
-         console.log(var_id); 
+//          console.log(var_id); 
           
           
         });
