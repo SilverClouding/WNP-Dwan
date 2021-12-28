@@ -163,7 +163,7 @@ jQuery(function($){
               console.log('else');
              var_id = v.id;
             }
-         
+         console.log(var_id); 
           
           
         });
