@@ -112,36 +112,19 @@ jQuery(function(){
     jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
       console.log(product);
       var title = product.title;
-      var type = product.vendor;
-      var price = 0;
-      var original_price = 0;
-      var desc = product.description;
-      var images = product.images;
-      var variants = product.variants;
-      var options = product.options;
+      product_handle = product.handle;
       var url = '/products/' + product_handle;
-  
-     
-      var qty = 1;
-      var selectedOptions = '';
-      var var_id = '';
-      $('.minicart_variant select, .radio_butt:checked').each(function (i) {
-        if (selectedOptions == '') {
-          selectedOptions = $(this).val();
-        } else {
-          selectedOptions = selectedOptions + ' / ' + $(this).val();
-        }
-      });
+  	  var qty = 1;
+      var var_id = 0;
+      
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) {
-          if (v.title == selectedOptions) {
             var_id = v.id;
-            console.log(var_id);
             processCart();
-
-          }
+          console.log(var_id);
         });
       });
+      
       function processCart() {
         jQuery.post('/cart/add.js', {
           quantity: qty,
