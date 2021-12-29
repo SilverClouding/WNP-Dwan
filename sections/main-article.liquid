@@ -244,12 +244,11 @@
   {%- endif -%}
   
   
-  {{article.metafields.article.articles}}
-  
+ 
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
  
   {% for splitarticle in selected_articles %} 
-  {{splitarticle}}<br> 
+  <b> {{splitarticle}}</b><br> 
   {% assign article = articles[splitarticle] %}
 
   <div class="blog-articles__article article ">
