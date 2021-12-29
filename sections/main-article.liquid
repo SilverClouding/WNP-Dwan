@@ -262,7 +262,7 @@
   </div>
   {%- endif -%}
   
-  {% comment %} {% endcomment %} 
+  {% comment %} 
   <slider-component class="slider-mobile-gutter section_width main-blog page-width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
     <h1 class="title--primary">{{section.settings.title}}</h1>
@@ -294,7 +294,52 @@
       {%- endif -%}
     
     
-  </slider-component>
+  </slider-component> {% endcomment %}
+  
+  
+  {% capture all_the_tags %}{% for tag in article.tags %}{{ tag }} {% endfor %}{% endcapture %}
+  {% assign current = article.id %}
+  {% assign count = 0 %}
+  <script>
+    function fisherYates ( myArray ) {
+      var i = myArray.length,j,temp;
+      if (i === 0) return false;
+      while (--i) {
+        j = Math.floor(Math.random()*(i+1));
+        temp = myArray[i];
+        myArray[i] = myArray[j]; 
+        myArray[j] = temp;
+      }
+    }
+
+    var articles = new Array();
+    {% for article in blog.articles %}
+    {% unless article.id == current %}
+    {% for tag in article.tags %}
+    {% if all_the_tags contains tag %}
+    {% if article.content contains 'src' %}
+    {% assign article_img = article.content | split:'src="' %}
+    {% assign article_img = article_img[1] | split:'"' %}
+    {% assign article_img = article_img[0] %}
+    {% capture article_img %}<img src='{{ article_img }}' alt='{{ shop.name | escape }} {{ article.title | escape }}' />{% endcapture %}
+    {% else %}
+    {% capture article_img %}<img src='{{ 'logo.png' | asset_url }}' alt="{{ shop.name }}" />{% endcapture %}
+    {% endif %}
+    articles[{{ count }}] = "<a href='{{ article.url }}'>{{ article_img | img_tag }}<br />{{ article.title | escape }}</a>";
+    {% assign count = count | plus:1 %}
+    {% endif %}
+    {% endfor %}
+    {% endunless %}
+    {% endfor %}
+
+    fisherYates(products);
+    for(var i=0;i<4;i++) {
+      document.write(articles[i]);	
+    }
+
+  </script>
+  
+  
 {{article.metafields.stores.collection}}
    {{article.metafields.articleProduct.related_product}}
   <slider-component class="slider-mobile-gutter page-width">
