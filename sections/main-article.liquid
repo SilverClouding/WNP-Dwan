@@ -270,7 +270,7 @@
     {% for splitarticle in selected_articles limit: 3 %} 
    
     {% assign article = articles[splitarticle] %}
-    <li class="grid__item  oneblog-articles__article article ">
+    <li class="grid__item  oneblog-articles__article article {% if section.settings.swipe_on_mobile %} slider__slide{% endif %} ">
       {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: true, show_date: true, show_author: true -%}
     </li>
 
