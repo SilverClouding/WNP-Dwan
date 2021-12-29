@@ -26,13 +26,20 @@
           "type": "content",
           "settings": {
           }
+        },
+        "dbc7f7b0-e662-46c7-a0a9-8c766b86e509": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
         "featured_image",
         "title",
         "share",
-        "content"
+        "content",
+        "dbc7f7b0-e662-46c7-a0a9-8c766b86e509"
       ],
       "settings": {
         "show_readmore": true,
