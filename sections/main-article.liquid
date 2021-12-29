@@ -2,7 +2,14 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
-
+<style>
+.custom_bolg_article {
+    flex-wrap: wrap;
+    width: 100%;
+    grid-template-columns: auto!important;
+    display: flex;
+}
+</style>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
