@@ -4710,8 +4710,12 @@ select:focus, select:hover{
   }
   
   @media(min-width:375px) and (max-width:992px){
-    .custom-btn-section .button.button--primary, .button.blog__button {
+    .custom-btn-section .button.button--primary{
       width: 335px!important;
+    }
+    .button.blog__button {
+      min-width: 335px!important;
+      width:100% !important;
     }
   }
 @media(max-width:767px){
