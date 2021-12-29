@@ -313,7 +313,7 @@
     }
 
     var articles = new Array();
-    {% for article in blog.articles %}
+    {% for article in blog.blog.articles %}
     {% unless article.id == current %}
     {% for tag in article.tags %}
     {% if all_the_tags contains tag %}
