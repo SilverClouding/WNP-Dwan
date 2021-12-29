@@ -409,9 +409,12 @@
           "654b495c-c1b2-4bc9-a662-6b1ac9bb0242": {
             "type": "icontext",
             "settings": {
-              "title": "",
-              "title2": "",
-              "title3": ""
+              "image": "shopify:\/\/shop_images\/support_1.png",
+              "title": "head1",
+              "image2": "shopify:\/\/shop_images\/house-1.png",
+              "title2": "head2",
+              "image3": "shopify:\/\/shop_images\/house-1.png",
+              "title3": "head3"
             }
           }
         },
