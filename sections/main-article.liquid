@@ -21,6 +21,7 @@
 {% capture relatedProduct %}
 <slider-component class="slider-mobile-gutter page-width">
   {% assign product_handles = article.metafields.articleProduct.related_product | split: '|' %}
+ <h1 class="title--primary">{{section.settings.title2}}</h1>
   <ul class="grid grid--2-col product-grid  grid--2-col-tablet grid--4-col-desktop {% if section.settings.swipe_on_mobile2 %} slider slider--tablet grid--peek {% endif %}" role="list">
     {% for product_handle in product_handles %} 
     {% assign product = all_products[product_handle]%}
@@ -345,7 +346,7 @@
 
  
   
-
+{{relatedProduct}}
 
 
 
