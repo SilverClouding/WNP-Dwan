@@ -262,7 +262,7 @@
   
   <slider-component class="slider-mobile-gutter section_width main-blog page-width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
-    
+    <h1 class="title--primary">{{section.settings.title}}</h1>
   <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--3-col-tablet blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
       id="Slider-{{ section.id }}"
         role="list"
@@ -348,6 +348,12 @@
         "content": "Related articles",
 		"info":"those articles are came from meta field"
       },
+{
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Related articles"
+        },
     {
       "type": "checkbox",
       "id": "show_readmore",
