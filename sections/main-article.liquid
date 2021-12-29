@@ -308,6 +308,7 @@
    {% comment %}  {% endcomment %}
   <slider-component class="slider-mobile-gutter section_width main-blog page-width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
+    {{selected_articles.size}}
     <h1 class="title--primary">{{section.settings.title}}</h1>
   <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--2-col-tablet grid--3-col-desktop blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
         role="list"
