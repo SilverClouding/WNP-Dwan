@@ -237,7 +237,7 @@
             "title": "",
             "text": "<p>Shop for top dog brands & accessories<\/p>",
             "button_label": "Shop Dogs",
-            "button_link": "shopify:\/\/collections\/3m"
+            "button_link": "shopify:\/\/pages\/dog"
           }
         },
         "16364715337b2e2d80-1": {
@@ -247,7 +247,7 @@
             "title": "",
             "text": "<p>Your cat deserves the best of everything<\/p>",
             "button_label": "Shop Cats",
-            "button_link": ""
+            "button_link": "#"
           }
         }
       },
