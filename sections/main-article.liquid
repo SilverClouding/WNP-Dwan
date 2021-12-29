@@ -296,8 +296,8 @@
   
   
   <slider-component class="slider-mobile-gutter section_width main-products page-width">
-    {% assign selected_handles  = article.metafields.article.articles | split: '|' %}
-    <h1 class="title--primary">{{section.settings.title}}</h1>
+    {% assign selected_handles  = article.metafields.article.products | split: '|' %}
+    <h1 class="title--primary">{{section.settings.title1}}</h1>
     <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--3-col-tablet blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
@@ -439,6 +439,12 @@
         "content": "Related product",
 		"info":"those products are came from meta field"
       },
+{
+          "type": "text",
+          "id": "title2",
+          "label": "Heading",
+          "default": "Related Products"
+        },
      {
       "type": "checkbox",
       "id": "swipe_on_mobile2",
