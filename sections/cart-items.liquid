@@ -250,7 +250,19 @@ body.page-your-shopping-cart {
 
 
 </div>
+{% for block in section.blocks %}
+   {% case block.type %}
+{%- when 'icontext' -%}
 
+<div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+
+</div>
+
+ {%- endcase -%}
+  {% endfor%}
 {% else %}
 
 <div class="empty-cart-items">
@@ -275,6 +287,8 @@ body.page-your-shopping-cart {
 
 {% for block in section.blocks %}
 {% case block.type %}
+
+
 {%- when 'recentview' -%}
  <ul class="minicart_you_may_also" role="list">
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
