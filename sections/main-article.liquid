@@ -19,6 +19,43 @@
 }
 </style>
 
+<slider-component class="slider-mobile-gutter page-width">
+  {% assign product_handles = article.metafields.articleProduct.related_product | split: '|' %}
+  <ul class="grid grid--2-col product-grid  grid--2-col-tablet grid--4-col-desktop {% if section.settings.swipe_on_mobile2 %} slider slider--tablet grid--peek {% endif %}" role="list">
+    {% for product_handle in product_handles %} 
+    {% assign product = all_products[product_handle]%}
+    <li class="grid__item{% if section.settings.swipe_on_mobile2 %} slider__slide{% endif %}">
+      {% render 'product-card',
+            product_card_product: product,
+      media_size: section.settings.image_ratio,
+      show_secondary_image: false,
+      add_image_padding: false,
+      show_vendor: true,
+      show_image_outline: false,
+      show_rating: true
+      %}
+    </li>
+    {%- else -%}
+    {%- for i in (1..4) -%}
+    <li class="grid__item">
+      {% render 'product-card-placeholder' %}
+    </li>
+    {%- endfor -%}
+    {%- endfor -%}
+  </ul>
+  {%- if section.settings.swipe_on_mobile2-%}
+  <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
+    <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+    <div class="slider-counter caption">
+      <span class="slider-counter--current">1</span>
+      <span aria-hidden="true"> / </span>
+      <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+      <span class="slider-counter--total">{{ products_to_display }}</span>
+    </div>
+    <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+  </div>
+  {%- endif -%}
+</slider-component>
 
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
@@ -308,43 +345,7 @@
  
   
 
-<slider-component class="slider-mobile-gutter page-width">
-  {% assign product_handles = article.metafields.articleProduct.related_product | split: '|' %}
-  <ul class="grid grid--2-col product-grid  grid--2-col-tablet grid--4-col-desktop {% if section.settings.swipe_on_mobile2 %} slider slider--tablet grid--peek {% endif %}" role="list">
-    {% for product_handle in product_handles %} 
-    {% assign product = all_products[product_handle]%}
-    <li class="grid__item{% if section.settings.swipe_on_mobile2 %} slider__slide{% endif %}">
-      {% render 'product-card',
-            product_card_product: product,
-      media_size: section.settings.image_ratio,
-      show_secondary_image: false,
-      add_image_padding: false,
-      show_vendor: true,
-      show_image_outline: false,
-      show_rating: true
-      %}
-    </li>
-    {%- else -%}
-    {%- for i in (1..4) -%}
-    <li class="grid__item">
-      {% render 'product-card-placeholder' %}
-    </li>
-    {%- endfor -%}
-    {%- endfor -%}
-  </ul>
-  {%- if section.settings.swipe_on_mobile2-%}
-  <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
-    <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-    <div class="slider-counter caption">
-      <span class="slider-counter--current">1</span>
-      <span aria-hidden="true"> / </span>
-      <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-      <span class="slider-counter--total">{{ products_to_display }}</span>
-    </div>
-    <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-  </div>
-  {%- endif -%}
-</slider-component>
+
 
 
 <script type="application/ld+json">
