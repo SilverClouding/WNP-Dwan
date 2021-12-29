@@ -262,7 +262,7 @@
   </div>
   {%- endif -%}
   
-  {% comment %} 
+  {% comment %} {% endcomment %}
   <slider-component class="slider-mobile-gutter section_width main-blog page-width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
     <h1 class="title--primary">{{section.settings.title}}</h1>
@@ -294,7 +294,7 @@
       {%- endif -%}
     
     
-  </slider-component> {% endcomment %}
+  </slider-component> 
   
   
   
