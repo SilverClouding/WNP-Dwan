@@ -41,7 +41,7 @@ const showView = (event) => {
   });
   
 }
-container.onmouseenter = showView;
+container.onclick = showView;
 
 
 //qty change
