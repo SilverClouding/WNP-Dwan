@@ -250,7 +250,7 @@
   
   <div class="main-blog page-width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
-  <div class="grid grid--1-col grid--3-col-tablet blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+  <div class="grid grid--1-col grid--3-col-tablet blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
     {% for splitarticle in selected_articles limit: 3 %} 
    
     {% assign article = articles[splitarticle] %}
