@@ -48,7 +48,7 @@
         "swipe_on_mobile": true,
         "title2": "Related Products",
         "swipe_on_mobile2": true,
-        "image_ratio": "medium"
+        "image_ratio": "adapt"
       }
     }
   },
