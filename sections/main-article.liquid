@@ -243,8 +243,18 @@
   </div>
   {%- endif -%}
   
+
+  {% assign selected_handles = article.metafields.article.articles | split: '|' %}
+ 
+  {% for splitarticle in selected_articles %} 
+  {% assign article_removeextra = splitarticle | remove: '"]' | remove: '["' %}    
+  {% assign article = articles[article_removeextra] %}
   
- {{article.metafields.article.articles}}
+   <div class="blog-articles__article article">
+          {%- render 'article-card', article: article, image_height: "adapt", show_image: true, show_date: true, show_author: true -%}
+        </div>
+  
+  {% endfor %}
   
 </article>
 
