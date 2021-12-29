@@ -276,12 +276,12 @@
         "49bcfbfb-1cb9-4919-94ab-4297d839abff": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "star": "#000",
+            "star": "#000000",
             "review_type": "product",
             "reviews_shown": 20,
-            "header_bg_colour": "#000",
-            "header_colour": "#fff",
-            "header_star_colour": "#fff",
+            "header_bg_colour": "#000000",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#ffffff",
             "heading_font": "helvetica_n4",
             "enable_rich_snippets": false
           }
@@ -409,7 +409,7 @@
             "heading_font": "avenir_next_n4",
             "heading_size": 24,
             "feed_width": 100,
-            "html_area": "<h2>gvh<\/h2>"
+            "html_area": "<div class=\"insta-top-con\">\n<h2>whiskersnpaws<\/h2>\n<p>Follow our instagram<\/p>\n<\/div>"
           }
         }
       },
