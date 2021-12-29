@@ -248,7 +248,7 @@
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
   <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
     {% for splitarticle in selected_articles %} 
-    <b> {{splitarticle}}</b><br> 
+   
     {% assign article = articles[splitarticle] %}
 
     <div class="blog-articles__article article ">
