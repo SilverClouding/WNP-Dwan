@@ -297,7 +297,7 @@
   
   <slider-component class="slider-mobile-gutter section_width main-products page-width">
     {{article.metafields.article.products}}
-    {% assign selected_handles  = article.metafields.article.products | split: '|' %}
+    {% assign selected_handles = article.metafields.article.products | split: '|' %}
     <h1 class="title--primary">{{section.settings.title2}}</h1>
     <ul class="{% if section.settings.swipe_on_mobile2 %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--3-col-tablet product-grid  custom_related_products {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
         id="Slider-{{ section.id }}2"
