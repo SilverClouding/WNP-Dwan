@@ -303,42 +303,42 @@
   </div>
   {%- endif -%}
   
-
-  
-   {% comment %}  {% endcomment %}
-  <slider-component class="slider-mobile-gutter section_width main-blog page-width">
+  {% comment %}  {% endcomment %}
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
-    {{selected_articles.size}}
-    <h1 class="title--primary">{{section.settings.title}}</h1>
-  <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--2-col-tablet grid--3-col-desktop blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
-        role="list"
-      >
-    {% for splitarticle in selected_articles limit: 3 %} 
-   
-    {% assign article = articles[splitarticle] %}
-    <li class="grid__item  oneblog-articles__article article {% if section.settings.swipe_on_mobile %} slider__slide{% endif %} ">
-      {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: true, show_date: true, show_author: true -%}
-    </li>
+  {% if selected_articles.size > 0 %}
+  <slider-component class="slider-mobile-gutter section_width main-blog page-width">
 
-    {% endfor %}
-  </ul>
-    
+
+    <h1 class="title--primary">{{section.settings.title}}</h1>
+    <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--2-col-tablet grid--3-col-desktop blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
+        role="list"
+        >
+      {% for splitarticle in selected_articles limit: 3 %} 
+
+      {% assign article = articles[splitarticle] %}
+      <li class="grid__item  oneblog-articles__article article {% if section.settings.swipe_on_mobile %} slider__slide{% endif %} ">
+        {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: true, show_date: true, show_author: true -%}
+      </li>
+
+      {% endfor %}
+    </ul>
+
     {%- if section.settings.swipe_on_mobile -%}
-        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
-          </div>
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-        </div>
-      {%- endif -%}
-    
-    
+    <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
+      <div class="slider-counter caption">
+        <span class="slider-counter--current">1</span>
+        <span aria-hidden="true"> / </span>
+        <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+        <span class="slider-counter--total">{{ section.blocks.size }}</span>
+      </div>
+      <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+      <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+    </div>
+    {%- endif -%}
+
+
   </slider-component>
-  
+  {% endif %}
   
   
   
