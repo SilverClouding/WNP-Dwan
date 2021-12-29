@@ -429,7 +429,7 @@ jQuery(function($){
       var days = Math.floor(check_time / 86400);//200 is sec for day set
       console.log('check_time:- '+check_time);
       console.log('days:- '+days);
-      if(days > 2){
+      if(days > 1){
         $("#newsletter-popup").modal({
           fadeDuration: 500
         });
