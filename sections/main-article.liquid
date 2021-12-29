@@ -1,4 +1,8 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
