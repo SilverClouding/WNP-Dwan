@@ -342,6 +342,12 @@
   "name": "t:sections.main-article.name",
   "tag": "section",
 "settings": [
+
+{
+        "type": "header",
+        "content": "Related articles",
+		"info":"those articles are came from meta field"
+      },
     {
       "type": "checkbox",
       "id": "show_readmore",
@@ -378,7 +384,45 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
+    },
+    {
+        "type": "header",
+        "content": "Related product",
+		"info":"those products are came from meta field"
+      },
+     {
+      "type": "checkbox",
+      "id": "swipe_on_mobile2",
+      "default": false,
+      "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
+    }, 
+	{
+      "type": "select",
+      "id": "image_height2",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
     }
+
+
 ],
   "blocks": [
     {
