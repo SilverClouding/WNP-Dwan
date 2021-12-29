@@ -21,7 +21,7 @@
           <div class="input-group {% if form.errors %} input-group--error{% endif %}">
             <div class="first-name">
               {% comment %}<label for="first-name">First name</label>{% endcomment %}
-              <input id="first-name" type="text" name="customer[first_name]" placeholder="Name"  oninput="this.value = this.value.toUpperCase()" onkeyup="ValidateEmail();"/>
+              <input id="first-name" type="text" name="customer[first_name]" placeholder="Name" onkeypress="return (event.charCode > 64 && 	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  oninput="this.value = this.value.toUpperCase()" onkeyup="ValidateEmail();"/>
 <!--               <span class="error-fields"style="color: red"></span> -->
               <span id="valError" style="color: red">This field is required</span>
             </div>
