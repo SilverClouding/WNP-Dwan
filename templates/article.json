@@ -42,9 +42,13 @@
         "dbc7f7b0-e662-46c7-a0a9-8c766b86e509"
       ],
       "settings": {
+        "title": "Related articles",
         "show_readmore": true,
         "image_height": "medium",
-        "swipe_on_mobile": true
+        "swipe_on_mobile": true,
+        "title2": "Related Products",
+        "swipe_on_mobile2": true,
+        "image_ratio": "medium"
       }
     }
   },
