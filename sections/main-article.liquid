@@ -258,8 +258,9 @@
   {%- endif -%}
   
   
-  <div class="main-blog page-width">
+  <slider-component class="slider-mobile-gutter section_width">
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
+    
   <div class="grid grid--1-col grid--3-col-tablet blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
     {% for splitarticle in selected_articles limit: 3 %} 
    
@@ -270,7 +271,22 @@
 
     {% endfor %}
   </div>
-  </div>
+    
+    {%- if section.settings.swipe_on_mobile -%}
+        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+          </div>
+          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+        </div>
+      {%- endif -%}
+    
+    
+  </slider-component>
   
 </article>
 
