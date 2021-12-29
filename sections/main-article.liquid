@@ -296,23 +296,31 @@
   
   
   <slider-component class="slider-mobile-gutter section_width main-products page-width">
-    {% assign selected_articles = article.metafields.article.articles | split: '|' %}
+    {% assign selected_handles  = article.metafields.article.articles | split: '|' %}
     <h1 class="title--primary">{{section.settings.title}}</h1>
     <ul class="{% if section.settings.swipe_on_mobile %} slider slider--mobile{% endif %} multicolumn-list grid grid--1-col grid--3-col-tablet blog-articles  custom_bolg_article {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
         >
-      {% for splitarticle in selected_articles limit: 3 %} 
+      {% for selected_handle in selected_handles  limit: 4 %} 
 
-      {% assign article = articles[splitarticle] %}
-      <li class="grid__item  oneblog-articles__article article {% if section.settings.swipe_on_mobile %} slider__slide{% endif %} ">
-        {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: true, show_date: true, show_author: true -%}
+      {% assign product = all_products[selected_handle]%}
+      <li class="grid__item  oneblog-articles__article article {% if section.settings.swipe_on_mobile2 %} slider__slide{% endif %} ">
+         {% render 'product-card',
+            product_card_product: product,
+        media_size: section.settings.image_ratio1,
+        show_secondary_image: section.settings.show_secondary_image,
+        add_image_padding: section.settings.add_image_padding,
+        show_vendor: section.settings.show_vendor,
+        show_image_outline: section.settings.show_image_outline,
+        show_rating: section.settings.show_rating
+        %}
       </li>
 
       {% endfor %}
     </ul>
 
-    {%- if section.settings.swipe_on_mobile -%}
+    {%- if section.settings.swipe_on_mobile2 -%}
     <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
       <div class="slider-counter caption">
         <span class="slider-counter--current">1</span>
@@ -439,7 +447,7 @@
     }, 
 	{
       "type": "select",
-      "id": "image_height2",
+      "id": "image_ratio",
       "options": [
         {
           "value": "adapt",
