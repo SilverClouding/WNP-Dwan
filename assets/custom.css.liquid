@@ -5759,14 +5759,14 @@ select:focus, select:hover{
 
   /* insta feed   */
   #insta-feed{
-  padding:0 !important;
-  margin-bottom:35px;
+    padding:0 !important;
+    margin-bottom:35px;
   }
   #insta-feed h2{
-   display:none;
+    display:none;
   }
   #insta-feed .slider-arrow, .instafeed-shopify .slider-arrow{
-  border: none!important;
+    border: none!important;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -5784,20 +5784,29 @@ select:focus, select:hover{
     align-items: center;
     justify-content: center;
   }
-/*   #insta-feed .slider-arrow:onclick['instafeedSlide(1)']{
+  /*   #insta-feed .slider-arrow:onclick['instafeedSlide(1)']{
   right:0 !important;
-  }
+}
   #insta-feed .slider-arrow:onclick['instafeedSlide(-1)']{
   left:0 !important;
-  } */
+} */
   #insta-feed .slider-arrow:hover, .instafeed-shopify .slider-arrow:hover{
-  background:none !important;
+    background:none !important;
   }
   .insta-top-con{
-  
+    position:relative;
+  }
+  .insta-top-con:before{
+    position:absolute;
+    left:0;
+    top:0px;
+    content:'';
+    background:url({{ 'instalogo.png' | asset_url }}) center no-repeat;
+    width:64px;
+    height:64px;
   }
   .insta-top-con h2{
-   font-size:24px !important;
+    font-size:24px !important;
     color:#44444d;
     font-weight:900;
     line-height:30px;
@@ -5805,7 +5814,7 @@ select:focus, select:hover{
     margin-bottom:0;
   }
   .insta-top-con p{
-  font-size:14px;
+    font-size:14px;
     color:#44444d;
     font-weight:300;
     line-height:16px;
