@@ -342,10 +342,10 @@
   
   
   <slider-component class="slider-mobile-gutter">
-    {% assign selected_handles = article.metafields.articleProduct.products | split: '|' %}
+    {% assign product_handles = article.metafields.articleProduct.products | split: '|' %}
     <ul class="grid grid--2-col product-grid  grid--2-col-tablet grid--4-col-desktop {% if section.settings.swipe_on_mobile2 %} slider slider--tablet grid--peek {% endif %}" role="list">
-       {% for selected_handle in selected_handles %} 
-       {% assign product = all_products[selected_handle]%}
+       {% for product_handle in product_handles %} 
+       {% assign product = all_products[product_handle]%}
       <li class="grid__item{% if section.settings.swipe_on_mobile2 %} slider__slide{% endif %}">
         {% render 'product-card',
             product_card_product: product,
