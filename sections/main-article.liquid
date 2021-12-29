@@ -297,11 +297,19 @@
   </slider-component> {% endcomment %}
   
   
-  <ul class="related_posts">
-  {% for post in site.related_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<div data-relatable="article.articles" data-relatable-id="{{article.id}}">
+  {% raw %}
+    {{#articles.length}}<h3>Related Articles</h3>{{/articles.length}}
+    {{#articles}}
+      <article class="relatable-item">
+        <img src="{{#img_url.medium}}{{image.src}}{{/img_url.medium}}">
+        <p>{{summary_html}}</p>
+        <p>{{author}}</p>
+        <a href="/blogs/{{blog.handle}}/{{id}}-{{handle}}">Read more...</a>
+      </article>
+    {{/articles}}
+  {% endraw %}
+</div>
   
   
 {{article.metafields.stores.collection}}
