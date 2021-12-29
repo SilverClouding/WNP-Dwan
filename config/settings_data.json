@@ -405,6 +405,14 @@
             "settings": {
               "recomended_col": "minicart-recommended-products"
             }
+          },
+          "654b495c-c1b2-4bc9-a662-6b1ac9bb0242": {
+            "type": "icontext",
+            "settings": {
+              "title": "",
+              "title2": "",
+              "title3": ""
+            }
           }
         },
         "block_order": [
@@ -412,7 +420,8 @@
           "ece452ee-7d19-48ab-8d8a-5d024f4abd04",
           "e10d0f74-32a3-47ba-acb2-99c27ee18830",
           "c117a247-a018-4b01-94eb-7dc7916fe339",
-          "d8327dfa-3104-40ad-994d-182fd885cabd"
+          "d8327dfa-3104-40ad-994d-182fd885cabd",
+          "654b495c-c1b2-4bc9-a662-6b1ac9bb0242"
         ],
         "settings": {
         }
