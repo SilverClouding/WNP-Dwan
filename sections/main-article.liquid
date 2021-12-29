@@ -295,7 +295,7 @@
 
    {{article.metafields.articleProduct.products}}
   
-  <slider-component class="slider-mobile-gutter section_width main-products page-width">
+  <slider-component class="slider-mobile-gutter section_width main-products page-width"> </slider-component>
    
     {% assign selected_handles = article.metafields.articleProduct.products | split: '|' %}
     <h1 class="title--primary">{{section.settings.title2}}</h1>
@@ -321,7 +321,7 @@
       {% endfor %}
     </ul>
 
-    {%- if section.settings.swipe_on_mobile2 -%}
+    {%- if section.settings.swipe_on_mobile22 -%}
     <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
       <div class="slider-counter caption">
         <span class="slider-counter--current">1</span>
@@ -335,7 +335,7 @@
     {%- endif -%}
 
 
-  </slider-component>
+ 
   
 </article>
 
