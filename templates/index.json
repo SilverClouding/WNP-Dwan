@@ -382,10 +382,10 @@
         "6944e1a1-b326-4adf-af28-b723c11b273d": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_font": "helvetica_n4",
+            "heading_font": "avenir_next_n4",
             "heading_size": 24,
             "feed_width": 100,
-            "html_area": "sdcsd"
+            "html_area": "Follow our instagram"
           }
         }
       },
