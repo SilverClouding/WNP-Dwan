@@ -262,7 +262,7 @@
    
     {% assign article = articles[splitarticle] %}
     <div class="grid__item  oneblog-articles__article article ">
-      {%- render 'article-card', article: article, image_height: "adapt", show_image: true, show_date: true, show_author: true -%}
+      {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: true, show_date: true, show_author: true -%}
     </div>
 
     {% endfor %}
@@ -323,6 +323,31 @@
       "id": "show_readmore",
       "default": true,
       "label": "Read More"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
     }
 ],
   "blocks": [
