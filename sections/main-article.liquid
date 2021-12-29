@@ -249,10 +249,11 @@
   {% assign selected_articles = article.metafields.article.articles | split: '|' %}
  
   {% for splitarticle in selected_articles %} 
+  {{splitarticle}}
   {% assign article_removeextra = splitarticle | remove: '"]' | remove: '["' %}    
   {% assign article = articles[article_removeextra] %}
 
-  <div class="blog-articles__article article">
+  <div class="blog-articles__article article hide">
     {%- render 'article-card', article: article, image_height: "adapt", show_image: true, show_date: true, show_author: true -%}
   </div>
 
