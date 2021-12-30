@@ -164,6 +164,12 @@ body.page-your-shopping-cart {
 
   {% assign product_id = 6685379985517 %}
 {% if cart.item_count > 0 %}
+  {% assign cartTotal = cart.total_price %}
+    {% assign cartthreshhold = 10000 %}
+    {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
+    {% assign mainPercent = percentmainvalue | times: 10 %}
+    
+  
   <style>
  .w3-light-grey{
     color: #000!important;
@@ -185,17 +191,11 @@ body.page-your-shopping-cart {
   <div class="progress-warp">
     <p>Buy more, Save more</p>
     <div class="w3-light-grey">
-  <div class="w3-green" style="width:9%"></div>
+  <div class="w3-green" style="width:{{mainPercent}}%"></div>
     </div>
+
     
-    cart total = {{ cart.total_price  }}
-    {% assign cartTotal = cart.total_price %}
-    {% assign cartthreshhold = 10000 %}
-    <br><br>
-    {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
-    {{percentmainvalue | times: 10}}
-    
-    <div>Spend <span class="progress-bar-money">{{10000 | money }}</span> more to receive FREE SHIPPING!</div>
+    <div>Spend <span class="progress-bar-money">{{cartTotal | money }}</span> more to receive FREE SHIPPING!</div>
 </div>
   
   <div class="min-cart-items">
