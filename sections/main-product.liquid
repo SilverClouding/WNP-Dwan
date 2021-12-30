@@ -155,9 +155,9 @@
         </button>
       {%- endif -%}
       
+      
+      {% if product.metafields.product_icon_text.icons.size > 0%}
       <div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
-        
-        {% if product.metafields.product_icon_text.icons.size > 0%}
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
           {% for image in images %} 
@@ -166,9 +166,10 @@
           <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
         </div>
         {% endfor %} 
-        {% endif %}
       </div>
-      
+      {% endif %}
+
+
       
     </div>
     <div class="product__info-wrapper grid__item">
@@ -573,6 +574,22 @@
   
   
 </section>
+
+ {% if product.metafields.product_icon_text.icons.size > 0%}
+<div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
+
+ 
+  {% for images in product.metafields.product_icon_text.icons %}
+  <div class="under_media_icon_text_item text-center"> 
+    {% for image in images %} 
+    <img src="{{ image.src }}" alt="{{ image.alt }}"/>
+    {% endfor %} 
+    <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
+  </div>
+  {% endfor %} 
+ 
+</div>
+ {% endif %}
 
 {% javascript %}
   class ProductModal extends ModalDialog {
