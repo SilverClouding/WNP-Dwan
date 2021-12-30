@@ -168,7 +168,7 @@ body.page-your-shopping-cart {
     {% assign cartthreshhold = 10000 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
     {% assign mainPercent = percentmainvalue | times: 10 %}
-    
+      {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
   
   <style>
  .w3-light-grey{
@@ -195,7 +195,7 @@ body.page-your-shopping-cart {
     </div>
 
     
-    <div>Spend <span class="progress-bar-money">{{  cartTotal  | minus: cartthreshhold   | money }}</span> more to receive FREE SHIPPING!</div>
+    <div>Spend <span class="progress-bar-money">{{  needAmmount | money }}</span> more to receive FREE SHIPPING!</div>
 </div>
   
   <div class="min-cart-items">
