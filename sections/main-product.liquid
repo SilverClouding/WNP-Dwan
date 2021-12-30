@@ -156,14 +156,14 @@
       {%- endif -%}
       
       
-      {% if product.metafields.product_icon_text.icons.size > 0%}
-      <div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
+      {% if product.metafields.abv_icon_text.image > 0%}
+      <div class="under_media_icon_text" data-size="{{product.metafields.abv_icon_text.image.size}}">
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
           {% for image in images %} 
           <img src="{{ image.src }}" alt="{{ image.alt }}"/>
           {% endfor %} 
-          <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
+          <h2>{{prproduct.metafields.abv_icon_text.icon_description[forloop.index0] }}</h2> 
         </div>
         {% endfor %} 
       </div>
