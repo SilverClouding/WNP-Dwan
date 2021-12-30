@@ -170,6 +170,7 @@ body.page-your-shopping-cart {
   {% assign mainPercent = percentmainvalue | times: 10 %}
   {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
   
+  cartthreshhold={{cartthreshhold}}
   cartTotal={{cartTotal}}
   percentmainvalue ={{percentmainvalue}}
   mainPercent={{mainPercent}}
