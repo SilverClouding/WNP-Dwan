@@ -167,7 +167,7 @@ body.page-your-shopping-cart {
   {% assign cartTotal = cart.total_price %}
   {% assign cartthreshhold = 100000 %}
   {% assign percentmainvalue = cartthreshhold | divided_by: cartTotal %}
-  {% assign mainPercent = percentmainvalue | times: 10 %}
+  {% assign mainPercent = percentmainvalue  %}
   {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
   
   cartthreshhold={{cartthreshhold}}
