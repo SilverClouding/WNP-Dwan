@@ -156,24 +156,15 @@
       {%- endif -%}
       
       <div class="under_media_icon_text">
-        <div><img src="{{block.settings.image | img_url:"100x"}}"><h2>{{block.settings.title}}</h2></div>
-        <div><img src="{{block.settings.image2 | img_url:"100x"}}"><h2>{{block.settings.title2}}</h2></div>
-        <div><img src="{{block.settings.image3 | img_url:"100x"}}"><h2>{{block.settings.title3}}</h2></div>
-        
-       
+        {{product.metafields.product_icon_text.icons.size}}
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
-         
-            {% for image in images %} 
-            <img src="{{ image.src }}" alt="{{ image.alt }}"/>
-            {% endfor %} 
-            <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
-         
+          {% for image in images %} 
+          <img src="{{ image.src }}" alt="{{ image.alt }}"/>
+          {% endfor %} 
+          <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
         </div>
-        {% endfor %}
-        
-      
-        
+        {% endfor %} 
       </div>
       
       
