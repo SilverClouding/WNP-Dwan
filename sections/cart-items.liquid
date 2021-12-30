@@ -187,6 +187,13 @@ body.page-your-shopping-cart {
     <div class="w3-light-grey">
   <div class="w3-green" style="width:9%"></div>
     </div>
+    
+    cart total = {{ cart.total_price  | money }}
+    {% assign cartTotal = cart.total_price %}
+    {% assign cartthreshhold = 100000 %}
+    
+    {{cartTotal | divided_by: cartTotal |times:100 | money }}
+    
     <div>Spend <span class="progress-bar-money">{{10000 | money }}</span> more to receive FREE SHIPPING!</div>
 </div>
   
