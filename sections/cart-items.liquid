@@ -192,7 +192,7 @@ body.page-your-shopping-cart {
     {% assign cartTotal = cart.total_price %}
     {% assign cartthreshhold = 10000 %}
     <br><br>
-    {{cartthreshhold | divided_by: cartTotal |times:100 }}
+    {{cartTotal | divided_by: cartthreshhold |times:100 }}
     
     <div>Spend <span class="progress-bar-money">{{10000 | money }}</span> more to receive FREE SHIPPING!</div>
 </div>
