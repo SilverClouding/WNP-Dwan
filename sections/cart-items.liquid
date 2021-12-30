@@ -195,7 +195,7 @@ body.page-your-shopping-cart {
     </div>
 
     
-    <div>Spend <span class="progress-bar-money">{{cartTotal | money }}</span> more to receive FREE SHIPPING!</div>
+    <div>Spend <span class="progress-bar-money">{{ cartthreshhold  | minus: cartTotal   | money }}</span> more to receive FREE SHIPPING!</div>
 </div>
   
   <div class="min-cart-items">
