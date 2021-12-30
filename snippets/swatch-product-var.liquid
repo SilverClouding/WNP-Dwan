@@ -69,7 +69,8 @@
 
 {% endif %}
 {% endfor %}
-
+<div class="main">
+  <h2> {{option.title}}</h2>
 {% assign values = '' %}
 {% for variant in product.variants %}
 {% assign value = variant.options[option_index] %}
@@ -89,3 +90,4 @@
 </div>
 {% endunless %}
 {% endfor %}
+</div>
