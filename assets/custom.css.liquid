@@ -129,7 +129,7 @@ p{
   color: #737373;
   opacity: 1;
 }
- 
+
 .button.button--primary{
   background:transparent;
   color:#44444D;
@@ -296,7 +296,7 @@ p{
   font-family: 'Avenir LT Std';
 }
 #shopify-section-announcement-bar .wg-drop.country-selector .wgcurrent:after{
-background-size:8px;
+  background-size:8px;
   height:37px;
 }
 .announcement-con li{
@@ -878,19 +878,19 @@ select:focus, select:hover{
     .swiper .banner__content .banner__box.color-accent-2 {
       background-color:#FFF9EE !important;
     }
-	.swiper-button-next:after, .swiper-button-prev:after{
-    color:#44444d;
-    width: 42px;
-    height: 42px;
-    font-size:16px;
-    border:1px solid #44444d;
-  }
-    .swiper-button-next, .swiper-button-prev{
-    width: 42px;
-    height: 42px;
+    .swiper-button-next:after, .swiper-button-prev:after{
+      color:#44444d;
+      width: 42px;
+      height: 42px;
+      font-size:16px;
+      border:1px solid #44444d;
     }
-    
-    
+    .swiper-button-next, .swiper-button-prev{
+      width: 42px;
+      height: 42px;
+    }
+
+
   }
 
   /* featured collection */
@@ -1986,7 +1986,6 @@ select:focus, select:hover{
 
 
   /* mini cart  */
-  /* mini cart */
   .minibag-mask {
     background: rgba(41, 41, 41, 0.5);
     position: fixed;
@@ -2014,15 +2013,16 @@ select:focus, select:hover{
     transform: translateX(110%);
     visibility: hidden;
     width: 0 !important;
-    overflow-x: hidden; }
-
+    overflow-x: hidden; 
+  }
   .show-minibag {
     transform: translateX(0%);
     visibility: visible;
-    overflow-x: hidden; }
-
+    overflow-x: hidden; 
+  }
   .overflow-hidden {
-    overflow: hidden; }
+    overflow: hidden; 
+  }
 
   body.page-your-shopping-cart.overflow-hidden {
     overflow: hidden; }
@@ -2195,7 +2195,8 @@ select:focus, select:hover{
 
   #mini-cart .quantity-con .quantity-val {
     border: 1px solid #ccc;
-    padding: 5px; }
+    padding: 5px; 
+  }
 
   @media (max-width: 767px) {
     div#mini-cart {
@@ -2223,7 +2224,22 @@ select:focus, select:hover{
   #mini-cart .bottom-part{
     padding:0px 20px;
   }
-
+  #cart-notification-form{
+  margin-top:13px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   /* cart page */
   #shopify-section-template--14196766474349__cart-items{
@@ -4710,26 +4726,26 @@ select:focus, select:hover{
     }   
 
   }
-  
+
   @media(min-width:375px) and (max-width:992px){
     .custom-btn-section .button.button--primary{
       width: 100%!important;
     }
-    
+
   }
-@media(max-width:767px){
+  @media(max-width:767px){
     .custom-btn-section .button_item {
       margin-right: 0px;
       margin-bottom:12px;
       width:100% !important;
     }
-  .button.blog__button{
-  min-width:unset;
-    width:100%;
-  }
-  .custom-btn-section .grid{
-  margin-left:0 !important;
-  }
+    .button.blog__button{
+      min-width:unset;
+      width:100%;
+    }
+    .custom-btn-section .grid{
+      margin-left:0 !important;
+    }
   }
   @media(max-width:370px){
     .custom-btn-section .button.button--primary, .button.blog__button {
@@ -4788,11 +4804,11 @@ select:focus, select:hover{
     padding-right: 20px;
     margin-top: 5px;
   }
-/*   @media(max-width:992px){
-    .multicolumn .title-wrapper-with-link h2 {
-      line-height: 38px;
-    }
-  } */
+  /*   @media(max-width:992px){
+  .multicolumn .title-wrapper-with-link h2 {
+  line-height: 38px;
+}
+} */
 
   /* cafe */
   .cust-content{
@@ -5861,15 +5877,15 @@ select:focus, select:hover{
     width:91% !important;
     height:91% !important;
   }
-  
-  
+
+
   @media(max-width:992px){
-  #insta-feed .slide-page .instafeed-container{
-  padding-top:80% !important;
-    width:80% !important;
-  }
+    #insta-feed .slide-page .instafeed-container{
+      padding-top:80% !important;
+      width:80% !important;
+    }
     #insta-feed{
-    text-align:left !important;
+      text-align:left !important;
     }
   }
 
