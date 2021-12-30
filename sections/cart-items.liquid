@@ -332,7 +332,7 @@ body.page-your-shopping-cart {
       {% for product in collections[block.settings.recomended_col].products limit: 100%}
    {% if product.available %}
      {% unless allreadyInCart contains product.id  %}
-        <li class="grid__item" {% if forloop.first %} style="display:block" {% else %}style="display:none"{% endif %}>
+        <li class="grid__item" {{forloop.index}} {% if forloop.first %} style="display:block" {% else %}style="display:none"{% endif %}>
           <div class="main_prod_wrap">
             <div class="minicart_may_also-img"><img src="{{product.featured_image | img_url:'100x'}}" ></div>
             <div class="minicart_may_also_info">
