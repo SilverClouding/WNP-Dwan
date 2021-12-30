@@ -161,18 +161,18 @@
         <div><img src="{{block.settings.image3 | img_url:"100x"}}"><h2>{{block.settings.title3}}</h2></div>
         
        
+        {% for images in product.metafields.product_icon_text.icons %}
+        <div class="under_media_icon_text_item text-center"> 
+         
+            {% for image in images %} 
+            <img src="{{ image.src }}" alt="{{ image.alt }}"/>
+            {% endfor %} 
+            <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
+         
+        </div>
+        {% endfor %}
         
-        {% for multi_text in product.metafields.product_icon_text.text %} 
-        {% for text in multi_text %} 
-      {{text}}<br>
-        {% endfor %}
-        {% endfor %}
-        
-        {% for multi_images in product.metafields.product_icon_text.icons %} 
-        {% for image in multi_images %} 
-        <img src="{{ image.src }}" alt="{{ image.alt }}"/>
-        {% endfor %}
-        {% endfor %}
+      
         
       </div>
       
