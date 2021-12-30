@@ -154,6 +154,14 @@
           {{ 'products.product.xr_button' | t }}
         </button>
       {%- endif -%}
+      
+      <div class="under_media_icon_text">
+        <div><img src="{{block.settings.image | img_url:"100x"}}"><h2>{{block.settings.title}}</h2></div>
+        <div><img src="{{block.settings.image2 | img_url:"100x"}}"><h2>{{block.settings.title2}}</h2></div>
+        <div><img src="{{block.settings.image3 | img_url:"100x"}}"><h2>{{block.settings.title3}}</h2></div>
+      </div>
+      
+      
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
