@@ -163,6 +163,12 @@
         {{product.metafields.product_icon_text.text}}
         {{product.metafields.product_icon_text.icons}}
         
+        {% for multi_images in product.metafields.product_icon_text.text %} 
+        {% for text in multi_images %} 
+      {{text}}
+        {% endfor %}
+        {% endfor %}
+        
         {% for multi_images in product.metafields.product_icon_text.icons %} 
         {% for image in multi_images %} 
         <img src="{{ image.src }}" alt="{{ image.alt }}"/>
