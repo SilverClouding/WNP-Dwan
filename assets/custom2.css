@@ -156,3 +156,6 @@ ul.minicart_you_may_also li {
 div#mini-cart {
     overflow-y: auto;
 }
+.mini-cart-con .empty-cart-items{
+height: calc(100vh - 306px)!important;
+}
