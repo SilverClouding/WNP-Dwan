@@ -202,7 +202,7 @@ body.page-your-shopping-cart {
     </div>
 
     
-    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}You are eligible {{cartthreshhold | money }}{% else %}Spend {{  needAmmount | money }}more to receive{% endif %}</span> FREE SHIPPING!</div>
+    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible {% else %}Spend {{  needAmmount | money }}more to receive{% endif %}</span> FREE SHIPPING!</div>
 </div>
   
   <div class="min-cart-items">
