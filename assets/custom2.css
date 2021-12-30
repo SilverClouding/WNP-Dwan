@@ -152,3 +152,7 @@ ul.minicart_you_may_also li:first-child {
 ul.minicart_you_may_also li {
     display: none;
 }
+
+div#mini-cart {
+    overflow-y: auto;
+}
