@@ -234,7 +234,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
-            "img_link": "http:\/\/www.abc.com",
+            "img_link": "",
             "title": "",
             "text": "<p>Shop for top dog brands & accessories<\/p>",
             "button_label": "Shop Dogs",
@@ -245,7 +245,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_144.jpg",
-            "img_link": "Image Link",
+            "img_link": "",
             "title": "",
             "text": "<p>Your cat deserves the best of everything<\/p>",
             "button_label": "Shop Cats",
