@@ -48,6 +48,8 @@
 {% endif %}
 {% endcomment %}
 
+
+{% for option in product.options %}
 {% assign file_extension = 'png' %}
 
 {% assign swatch = product-swatch %}
@@ -55,12 +57,12 @@
 {% assign option_index = 0 %}
 
 {% for option in product.options %}
-  {% if option == swatch %}
-    {% assign found_option = true %}
-    {% assign option_index = forloop.index0 %}
-    {% assign downcased_option = swatch | downcase %}
+{% if option == swatch %}
+{% assign found_option = true %}
+{% assign option_index = forloop.index0 %}
+{% assign downcased_option = swatch | downcase %}
 
-  {% endif %}
+{% endif %}
 {% endfor %}
 
 {% assign values = '' %}
@@ -76,11 +78,13 @@
   {% if is_color %}
   <div class="tooltip">{{ value }}</div>
   {% endif %}
-  
+
   <label for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}">
     {{ value }}
     <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" aria-label="sold out" alt="sold out"/>
   </label>
 </div>
 {% endunless %}
+{% endfor %}
+
 {% endfor %}
