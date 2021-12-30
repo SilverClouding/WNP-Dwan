@@ -347,7 +347,13 @@ body.page-your-shopping-cart {
                   <div class="price-con">
                   {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
                   </div>
-                  {% if product.has_only_default_variant %}
+                  
+
+                </div>
+                
+                
+                <div class="minicart_add_to_cart">
+                   {% if product.has_only_default_variant %}
                   <input name="id" value="{{ product.selected_or_first_available_variant.id }}" type="hidden">
                   {% else %}
                   <select name="id" id="select_{{product.id}}" >
@@ -358,12 +364,6 @@ body.page-your-shopping-cart {
                     {% endfor%}
                   </select>
                   {% endif %}
-
-                </div>
-                
-                
-                <div class="minicart_add_to_cart">
-                   
                  <input type="submit" data-handle="{{product.handle}}" class="mini-add-button product-form__submit button button--full-width button--secondary" value="Add">
                 </div>
                  {%- endform -%}
