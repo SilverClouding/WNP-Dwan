@@ -362,6 +362,8 @@
     {% endif %}
   {% endfor %}
   </select>
+        {% render 'swatch-product-var' product:product %}
+        
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
