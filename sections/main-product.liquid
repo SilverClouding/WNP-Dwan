@@ -582,12 +582,12 @@
 
 {% if product.metafields.abv_icon_text.image > 0 %}
 <div class="above_description_icon_text" data-size="{{product.metafields.abv_icon_text.image.size}}">
-  {% for images in product.metafields.product_icon_text.icons %}
+  {% for images in product.metafields.abv_icon_text.image %}
   <div class="under_media_icon_text_item text-center"> 
     {% for image in images %} 
     <img src="{{ image.src }}" alt="{{ image.alt }}"/>
     {% endfor %} 
-    <h2>{{prproduct.metafields.abv_icon_text.icon_description[forloop.index0] }}</h2> 
+    <h2>{{product.metafields.abv_icon_text.icon_description[forloop.index0] }}</h2> 
   </div>
   {% endfor %} 
 </div>
