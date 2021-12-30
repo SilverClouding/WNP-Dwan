@@ -155,8 +155,9 @@
         </button>
       {%- endif -%}
       
-      <div class="under_media_icon_text">
-        {{product.metafields.product_icon_text.icons.size}}
+      <div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
+        
+        {% if product.metafields.product_icon_text.icons.size > 0%}
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
           {% for image in images %} 
@@ -165,6 +166,7 @@
           <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
         </div>
         {% endfor %} 
+        {% endif %}
       </div>
       
       
