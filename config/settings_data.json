@@ -409,11 +409,11 @@
           "654b495c-c1b2-4bc9-a662-6b1ac9bb0242": {
             "type": "icontext",
             "settings": {
-              "image": "shopify:\/\/shop_images\/support_1.png",
+              "image": "shopify:\/\/shop_images\/quality.png",
               "title": "Quality  Products",
-              "image2": "shopify:\/\/shop_images\/house-1.png",
+              "image2": "shopify:\/\/shop_images\/delivery.png",
               "title2": "Fast Delivery",
-              "image3": "shopify:\/\/shop_images\/step3.png",
+              "image3": "shopify:\/\/shop_images\/low-price.png",
               "title3": "Low Prices"
             }
           }
