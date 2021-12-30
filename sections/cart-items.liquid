@@ -328,11 +328,13 @@ body.page-your-shopping-cart {
 
  <ul class="minicart_you_may_also" role="list">
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
+   {% assign count = 0 %}
    <p>You might like:</p>
       {% for product in collections[block.settings.recomended_col].products limit: 100%}
    {% if product.available %}
      {% unless allreadyInCart contains product.id  %}
-        <li class="grid__item" {{forloop.index}} {% if forloop.first %} style="display:block" {% else %}style="display:none"{% endif %}>
+   
+        <li class="grid__item" {{forloop.index}} {% if count == 1 %} style="display:block" {% else %}style="display:none"{% endif %}>
           <div class="main_prod_wrap">
             <div class="minicart_may_also-img"><img src="{{product.featured_image | img_url:'100x'}}" ></div>
             <div class="minicart_may_also_info">
@@ -366,6 +368,7 @@ body.page-your-shopping-cart {
             </div>
           </div>
         </li>
+   {% assign count = count | plus: 1 %}
     {% endunless %}
    {% endif %}
       {% endfor %}
