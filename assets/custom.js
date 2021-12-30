@@ -461,3 +461,9 @@ jQuery(function($){
   
   
 });
+
+
+// notify me
+  $(document).on('click', '.notifyme', function(){
+    console.log('click work notify')
+  });
