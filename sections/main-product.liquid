@@ -455,7 +455,7 @@
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
                    {% if product.selected_or_first_available_variant.available == false %}
-                    <a class=" button button--full-width{% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+                    <a class="notifyme button button--full-width{% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
                     Notify me
                     </a> 
                     {% else %}
