@@ -193,7 +193,7 @@ body.page-your-shopping-cart {
     <div class="w3-light-grey">
       <div class="w3-green" style="width:{{mainPercent}}%"></div>
     </div>
-    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} {{ 'general.cart.eligible' | t}} {% else %} {{ 'general.cart.spend' | t: needAmmount:  needAmmount | money |remove:'-' }}{% endif %}</span> FREE SHIPPING!</div>
+    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} {{ 'general.cart.eligible' | t }} {% else %} {{ 'general.cart.spend' | t: needAmmount:  needAmmount | money |remove:'-' }}{% endif %}</span> FREE SHIPPING!</div>
   </div>
   
   <div class="min-cart-items">
