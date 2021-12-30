@@ -40,9 +40,7 @@
     },
     "cart": {
       "view": "View my cart",
-      "item_added": "Item added to your cart",
-      "eligible": "Done, You are eligible for",
-      "spend": "Spend {{  needAmmount }} more to receive"
+      "item_added": "Item added to your cart"
     },
     "share": {
       "close": "Close share",
