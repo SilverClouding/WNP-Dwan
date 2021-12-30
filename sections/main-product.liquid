@@ -156,8 +156,8 @@
       {%- endif -%}
       
       
-      {% if product.metafields.abv_icon_text.image > 0%}
-      <div class="under_media_icon_text" data-size="{{product.metafields.abv_icon_text.image.size}}">
+      {% if product.metafields.abv_icon_text.image > 0 %}
+      <div class="above_description_icon_text" data-size="{{product.metafields.abv_icon_text.image.size}}">
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
           {% for image in images %} 
