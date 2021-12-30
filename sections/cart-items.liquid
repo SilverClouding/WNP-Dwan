@@ -327,6 +327,7 @@ body.page-your-shopping-cart {
 {%- when 'recentview' -%}
  <ul class="minicart_you_may_also" role="list">
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
+   <p>You might like:</p>
       {% for product in collections[block.settings.recomended_col].products limit: 100%}
    {% if product.available %}
      {% unless allreadyInCart contains product.id  %}
