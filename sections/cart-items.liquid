@@ -166,7 +166,7 @@ body.page-your-shopping-cart {
 {% if cart.item_count > 0 %}
   
   {% assign cartTotal = cart.total_price %}
-  {% assign cartthreshhold = 100000.00 %}
+  {% assign cartthreshhold = section.settings.freeshipping | times:100.00 %}
   {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
   {% assign mainPercent = percentmainvalue | times: 100.00 %}
   {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
@@ -374,7 +374,13 @@ body.page-your-shopping-cart {
 {% schema %}
   {
     "name": "Cart items",
-    "settings": [],
+    "settings": [
+{
+          "type": "text",
+          "id": "freeshipping",
+          "label": "Free shipping threshold"
+        }
+],
   "blocks": [
     {
       "type": "shop_button",
