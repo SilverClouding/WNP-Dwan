@@ -48,13 +48,11 @@
 {% endif %}
 {% endcomment %}
 <style>
-.soldout img.crossed-out {
-    display: block!important;
+.soldout label {
+    color: red!important;
 }
 
-img.crossed-out {
-    display: none!important;
-}
+
 </style>
 
 {% assign file_extension = 'png' %}
@@ -84,7 +82,9 @@ img.crossed-out {
 <div tabindex="0"  value="{{ value | escape }}" data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element {{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
   <label for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}">
     {{ value }}
+    {% comment %}
     <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" aria-label="sold out" alt="sold out"/>
+    {% endcomment %}
   </label>
 </div>
 {% endunless %}
