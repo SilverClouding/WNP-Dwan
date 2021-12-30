@@ -190,7 +190,7 @@ body.page-your-shopping-cart {
     
     cart total = {{ cart.total_price  }}
     {% assign cartTotal = cart.total_price %}
-    {% assign cartthreshhold = 100000 %}
+    {% assign cartthreshhold = 10000 %}
     <br><br>
     {{cartTotal | divided_by: cartTotal |times:100 }}
     
