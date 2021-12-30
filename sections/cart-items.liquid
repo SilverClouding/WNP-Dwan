@@ -165,7 +165,7 @@ body.page-your-shopping-cart {
   {% assign product_id = 6685379985517 %}
 {% if cart.item_count > 0 %}
   {% assign cartTotal = cart.total_price %}
-    {% assign cartthreshhold = 10000 %}
+    {% assign cartthreshhold = 100000 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
     {% assign mainPercent = percentmainvalue | times: 10 %}
       {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
