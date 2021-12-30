@@ -362,7 +362,9 @@
     {% endif %}
   {% endfor %}
   </select>
-        {% render 'swatch-product-var' product:product %}
+         {% for option in product.options %}
+        {% render 'swatch-product-var' with option %}
+        {% endfor %}
         
         
             {%- unless product.has_only_default_variant -%}
