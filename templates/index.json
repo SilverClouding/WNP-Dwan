@@ -245,7 +245,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_144.jpg",
-            "img_link": "",
+            "img_link": "hhtps:\/\/www.abc.com",
             "title": "",
             "text": "<p>Your cat deserves the best of everything<\/p>",
             "button_label": "Shop Cats",
