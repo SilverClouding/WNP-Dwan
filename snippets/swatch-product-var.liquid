@@ -95,7 +95,20 @@
   </div>
 
 {% endcomment %}
-  
+
+
+  {% assign swatch = swatch-product-var %}
+{% assign found_option = false %}
+{% assign option_index = 0 %}
+
+{% for option in product.options %}
+{% if option == swatch %}
+{% assign found_option = true %}
+{% assign option_index = forloop.index0 %}
+{% assign downcased_option = swatch | downcase %}
+
+{% endif %}
+{% endfor %}
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
   <fieldset class="js product-form__input"  data-option-index="{{ option_index }}">
