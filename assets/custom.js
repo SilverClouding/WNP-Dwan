@@ -516,6 +516,9 @@ jQuery(function($){
     contentType: 'application/json',
     success: function (product) {
      
+      var Var1 = "";
+      var Var2 = "";
+      var Var3 = "";
       $(product.variants).each(function (i, variant) {
 //         console.log(variant);
        
@@ -525,9 +528,9 @@ jQuery(function($){
         var txt = variant.title;
         txt = txt.split('/')
 
-        var Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-        var Var2 = txt[1];
-        var Var3 = txt[2];
+         Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+         Var2 = Var2+","+txt[1];
+         Var3 = txt[2];
         console.log("Var1"+Var1);
 //              console.log("Var2"+Var2);
 //             console.log("Var3"+Var3);
