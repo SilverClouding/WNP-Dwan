@@ -524,9 +524,6 @@ jQuery(function($){
         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
         var optionValue = $(this).val();
         var parentForm = $(this).closest('.product__info-container');
-
-        //     console.log($(this).parents('.swatch_options').html());
-
         if (parentForm.siblings('.notify_form').length){
           var notifyForm = parentForm.siblings('.notify_form');
         } else {
@@ -545,6 +542,9 @@ jQuery(function($){
           var notifyMessage = option1;
         }
 
+        
+        console.log(variants);
+        
         console.log(notifyMessage);
 
 
