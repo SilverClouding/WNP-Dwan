@@ -165,5 +165,8 @@ label[soldout] {
 }
 
 .CarouselWidget-prefix .CarouselWidget .R-ReviewsioLogo .R-ReviewsioLogo__image {
-    content: var(--logo-normal);
+    content: var(--logo-normal)!important;
+}
+.CarouselWidget-prefix .R-ReviewsioLogo{
+background-color:transparent!important;
 }
