@@ -518,7 +518,7 @@ jQuery(function($){
     dataType: 'json',
     contentType: 'application/json',
     success: function (data) {
-     console.log(data);
+     console.log(data.variants);
     }
   });
   
