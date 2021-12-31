@@ -580,8 +580,22 @@ class VariantSelects extends HTMLElement {
     }
   }
   updateSwatch(){
+    
+    var option1 = document.querySelectorAll('.swatch_options input:checked').eq(0).val();
+    var option2 = document.querySelectorAll('.swatch_options input:checked').eq(1).val() || '';
+    var option3 = document.querySelectorAll('.swatch_options input:checked').eq(2).val() || '';
+
+    if (option1 && option2 && option3){
+      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
+    } else if (option1 && option2){
+      var notifyMessage = option1 + ' / ' + option2;
+    } else {
+      var notifyMessage = option1;
+    }
+    
     this.getVariantData().find((variant) => {
-      console.log(variant)
+      console.log(variant.title);
+      console.log(notifyMessage);
     });
   }
   
