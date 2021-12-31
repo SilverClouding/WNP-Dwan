@@ -122,6 +122,27 @@
   {% assign values = '' %}
 
   {% for variant in product.variants %}
+  
+  
+<div class="product-variant"
+     data-variant-id="{{ variant.id }}"
+     data-variant-inventory-qty="{{ variant.inventory_quantity }}">
+    <!-- snip variant HTML -->
+</div>
+<script>
+<!-- Javascript -->
+const variantElms = document.querySelectorAll('.product-variant');
+let variantsObj = [];
+
+variantElms.forEach(function(variantElm) {
+  variantsObj.push(
+    {
+      id: variantElm.dataset.variantId,
+      inventory_qty: variantElm.dataset.variantInventoryQty
+    })
+});
+  </script>
+  
   {% assign value = variant.options[option_index] %}
 
   {% unless values contains value %} 
