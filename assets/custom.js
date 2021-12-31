@@ -513,14 +513,20 @@ jQuery(function($){
 //   }
   
   class VariantSelects extends HTMLElement {
-    this.getVariantData().find((variant) => {
-      console.log(variant);
-    });
-  getVariantData() {
-    this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return this.variantData;
+    constructor() {
+      super();
+      this.addEventListener('change', this.onVariantChange);
+    }
+    onVariantChange() {
+      this.getVariantData().find((variant) => {
+        console.log(variant);
+      });
+    }
+    getVariantData() {
+      this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+      return this.variantData;
+    }
   }
-}
  
   
   $('body').on('change', '.swatch :radio', function() {
