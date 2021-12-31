@@ -594,7 +594,7 @@ class VariantSelects extends HTMLElement {
     
     var classes = document.getElementsByClassName("swatch");
     for (var i = 0; i < classes.length; i++) {
-      Distribute(classes.item(i));
+      console.log(classes.item(i));
     }
     
     var rates = document.getElementsByName(byName1);
