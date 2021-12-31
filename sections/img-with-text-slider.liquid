@@ -9,7 +9,7 @@
 
 </style>
 
-<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
   <div class="image-with-text__grid color-{{ section.settings.color_scheme }}  gradient{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
 
 
@@ -184,7 +184,12 @@
         "unit": "%",
         "label": "Bottom margin",
         "default": 65
-      }
+      },
+	{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
+    }
   ],
   "blocks": [
     {
