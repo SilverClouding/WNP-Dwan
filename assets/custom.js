@@ -511,9 +511,9 @@ jQuery(function($){
 //   variantData().find((variant) => {
 //     console.log(variant);
 //   }
-  
+  product-handle
   $.ajax({
-    url: '//wnp.pet/products/demo-original-adult-formula-dog-dry-food',
+    url: '/products/' + $('.page-handle').attr('page-handle')+ '.js',
     type: 'get',
     dataType: 'json',
     contentType: 'application/json',
