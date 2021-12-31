@@ -117,7 +117,7 @@
     {%- endfor -%}
     {%- endfor -%}
 
-   {{product.selected_or_first_available_variant.title}}
+   {% assign selected_value = product.selected_or_first_available_variant.title | split:"/" %}
 
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
