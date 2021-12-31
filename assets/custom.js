@@ -541,6 +541,7 @@ jQuery(function($){
         }
 
         $(product.variants).each(function (i, variant) {
+          console.log(variant);
           if(variant.available){
         console.log(variant.title);
           }
