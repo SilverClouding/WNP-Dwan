@@ -362,17 +362,22 @@
     {% endif %}
   {% endfor %}
   </select>
-          <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-         {% for option in product.options %}
-        {% render 'swatch-product-var' with option , product_form_id:product_form_id %}
-        {% endfor %}
-            
-<script type="application/json">
+        <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+          {% for option in product.options %}
+          {% render 'swatch-product-var' with option , product_form_id:product_form_id %}
+          {% endfor %}
+
+          <script type="application/json">
                     {{ product.variants | json }}
-</script>
+          </script>
 
         </variant-radios>
         
+        
+        
+        
+        
+        {% comment %}
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -450,6 +455,16 @@
                 </div>
               </div>
             </noscript>
+        {% endcomment %}
+        
+        
+        
+        
+        
+        
+        
+        
+        
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
