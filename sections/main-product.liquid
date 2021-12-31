@@ -374,17 +374,10 @@
           </script>
 
           <script>
-            <!-- Javascript -->
-              const variantElms = document.querySelectorAll('.product-variant');
-            let variantsObj = [];
-
-            variantElms.forEach(function(variantElm) {
-              variantsObj.push(
-                {
-                  id: variantElm.dataset.variantId,
-                  inventory_qty: variantElm.dataset.variantInventoryQty
-                })
-            });
+            var inv_qty = {};
+            {% for var in product.variants %}
+            inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+            {% endfor %}
           </script>
 
         
