@@ -347,7 +347,8 @@
         "full_width": false,
         "layout": "image_first",
         "top_padding": 0,
-        "bottom_padding": 65
+        "bottom_padding": 65,
+        "sec_class": "story-slide-con"
       }
     },
     "1636470578a33ad6f3": {
