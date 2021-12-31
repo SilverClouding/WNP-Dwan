@@ -124,7 +124,7 @@
     {% assign values = values | split: ',' %}
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
            name="{{ swatch }}"
-           value="{{ value | escape }}"
+           value="{{ value | escape }}" option-value="{{option[option_index].selected_value}}"
            form="{{ product_form_id }}"
            {% if option[option_index].selected_value == value %}checked{% endif %}
            >
