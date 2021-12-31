@@ -163,10 +163,3 @@ height: calc(100vh - 306px)!important;
 label[soldout] {
     color: red!important;
 }
-
-.CarouselWidget-prefix .CarouselWidget .R-ReviewsioLogo .R-ReviewsioLogo__image {
-    content: var(--logo-normal)!important;
-}
-.CarouselWidget-prefix .R-ReviewsioLogo{
-background-color:transparent!important;
-}
