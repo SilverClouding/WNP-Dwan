@@ -581,21 +581,33 @@ class VariantSelects extends HTMLElement {
   }
   updateSwatch(){
     
-    var option1 = document.querySelectorAll('.swatch_options input:checked')[0].value;
-    var option2 = document.querySelectorAll('.swatch_options input:checked')[1].value;
-    var option3 = document.querySelectorAll('.swatch_options input:checked')[2].value;
-
-    if (option1 && option2 && option3){
-      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
-    } else if (option1 && option2){
-      var notifyMessage = option1 + ' / ' + option2;
-    } else {
-      var notifyMessage = option1;
+//     var option1 = document.querySelectorAll('.swatch_options input:checked')[0].value;
+//     var option2 = document.querySelectorAll('.swatch_options input:checked')[1].value;
+//     var option3 = document.querySelectorAll('.swatch_options input:checked')[2].value;
+    
+    var checkedValue = null; 
+    var inputElements = document.getElementsByClassName('.swatch_options input');
+    for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+        checkedValue = inputElements[i].value;
+        break;
+      }
     }
+
+    console.log(checkedValue);
+    
+    
+//     if (option1 && option2 && option3){
+//       var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
+//     } else if (option1 && option2){
+//       var notifyMessage = option1 + ' / ' + option2;
+//     } else {
+//       var notifyMessage = option1;
+//     }
     
     this.getVariantData().find((variant) => {
       console.log(variant.title);
-      console.log(notifyMessage);
+//       console.log(notifyMessage);
     });
   }
   
