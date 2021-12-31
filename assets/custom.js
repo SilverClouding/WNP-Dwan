@@ -529,8 +529,8 @@ jQuery(function($){
         var Var2 = txt[1];
         var Var3 = txt[2]
         
-        $(Var1).attr("nextoption_value",Var2);
-          $(Var1).attr("nextoption_value2",Var3);
+        $("."+Var1).attr("nextoption_value",Var2);
+          $("."+Var1).attr("nextoption_value2",Var3);
         
         }
       });
