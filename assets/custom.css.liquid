@@ -979,15 +979,15 @@ select:focus, select:hover{
     z-index: 1;
     top: unset;
   }
-   .card-wrapper .card__badge.sold_out_right .badge--bottom-left{
-  background:#153a33;
+  .card-wrapper .card__badge.sold_out_right .badge--bottom-left{
+    background:#153a33;
     border: 1px solid #153a33;
   }
   .card-wrapper .card__badge.sold_out_right .badge--bottom-left:hover,
   .card-wrapper .card__badge.sold_out_right .badge--bottom-left:focus{
-  background:#fff;
+    background:#fff;
     border: 1px solid #44444d;
-     color: #44444d;
+    color: #44444d;
   } 
   .card-wrapper .card__badge .badge--bottom-left{
     margin-top:0;
@@ -2411,9 +2411,9 @@ select:focus, select:hover{
 
   @media (max-width: 767px) {
     .minicart_var_addtocart select{
-    width: calc(115px - 12px);
-    margin-right: 12px;
-  }
+      width: calc(115px - 12px);
+      margin-right: 12px;
+    }
   }
 
 
@@ -6077,12 +6077,18 @@ select:focus, select:hover{
     }
   }
 
-/* home review */
+  /* home review */
   .CarouselWidget-prefix{
-  background:#fff9ee;
+    background:#fff9ee;
   }
   .CarouselWidget-prefix .CarouselWidget .CarouselWidget__header .header__inner{
-  background:transparent;
+    background:transparent;
+    box-shadow:none;
+    border:none;
+    outline:none;
+  }
+  .CarouselWidget-prefix .CarouselWidget .R-ReviewsList .R-ReviewsList__item .item__inner{
+    background:transparent;
     box-shadow:none;
     border:none;
     outline:none;
@@ -6094,14 +6100,13 @@ select:focus, select:hover{
 
 
 
-
-.above_description_icon_text {
+  .above_description_icon_text {
     background-color: #153a33;
-}
+  }
 
-.above_description_icon_text h2 {
+  .above_description_icon_text h2 {
     color: #fff;
-}
+  }
 
   .grid--5-col-desktop .multicolumn-list__item {
     max-width: 20%;
