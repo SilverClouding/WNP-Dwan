@@ -345,7 +345,9 @@
         "height": "adapt",
         "color_scheme": "accent-1",
         "full_width": false,
-        "layout": "image_first"
+        "layout": "image_first",
+        "top_padding": 0,
+        "bottom_padding": 65
       }
     },
     "1636470578a33ad6f3": {
