@@ -542,6 +542,7 @@ jQuery(function($){
 
         $(product.variants).each(function (i, variant) {
           console.log(variant);
+           console.log(inv_qty[ variant.id ]);
           if(variant.available){
         console.log(variant.title);
           }
