@@ -587,7 +587,9 @@ class VariantSelects extends HTMLElement {
     
     var byName1 = document.getElementById("option0").getAttribute("swatch-name");
     var byName2 = document.getElementById("option1").getAttribute("swatch-name");
+    if(document.getElementById("option2").getAttribute("swatch-name") != 'null'){
     var byName3 = document.getElementById("option2").getAttribute("swatch-name");
+    }
     
     var rates = document.getElementsByName(byName1);
     var option1;

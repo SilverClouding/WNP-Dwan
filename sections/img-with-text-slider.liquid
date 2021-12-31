@@ -1,6 +1,13 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
+<style>
 
+   #shopify-section-{{section.id}}{
+    margin-top:{{section.settings.top_padding}}px;
+    margin-bottom:{{section.settings.bottom_padding}}px;
+  }
+
+</style>
 
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div class="image-with-text__grid color-{{ section.settings.color_scheme }}  gradient{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
@@ -157,7 +164,27 @@
       "default": "image_first",
       "label": "t:sections.image-with-text.settings.layout.label",
       "info": "t:sections.image-with-text.settings.layout.info"
-    }
+    },
+	{
+        "type": "range",
+        "id": "top_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Top margin",
+        "default": 65
+      },
+	  {
+        "type": "range",
+        "id": "bottom_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Bottom margin",
+        "default": 65
+      }
   ],
   "blocks": [
     {
