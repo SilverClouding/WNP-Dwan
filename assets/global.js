@@ -587,14 +587,15 @@ class VariantSelects extends HTMLElement {
     
     var byName1 = document.getElementById("option0").getAttribute("swatch-name");
     var byName2 = document.getElementById("option1").getAttribute("swatch-name");
-    console.log(document.getElementById("option2").length)
+//     console.log(document.getElementById("option2").length)
 //     if(document.getElementById("option2").getAttribute("swatch-name") != 'null'){
 //     var byName3 = document.getElementById("option2").getAttribute("swatch-name");
 //     }
     
     var classes = document.getElementsByClassName("swatch");
+    console.log(classes.length);
     for (var i = 0; i < classes.length; i++) {
-      console.log(classes.item(i));
+      console.log(i);
     }
     
     var rates = document.getElementsByName(byName1);
