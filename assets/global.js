@@ -590,7 +590,6 @@ class VariantSelects extends HTMLElement {
     for(var i=0; i<inputElements;  i++){
       if(inputElements[i].checked){
         checkedValue = inputElements[i].value;
-        break;
       }
     }
 
