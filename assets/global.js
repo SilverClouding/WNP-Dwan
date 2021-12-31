@@ -581,13 +581,13 @@ class VariantSelects extends HTMLElement {
   }
   updateSwatch(){
     
-//     var option1 = document.querySelectorAll('.swatch_options input:checked')[0].value;
-//     var option2 = document.querySelectorAll('.swatch_options input:checked')[1].value;
-//     var option3 = document.querySelectorAll('.swatch_options input:checked')[2].value;
+//     var option1 = document.querySelectorAll('.swatch_options input:checked').eq(0).value;
+//     var option2 = document.querySelectorAll('.swatch_options input:checked').eq(1).value;
+//     var option3 = document.querySelectorAll('.swatch_options input:checked').eq(2).value;
     
     var checkedValue = null; 
-    var inputElements = document.getElementsByClassName('.swatch_options input');
-    for(var i=0; inputElements[i]; ++i){
+    var inputElements = document.getElementsByClassName('.allRadio');
+    for(var i=0; i<inputElements;  i++){
       if(inputElements[i].checked){
         checkedValue = inputElements[i].value;
         break;
