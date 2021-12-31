@@ -126,7 +126,7 @@
            name="{{ swatch }}"
            value="{{ value | escape }}"
            form="{{ product_form_id }}"
-           {% if option.selected_value == value %}checked{% endif %}
+           {% if option[option_index].selected_value == value %}checked{% endif %}
            >
     <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
       {{ value }}
