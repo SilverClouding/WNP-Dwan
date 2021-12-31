@@ -587,6 +587,7 @@ class VariantSelects extends HTMLElement {
     
     var checkedValue = null; 
     var inputElements = document.getElementsByClassName('.allRadio');
+    console.log(inputElements.length);
     for(var i=0; i<inputElements.length;  i++){
       if(inputElements[i].checked){
         checkedValue = inputElements[i].value;
@@ -605,7 +606,7 @@ class VariantSelects extends HTMLElement {
 //     }
     
     this.getVariantData().find((variant) => {
-      console.log(variant.title);
+//       console.log(variant.title);
 //       console.log(notifyMessage);
     });
   }
