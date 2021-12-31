@@ -507,10 +507,10 @@ jQuery(function($){
 jQuery(function($){
   
   
-    var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-  variantData().find((variant) => {
-    console.log(variant);
-  }
+//     var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+//   variantData().find((variant) => {
+//     console.log(variant);
+//   }
  
   
   $('body').on('change', '.swatch :radio', function() {
