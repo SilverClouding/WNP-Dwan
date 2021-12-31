@@ -544,7 +544,7 @@ jQuery(function($){
           if(variant.available){
         console.log(variant.title);
           }
-        }
+        });
         
         console.log(notifyMessage);
 
