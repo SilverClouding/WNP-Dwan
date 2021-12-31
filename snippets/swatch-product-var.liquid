@@ -66,7 +66,7 @@
 {% for variant in product.variants %}
 {% assign value = variant.options[option_index] %}
     
-{% unless values contains value %} {{values}}
+{% unless values contains value %} 
 {% assign values = values | join: ',' %}
 {% assign values = values | append: ',' | append: value %}
 {% assign values = values | split: ',' %}
@@ -118,7 +118,7 @@
     {% for variant in product.variants %}
     {% assign value = variant.options[option_index] %}
 
-    {% unless values contains value %} {{values}}
+    {% unless values contains value %} 
     {% assign values = values | join: ',' %}
     {% assign values = values | append: ',' | append: value %}
     {% assign values = values | split: ',' %}
