@@ -582,8 +582,8 @@ class VariantSelects extends HTMLElement {
   updateSwatch(){
     
     var option1 = document.querySelectorAll('.swatch_options input:checked')[0].value;
-    var option2 = document.querySelectorAll('.swatch_options input:checked')[1].value || '';
-    var option3 = document.querySelectorAll('.swatch_options input:checked')[2].value || '';
+    var option2 = document.querySelectorAll('.swatch_options input:checked')[1].value;
+    var option3 = document.querySelectorAll('.swatch_options input:checked')[2].value;
 
     if (option1 && option2 && option3){
       var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
