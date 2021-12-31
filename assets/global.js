@@ -607,25 +607,32 @@ class VariantSelects extends HTMLElement {
       }
     }
     
-    var rates = document.getElementsByName(byName1);
-    var option1;
-    for(var i = 0; i < rates.length; i++){
-      if(rates[i].checked){
-        option1 = rates[i].value;
+    if(byName1){
+      var rates = document.getElementsByName(byName1);
+      var option1;
+      for(var i = 0; i < rates.length; i++){
+        if(rates[i].checked){
+          option1 = rates[i].value;
+        }
       }
     }
-    var rates = document.getElementsByName(byName2);
-    var option2;
-    for(var i = 0; i < rates.length; i++){
-      if(rates[i].checked){
-        option2 = rates[i].value;
+    if(byName2){
+      var rates = document.getElementsByName(byName2);
+      var option2;
+      for(var i = 0; i < rates.length; i++){
+        if(rates[i].checked){
+          option2 = rates[i].value;
+        }
       }
     }
-    var rates = document.getElementsByName(byName3);
-    var option3;
-    for(var i = 0; i < rates.length; i++){
-      if(rates[i].checked){
-        option3 = rates[i].value;
+
+    if(byName3){
+      var rates = document.getElementsByName(byName3);
+      var option3;
+      for(var i = 0; i < rates.length; i++){
+        if(rates[i].checked){
+          option3 = rates[i].value;
+        }
       }
     }
     
