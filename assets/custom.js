@@ -532,6 +532,18 @@ jQuery(function($){
     
     console.log(notifyMessage);
 
+    
+    var txt = notifyMessage;
+    txt = txt.split('/')
+
+    var Var1 = txt.pop();
+    var Var2 = txt[0];
+    var Var3 = txt[1]
+
+     console.log("Var1"+Var1);
+     console.log("Var2"+Var2);
+    console.log("Var3"+Var3);
+    
 
     notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
 
