@@ -54,10 +54,10 @@
 {% if option == swatch %}
 {% assign found_option = true %}
 {% assign option_index = forloop.index0 %}
-{% assign downcased_option = swatch | downcase %}
-
 {% endif %}
 {% endfor %}
+
+
 
 <div class="swatch clearfix" data-option-index="{{ option_index }}">
   <div class="option_title">{{ swatch }}</div>
@@ -101,6 +101,7 @@
 {% assign found_option = false %}
 {% assign option_index = 0 %}
 {% assign selected_value = "" %}
+
 {% for option in product.options %}
 {% if option == swatch %}
 {% assign found_option = true %}
@@ -108,8 +109,13 @@
 {% assign downcased_option = swatch | downcase %}
 
 {% endif %}
-{% assign selected_value = option.selected_value %}
 {% endfor %}
+
+
+{%- for value in option.values -%}
+{% assign selected_value = option.selected_value %}
+{%- endfor -%}
+
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
   <fieldset class="js product-form__input"  data-option-index="{{ option_index }}">
