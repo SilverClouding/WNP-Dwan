@@ -509,7 +509,7 @@ jQuery(function($){
   $('body').on('change', '.swatch :radio', function() {
     var optionIndex = $(this).closest('.swatch').attr('data-option-index');
     var optionValue = $(this).val();
-    var parentForm = $(this).closest('.product_form form');
+    var parentForm = $(this).closest('.product-form form');
 
 
     if (parentForm.siblings('.notify_form').length){
