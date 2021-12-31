@@ -511,7 +511,7 @@ jQuery(function($){
 //   variantData().find((variant) => {
 //     console.log(variant);
 //   }
-  product-handle
+
   $.ajax({
     url: '/products/' + $('.page-handle').attr('page-handle')+ '.js',
     type: 'get',
