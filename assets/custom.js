@@ -525,14 +525,14 @@ jQuery(function($){
         var txt = variant.title;
         txt = txt.split('/')
 
-        var Var1 = txt[0];
-        var Var2 = txt[1];
-        var Var3 = txt[2]
-        console.log("Var1"+Var1.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-             console.log("Var2"+Var2.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-            console.log("Var3"+Var3.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-        $("."+Var1.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')).attr("nextoption_value",Var2);
-          $("."+Var1.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')).attr("nextoption_value2",Var3);
+        var Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        var Var2 = txt[1].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        var Var3 = txt[2].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        console.log("Var1"+Var1);
+             console.log("Var2"+Var2);
+            console.log("Var3"+Var3);
+        $("."+Var1).attr("nextoption_value",Var2);
+          $("."+Var1).attr("nextoption_value2",Var3);
         
         }
       });
