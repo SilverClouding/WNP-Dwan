@@ -585,29 +585,44 @@ class VariantSelects extends HTMLElement {
 //     var option2 = document.querySelectorAll('.swatch_options input:checked').eq(1).value;
 //     var option3 = document.querySelectorAll('.swatch_options input:checked').eq(2).value;
     
-    var checkedValue = null; 
-    var inputElements = document.getElementsByClassName('.allRadio');
-    console.log(inputElements.length);
-    for(var i=0; i<inputElements.length;  i++){
-      if(inputElements[i].checked){
-        checkedValue = inputElements[i].value;
+    var byName1 = document.getElementById("option0").getAttribute("swatch-name");
+    var byName2 = document.getElementById("option0").getAttribute("swatch-name");
+    var byName3 = document.getElementById("option0").getAttribute("swatch-name");
+    
+    var rates = document.getElementsByName(byName1);
+    var option1;
+    for(var i = 0; i < rates.length; i++){
+      if(rates[i].checked){
+        option1 = rates[i].value;
       }
     }
-
-    console.log(checkedValue);
+    var rates = document.getElementsByName(byName2);
+    var option2;
+    for(var i = 0; i < rates.length; i++){
+      if(rates[i].checked){
+        option2 = rates[i].value;
+      }
+    }
+    var rates = document.getElementsByName(byName3);
+    var option3;
+    for(var i = 0; i < rates.length; i++){
+      if(rates[i].checked){
+        option3 = rates[i].value;
+      }
+    }
     
     
-//     if (option1 && option2 && option3){
-//       var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
-//     } else if (option1 && option2){
-//       var notifyMessage = option1 + ' / ' + option2;
-//     } else {
-//       var notifyMessage = option1;
-//     }
+    if (option1 && option2 && option3){
+      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
+    } else if (option1 && option2){
+      var notifyMessage = option1 + ' / ' + option2;
+    } else {
+      var notifyMessage = option1;
+    }
     
     this.getVariantData().find((variant) => {
 //       console.log(variant.title);
-//       console.log(notifyMessage);
+      console.log(notifyMessage);
     });
   }
   
