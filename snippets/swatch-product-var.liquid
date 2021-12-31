@@ -143,7 +143,7 @@
          {% if strip_selected_val == value %}checked{% endif %}
          >
 
-  <label {% if variant.available %}available{% else %}soldout{% endif %} for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
+  <label class="{{value |handle}}" {% if variant.available %}available{% else %}soldout{% endif %} for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
     {{ value }}
   </label>
 
