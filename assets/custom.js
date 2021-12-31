@@ -513,7 +513,7 @@ jQuery(function($){
 //   }
 
   $.ajax({
-    url: '/products/' + $('.page-handle').attr('page-handle')+ '.js',
+    url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
     type: 'get',
     dataType: 'json',
     contentType: 'application/json',
