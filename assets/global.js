@@ -593,9 +593,8 @@ class VariantSelects extends HTMLElement {
 //     }
     
     var classes = document.getElementsByClassName("swatch");
-    console.log(classes.length);
+   
     for (var i = 0; i < classes.length; i++) {
-      console.log(i);
       if(i == 0 ){
       var byName1 = document.getElementById("option"+i).getAttribute("swatch-name");
       }
@@ -646,8 +645,9 @@ class VariantSelects extends HTMLElement {
     }
     
     this.getVariantData().find((variant) => {
-//       console.log(variant.title);
-      console.log(notifyMessage);
+      if(variant.title == notifyMessage ){
+      console.log(variant.available);
+      }
     });
   }
   
