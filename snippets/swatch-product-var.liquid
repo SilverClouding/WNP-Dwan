@@ -106,8 +106,9 @@
 {% assign found_option = true %}
 {% assign option_index = forloop.index0 %}
 {% assign downcased_option = swatch | downcase %}
-{% assign selected_value = option.selected_value %}
+
 {% endif %}
+{% assign selected_value = option.selected_value %}
 {% endfor %}
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
