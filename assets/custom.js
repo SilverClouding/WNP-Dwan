@@ -510,7 +510,7 @@ jQuery(function($){
     var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return variantData;
   }
-  this.getVariantData_custom().find((variant) => {
+  getVariantData_custom().find((variant) => {
     console.log(variant);
   }
   
