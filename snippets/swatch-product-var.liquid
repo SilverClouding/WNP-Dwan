@@ -111,7 +111,11 @@
 {% endif %}
 {% endfor %}
 
-
+    {%- for option in product.options_with_values -%}
+    {%- for value in option.values -%}
+    {% assign selected_value = option.selected_value %}
+    {%- endfor -%}
+    {%- endfor -%}
 
 
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
@@ -128,10 +132,8 @@
     {% assign values = values | append: ',' | append: value %}
     {% assign values = values | split: ',' %}
     
-    
-    {%- for option in product.options_with_values -%}
-    {%- for value in option.values -%}
-    {% assign selected_value = option.selected_value %}
+    {{product.selected_or_first_available_variant}}
+
 
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
            name="{{ swatch }}"
@@ -142,8 +144,6 @@
     <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
       {{ value }}
     </label>
-    {%- endfor -%}
-    {%- endfor -%}
 
     {% endunless %}
     {%- endfor -%}
