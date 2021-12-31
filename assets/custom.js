@@ -470,36 +470,75 @@ jQuery(function($){
 
 
 // hide varient
+// jQuery(function($){
+//   $( document ).ready(function() {
+//     if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
+//       var $addToCartForm = $('form[action="/cart/add"]');
+//       if (window.MutationObserver && $addToCartForm.length) {
+//         if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+//           observer.disconnect();
+//         }
+//         var config = { childList: true, subtree: true };
+//         var observer = new MutationObserver(function() {
+//           product_variants_removed.forEach(function(item){
+//             $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
+//           });
+//           observer.disconnect();
+//         });  
+//         observer.observe($addToCartForm[0], config);
+//         $('.single-option-selector').trigger('change');
+//       }
+//     }
+//   });
+//   $( document ).ready(function() {
+//     if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
+//       var $addToCartForm = $('form[action="/cart/add"]');
+//       if (window.MutationObserver && $addToCartForm.length) {
+//         var config = { childList: true, subtree: true };
+//         product_variants_removed.forEach(function(item){
+//           $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
+//         });    
+//       }
+//     }
+//   });
+
+// });
+
 jQuery(function($){
-  $( document ).ready(function() {
-    if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
-      var $addToCartForm = $('form[action="/cart/add"]');
-      if (window.MutationObserver && $addToCartForm.length) {
-        if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
-          observer.disconnect();
-        }
-        var config = { childList: true, subtree: true };
-        var observer = new MutationObserver(function() {
-          product_variants_removed.forEach(function(item){
-            $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
-          });
-          observer.disconnect();
-        });  
-        observer.observe($addToCartForm[0], config);
-        $('.single-option-selector').trigger('change');
-      }
+
+  $('body').on('change', '.swatch :radio', function() {
+    var optionIndex = $(this).closest('.swatch').attr('data-option-index');
+    var optionValue = $(this).val();
+    var parentForm = $(this).closest('.product_form form');
+
+
+    if (parentForm.siblings('.notify_form').length){
+      var notifyForm = parentForm.siblings('.notify_form');
+    } else {
+      var notifyForm = $('.js-notify-form');
     }
-  });
-  $( document ).ready(function() {
-    if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
-      var $addToCartForm = $('form[action="/cart/add"]');
-      if (window.MutationObserver && $addToCartForm.length) {
-        var config = { childList: true, subtree: true };
-        product_variants_removed.forEach(function(item){
-          $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
-        });    
-      }
+
+    var option1 = parentForm.find('.swatch_options input:checked').eq(0).val();
+    var option2 = parentForm.find('.swatch_options input:checked').eq(1).val() || '';
+    var option3 = parentForm.find('.swatch_options input:checked').eq(2).val() || '';
+
+    if (option1 && option2 && option3){
+      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
+    } else if (option1 && option2){
+      var notifyMessage = option1 + ' / ' + option2;
+    } else {
+      var notifyMessage = option1;
     }
+
+
+    notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
+
+    $(this)
+    .closest('form')
+    .find('.single-option-selector')
+    .eq(optionIndex)
+    .val(optionValue)
+    .trigger('change');
   });
 
 });
