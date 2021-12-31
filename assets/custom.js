@@ -507,7 +507,7 @@ jQuery(function($){
 jQuery(function($){
   
   
-  var variantData ={}; 
+
 
   $.ajax({
     url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
@@ -516,60 +516,63 @@ jQuery(function($){
     contentType: 'application/json',
     success: function (data) {
       variantData = data.variants;
-     
+
+
+
+
+      $('body').on('change', '.swatch :radio', function() {
+        var optionIndex = $(this).closest('.swatch').attr('data-option-index');
+        var optionValue = $(this).val();
+        var parentForm = $(this).closest('.product__info-container');
+
+        //     console.log($(this).parents('.swatch_options').html());
+
+        if (parentForm.siblings('.notify_form').length){
+          var notifyForm = parentForm.siblings('.notify_form');
+        } else {
+          var notifyForm = $('.js-notify-form');
+        }
+
+        var option1 = parentForm.find('.swatch_options input:checked').eq(0).val();
+        var option2 = parentForm.find('.swatch_options input:checked').eq(1).val() || '';
+        var option3 = parentForm.find('.swatch_options input:checked').eq(2).val() || '';
+
+        if (option1 && option2 && option3){
+          var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
+        } else if (option1 && option2){
+          var notifyMessage = option1 + ' / ' + option2;
+        } else {
+          var notifyMessage = option1;
+        }
+
+        console.log(notifyMessage);
+
+
+        var txt = notifyMessage;
+        txt = txt.split('/')
+
+        var Var1 = txt[0];
+        var Var2 = txt[1];
+        var Var3 = txt[2]
+
+        //      console.log("Var1"+Var1);
+        //      console.log("Var2"+Var2);
+        //     console.log("Var3"+Var3);
+
+
+        notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
+
+        $(this)
+        .closest('form')
+        .find('.single-option-selector')
+        .eq(optionIndex)
+        .val(optionValue)
+        .trigger('change');
+      });
+
+
+
+
     }
   });
-  
-  console.log(variantData);
-  
-  $('body').on('change', '.swatch :radio', function() {
-    var optionIndex = $(this).closest('.swatch').attr('data-option-index');
-    var optionValue = $(this).val();
-    var parentForm = $(this).closest('.product__info-container');
-
-//     console.log($(this).parents('.swatch_options').html());
-
-    if (parentForm.siblings('.notify_form').length){
-      var notifyForm = parentForm.siblings('.notify_form');
-    } else {
-      var notifyForm = $('.js-notify-form');
-    }
-
-    var option1 = parentForm.find('.swatch_options input:checked').eq(0).val();
-    var option2 = parentForm.find('.swatch_options input:checked').eq(1).val() || '';
-    var option3 = parentForm.find('.swatch_options input:checked').eq(2).val() || '';
-
-    if (option1 && option2 && option3){
-      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
-    } else if (option1 && option2){
-      var notifyMessage = option1 + ' / ' + option2;
-    } else {
-      var notifyMessage = option1;
-    }
-    
-    console.log(notifyMessage);
-
-    
-    var txt = notifyMessage;
-    txt = txt.split('/')
-
-    var Var1 = txt[0];
-    var Var2 = txt[1];
-    var Var3 = txt[2]
-
-//      console.log("Var1"+Var1);
-//      console.log("Var2"+Var2);
-//     console.log("Var3"+Var3);
-    
-
-    notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
-
-    $(this)
-    .closest('form')
-    .find('.single-option-selector')
-    .eq(optionIndex)
-    .val(optionValue)
-    .trigger('change');
-  });
-
 });
