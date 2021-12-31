@@ -138,9 +138,9 @@
 
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
            name="{{ swatch }}"
-           value="{{ value | escape }}" option-value="{{selected_value}}"
+           value="{{ value | escape }}" option-value="{{selected_value[option_index]}}"
            form="{{ product_form_id }}"
-           {% if selected_value == value %}checked{% endif %}
+           {% if selected_value[option_index] == value %}checked{% endif %}
            >
     <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
       {{ value }}
