@@ -508,8 +508,9 @@ jQuery(function($){
   
   
     var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-  
-    console.log(variantData);
+  variantData().find((variant) => {
+    console.log(variant);
+  }
  
   
   $('body').on('change', '.swatch :radio', function() {
