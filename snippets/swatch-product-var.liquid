@@ -97,7 +97,7 @@
 {% endcomment %}
 
 
-  {% assign swatch = swatch-product-var %}
+{% assign swatch = swatch-product-var %}
 {% assign found_option = false %}
 {% assign option_index = 0 %}
 {% assign selected_value = "" %}
@@ -111,47 +111,42 @@
 {% endif %}
 {% endfor %}
 
-    {%- for option in product.options_with_values -%}
-    {%- for value in option.values -%}
-    {% assign selected_value = option.selected_value %}
-    {%- endfor -%}
-    {%- endfor -%}
 
-   {% assign selected_value = product.selected_or_first_available_variant.title | split:"/" %}
 
-  <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+{% assign selected_value = product.selected_or_first_available_variant.title | split:"/" %}
 
-  <fieldset class="js product-form__input"  data-option-index="{{ option_index }}">
-    <legend class="form__label">{{ swatch }}</legend>
-    {% assign values = '' %}
 
-    {% for variant in product.variants %}
-    {% assign value = variant.options[option_index] %}
 
-    {% unless values contains value %} 
-    {% assign values = values | join: ',' %}
-    {% assign values = values | append: ',' | append: value %}
-    {% assign values = values | split: ',' %}
-    
- 
-{% assign strip_selected_val = selected_value[option_index] | strip %}
+<fieldset class="js product-form__input"  data-option-index="{{ option_index }}">
+  <legend class="form__label">{{ swatch }}</legend>
+  {% assign values = '' %}
 
-    <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
-           name="{{ swatch }}"
-           value="{{ value | escape }}" option-value="{{selected_value[option_index] | strip }}"
-           form="{{ product_form_id }}"
-           {% if strip_selected_val == value %}checked{% endif %}
-           >
-    <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
-      {{ value }}
-    </label>
+  {% for variant in product.variants %}
+  {% assign value = variant.options[option_index] %}
 
-    {% endunless %}
-    {%- endfor -%}
-  </fieldset>
- 
-  <script type="application/json">
+  {% unless values contains value %} 
+  {% assign values = values | join: ',' %}
+  {% assign values = values | append: ',' | append: value %}
+  {% assign values = values | split: ',' %}
+
+
+  {% assign strip_selected_val = selected_value[option_index] | strip %}
+
+  <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
+         name="{{ swatch }}"
+         value="{{ value | escape }}" option-value="{{selected_value[option_index] | strip }}"
+         form="{{ product_form_id }}"
+         {% if strip_selected_val == value %}checked{% endif %}
+         >
+  <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
+    {{ value }}
+  </label>
+
+  {% endunless %}
+  {%- endfor -%}
+</fieldset>
+
+<script type="application/json">
                     {{ product.variants | json }}
-  </script>
-</variant-radios>
-  
+</script>
+
