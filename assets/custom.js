@@ -514,10 +514,8 @@ jQuery(function($){
     type: 'get',
     dataType: 'json',
     contentType: 'application/json',
-    success: function (data) {
-      var variants = data.variants;
-
-
+    success: function (product) {
+     
 
 
       $('body').on('change', '.swatch :radio', function() {
@@ -542,8 +540,11 @@ jQuery(function($){
           var notifyMessage = option1;
         }
 
-        
-        console.log(variants);
+        $(product.variants).each(function (i, variant) {
+          if(variant.available){
+        console.log(variant.title);
+          }
+        }
         
         console.log(notifyMessage);
 
