@@ -646,11 +646,11 @@ class VariantSelects extends HTMLElement {
     
     this.getVariantData().find((variant) => {
       if(variant.available){
-      console.log(variant.title);
+      console.log("availvartitle"+variant.title);
       }
       
       if(variant.title == notifyMessage ){
-      console.log(variant.available);
+      console.log("availvar"+variant.available);
       }
     });
   }
