@@ -585,8 +585,8 @@ class VariantSelects extends HTMLElement {
 //     var option2 = document.querySelectorAll('.swatch_options input:checked').eq(1).value;
 //     var option3 = document.querySelectorAll('.swatch_options input:checked').eq(2).value;
     
-    var byName1 = document.getElementById("option0").getAttribute("swatch-name");
-    var byName2 = document.getElementById("option1").getAttribute("swatch-name");
+//     var byName1 = document.getElementById("option0").getAttribute("swatch-name");
+//     var byName2 = document.getElementById("option1").getAttribute("swatch-name");
 //     console.log(document.getElementById("option2").length)
 //     if(document.getElementById("option2").getAttribute("swatch-name") != 'null'){
 //     var byName3 = document.getElementById("option2").getAttribute("swatch-name");
@@ -596,6 +596,15 @@ class VariantSelects extends HTMLElement {
     console.log(classes.length);
     for (var i = 0; i < classes.length; i++) {
       console.log(i);
+      if(i == 0 ){
+      var byName1 = document.getElementById("option"+i).getAttribute("swatch-name");
+      }
+      if(i == 1 ){
+       var byName2 = document.getElementById("option"+i).getAttribute("swatch-name");
+      }
+      if(i == 2 ){
+       var byName3 = document.getElementById("option"+i).getAttribute("swatch-name");
+      }
     }
     
     var rates = document.getElementsByName(byName1);
