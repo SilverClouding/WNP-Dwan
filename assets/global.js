@@ -580,18 +580,7 @@ class VariantSelects extends HTMLElement {
     }
   }
   updateSwatch(){
-    
-//     var option1 = document.querySelectorAll('.swatch_options input:checked').eq(0).value;
-//     var option2 = document.querySelectorAll('.swatch_options input:checked').eq(1).value;
-//     var option3 = document.querySelectorAll('.swatch_options input:checked').eq(2).value;
-    
-//     var byName1 = document.getElementById("option0").getAttribute("swatch-name");
-//     var byName2 = document.getElementById("option1").getAttribute("swatch-name");
-//     console.log(document.getElementById("option2").length)
-//     if(document.getElementById("option2").getAttribute("swatch-name") != 'null'){
-//     var byName3 = document.getElementById("option2").getAttribute("swatch-name");
-//     }
-    
+console.log(this);
     var classes = document.getElementsByClassName("swatch");
    
     for (var i = 0; i < classes.length; i++) {
@@ -645,7 +634,6 @@ class VariantSelects extends HTMLElement {
     }
     
    
-    console.log(this);
     this.getVariantData().find((variant) => {
       if(variant.available){
 //         console.log(inv_qty[ variant.id ]);
