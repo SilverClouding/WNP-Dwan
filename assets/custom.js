@@ -506,13 +506,11 @@ jQuery(function($){
 
 jQuery(function($){
   
-  getVariantData_custom() {
+  
     var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return variantData;
-  }
-  getVariantData_custom().find((variant) => {
-    console.log(variant);
-  }
+  
+    console.log(variantData);
+ 
   
   $('body').on('change', '.swatch :radio', function() {
     var optionIndex = $(this).closest('.swatch').attr('data-option-index');
