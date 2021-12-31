@@ -671,8 +671,6 @@ class VariantSelects extends HTMLElement {
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       
-      console.log(window.variantStrings.soldOut);
-      
       });
   }
 
@@ -687,8 +685,6 @@ class VariantSelects extends HTMLElement {
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
       if (text) addButtonText.textContent = text;
-      
-    console.log('disabled')
     } else {
       addButton.removeAttribute('disabled');
       addButtonText.textContent = window.variantStrings.addToCart;
