@@ -512,6 +512,17 @@ jQuery(function($){
 //     console.log(variant);
 //   }
   
+  $.ajax({
+    url: '//wnp.pet/products/demo-original-adult-formula-dog-dry-food',
+    type: 'post',
+    dataType: 'json',
+    contentType: 'application/json',
+    success: function (data) {
+     console.log(data);
+    },
+    data: JSON.stringify(person)
+  });
+  
   
   
   $('body').on('change', '.swatch :radio', function() {
