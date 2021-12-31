@@ -517,7 +517,7 @@ jQuery(function($){
     success: function (product) {
      
       $(product.variants).each(function (i, variant) {
-        console.log(variant);
+//         console.log(variant);
        
         if(variant.available){
           console.log(variant.title);
