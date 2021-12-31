@@ -536,9 +536,9 @@ jQuery(function($){
     var txt = notifyMessage;
     txt = txt.split('/')
 
-    var Var1 = txt.pop();
-    var Var2 = txt[0];
-    var Var3 = txt[1]
+    var Var1 = txt[0];
+    var Var2 = txt[1];
+    var Var3 = txt[2]
 
      console.log("Var1"+Var1);
      console.log("Var2"+Var2);
