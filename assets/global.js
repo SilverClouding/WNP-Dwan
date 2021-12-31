@@ -587,7 +587,7 @@ class VariantSelects extends HTMLElement {
     
     var checkedValue = null; 
     var inputElements = document.getElementsByClassName('.allRadio');
-    for(var i=0; i<inputElements;  i++){
+    for(var i=0; i<inputElements.length;  i++){
       if(inputElements[i].checked){
         checkedValue = inputElements[i].value;
       }
