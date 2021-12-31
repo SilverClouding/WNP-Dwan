@@ -105,7 +105,7 @@
 {% for option in product.options %}
 {% if option == swatch %}
 {% assign found_option = true %}
-{% assign option_index = forloop.index0 %}
+{% assign option_index = forloop.index %}
 {% assign downcased_option = swatch | downcase %}
 
 {% endif %}
