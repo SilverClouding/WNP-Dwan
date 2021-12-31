@@ -523,7 +523,7 @@ jQuery(function($){
 //         console.log(variant);
        
         if(variant.available){
-//           console.log(variant.title);
+          console.log(variant.title);
 //           console.log(inv_qty[ variant.id ]);
         var txt = variant.title;
         txt = txt.split('/')
