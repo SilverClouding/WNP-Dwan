@@ -117,6 +117,7 @@
     {%- endfor -%}
     {%- endfor -%}
 
+   {{product.selected_or_first_available_variant.title}}
 
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
@@ -132,7 +133,7 @@
     {% assign values = values | append: ',' | append: value %}
     {% assign values = values | split: ',' %}
     
-    {{product.selected_or_first_available_variant}}
+ 
 
 
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
