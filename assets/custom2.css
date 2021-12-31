@@ -159,3 +159,7 @@ div#mini-cart {
 .mini-cart-con .empty-cart-items{
 height: calc(100vh - 306px)!important;
 }
+
+label[soldout] {
+    color: red!important;
+}
