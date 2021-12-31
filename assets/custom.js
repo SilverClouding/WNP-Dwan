@@ -522,7 +522,16 @@ jQuery(function($){
         if(variant.available){
           console.log(variant.title);
           console.log(inv_qty[ variant.id ]);
+        var txt = variant.title;
+        txt = txt.split('/')
 
+        var Var1 = txt[0];
+        var Var2 = txt[1];
+        var Var3 = txt[2]
+        
+        $(Var1).attr("nextoption_value",Var2);
+          $(Var1).attr("nextoption_value2",Var3);
+        
         }
       });
 
