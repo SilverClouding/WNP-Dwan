@@ -163,3 +163,24 @@ height: calc(100vh - 306px)!important;
 label[soldout] {
     color: red!important;
 }
+
+
+.CarouselWidget  .header__inner {
+    flex-wrap: wrap!important;
+    display: flex!important;
+    justify-content: flex-start!important;
+    flex-direction: unset!important;
+}
+
+.R-TextHeading {
+    /* width: 100%; */
+/*     align-items: flex-start!important; */
+}
+
+.R-RatingStars {
+    /* width: 100%; */
+}
+
+.header__inner .R-TextBody {
+    width: 50%;
+}
