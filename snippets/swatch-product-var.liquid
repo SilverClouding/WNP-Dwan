@@ -111,10 +111,12 @@
 {% endif %}
 {% endfor %}
 
-
+{%- for option in product.options_with_values -%}
 {%- for value in option.values -%}
 {% assign selected_value = option.selected_value %}
 {%- endfor -%}
+{%- endfor -%}
+
 
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
