@@ -111,9 +111,6 @@
 {% endif %}
 {% endfor %}
 
-{%- for option in product.options_with_values -%}
-{%- for value in option.values -%}
-{% assign selected_value = option.selected_value %}
 
 
 
@@ -130,6 +127,12 @@
     {% assign values = values | join: ',' %}
     {% assign values = values | append: ',' | append: value %}
     {% assign values = values | split: ',' %}
+    
+    
+    {%- for option in product.options_with_values -%}
+    {%- for value in option.values -%}
+    {% assign selected_value = option.selected_value %}
+
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
            name="{{ swatch }}"
            value="{{ value | escape }}" option-value="{{selected_value}}"
@@ -139,6 +142,9 @@
     <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
       {{ value }}
     </label>
+    {%- endfor -%}
+    {%- endfor -%}
+
     {% endunless %}
     {%- endfor -%}
   </fieldset>
@@ -148,5 +154,3 @@
   </script>
 </variant-radios>
   
-  {%- endfor -%}
-{%- endfor -%}
