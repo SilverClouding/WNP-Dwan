@@ -648,11 +648,17 @@ class VariantSelects extends HTMLElement {
     
     this.getVariantData().find((variant) => {
       if(variant.available){
-        console.log(inv_qty[ variant.id ]);
-        
-        console.log(inv_available[ variant.id ]);
+//         console.log(inv_qty[ variant.id ]);
+       
+//         console.log(inv_available[ variant.id ]);
         console.log(variant);
       console.log("availvartitle"+variant.title);
+        
+        var txt = notifyMessage;
+        txt = txt.split('/')
+        var Var1 = txt[0];
+        var Var2 = txt[1];
+        var Var3 = txt[2]
       }
       
       if(variant.title == notifyMessage ){

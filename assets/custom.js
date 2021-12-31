@@ -505,7 +505,15 @@ jQuery(function($){
 // });
 
 jQuery(function($){
-
+  
+  getVariantData_custom() {
+    this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+    return this.variantData;
+  }
+  this.getVariantData_custom().find((variant) => {
+    console.log(variant);
+  }
+  
   $('body').on('change', '.swatch :radio', function() {
     var optionIndex = $(this).closest('.swatch').attr('data-option-index');
     var optionValue = $(this).val();
