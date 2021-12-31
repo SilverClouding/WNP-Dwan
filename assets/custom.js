@@ -529,6 +529,8 @@ jQuery(function($){
     } else {
       var notifyMessage = option1;
     }
+    
+    console.log(notifyMessage);
 
 
     notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
