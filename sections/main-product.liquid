@@ -366,6 +366,11 @@
          {% for option in product.options %}
         {% render 'swatch-product-var' with option %}
         {% endfor %}
+            
+<script type="application/json">
+                    {{ product.variants | json }}
+</script>
+
         </variant-radios>
         
         
