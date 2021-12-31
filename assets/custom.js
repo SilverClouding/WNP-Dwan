@@ -534,7 +534,7 @@ jQuery(function($){
     var optionValue = $(this).val();
     var parentForm = $(this).closest('.product__info-container');
 
-    console.log($(this).parents('.swatch_options').html());
+//     console.log($(this).parents('.swatch_options').html());
 
     if (parentForm.siblings('.notify_form').length){
       var notifyForm = parentForm.siblings('.notify_form');
