@@ -515,7 +515,7 @@ jQuery(function($){
     dataType: 'json',
     contentType: 'application/json',
     success: function (data) {
-      variantData = data.variants;
+      var variants = data.variants;
 
 
 
