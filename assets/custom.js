@@ -512,22 +512,7 @@ jQuery(function($){
 //     console.log(variant);
 //   }
   
-  class VariantSelects extends HTMLElement {
-    constructor() {
-      super();
-      this.addEventListener('change', this.onVariantChange);
-    }
-    onVariantChange() {
-      this.getVariantData().find((variant) => {
-        console.log(variant);
-      });
-    }
-    getVariantData() {
-      this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
-      return this.variantData;
-    }
-  }
- 
+  
   
   $('body').on('change', '.swatch :radio', function() {
     var optionIndex = $(this).closest('.swatch').attr('data-option-index');
