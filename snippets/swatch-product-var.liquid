@@ -134,13 +134,13 @@
     {% assign values = values | split: ',' %}
     
  
-
+{% assign strip_selected_val = selected_value[option_index] | strip %}
 
     <input type="radio" id="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}"
            name="{{ swatch }}"
-           value="{{ value | escape }}" option-value="{{selected_value[option_index]}}"
+           value="{{ value | escape }}" option-value="{{selected_value[option_index] | strip }}"
            form="{{ product_form_id }}"
-           {% if selected_value[option_index] == value %}checked{% endif %}
+           {% if strip_selected_val == value %}checked{% endif %}
            >
     <label for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
       {{ value }}
