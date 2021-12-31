@@ -644,8 +644,11 @@ class VariantSelects extends HTMLElement {
       var notifyMessage = option1;
     }
     
+   
+    
     this.getVariantData().find((variant) => {
       if(variant.available){
+        console.log(inv_qty[ variant.id ]);
         console.log(variant);
       console.log("availvartitle"+variant.title);
       }
