@@ -649,6 +649,8 @@ class VariantSelects extends HTMLElement {
     this.getVariantData().find((variant) => {
       if(variant.available){
         console.log(inv_qty[ variant.id ]);
+        
+        console.log(inv_available[ variant.id ]);
         console.log(variant);
       console.log("availvartitle"+variant.title);
       }
