@@ -507,7 +507,7 @@ jQuery(function($){
 jQuery(function($){
   
   
-var variantData =[]; 
+  var variantData ={}; 
 
   $.ajax({
     url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
