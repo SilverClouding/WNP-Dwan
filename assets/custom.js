@@ -507,10 +507,7 @@ jQuery(function($){
 jQuery(function($){
   
   
-//     var variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-//   variantData().find((variant) => {
-//     console.log(variant);
-//   }
+var variantData =[]; 
 
   $.ajax({
     url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
@@ -518,11 +515,12 @@ jQuery(function($){
     dataType: 'json',
     contentType: 'application/json',
     success: function (data) {
-     console.log(data.variants);
+      variantData = data.variants;
+     
     }
   });
   
-  
+  console.log(variantData);
   
   $('body').on('change', '.swatch :radio', function() {
     var optionIndex = $(this).closest('.swatch').attr('data-option-index');
