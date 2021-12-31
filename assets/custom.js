@@ -511,6 +511,16 @@ jQuery(function($){
 //   variantData().find((variant) => {
 //     console.log(variant);
 //   }
+  
+  class VariantSelects extends HTMLElement {
+    this.getVariantData().find((variant) => {
+      console.log(variant);
+    });
+  getVariantData() {
+    this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+    return this.variantData;
+  }
+}
  
   
   $('body').on('change', '.swatch :radio', function() {
