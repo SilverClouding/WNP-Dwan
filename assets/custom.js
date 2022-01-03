@@ -670,27 +670,7 @@ jQuery(function($){
         }
       }
 
-      //Add click event when there is more than one product on the page (eg. Collection in Detail)
-      if ($('.js-product_section').length > 1){ }
-        $('body').on('click', '.swatch-element', function(){
-          var swatchValue = $(this).data('value').toString();
-
-          $(this)
-          .siblings('input[value="'+ swatchValue.replace(/\"/g,'\\"') +'"]')
-          .prop("checked", true)
-          .trigger("change");
-
-         var $productForm = $('.product'); 
-        const JSONData = $productForm.data('product');
-        const productID = $productForm.attr('product-id');
-        const productSection = '.product-' + productID + ' .js-product_section';
-        const swatchOptions = $productForm.find('.swatch_options .swatch');
-        
-
-          if (swatchOptions.length > 1){
-             linkOptionSelectors(JSONData, productSection);
-          }
-        })
+      
      
       
     }
