@@ -142,10 +142,12 @@
          form="{{ product_form_id }}"
          {% if strip_selected_val == value %}checked{% endif %}
          >
-
+  <div tabindex="0"  value="{{ value | escape }}" data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
+    
   <label class="{{value |handle}}" {% if variant.available %}available{% else %}soldout{% endif %} for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
     {{ value }}
   </label>
+  </div>
 
   {% endunless %}
   {%- endfor -%}
