@@ -77,7 +77,7 @@ if (!customElements.get('product-form')) {
           
           document.getElementById("precentfill").style.width = mainPercent+"%";
           if(cartTotal >= cartthreshhold ){
-            document.getElementById("textmsg").innerHTML= cartthreshhold +" Done, You are eligible for";
+            document.getElementById("textmsg").innerHTML= Shopify.formatMoney(cartthreshhold) +" Done, You are eligible for";
           }else{
           document.getElementById("textmsg").innerHTML= "Spend "+Shopify.formatMoney(needAmmount)+" more to receive";
           }
