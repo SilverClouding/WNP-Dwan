@@ -547,11 +547,6 @@ jQuery(function($){
         init: function(){},
         productSwatches: function(){
           if ($('.js-product_section').length){
-            var $productForms = $('.js-product_section');
-            $productForms.addClass('is-visible');
-
-            //Loop through each product and set the initial option value state
-
             var $productForm = $('.product'); 
             const JSONData = $productForm.data('product');
             const productID = product.id;
@@ -561,7 +556,6 @@ jQuery(function($){
               //         Shopify.linkOptionSelectors(JSONData, productSection);
               console.log(JSONData);
             }
-            });
           }
         }
       }
