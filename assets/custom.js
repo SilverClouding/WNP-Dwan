@@ -563,7 +563,7 @@ jQuery(function($){
       productPage.productSwatches();
 
       
-      Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
+      var updateOptionsInSelector = function(selectorIndex, parent) {
         //         console.log(selectorIndex);
         //         console.log(parent);
         switch (selectorIndex) {
@@ -623,18 +623,18 @@ jQuery(function($){
           }
         }
         // Update options right away.
-        Shopify.updateOptionsInSelector(0, parent);
-        if (product.options.length > 1) Shopify.updateOptionsInSelector(1, parent);
-        if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+        updateOptionsInSelector(0, parent);
+        if (product.options.length > 1) updateOptionsInSelector(1, parent);
+        if (product.options.length === 3) updateOptionsInSelector(2, parent);
         // When there is an update in the first dropdown.
         $(parent + " .single-option-selector:eq(0)").change(function() {
-          Shopify.updateOptionsInSelector(1, parent);
-          if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+          updateOptionsInSelector(1, parent);
+          if (product.options.length === 3) updateOptionsInSelector(2, parent);
           return true;
         });
         // When there is an update in the second dropdown.
         $(parent + " .single-option-selector:eq(1)").change(function() {
-          if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+          if (product.options.length === 3) updateOptionsInSelector(2, parent);
           return true;
         });
       };
