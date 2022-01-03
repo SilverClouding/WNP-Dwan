@@ -548,8 +548,6 @@ jQuery(function($){
 
       
       var updateOptionsInSelector = function(selectorIndex, parent) {
-        //         console.log(selectorIndex);
-                console.log(parent);
         switch (selectorIndex) {
           case 0:
             console.log('0');
