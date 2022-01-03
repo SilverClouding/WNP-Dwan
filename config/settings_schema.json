@@ -27,6 +27,11 @@
         "id": "minicart",
         "label": "Show minicart section in customise theme",
         "info": "Minicart section name is 'cart items' located in below footer "
+      },
+      {
+        "type": "text",
+        "id": "freeshipping",
+        "label": "Free shipping threshold"
       }
     ]
   },
