@@ -541,6 +541,15 @@ jQuery(function($){
       });
 
       
+      
+      const JSONData = $productForm.data('product');
+      const productID = productData.section_id;
+      const productSection = '.product-' + productID + ' .js-product_section';
+      const swatchOptions = $productForm.find('.swatch_options .swatch');
+      if (swatchOptions.length > 1){
+        Shopify.linkOptionSelectors(JSONData, productSection);
+      }
+      
       Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
         console.log(selectorIndex);
         console.log(parent);
@@ -573,7 +582,48 @@ jQuery(function($){
         });
 
       };
-      
+      Shopify.linkOptionSelectors = function(product, parent) {
+        // Building our mapping object.
+        Shopify.optionsMap = {};
+        for (var i=0; i<product.variants.length; i++) {
+          var variant = product.variants[i];
+          if (variant.available) {
+            // Gathering values for the 1st drop-down.
+            Shopify.optionsMap['root'] = Shopify.optionsMap['root'] || [];
+            Shopify.optionsMap['root'].push(variant.option1);
+            Shopify.optionsMap['root'] = Shopify.uniq(Shopify.optionsMap['root']);
+            // Gathering values for the 2nd drop-down.
+            if (product.options.length > 1) {
+              var key = variant.option1;
+              Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+              Shopify.optionsMap[key].push(variant.option2);
+              Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+            }
+            // Gathering values for the 3rd drop-down.
+            if (product.options.length === 3) {
+              var key = variant.option1 + ' / ' + variant.option2;
+              Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+              Shopify.optionsMap[key].push(variant.option3);
+              Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+            }
+          }
+        }
+        // Update options right away.
+        Shopify.updateOptionsInSelector(0, parent);
+        if (product.options.length > 1) Shopify.updateOptionsInSelector(1, parent);
+        if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+        // When there is an update in the first dropdown.
+        $(parent + " .single-option-selector:eq(0)").change(function() {
+          Shopify.updateOptionsInSelector(1, parent);
+          if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+          return true;
+        });
+        // When there is an update in the second dropdown.
+        $(parent + " .single-option-selector:eq(1)").change(function() {
+          if (product.options.length === 3) Shopify.updateOptionsInSelector(2, parent);
+          return true;
+        });
+      };
 
 //       $('body').on('change', '.swatch :radio', function() {
 //         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
