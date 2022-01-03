@@ -483,29 +483,28 @@ jQuery(function($){
     dataType: 'json',
     contentType: 'application/json',
     success: function (product) {
-
+     
       var Var1 = "";
       var Var2 = "";
       var Var3 = "";
       $(product.variants).each(function (i, variant) {
-
+       
         if(variant.available){
-          var txt = variant.title;
-          txt = txt.split('/')
+        var txt = variant.title;
+        txt = txt.split('/')
 
-          Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-          Var2 = Var2+","+txt[1];
-          Var3 = txt[2];
-          $("."+Var1).attr("nextoption_value",Var2);
+         Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+         Var2 = Var2+","+txt[1];
+         Var3 = txt[2];
+        $("."+Var1).attr("nextoption_value",Var2);
           $("."+Var1).attr("nextoption_value2",Var3);
-
+        
         }
       });
 
-
-
-    }
-  });
+      
+      
+      
      
         
 
@@ -571,7 +570,8 @@ jQuery(function($){
 
 
 
-
+    }
+  });
 });
 
 
