@@ -44,10 +44,9 @@ if (!customElements.get('product-form')) {
         fetch('/?sections=cart-items')
         .then((response) => response.json())
         .then((data) => {
-          
+          console.log(data);
           
           var SectionHtml = data['cart-items'] ;
-          console.log(SectionHtml.find(".subtotal .price").text());
           var IDminiCart = document.getElementById("mini-cart");
           var IDminiCartMask = document.getElementById("minibag_mask");
           IDminiCart.innerHTML = SectionHtml;
