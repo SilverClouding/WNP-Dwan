@@ -8,6 +8,8 @@
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
+    <div class="page-width">
+      <div class="newscont">
     <div class="news-left">
           <h2 class="h1" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
     <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
@@ -55,6 +57,8 @@
               {%- endif -%}
             {% endform %}
           </div>
+      </div>
+    </div>
       {%- endcase -%}
     {%- endfor -%}
   </div>
