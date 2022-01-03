@@ -160,7 +160,7 @@ div#mini-cart {
 height: calc(100vh - 306px)!important;
 }
 
-.soldout label {
+.soldout {
     color: red!important;
 }
 
