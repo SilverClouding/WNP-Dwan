@@ -672,9 +672,8 @@ jQuery(function($){
     }
   }
   productPage.productSwatches();
-  
-//    $('body').on('change', '.swatch :radio', function() {
-//       productPage.productSwatches();
-//    });
+ 
+  new Shopify.OptionSelectors($(this).data("select-id"), { product: $(this).data("product"), onVariantSelected: selectCallback, enableHistoryState: $(this).data("enable-state") });
+
   
 });
