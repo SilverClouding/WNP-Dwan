@@ -565,7 +565,8 @@ jQuery(function($){
               var productSection = '.product-' + productID + ' .js-product_section';
               var swatchOptions = $(this).find('.swatch_options .swatch');
               if (swatchOptions.length > 1){
-                Shopify.linkOptionSelectors(JSONData, productSection);
+                console.log(JSONData);
+//                 Shopify.linkOptionSelectors(JSONData, productSection);
               }
             });
           }
