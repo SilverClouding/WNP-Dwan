@@ -1,4 +1,7 @@
-<div class="{% if section.settings.include_margins %}page-width{% endif %} aaaa">
+<div class="{% if section.settings.include_margins %}page-width{% endif %} {{ section.settings.sec_class }}">
+  {% if section.settings.heading != blank %}
+  <h2>{{section.settings.heading}}</h2>
+{% endif %}
   {%- for block in section.blocks -%}
     {% render block %}
   {%- endfor -%}
@@ -15,6 +18,17 @@
       "id": "include_margins",
       "default": true,
       "label": "t:sections.apps.settings.include_margins.label"
+    },
+	{
+          "type": "text",
+          "id": "heading",
+          "default": "Review Heading",
+		   "label": "Review Heading"
+        },
+	{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
     }
   ],
   "blocks": [
