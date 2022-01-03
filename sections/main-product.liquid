@@ -309,7 +309,7 @@
               <div>
 
                 {% assign cartTotal = cart.total_price %}
-                {% assign cartthreshhold = section.settings.freeshipping | times:100.00 %}
+                {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
                 {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
                 {% assign mainPercent = percentmainvalue | times: 100.00 %}
                 {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
