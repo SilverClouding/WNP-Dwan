@@ -75,6 +75,7 @@ if (!customElements.get('product-form')) {
           
           console.log(mainPercent);
           
+          document.getElementById("precentfill").style.width = mainPercent+"%";
         });
 
         
