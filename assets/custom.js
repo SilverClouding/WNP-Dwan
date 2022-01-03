@@ -668,6 +668,28 @@ jQuery(function($){
           console.log(JSONData);
         }
       }
+
+      //Add click event when there is more than one product on the page (eg. Collection in Detail)
+      if ($('.js-product_section').length > 1){
+        $('body').on('click', '.swatch-element', function(){
+          var swatchValue = $(this).data('value').toString();
+
+          $(this)
+          .siblings('input[value="'+ swatchValue.replace(/\"/g,'\\"') +'"]')
+          .prop("checked", true)
+          .trigger("change");
+
+          var JSONData = $(this).parents('.product_form').data('product');
+          var productID = $(this).parents('.product_form').data('product-id');
+          var productSection = '.product-' + productID + ' .js-product_section';
+          var swatchOptions = $(this).parents('.product_form').find('.swatch_options .swatch');
+
+          if (swatchOptions.length > 1){
+            Shopify.linkOptionSelectors(JSONData, productSection);
+          }
+        })
+      }
+      
     }
   }
   productPage.productSwatches();
