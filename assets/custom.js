@@ -599,10 +599,10 @@ jQuery(function($){
 
 
     var availableOptions = Shopify.optionsMap[key];
-    console.log(availableOptions);
     console.log('selectorIndex'+selectorIndex);
     $(parent + ' .swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
       if ($.inArray($(this).attr('data-value'), availableOptions) !== -1) {
+         console.log("availableOptions-"+availableOptions);
         $(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
       }
       else {
