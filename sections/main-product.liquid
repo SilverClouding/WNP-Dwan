@@ -490,7 +490,7 @@
                 {% if product.options[0] %}
                 {% assign used = '' %}
                 <label for="select-one">{{ product.options[0] }}</label>
-                <select id='select-one' onchange="letsDoThis()">
+                <select class="single-option-selector"  onchange="letsDoThis()" data-option="option1" id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}">
                   {% for variant in product.variants %}
                   {% unless used contains variant.option1 %}
                   <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
@@ -502,7 +502,7 @@
                 {% if product.options[1] %}
                 {% assign used = '' %}
                 <label for="select-one">{{ product.options[1] }}</label>
-                <select id='select-two' onchange="letsDoThis()">
+                <select class="single-option-selector" id='select-two' onchange="letsDoThis()" data-option="option2">
                   {% for variant in product.variants %}
                   {% unless used contains variant.option2 %}
                   <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
@@ -514,7 +514,7 @@
                 {% if product.options[2] %}
                 {% assign used = '' %}
                 <label for="select-one">{{ product.options[2] }}</label>
-                <select id='select-three' onchange="letsDoThis()">
+                <select class="single-option-selector" id='select-three' onchange="letsDoThis()" data-option="option3">
                   {% for variant in product.variants %}
                   {% unless used contains variant.option3 %}
                   <option value="{{ variant.option3 }}">{{ variant.option3 }}</option>
