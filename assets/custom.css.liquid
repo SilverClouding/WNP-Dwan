@@ -300,7 +300,7 @@ p{
   background:url({{ 'l-arrow.png' | asset_url }}) center no-repeat;
 }
 #shopify-section-announcement-bar .wg-drop.country-selector.closed .wgcurrent:after{
-transform:none;
+  transform:none;
 }
 .announcement-con li{
   display:flex;
@@ -1175,12 +1175,15 @@ select:focus, select:hover{
       height: auto !important;
     }
     .collection .col_tab ul li h3 {
-    line-height:16px;
-    font-weight:500;
-  }
+      line-height:16px;
+      font-weight:500;
+    }
+    .collection .product-grid.negative-margin{
+      margin-top:10px;
+    }
 
   }
-  
+
 
   /* multicolumn  */
   .brand_logos .swiper{
@@ -1600,7 +1603,7 @@ select:focus, select:hover{
     display:none;
   }
   .section_width.faq{
-  margin-bottom:60px !important;
+    margin-bottom:60px !important;
   }
   @media(max-width:992px){
     .section_width.faq{
@@ -6179,15 +6182,15 @@ select:focus, select:hover{
     content: var(--logo-normal)!important;
       }
   .CarouselWidget .header__inner{
-  align-content: flex-start;
+    align-content: flex-start;
   }
   .CarouselWidget-prefix .R-RatingStars{
-  margin-bottom:10px;
+    margin-bottom:10px;
   }
   .CarouselWidget-prefix .CarouselWidget .R-ReviewsList .R-ReviewsList__item .item__inner{
-  padding-bottom:0 !important;
+    padding-bottom:0 !important;
   }
-  
+
   @media(max-width:992px){
     .CarouselWidget-prefix .CarouselWidget .cssVar-header__heading {
       font-size: 30px!important;
@@ -6210,38 +6213,38 @@ select:focus, select:hover{
       padding-bottom: 0 !important;
     }
     .CarouselWidget-prefix .R-MD .CarouselWidget__header{
-    margin-bottom: 0 !important;
+      margin-bottom: 0 !important;
     }
     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList{
-    padding-bottom: 0 !important;
+      padding-bottom: 0 !important;
     }
     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList .R-ReviewsList__item--body, 
     .CarouselWidget-prefix .R-TextBody--xxxs {
-    font-size: 18px!important;
+      font-size: 18px!important;
     }
-   .CarouselWidget-prefix .cssVar-authorName {
-    font-size: 17px!important;
-   }
-     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList-container .R-ReviewsList__controlButton--left,
+    .CarouselWidget-prefix .cssVar-authorName {
+      font-size: 17px!important;
+    }
+    .CarouselWidget-prefix .CarouselWidget .R-ReviewsList-container .R-ReviewsList__controlButton--left,
     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList-container .R-ReviewsList__controlButton--right{
-    color: #44444d;
-    border-radius: 50%;
-    width: 30px !important;
-    height: 30px !important;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    border: 1px solid #44444d !important;
-    padding: 10px;
+      color: #44444d;
+      border-radius: 50%;
+      width: 30px !important;
+      height: 30px !important;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      border: 1px solid #44444d !important;
+      padding: 10px;
     }
     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList-container .R-ReviewsList__controlButton:hover{
-    transform:none !important;
+      transform:none !important;
     } 
-    
-    
-    
+
+
+
 
   }
 
