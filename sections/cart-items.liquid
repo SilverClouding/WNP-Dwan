@@ -168,7 +168,7 @@ body.page-your-shopping-cart {
   {% assign cartTotal = cart.total_price %}
   {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
   {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
-  {% assign mainPercent = percentmainvalue | times: 100.00 %}
+  {% assign mainPercent = percentmainvalue %}
   {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
   <style>
     .w3-light-grey{
