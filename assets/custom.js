@@ -673,7 +673,7 @@ jQuery(function($){
   }
   productPage.productSwatches();
  
-var selectCallback = function(variant, selector) {};
+// var selectCallback = function(variant, selector) {};
 var $productForm = $('.product'); 
         const JSONData = $productForm.data('product');
         const productID = $productForm.attr('product-id');
@@ -683,7 +683,7 @@ var $productForm = $('.product');
           linkOptionSelectors(JSONData, productSection);
           console.log(JSONData);
         }
-  console.log(variant);
+//   console.log(variant);
 
 //     $(".js-product_section .product_form_options").each(function() {
 //       new Shopify.OptionSelectors($(this).data("select-id"), { product: $(this).data("product"), onVariantSelected: selectCallback, enableHistoryState: $(this).data("enable-state") });
