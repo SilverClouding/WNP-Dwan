@@ -470,146 +470,40 @@ jQuery(function($){
 
 
 // hide varient
-// jQuery(function($){
-//   $( document ).ready(function() {
-//     if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
-//       var $addToCartForm = $('form[action="/cart/add"]');
-//       if (window.MutationObserver && $addToCartForm.length) {
-//         if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
-//           observer.disconnect();
-//         }
-//         var config = { childList: true, subtree: true };
-//         var observer = new MutationObserver(function() {
-//           product_variants_removed.forEach(function(item){
-//             $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
-//           });
-//           observer.disconnect();
-//         });  
-//         observer.observe($addToCartForm[0], config);
-//         $('.single-option-selector').trigger('change');
-//       }
-//     }
-//   });
-//   $( document ).ready(function() {
-//     if( typeof product_variants_removed != undefined ) {  // was there items to be removed?
-//       var $addToCartForm = $('form[action="/cart/add"]');
-//       if (window.MutationObserver && $addToCartForm.length) {
-//         var config = { childList: true, subtree: true };
-//         product_variants_removed.forEach(function(item){
-//           $('.single-option-selector option').filter(function() { return $(this).text() === item; }).prop('disabled', true);
-//         });    
-//       }
-//     }
-//   });
 
-// });
 
 jQuery(function($){
   
 
 
 
-  $.ajax({
-    url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
-    type: 'get',
-    dataType: 'json',
-    contentType: 'application/json',
-    success: function (product) {
+//   $.ajax({
+//     url: '/products/' + $('.product-handle').attr('product-handle')+ '.js',
+//     type: 'get',
+//     dataType: 'json',
+//     contentType: 'application/json',
+//     success: function (product) {
      
-      var Var1 = "";
-      var Var2 = "";
-      var Var3 = "";
-      $(product.variants).each(function (i, variant) {
-//         console.log(variant);
+//       var Var1 = "";
+//       var Var2 = "";
+//       var Var3 = "";
+//       $(product.variants).each(function (i, variant) {
        
-        if(variant.available){
-          console.log(variant.title);
-//           console.log(inv_qty[ variant.id ]);
-        var txt = variant.title;
-        txt = txt.split('/')
-
-         Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-         Var2 = Var2+","+txt[1];
-         Var3 = txt[2];
-        console.log("Var1"+Var1);
-//              console.log("Var2"+Var2);
-//             console.log("Var3"+Var3);
-        $("."+Var1).attr("nextoption_value",Var2);
-          $("."+Var1).attr("nextoption_value2",Var3);
-        
-        }
-      });
-
-      
-      
-      
-     
-        
-
-      
-      
-     
-//       $('body').on('change', '.swatch :radio', function() {
-//         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
-//         var optionValue = $(this).val();
-//         var parentForm = $(this).closest('.product__info-container');
-//         if (parentForm.siblings('.notify_form').length){
-//           var notifyForm = parentForm.siblings('.notify_form');
-//         } else {
-//           var notifyForm = $('.js-notify-form');
-//         }
-
-//         var option1 = parentForm.find('.swatch_options input:checked').eq(0).val();
-//         var option2 = parentForm.find('.swatch_options input:checked').eq(1).val() || '';
-//         var option3 = parentForm.find('.swatch_options input:checked').eq(2).val() || '';
-
-//         if (option1 && option2 && option3){
-//           var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
-//         } else if (option1 && option2){
-//           var notifyMessage = option1 + ' / ' + option2;
-//         } else {
-//           var notifyMessage = option1;
-//         }
-
-//         $(product.variants).each(function (i, variant) {
-//           console.log(variant);
-//             console.log(inv_qty[ variant.id ]);
-//           if(variant.available){
-//         console.log(variant.title);
-           
-//           }
-//         });
-        
-//         console.log(notifyMessage);
-
-
-//         var txt = notifyMessage;
+//         if(variant.available){
+//           console.log(variant.title);
+//         var txt = variant.title;
 //         txt = txt.split('/')
 
-//         var Var1 = txt[0];
-//         var Var2 = txt[1];
-//         var Var3 = txt[2]
-
-//         //      console.log("Var1"+Var1);
-//         //      console.log("Var2"+Var2);
-//         //     console.log("Var3"+Var3);
-
-
-//         notifyForm.find(".notify_form_message").attr("value", notifyForm.find(".notify_form_message").data('body') + " - " + notifyMessage );
-
-//         $(this)
-//         .closest('form')
-//         .find('.single-option-selector')
-//         .eq(optionIndex)
-//         .val(optionValue)
-//         .trigger('change');
+//          Var1 = txt[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+//          Var2 = Var2+","+txt[1];
+//          Var3 = txt[2];
+//         $("."+Var1).attr("nextoption_value",Var2);
+//           $("."+Var1).attr("nextoption_value2",Var3);
+        
+//         }
 //       });
-
-
-
-
-    }
-  });
+//     }
+//   });
 });
 
 
