@@ -653,9 +653,6 @@ jQuery(function($){
       return true;
     });
   };
- $(".js-product_section").each(function() {
-      new Shopify.OptionSelectors($(this).data("select-id"), { product: $(this).data("product"), onVariantSelected: selectCallback, enableHistoryState: $(this).data("enable-state") });
-    });
   var productPage = {
     init: function(){},
     productSwatches: function(){
@@ -699,4 +696,9 @@ jQuery(function($){
     }
   }
   productPage.productSwatches();
+  
+   $('body').on('change', '.swatch :radio', function() {
+      productPage.productSwatches();
+   });
+  
 });
