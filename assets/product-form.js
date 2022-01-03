@@ -47,7 +47,7 @@ if (!customElements.get('product-form')) {
           
           
           var SectionHtml = data['cart-items'] ;
-          console.log(SectionHtml);
+          console.log(SectionHtml.find(".subtotal .price").text());
           var IDminiCart = document.getElementById("mini-cart");
           var IDminiCartMask = document.getElementById("minibag_mask");
           IDminiCart.innerHTML = SectionHtml;
