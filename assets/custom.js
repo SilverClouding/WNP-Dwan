@@ -543,24 +543,9 @@ jQuery(function($){
       
       
       
-      var productPage = {
-        init: function(){},
-        productSwatches: function(){
-          if ($('.js-product_section').length){
-            var $productForm = $('.product'); 
-            const JSONData = $productForm.data('product');
-            const productID = product.id;
-            const productSection = '.product-' + productID + ' .js-product_section';
-            const swatchOptions = $productForm.find('.swatch_options .swatch');
-            if (swatchOptions.length > 1){
-              //         Shopify.linkOptionSelectors(JSONData, productSection);
-              console.log(JSONData);
-            }
-          }
-        }
-      }
       
-      productPage.productSwatches();
+      
+      
       
       Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
         console.log(selectorIndex);
@@ -594,7 +579,7 @@ jQuery(function($){
         });
 
       };
-      Shopify.linkOptionSelectors = function(product, parent) {
+      var linkOptionSelectors = function(product, parent) {
         // Building our mapping object.
         Shopify.optionsMap = {};
         for (var i=0; i<product.variants.length; i++) {
@@ -636,9 +621,24 @@ jQuery(function($){
           return true;
         });
       };
-      
-      
 
+      var productPage = {
+        init: function(){},
+        productSwatches: function(){
+          if ($('.js-product_section').length){
+            var $productForm = $('.product'); 
+            const JSONData = $productForm.data('product');
+            const productID = product.id;
+            const productSection = '.product-' + productID + ' .js-product_section';
+            const swatchOptions = $productForm.find('.swatch_options .swatch');
+            if (swatchOptions.length > 1){
+              linkOptionSelectors(JSONData, productSection);
+              console.log(JSONData);
+            }
+          }
+        }
+      }
+      productPage.productSwatches();
 //       $('body').on('change', '.swatch :radio', function() {
 //         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
 //         var optionValue = $(this).val();
