@@ -674,7 +674,15 @@ jQuery(function($){
   productPage.productSwatches();
  
 var selectCallback = function(variant, selector) {
-
+var $productForm = $('.product'); 
+        const JSONData = $productForm.data('product');
+        const productID = $productForm.attr('product-id');
+        const productSection = '.product-' + productID + ' .js-product_section';
+        const swatchOptions = $productForm.find('.swatch_options .swatch');
+        if (swatchOptions.length > 1){
+          linkOptionSelectors(JSONData, productSection);
+          console.log(JSONData);
+        }
   console.log(variant);
 };
     $(".js-product_section .product_form_options").each(function() {
