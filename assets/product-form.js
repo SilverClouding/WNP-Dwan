@@ -79,7 +79,7 @@ if (!customElements.get('product-form')) {
           if(cartTotal >= cartthreshhold ){
             document.getElementById("textmsg").innerHTML= cartthreshhold +" Done, You are eligible for";
           }else{
-          document.getElementById("textmsg").innerHTML= "Spend "+Shopify.formatMoney(Math.abs(needAmmount)))+" more to receive";
+          document.getElementById("textmsg").innerHTML= "Spend "+Shopify.formatMoney(needAmmount))+" more to receive";
           }
           
         });
