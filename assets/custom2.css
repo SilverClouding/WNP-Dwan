@@ -160,10 +160,9 @@ div#mini-cart {
 height: calc(100vh - 306px)!important;
 }
 
-label[soldout] {
+.soldout label {
     color: red!important;
 }
-
 
 .CarouselWidget  .header__inner {
     flex-wrap: wrap!important;
