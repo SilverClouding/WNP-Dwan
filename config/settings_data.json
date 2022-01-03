@@ -2,6 +2,7 @@
   "current": {
     "main_link_list": "our-services",
     "minicart": true,
+    "freeshipping": "1000",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#153a33",
     "colors_accent_2": "#fff9ee",
@@ -427,7 +428,6 @@
           "654b495c-c1b2-4bc9-a662-6b1ac9bb0242"
         ],
         "settings": {
-          "freeshipping": "1000"
         }
       },
       "newsletter-popup": {
