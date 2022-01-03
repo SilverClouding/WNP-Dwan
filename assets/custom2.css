@@ -194,3 +194,59 @@ order:4;
 .single-option-selector{
 display:none;
 }
+
+
+
+.swatch-element {
+  border: #e2e2e2 1px solid;
+  width: 150px;
+  height: 40px;
+  float: left;
+  -webkit-transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 8px 8px 0;
+  position: relative;
+}
+
+.swatch .swatch-element.soldout label {
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: .6;
+}
+.swatch label {
+  float: left;
+  min-width: 103px;
+  height: 40px;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 10px;
+  display: block;
+}
+
+.crossed-out {
+  /*     background-image: linear-gradient(to bottom left,transparent 50%,#999 50%,#999 calc(50% + 1px),transparent 50%),linear-gradient(to bottom right,transparent 50%,#999 50%,#999 calc(50% + 1px),transparent 50%); */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.swatch .swatch-element .crossed-out {
+  display: none;
+}
+.swatch .swatch-element.soldout .crossed-out {
+  display: block;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  -o-object-fit: fill;
+  object-fit: fill;
+  font-family: "object-fit: fill";
+}
