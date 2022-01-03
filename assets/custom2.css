@@ -199,7 +199,7 @@ display:none;
 
 .swatch-element {
   border: #e2e2e2 1px solid;
-  width: 150px;
+  width: auto;
   height: 40px;
   float: left;
   -webkit-transform: translateZ(0);
@@ -216,7 +216,7 @@ display:none;
 }
 .swatch label {
   float: left;
-  min-width: 103px;
+  min-width: auto;
   height: 40px;
   margin: 0;
   font-size: 13px;
