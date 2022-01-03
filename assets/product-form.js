@@ -76,6 +76,8 @@ if (!customElements.get('product-form')) {
           console.log(mainPercent);
           
           document.getElementById("precentfill").style.width = mainPercent+"%";
+          document.getElementById("textmsg").innerHTML= if (cartTotal >= cartthreshhold ){cartthreshhold +" Done, You are eligible for"+}else{+"Spend "+needAmmount+" more to receive"+};
+          
         });
 
         
