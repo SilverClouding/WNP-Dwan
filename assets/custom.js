@@ -550,6 +550,27 @@ jQuery(function($){
         Shopify.linkOptionSelectors(JSONData, productSection);
       }
       
+      productSwatches: function(){
+        if ($('.js-product_section').length){
+          var $productForms = $('.js-product_section').find('.product_form');
+          $productForms.addClass('is-visible');
+
+          //Loop through each product and set the initial option value state
+
+          $productForms.each(function(){
+            var JSONData = $(this).data('product');
+            var productID = $(this).data('product-id');
+            var productSection = '.product-' + productID + ' .js-product_section';
+            var swatchOptions = $(this).find('.swatch_options .swatch');
+            if (swatchOptions.length > 1){
+              Shopify.linkOptionSelectors(JSONData, productSection);
+            }
+          });
+        }
+      }
+      
+      productSwatches();
+      
       Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
         console.log(selectorIndex);
         console.log(parent);
@@ -624,6 +645,8 @@ jQuery(function($){
           return true;
         });
       };
+      
+      
 
 //       $('body').on('change', '.swatch :radio', function() {
 //         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
