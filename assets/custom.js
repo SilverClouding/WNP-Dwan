@@ -550,8 +550,8 @@ jQuery(function($){
       
       
       Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
-        console.log(selectorIndex);
-        console.log(parent);
+//         console.log(selectorIndex);
+//         console.log(parent);
         switch (selectorIndex) {
           case 0:
             console.log('0');
@@ -569,6 +569,7 @@ jQuery(function($){
             key += ' / ' + $(parent + ' .single-option-selector:eq(1)').val();
             var selector = $(parent + ' .single-option-selector:eq(2)');
         }
+        console.log(key);
 
         var availableOptions = Shopify.optionsMap[key];
         $(parent + ' .swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
