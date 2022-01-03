@@ -668,11 +668,7 @@ jQuery(function($){
           linkOptionSelectors(JSONData, productSection);
           console.log(JSONData);
         }
-      }
-
-      
-     
-      
+      }      
     }
   }
   productPage.productSwatches();
