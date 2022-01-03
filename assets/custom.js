@@ -657,6 +657,8 @@ jQuery(function($){
   var productPage = {
     init: function(){},
     productSwatches: function(){
+      
+      console.log($('.js-product_section').length);
       if ($('.js-product_section').length){
         var $productForm = $('.product'); 
         const JSONData = $productForm.data('product');
