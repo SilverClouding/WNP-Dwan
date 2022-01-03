@@ -567,9 +567,10 @@ jQuery(function($){
             key += ' / ' + $(parent + ' .single-option-selector:eq(1)').val();
             var selector = $(parent + ' .single-option-selector:eq(2)');
         }
-        console.log(key);
+        
 
         var availableOptions = Shopify.optionsMap[key];
+        console.log(availableOptions);
         $(parent + ' .swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
           if ($.inArray($(this).attr('data-value'), availableOptions) !== -1) {
             $(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
