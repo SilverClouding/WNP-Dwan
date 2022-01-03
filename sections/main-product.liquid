@@ -344,7 +344,9 @@
                   <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} {{ 'general.cart.eligible' | t }} {% else %} {{ 'general.cart.spend' | t: needAmmount: needAmmount | money |remove:'-' }}{% endif %}</span> FREE SHIPPING!</div>
 
                   {% endcomment %}
-                  <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}</span> FREE SHIPPING!</div>
+                  <div> <span id="textmsg" class="progress-bar-money">
+                    {% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}
+                    </span> FREE SHIPPING!</div>
                 </div>
 
               </div>
