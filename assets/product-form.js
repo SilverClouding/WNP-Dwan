@@ -61,7 +61,7 @@ if (!customElements.get('product-form')) {
         });
         //minicart section end
         
-        fetch('/cart/add.js')
+        fetch('/cart.js')
         .then((response) => response.json())
         .then((cart) => {
           console.log(cart);
