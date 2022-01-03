@@ -351,7 +351,27 @@
           {%- when 'variant_picker' -%}
         
   
-        
+         {% assign variant = product.selected_or_first_available_variant %}
+                {% if product.options.size > 1 %}
+                <div class="select >1">
+                  <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id" class="multi_select">
+                    {% for v in product.variants %}
+                    <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+                {% elsif product.options.size == 1 and product.variants.size > 1 or product.options.size == 1 and product.options[0] != "Title" %}
+                <div class="select 11">
+                  <label>{{ product.options[0] }}</label>
+                  <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id">
+                    {% for v in product.variants %}
+                    <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+                {% else %}
+                <input type="hidden" name="id" value="{{ variant.id }}" />
+                {% endif %}
        
         
         <h3>{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
@@ -486,27 +506,7 @@
                 {%- form 'product', product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
 
-                {% assign variant = product.selected_or_first_available_variant %}
-                {% if product.options.size > 1 %}
-                <div class="select >1">
-                  <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id" class="multi_select">
-                    {% for v in product.variants %}
-                    <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
-                    {% endfor %}
-                  </select>
-                </div>
-                {% elsif product.options.size == 1 and product.variants.size > 1 or product.options.size == 1 and product.options[0] != "Title" %}
-                <div class="select 11">
-                  <label>{{ product.options[0] }}</label>
-                  <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id">
-                    {% for v in product.variants %}
-                    <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
-                    {% endfor %}
-                  </select>
-                </div>
-                {% else %}
-                <input type="hidden" name="id" value="{{ variant.id }}" />
-                {% endif %}
+               
         
         
                 
