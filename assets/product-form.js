@@ -57,8 +57,17 @@ if (!customElements.get('product-form')) {
 
           var count = document.querySelector('.count-cross .count').getAttribute('count');
           document.getElementById("CartCount").innerHTML= count;
+          
         });
         //minicart section end
+        
+        fetch('/cart/add.js')
+        .then((response) => response.json())
+        .then((cart) => {
+          console.log(cart);
+        });
+
+        
         console.log("notification off");
         	
 //           this.cartNotification.renderContents(response);
