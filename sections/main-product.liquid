@@ -305,6 +305,8 @@
                   {% render 'icon-plus' %}
                 </button>
               </quantity-input>
+              
+              <div>{{cart}}</div>
             </div>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
