@@ -541,9 +541,9 @@ jQuery(function($){
       });
 
       
-      
+      var $productForm = $('.product'); 
       const JSONData = $productForm.data('product');
-      const productID = productData.section_id;
+      const productID = product.id;
       const productSection = '.product-' + productID + ' .js-product_section';
       const swatchOptions = $productForm.find('.swatch_options .swatch');
       if (swatchOptions.length > 1){
