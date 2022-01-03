@@ -100,4 +100,11 @@ Shopify.translation.all_results = "{{ 'general.search.all_results'| t | strip_ne
 
 {% endcapture %}
 {%- assign js_variables = js_variables | split: 'Shopify.' -%}
-{%- for variable in js_variables -%}{%- assign variableblock = variable | strip -%}{% if forloop.first %}{{ variableblock }}{% else %}{{ variableblock | prepend: 'Shopify.' }}{% endif %}{%- endfor -%}
+{%- for variable in js_variables -%}
+{%- assign variableblock = variable | strip -%}{% if forloop.first %}
+{{ variableblock }}
+{% else %}
+{{ variableblock | prepend: 'Shopify.' }}
+{% endif %}
+
+{%- endfor -%}
