@@ -283,6 +283,7 @@
             </div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+              <div>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
@@ -296,7 +297,7 @@
                     type="number"
                     name="quantity"
                     id="Quantity-{{ section.id }}"
-                    min="1"
+                    min="4"
                     value="1"
                     form="{{ product_form_id }}"
                   >
@@ -305,7 +306,8 @@
                   {% render 'icon-plus' %}
                 </button>
               </quantity-input>
-              
+              <p>Minimum quantity of 4</p>
+              </div>
               <div>
 
                 {% assign cartTotal = cart.total_price %}
