@@ -350,7 +350,7 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
         
-        
+        {% comment %}
 <select name="id" id="ProductSelect-{{ section.id }}" class="single-option-selector product-form__variants no-js">
   {% for variant in product.variants %}
     {% if variant.available %}
@@ -362,6 +362,30 @@
     {% endif %}
   {% endfor %}
   </select>
+        {% endcomment %}
+        
+        {% if product.options.size > 1 %}
+        <div class="select >1">
+          <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id" class="multi_select">
+            {% for v in product.variants %}
+            <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        {% elsif product.options.size == 1 and product.variants.size > 1 or product.options.size == 1 and product.options[0] != "Title" %}
+        <div class="select 11">
+          <label>{{ product.options[0] }}</label>
+          <select id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}" name="id">
+            {% for v in product.variants %}
+            <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        {% else %}
+        <input type="hidden" name="id" value="{{ variant.id }}" />
+        {% endif %}
+        
+        
         
         <h3>{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
           {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
