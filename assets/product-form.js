@@ -55,8 +55,8 @@ if (!customElements.get('product-form')) {
           document.body.style.overflow = "hidden";
           IDminiCartMask.style.display = 'block';
 
-          var count = document.querySelector('.count-cross .count').getAttribute('count');
-          document.getElementById("CartCount").innerHTML= count;
+//           var count = document.querySelector('.count-cross .count').getAttribute('count');
+//           document.getElementById("CartCount").innerHTML= count;
           
         });
         //minicart section end
@@ -64,7 +64,17 @@ if (!customElements.get('product-form')) {
         fetch('/cart.js')
         .then((response) => response.json())
         .then((cart) => {
-          console.log(cart);
+           var count = cart.item_count;
+          console.log(cart.total_price);
+          document.getElementById("CartCount").innerHTML= count;
+          var cartTotal = cart.total_price %}
+          var cartthreshhold = 100 * 100.00 ;
+         var percentmainvalue = cartTotal / cartthreshhold;
+        var mainPercent = percentmainvalue * 100.00 ;
+         var needAmmount = cartTotal - cartthreshhold ;
+          
+          console.log();
+          
         });
 
         
