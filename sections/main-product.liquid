@@ -80,7 +80,7 @@
 {%- endif -%}
 
 <section class="page-width product-handle productId product-{{ product.id }}"  product-handle ="{{product.handle}}">
-  <div product-id="{{product.id}}"class="product grid grid--1-col js-product_section {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}" data-select-id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}"  data-product="{{ product | json | escape }}">
+  <div product-id="{{product.id}}"class="product grid grid--1-col js-product_section {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}" data-product="{{ product | json | escape }}" data-select-id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}"  >
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
