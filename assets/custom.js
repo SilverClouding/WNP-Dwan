@@ -544,23 +544,7 @@ jQuery(function($){
       
       
      
-        var productPage = {
-        init: function(){},
-        productSwatches: function(){
-          if ($('.js-product_section').length){
-            var $productForm = $('.product'); 
-            const JSONData = $productForm.data('product');
-            const productID = product.id;
-            const productSection = '.product-' + productID + ' .js-product_section';
-            const swatchOptions = $productForm.find('.swatch_options .swatch');
-            if (swatchOptions.length > 1){
-              linkOptionSelectors(JSONData, productSection);
-              console.log(JSONData);
-            }
-          }
-        }
-      }
-      productPage.productSwatches();
+        
 
       
       var updateOptionsInSelector = function(selectorIndex, parent) {
@@ -639,7 +623,23 @@ jQuery(function($){
         });
       };
      
-   
+   var productPage = {
+        init: function(){},
+        productSwatches: function(){
+          if ($('.js-product_section').length){
+            var $productForm = $('.product'); 
+            const JSONData = $productForm.data('product');
+            const productID = product.id;
+            const productSection = '.product-' + productID + ' .js-product_section';
+            const swatchOptions = $productForm.find('.swatch_options .swatch');
+            if (swatchOptions.length > 1){
+              linkOptionSelectors(JSONData, productSection);
+              console.log(JSONData);
+            }
+          }
+        }
+      }
+      productPage.productSwatches();
       
      
 //       $('body').on('change', '.swatch :radio', function() {
