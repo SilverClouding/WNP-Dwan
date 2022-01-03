@@ -71,7 +71,7 @@ if (!customElements.get('product-form')) {
           var cartthreshhold = 1000 * 100.00;
          var percentmainvalue = cartTotal / cartthreshhold;
         var mainPercent = percentmainvalue * 100.00 ;
-         var needAmmount = cartTotal - cartthreshhold ;
+         var needAmmount = Math.abs(cartTotal - cartthreshhold);
           
           console.log(mainPercent);
           
