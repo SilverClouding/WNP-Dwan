@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/banner.png",
             "image_2": "shopify:\/\/shop_images\/banner1.png",
-            "image_height": "small",
+            "image_height": "medium",
             "two_col_banner": true,
             "desktop_text_box_position": "center",
             "show_text_box": false,
