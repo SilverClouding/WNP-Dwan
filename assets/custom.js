@@ -685,7 +685,7 @@ jQuery(function($){
           var swatchOptions = $(this).parents('.product_form').find('.swatch_options .swatch');
 
           if (swatchOptions.length > 1){
-            Shopify.linkOptionSelectors(JSONData, productSection);
+             linkOptionSelectors(JSONData, productSection);
           }
         })
       }
