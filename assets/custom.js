@@ -554,7 +554,7 @@ jQuery(function($){
             const productSection = '.product-' + productID + ' .js-product_section';
             const swatchOptions = $productForm.find('.swatch_options .swatch');
             if (swatchOptions.length > 1){
-              linkOptionSelectors(JSONData, productSection);
+//               linkOptionSelectors(JSONData, productSection);
               console.log(JSONData);
             }
           }
