@@ -550,7 +550,7 @@ jQuery(function($){
         Shopify.linkOptionSelectors(JSONData, productSection);
       }
       
-      productSwatches: function(){
+     var productSwatches: function(){
         if ($('.js-product_section').length){
           var $productForms = $('.js-product_section').find('.product_form');
           $productForms.addClass('is-visible');
