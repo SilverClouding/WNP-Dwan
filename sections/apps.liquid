@@ -1,8 +1,9 @@
 <div class="{% if section.settings.include_margins %}page-width{% endif %} {{ section.settings.sec_class }}">
-  {% if section.settings.heading != blank %}
+
+  {%- for block in section.blocks -%}
+    {% if section.settings.heading != blank %}
   <h2>{{section.settings.heading}}</h2>
 {% endif %}
-  {%- for block in section.blocks -%}
     {% render block %}
   {%- endfor -%}
 </div>
