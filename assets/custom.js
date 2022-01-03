@@ -672,7 +672,7 @@ jQuery(function($){
       }
 
       //Add click event when there is more than one product on the page (eg. Collection in Detail)
-      if ($('.js-product_section').length > 1){
+      if ($('.js-product_section').length > 1){ }
         $('body').on('click', '.swatch-element', function(){
           var swatchValue = $(this).data('value').toString();
 
@@ -681,16 +681,18 @@ jQuery(function($){
           .prop("checked", true)
           .trigger("change");
 
-          var JSONData = $(this).parents('.product_form').data('product');
-          var productID = $(this).parents('.product_form').data('product-id');
-          var productSection = '.product-' + productID + ' .js-product_section';
-          var swatchOptions = $(this).parents('.product_form').find('.swatch_options .swatch');
+         var $productForm = $('.product'); 
+        const JSONData = $productForm.data('product');
+        const productID = $productForm.attr('product-id');
+        const productSection = '.product-' + productID + ' .js-product_section';
+        const swatchOptions = $productForm.find('.swatch_options .swatch');
+        
 
           if (swatchOptions.length > 1){
              linkOptionSelectors(JSONData, productSection);
           }
         })
-      }
+     
       
     }
   }
