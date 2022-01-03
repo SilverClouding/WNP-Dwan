@@ -541,33 +541,26 @@ jQuery(function($){
       });
 
       
-      var $productForm = $('.product'); 
-      const JSONData = $productForm.data('product');
-      const productID = product.id;
-      const productSection = '.product-' + productID + ' .js-product_section';
-      const swatchOptions = $productForm.find('.swatch_options .swatch');
-      if (swatchOptions.length > 1){
-        Shopify.linkOptionSelectors(JSONData, productSection);
-      }
+      
       
       var productPage = {
         init: function(){},
         productSwatches: function(){
           if ($('.js-product_section').length){
-            var $productForms = $('.js-product_section').find('.product_form');
+            var $productForms = $('.js-product_section');
             $productForms.addClass('is-visible');
 
             //Loop through each product and set the initial option value state
 
-            $productForms.each(function(){
-              var JSONData = $(this).data('product');
-              var productID = $(this).data('product-id');
-              var productSection = '.product-' + productID + ' .js-product_section';
-              var swatchOptions = $(this).find('.swatch_options .swatch');
-              if (swatchOptions.length > 1){
-                console.log(JSONData);
-//                 Shopify.linkOptionSelectors(JSONData, productSection);
-              }
+            var $productForm = $('.product'); 
+            const JSONData = $productForm.data('product');
+            const productID = product.id;
+            const productSection = '.product-' + productID + ' .js-product_section';
+            const swatchOptions = $productForm.find('.swatch_options .swatch');
+            if (swatchOptions.length > 1){
+              //         Shopify.linkOptionSelectors(JSONData, productSection);
+              console.log(JSONData);
+            }
             });
           }
         }
