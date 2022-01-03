@@ -677,8 +677,8 @@ jQuery(function($){
   }
   productPage.productSwatches();
   
-   $('body').on('change', '.swatch :radio', function() {
-      productPage.productSwatches();
-   });
+//    $('body').on('change', '.swatch :radio', function() {
+//       productPage.productSwatches();
+//    });
   
 });
