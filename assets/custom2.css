@@ -190,3 +190,7 @@ height: calc(100vh - 306px)!important;
 .header__inner div:last-child{
 order:4;
 }
+
+.single-option-selector{
+display:none;
+}
