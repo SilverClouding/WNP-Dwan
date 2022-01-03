@@ -142,11 +142,13 @@
          form="{{ product_form_id }}"
          {% if strip_selected_val == value %}checked{% endif %}
          >
-     
-  <label tabindex="0"  value="{{ value | escape }}" data-value="{{ value | escape }}" data-id="{{ variant.id }}"  
-         class="{{value |handle}} {{ value | handle }}-swatch  swatch-element {% if variant.available %}available{% else %}soldout{% endif %}" for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
-    {{ value }}
-  </label>
+  <div tabindex="0"  value="{{ value | escape }}" data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element {{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
+
+    <label  class="{{value |handle}} " for="{{ section.id }}-{{ option_index }}-{{ forloop.index0 }}">
+      {{ value }}
+       <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" aria-label="sold out" alt="sold out"/>
+    </label>
+  </div>
  
 
   {% endunless %}
