@@ -540,6 +540,40 @@ jQuery(function($){
         }
       });
 
+      
+      Shopify.updateOptionsInSelector = function(selectorIndex, parent) {
+        console.log(selectorIndex);
+        console.log(parent);
+        switch (selectorIndex) {
+          case 0:
+            console.log('0');
+            var key = 'root';
+            var selector = $(parent + ' .single-option-selector:eq(0)');
+            break;
+          case 1:
+            console.log('1');
+            var key = $(parent + ' .single-option-selector:eq(0)').val();
+            var selector = $(parent + ' .single-option-selector:eq(1)');
+            break;
+          case 2:
+            console.log('2');
+            var key = $(parent + ' .single-option-selector:eq(0)').val();
+            key += ' / ' + $(parent + ' .single-option-selector:eq(1)').val();
+            var selector = $(parent + ' .single-option-selector:eq(2)');
+        }
+
+        var availableOptions = Shopify.optionsMap[key];
+        $(parent + ' .swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
+          if ($.inArray($(this).attr('data-value'), availableOptions) !== -1) {
+            $(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
+          }
+          else {
+            $(this).addClass('soldout').find(':radio').removeAttr('checked').attr('disabled','disabled');
+          }
+        });
+
+      };
+      
 
 //       $('body').on('change', '.swatch :radio', function() {
 //         var optionIndex = $(this).closest('.swatch').attr('data-option-index');
