@@ -293,7 +293,9 @@
         "49bcfbfb-1cb9-4919-94ab-4297d839abff"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "heading": "Review Heading",
+        "sec_class": "Review-con"
       }
     },
     "16365383186b9876cd": {
@@ -425,7 +427,9 @@
         "6944e1a1-b326-4adf-af28-b723c11b273d"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "heading": "Review Heading",
+        "sec_class": ""
       }
     },
     "16365411454faad6c2": {
