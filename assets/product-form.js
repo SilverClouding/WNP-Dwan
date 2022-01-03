@@ -73,7 +73,7 @@ if (!customElements.get('product-form')) {
         var mainPercent = percentmainvalue * 100.00 ;
          var needAmmount = cartTotal - cartthreshhold ;
           
-          console.log(percentmainvalue);
+          console.log(mainPercent/100);
           
         });
 
