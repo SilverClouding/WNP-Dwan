@@ -45,7 +45,9 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((data) => {
           
+          
           var SectionHtml = data['cart-items'] ;
+          console.log(SectionHtml);
           var IDminiCart = document.getElementById("mini-cart");
           var IDminiCartMask = document.getElementById("minibag_mask");
           IDminiCart.innerHTML = SectionHtml;
