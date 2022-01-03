@@ -67,7 +67,7 @@ if (!customElements.get('product-form')) {
            var count = cart.item_count;
           console.log(cart.total_price);
           document.getElementById("CartCount").innerHTML= count;
-          var cartTotal = cart.total_price %}
+          var cartTotal = cart.total_price;
           var cartthreshhold = 100 * 100.00 ;
          var percentmainvalue = cartTotal / cartthreshhold;
         var mainPercent = percentmainvalue * 100.00 ;
