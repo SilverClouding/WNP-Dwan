@@ -548,7 +548,7 @@
                           <label option_index="{{ option.position }}" 
                                  class="
                                         
-                                          {% if option.position == 2 %} {% if current_option2 contains value %}available{% else %} soldout {% endif %}  {% endif %}
+                                          {% if option.position == 2 %} {% if current_option2 contains value %}available{% else %} {% if option_2 != blank %} available {% else %} soldout {% endif %}soldout {% endif %}  {% endif %}
                                          {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
                                         
                                         "  
