@@ -208,6 +208,11 @@ function swymCallbackFn(){
     console.log('Wishlist items - ', r);
   }
 );
+  
+  window._swat.fetch( function(r) {
+    console.log(r);
+  });
+  
 }
 if(!window.SwymCallbacks){
  window.SwymCallbacks = [];
