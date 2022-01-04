@@ -480,7 +480,7 @@
                         {%- for value in option.values -%}
                         
                         
-                        {% assign curValueVar = product.variant | where: optionString, value %}
+                        {% assign curValueVar = product.variants | where: optionString, value %}
                         
                         {{curValueVar}}
                         
