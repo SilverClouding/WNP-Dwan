@@ -825,6 +825,9 @@ select:focus, select:hover{
     background:#153A33;
     color:#fff;
   }
+  .banner__box>*+.banner__buttons--multiple{
+  margin-left:0 !important;
+  }
 
   @media screen and (min-width: 750px) {
     .banner--large:not(.banner--adapt) {
@@ -875,6 +878,7 @@ select:focus, select:hover{
     }
     .swiper .two-block-section .banner__box>.banner__buttons{
       justify-content: center;
+      margin-left: auto !important;
     }
     .swiper .banner__content .banner__box.color-accent-2 {
       background-color:#FFF9EE !important;
@@ -6333,9 +6337,7 @@ select:focus, select:hover{
   .grid--5-col-desktop .multicolumn-list__item {
     max-width: 20%;
   }
-  .banner__box>*+.banner__buttons--multiple{
-  margin-left:0 !important;
-  }
+  
   .show-in-mobile{display:none;}
   @media screen and (max-width: 989px) {
     .show-in-mobile{display:block;} 

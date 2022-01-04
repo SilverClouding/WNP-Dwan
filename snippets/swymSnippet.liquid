@@ -219,7 +219,8 @@ window.SwymCallbacks.push(function(swat) {
 <script>
 
   var wishlistButton = document.querySelector(".wishlist-btn");
-
+var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
+  
   function swymCallbackFn(){    
     if(wishlistButton){
       _swat.fetchWrtEventTypeET(fetchCallbackFn, 4);       
@@ -236,6 +237,16 @@ window.SwymCallbacks.push(function(swat) {
     if(isInWishlist){
       wishlistButton.setAttribute("disabled", true);
       wishlistButton.innerHTML = "Saved";
+      wishlistButton.classList.add("active");
+      
+      wishlistButtonActive.addEventListener("click", function(e){
+        if(SwymPageData){
+          SwymPageData.et = 4;	// et 4 stands for wishlist event type
+          _swat.removeFromWishList(SwymPageData, function(e){
+            wishlistButton.innerHTML = "Save for later"; 
+          });
+        }
+      });
     } else {
       wishlistButton.addEventListener("click", function(e){
         console.log('work');
@@ -244,9 +255,7 @@ window.SwymCallbacks.push(function(swat) {
           _swat.addToWishList(SwymPageData, function(e){
             wishlistButton.innerHTML = "Saved"; 
           });
-         _swat.removeFromWishList(SwymPageData, function(e){
-           wishlistButton.innerHTML = "Save for later"; 
-           });
+         
           
         }
       });
