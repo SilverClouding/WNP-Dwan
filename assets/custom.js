@@ -241,29 +241,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-// wishlist
-
-  function swymCallbackFn(){
-    var wishlistButton = document.querySelector(".wishlist-btn");
-    if(wishlistButton){
-      wishlistButton.addEventListener("click", function(e){
-        if(SwymPageData){
-         SwymPageData.et = 4;  // et 4 stands for wishlist event type  
-         _swat.addToWishList(SwymPageData, function(e){
-            
-           console.log(SwymPageData);
-          });
-        }
-      }); 
-    }
-  }
-  if(!window.SwymCallbacks){
-   window.SwymCallbacks = [];
-  }
-  window.SwymCallbacks.push(swymCallbackFn);
-
-
-
 
 
 
