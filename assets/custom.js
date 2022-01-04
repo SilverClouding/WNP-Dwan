@@ -270,46 +270,6 @@ jQuery(function($){
     }
     window.SwymCallbacks.push(swymCallbackFn);
   });
-
-
-  
-//   var mutationObserver = new MutationObserver(function(mutations) {
-//     mutations.forEach(function(mutation) {
-//       console.log(mutation.target);
-//     });
-//   });
-//   // Starts listening for changes in the root HTML element of the page.
-//   mutationObserver.observe(document.documentElement, {
-//     attributes: true,
-//     characterData: true,
-//     childList: true,
-//     subtree: true,
-//     attributeOldValue: true,
-//     characterDataOldValue: true
-//   });
-//   // Stops the MutationObserver from listening for changes.
-// //   mutationObserver.disconnect();
-
-  var targetNodes         = $(".swym-button");
-  var MutationObserver    = window.MutationObserver || window.WebKitMutationObserver;
-  var myObserver          = new MutationObserver (mutationHandler);
-  var obsConfig           = { childList: true, characterData: true, attributes: true, subtree: true };
-
-  //--- Add a target node to the observer. Can only add one node at a time.
-  targetNodes.each ( function () {
-    myObserver.observe (this, obsConfig);
-  } );
-
-  function mutationHandler (mutationRecords) {
-    console.info ("mutationHandler:");
-
-    mutationRecords.forEach ( function (mutation) {
-      console.log (mutation.type);
-
-    } );
-  }
-  
-  
 });
 
 
