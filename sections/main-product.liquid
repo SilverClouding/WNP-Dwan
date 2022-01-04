@@ -413,7 +413,7 @@
               {% endif %}
               {% if product.options[1] %}
               {% assign used = '' %}
-              <label for="select-one">{{ product.options[1] }}</label>
+            
               <select class="single-option-selector" id='select-two' onchange="letsDoThis()">
                 {% for variant in product.variants %}
                 {% unless used contains variant.option2 %}
@@ -425,7 +425,7 @@
               {% endif %}
               {% if product.options[2] %}
               {% assign used = '' %}
-              <label for="select-one">{{ product.options[2] }}</label>
+             
               <select class="single-option-selector" id='select-three' onchange="letsDoThis()">
                 {% for variant in product.variants %}
                 {% unless used contains variant.option3 %}
