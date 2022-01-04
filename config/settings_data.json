@@ -70,6 +70,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "3ffab41d-c0f2-448b-bf76-ddf874390814": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo_150x_9ed8ecba-ef79-4459-9e49-a947733072ff.png",
+              "image_width": 150,
+              "alignment": "center"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -108,23 +116,15 @@
               "svg_icon2_text": "<p><a href=\"tel:+852 9696 6200\" title=\"tel:+852 9696 6200\">+852 9696 6200<\/a><\/p>",
               "menuItem": "footer"
             }
-          },
-          "3ffab41d-c0f2-448b-bf76-ddf874390814": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/logo_150x_9ed8ecba-ef79-4459-9e49-a947733072ff.png",
-              "image_width": 150,
-              "alignment": "center"
-            }
           }
         },
         "block_order": [
+          "3ffab41d-c0f2-448b-bf76-ddf874390814",
           "footer-0",
           "c6a862b0-bf42-4945-a8ba-496dfc200391",
           "1c039be8-6e83-461c-9115-015f78258b5e",
           "8c00c00b-083f-4804-b0fd-c3c274c3a176",
-          "28ec04cd-7720-46b9-b81c-c71f19116be4",
-          "3ffab41d-c0f2-448b-bf76-ddf874390814"
+          "28ec04cd-7720-46b9-b81c-c71f19116be4"
         ],
         "settings": {
           "color_scheme": "accent-1",
