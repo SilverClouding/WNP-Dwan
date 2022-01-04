@@ -259,7 +259,7 @@ jQuery(function(){
   });
 
   // Select the node that will be observed for mutations
-  const targetNode = document.getElementById('swym-component-container');
+  const targetNode = document.querySelector('.swym-button');
 
   // Options for the observer (which mutations to observe)
   const config = { attributes: true, childList: true, subtree: true };
