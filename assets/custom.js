@@ -243,10 +243,10 @@ for (i = 0; i < acc.length; i++) {
 
 function swymCallbackFn(){
    // your API calls go here
-  window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
-  console.log("renderWishlistCount was called", cnt, elem);
-}, 1500);
-
+ window._swat.fetch( function(r) {
+  console.log(r);
+  document.getElementById('demo').innerHTML = r;
+});
 }
 if(!window.SwymCallbacks){
  window.SwymCallbacks = [];
