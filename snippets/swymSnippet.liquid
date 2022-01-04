@@ -237,7 +237,7 @@ var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
     if(isInWishlist){
       wishlistButton.setAttribute("disabled", true);
       wishlistButton.innerHTML = "Saved";
-     
+      wishlistButton.classList.add("active");
       
       wishlistButtonActive.addEventListener("click", function(e){
         if(SwymPageData){
