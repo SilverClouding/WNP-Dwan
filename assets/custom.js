@@ -276,23 +276,30 @@ jQuery(function($){
 //   // Stops the MutationObserver from listening for changes.
 // //   mutationObserver.disconnect();
 
-  mutationRecords = [{
-  type: "characterData",
-  oldValue: "edit",
-  target: ".swym-button",
-  // other properties empty
-}];
-  
-  let observer = new MutationObserver(mutationRecords => {
-    console.log(mutationRecords); // console.log(the changes)
-  });
+  var targetNodes         = $(".swym-button");
+  var MutationObserver    = window.MutationObserver || window.WebKitMutationObserver;
+  var myObserver          = new MutationObserver (mutationHandler);
+  var obsConfig           = { childList: true, characterData: true, attributes: true, subtree: true };
 
-  // observe everything except attributes
-  observer.observe(elem, {
-    childList: true, // observe direct children
-    subtree: true, // and lower descendants too
-    characterDataOldValue: true // pass old data to callback
-  });
+  //--- Add a target node to the observer. Can only add one node at a time.
+  targetNodes.each ( function () {
+    myObserver.observe (this, obsConfig);
+  } );
+
+  function mutationHandler (mutationRecords) {
+    console.info ("mutationHandler:");
+
+    mutationRecords.forEach ( function (mutation) {
+      console.log (mutation.type);
+
+      if (typeof mutation.removedNodes == "object") {
+        var jq = $(mutation.removedNodes);
+        console.log (jq);
+        console.log (jq.is("span.myclass2"));
+        console.log (jq.find("span") );
+      }
+    } );
+  }
   
   
 });
