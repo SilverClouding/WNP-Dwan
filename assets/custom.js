@@ -261,7 +261,7 @@ jQuery(function($){
   
   var mutationObserver = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
-      console.log(mutation);
+      console.log(mutation.target);
     });
   });
   // Starts listening for changes in the root HTML element of the page.

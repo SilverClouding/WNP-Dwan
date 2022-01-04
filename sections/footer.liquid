@@ -78,6 +78,8 @@
                       {%- endfor -%}
                 </ul>
               
+              
+              
               {%- if section.settings.show_social -%}
               <ul class="footer__list-social list-unstyled list-social social-web" role="list">
                 {%- if settings.social_twitter_link != blank -%}
@@ -155,7 +157,9 @@
               </ul>
               {%- endif -%}
               
-              
+              {%- if block.settings.copyright -%}
+              <p>{{ block.settings.copyright }}</p>
+              {% endif %}
               
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
