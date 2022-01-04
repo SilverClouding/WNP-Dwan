@@ -488,7 +488,7 @@
                   
                   {% assign optionString = "option"|append: forloop.index %}
                   
-                      <fieldset class="js product-form__input">
+                      <fieldset class="js product-form__input option_{{optionString}}_for_below_input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
                         
