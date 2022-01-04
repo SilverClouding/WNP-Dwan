@@ -218,15 +218,34 @@ window.SwymCallbacks.push(function(swat) {
 
 <script>
 
-   function swymCallbackFn(){ 
-    var wishlistButton = document.querySelector(".wishlist-btn");
-    if(wishlistButton){
-      wishlistButton.addEventListener("click", function(e){
-        console.log('click');
-      }); 
-    }
+  var wishlistButton = document.querySelector(".wishlist-btn");
 
-  
+  function swymCallbackFn(){    
+    if(wishlistButton){
+      _swat.fetchWrtEventTypeET(fetchCallbackFn, 4);       
+      // fetching all wishlist events
+    }
+  }
+
+  function fetchCallbackFn(products){
+    var activeProductId = SwymPageData.empi, 
+        activeVariantId = SwymPageData.epi;
+    var isInWishlist = products.find(function(p){
+      return p.empi == activeProductId && p.epi == activeVariantId;
+    });
+    if(isInWishlist){
+      wishlistButton.setAttribute("disabled", true);
+      wishlistButton.innerHTML = "Saved";
+    } else {
+      wishlistButton.addEventListener("click", function(e){
+        if(SwymPageData){
+          SwymPageData.et = 4;	// et 4 stands for wishlist event type
+          _swat.addToWishList(SwymPageData, function(e){
+            wishlistButton.innerHTML = "Saved"; 
+          });
+        }
+      });
+    }
   }
   if(!window.SwymCallbacks){
     window.SwymCallbacks = [];
