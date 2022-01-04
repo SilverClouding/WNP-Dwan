@@ -442,7 +442,7 @@
           {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
           {% else %}Out of stock
         {% endif %}
-        </h3>
+        </h3>  {% comment %}
         <variant-radios class="swatch_options no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
           {% for option in product.options %}
           {% render 'swatch-product-var' with option , product_form_id:product_form_id %}
@@ -463,10 +463,10 @@
         </variant-radios>
         
         
+          {% endcomment %}
         
         
-        
-        {% comment %}
+      
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -552,7 +552,7 @@
                 </div>
               </div>
             </noscript>
-        {% endcomment %}
+      
         
         
         
