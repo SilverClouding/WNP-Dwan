@@ -238,6 +238,7 @@ window.SwymCallbacks.push(function(swat) {
       wishlistButton.innerHTML = "Saved";
     } else {
       wishlistButton.addEventListener("click", function(e){
+        console.log('work');
         if(SwymPageData){
           SwymPageData.et = 4;	// et 4 stands for wishlist event type
           _swat.addToWishList(SwymPageData, function(e){
