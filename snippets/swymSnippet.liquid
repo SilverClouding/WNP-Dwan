@@ -199,7 +199,7 @@ window.SwymCallbacks.push(function(swat) {
 </style>
 
 <script>
-  
+
   function swymCallbackFn(){
     // your API calls go here
     window._swat.wishlistCount(
@@ -207,22 +207,12 @@ window.SwymCallbacks.push(function(swat) {
         document.getElementById("wishlist_item_count").innerHTML = r;
         console.log('Wishlist items - ', r);
       }
-    );
-
-    window._swat.fetchWrtEventTypeET(
-      function(r) {
-        // Get wishlist items
-        console.log(r);
-//         document.getElementById('demo').innerHTML = r;
-      },
-      window._swat.EventTypes.addToWishList
-    );
-    
+    );    
   }
-if(!window.SwymCallbacks){
- window.SwymCallbacks = [];
-}
-window.SwymCallbacks.push(swymCallbackFn);
+  if(!window.SwymCallbacks){
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(swymCallbackFn);
 </script>
 
 
