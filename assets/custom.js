@@ -271,6 +271,8 @@ jQuery(function($){
     window.SwymCallbacks.push(swymCallbackFn);
   });
 
+   console.log(localStorage);
+  
   
 //   var mutationObserver = new MutationObserver(function(mutations) {
 //     mutations.forEach(function(mutation) {
