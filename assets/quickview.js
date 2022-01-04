@@ -11,6 +11,8 @@ jQuery(function($){
     $('.qv_price__badge-new').hide();
     $('.qv_price__badge-sale').hide();
     $(document).on('click',".quick-view", function () {
+      var productdata = $(this).data('product');
+      console.log(productdata);
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
       $('#quick-view').addClass(product_handle);
@@ -105,10 +107,6 @@ jQuery(function($){
        
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
-            
-//             console.log(option);
-//             console.log("value"+value);
-//              console.log('opt'+opt);
             var checked = '';
             if(i == 0){
             checked = 'checked';
