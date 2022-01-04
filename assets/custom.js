@@ -241,19 +241,23 @@ for (i = 0; i < acc.length; i++) {
 
 // wishlist
 
-function swymCallbackFn(){
-   // your API calls go here
- window._swat.fetch( function(r) {
-  console.log(r);
-//   document.getElementById('demo').innerHTML = r;
+// function swymCallbackFn(){
+//    // your API calls go here
+//  window._swat.fetch( function(r) {
+//   console.log(r);
+// //   document.getElementById('demo').innerHTML = r;
+// });
+// }
+// if(!window.SwymCallbacks){
+//  window.SwymCallbacks = [];
+// }
+// window.SwymCallbacks.push(swymCallbackFn);
+
+jQuery(function(){
+  $(document).on('click','.swym-button',function(e){
+    console.log("work");
+  });
 });
-}
-if(!window.SwymCallbacks){
- window.SwymCallbacks = [];
-}
-window.SwymCallbacks.push(swymCallbackFn);
-
-
 
 
 // always page go top after page load
