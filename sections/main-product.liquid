@@ -530,7 +530,7 @@
                         {% endfor %}
                         
                         
-                          <input valabal="{{value.available}}" data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
