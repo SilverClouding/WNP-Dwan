@@ -159,4 +159,87 @@
 </div>
 
 
-<div class="quick-view-button"><a class="quick-view" data-handle="{{ product_card_product.handle }}" data-product='{{product_card_product | json}}'>Quick View</a></div>
+<div class="quick-view-button">
+  
+  <a class="quick-view" data-handle="{{ product_card_product.handle }}" data-product='{{product_card_product | json}}'>Quick View</a>
+
+
+
+  
+{% assign current_available_variant = product_card_product.selected_or_first_available_variant %}
+       {% assign  current_v_option1_vars  = product_card_product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
+        
+        {% assign current_option2 = ""  %}
+         {% assign current_option3 = ""  %}
+        
+        {% for current_v in current_v_option1_vars %}
+         {% assign current_option2 = current_option2 | append: current_v.option2  %}
+         {% assign current_option3 = current_option3 | append: current_v.option3  %}
+        {% endfor %}
+        
+        
+         current_option2-{{current_option2}}
+        current_option3-{{current_option3}}
+<variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product_card_product.url }}" {{ block.shopify_attributes }}>
+                  {%- for option in product_card_product.options_with_values -%}
+                  
+                  {% assign optionString = "option"|append: forloop.index %}
+                  
+                      <fieldset class="js product-form__input">
+                        <legend class="form__label">{{ option.name }}</legend>
+                        {%- for value in option.values -%}
+                        
+                        
+                        {% assign curValueVars = product.variants | where: optionString, value %}
+                    
+                        {% assign option_1 = "" %}
+                        {% assign option_2 = "" %}
+                        {% assign option_3 = "" %}
+
+                        {% for v in curValueVars %}
+
+                        {% if v.available %}
+
+                        {% if optionString == "option1" %}
+                        
+                        {% assign option_1 = value %}
+                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+                        {% endif %}
+                        
+                        {% if optionString == "option2" %} 
+                         {% assign option_2 = value %}
+                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+                        {% endif %}
+                        
+                        {% if optionString == "option3" %}
+                        {% assign option_3 = value %}
+                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+                        {% endif %}
+
+                        {% endif %}
+
+
+                        {% endfor %}
+                        
+                        
+                          <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                name="{{ option.name }}"
+                                value="{{ value | escape }}"
+                                form="{{ product_form_id }}"
+                                {% if option.selected_value == value %}checked{% endif %}
+                          >
+                          <label class="{% if option_1 != blank or option_2 != blank or option_3 != blank %} available{% else %}soldout{% endif %}"  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                            {{ value }}
+                          </label>
+                        {%- endfor -%}
+                      </fieldset>
+                  {%- endfor -%}
+                  <script type="application/json">
+                    {{ product_card_product.variants | json }}
+                  </script>
+                </variant-radios>
+
+</div>
