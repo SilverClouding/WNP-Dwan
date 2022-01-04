@@ -247,6 +247,18 @@ var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
              wishlistButton.setAttribute("disabled", false);
           });
         }
+         wishlistButton.addEventListener("click", function(e){
+        console.log('work');
+        if(SwymPageData){
+          SwymPageData.et = 4;	// et 4 stands for wishlist event type
+          _swat.addToWishList(SwymPageData, function(e){
+            wishlistButton.innerHTML = "Saved"; 
+             wishlistButton.classList.add("active");
+          });
+         
+          
+        }
+      });
       });
     } else {
       wishlistButton.addEventListener("click", function(e){
