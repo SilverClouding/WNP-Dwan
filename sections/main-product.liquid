@@ -513,7 +513,7 @@
                                 form="{{ product_form_id }}"
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                          <label class="{% if option_1 != blank or option_2 != blank or option_3 != blank %} available{% else %}soldout{% endif %}"  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
                         {%- endfor -%}
