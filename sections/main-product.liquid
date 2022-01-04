@@ -469,11 +469,16 @@
       {% assign current_available_variant = product.selected_or_first_available_variant %}
        {% assign  current_v_option1_vars  = product.variants | where: option1 , current_available_variant.option1 | where: available %}
         
+        {% assign current_option2 = ""  %}
+         {% assign current_option3 = ""  %}
        
         {% for current_v in current_v_option1_vars %}
          {% assign current_option2 = current_option2 |append: current_v.option2  %}
          {% assign current_option3 = current_option3 |append: current_v.option3  %}
         {% endfor %}
+        
+        current_option3-{{current_option3}}
+        current_option2-{{current_option2}}
        
         
             {%- unless product.has_only_default_variant -%}
