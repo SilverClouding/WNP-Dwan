@@ -467,9 +467,9 @@
         
         
       {% assign current_available_variant = product.selected_or_first_available_variant %}
-       {% assign  current_v_option1_var  = product.variants | where: option1 , current_available_variant.option1 %}
+       {% assign  current_v_option1_vars  = product.variants | where: option1 , current_available_variant.option1 | where: available %}
         
-        {{current_v_option1_var}}
+        {{ current_v_option1_vars }}
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
