@@ -253,26 +253,44 @@ for (i = 0; i < acc.length; i++) {
 // }
 // window.SwymCallbacks.push(swymCallbackFn);
 
-jQuery(function($){
-  setTimeout(function() {
-    $(document).on('click','.swym-button',function(e){
-      console.log("work");
-      function swymCallbackFn(){
-        // your API calls go here
-        window._swat.wishlistCount(
-          function(r) {
-            document.getElementById("wishlist_item_count").innerHTML = r;
-            console.log('Wishlist items - ', r);
-          }
-        );    
-      }
-      if(!window.SwymCallbacks){
-        window.SwymCallbacks = [];
-      }
-      window.SwymCallbacks.push(swymCallbackFn);
-    });
-  }, 5000);
-});
+// jQuery(function($){
+//   setTimeout(function() {
+//     $(document).on('click','.swym-button',function(e){
+//       console.log("work");
+//       function swymCallbackFn(){
+//         // your API calls go here
+//         window._swat.wishlistCount(
+//           function(r) {
+//             document.getElementById("wishlist_item_count").innerHTML = r;
+//             console.log('Wishlist items - ', r);
+//           }
+//         );    
+//       }
+//       if(!window.SwymCallbacks){
+//         window.SwymCallbacks = [];
+//       }
+//       window.SwymCallbacks.push(swymCallbackFn);
+//     });
+//   }, 5000);
+// });
+function renderWishlistCounter() {
+  var elements = document.querySelectorAll(".swym-wish-counter");
+  for (var i = 0; i < elements.length; i++) {
+    if (window._swat.renderWishlistCount) {
+      window._swat.renderWishlistCount(elements[i], function(cnt, elem) {
+          console.log("debug - renderWishlistCount", cnt, elem); /* Can be removed after verification */
+        }
+      )};
+  }
+}
+if (!window._swat) {
+  if (!window.SwymCallbacks) {
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(renderWishlistCounter);
+} else {
+  renderWishlistCounter();
+}
 
 
 
