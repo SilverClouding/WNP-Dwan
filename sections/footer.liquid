@@ -157,7 +157,7 @@
               </ul>
               {%- endif -%}
               
-              {%- if block.settings.copyright -%}
+              {%- if block.settings.copyright != blank -%}
               <p>{{ block.settings.copyright }}</p>
               {% endif %}
               
