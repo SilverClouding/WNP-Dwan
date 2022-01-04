@@ -466,7 +466,7 @@
           {% endcomment %}
         
         
-      
+      {% assign current_available_variant = product.selected_or_first_available_variant %}
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -491,6 +491,9 @@
                         {% if v.available %}
 
                         {% if optionString == "option1" %}
+                        {{current_available_variant.option2}}- {{current_available_variant.option3}}-
+                        
+                        
                         {% assign option_1 = value %}
                         {% assign option_2 = option_2 | append: v.option2 |append:"," %}
                         {% assign option_3 = option_3 | append: v.option3 |append:"," %}
