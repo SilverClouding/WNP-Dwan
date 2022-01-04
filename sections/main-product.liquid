@@ -481,31 +481,31 @@
                         
                         
                         {% assign curValueVar = product.variants | where: optionString, value %}
-                        
-                        
+                        {{product.variants["size"].value}}
+                        {{curValueVar[0]}}
                         {% for v in curValueVar %}
-                       
-                       {% if v.available %}
+
+                        {% if v.available %}
                         {{v.id}}
-                        
+
                         {% if optionString == "option1" %}
-                         <br>{{v.option2}}<br>
+                        <br>{{v.option2}}<br>
                         {{v.option3}}<br>
                         {% else if optionString == "option2" %}
-                         {{v.option1}}<br>
-                         {{v.option3}}<br>
+                        {{v.option1}}<br>
+                        {{v.option3}}<br>
                         {% else if optionString == "option3" %}
                         {{v.option1}}<br>
-                         {{v.option2}}<br>
+                        {{v.option2}}<br>
                         {% endif %}
-                        
+
                         {% endif %}
-                        
-                        
+
+
                         {% endfor %}
                         
                         
-                          <input valabal="{{value.available}}" data_option type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          <input valabal="{{value.available}}" data_option1="" data_option2="" data_option3="" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
