@@ -50,7 +50,8 @@
                 <input type="number" class="qv-quantity" value="1" min="1">
             </div> -->
           
-          
+          <div class="qty-threshold">
+            <div class="qty">
           <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
@@ -70,7 +71,8 @@
                 </button>
               </quantity-input>
            <p>Minimum quantity of 4</p>
-          <div>
+            </div>
+          <div class="threshold">
 
             {% assign cartTotal = cart.total_price %}
             {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
@@ -111,6 +113,7 @@
                 </span> FREE SHIPPING!</div>
             </div>
 
+          </div>
           </div>
 
           
