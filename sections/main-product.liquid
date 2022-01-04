@@ -488,7 +488,7 @@
                   
                   {% assign optionString = "option"|append: forloop.index %}
                   
-                      <fieldset class="js product-form__input {{optionString}}_for_below_input">
+                      <fieldset class="js swatch product-form__input {{optionString}}_for_below_input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
                         
@@ -542,7 +542,7 @@
                                 {% if option.position == 3 %} {% if current_option3_array[0] == value %}checked {% endif %}  {% endif %} 
                           >
                           <label option_index="{{ option.position }}" 
-                                 class="
+                                 class="swatch-element
                                            {% if option.position == 1 %} {% if option_2 != blank %} available {% else %} soldout {% endif %}{% endif %}
                                           {% if option.position == 2 %} {% if current_option2 contains value %}available{% else %}soldout {% endif %}  {% endif %}
                                          {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
