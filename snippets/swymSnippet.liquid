@@ -47,6 +47,7 @@
       stk:{{ currentVariant.inventory_quantity }} {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
     };
     window.SwymPageData = product_data;
+  console.log(product_data);
     {% elsif collection %}
     var collection = {{ collection | json }};
     if (typeof collection === "undefined" || collection == null || collection.toString().trim() == ""){
