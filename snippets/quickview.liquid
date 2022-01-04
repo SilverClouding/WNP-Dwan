@@ -70,6 +70,50 @@
                 </button>
               </quantity-input>
           
+          <div>
+
+            {% assign cartTotal = cart.total_price %}
+            {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
+            {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
+            {% assign mainPercent = percentmainvalue | times: 100.00 %}
+            {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
+            <style>
+              .w3-light-grey{
+                color: #000!important;
+                background-color: #f1f1f1!important;
+                margin: 10px 0;
+              }
+              .w3-green, 
+              .w3-hover-green:hover {
+                color: #fff!important;
+                background-color: #F5694D!important;
+                height:6px;
+
+              }
+              .progress-warp {
+                margin: 30px 20px;
+                text-align:center;
+                overflow:hidden;
+              }
+            </style>
+            <div class="progress-warp" threshold="{{cartthreshhold}}">
+
+              <div class="w3-light-grey">
+                <div id="precentfill" class="w3-green" style="width:{{mainPercent}}%"></div>
+              </div>
+
+              {% comment %}
+              <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} {{ 'general.cart.eligible' | t }} {% else %} {{ 'general.cart.spend' | t: needAmmount: needAmmount | money |remove:'-' }}{% endif %}</span> FREE SHIPPING!</div>
+
+              {% endcomment %}
+              <div> <span id="textmsg" class="progress-bar-money">
+                {% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}
+                </span> FREE SHIPPING!</div>
+            </div>
+
+          </div>
+
+          
           <div class="divider-con">
             <input type="submit" class="qv-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
           </div><div class="qv-add-to-cart-response"></div>
