@@ -259,23 +259,41 @@ jQuery(function($){
   });
 
   
-  var mutationObserver = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      console.log(mutation.target);
-    });
-  });
-  // Starts listening for changes in the root HTML element of the page.
-  mutationObserver.observe(document.documentElement, {
-    attributes: true,
-    characterData: true,
-    childList: true,
-    subtree: true,
-    attributeOldValue: true,
-    characterDataOldValue: true
-  });
-  // Stops the MutationObserver from listening for changes.
-//   mutationObserver.disconnect();
+//   var mutationObserver = new MutationObserver(function(mutations) {
+//     mutations.forEach(function(mutation) {
+//       console.log(mutation.target);
+//     });
+//   });
+//   // Starts listening for changes in the root HTML element of the page.
+//   mutationObserver.observe(document.documentElement, {
+//     attributes: true,
+//     characterData: true,
+//     childList: true,
+//     subtree: true,
+//     attributeOldValue: true,
+//     characterDataOldValue: true
+//   });
+//   // Stops the MutationObserver from listening for changes.
+// //   mutationObserver.disconnect();
 
+  mutationRecords = [{
+  type: "characterData",
+  oldValue: "edit",
+  target: ".swym-button",
+  // other properties empty
+}];
+  
+  let observer = new MutationObserver(mutationRecords => {
+    console.log(mutationRecords); // console.log(the changes)
+  });
+
+  // observe everything except attributes
+  observer.observe(elem, {
+    childList: true, // observe direct children
+    subtree: true, // and lower descendants too
+    characterDataOldValue: true // pass old data to callback
+  });
+  
   
 });
 
