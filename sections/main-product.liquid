@@ -477,8 +477,10 @@
          {% assign current_option3 = current_option3 | append: current_v.option3  %}
         {% endfor %}
         
+        
+         current_option2-{{current_option2}}
         current_option3-{{current_option3}}
-        current_option2-{{current_option2}}
+       
        
         
             {%- unless product.has_only_default_variant -%}
