@@ -480,24 +480,32 @@
                         {%- for value in option.values -%}
                         
                         
-                        {% assign curValueVar = product.variants | where: optionString, value %}
+                        {% assign curValueVars = product.variants | where: optionString, value %}
                     
                         {% assign option_1 = "" %}
                         {% assign option_2 = "" %}
                         {% assign option_3 = "" %}
 
-                        {% for v in curValueVar %}
+                        {% for v in curValueVars %}
 
                         {% if v.available %}
 
                         {% if optionString == "option1" %}
-                        {% assign option_1 = option_1 | append: v.option2 |append:"," | append: v.option3 %}
+                        {% assign option_1 = value %}
+                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
                         {% endif %}
+                        
                         {% if optionString == "option2" %} 
+                         {% assign option_2 = value %}
+                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
                         {% endif %}
-                        {% assign option_2 = option_2| append: v.option1 |append:"," | append: v.option3 %}
+                        
                         {% if optionString == "option3" %}
-                        {% assign option_3 = option_3 | append: v.option1 |append:"," | append: v.option2 %}
+                        {% assign option_3 = value %}
+                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
                         {% endif %}
 
                         {% endif %}
