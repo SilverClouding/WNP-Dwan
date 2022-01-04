@@ -47,6 +47,12 @@
       stk:{{ currentVariant.inventory_quantity }} {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
     };
     window.SwymPageData = product_data;
+  
+  window._swat.wishlistCount(
+  function(r) {
+    console.log('Wishlist items - ', r);
+  }
+);
   console.log(product_data);
     {% elsif collection %}
     var collection = {{ collection | json }};
