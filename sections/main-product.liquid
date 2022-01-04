@@ -480,9 +480,9 @@
                         {%- for value in option.values -%}
                         
                         
-                        {% assign curvaVar = product.variant | where: optionString, value %}
+                        {% assign curValueVar = product.variant | where: optionString, value %}
                         
-                        {{curvaVar}}
+                        {{curValueVar}}
                         
                           <input valabal="{{value.available}}" data_option type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
