@@ -273,24 +273,6 @@ for (i = 0; i < acc.length; i++) {
 //     });
 //   }, 5000);
 // });
-function renderWishlistCounter() {
-  var elements = document.querySelectorAll(".swym-wish-counter");
-  for (var i = 0; i < elements.length; i++) {
-    if (window._swat.renderWishlistCount) {
-      window._swat.renderWishlistCount(elements[i], function(cnt, elem) {
-          console.log("debug - renderWishlistCount", cnt, elem); /* Can be removed after verification */
-        }
-      )};
-  }
-}
-if (!window._swat) {
-  if (!window.SwymCallbacks) {
-    window.SwymCallbacks = [];
-  }
-  window.SwymCallbacks.push(renderWishlistCounter);
-} else {
-  renderWishlistCounter();
-}
 
 
 
