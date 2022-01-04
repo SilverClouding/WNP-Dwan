@@ -467,7 +467,7 @@
         
         
       {% assign current_available_variant = product.selected_or_first_available_variant %}
-       {% assign  current_v_option1_vars  = product.variants | where: option1 , current_available_variant.option1 | where: available %}
+       {% assign  current_v_option1_vars  = product.variants | where: "option1" , current_available_variant.option1 | where: available %}
         
         {% assign current_option2 = ""  %}
          {% assign current_option3 = ""  %}
