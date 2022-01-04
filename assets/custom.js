@@ -274,7 +274,7 @@ jQuery(function($){
     characterDataOldValue: true
   });
   // Stops the MutationObserver from listening for changes.
-  mutationObserver.disconnect();
+//   mutationObserver.disconnect();
 
   
 });
