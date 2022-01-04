@@ -218,14 +218,14 @@ window.SwymCallbacks.push(function(swat) {
 
 <script>
 
- 
-    var wishlistButton = document.querySelector(".swym-button");
+   function swymCallbackFn(){ 
+    var wishlistButton = document.querySelector(".wishlist-btn");
     if(wishlistButton){
       wishlistButton.addEventListener("click", function(e){
         console.log('click');
       }); 
     }
-  function swymCallbackFn(){ 
+
   
   }
   if(!window.SwymCallbacks){
