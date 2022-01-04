@@ -473,8 +473,8 @@
          {% assign current_option3 = ""  %}
         
         {% for current_v in current_v_option1_vars %}
-         {% assign current_option2 = current_option2 | append: current_v.option2  %}
-         {% assign current_option3 = current_option3 | append: current_v.option3  %}
+         {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
+         {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
         {% endfor %}
         
         
@@ -534,7 +534,10 @@
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
-                                {% if option.selected_value == value %}checked{% endif %}
+                                 {% assign current_option2_array = current_option2 | split:"," %}
+                                 {{current_option2_array[0]}}
+                                 
+                                {% if option.position == 2 %} {% if current_option2_array[0] contains value %}checked {% else %} soldout {% endif %}  {% endif %} 
                           >
                           <label option_index="{{ option.position }}" 
                                  class="
