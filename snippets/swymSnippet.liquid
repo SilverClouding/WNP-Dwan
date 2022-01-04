@@ -200,21 +200,16 @@ window.SwymCallbacks.push(function(swat) {
 
 <script>
   
-function swymCallbackFn(){
-   // your API calls go here
-  window._swat.wishlistCount(
-  function(r) {
-    document.getElementById("wishlist_item_count").innerHTML = r;
-    console.log('Wishlist items - ', r);
+  function swymCallbackFn(){
+    // your API calls go here
+    window._swat.wishlistCount(
+      function(r) {
+        document.getElementById("wishlist_item_count").innerHTML = r;
+        console.log('Wishlist items - ', r);
+      }
+    );
+
   }
-);
-  
-window._swat.removeFromWishList(
-   function(r) {
-    console.log('Removed to wishlist');
-  }
-  );
-}
 if(!window.SwymCallbacks){
  window.SwymCallbacks = [];
 }
