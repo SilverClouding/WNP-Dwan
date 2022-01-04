@@ -538,7 +538,7 @@
                           >
                           <label option_index="{{ option.position }}" 
                                  class="
-                                          {% if option.position == 2 %}{{ value | escape }}={{current_option2  | escape }} {% endif %}                                   
+                                          {% if option.position == 2 %} {% if value contains current_option2 %}available{% else %} soldout {% endif %}  {% endif %}                                  
                                                                              "  
                                  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
