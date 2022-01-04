@@ -471,7 +471,9 @@
         
         {% assign current_option2 = ""  %}
          {% assign current_option3 = ""  %}
-       {{current_v[0].id}}
+        
+       {{current_v_option1_vars[0].id}}
+        
         {% for current_v in current_v_option1_vars %}
          {% assign current_option2 = current_option2 | append: current_v.option2  %}
          {% assign current_option3 = current_option3 | append: current_v.option3  %}
