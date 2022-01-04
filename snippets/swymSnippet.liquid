@@ -209,9 +209,14 @@ window.SwymCallbacks.push(function(swat) {
       }
     );
 
-    window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
-      console.log("renderWishlistCount was called", cnt, elem);
-    }, 1500);
+    window._swat.fetchWrtEventTypeET(
+      function(r) {
+        // Get wishlist items
+        console.log(r);
+//         document.getElementById('demo').innerHTML = r;
+      },
+      window._swat.EventTypes.addToWishList
+    );
     
   }
 if(!window.SwymCallbacks){
