@@ -254,22 +254,24 @@ for (i = 0; i < acc.length; i++) {
 // window.SwymCallbacks.push(swymCallbackFn);
 
 jQuery(function($){
-  $(document).on('click','.swym-button.swym-added',function(e){
-    console.log("work");
-    function swymCallbackFn(){
-      // your API calls go here
-      window._swat.wishlistCount(
-        function(r) {
-          document.getElementById("wishlist_item_count").innerHTML = r;
-          console.log('Wishlist items - ', r);
-        }
-      );    
-    }
-    if(!window.SwymCallbacks){
-      window.SwymCallbacks = [];
-    }
-    window.SwymCallbacks.push(swymCallbackFn);
-  });
+  setTimeout(function() {
+    $(document).on('click','.swym-button',function(e){
+      console.log("work");
+      function swymCallbackFn(){
+        // your API calls go here
+        window._swat.wishlistCount(
+          function(r) {
+            document.getElementById("wishlist_item_count").innerHTML = r;
+            console.log('Wishlist items - ', r);
+          }
+        );    
+      }
+      if(!window.SwymCallbacks){
+        window.SwymCallbacks = [];
+      }
+      window.SwymCallbacks.push(swymCallbackFn);
+    });
+  }, 5000);
 });
 
 
