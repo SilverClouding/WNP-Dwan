@@ -209,6 +209,10 @@ window.SwymCallbacks.push(function(swat) {
       }
     );
 
+    window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
+      console.log("renderWishlistCount was called", cnt, elem);
+    }, 1500);
+    
   }
 if(!window.SwymCallbacks){
  window.SwymCallbacks = [];
@@ -218,7 +222,5 @@ window.SwymCallbacks.push(swymCallbackFn);
 
 
 <script>
-window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
-  console.log("renderWishlistCount was called", cnt, elem);
-}, 1500);
+
 </script>
