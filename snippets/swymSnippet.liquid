@@ -243,7 +243,8 @@ var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
         if(SwymPageData){
           SwymPageData.et = 4;	// et 4 stands for wishlist event type
           _swat.removeFromWishList(SwymPageData, function(e){
-            wishlistButton.innerHTML = "Save for later"; 
+            wishlistButton.innerHTML = "Save for later";
+             wishlistButton.setAttribute("disabled", false);
           });
         }
       });
