@@ -490,14 +490,15 @@
 
                         {% if v.available %}
 
-                        {% if optionString == "option1" %} {% else if optionString == "option2" %}  {% else if optionString == "option3" %} {% endif %}
+                        {% if optionString == "option1" %}
                         {% assign option_1 = option_1 | append: v.option2 |append:"," | append: v.option3 %}
-                       
-
+                        {% endif %}
+                        {% if optionString == "option2" %} 
+                        {% endif %}
                         {% assign option_2 = option_2| append: v.option1 |append:"," | append: v.option3 %}
-                       
+                        {% if optionString == "option3" %}
                         {% assign option_3 = option_3 | append: v.option1 |append:"," | append: v.option2 %}
-                       
+                        {% endif %}
 
                         {% endif %}
 
