@@ -254,7 +254,7 @@ for (i = 0; i < acc.length; i++) {
 // window.SwymCallbacks.push(swymCallbackFn);
 
 jQuery(function($){
-  $(document).on('click','.swym-button',function(e){
+  $(document).on('click','.swym-button.swym-added',function(e){
     console.log("work");
     function swymCallbackFn(){
       // your API calls go here

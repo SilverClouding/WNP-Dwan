@@ -210,14 +210,14 @@ window.SwymCallbacks.push(function(swat) {
     );    
     var wishlistButton = document.querySelector(".swym-button");
     wishlistButton.addEventListener("click", function(e){
-      console.log('work');
+      console.log('work dom');
 
-      window._swat.wishlistCount(
-        function(r) {
-          document.getElementById("wishlist_item_count").innerHTML = r;
-          console.log('Wishlist items - ', r);
-        }
-      ); 
+//       window._swat.wishlistCount(
+//         function(r) {
+//           document.getElementById("wishlist_item_count").innerHTML = r;
+//           console.log('Wishlist items - ', r);
+//         }
+//       ); 
     });
 
 
