@@ -482,9 +482,9 @@
                         
                         {% assign curValueVar = product.variants | where: optionString, value %}
                     
-                        {% assign option1 = "" %}
-                        {% assign option2 = "" %}
-                        {% assign option3 = "" %}
+                        {% assign option_1 = "" %}
+                        {% assign option_2 = "" %}
+                        {% assign option_3 = "" %}
 
                         {% for v in curValueVar %}
 
@@ -493,11 +493,11 @@
 
                         {% if optionString == "option1" %}
                        
-                        {% assign option1 = v.option2 | append:"," | append: v.option3 %}
+                        {% assign option_1 = v.option2 | append:"," | append: v.option3 %}
                         {% else if optionString == "option2" %}
-                          {% assign option2 = v.option1 | append:"," | append: v.option3 %}
+                          {% assign option_2 = v.option1 | append:"," | append: v.option3 %}
                         {% else if optionString == "option3" %}
-                          {% assign option3 = v.option1 | append:"," | append: v.option2 %}
+                          {% assign option_3 = v.option1 | append:"," | append: v.option2 %}
                         {% endif %}
 
                         {% endif %}
@@ -506,7 +506,7 @@
                         {% endfor %}
                         
                         
-                          <input valabal="{{value.available}}" data_option1="{{option1}}" data_option2="{{option2}}" data_option3="{{option3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          <input valabal="{{value.available}}" data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
