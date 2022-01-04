@@ -245,7 +245,7 @@ function swymCallbackFn(){
    // your API calls go here
  window._swat.fetch( function(r) {
   console.log(r);
-  document.getElementById('demo').innerHTML = r;
+//   document.getElementById('demo').innerHTML = r;
 });
 }
 if(!window.SwymCallbacks){
