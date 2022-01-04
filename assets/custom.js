@@ -511,13 +511,11 @@ jQuery(function($){
 
 jQuery(function($){
   
-
-
-
-  $.ajax({
        
      
       $('body').on('change', '.swatch :radio', function() {
+    var data_option2 = $(this).attr('data_option2');
+        console.log(data_option2);
       });
 
 
