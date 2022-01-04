@@ -257,7 +257,7 @@ jQuery(function(){
   $(document).on('click','.swym-button',function(e){
     console.log("work");
   });
-
+});
   // Select the node that will be observed for mutations
   const targetNode = document.querySelector('.swym-button');
 
@@ -286,7 +286,7 @@ jQuery(function(){
   // Later, you can stop observing
   observer.disconnect();
 
-});
+
 
 
 // always page go top after page load
