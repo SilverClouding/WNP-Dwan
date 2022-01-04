@@ -244,6 +244,9 @@ window.SwymCallbacks.push(function(swat) {
           _swat.addToWishList(SwymPageData, function(e){
             wishlistButton.innerHTML = "Saved"; 
           });
+         _swat.removeFromWishList(SwymPageData, function(e){
+           wishlistButton.innerHTML = "Save for later"; 
+           });
           
         }
       });
