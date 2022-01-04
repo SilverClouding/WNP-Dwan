@@ -307,12 +307,6 @@ jQuery(function($){
     mutationRecords.forEach ( function (mutation) {
       console.log (mutation.type);
 
-      if (typeof mutation.removedNodes == "object") {
-        var jq = $(mutation.removedNodes);
-        console.log (jq);
-        console.log (jq.is("span.myclass2"));
-        console.log (jq.find("span") );
-      }
     } );
   }
   
