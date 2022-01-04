@@ -240,9 +240,18 @@ for (i = 0; i < acc.length; i++) {
 
 
 // wishlist
-window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
+
+function swymCallbackFn(){
+   // your API calls go here
+  window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
   console.log("renderWishlistCount was called", cnt, elem);
 }, 1500);
+
+}
+if(!window.SwymCallbacks){
+ window.SwymCallbacks = [];
+}
+window.SwymCallbacks.push(swymCallbackFn);
 
 
 
