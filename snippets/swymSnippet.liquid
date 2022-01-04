@@ -218,4 +218,17 @@ window.SwymCallbacks.push(function(swat) {
 
 <script>
 
+  function swymCallbackFn(){
+    var wishlistButton = document.querySelector(".wishlist-btn");
+    if(wishlistButton){
+      wishlistButton.addEventListener("click", function(e){
+        console.log('click');
+      }); 
+    }
+  }
+  if(!window.SwymCallbacks){
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(swymCallbackFn);
+
 </script>
