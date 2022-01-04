@@ -484,9 +484,19 @@
                         
                         
                         {% for v in curValueVar %}
-                        {{v.option1}}<br>
-                        {{v.option2}}<br>
+                       
+                       
+                        
+                        {% if optionString == "option1" %}
+                         {{v.option2}}<br>
                         {{v.option3}}
+                        {% else if optionString == "option2" %}
+                         {{v.option1}}<br>
+                         {{v.option3}}<br>
+                        {% else if optionString == "option3" %}
+                        {{v.option1}}<br>
+                         {{v.option2}}<br>
+                        {% endif %}
                         {% endfor %}
                         
                           <input valabal="{{value.available}}" data_option type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
