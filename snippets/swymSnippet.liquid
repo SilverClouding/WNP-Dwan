@@ -215,3 +215,10 @@ if(!window.SwymCallbacks){
 }
 window.SwymCallbacks.push(swymCallbackFn);
 </script>
+
+
+<script>
+window._swat.renderWishlistCount(anchorElem.querySelector('.swym-anchor-badge'), function(cnt, elem){
+  console.log("renderWishlistCount was called", cnt, elem);
+}, 1500);
+</script>
