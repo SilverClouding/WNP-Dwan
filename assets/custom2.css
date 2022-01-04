@@ -255,3 +255,24 @@ display:none;
     border-color: #000;
     box-shadow: 0 0 0 2px #fff;
 }
+
+/* wishlist */
+i.icon-swym-wishlist {
+  font-family: 'swym-font';
+  font-style: normal;
+  vertical-align: middle;
+}
+i.icon-swym-wishlist+span {
+  vertical-align: middle;
+}
+i.icon-swym-wishlist:after {
+  content: '';
+  font-size: 130%;
+  line-height: 18px;
+  text-align: center;
+  display: inline;
+}
+/*content rendered after swym is ready to avoid showing block/invalid chars*/
+.swym-ready i.icon-swym-wishlist:after {
+  content: '\f004';
+}
