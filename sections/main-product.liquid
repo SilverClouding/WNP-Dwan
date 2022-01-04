@@ -481,17 +481,20 @@
                         
                         
                         {% assign curValueVar = product.variants | where: optionString, value %}
-                      <br>
-                        {{curValueVar[1].title}}---<br>
-                        
+                    
+                        {% assign option1 = "" %}
+                        {% assign option2 = "" %}
+                        {% assign option3 = "" %}
+
                         {% for v in curValueVar %}
 
                         {% if v.available %}
                         
 
                         {% if optionString == "option1" %}
-                        <br>{{v.option2}}<br>
-                        {{v.option3}}<br>
+                       
+                        {% assign option1 = v.option2 |append:"," | append: v.option3 %}
+                        {{option1}}
                         {% else if optionString == "option2" %}
                         {{v.option1}}<br>
                         {{v.option3}}<br>
