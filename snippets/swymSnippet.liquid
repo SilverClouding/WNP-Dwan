@@ -237,7 +237,7 @@ var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
     if(isInWishlist){
       wishlistButton.setAttribute("disabled", true);
       wishlistButton.innerHTML = "Saved";
-      wishlistButton.classList.add("active");
+     
       
       wishlistButtonActive.addEventListener("click", function(e){
         if(SwymPageData){
@@ -254,6 +254,7 @@ var wishlistButtonActive = document.querySelector(".wishlist-btn.active");
           SwymPageData.et = 4;	// et 4 stands for wishlist event type
           _swat.addToWishList(SwymPageData, function(e){
             wishlistButton.innerHTML = "Saved"; 
+             wishlistButton.classList.add("active");
           });
          
           
