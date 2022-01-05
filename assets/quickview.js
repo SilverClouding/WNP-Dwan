@@ -121,13 +121,15 @@ jQuery(function($){
             $('.qv-product-thumb-images').append(image_embed_thumb);
           }
         });
-          $('.vardataappend').append(optionHtml);
+        
+         $('.qv-product-options').append(optionHtml);
+//           $('.vardataappend').append(optionHtml);
         
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
 //           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
-          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
+//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
        
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
@@ -138,22 +140,22 @@ jQuery(function($){
              checked = '';
             }
             
-            if( i == 0 ){
-              $(".option1_for_below_input input").each(function(){
-                var htmlvalue = $(this).attr("htmlvalue");
-                var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-                if( htmlvalue == jsvalue){
-                  console.log($(this).attr('data_option1'));
-                  console.log($(this).attr('data_option2'));
-                  console.log($(this).attr('data_option3'));
-                }
-              });
+//             if( i == 0 ){
+//               $(".option1_for_below_input input").each(function(){
+//                 var htmlvalue = $(this).attr("htmlvalue");
+//                 var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+//                 if( htmlvalue == jsvalue){
+//                   console.log($(this).attr('data_option1'));
+//                   console.log($(this).attr('data_option2'));
+//                   console.log($(this).attr('data_option3'));
+//                 }
+//               });
              
-            }
+//             }
             
             
             
-            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
+//             $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
             
           });
         });
