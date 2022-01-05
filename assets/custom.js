@@ -632,12 +632,13 @@ jQuery(function($){
 });
 
 
-// function swymCallbackFn(swat){
-//   // your API calls go here
-//   swat.initializeActionButtons("save-whishlist");
-
-// }
-// if(!window.SwymCallbacks){
-//   window.SwymCallbacks = [];
-// }
-// window.SwymCallbacks.push(swymCallbackFn);
+function swymCallbackFn(swat){
+  // your API calls go here
+  document.addEventListener("swym:collections-loaded", function(){
+    swat.initializeActionButtons(".min-cart-items");
+  })
+}
+if(!window.SwymCallbacks){
+  window.SwymCallbacks = [];
+}
+window.SwymCallbacks.push(swymCallbackFn);
