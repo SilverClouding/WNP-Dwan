@@ -471,7 +471,7 @@ jQuery(function($){
     var data_option3 = $(this).attr('data_option3').replace(/,/g , '');
     
     if(data_option1 == thisValue){
-    console.log("[value="+data_option2+"]");
+    console.log(("[value="+data_option2+"]"));
     console.log(data_option3);
      $("[value="+data_option2+"]") .attr('checked');
      $("[value="+data_option3+"]") .attr('checked');
