@@ -173,7 +173,7 @@
             "preheading": "Our services",
             "heading": "Grooming - is more than a good look",
             "text": "<p>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>",
-            "button_label": "Button label",
+            "button_label": "Learn More",
             "button_link": ""
           }
         },
@@ -209,7 +209,10 @@
         "height": "adapt",
         "color_scheme": "accent-1",
         "full_width": false,
-        "layout": "image_first"
+        "layout": "image_first",
+        "top_padding": 65,
+        "bottom_padding": 65,
+        "sec_class": ""
       }
     },
     "1637740585579a4231": {
@@ -243,7 +246,8 @@
         "19b5bf93-6632-436d-b16a-940301bbd777"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "sec_class": ""
       }
     }
   },
