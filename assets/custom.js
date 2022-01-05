@@ -492,7 +492,7 @@ jQuery(function($){
       }else{}
         $(".option2_for_below_input .input-"+triggerOption2).trigger('click');
       
-      $(".option2_for_below_input .input-"+allOption2).next(".option2_for_below_input .label-"+allOption2).removeClass('soldout').addClass('available');
+      $(".option2_for_below_input .input-"+allOption2).next().removeClass('soldout').addClass('available');
     });
     
      var data_option3Array = data_option3.split(",");
@@ -502,7 +502,7 @@ jQuery(function($){
 //       console.log(triggerOption3);
       $(".option3_for_below_input .input-"+allOption3).siblings("label").addClass('soldout').removeClass('available');
       $(".option3_for_below_input .input-"+triggerOption3).trigger('click');
-      $(".option3_for_below_input .input-"+allOption3).next(".option3_for_below_input .label-"+allOption3).removeClass('soldout').addClass('available');
+      $(".option3_for_below_input .input-"+allOption3).next().removeClass('soldout').addClass('available');
     });
     
     
