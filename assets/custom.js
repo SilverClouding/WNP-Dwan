@@ -495,9 +495,8 @@ jQuery(function($){
       var triggerOption = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       var allOption = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       console.log(triggerOption);
-      $(".option2_for_below_input .input-"+allOption+" lable").siblings().removeClass('available');
+      $(".option2_for_below_input .input-"+allOption+" lable").siblings().removeClass('available').addClass('soldout');
       $(".option2_for_below_input .input-"+triggerOption).trigger('click');
-      $(".option2_for_below_input .input-"+allOption+" lable").removeClass('soldout').addClass('available');
       $(".option2_for_below_input .input-"+allOption).next('').removeClass('soldout').addClass('available');
     });
   });
