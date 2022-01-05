@@ -489,7 +489,7 @@ jQuery(function($){
       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
       $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
-      $(".option2_for_below_input .label-"+allOption2).removeClass('soldout').addClass('available');
+      $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
       $(".option2_for_below_input .label-"+allOption2).addClass('available');
     });
     
