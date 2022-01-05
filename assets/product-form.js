@@ -55,6 +55,12 @@ if (!customElements.get('product-form')) {
           document.body.style.overflow = "hidden";
           IDminiCartMask.style.display = 'block';
 
+          if(window._swat){
+            window._swat.initializeActionButtons(".min-cart-items"); 
+          }else{ 
+            window.SwymCallbacks = window.SwymCallbacks || []; 
+            window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".min-cart-items"); }); 
+          } 
 //           var count = document.querySelector('.count-cross .count').getAttribute('count');
 //           document.getElementById("CartCount").innerHTML= count;
           
