@@ -294,7 +294,6 @@
       ],
       "settings": {
         "include_margins": true,
-        "heading": "We Are Feeling",
         "sec_class": "Review-con"
       }
     },
@@ -419,7 +418,7 @@
             "heading_font": "avenir_next_n4",
             "heading_size": 24,
             "feed_width": 100,
-            "html_area": "<div class=\"insta-top-con\">\n<h2>whiskersnpaws<\/h2>\n<a href=\"#\">Follow our instagram<\/a>\n<\/div>"
+            "html_area": "<h2>whiskersnpaws<\/h2>\n<a href=\"#\">Follow our instagram<\/a>"
           }
         }
       },
@@ -428,7 +427,6 @@
       ],
       "settings": {
         "include_margins": true,
-        "heading": "Review Heading",
         "sec_class": ""
       }
     },
