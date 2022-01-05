@@ -642,11 +642,14 @@
                 
                   <div class="product-form__buttons">
                  
+                    <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+                    Notify me
+                    </a> 
                   
                     <button
                       type="submit"
                       name="add"
-                      class=" product-form__submit  button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      class="{% if product.selected_or_first_available_variant.available == false %} hide {% endif %}  product-form__submit  button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
