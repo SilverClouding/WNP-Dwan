@@ -404,7 +404,11 @@ body.page-your-shopping-cart {
 
 
 </script>
+<script>
 
+    document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
+
+</script>
 {% schema %}
   {
     "name": "Cart items",
