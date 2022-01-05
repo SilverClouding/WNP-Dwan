@@ -185,7 +185,7 @@
   {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
   {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
   {% endfor %}
-
+<div class="variantselec">
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product_card_product.url }}" {{ block.shopify_attributes }}>
 
 
@@ -260,7 +260,7 @@
     </fieldset>
     {%- endfor -%}
   </variant-radios>
-
+  </div>
 </div>
 
 
