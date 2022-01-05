@@ -13,6 +13,8 @@ jQuery(function($){
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
       console.log(productdata);
+      
+      
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
       $('#quick-view').addClass(product_handle);
@@ -29,6 +31,8 @@ jQuery(function($){
         var url = '/products/' + product_handle;
         $('.qv-product-title').text(title);
         $('.qv-product-vendor').text(type);
+        
+        $('.qvswym').html("<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" ></button>")
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
