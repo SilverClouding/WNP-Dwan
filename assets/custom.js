@@ -486,8 +486,10 @@ jQuery(function($){
       var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
             console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-      $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
-       $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
+//       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
+//        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
+       $(".option2_for_below_input label").addClass('soldout');
+       $(".option2_for_below_input label").removeClass('available');
       $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
       
       $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
