@@ -232,7 +232,7 @@
              value="{{ value | escape }}"
              htmlvalue="{{ value | handle |replace:"_","-" }}"
              form="{{ product_form_id }}"
-             class="input-{{value | handle |replace:"_","-"}}"
+             class="radio_butt input-{{value | handle |replace:"_","-"}}"
              {% assign current_option1_array = current_option1 | split:"," %}
              {% if option.position == 1 %} {% if current_option1_array[0] == value %}checked {% endif %}  {% endif %} 
              {% assign current_option2_array = current_option2 | split:"," %}
@@ -242,7 +242,7 @@
              {% if option.position == 3 %} {% if current_option3_array[0] == value %}checked {% endif %}  {% endif %} 
              >
       <label option_index="{{ option.position }}" 
-             class="radio_butt swatch-element label-{{value | handle |replace:"_","-"}}
+             class="swatch-element label-{{value | handle |replace:"_","-"}}
                     {% if option.position == 1 %} {% if option_2 != blank %} available {% else %} soldout {% endif %}{% endif %}
                     {% if option.position == 2 %} {% if current_option2 contains value %}available{% else %}soldout {% endif %}  {% endif %}
                     {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
