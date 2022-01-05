@@ -632,12 +632,12 @@ jQuery(function($){
 });
 
 
-function swymCallbackFn(swat){
-  // your API calls go here
-  swat.initializeActionButtons("save-whishlist");
+// function swymCallbackFn(swat){
+//   // your API calls go here
+//   swat.initializeActionButtons("save-whishlist");
 
-}
-if(!window.SwymCallbacks){
-  window.SwymCallbacks = [];
-}
-window.SwymCallbacks.push(swymCallbackFn);
+// }
+// if(!window.SwymCallbacks){
+//   window.SwymCallbacks = [];
+// }
+// window.SwymCallbacks.push(swymCallbackFn);

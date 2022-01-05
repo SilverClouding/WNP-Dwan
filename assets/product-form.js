@@ -58,20 +58,6 @@ if (!customElements.get('product-form')) {
 //           var count = document.querySelector('.count-cross .count').getAttribute('count');
 //           document.getElementById("CartCount").innerHTML= count;
           
-          
-          
-          function swymCallbackFn(swat){
-            // your API calls go here
-              swat.initializeActionButtons(".save-whishlist");
-           
-          }
-          if(!window.SwymCallbacks){
-            window.SwymCallbacks = [];
-          }
-          window.SwymCallbacks.push(swymCallbackFn);
-
-          
-          
         });
         //minicart section end
         
