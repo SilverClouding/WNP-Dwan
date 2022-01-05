@@ -760,9 +760,13 @@ console.log(this);
 
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
+      addButton.classList.add('hide');
+      document.getElementById('notifyme').classList.remove('hide');
       if (text) addButtonText.textContent = text;
     } else {
       addButton.removeAttribute('disabled');
+      document.getElementById('notifyme').classList.add('hide');
+       addButton.classList.remove('hide');
       addButtonText.textContent = window.variantStrings.addToCart;
        console.log('enabled')
     }
