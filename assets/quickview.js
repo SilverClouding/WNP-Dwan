@@ -148,6 +148,7 @@ jQuery(function($){
                   console.log($(this).attr('data_option3'));
                 }
               });
+              return false;
             }
             
             
@@ -166,7 +167,7 @@ jQuery(function($){
             $('.qv-product-price').text('Sold Out').show();
             return true
           } else { 
-            console.log( v);
+//             console.log( v);
             price = parseFloat(v.price / 100).toFixed(2);
             original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
             $('.qv-product-price').text('$' + price);
