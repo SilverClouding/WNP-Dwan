@@ -138,15 +138,17 @@ jQuery(function($){
              checked = '';
             }
             
-            $(".option1_for_below_input input").each(function(){
-              var htmlvalue = $(this).attr("htmlvalue");
-              var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-              if( htmlvalue == jsvalue){
-                console.log($(this).attr('data_option1'));
-                console.log($(this).attr('data_option2'));
-                console.log($(this).attr('data_option3'));
-              }
-            });
+            if( i == 0 ){
+              $(".option1_for_below_input input").each(function(){
+                var htmlvalue = $(this).attr("htmlvalue");
+                var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+                if( htmlvalue == jsvalue){
+                  console.log($(this).attr('data_option1'));
+                  console.log($(this).attr('data_option2'));
+                  console.log($(this).attr('data_option3'));
+                }
+              });
+            }
             
             
             
