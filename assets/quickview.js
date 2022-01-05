@@ -14,8 +14,10 @@ jQuery(function($){
       var productdata = $(this).data('product');
       console.log(productdata);
       
+      var optionHtml = $(this).siblings('.variantselec').html();
     
-  var optionHtml = $(this).siblings('.variantselec').html();
+      
+      console.log(optionHtml);
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
@@ -123,7 +125,7 @@ jQuery(function($){
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
 //           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
-//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
+          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
        
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
@@ -163,10 +165,6 @@ jQuery(function($){
           }
         });
         
-        
-        
-        console.log(optionHtml);
-     $('.qv-product-options').append(optionHtml);
         
         $(product.tags).each(function (i, v) {
           if (v.indexOf('New') > -1){
