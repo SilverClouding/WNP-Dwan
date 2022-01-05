@@ -32,7 +32,7 @@ jQuery(function($){
         $('.qv-product-title').text(title);
         $('.qv-product-vendor').text(type);
         
-//         $('.qvswym').html("")
+        $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
         
         if(window._swat){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }); }
         
