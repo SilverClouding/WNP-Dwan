@@ -122,7 +122,7 @@ jQuery(function($){
           }
         });
         
-         $('.qv-product-options').append(optionHtml);
+         $('.qv-product-options').html(optionHtml);
 //           $('.vardataappend').append(optionHtml);
         
         $(options).each(function (i, option) {
