@@ -16,7 +16,7 @@ jQuery(function($){
       
       var optionHtml = $(this).siblings('.variantselec').html();
       console.log(optionHtml);
-      $('.vardataappend').addclass("optionHtml");
+    
       
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
@@ -136,7 +136,7 @@ jQuery(function($){
             }else{
              checked = '';
             }
-            
+              $('.vardataappend').addclass("optionHtml");
 //             optionHtml.find(".option1_for_below_input input").each(function(){
 //             console.log($(this).attr('data_option1'));
 //             });
