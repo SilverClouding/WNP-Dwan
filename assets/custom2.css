@@ -282,9 +282,9 @@ i.icon-swym-wishlist:after {
 .swym-ready i.icon-swym-wishlist:after {  
   visibility: visible;  content: '\f004';
 }
-.product-form__input input[type=radio]:checked+label.soldout{
+/* .product-form__input input[type=radio]:checked+label.soldout{
 border: 1px solid #d3d6d9!important;
-}
+} */
 .product-form__input input[type=radio]:checked+label.available{
     border: 1px solid #000!important;
 }
