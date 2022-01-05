@@ -471,11 +471,11 @@ jQuery(function($){
     var data_option3 = $(this).attr('data_option3').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
     console.log($("."+data_option2));
     console.log(data_option3);
-    if(data_option1 == thisValue){
+    if(data_option1 == thisValue){  }
     
-     $("."+data_option2).addClass('checked');
-     $("."+data_option3).addClass('checked');
-    }
+     $("."+data_option2).attr('checked');
+     $("."+data_option3).attr('checked');
+  
     
     
   });
