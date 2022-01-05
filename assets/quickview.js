@@ -15,7 +15,7 @@ jQuery(function($){
       console.log(productdata);
       
     
-
+  var optionHtml = $(this).siblings('.variantselec').html();
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
@@ -164,7 +164,7 @@ jQuery(function($){
         });
         
         
-          var optionHtml = $(this).siblings('.variantselec').html();
+        
         console.log(optionHtml);
      $('.qv-product-options').append(optionHtml);
         
