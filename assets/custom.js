@@ -479,8 +479,6 @@ jQuery(function($){
     if (lastChar3 == ',') {
       data_option3 = data_option3.slice(0, -1);
     }
-    console.log(data_option2);
-    console.log(data_option3);
          
     var data_option2Array = data_option2.split(",");
     $.each(data_option2Array,function(i){
@@ -497,9 +495,9 @@ jQuery(function($){
       var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       console.log(triggerOption3);
-      $(".option2_for_below_input .input-"+allOption3).siblings("label").addClass('soldout').removeClass('available');
-      $(".option2_for_below_input .input-"+triggerOption3).trigger('click');
-      $(".option2_for_below_input .input-"+allOption3).next('').removeClass('soldout').addClass('available');
+      $(".option3_for_below_input .input-"+allOption3).siblings("label").addClass('soldout').removeClass('available');
+      $(".option3_for_below_input .input-"+triggerOption3).trigger('click');
+      $(".option3_for_below_input .input-"+allOption3).next('').removeClass('soldout').addClass('available');
     });
     
     
