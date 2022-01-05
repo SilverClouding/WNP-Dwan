@@ -34,7 +34,7 @@ jQuery(function($){
         
 //         $('.qvswym').html("")
         
-        f(window._swat){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }); }
+        if(window._swat){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvbutton-wishlist"); }); }
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
