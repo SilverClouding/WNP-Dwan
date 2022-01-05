@@ -466,9 +466,9 @@ jQuery(function($){
 
   $('body').on('change', '.swatch :radio', function() {
     var thisValue = $(this).attr("value");
-     var data_option1 = $(this).attr('data_option1');
-    var data_option2 = $(this).attr('data_option2');
-    var data_option3 = $(this).attr('data_option3');
+     var data_option1 = $(this).attr('data_option1').replace(/,/g , '');
+    var data_option2 = $(this).attr('data_option2').replace(/,/g , '');
+    var data_option3 = $(this).attr('data_option3').replace(/,/g , '');
     
     if(data_option1 == thisValue){
     console.log(data_option2);
