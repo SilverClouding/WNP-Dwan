@@ -139,7 +139,11 @@ jQuery(function($){
             }
             
             $(".option1_for_below_input input").each(function(){
+              if($(this).attr("value") == value){
             console.log($(this).attr('data_option1'));
+                console.log($(this).attr('data_option2'));
+                console.log($(this).attr('data_option3'));
+              }
             });
             
             
