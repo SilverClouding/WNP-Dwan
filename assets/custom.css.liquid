@@ -3288,20 +3288,25 @@ select:focus, select:hover{
     }
   } 
 
-  
-   @media(max-width: 992px) {
-     .gallery-container{
-     flex-direction: column;
-     }
-  .gallery-main {
-    width: calc(100% - 0px);
+
+  @media(max-width: 992px) {
+    .gallery-container{
+      flex-direction: column;
+    }
+    .gallery-main {
+      width: calc(100% - 0px);
+    }
+    .product-section .gallery-main .product__media-list.grid{
+      order:1;
+    }
+    .gallery-thumbs{
+      order:2;
+    }
+
   }
-  
-     
-   }
-  
-  
-  
+
+
+
 
   /* review */
   .shopify-app-block .ElementsWidget-prefix .R-TextHeading--xxs{
@@ -3441,15 +3446,15 @@ select:focus, select:hover{
   .ElementsWidget-prefix .u-hr,
   .ElementsWidget-prefix .R-Field .R-Field__input:hover, 
   .ElementsWidget-prefix .R-Field .R-Field__input:focus{
-  border-color:#D3D6D9!important;
+    border-color:#D3D6D9!important;
   }
   .ElementsWidget-prefix .R-Field .R-Field__input,
   .ElementsWidget-prefix .R-TextHeading{
-  color:#44444d!important;
+    color:#44444d!important;
   }
- .ElementsWidget-prefix .R-Button--primary,
+  .ElementsWidget-prefix .R-Button--primary,
   .ElementsWidget-prefix .R-Button--secondary{
-  border: 1px solid #44444d!important;
+    border: 1px solid #44444d!important;
     background: 0 0!important;
     color: #44444d!important;
     font-size: 16px!important;
