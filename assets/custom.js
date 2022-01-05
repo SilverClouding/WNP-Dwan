@@ -472,7 +472,7 @@ jQuery(function($){
     
     if(data_option1 == thisValue){
     console.log(data_option2);
-    console.log(data_option2);
+    console.log(data_option3);
     }
     
     
