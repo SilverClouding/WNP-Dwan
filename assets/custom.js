@@ -472,10 +472,10 @@ jQuery(function($){
     console.log(data_option2);
     console.log(data_option3);
    
-    $(".option2_for_below_input .input-"+data_option2).siblings().removeAttr('checked','checked');
-    $(".option2_for_below_input .input-"+data_option2).attr('checked','checked');
-    $(".option3_for_below_input .input-"+data_option3).siblings().removeAttr('checked','checked');
-    $(".option3_for_below_input .input-"+data_option3).attr('checked','checked');
+    $(".option2_for_below_input .input-"+data_option2).siblings().removeAttr('checked');
+    $(".option2_for_below_input .input-"+data_option2).checked = true;
+    $(".option3_for_below_input .input-"+data_option3).siblings().removeAttr('checked');
+    $(".option3_for_below_input .input-"+data_option3).checked = true;
 
 
     
