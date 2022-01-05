@@ -633,8 +633,8 @@ jQuery(function($){
 
 
 if(window._swat){
-  window._swat.initializeActionButtons(".min-cart-items"); 
+  window._swat.initializeActionButtons(".save-whishlist"); 
 }else{ 
   window.SwymCallbacks = window.SwymCallbacks || []; 
-  window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".min-cart-items"); }); 
+  window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".save-whishlist"); }); 
 } 
