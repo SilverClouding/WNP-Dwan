@@ -300,3 +300,6 @@ a#notifyme {
     margin-bottom: 0;
     width: 100%;
 }
+.product .price .badge{
+margin:0!important;
+}
