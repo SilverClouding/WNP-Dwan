@@ -288,3 +288,15 @@ border: 1px solid #d3d6d9!important;
 .product-form__input input[type=radio]:checked+label.available{
     border: 1px solid #000!important;
 }
+
+a#notifyme {
+    background: #153a33;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 12px 20px;
+    font-weight: 500;
+    max-width: 380px;
+    margin-bottom: 0;
+    width: 100%;
+}
