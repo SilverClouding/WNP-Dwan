@@ -632,13 +632,12 @@ jQuery(function($){
 });
 
 
-if(window._swat){
-  window._swat.initializeActionButtons(".save-whishlist");
-}else{
-  window.SwymCallbacks = window.SwymCallbacks || [];
+function swymCallbackFn(swat){
+  // your API calls go here
+  swat.initializeActionButtons("save-whishlist");
 
-  window.SwymCallbacks.push(function(){
-    window._swat.initializeActionButtons(".save-whishlist");
-  });
 }
-
+if(!window.SwymCallbacks){
+  window.SwymCallbacks = [];
+}
+window.SwymCallbacks.push(swymCallbackFn);
