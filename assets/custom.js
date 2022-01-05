@@ -631,7 +631,7 @@ jQuery(function($){
   
 });
 
-jQuery(fucntion(){
+
        if(window._swat){
   window._swat.initializeActionButtons(".save-whishlist");
 }else{
@@ -642,4 +642,3 @@ jQuery(fucntion(){
   });
 }
 
-});
