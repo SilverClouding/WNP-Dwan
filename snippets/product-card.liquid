@@ -187,8 +187,6 @@
   {% endfor %}
 <div class="variantselec" style="display:none;">
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product_card_product.url }}" {{ block.shopify_attributes }}>
-
-
     {%- for option in product_card_product.options_with_values -%}
 
     {% assign optionString = "option"|append: forloop.index %}
@@ -196,8 +194,6 @@
     <fieldset class="js swatch product-form__input {{optionString}}_for_below_input">
       <legend class="form__label">{{ option.name }}</legend>
       {%- for value in option.values -%}
-
-
       {% assign curValueVars = product_card_product.variants | where: optionString, value %}
 
       {% assign option_1 = "" %}
@@ -205,11 +201,8 @@
       {% assign option_3 = "" %}
 
       {% for v in curValueVars %}
-
       {% if v.available %}
-
       {% if optionString == "option1" %}
-
       {% assign option_1 = value %}
       {% assign option_2 = option_2 | append: v.option2 |append:"," %}
       {% assign option_3 = option_3 | append: v.option3 |append:"," %}
