@@ -192,7 +192,7 @@
 
     {% assign optionString = "option"|append: forloop.index %}
 
-    <fieldset class="js swatch product-form__input {{optionString}}_for_below_input">
+    <fieldset class="option-selection-{{ option.name |handle }} js swatch product-form__input {{optionString}}_for_below_input">
       <legend class="form__label option">{{ option.name }}</legend>
       {%- for value in option.values -%}
       {% assign curValueVars = product_card_product.variants | where: optionString, value %}
