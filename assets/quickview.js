@@ -15,8 +15,7 @@ jQuery(function($){
       console.log(productdata);
       
     
-      
-      console.log(optionHtml);
+
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
