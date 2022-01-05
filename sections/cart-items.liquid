@@ -245,7 +245,7 @@ body.page-your-shopping-cart {
 <!--          <button class="save-whishlist" data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}">Save to wishlist</button>
            -->
           
-         <button data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}" ></button>
+         <button class="save-whishlist" data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}" ></button>
           
           
           <div class="cart__item-sub">
@@ -390,15 +390,15 @@ body.page-your-shopping-cart {
 
 
 <script>
-//   function swymCallbackFn(swat){
-//     // your API calls go here
-//     swat.initializeActionButtons(".save-whishlist");
+  function swymCallbackFn(swat){
+    // your API calls go here
+    _swat.initializeActionButtons('.min-cart-items');
 
-//   }
-//   if(!window.SwymCallbacks){
-//     window.SwymCallbacks = [];
-//   }
-//   window.SwymCallbacks.push(swymCallbackFn);
+  }
+  if(!window.SwymCallbacks){
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(swymCallbackFn);
 
 
 </script>
