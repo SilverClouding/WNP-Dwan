@@ -121,6 +121,10 @@
         </div>
       {%- endif -%}
   
+       <!-- Swym Wishlist Plus EPI Button-->
+  <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" data-swaction="addToWishlist" data-product-id="{{product_card_product.id | json}}" data-variant-id="{{product_card_product.variants[0].id}}" data-product-url="{{ shop.url }}{{ product_card_product.url }}"></button>
+  <!-- Swym Wishlist Plus EPI Button-->
+      
       
        {% assign newTagFlag =  false %}
         {% for tag in product_card_product.tags %}
@@ -158,6 +162,11 @@
   </div>
 </div>
 
+<script>
+
+    document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
+
+</script>
 
 <div class="quick-view-button">
 
@@ -233,3 +242,5 @@
   </variant-radios>
 
 </div>
+
+
