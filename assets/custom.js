@@ -492,7 +492,7 @@ jQuery(function($){
     var data_option2Array = data_option2.split(",");
 
     $.each(data_option2Array,function(i){
-      console.log(i);
+      console.log(data_option2Array[0]);
       $(".option3_for_below_input .input-"+data_option2Array[i]+" lable").removeClass('soldout').addClass('available');
     });
   });
