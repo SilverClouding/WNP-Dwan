@@ -465,8 +465,17 @@ jQuery(function($){
 jQuery(function($){
 
   $('body').on('change', '.swatch :radio', function() {
+    var thisValue = $(this).attr("value");
+     var data_option1 = $(this).attr('data_option1');
     var data_option2 = $(this).attr('data_option2');
+    var data_option3 = $(this).attr('data_option3');
+    
+    if(data_option1 == thisValue){
     console.log(data_option2);
+    console.log(data_option2);
+    }
+    
+    
   });
 
 
