@@ -479,8 +479,12 @@ jQuery(function($){
 
     
     $(".option2_for_below_input .input-"+data_option2).trigger('click');
-$(".option3_for_below_input .input-"+data_option3).trigger('click');
-    
+    $(".option2_for_below_input .input-"+data_option2+" lable").siblings().removeClass('available');
+    $(".option2_for_below_input .input-"+data_option2).next('').addClass('available');
+    $(".option3_for_below_input .input-"+data_option3).trigger('click');
+    $(".option3_for_below_input .input-"+data_option3+" lable").siblings().removeClass('available');
+    $(".option3_for_below_input .input-"+data_option3).next('').addClass('available');
+
   });
 
 
