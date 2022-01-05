@@ -136,7 +136,7 @@ jQuery(function($){
             }else{
              checked = '';
             }
-              $('.vardataappend').addclass("optionHtml");
+              $('.vardataappend').addClass("optionHtml");
 //             optionHtml.find(".option1_for_below_input input").each(function(){
 //             console.log($(this).attr('data_option1'));
 //             });
