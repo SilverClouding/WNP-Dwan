@@ -242,7 +242,7 @@
              {% if option.position == 3 %} {% if current_option3_array[0] == value %}checked {% endif %}  {% endif %} 
              >
       <label option_index="{{ option.position }}" 
-             class="swatch-element label-{{value | handle |replace:"_","-"}}
+             class="radio_butt swatch-element label-{{value | handle |replace:"_","-"}}
                     {% if option.position == 1 %} {% if option_2 != blank %} available {% else %} soldout {% endif %}{% endif %}
                     {% if option.position == 2 %} {% if current_option2 contains value %}available{% else %}soldout {% endif %}  {% endif %}
                     {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
