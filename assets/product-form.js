@@ -62,7 +62,7 @@ if (!customElements.get('product-form')) {
           
           function swymCallbackFn(swat){
             // your API calls go here
-              swat.initializeActionButtons("save-whishlist");
+              swat.initializeActionButtons(".save-whishlist");
            
           }
           if(!window.SwymCallbacks){
