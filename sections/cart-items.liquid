@@ -242,7 +242,7 @@ body.page-your-shopping-cart {
         <div class="cart__item-title-right">
           <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
 <!--           <a href="#" class="save-whishlist">Save to wishlist</a> -->
-         <button class="save-whishlist" data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}"></button>
+         <button class="save-whishlist" data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}">Save to wishlist</button>
           
           <div class="cart__item-sub">
             <span class="cart__price-old hide">{{ item.original_line_price | money }}</span>
