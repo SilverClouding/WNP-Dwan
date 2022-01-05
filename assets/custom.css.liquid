@@ -3363,6 +3363,7 @@ select:focus, select:hover{
     .product-tabs h2{
       font-size:30px;
       line-height:38px;
+      margin-bottom:12px;
     }
     .product__accordion summary{
       background-color:transparent !important;
@@ -3380,11 +3381,20 @@ select:focus, select:hover{
       line-height:20px;
       font-weight:800;
       color:#44444d;
+      opacity:0.7;
     }
     .product__accordion summary .icon-caret path {
       stroke: #44444d!important;
     }
-
+.product__accordion .accordion__content {
+    padding: 15px 0;
+}
+    .product__accordion details[open] summary,
+    .product__accordion details[open] summary .accordion__title{
+    color:#44444D;
+      border-bottom:3px solid #F5694D;
+      opacity:1;
+    }
 
   }
 
