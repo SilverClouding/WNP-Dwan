@@ -165,6 +165,7 @@ jQuery(function($){
         
         
           var optionHtml = $(this).siblings('.variantselec').html();
+        console.log(optionHtml);
      $('.qv-product-options').append(optionHtml);
         
         $(product.tags).each(function (i, v) {
