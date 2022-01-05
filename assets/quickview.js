@@ -139,11 +139,12 @@ jQuery(function($){
             }
             
             $(".option1_for_below_input input").each(function(){
-              if($(this).attr("value") == value){
-            console.log($(this).attr('data_option1'));
+              var htmlvalue = $(this).attr("htmlvalue");
+              var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+              if( htmlvalue == jsvalue){
+                console.log($(this).attr('data_option1'));
                 console.log($(this).attr('data_option2'));
                 console.log($(this).attr('data_option3'));
-                 return false;
               }
             });
             
