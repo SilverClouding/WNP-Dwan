@@ -14,8 +14,7 @@ jQuery(function($){
       var productdata = $(this).data('product');
       console.log(productdata);
       
-      var optionHtml = $(this).siblings('.variantselec').html();
-     $('.qv-product-options').html(optionHtml);
+    
       
       console.log(optionHtml);
       
@@ -165,6 +164,9 @@ jQuery(function($){
           }
         });
         
+        
+          var optionHtml = $(this).siblings('.variantselec').html();
+     $('.qv-product-options').html(optionHtml);
         
         $(product.tags).each(function (i, v) {
           if (v.indexOf('New') > -1){
