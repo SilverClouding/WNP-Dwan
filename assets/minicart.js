@@ -28,6 +28,15 @@ const showView = (event) => {
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
+    if(window._swat){
+      window._swat.initializeActionButtons(".save-whishlist");
+    }else{
+      window.SwymCallbacks = window.SwymCallbacks || [];
+
+      window.SwymCallbacks.push(function(){
+        window._swat.initializeActionButtons(".save-whishlist");
+      });
+    }
   });
   
   jQuery(document).on('change', '.minicart_variant select', function() {
