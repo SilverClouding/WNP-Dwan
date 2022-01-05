@@ -15,9 +15,8 @@ jQuery(function($){
       console.log(productdata);
       
       var optionHtml = $(this).siblings('.variantselec').html();
-    
+      $('.vardata').html(optionHtml);
       
-      console.log(optionHtml);
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
@@ -140,6 +139,8 @@ jQuery(function($){
             optionHtml.find(".option1_for_below_input input").each(function(){
             console.log($(this).attr('data_option1'));
             });
+            
+            
             
             $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
             
