@@ -38,7 +38,7 @@ jQuery(function($){
         $('.qv-product-vendor').text(type);
         
         $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
-        console.log(_swat);
+//         console.log(_swat);
         
 //         function swymCallbackFn(){
 //           // your API calls go here
