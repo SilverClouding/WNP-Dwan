@@ -498,6 +498,7 @@ jQuery(function($){
       $(".option2_for_below_input .input-"+allOption+" lable").siblings().removeClass('available');
       $(".option2_for_below_input .input-"+triggerOption).trigger('click');
       $(".option2_for_below_input .input-"+allOption+" lable").removeClass('soldout').addClass('available');
+      $(".option2_for_below_input .input-"+triggerOption).next('').removeClass('soldout').addClass('available');
     });
   });
 
