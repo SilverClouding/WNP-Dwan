@@ -136,9 +136,9 @@ jQuery(function($){
              checked = '';
             }
             
-            optionHtml.find(".option1_for_below_input input").each(function(){
-            console.log($(this).attr('data_option1'));
-            });
+//             optionHtml.find(".option1_for_below_input input").each(function(){
+//             console.log($(this).attr('data_option1'));
+//             });
             
             
             
