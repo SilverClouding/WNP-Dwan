@@ -484,7 +484,7 @@ jQuery(function($){
     $.each(data_option2Array,function(i){
       var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       var allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      //       console.log(triggerOption2);
+            console.log(allOption2);
       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout').removeClass('available');
       console.log($(".option2_for_below_input .input-"+triggerOption2).checked);
       $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
