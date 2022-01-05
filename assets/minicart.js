@@ -32,10 +32,10 @@ const showView = (event) => {
     
     function swymCallbackFn(swat){
       // your API calls go here
-      document.addEventListener("swym:collections-loaded", function(){
+      document.addEventListener("swym:collections-loaded", function(){ })
 //         swat.initializeActionButtons(".save-whishlist");
         console.log('init');
-      })
+     
     }
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
