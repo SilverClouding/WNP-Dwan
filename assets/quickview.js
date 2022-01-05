@@ -138,7 +138,7 @@ jQuery(function($){
             }
             
             
-            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
+            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
             
           });
         });
