@@ -464,10 +464,10 @@ jQuery(function($){
 //disable soldout option in product page 
 jQuery(function($){
 
-  $('body').on('change', '.swatch :radio', function() {
+  $('body').on('change', '.option1_for_below_input .swatch :radio', function() {
     var thisValue = $(this).attr("value");
-     var data_option1 = $(this).attr('data_option1');
-   
+    var data_option1 = $(this).attr('data_option1');
+
     var data_option2 = $(this).attr('data_option2');
     var lastChar2 = data_option2.slice(-1);
     if (lastChar2 == ',') {
@@ -479,41 +479,41 @@ jQuery(function($){
     if (lastChar3 == ',') {
       data_option3 = data_option3.slice(0, -1);
     }
-         console.log(data_option2);
+    console.log(data_option2);
     var data_option2Array = data_option2.split(",");
     var allOption2 = '';
     $.each(data_option2Array,function(i){
       var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-            console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-//       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
-//        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
-       $(".option2_for_below_input label").addClass('soldout');
-       $(".option2_for_below_input label").removeClass('available');
+      console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
+      //       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
+      //        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
+      $(".option2_for_below_input label").addClass('soldout');
+      $(".option2_for_below_input label").removeClass('available');
       $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
-      
+
       $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
       $(".option2_for_below_input .label-"+allOption2).addClass('available');
       $(".option2_for_below_input .label-"+triggerOption2).removeClass('soldout');
       $(".option2_for_below_input .label-"+triggerOption2).addClass('available');
     });
-    
-     var data_option3Array = data_option3.split(",");
+
+    var data_option3Array = data_option3.split(",");
     $.each(data_option3Array,function(i){
       var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//       console.log(triggerOption3);
-    $(".option3_for_below_input label").addClass('soldout');
-       $(".option3_for_below_input label").removeClass('available');
+      //       console.log(triggerOption3);
+      $(".option3_for_below_input label").addClass('soldout');
+      $(".option3_for_below_input label").removeClass('available');
       $(".option3_for_below_input .input-"+triggerOption3).trigger('click'); 
-      
+
       $(".option3_for_below_input .label-"+allOption3).removeClass('soldout');
       $(".option3_for_below_input .label-"+allOption3).addClass('available');
       $(".option3_for_below_input .label-"+triggerOption3).removeClass('soldout');
       $(".option3_for_below_input .label-"+triggerOption3).addClass('available');
     });
-    
-    
+
+
   });
 
 
