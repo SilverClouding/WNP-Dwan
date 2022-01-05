@@ -473,6 +473,8 @@ jQuery(function($){
     if(data_option1 == thisValue){
     console.log(data_option2);
     console.log(data_option3);
+     $("[value="+data_option2+"]") .attr('checked');
+     $("[value="+data_option3+"]") .attr('checked');
     }
     
     
