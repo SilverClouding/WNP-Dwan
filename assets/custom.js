@@ -473,8 +473,8 @@ jQuery(function($){
     console.log(data_option3);
     if(data_option1 == thisValue){  }
     
-     $("."+data_option2).attr('checked');
-     $("."+data_option3).attr('checked');
+     $(".input-"+data_option2).attr('checked');
+     $(".input-"+data_option3).attr('checked');
   
     
     
