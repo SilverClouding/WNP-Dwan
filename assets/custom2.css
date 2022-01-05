@@ -303,3 +303,13 @@ a#notifyme {
 .product .price .badge{
 margin:0!important;
 }
+
+h3#stockmsg {
+    position: absolute;
+    right: 0;
+    color: #F5694D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+}
