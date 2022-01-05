@@ -40,6 +40,7 @@ jQuery(function($){
         $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
         console.log(window._swat);
         
+        window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
         
         
         
