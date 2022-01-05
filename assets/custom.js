@@ -503,9 +503,14 @@ jQuery(function($){
       var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
 //       console.log(triggerOption3);
-      $(".option3_for_below_input .input-"+allOption3).siblings("label").addClass('soldout').removeClass('available');
-      $(".option3_for_below_input .input-"+triggerOption3).trigger('click');
-      $(".option3_for_below_input .label-"+allOption3).removeClass('soldout').addClass('available');
+    $(".option3_for_below_input label").addClass('soldout');
+       $(".option3_for_below_input label").removeClass('available');
+      $(".option3_for_below_input .input-"+triggerOption3).trigger('click'); 
+      
+      $(".option3_for_below_input .label-"+allOption3).removeClass('soldout');
+      $(".option3_for_below_input .label-"+allOption3).addClass('available');
+      $(".option3_for_below_input .label-"+triggerOption3).removeClass('soldout');
+      $(".option3_for_below_input .label-"+triggerOption3).addClass('available');
     });
     
     
