@@ -437,11 +437,7 @@
               {% endif %}
        
         
-        <h3 id="stockmsg" class="stockmsg">{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
-          {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
-          {% else %}Out of stock
-        {% endif %}
-        </h3>  
+        
         
         {% comment %}
         <variant-radios class="swatch_options no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
@@ -485,6 +481,13 @@
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  
+                  <h3 id="stockmsg" class="stockmsg">{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
+          {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
+          {% else %}Out of stock
+        {% endif %}
+        </h3>  
+                  
                   {%- for option in product.options_with_values -%}
                   
                   {% assign optionString = "option"|append: forloop.index %}
