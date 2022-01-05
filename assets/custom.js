@@ -479,7 +479,7 @@ jQuery(function($){
     if (lastChar3 == ',') {
       data_option3 = data_option3.slice(0, -1);
     }
-         
+         console.log(data_option2);
     var data_option2Array = data_option2.split(",");
     var allOption2 = '';
     $.each(data_option2Array,function(i){
