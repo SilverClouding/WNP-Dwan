@@ -239,51 +239,6 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-// wishlist
-
-// function swymCallbackFn(){
-//    // your API calls go here
-//  window._swat.fetch( function(r) {
-//   console.log(r);
-// //   document.getElementById('demo').innerHTML = r;
-// });
-// }
-// if(!window.SwymCallbacks){
-//  window.SwymCallbacks = [];
-// }
-// window.SwymCallbacks.push(swymCallbackFn);
-
-// jQuery(function($){
-//   setTimeout(function() {
-//     $(document).on('click','.swym-button',function(e){
-//       console.log("work");
-//       function swymCallbackFn(){
-//         // your API calls go here
-//         window._swat.wishlistCount(
-//           function(r) {
-//             document.getElementById("wishlist_item_count").innerHTML = r;
-//             console.log('Wishlist items - ', r);
-//           }
-//         );    
-//       }
-//       if(!window.SwymCallbacks){
-//         window.SwymCallbacks = [];
-//       }
-//       window.SwymCallbacks.push(swymCallbackFn);
-//     });
-//   }, 5000);
-// });
-
-
-
-
-
-
-
-
-
-
-
 
 // always page go top after page load
  document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -506,19 +461,13 @@ jQuery(function($){
   });
 
 
-// hide varient
-
-
+//disable soldout option in product page 
 jQuery(function($){
-  
-       
-     
-      $('body').on('change', '.swatch :radio', function() {
+
+  $('body').on('change', '.swatch :radio', function() {
     var data_option2 = $(this).attr('data_option2');
-        console.log(data_option2);
-      });
-
-
+    console.log(data_option2);
+  });
 
 
 });
