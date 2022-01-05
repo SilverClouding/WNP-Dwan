@@ -13,7 +13,7 @@
   <div class="swiper-scrollbar"></div>
 
 </div>
-
+{% endcomment %}
 <div class="qy-Img-section qv-product-images">
 <div class="qv-product-main-images"></div>
 <div class="qv-product-thumb-images slider-nav"></div>
@@ -128,10 +128,10 @@
     </div>
    
 </div>
-{% endcomment %}
 
 
 
+{% comment %}
 {%- assign quickshopFirstVariant = itemType.selected_or_first_available_variant -%}
 {%- assign quickshopquickshopFirstVariantImage = quickshopFirstVariant.featured_image | default: itemType.featured_image -%}
 {%- assign quickshopProductQuantityOption = settings.quickshop-product-quantity-option -%}
@@ -351,3 +351,4 @@ window.onclick = function(event) {
 <script>
   Theme.products["{{ itemType.id }}"] = {{ itemType | json }};
 </script>
+{% endcomment %}
