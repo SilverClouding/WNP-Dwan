@@ -473,9 +473,9 @@ jQuery(function($){
     console.log(data_option3);
    
     $(".option2_for_below_input .input-"+data_option2).siblings().removeAttr('checked');
-    $(".option2_for_below_input .input-"+data_option2).checked = true;
+    $(".option2_for_below_input .input-"+data_option2).setAttribute('checked');
     $(".option3_for_below_input .input-"+data_option3).siblings().removeAttr('checked');
-    $(".option3_for_below_input .input-"+data_option3).checked = true;
+    $(".option3_for_below_input .input-"+data_option3).setAttribute('checked');
 
 
     
