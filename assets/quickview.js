@@ -49,7 +49,7 @@ jQuery(function($){
 //         }
 //         window.SwymCallbacks.push(swymCallbackFn);
 
-window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
+// window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
         
         
 //         if(window._swat){ window._swat.initializeActionButtons(".qvswym"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvswym"); }); }
