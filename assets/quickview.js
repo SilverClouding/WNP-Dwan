@@ -124,6 +124,7 @@ jQuery(function($){
         });
         
          $('.qv-product-options').html(optionHtml);
+         theme.varChangefunc();
 //           $('.vardataappend').append(optionHtml);
         
         $(options).each(function (i, option) {
