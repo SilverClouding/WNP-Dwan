@@ -303,7 +303,9 @@ a#notifyme {
 .product .price .badge{
 margin:0!important;
 }
-
+variant-radios {
+    position: relative;
+}
 h3#stockmsg {
     position: absolute;
     right: 0;
@@ -312,4 +314,7 @@ h3#stockmsg {
     font-weight: 300;
     font-size: 14px;
     text-align: right;
+      padding: 0;
+    margin: 0;
+    top: 0;
 }
