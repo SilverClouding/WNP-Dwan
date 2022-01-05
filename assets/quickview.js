@@ -14,7 +14,10 @@ jQuery(function($){
       var productdata = $(this).data('product');
       console.log(productdata);
       
-      $(this).html($(this).siblings('.variantselec').html());
+      var optionHtml = $(this).siblings('.variantselec').html();
+//       $(this).html();
+      
+      console.log(optionHtml);
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
