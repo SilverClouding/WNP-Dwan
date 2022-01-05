@@ -635,7 +635,7 @@ jQuery(function($){
 function swymCallbackFn(swat){
   // your API calls go here
   document.addEventListener("swym:collections-loaded", function(){
-    swat.initializeActionButtons(".min-cart-items");
+    swat.initializeActionButtons(".save-whishlist");
   })
 }
 if(!window.SwymCallbacks){

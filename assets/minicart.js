@@ -19,6 +19,7 @@ const container = document.querySelector('.header__icon--cart');
 const showView = (event) => {
   event.preventDefault();
   console.log('show');
+  
   //mini cart section render
   fetch('/?sections=cart-items')
   .then((response) => response.json())
@@ -28,6 +29,20 @@ const showView = (event) => {
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
+    
+    function swymCallbackFn(swat){
+      // your API calls go here
+      document.addEventListener("swym:collections-loaded", function(){
+//         swat.initializeActionButtons(".save-whishlist");
+        console.log('init');
+      })
+    }
+    if(!window.SwymCallbacks){
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymCallbackFn);
+
+    
   });
   
   jQuery(document).on('change', '.minicart_variant select', function() {
