@@ -173,6 +173,10 @@
   <a class="quick-view" data-handle="{{ product_card_product.handle }}" data-product='{{product_card_product | json}}'>Quick View</a>
 
 
+  <!-- Swym button on product pages -->
+  <div class="swym-wishlist-button-bar"></div>
+  <!-- Swym button on product pages -->
+  
   {% assign current_available_variant = product_card_product.selected_or_first_available_variant %}
   {% assign  current_v_option1_vars  = product_card_product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
 
