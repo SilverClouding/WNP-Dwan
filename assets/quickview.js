@@ -40,16 +40,16 @@ jQuery(function($){
         $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
         console.log(_swat);
         
-        function swymCallbackFn(){
-          // your API calls go here
-          window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
-        }
-        if(!window.SwymCallbacks){
-          window.SwymCallbacks = [];
-        }
-        window.SwymCallbacks.push(swymCallbackFn);
+//         function swymCallbackFn(){
+//           // your API calls go here
+//           window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
+//         }
+//         if(!window.SwymCallbacks){
+//           window.SwymCallbacks = [];
+//         }
+//         window.SwymCallbacks.push(swymCallbackFn);
 
-
+window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
         
         
 //         if(window._swat){ window._swat.initializeActionButtons(".qvswym"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvswym"); }); }
