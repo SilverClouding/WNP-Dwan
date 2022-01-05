@@ -401,7 +401,6 @@
               {% if product.variants.size > 1 %}
               {% if product.options[0] %}
               {% assign used = '' %}
-              <label for="select-one">{{ product.options[0] }}</label>
               <select class="single-option-selector" id='select-one' onchange="letsDoThis()">
                 {% for variant in product.variants %}
                 {% unless used contains variant.option1 %}
