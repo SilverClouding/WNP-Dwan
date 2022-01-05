@@ -301,7 +301,7 @@ button.slick-next.slick-arrow {
     display: inline-flex;
 }
 
-.product-form__input input[type=radio]:checked+label {
+.product-form__input input[type=radio]:checked+label.available {
     border: 1px solid #000!important;
 }
 
