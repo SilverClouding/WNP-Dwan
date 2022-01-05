@@ -143,7 +143,7 @@ jQuery(function($){
             console.log($(this).attr('data_option1'));
                 console.log($(this).attr('data_option2'));
                 console.log($(this).attr('data_option3'));
-                break;
+                 return false;
               }
             });
             
