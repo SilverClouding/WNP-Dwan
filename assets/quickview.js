@@ -148,7 +148,7 @@ jQuery(function($){
                   console.log($(this).attr('data_option3'));
                 }
               });
-              return false;
+             
             }
             
             
