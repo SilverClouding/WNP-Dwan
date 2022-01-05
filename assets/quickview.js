@@ -32,7 +32,7 @@ jQuery(function($){
         $('.qv-product-title').text(title);
         $('.qv-product-vendor').text(type);
         
-        $('.qvswym').html("<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" ></button>")
+//         $('.qvswym').html("")
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
