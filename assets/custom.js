@@ -481,24 +481,28 @@ jQuery(function($){
     }
     console.log(data_option2);
     console.log(data_option3);
-     
-//     $(".option2_for_below_input .input-"+data_option2).trigger('click');
-//     $(".option2_for_below_input .input-"+data_option2+" lable").siblings().removeClass('available');
-//     $(".option2_for_below_input .input-"+data_option2).next('').removeClass('soldout').addClass('available');
-//     $(".option3_for_below_input .input-"+data_option3).trigger('click');
-//     $(".option3_for_below_input .input-"+data_option3+" lable").siblings().removeClass('available');
-//     $(".option3_for_below_input .input-"+data_option3).next('').removeClass('soldout').addClass('available');
-    
+         
     var data_option2Array = data_option2.split(",");
-
     $.each(data_option2Array,function(i){
-      var triggerOption = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      var allOption = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      console.log(triggerOption);
-      $(".option2_for_below_input .input-"+allOption).siblings("label").addClass('soldout').removeClass('available');
-      $(".option2_for_below_input .input-"+triggerOption).trigger('click');
-      $(".option2_for_below_input .input-"+allOption).next('').removeClass('soldout').addClass('available');
+      var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      var allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      console.log(triggerOption2);
+      $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout').removeClass('available');
+      $(".option2_for_below_input .input-"+triggerOption2).trigger('click');
+      $(".option2_for_below_input .input-"+allOption2).next('').removeClass('soldout').addClass('available');
     });
+    
+     var data_option3Array = data_option3.split(",");
+    $.each(data_option3Array,function(i){
+      var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      console.log(triggerOption3);
+      $(".option2_for_below_input .input-"+allOption3).siblings("label").addClass('soldout').removeClass('available');
+      $(".option2_for_below_input .input-"+triggerOption3).trigger('click');
+      $(".option2_for_below_input .input-"+allOption3).next('').removeClass('soldout').addClass('available');
+    });
+    
+    
   });
 
 
