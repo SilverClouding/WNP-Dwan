@@ -121,6 +121,7 @@ jQuery(function($){
             $('.qv-product-thumb-images').append(image_embed_thumb);
           }
         });
+        
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
@@ -141,6 +142,8 @@ jQuery(function($){
             
           });
         });
+        
+        
         $(product.variants).each(function (i, v) {
          
           if (v.available == false) {
