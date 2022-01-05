@@ -492,8 +492,12 @@ jQuery(function($){
     var data_option2Array = data_option2.split(",");
 
     $.each(data_option2Array,function(i){
-      console.log(data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-      $(".option3_for_below_input .input-"+data_option2Array[i]+" lable").removeClass('soldout').addClass('available');
+      var triggerOption = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      var allOption = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+      console.log(triggerOption);
+      $(".option2_for_below_input .input-"+allOption+" lable").siblings().removeClass('available');
+      $(".option2_for_below_input .input-"+triggerOption).trigger('click');
+      $(".option2_for_below_input .input-"+allOption+" lable").removeClass('soldout').addClass('available');
     });
   });
 
