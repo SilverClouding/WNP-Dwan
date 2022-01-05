@@ -464,7 +464,7 @@ jQuery(function($){
 //disable soldout option in product page 
 jQuery(function($){
 
-  $('body').on('change', '.option1_for_below_input .swatch :radio', function() {
+  $('body').on('change', '.option1_for_below_input.swatch :radio', function() {
     var thisValue = $(this).attr("value");
     var data_option1 = $(this).attr('data_option1');
 
