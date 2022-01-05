@@ -16,7 +16,7 @@ jQuery(function($){
       
       var optionHtml = $(this).siblings('.variantselec').html();
       console.log(optionHtml);
-      $('.vardata').append(optionHtml);
+      $('.vardataappend').append(optionHtml);
       
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
