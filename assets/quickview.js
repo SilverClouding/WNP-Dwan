@@ -125,7 +125,7 @@ jQuery(function($){
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
 //           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
-          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
+//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
        
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
