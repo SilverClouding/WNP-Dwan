@@ -14,6 +14,7 @@ jQuery(function($){
       var productdata = $(this).data('product');
       console.log(productdata);
       
+      $(this).html($(this).siblings('.variantselec').html());
       
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
@@ -34,6 +35,8 @@ jQuery(function($){
         
         $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
         console.log(window._swat);
+        
+        
         
         
 //         if(window._swat){ window._swat.initializeActionButtons(".qvswym"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvswym"); }); }
