@@ -466,9 +466,9 @@ jQuery(function($){
 
   $('body').on('change', '.swatch :radio', function() {
     var thisValue = $(this).attr("value");
-     var data_option1 = $(this).attr('data_option1').replace(/,/g , '').replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-    var data_option2 = $(this).attr('data_option2').replace(/,/g , '').replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-    var data_option3 = $(this).attr('data_option3').replace(/,/g , '').replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+     var data_option1 = $(this).attr('data_option1').replace(/,/g , '').replace(/-$/, '').replace(/^-/, '');
+    var data_option2 = $(this).attr('data_option2').replace(/,/g , '').replace(/-$/, '').replace(/^-/, '');
+    var data_option3 = $(this).attr('data_option3').replace(/,/g , '').replace(/-$/, '').replace(/^-/, '');
     
     if(data_option1 == thisValue){
     console.log(("[value='"+data_option2+"']"));
