@@ -632,7 +632,7 @@ jQuery(function($){
 });
 
 
-       if(window._swat){
+if(window._swat){
   window._swat.initializeActionButtons(".save-whishlist");
 }else{
   window.SwymCallbacks = window.SwymCallbacks || [];
