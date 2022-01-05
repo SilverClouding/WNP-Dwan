@@ -15,7 +15,7 @@ jQuery(function($){
       console.log(productdata);
       
       var optionHtml = $(this).siblings('.variantselec').html();
-      console.log(optionHtml);
+//       console.log(optionHtml);
     
       
       
