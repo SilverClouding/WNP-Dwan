@@ -466,25 +466,24 @@ jQuery(function($){
 
   $('body').on('change', '.swatch :radio', function() {
     var thisValue = $(this).attr("value");
-     var data_option1 = $(this).attr('data_option1').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
-    var data_option2 = $(this).attr('data_option2').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
-    var data_option3 = $(this).attr('data_option3').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
+     var data_option1 = $(this).attr('data_option1');
+    var data_option2 = $(this).attr('data_option2');
+    var data_option3 = $(this).attr('data_option3');
     console.log(data_option2);
     console.log(data_option3);
-   
-//     $(".option2_for_below_input .input-"+data_option2).siblings().removeAttr('checked');
-//     $(".option2_for_below_input .input-"+data_option2).attr('checked', "");
-//     $(".option3_for_below_input .input-"+data_option3).siblings().removeAttr('checked');
-//     $(".option3_for_below_input .input-"+data_option3).attr('checked', "");
-
+     
+//     $(".option2_for_below_input .input-"+data_option2).trigger('click');
+//     $(".option2_for_below_input .input-"+data_option2+" lable").siblings().removeClass('available');
+//     $(".option2_for_below_input .input-"+data_option2).next('').removeClass('soldout').addClass('available');
+//     $(".option3_for_below_input .input-"+data_option3).trigger('click');
+//     $(".option3_for_below_input .input-"+data_option3+" lable").siblings().removeClass('available');
+//     $(".option3_for_below_input .input-"+data_option3).next('').removeClass('soldout').addClass('available');
     
-    $(".option2_for_below_input .input-"+data_option2).trigger('click');
-    $(".option2_for_below_input .input-"+data_option2+" lable").siblings().removeClass('available');
-    $(".option2_for_below_input .input-"+data_option2).next('').removeClass('soldout').addClass('available');
-    $(".option3_for_below_input .input-"+data_option3).trigger('click');
-    $(".option3_for_below_input .input-"+data_option3+" lable").siblings().removeClass('available');
-    $(".option3_for_below_input .input-"+data_option3).next('').removeClass('soldout').addClass('available');
+    var data_option2Array = data_option2.split(",");
 
+    $.each(data_option2Array,function(i){
+      alert(data_option2Array[i]);
+    });
   });
 
 
