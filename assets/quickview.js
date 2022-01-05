@@ -34,7 +34,17 @@ jQuery(function($){
         
         $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
         console.log(window._swat);
-        if(window._swat){ window._swat.initializeActionButtons(".qvswym"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvswym"); }); }
+        
+        
+//         if(window._swat){ window._swat.initializeActionButtons(".qvswym"); }else{ window.SwymCallbacks = window.SwymCallbacks || []; window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".qvswym"); }); }
+        
+        function swymCallbackFn(){
+          // your API calls go here
+        }
+        if(!window.SwymCallbacks){
+          window.SwymCallbacks = [];
+        }
+        window.SwymCallbacks.push(swymCallbackFn);
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
