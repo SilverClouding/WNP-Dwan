@@ -227,7 +227,7 @@
       {% endfor %}
 
 
-      <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="input_{{ value | handle |replace:"-","_" }}"
              name="{{ option.name }}"
              value="{{ value | escape }}"
              htmlvalue="{{ value | handle |replace:"_","-" }}"
@@ -248,7 +248,7 @@
                     {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
 
                     "  
-             for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+             for="input_{{ value | handle |replace:"-","_" }}">
         {{ value }}
       </label>
       {%- endfor -%}
