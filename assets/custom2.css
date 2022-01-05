@@ -318,3 +318,11 @@ h3#stockmsg {
     margin: 0;
     top: 0;
 }
+
+li.breadcrumbs__item a {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #44444d;
+}
