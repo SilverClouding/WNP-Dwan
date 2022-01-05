@@ -486,7 +486,11 @@ jQuery(function($){
       var allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       console.log(triggerOption2);
       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout').removeClass('available');
-      $(".option2_for_below_input .input-"+triggerOption2).trigger('click');
+      if ($(".option2_for_below_input .input-"+triggerOption2).checked){ 
+        console.log("true");
+      }else{
+        $(".option2_for_below_input .input-"+triggerOption2).trigger('click');
+      }
       $(".option2_for_below_input .input-"+allOption2).next(".option2_for_below_input .label-"+allOption2).removeClass('soldout').addClass('available');
     });
     
