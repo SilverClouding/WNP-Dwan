@@ -1,6 +1,7 @@
 //Quick View
 jQuery(function($){
 
+  console.log(theme);
   $(document).ready(function () {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js").done(function() {
       quickView();
