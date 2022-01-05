@@ -469,12 +469,16 @@ jQuery(function($){
      var data_option1 = $(this).attr('data_option1');
    
     var data_option2 = $(this).attr('data_option2');
-    var lastChar = data_option2.slice(-1);
-    if (lastChar == ',') {
+    var lastChar2 = data_option2.slice(-1);
+    if (lastChar2 == ',') {
       data_option2 = data_option2.slice(0, -1);
     }
 
     var data_option3 = $(this).attr('data_option3');
+    var lastChar3 = data_option3.slice(-1);
+    if (lastChar3 == ',') {
+      data_option3 = data_option3.slice(0, -1);
+    }
     console.log(data_option2);
     console.log(data_option3);
      
