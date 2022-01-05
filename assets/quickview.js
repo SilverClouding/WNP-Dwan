@@ -15,7 +15,7 @@ jQuery(function($){
       console.log(productdata);
       
       var optionHtml = $(this).siblings('.variantselec').html();
-//       $(this).html();
+     $('.qv-product-options').html(optionHtml);
       
       console.log(optionHtml);
       
