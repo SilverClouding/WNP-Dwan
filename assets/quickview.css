@@ -301,6 +301,9 @@ button.slick-next.slick-arrow {
     display: inline-flex;
 }
 
+.product-form__input input[type=radio]:checked+label {
+    border: 1px solid #000!important;
+}
 
 .product-form__input input[type=radio] {
   clip: rect(0,0,0,0);
