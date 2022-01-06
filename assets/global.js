@@ -859,9 +859,9 @@ class VariantRadios extends VariantSelects {
           console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked));
       const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
       
-      var thisValue = $this.attr("value");
-      var data_option1 = $this.attr('data_option1');
-      var data_option2 = $this.attr('data_option2');
+      var thisValue = $this.getAttribute("value");
+      var data_option1 = $this.getAttribute('data_option1');
+      var data_option2 = $this.getAttribute('data_option2');
       console.log(data_option2);
       
       
