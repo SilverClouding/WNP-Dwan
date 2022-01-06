@@ -177,6 +177,8 @@
  
 
   <div class="variantselec" style="display:none;">   
+    <div class="product__info-wrapper" >
+      <div class="product__info-container">
       {% render "variant-selector-for-quickshop"  product: product_card_product %}
     <product-form class="product-form"> 
     {%- form 'product', product_card_product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
@@ -233,6 +235,9 @@
     </div> 
       {%- endform -%}
     </product-form>
+    
+    </div>
+    </div>
   </div>
 
 </div>
