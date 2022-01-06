@@ -873,6 +873,7 @@ class VariantRadios extends VariantSelects {
           data_option2 = data_option2.slice(0, -1);
         
         }
+        console.log(data_option2);
         
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' ? data_option2.split(",") : false );
         
