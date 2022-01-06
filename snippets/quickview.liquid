@@ -14,69 +14,69 @@
 
 </div>
 {% endcomment %}
-<section>
-<div class="qy-Img-section qv-product-images">
-<div class="qv-product-main-images"></div>
-<div class="qv-product-thumb-images slider-nav"></div>
-</div>
 
-<div class="qv-content">
+<div class="qy-Img-section qv-product-images">
+  <div class="qv-product-main-images"></div>
+  <div class="qv-product-thumb-images slider-nav"></div>
+</div>
+<section>
+  <div class="qv-content">
     <div class="holder"> 
-      
-       <span class="badge badge--bottom-left qv_price__badge-new color-{{ settings.sale_badge_color_scheme }}">
-          {{ 'products.product.new' | t }}
-        </span>
+
+      <span class="badge badge--bottom-left qv_price__badge-new color-{{ settings.sale_badge_color_scheme }}">
+        {{ 'products.product.new' | t }}
+      </span>
       {% comment %}
-       <span class="badge badge--bottom-left qv_price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-          {{ 'products.product.on_sale' | t }}
-        </span>
+      <span class="badge badge--bottom-left qv_price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+        {{ 'products.product.on_sale' | t }}
+      </span>
       {% endcomment %}
-      
-      
+
+
       <h4 class="qv-product-vendor"></h4>
-        <h3 class="qv-product-title"></h3> 
+      <h3 class="qv-product-title"></h3> 
       <div class="product-price-cont">
-      <h5 class="qv-product-price"></h5>
+        <h5 class="qv-product-price"></h5>
         <h5 class="qv-product-original-price"></h5>
       </div>
-       
-       <div class="qv-product-description"></div>
-       <a class="view-product hide" href=""><span>Learn More</span></a>
-        <hr />
-     
-        <div class="qv-add-to-cart">
-<!--             <div class="qv-product-options"></div> -->
-          
-             <div class="qv-product-options_html"></div>
-          
-<!--             <div class="quantity">
-                <span>Quantity</span>
-                <input type="number" class="qv-quantity" value="1" min="1">
-            </div> -->
-          
-          {% comment %}
-          <div class="qty-threshold">
-            <div class="qty">
-          <quantity-input class="quantity">
-                <button class="quantity__button no-js-hidden" name="minus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input class="quantity__input qv-quantity"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="4"
-                    value="4"
-                    form="{{ product_form_id }}"
-                  >
-                <button class="quantity__button no-js-hidden" name="plus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon-plus' %}
-                </button>
-              </quantity-input>
-           <p>Minimum quantity of 4</p>
-            </div>
+
+      <div class="qv-product-description"></div>
+      <a class="view-product hide" href=""><span>Learn More</span></a>
+      <hr />
+
+      <div class="qv-add-to-cart">
+        <!--             <div class="qv-product-options"></div> -->
+
+        <div class="qv-product-options_html"></div>
+
+        <!--             <div class="quantity">
+<span>Quantity</span>
+<input type="number" class="qv-quantity" value="1" min="1">
+</div> -->
+
+        {% comment %}
+        <div class="qty-threshold">
+          <div class="qty">
+            <quantity-input class="quantity">
+              <button class="quantity__button no-js-hidden" name="minus" type="button">
+                <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                {% render 'icon-minus' %}
+              </button>
+              <input class="quantity__input qv-quantity"
+                     type="number"
+                     name="quantity"
+                     id="Quantity-{{ section.id }}"
+                     min="4"
+                     value="4"
+                     form="{{ product_form_id }}"
+                     >
+              <button class="quantity__button no-js-hidden" name="plus" type="button">
+                <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                {% render 'icon-plus' %}
+              </button>
+            </quantity-input>
+            <p>Minimum quantity of 4</p>
+          </div>
           <div class="threshold">
 
             {% assign cartTotal = cart.total_price %}
@@ -119,22 +119,22 @@
             </div>
 
           </div>
-          </div>
-
-          
-          <div class="divider-con">
-            <input type="submit" class="qv-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
-            <div class="qvswym">
-
-            </div>
-          </div><div class="qv-add-to-cart-response"></div>
-          {% endcomment %}
-          
         </div>
-       <div class="vardataappend" style="display:none;"></div>
+
+
+        <div class="divider-con">
+          <input type="submit" class="qv-add-button product-form__submit button button--full-width button--secondary" value="Add to Cart">
+          <div class="qvswym">
+
+          </div>
+        </div><div class="qv-add-to-cart-response"></div>
+        {% endcomment %}
+
+      </div>
+      <div class="vardataappend" style="display:none;"></div>
     </div>
-   
-</div>
+
+  </div>
 
 
 
