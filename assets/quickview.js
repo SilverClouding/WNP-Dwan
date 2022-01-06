@@ -133,7 +133,7 @@ jQuery(function($){
         });
         
          $('.qv-product-options_html').html(optionHtml);
-         theme.varChangefunc();
+       
 //           $('.vardataappend').append(optionHtml);
         
         $(options).each(function (i, option) {
@@ -213,6 +213,8 @@ jQuery(function($){
         
       });
 
+        theme.varChangefunc();
+      
       $(document).on("change", "#quick-view select, .radio_butt", function () {
          console.log($('.radio_butt').val());
         var selectedOptions = '';
