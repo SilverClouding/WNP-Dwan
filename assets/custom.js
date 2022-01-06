@@ -462,10 +462,14 @@ jQuery(function($){
 
 
 //open qty popup
+
+$(document).ready(function() {
+  $("a.fancybox").fancybox()
+});
 jQuery(function($){
-  $(document).on('click', '.popup_minq', function(){
-    $('.open_popup_minq').addClass('active');
-  });
+//   $(document).on('click', '.popup_minq', function(){
+//     $('.open_popup_minq').addClass('active');
+//   });
 });
 
 
