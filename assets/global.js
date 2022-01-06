@@ -861,16 +861,17 @@ class VariantRadios extends VariantSelects {
       
 
 
-      var data_option1= $this.getAttribute('data_option1');
-      var data_option3 = $this.getAttribute('data_option3');
-
+    
       
      
      
       var count = 0
-    
+
       if(fieldsets[0] == fieldset ){
         const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
+        var data_option1= $this.getAttribute('data_option1');
+        var data_option3 = $this.getAttribute('data_option3');
+
         count = 1;
         var thisValue = $this.getAttribute("value");
         var data_option2 = $this.getAttribute('data_option2');
@@ -879,16 +880,12 @@ class VariantRadios extends VariantSelects {
           data_option2 = data_option2.slice(0, -1);
         }
         var data_option2Array = data_option2.split(",");
-        
+
         [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
-        
+
           console.log(element);
-        
+
         }); 
-        
-        
-        
-//         var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
 
       }
 
