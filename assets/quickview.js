@@ -206,7 +206,7 @@ jQuery(function($){
       });
 
 //         theme.varChangefunc();      
-      $(document).on("change", "#"+product_card_product_id ".radio_butt", function () {
+      $(document).on("change", "#"+product_card_product_id+" .radio_butt", function () {
 
         var thisValue = $(this).attr("value");
         var data_option1 = $(this).attr('data_option1');
