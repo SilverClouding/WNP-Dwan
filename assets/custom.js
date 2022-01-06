@@ -533,7 +533,29 @@ jQuery(function($){
      var openId = "#qv_"+$(this).attr('data-productid');
       $(openId).addClass('active');
      $(openId).show(); 
+     
+     
+     var swiper = new Swiper(".qvgallery-main", {
+       spaceBetween: 10,
+       slidesPerView: 4,
+       freeMode: true,
+       watchSlidesProgress: true,
+     });
+     var swiper2 = new Swiper(".qvgallery-thumbs", {
+       spaceBetween: 10,
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+       thumbs: {
+         swiper: swiper,
+       },
+     });
+     
+     
    });
+  
+  
      
 });
 
