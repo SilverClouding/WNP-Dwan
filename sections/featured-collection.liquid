@@ -59,6 +59,7 @@
         show_image_outline: section.settings.show_image_outline,
         show_rating: section.settings.show_rating
         %}
+         {% render 'new-quickview-content' ,product_card_product: product%}
       </li>
       {%- else -%}
       {%- for i in (1..4) -%}
