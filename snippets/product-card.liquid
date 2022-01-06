@@ -173,6 +173,7 @@
   <a class="quick-view" data-handle="{{ product_card_product.handle }}" data-product='{{product_card_product | json}}'>Quick View</a>
 
 
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {% assign current_available_variant = product_card_product.selected_or_first_available_variant %}
   {% assign  current_v_option1_vars  = product_card_product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
 
@@ -186,7 +187,8 @@
   {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
   {% endfor %}
   
-<div class="variantselec" style="display:none;">
+<div class="variantselec" style="display:none;">  
+  {%- form 'product', product_card_product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product_card_product.url }}" {{ block.shopify_attributes }}>
     {%- for option in product_card_product.options_with_values -%}
 
@@ -270,7 +272,7 @@
                   <span class="product-form__error-message"></span>
                 </div>
 
-                {%- form 'product', product_card_product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+             
                   <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
 
                
@@ -311,11 +313,11 @@
                       {{ form | payment_button }}
                     
                   </div>
-                {%- endform -%}
+               
               </product-form>
 
              
-            </div>
+            </div> {%- endform -%}
   </div>
   
 </div>
