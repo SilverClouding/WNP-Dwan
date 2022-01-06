@@ -883,7 +883,12 @@ class VariantRadios extends VariantSelects {
 
         [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
 
-          console.log(element);
+          if(data_option2Array.indexOf(element.value) > -1 ){
+            console.log(element);
+            
+            element.classList.add('available');
+            element.classList.remove('soldout');
+          }
 
         }); 
 
