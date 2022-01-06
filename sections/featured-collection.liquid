@@ -59,7 +59,7 @@
         show_image_outline: section.settings.show_image_outline,
         show_rating: section.settings.show_rating
         %}
-         {% render 'new-quickview-content' ,product_card_product: product%}
+        
       </li>
       {%- else -%}
       {%- for i in (1..4) -%}
@@ -74,6 +74,14 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
+  
+   {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+   {% render 'new-quickview-content' ,product_card_product: product%}
+  {%- endfor -%}
+  
+  
+  
+  
   {% endif %}
   
   
