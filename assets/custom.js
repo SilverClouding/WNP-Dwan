@@ -460,6 +460,148 @@ jQuery(function($){
     console.log('click work notify')
   });
 
+
+// minicart
+
+
+
+jQuery(function($){ 
+  var selectedOptions = $('.minicart_variant').attr('var_default_id');
+  $(document).on('change', '.minicart_variant select', function() {
+    //Use $option (with the "$") to see that the variable is a jQuery object
+    var $option = $(this).find('option:selected');
+    //Added with the EDIT
+    var value = $option.val();//to get content of "value" attrib
+    var text = $option.text();//to get <option>Text</option> content
+    selectedOptions = value;
+  });
+  console.log(selectedOptions);
+
+  $(document).on('click',".mini-add-button", function (e) {
+
+
+
+    e.preventDefault();
+    console.log('click work');
+    var product_handle = $(this).data('handle');
+    jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+      console.log(product);
+      var title = product.title;
+      product_handle = product.handle;
+      var url = '/products/' + product_handle;
+      var qty = 1;
+      var var_id = 0;
+
+      var select = $(this).parents('.minicart_add_to_cart').siblings('.minicart_variant').children('select'); 
+      $(select).addClass('ok');
+
+      //             $(select+' option:selected').each(function (i) {
+
+      //               selectedOptions = $(this).val();
+
+      //             });
+
+
+
+
+      jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+        $(product.variants).each(function (i, v) { 
+
+          console.log(product.variants.length);
+
+          //           if(product.variants.length > 1){ }else{
+          //             selectedOptions = $('.minicart_variant').attr('var_default_id');
+          //           }
+          //            
+          if(product.variants.length > 1){
+            if ( v.id == selectedOptions ){ 
+              var_id = v.id;
+              processCart();
+              //               console.log(v.available+"-"+v.title);
+              console.log(v.id+'='+selectedOptions); 
+              //               console.log(selectedOptions);
+            }
+          }else{
+            console.log('else');
+            var_id = v.id;
+            processCart();
+          }
+          //          console.log(var_id); 
+
+
+        });
+      });
+
+      function processCart() {
+        jQuery.post('/cart/add.js', {
+          quantity: qty,
+          id: var_id
+        },
+                    null,
+                    "json"
+                   ).done(function () {
+
+
+
+          $.getJSON('/?sections=cart-items', function(data) {      
+            var sectionHtmlData = data; 
+            console.log(data);
+            var SectionHtml = sectionHtmlData['cart-items'] ;
+            $("#mini-cart").html(SectionHtml);
+            $('#mini-cart').toggleClass("show-minibag");
+            $('body').toggleClass("overflow-hidden");
+            $('.minibag-mask').show();
+            $('#mini-cart').removeClass("hide-minibag");
+            $('.crosssell-group .feedback-add_in_modal').each(function(e){
+              theme.applyAjaxToProductForm($(this));
+            });
+
+          });
+
+
+          // $('.qv-add-to-cart-response').addClass('success').html('<span>' + $('.qv-product-title').text() + ' has been added to your cart. <a href="/cart">Click here to view your cart.</a>');
+
+
+        })
+        .fail(function ($xhr) {
+          var data = $xhr.responseJSON;
+          $('.qv-add-to-cart-response').addClass('error').html('<span><b>ERROR: </b>' + data.description);
+        });
+
+
+      }
+
+
+
+    });
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var theme = theme || {};
 //disable soldout option in product page 
 jQuery(function($){
