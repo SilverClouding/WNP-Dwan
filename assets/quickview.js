@@ -107,7 +107,11 @@ jQuery(function($){
         
         $('.qv-product-options_html').html(htmlfetchData);
         
-        $(this).siblings('.variantselec').html('')
+        
+        setTimeout(function() {
+          $(this).siblings('.variantselec').html('')
+        }, 2500);
+        
         
         $(options).each(function (i, option) {
           var opt = option.name;
