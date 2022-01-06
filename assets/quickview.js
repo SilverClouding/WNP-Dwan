@@ -13,7 +13,7 @@ jQuery(function($){
     $('.qv_price__badge-sale').hide();
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
-      console.log(productdata);
+      console.log(productdata.id);
       
       var optionHtml = $(this).siblings('.variantselec').html();
 //       console.log(optionHtml);
