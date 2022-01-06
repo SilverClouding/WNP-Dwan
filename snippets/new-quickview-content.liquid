@@ -6,56 +6,7 @@
     
     
     <div class="grid__item product__media-wrapper">
-      <slider-component class="slider-mobile-gutter">
-        <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
-          {{ "accessibility.skip_to_product_info" | t }}
-        </a>
-        
-        
-        <div class="gallery-container">
-          <div class="swiper-container gallery-main">
-            <ul class=" swiper-wrapper product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-              {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-              {%- if product.selected_or_first_available_variant.featured_media != null -%}
-              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-              <li class="swiper-slide product__media-item grid__item slider__slide" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: 'featured', loop: true, modal_id: product.id, xr_button: true %}
-              </li>
-              {%- endif -%}
-              {%- for media in product.media -%}
-              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-              <li class="swiper-slide product__media-item grid__item slider__slide" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: false, modal_id: product.id, xr_button: true %}
-              </li>
-              {%- endunless -%}
-              {%- endfor -%}
-            </ul>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          
-          <div class="swiper-container gallery-thumbs">
-            <ul class=" swiper-wrapper product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-              {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-              
-              {%- for media in product.media -%}
-              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-              <li class="swiper-slide product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, hide_icon: true %}
-              </li>
-              {%- endunless -%}
-              {%- endfor -%}
-            </ul>
-          </div>       
-        </div>
-        
-       
-      </slider-component>
-      
-      
-
-
-      
+      {% render "image-section-for-quickshop"  product: product_card_product %}
     </div>
     
     <div class="product__info-wrapper grid__item" >
