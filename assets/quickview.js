@@ -204,7 +204,12 @@ jQuery(function($){
         
       });
 
-        theme.varChangefunc();
+//         theme.varChangefunc();
+      
+      $('body').on('change', '#quick-view .option1_for_below_input.swatch :radio', function() {
+      var thisValue = $(this).attr("value");
+        console.log(thisValue);
+      });
       
       $(document).on("change", "#quick-view select, .radio_butt", function () {
          console.log($('.radio_butt').val());
