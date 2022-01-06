@@ -66,7 +66,7 @@
     {% endfor %}
 
 
-    <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{product.id}}"
+    <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ option.name | handle }}_{{option.position}}_{{product.id}}"
            name="{{ option.name }}-{{product.id}}"
            value="{{ value | escape }}"
            form="{{ product_form_id }}"
@@ -86,7 +86,7 @@
                   {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
 
                   "  
-           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{product.id}}">
+           for="{{ option.name | handle }}_{{option.position}}_{{product.id}}">
       {{ value }}
     </label>
     {%- endfor -%}
