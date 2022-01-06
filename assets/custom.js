@@ -526,7 +526,7 @@ jQuery(function($){
 //      console.log(productinfohtml);
      $('.qv-product-options_html').addClass('active');
       $('.qv-product-options_html').html(productinfohtml);
-      theme.varChangefunc();
+//       theme.varChangefunc();
    });
 });
 
