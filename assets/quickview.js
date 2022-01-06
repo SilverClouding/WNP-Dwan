@@ -1,7 +1,6 @@
 //Quick View
 jQuery(function($){
 
-  console.log(theme);
   $(document).ready(function () {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js").done(function() {
       quickView();
@@ -13,14 +12,7 @@ jQuery(function($){
     $('.qv_price__badge-sale').hide();
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
-      console.log(productdata.id);
-      var product_card_product_id = "product_"+productdata.id;
-      
-      var optionHtml = $(this).siblings('.variantselec').html();
-//       console.log(optionHtml);
-    
-      
-      
+      console.log(productdata);
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
       $('#quick-view').addClass(product_handle);
@@ -37,22 +29,6 @@ jQuery(function($){
         var url = '/products/' + product_handle;
         $('.qv-product-title').text(title);
         $('.qv-product-vendor').text(type);
-        
-        $('.qvswym').html('<button class="qvbutton-wishlist" data-swaction="addToWishlist" data-product-id="'+product.id+'" ></button>');
-//         console.log(_swat);
-        
-//         function swymCallbackFn(){
-//           // your API calls go here
-//           window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
-//         }
-//         if(!window.SwymCallbacks){
-//           window.SwymCallbacks = [];
-//         }
-//         window.SwymCallbacks.push(swymCallbackFn);
-
-// window._swat.initializeActionButtons('.collection ', '.qvbutton-wishlist');
-        
-
         
         if (desc != ""){
         $('.qv-product-description').html(desc.substring(0, 150).split(" ").slice(0, -1).join(" ") + "...");
@@ -123,11 +99,6 @@ jQuery(function($){
             $('.qv-product-thumb-images').append(image_embed_thumb);
           }
         });
-        
-         $('.qv-product-options_html').html(optionHtml);
-       
-//           $('.vardataappend').append(optionHtml);
-        
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
@@ -143,27 +114,11 @@ jQuery(function($){
              checked = '';
             }
             
-//             if( i == 0 ){
-//               $(".option1_for_below_input input").each(function(){
-//                 var htmlvalue = $(this).attr("htmlvalue");
-//                 var jsvalue = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//                 if( htmlvalue == jsvalue){
-//                   console.log($(this).attr('data_option1'));
-//                   console.log($(this).attr('data_option2'));
-//                   console.log($(this).attr('data_option3'));
-//                 }
-//               });
-             
-//             }
             
-            
-            
-            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
+            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class="radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
             
           });
         });
-        
-        
         $(product.variants).each(function (i, v) {
          
           if (v.available == false) {
@@ -172,7 +127,7 @@ jQuery(function($){
             $('.qv-product-price').text('Sold Out').show();
             return true
           } else { 
-//             console.log( v);
+            console.log( v);
             price = parseFloat(v.price / 100).toFixed(2);
             original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
             $('.qv-product-price').text('$' + price);
@@ -205,106 +160,43 @@ jQuery(function($){
         
       });
 
-        theme.varChangefunc(); 
-      
-//       setTimeout(function() {
-//         console.log("#quick-view #"+product_card_product_id+" .radio_butt");
-
-//         $(document).on("change", "#quick-view .radio_butt", function () {
-//           var thisValue = $(this).attr("value");
-//           console.log(thisValue);
-//           var thisValue = $(this).attr("value");
-//           var data_option1 = $(this).attr('data_option1');
-
-//           var data_option2 = $(this).attr('data_option2'); 
-//           console.log(data_option2);
-//           var lastChar2 = data_option2.slice(-1);
-//           if (lastChar2 == ',') {
-//             data_option2 = data_option2.slice(0, -1);
-//           }
-
-//           var data_option3 = $(this).attr('data_option3');
-//           var lastChar3 = data_option3.slice(-1);
-//           if (lastChar3 == ',') {
-//             data_option3 = data_option3.slice(0, -1);
-//           }
-
-//           //         var data_option2Array = data_option2.split(",");
-//           //         var allOption2 = '';
-//           //         $.each(data_option2Array,function(i){
-//           //           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//           //           allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//           //           console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-//           //           //       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
-//           //           //        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
-//           //           $(".option2_for_below_input label").addClass('soldout');
-//           //           $(".option2_for_below_input label").removeClass('available');
-//           //           $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
-
-//           //           $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
-//           //           $(".option2_for_below_input .label-"+allOption2).addClass('available');
-//           //           $(".option2_for_below_input .label-"+triggerOption2).removeClass('soldout');
-//           //           $(".option2_for_below_input .label-"+triggerOption2).addClass('available');
-//           //         });
-
-//           //         var data_option3Array = data_option3.split(",");
-//           //         $.each(data_option3Array,function(i){
-//           //           var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//           //           var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//           //           //       console.log(triggerOption3);
-//           //           $(".option3_for_below_input label").addClass('soldout');
-//           //           $(".option3_for_below_input label").removeClass('available');
-//           //           $(".option3_for_below_input .input-"+triggerOption3).trigger('click'); 
-
-//           //           $(".option3_for_below_input .label-"+allOption3).removeClass('soldout');
-//           //           $(".option3_for_below_input .label-"+allOption3).addClass('available');
-//           //           $(".option3_for_below_input .label-"+triggerOption3).removeClass('soldout');
-//           //           $(".option3_for_below_input .label-"+triggerOption3).addClass('available');
-//           //         });
-
-//         });
-//       }, 2500);
-      
-      
-//       original
-//       $(document).on("change", "#quick-view select, .radio_butt", function () {
-//         var thisValue = $(this).attr("value");
-//         console.log(thisValue);
-//         var selectedOptions = '';
-//         $('#quick-view  select, .radio_butt:checked').each(function (i) {
-//           if (selectedOptions == '') {
-//             selectedOptions = $(this).val();
-//           } else {
-//             selectedOptions = selectedOptions + ' / ' + $(this).val();
-//           }
-//         });
-//         console.log( selectedOptions );
+      $(document).on("change", "#quick-view select, .radio_butt", function () {
+         console.log($('.radio_butt').val());
+        var selectedOptions = '';
+        $('#quick-view  select, .radio_butt:checked').each(function (i) {
+          if (selectedOptions == '') {
+            selectedOptions = $(this).val();
+          } else {
+            selectedOptions = selectedOptions + ' / ' + $(this).val();
+          }
+        });
+        console.log( selectedOptions );
         
-//         jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+        jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
 
-//           $(product.variants).each(function (i, v) {
+          $(product.variants).each(function (i, v) {
            
-//             if (v.title == selectedOptions) { 
-//               var price = parseFloat(v.price / 100).toFixed(2);
-//               var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
-//               var v_qty = v.inventory_quantity;
-//               var v_inv = v.inventory_management;
-//               console.log(v);
-//               $('.qv-product-price').text('$' + price);
-//               $('.qv-product-original-price').text('$' + original_price);
-//               if (v_inv == null) {
-//                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
-//               } else {
-//                 if (v.available) {
-//                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
-//                 } else {
-//                    $('.qv-add-button').prop('disabled', true).val('Sold Out'); 
-//                 }
-//               }
-//             }
-//           });
-//         });
-//       });
+            if (v.title == selectedOptions) { 
+              var price = parseFloat(v.price / 100).toFixed(2);
+              var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
+              var v_qty = v.inventory_quantity;
+              var v_inv = v.inventory_management;
+              console.log(v);
+              $('.qv-product-price').text('$' + price);
+              $('.qv-product-original-price').text('$' + original_price);
+              if (v_inv == null) {
+                $('.qv-add-button').prop('disabled', false).val('Add to Cart');
+              } else {
+                if (v.available) {
+                $('.qv-add-button').prop('disabled', false).val('Add to Cart');
+                } else {
+                   $('.qv-add-button').prop('disabled', true).val('Sold Out'); 
+                }
+              }
+            }
+          });
+        });
+      });
       
       
       $.fancybox({
@@ -324,17 +216,13 @@ jQuery(function($){
             var qty = $('.qv-quantity').val();
             var selectedOptions = '';
             var var_id = '';
-            $('#quick-view select, #quick-view.radio_butt:checked').each(function (i) {
+            $('#quick-view select, .radio_butt:checked').each(function (i) {
               if (selectedOptions == '') {
                 selectedOptions = $(this).val();
               } else {
                 selectedOptions = selectedOptions + ' / ' + $(this).val();
               }
             });
-            
-              theme.varChangefunc(); 
-            
-            
             jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
               $(product.variants).each(function (i, v) {
                 if (v.title == selectedOptions) {
