@@ -860,12 +860,12 @@ select:focus, select:hover{
     .two-block-section .banner__content .banner__box{
       text-align:center;
     }
-    .two-block-section .banner__media.media{
+/*     .two-block-section .banner__media.media{
       order:1;
     }
     .two-block-section .banner__content{
       order:2 !important;
-    }
+    } */
     .two-block-section .banner__media.media, 
     .two-block-section .banner__content{
       width:100%;
@@ -941,6 +941,17 @@ select:focus, select:hover{
 
   }
 
+ @media(max-width:767px){  
+   .two-block-section .banner__media.media{
+      order:1;
+    }
+    .two-block-section .banner__content{
+      order:2 !important;
+    }
+ }  
+  
+  
+  
   /* featured collection */
   .title-wrapper-with-link{
     justify-content:center;
