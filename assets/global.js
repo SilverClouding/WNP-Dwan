@@ -875,7 +875,7 @@ class VariantRadios extends VariantSelects {
         }
         console.log(data_option2);
         
-        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' ? data_option2.split(",") : false );
+        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ;
         
 //         var data_option2Array = data_option2.split(",");
         
@@ -893,6 +893,8 @@ class VariantRadios extends VariantSelects {
           }
 
         }); 
+        
+         console.log(data_option2Array);
         
         if(data_option2Array){
         var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
