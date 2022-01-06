@@ -212,43 +212,50 @@ jQuery(function($){
       });
       
       $(document).on("change", "#quick-view select, .radio_butt", function () {
-        var thisValue = $(this).attr("value");
-        console.log(thisValue);
-        var selectedOptions = '';
-        $('#quick-view  select, .radio_butt:checked').each(function (i) {
-          if (selectedOptions == '') {
-            selectedOptions = $(this).val();
-          } else {
-            selectedOptions = selectedOptions + ' / ' + $(this).val();
-          }
-        });
-        console.log( selectedOptions );
         
-        jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
-
-          $(product.variants).each(function (i, v) {
-           
-            if (v.title == selectedOptions) { 
-              var price = parseFloat(v.price / 100).toFixed(2);
-              var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
-              var v_qty = v.inventory_quantity;
-              var v_inv = v.inventory_management;
-              console.log(v);
-              $('.qv-product-price').text('$' + price);
-              $('.qv-product-original-price').text('$' + original_price);
-              if (v_inv == null) {
-                $('.qv-add-button').prop('disabled', false).val('Add to Cart');
-              } else {
-                if (v.available) {
-                $('.qv-add-button').prop('disabled', false).val('Add to Cart');
-                } else {
-                   $('.qv-add-button').prop('disabled', true).val('Sold Out'); 
-                }
-              }
-            }
-          });
-        });
       });
+      
+//       original
+//       $(document).on("change", "#quick-view select, .radio_butt", function () {
+//         var thisValue = $(this).attr("value");
+//         console.log(thisValue);
+//         var selectedOptions = '';
+//         $('#quick-view  select, .radio_butt:checked').each(function (i) {
+//           if (selectedOptions == '') {
+//             selectedOptions = $(this).val();
+//           } else {
+//             selectedOptions = selectedOptions + ' / ' + $(this).val();
+//           }
+//         });
+//         console.log( selectedOptions );
+        
+//         jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
+
+//           $(product.variants).each(function (i, v) {
+           
+//             if (v.title == selectedOptions) { 
+//               var price = parseFloat(v.price / 100).toFixed(2);
+//               var original_price = parseFloat(v.compare_at_price / 100).toFixed(2);
+//               var v_qty = v.inventory_quantity;
+//               var v_inv = v.inventory_management;
+//               console.log(v);
+//               $('.qv-product-price').text('$' + price);
+//               $('.qv-product-original-price').text('$' + original_price);
+//               if (v_inv == null) {
+//                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
+//               } else {
+//                 if (v.available) {
+//                 $('.qv-add-button').prop('disabled', false).val('Add to Cart');
+//                 } else {
+//                    $('.qv-add-button').prop('disabled', true).val('Sold Out'); 
+//                 }
+//               }
+//             }
+//           });
+//         });
+//       });
+      
+      
       $.fancybox({
         href: '#quick-view',
         maxWidth: 1040,
