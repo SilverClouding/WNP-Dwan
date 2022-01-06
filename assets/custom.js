@@ -580,13 +580,8 @@ jQuery(function($){
           $('.qv-product-main-images').addClass('loaded');
 
         });
-      },
-      'afterClose': function () {
-        $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
-        $('.qv-product-main-images').slick('unslick');
-      },
-      'beforeLoad': function () {
-        $(openId+' .qv-product-main-images').slick({
+        
+        $('.qv-product-main-images').slick({
           dots: false,
           arrows: true,
           respondTo: 'min',
@@ -594,7 +589,7 @@ jQuery(function($){
           asNavFor: '.slider-nav'
         });
 
-        $(openId+' .slider-nav').slick({
+        $('.slider-nav').slick({
           slidesToShow: 4,
           slidesToScroll: 1,
           asNavFor: '.qv-product-main-images',
@@ -603,6 +598,14 @@ jQuery(function($){
           focusOnSelect: true,
           arrows: false,
         });
+        
+      },
+      'afterClose': function () {
+        $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
+        $('.qv-product-main-images').slick('unslick');
+      },
+      'beforeLoad': function () {
+        
 
       }
 
