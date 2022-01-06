@@ -881,7 +881,7 @@ class VariantRadios extends VariantSelects {
         }
         var data_option2Array = data_option2.split(",");
 
-        data_option2Array && [fieldsets[1]] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
+        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
 
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log(element);
