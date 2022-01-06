@@ -6818,12 +6818,19 @@ select:focus, select:hover{
   
    @media(min-width:768px) and (max-width:992px){
     .CarouselWidget-prefix{
-      text-align:left;
+      text-align:left !important;
     }
-     
+     .CarouselWidget-prefix .CarouselWidget .CarouselWidget__header .header__inner{
+     justify-content:flex-start !important;
+     }
    }
   
+  @media(max-width:767px){
+ .CarouselWidget-prefix .CarouselWidget .CarouselWidget__header .header__inner {
+      justify-content:center !important;
+    }  
   
+  }
   
   @media(max-width:992px){
     .CarouselWidget-prefix{
@@ -6836,7 +6843,6 @@ select:focus, select:hover{
     .CarouselWidget-prefix .CarouselWidget .CarouselWidget__header .header__inner {
       padding: 24px 0px 0!important;
       align-items: center!important;
-      justify-content:center !important;
     }   
     .CarouselWidget-prefix .CarouselWidget .R-ReviewsList-container {
       padding-left: 20px!important;
