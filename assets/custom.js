@@ -580,28 +580,28 @@ jQuery(function($){
     });
 
     
-     $.fancybox({
-        href: "#qv_"+$(this).attr('data-productid'),
-        maxWidth: 1040,
-        maxHeight: 600,
-        fitToView: true,
-        width: '75%',
-        height: '70%',
-        autoSize: false,
-        closeClick: false,
-        openEffect: 'none',
-        closeEffect: 'none',
-       'afterShow': function () {
-          $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
-            $('.qv-product-main-images').addClass('loaded');
+//      $.fancybox({
+//         href: "#qv_"+$(this).attr('data-productid'),
+//         maxWidth: 1040,
+//         maxHeight: 600,
+//         fitToView: true,
+//         width: '75%',
+//         height: '70%',
+//         autoSize: false,
+//         closeClick: false,
+//         openEffect: 'none',
+//         closeEffect: 'none',
+//        'afterShow': function () {
+//           $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
+//             $('.qv-product-main-images').addClass('loaded');
            
-          });
-        },
-        'afterClose': function () {
-          $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
-            $('.qv-product-main-images').slick('unslick');
-        }
-     });
+//           });
+//         },
+//         'afterClose': function () {
+//           $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
+//             $('.qv-product-main-images').slick('unslick');
+//         }
+//      });
   });
   
   
