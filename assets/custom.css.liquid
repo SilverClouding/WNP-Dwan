@@ -1446,13 +1446,17 @@ select:focus, select:hover{
     .section_width .multicolumn-card__info {
       padding: 1.3rem 0rem !important;
     }
-    .custom-section-width .multicolumn-list__item{
-      max-width:unset !important;
-      width:33.3%!important;
-    }  
-
 
   }
+  
+  @media(max-width:767px){ 
+  .custom-section-width .multicolumn-list__item{
+      max-width:unset !important;
+      width:33.3%!important;
+    } 
+  } 
+  
+  
 
   /* two image section */
   .multicolumn.multi-custom{
