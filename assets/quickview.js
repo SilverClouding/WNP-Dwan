@@ -140,7 +140,7 @@ jQuery(function($){
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
 //           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><select class="option-' + i + ' option ' + opt.toLowerCase() + '"></select></div>');
-//           $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
+          $('.qv-product-options').append('<div class="option-selection-' + opt.toLowerCase() + '"><span class="option">' + opt + '</span><div class="option-' + i + ' option ' + opt.toLowerCase() + '"></div></div>');
        
           $(option.values).each(function (i, value) {
 //             $('.option.' + opt.toLowerCase()).append('<option value="' + value + '">' + value + '</option>');
@@ -166,7 +166,7 @@ jQuery(function($){
             
             
             
-//             $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
+            $('.option.' + opt.toLowerCase()).append('<input '+checked+' class=" input-'+value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')+' radio_butt" index="'+i+'"type="radio" id="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'" name="'+opt+'" value="'+value+'" form=""><label for="'+opt.toLowerCase()+'_'+value.toLowerCase().replace(/\s/g, '')+'">'+value+'</label>');
             
           });
         });
