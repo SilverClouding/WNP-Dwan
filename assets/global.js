@@ -640,8 +640,8 @@ class VariantSelects extends HTMLElement {
           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
         }
         if(data_option3Array){
-          var triggerOption3 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-          fieldsets[2].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
+          var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+          fieldsets[2].querySelector(".option2_for_below_input .input-"+triggerOption3).click(); 
         }
 
           if(data_option2Array && data_option3Array ){
