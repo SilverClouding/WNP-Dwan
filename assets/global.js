@@ -885,6 +885,8 @@ class VariantRadios extends VariantSelects {
 
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log(element);
+            element.classList.remove('available');
+            element.classList.add('soldout');
             
             element.classList.add('available');
             element.classList.remove('soldout');
