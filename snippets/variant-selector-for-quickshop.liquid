@@ -86,7 +86,7 @@
                   {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
 
                   "  
-           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{product.id}}">
       {{ value }}
     </label>
     {%- endfor -%}
