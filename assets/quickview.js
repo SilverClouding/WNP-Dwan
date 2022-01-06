@@ -205,7 +205,10 @@ jQuery(function($){
         
       });
 
-//         theme.varChangefunc();      
+//         theme.varChangefunc(); 
+      
+      console.log("#"+product_card_product_id+" .radio_butt");
+      
       $(document).on("change", "#"+product_card_product_id+" .radio_butt", function () {
 
         var thisValue = $(this).attr("value");
