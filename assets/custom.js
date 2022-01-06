@@ -595,10 +595,12 @@ jQuery(function($){
        'afterShow': function () {
           $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
             $('.qv-product-main-images').addClass('loaded');
+           
           });
         },
         'afterClose': function () {
           $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
+            $('.qv-product-main-images').slick('unslick');
         }
      });
   });
