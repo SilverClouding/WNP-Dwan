@@ -867,7 +867,7 @@ class VariantRadios extends VariantSelects {
         var data_option2 = $this.getAttribute('data_option2');
         var data_option3 = $this.getAttribute('data_option3');
 
-        console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+        
 
         var lastChar2 = data_option2.slice(-1);
         if (lastChar2 == ',') {
@@ -897,7 +897,7 @@ class VariantRadios extends VariantSelects {
       }
 
 
-
+console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
       
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
       
