@@ -918,9 +918,7 @@ select:focus, select:hover{
     .story-slide-con .swiper.text_slider .swiper-button-next{
       right:0;
     }
-    .story-slide-con .swiper.text_slider .swiper-button-prev{
-      left:0;
-    }
+    
     .swiper-horizontal>.swiper-pagination-bullets, 
     .swiper-pagination-bullets.swiper-pagination-horizontal, 
     .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -941,11 +939,17 @@ select:focus, select:hover{
     .banner--desktop-transparent .banner__box{
       background:transparent;
     }
+    .story-slide-con .swiper.text_slider .swiper-button-prev{
+      left:50%;
+    }
   }
 
 
 
   @media(max-width:767px){  
+    .story-slide-con .swiper.text_slider .swiper-button-prev{
+      left:0;
+    }
     .two-block-section .banner__media.media{
       order:1;
     }
