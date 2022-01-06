@@ -644,6 +644,10 @@ class VariantSelects extends HTMLElement {
           fieldsets[2].querySelector(".option3_for_below_input .input-"+triggerOption3).click(); 
         }
 
+        console.log("data_option2Array-"+data_option2Array);
+        console.log("data_option3Array-"+data_option3Array);
+        
+        
           if(data_option2Array && data_option3Array ){
 
           }else{
