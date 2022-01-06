@@ -52,23 +52,23 @@ jQuery(function($){
             image_embed_thumb = image_embed_thumb.replace('.jpg', '_100x.jpg').replace('.png', '_100x.png');
             $('.qv-product-thumb-images').append(image_embed_thumb);
 
-            $('.qv-product-main-images').slick({
-              dots: false,
-              arrows: true,
-              respondTo: 'min',
-              useTransform: false,
-              asNavFor: '.slider-nav'
-            }).css('opacity', '1');
+//             $('.qv-product-main-images').slick({
+//               dots: false,
+//               arrows: true,
+//               respondTo: 'min',
+//               useTransform: false,
+//               asNavFor: '.slider-nav'
+//             }).css('opacity', '1');
 
-            $('.slider-nav').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              asNavFor: '.qv-product-main-images',
-              dots: false,
-              centerMode: false,
-              focusOnSelect: true,
-              arrows: false,
-            });
+//             $('.slider-nav').slick({
+//               slidesToShow: 4,
+//               slidesToScroll: 1,
+//               asNavFor: '.qv-product-main-images',
+//               dots: false,
+//               centerMode: false,
+//               focusOnSelect: true,
+//               arrows: false,
+//             });
 
 
             //           const swiper = new Swiper('.qv_img_slider', {
