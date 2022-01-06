@@ -576,7 +576,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
-      this.updateSwatch();
+//       this.updateSwatch();
     }
     
     
@@ -818,60 +818,11 @@ class VariantRadios extends VariantSelects {
   }
 
   updateOptions() {
-    
-
-    
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    
     this.options = fieldsets.map((fieldset) => {
-      
-  
-//       var count = 0
-
-//       if(fieldsets[0] == fieldset ){
-//         const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
-//         var thisValue = $this.getAttribute("value");
-//         var data_option1= $this.getAttribute('data_option1');
-//         var data_option2 = $this.getAttribute('data_option2');
-//         var data_option3 = $this.getAttribute('data_option3');
-
-
-
-//         var lastChar2 = data_option2.slice(-1);
-//         if (lastChar2 == ',') {
-//           data_option2 = data_option2.slice(0, -1);
-//         }
-//         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ;        
-//         //         var data_option2Array = data_option2.split(",");
-//         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
-//           if(data_option2Array.indexOf(element.value) > -1 ){
-//             console.log(element);
-
-//             element.classList.add('available');
-//             element.classList.remove('soldout');
-//           }else{
-//             element.classList.remove('available');
-//             element.classList.add('soldout');
-//           }
-//         }); 
-//         if(data_option2Array){
-//           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
-//         }else{
-//           console.log('notifyme')
-//         }
-
-
-//       }
-
-//       console.log(this.currentVariant.id);
-
-//       console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
-
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
-      
     });
-    
+
   }
 }
 
