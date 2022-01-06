@@ -559,8 +559,8 @@ jQuery(function($){
   $(document).on('click',".quick-view_new", function () {
 
     var openId = "#qv_"+$(this).attr('data-productid');
-//     $(openId).addClass('active');
-//     $(openId).show(); 
+    $(openId).addClass('active');
+    $(openId).show(); 
     $('.qv-product-main-images').slick({
       dots: false,
       arrows: true,
