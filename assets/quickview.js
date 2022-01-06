@@ -210,7 +210,8 @@ jQuery(function($){
       console.log("#quick-view #"+product_card_product_id+" .radio_butt");
       
       $(document).on("change", "#quick-view .radio_butt", function () {
-
+var thisValue = $(this).attr("value");
+        console.log(thisValue);
         var thisValue = $(this).attr("value");
         var data_option1 = $(this).attr('data_option1');
 
@@ -261,6 +262,8 @@ jQuery(function($){
 //         });
 
       });
+      
+      
       
 //       original
 //       $(document).on("change", "#quick-view select, .radio_butt", function () {
