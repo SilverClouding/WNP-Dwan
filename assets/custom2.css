@@ -339,3 +339,27 @@ li.breadcrumbs__item a {
     right: 0;
     width: 75%;
 }
+
+.quick-view_new {
+    background: #153a33;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding: 8px 20px;
+    box-shadow: none;
+    border: 1px solid #153a33;
+    min-height: unset;
+    max-width: unset;
+    flex-grow: unset!important;
+    opacity: unset;
+    cursor: pointer;
+    box-shadow: none;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    display: block;
+}
