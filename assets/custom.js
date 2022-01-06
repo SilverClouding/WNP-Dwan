@@ -528,11 +528,12 @@ jQuery(function($){
 //      $(this).parents('.quick-view-button').siblings('.qv-product-options_html').removeAttr('style');
 // //       $(this).siblings('.qv-product-options_html').html(productinfohtml);
 // //       theme.varChangefunc();
-//    });
+//   
      
      var openId = "#qv_"+$(this).attr('data-productid');
       $(openId).addClass('active');
-     $(openId).show();
+     $(openId).show(); 
+   });
      
 });
 
