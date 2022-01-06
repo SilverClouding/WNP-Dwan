@@ -139,13 +139,13 @@ jQuery(function($){
           //           }
           //            
           if(product.variants.length > 1){
-            if ( v.id == selectedOptions ){ 
+            if ( v.id == selectedOptions ){  }
               var_id = v.id;
-              processCart();
+              processMiniCart();
               //               console.log(v.available+"-"+v.title);
               console.log(v.id+'='+selectedOptions); 
               //               console.log(selectedOptions);
-            }
+           
           }else{
             console.log('else');
             var_id = v.id;
@@ -157,7 +157,7 @@ jQuery(function($){
         });
       });
 
-      function processCart() {
+      function processMiniCart() {
         jQuery.post('/cart/add.js', {
           quantity: qty,
           id: var_id
