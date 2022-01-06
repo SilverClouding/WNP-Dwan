@@ -648,7 +648,7 @@ class VariantSelects extends HTMLElement {
         console.log("data_option3Array-"+data_option3Array);
         
         
-          if(data_option2Array && data_option3Array ){
+          if(data_option2Array || data_option3Array ){
 
           }else{
             console.log('notifyme')
