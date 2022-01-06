@@ -593,12 +593,12 @@ jQuery(function($){
         openEffect: 'none',
         closeEffect: 'none',
        'afterShow': function () {
-          $('#quick-view').hide().html(content).css('opacity', '1').fadeIn(function () {
+          $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
             $('.qv-product-main-images').addClass('loaded');
           });
         },
         'afterClose': function () {
-          $('#quick-view').removeClass().empty();
+          $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
         }
      });
   });
