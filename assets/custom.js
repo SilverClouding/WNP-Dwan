@@ -461,8 +461,12 @@ jQuery(function($){
   });
 
 
-
-
+//open qty popup
+jQuery(function($){
+  $(document).on('click', '.popup_minq', function(){
+    $('.open_popup_minq').addclass('active');
+  });
+});
 
 
 
