@@ -103,7 +103,7 @@ jQuery(function($){
         var text = $option.text();//to get <option>Text</option> content
         selectedOptions = value;
       });
-//        console.log(selectedOptions);
+       console.log(selectedOptions);
   
   $(document).on('click',".mini-add-button", function (e) {
     
