@@ -159,7 +159,7 @@ jQuery(function($){
           }
         });
         
-        console.log(productinfohtml);
+//         console.log(productinfohtml);
       $('.qv-product-options_html').html(productinfohtml);
         
       });

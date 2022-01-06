@@ -520,6 +520,12 @@ jQuery(function($){
 
  theme.varChangefunc();
   
+  
+   $(document).on('click',".quick-view_new", function () {
+  var productinfohtml = $(this).siblings('.variantselec').html();
+     console.log(productinfohtml);
+      $('.qv-product-options_html').html(productinfohtml);
+   });
 });
 
 
