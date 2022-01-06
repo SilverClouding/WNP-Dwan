@@ -875,7 +875,7 @@ class VariantRadios extends VariantSelects {
         allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
         console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
 
-        fieldset.querySelectorAll(".option2_for_below_input .input-"+triggerOption2).click(); 
+        fieldset.querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
       });
 
       
