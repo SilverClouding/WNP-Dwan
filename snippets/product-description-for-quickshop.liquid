@@ -1,0 +1,15 @@
+{%- if product.description != blank -%}
+<div class="ProductMeta_Description small__heightt bottomImg" {{ block.shopify_attributes }}>
+  <div class="product__description short_des rte">
+    <p>  {{ product.description | strip_html | truncate: 150}}</p>
+  </div>
+  <div class="product__description long_des hide rte">
+    {{ product.description }}
+  </div>
+  <div class="des_bottom_div">
+    <div class="dec-overlayy"></div>
+    <a class="show_more">Show more</a>
+    <a class="show_less hide">Show less</a>
+  </div>
+</div>
+{%- endif -%}
