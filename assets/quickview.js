@@ -206,7 +206,7 @@ jQuery(function($){
 
 //         theme.varChangefunc();
       
-      $('body').on('change', '#quick-view .option1_for_below_input.swatch :radio', function() {
+      $('body').on('change', '#quick-view .option1_option1_for_below_input.swatch :radio', function() {
       var thisValue = $(this).attr("value");
         console.log(thisValue);
       });
