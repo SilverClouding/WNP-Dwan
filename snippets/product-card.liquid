@@ -194,7 +194,7 @@
 
     <fieldset class="option-selection-{{ option.name |handle }}y js swatch product-form__input {{optionString}}_for_below_input">
       <legend class="form__label option">{{ option.name }}</legend>
-      <div class="option-{{forloop.index0}} option {{ option.name |handle }}">
+      <div class="">
       {%- for value in option.values -%}
       {% assign curValueVars = product_card_product.variants | where: optionString, value %}
 
