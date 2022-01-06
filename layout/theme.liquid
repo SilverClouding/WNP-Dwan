@@ -195,11 +195,13 @@
     {% section 'newsletter-popup' %}
     {% endunless %}
     
+    {% comment %}
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
       {% section 'cart-items' %}
     </div>
     {% endif %}
+    {% endcomment %}
   
     
     
