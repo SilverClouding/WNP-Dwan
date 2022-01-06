@@ -857,14 +857,7 @@ class VariantRadios extends VariantSelects {
     
     this.options = fieldsets.map((fieldset) => {
       
-      
-      
-
-
-    
-      
-     
-     
+  
       var count = 0
 
       if(fieldsets[0] == fieldset ){
@@ -882,7 +875,7 @@ class VariantRadios extends VariantSelects {
         var data_option2Array = data_option2.split(",");
 
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
-
+          
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log(element);
 
@@ -894,11 +887,13 @@ class VariantRadios extends VariantSelects {
           }
 
         }); 
+        
+        var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
+
+        
 
       }
-
-      //         allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      //         fieldset.querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
 
 
 //       var data_option3 = $(this).attr('data_option3');
