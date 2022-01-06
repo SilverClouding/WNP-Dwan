@@ -521,55 +521,31 @@ jQuery(function($){
  theme.varChangefunc();
   
   
-   $(document).on('click',".quick-view_new", function () {
-//   var productinfohtml = $(this).siblings('.variantselec').html();
-// //      console.log(productinfohtml);
-//      $(this).parents('.quick-view-button').siblings('.qv-product-options_html').addClass('active');
-//      $(this).parents('.quick-view-button').siblings('.qv-product-options_html').removeAttr('style');
-// //       $(this).siblings('.qv-product-options_html').html(productinfohtml);
-// //       theme.varChangefunc();
-//   
-     
-     var openId = "#qv_"+$(this).attr('data-productid');
-      $(openId).addClass('active');
-     $(openId).show(); 
-     
-     
-//      var swiper = new Swiper(".mySwiper", {
-//        spaceBetween: 10,
-//        slidesPerView: 4,
-//        freeMode: true,
-//        watchSlidesProgress: true,
-//      });
-//      var swiper2 = new Swiper(".mySwiper2", {
-//        spaceBetween: 10,
-//        navigation: {
-//          nextEl: ".swiper-button-next",
-//          prevEl: ".swiper-button-prev",
-//        },
-//        thumbs: {
-//          swiper: swiper,
-//        },
-//      });
-     $('.qv-product-main-images').slick({
-       dots: false,
-       arrows: true,
-       respondTo: 'min',
-       useTransform: false,
-       asNavFor: '.slider-nav'
-     }).css('opacity', '1');
+  $(document).on('click',".quick-view_new", function () {
 
-     $('.slider-nav').slick({
-       slidesToShow: 4,
-       slidesToScroll: 1,
-       asNavFor: '.qv-product-main-images',
-       dots: false,
-       centerMode: false,
-       focusOnSelect: true,
-       arrows: false,
-     });
-     
-   });
+    var openId = "#qv_"+$(this).attr('data-productid');
+    $(openId).addClass('active');
+    $(openId).show(); 
+
+    $('.qv-product-main-images').slick({
+      dots: false,
+      arrows: true,
+      respondTo: 'min',
+      useTransform: false,
+      asNavFor: '.slider-nav'
+    }).css('opacity', '1');
+
+    $('.slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.qv-product-main-images',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      arrows: false,
+    });
+
+  });
   
   
      
