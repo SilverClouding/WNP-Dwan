@@ -627,8 +627,9 @@ class VariantSelects extends HTMLElement {
       }
 
       console.log(this.currentVariant.id);
-
-      console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+      
+updateVariantInput();
+//       console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
 
 //       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
 
