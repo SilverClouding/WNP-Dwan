@@ -79,40 +79,37 @@
 
 
   <div class="gallery-container">
-    <div class="">
-      <ul class="product__media-list gridd grid--peek list-unstyled " role="list">
-        {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-        {%- if product.selected_or_first_available_variant.featured_media != null -%}
-        {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-        <li class="swiper-slide product__media-item grid__item slider__slide" data-media-id="{{ section.id }}-{{ media.id }}">
-          {% render 'product-thumbnail', media: media, position: 'featured', loop: true, modal_id: product.id, xr_button: false %}
-        </li>
-        {%- endif -%}
-        {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-        <li class="sproduct__media-item grid__item " data-media-id="{{ section.id }}-{{ media.id }}">
-          {% render 'product-thumbnail', media: media, position: forloop.index, loop: false, modal_id: product.id, xr_button: false %}
-        </li>
-        {%- endunless -%}
-        {%- endfor -%}
-      </ul>
-<!--       <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
+    
+    <div class="product__media-list gridd grid--peek list-unstyled " role="list">
+      {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+      {%- if product.selected_or_first_available_variant.featured_media != null -%}
+      {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+      <div class="slide product__media-item grid__item" data-media-id="{{ section.id }}-{{ media.id }}">
+        {% render 'product-thumbnail', media: media, position: 'featured', loop: true, modal_id: product.id, xr_button: false %}
+      </div>
+      {%- endif -%}
+      {%- for media in product.media -%}
+      {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+      <div class="slide product__media-item grid__item " data-media-id="{{ section.id }}-{{ media.id }}">
+        {% render 'product-thumbnail', media: media, position: forloop.index, loop: false, modal_id: product.id, xr_button: false %}
+      </div>
+      {%- endunless -%}
+      {%- endfor -%}
     </div>
 
-    <div class="">
-      <ul class="product__media-list grid grid--peek list-unstyled" role="list">
-        {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
 
-        {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-        <li class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-          {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, hide_icon: true %}
-        </li>
-        {%- endunless -%}
-        {%- endfor -%}
-      </ul>
+    <div class="qv-product-thumb-images slider-nav product__media-list grid grid--peek list-unstyled" role="list">
+      {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+
+      {%- for media in product.media -%}
+      {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+      <div class="product__media-item slide" data-media-id="{{ section.id }}-{{ media.id }}">
+        {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, hide_icon: true %}
+      </div>
+      {%- endunless -%}
+      {%- endfor -%}
     </div>       
+    
   </div>
 
 
