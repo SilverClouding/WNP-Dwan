@@ -562,7 +562,6 @@ class VariantSelects extends HTMLElement {
 
   onVariantChange() {
     this.updateOptions();
-//     this.updateSwatch();
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
@@ -577,133 +576,62 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      this.updateSwatch();
     }
     
-    
-//        var thisValue = $(this).attr("value");
-//       var data_option1 = $(this).attr('data_option1');
-
-//       var data_option2 = $(this).attr('data_option2');
-//     console.log(data_option2);
-//       var lastChar2 = data_option2.slice(-1);
-//       if (lastChar2 == ',') {
-//         data_option2 = data_option2.slice(0, -1);
-//       }
-
-//       var data_option3 = $(this).attr('data_option3');
-//       var lastChar3 = data_option3.slice(-1);
-//       if (lastChar3 == ',') {
-//         data_option3 = data_option3.slice(0, -1);
-//       }
-//       console.log(data_option2);
-//       var data_option2Array = data_option2.split(",");
-//       var allOption2 = '';
-//       $.each(data_option2Array,function(i){
-//         var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//         allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//         console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-//         //       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
-//         //        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
-//         $(".option2_for_below_input label").addClass('soldout');
-//         $(".option2_for_below_input label").removeClass('available');
-//         $(".option2_for_below_input .input-"+triggerOption2).trigger('click'); 
-
-//         $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
-//         $(".option2_for_below_input .label-"+allOption2).addClass('available');
-//         $(".option2_for_below_input .label-"+triggerOption2).removeClass('soldout');
-//         $(".option2_for_below_input .label-"+triggerOption2).addClass('available');
-//       });
-
-//       var data_option3Array = data_option3.split(",");
-//       $.each(data_option3Array,function(i){
-//         var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//         var allOption3 = data_option3Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-//         //       console.log(triggerOption3);
-//         $(".option3_for_below_input label").addClass('soldout');
-//         $(".option3_for_below_input label").removeClass('available');
-//         $(".option3_for_below_input .input-"+triggerOption3).trigger('click'); 
-
-//         $(".option3_for_below_input .label-"+allOption3).removeClass('soldout');
-//         $(".option3_for_below_input .label-"+allOption3).addClass('available');
-//         $(".option3_for_below_input .label-"+triggerOption3).removeClass('soldout');
-//         $(".option3_for_below_input .label-"+triggerOption3).addClass('available');
-//       });
-
     
   }
   updateSwatch(){
-console.log(this);
-    var classes = document.getElementsByClassName("swatch");
-   
-    for (var i = 0; i < classes.length; i++) {
-      if(i == 0 ){
-      var byName1 = document.getElementById("option"+i).getAttribute("swatch-name");
-      }
-      if(i == 1 ){
-       var byName2 = document.getElementById("option"+i).getAttribute("swatch-name");
-      }
-      if(i == 2 ){
-       var byName3 = document.getElementById("option"+i).getAttribute("swatch-name");
-      }
-    }
     
-    if(byName1){
-      var rates = document.getElementsByName(byName1);
-      var option1;
-      for(var i = 0; i < rates.length; i++){
-        if(rates[i].checked){
-          option1 = rates[i].value;
-        }
-      }
-    }
-    if(byName2){
-      var rates = document.getElementsByName(byName2);
-      var option2;
-      for(var i = 0; i < rates.length; i++){
-        if(rates[i].checked){
-          option2 = rates[i].value;
-        }
-      }
-    }
+    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
 
-    if(byName3){
-      var rates = document.getElementsByName(byName3);
-      var option3;
-      for(var i = 0; i < rates.length; i++){
-        if(rates[i].checked){
-          option3 = rates[i].value;
+    this.options = fieldsets.map((fieldset) => {
+
+
+      var count = 0
+
+      if(fieldsets[0] == fieldset ){
+        const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
+        var thisValue = $this.getAttribute("value");
+        var data_option1= $this.getAttribute('data_option1');
+        var data_option2 = $this.getAttribute('data_option2');
+        var data_option3 = $this.getAttribute('data_option3');
+
+
+
+        var lastChar2 = data_option2.slice(-1);
+        if (lastChar2 == ',') {
+          data_option2 = data_option2.slice(0, -1);
         }
+        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ;        
+        //         var data_option2Array = data_option2.split(",");
+        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
+          if(data_option2Array.indexOf(element.value) > -1 ){
+            console.log(element);
+
+            element.classList.add('available');
+            element.classList.remove('soldout');
+          }else{
+            element.classList.remove('available');
+            element.classList.add('soldout');
+          }
+        }); 
+        if(data_option2Array){
+          var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+          fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
+        }else{
+          console.log('notifyme')
+        }
+
+
       }
-    }
-    
-    
-    if (option1 && option2 && option3){
-      var notifyMessage = option1 + ' / ' + option2 + ' / ' + option3;
-    } else if (option1 && option2){
-      var notifyMessage = option1 + ' / ' + option2;
-    } else {
-      var notifyMessage = option1;
-    }
-    
-   
-    this.getVariantData().find((variant) => {
-      if(variant.available){
-//         console.log(inv_qty[ variant.id ]);
-       
-//         console.log(inv_available[ variant.id ]);
-        console.log(variant);
-      console.log("availvartitle"+variant.title);
-        
-        var txt = notifyMessage;
-        txt = txt.split('/')
-        var Var1 = txt[0];
-        var Var2 = txt[1];
-        var Var3 = txt[2]
-      }
-      
-      if(variant.title == notifyMessage ){
-      console.log("availvar"+variant.available);
-      }
+
+      console.log(this.currentVariant.id);
+
+      console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+
+//       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
+
     });
   }
   
