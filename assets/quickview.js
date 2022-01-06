@@ -163,6 +163,7 @@ jQuery(function($){
         
       });
 
+      console.log(productinfohtml);
       $('.qv-product-options_html').append(productinfohtml);
       $(document).on("change", "#quick-view select, .radio_butt", function () {
          console.log($('.radio_butt').val());
