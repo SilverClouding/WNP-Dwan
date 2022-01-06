@@ -14,7 +14,7 @@
 {%- case block.type -%}
 {%- when 'collapsible_tab' -%}
 <div class="product__accordion accordion" {{ block.shopify_attributes }}>
-  <details id="Details-{{ block.id }}-{{ section.id }}">
+  <detailss id="Details-{{ block.id }}-{{ section.id }}">
     <summary>
       <div class="summary__title">
         {% render 'icon-accordion', icon: block.settings.icon %}
@@ -28,7 +28,7 @@
       {{ block.settings.content }}
       {{ block.settings.page.content }}
     </div>
-  </details>
+  </detailss>
 </div>
 {%- endcase -%}
 {%- endfor -%}
