@@ -896,6 +896,7 @@ class VariantRadios extends VariantSelects {
 
       }
 
+      console.log(this.currentVariant.id);
 
 console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
       
