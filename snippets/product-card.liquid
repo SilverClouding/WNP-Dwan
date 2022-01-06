@@ -270,8 +270,8 @@
                   <span class="product-form__error-message"></span>
                 </div>
 
-                {%- form 'product', product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                {%- form 'product', product_card_product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
 
                
         
@@ -279,18 +279,18 @@
                 
                   <div class="product-form__buttons">
                  
-                    <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+                    <a id="notifyme" class="  {% if product_card_product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
                     Notify me
                     </a> 
                   
                     <button
                       type="submit"
                       name="add"
-                      class="{% if product.selected_or_first_available_variant.available == false %} hide {% endif %}  product-form__submit  button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      class="{% if product_card_product.selected_or_first_available_variant.available == false %} hide {% endif %}  product-form__submit  button button--full-width {% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                    {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
+                          {%- if product_card_product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
@@ -307,33 +307,14 @@
                     <div class="swym-wishlist-button-bar"></div>
                     <!-- Swym button on product pages -->
                     
-                    {%- if block.settings.show_dynamic_checkout -%}
+                    {%- if block.settings.show_dynamic_checkout -%}{%- endif -%}
                       {{ form | payment_button }}
-                    {%- endif -%}
+                    
                   </div>
                 {%- endform -%}
               </product-form>
 
-              {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
-
-              {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-
-              <pickup-availability class="product__pickup-availabilities no-js-hidden"
-                {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
-                data-base-url="{{ shop.url }}{{ routes.root_url }}"
-                data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-                data-has-only-default-variant="{{ product.has_only_default_variant }}"
-              >
-                <template>
-                  <pickup-availability-preview class="pickup-availability-preview">
-                    {% render 'icon-unavailable' %}
-                    <div class="pickup-availability-info">
-                      <p class="caption-large">{{ 'products.product.pickup_availability.unavailable' | t }}</p>
-                      <button class="pickup-availability-button link link--text underlined-link">{{ 'products.product.pickup_availability.refresh' | t }}</button>
-                    </div>
-                  </pickup-availability-preview>
-                </template>
-              </pickup-availability>
+             
             </div>
   </div>
   
