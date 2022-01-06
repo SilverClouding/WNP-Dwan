@@ -312,14 +312,14 @@ button.slick-next.slick-arrow {
   height: 1px;
   width: 1px;
 }
-.product-form__input {
+/* .product-form__input {
     flex: 0 0 100%;
     padding: 0;
     margin: 0 0 1.2rem 0;
     max-width: 37rem;
     min-width: fit-content;
     border: none;
-}
+} */
 .product .product__info-container .form__label {
     color: #44444d;
     font-size: 15px;
