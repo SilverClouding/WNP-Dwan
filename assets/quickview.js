@@ -13,7 +13,7 @@ jQuery(function($){
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
       console.log(productdata);
-      var htmlfetchData = $(this).siblings('.variantselec').html();
+      var htmlfetchData = $(this).parents('.quick-view-button').siblings('.variantselec').html();
       
       
       
