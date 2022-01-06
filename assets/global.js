@@ -603,8 +603,7 @@ class VariantSelects extends HTMLElement {
         if (lastChar2 == ',') {
           data_option2 = data_option2.slice(0, -1);
         }
-        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ;        
-        //         var data_option2Array = data_option2.split(",");
+        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log(element);
@@ -616,12 +615,42 @@ class VariantSelects extends HTMLElement {
             element.classList.add('soldout');
           }
         }); 
+        
+         var lastChar3 = data_option3.slice(-1);
+        if (lastChar3 == ',') {
+          data_option3 = data_option3.slice(0, -1);
+        }
+        var data_option3Array = ( typeof data_option3 != "undefined" &&  data_option3 != '' )? data_option3.split(",") : false ; 
+        data_option3Array && fieldsets[2] && [...fieldsets[2].querySelectorAll('input')].forEach(function(element){ 
+          if(data_option3Array.indexOf(element.value) > -1 ){
+            console.log(element);
+
+            element.classList.add('available');
+            element.classList.remove('soldout');
+          }else{
+            element.classList.remove('available');
+            element.classList.add('soldout');
+          }
+        }); 
+        
+        
+        
         if(data_option2Array){
           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
-        }else{
-          console.log('notifyme')
         }
+        if(data_option3Array){
+          var triggerOption3 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+          fieldsets[2].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
+        }
+
+          if(data_option2Array && data_option3Array ){
+
+          }else{
+            console.log('notifyme')
+          }
+
+        
 
 
       }
