@@ -256,6 +256,14 @@ display:none;
     box-shadow: 0 0 0 2px #fff;
 }
 
+.soldout+label {
+    color: #21ff00!important;
+}
+
+.available+label {
+    color: blue!important;
+}
+
 /* wishlist */
 i.icon-swym-wishlist {
   font-family: 'swym-font';
