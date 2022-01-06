@@ -178,6 +178,10 @@
                           {% render 'icon-plus' %}
                         </button>
                       </quantity-input>
+                      
+                      <!-- Swym Wishlist Plus EPI Button-->
+  <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" data-swaction="addToWishlist" data-product-id="{{ item.product.id | json}}" data-variant-id="{{ item.product.variants[0].id}}" data-product-url="{{ shop.url }}{{  item.product.url }}"></button>
+  <!-- Swym Wishlist Plus EPI Button-->
 
                       <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                         <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
