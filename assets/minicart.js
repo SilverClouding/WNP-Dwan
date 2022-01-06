@@ -149,7 +149,7 @@ jQuery(function($){
           }else{
             console.log('else');
             var_id = v.id;
-            processCart();
+            processMiniCart();
           }
           //          console.log(var_id); 
 
