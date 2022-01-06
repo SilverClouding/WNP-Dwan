@@ -165,7 +165,7 @@ jQuery(function($){
       });
 
      
-      $(document).on("change", "#quick-view select, .radio_butt", function () {
+      $(document).on("change", "#quick-view select, #quick-view  .radio_butt", function () {
          console.log($('.radio_butt').val());
         var selectedOptions = '';
         $('#quick-view  select, .radio_butt:checked').each(function (i) {
