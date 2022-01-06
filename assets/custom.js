@@ -559,9 +559,9 @@ jQuery(function($){
   $(document).on('click',".quick-view_new", function () {
 
     var openId = "#qv_"+$(this).attr('data-productid');
-    $(openId).addClass('active');
-    $(openId).show(); 
-    $('.qv-product-main-images').slick({
+//     $(openId).addClass('active');
+//     $(openId).show(); 
+    $(openId+' .qv-product-main-images').slick({
       dots: false,
       arrows: true,
       respondTo: 'min',
@@ -569,7 +569,7 @@ jQuery(function($){
       asNavFor: '.slider-nav'
     }).css('opacity', '1');
 
-    $('.slider-nav').slick({
+    $(openId+' .slider-nav').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.qv-product-main-images',
@@ -580,7 +580,7 @@ jQuery(function($){
     });
 
     
-//      $.fancybox({
+     $.fancybox({
 //         href: "#qv_"+$(this).attr('data-productid'),
 //         maxWidth: 1040,
 //         maxHeight: 600,
