@@ -14,6 +14,7 @@ jQuery(function($){
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
       console.log(productdata.id);
+      var product_card_product_id = "product_"+productdata.id;
       
       var optionHtml = $(this).siblings('.variantselec').html();
 //       console.log(optionHtml);
@@ -205,7 +206,7 @@ jQuery(function($){
       });
 
 //         theme.varChangefunc();      
-      $(document).on("change", "#quick-view select, .radio_butt", function () {
+      $(document).on("change", "#"+product_card_product_id ".radio_butt", function () {
 
         var thisValue = $(this).attr("value");
         var data_option1 = $(this).attr('data_option1');
