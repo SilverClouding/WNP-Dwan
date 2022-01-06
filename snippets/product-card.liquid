@@ -232,7 +232,7 @@
              name="{{ option.name }}"
              value="{{ value | escape }}"
              htmlvalue="{{ value | handle |replace:"_","-" }}"
-             form="{{ product_form_id }}" index="{{forloop.index0}}" id={{ option.name | handle }}_{{ value | handle |remove:"-"}}
+             form="{{ product_form_id }}" index="{{forloop.index0}}" 
              class="radio_butt input-{{value | handle |replace:"_","-"}}"
              {% assign current_option1_array = current_option1 | split:"," %}
              {% if option.position == 1 %} {% if current_option1_array[0] == value %}checked {% endif %}  {% endif %} 
