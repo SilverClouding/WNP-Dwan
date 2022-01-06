@@ -326,3 +326,16 @@ li.breadcrumbs__item a {
     text-decoration: none;
     color: #44444d;
 }
+
+.qv-product-options_html.active {
+    position: absolute;
+    background: #fff;
+    border: 1px solid red;
+    z-index: 9;
+    top: 50vh;
+    transform: translateY(-50vh);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 75%;
+}
