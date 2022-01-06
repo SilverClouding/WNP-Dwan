@@ -618,7 +618,8 @@ jQuery(function($){
       },
       'afterClose': function () {
         $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
-//         $('.qv-product-main-images').slick('unslick');
+        $('.qv-product-main-images').slick('unslick');
+        $('.slider-nav').slick('unslick');
       },
       'beforeLoad': function () {
         
