@@ -107,6 +107,8 @@ jQuery(function($){
         
         $('.qv-product-options_html').html(htmlfetchData);
         
+        $(this).siblings('.variantselec').html('')
+        
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
