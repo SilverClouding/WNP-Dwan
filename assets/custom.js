@@ -592,6 +592,14 @@ jQuery(function($){
         closeClick: false,
         openEffect: 'none',
         closeEffect: 'none',
+       'afterShow': function () {
+          $('#quick-view').hide().html(content).css('opacity', '1').fadeIn(function () {
+            $('.qv-product-main-images').addClass('loaded');
+          });
+        },
+        'afterClose': function () {
+          $('#quick-view').removeClass().empty();
+        }
      });
   });
   
