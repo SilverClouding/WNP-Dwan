@@ -869,7 +869,7 @@ class VariantRadios extends VariantSelects {
       }
       var allOption2 = '';
       var data_option2Array = data_option2.split(",");
-      .forEach(data_option2Array,function(i){
+      data_option2Array.forEach(function(i){
         var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
         allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
         console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
