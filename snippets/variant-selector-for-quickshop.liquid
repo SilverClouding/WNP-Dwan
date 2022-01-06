@@ -14,7 +14,6 @@
 
 
 {%- unless product.has_only_default_variant -%}
-{%- if block.settings.picker_type == 'button' -%}
 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
   <h3 id="stockmsg" class="stockmsg">{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
@@ -97,35 +96,7 @@
                     {{ product.variants | json }}
   </script>
 </variant-radios>
-{%- else -%}
-<variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-  {%- for option in product.options_with_values -%}
-  <div class="product-form__input product-form__input--dropdown">
-    <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-      {{ option.name }}
-    </label>
-    <div class="select">
-      <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-              >
-        {%- for value in option.values -%}
-        <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-          {{ value }}
-        </option>
-        {%- endfor -%}
-      </select>
-      {% render 'icon-caret' %}
-    </div>
-  </div>
-  {%- endfor -%}
 
-  <script type="application/json">
-                    {{ product.variants | json }}
-  </script>
-</variant-selects>
-{%- endif -%}
 {%- endunless -%}
 
 <noscript class="product-form__noscript-wrapper-{{ section.id }}">
