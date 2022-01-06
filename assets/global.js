@@ -888,7 +888,7 @@ class VariantRadios extends VariantSelects {
         
         
         
-        var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+//         var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
 
       }
 
@@ -896,12 +896,12 @@ class VariantRadios extends VariantSelects {
       //         fieldset.querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
 
 
-      var data_option3 = $(this).attr('data_option3');
-      var lastChar3 = data_option3.slice(-1);
-      if (lastChar3 == ',') {
-        data_option3 = data_option3.slice(0, -1);
-      }
-      var data_option2Array = data_option2.split(",");
+//       var data_option3 = $(this).attr('data_option3');
+//       var lastChar3 = data_option3.slice(-1);
+//       if (lastChar3 == ',') {
+//         data_option3 = data_option3.slice(0, -1);
+//       }
+//       var data_option2Array = data_option2.split(",");
 
       
       
