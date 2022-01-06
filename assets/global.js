@@ -871,8 +871,13 @@ class VariantRadios extends VariantSelects {
         var lastChar2 = data_option2.slice(-1);
         if (lastChar2 == ',') {
           data_option2 = data_option2.slice(0, -1);
+        
         }
-        var data_option2Array = data_option2.split(",");
+        
+        var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' ? data_option2.split(",") : false );
+        
+//         var data_option2Array = data_option2.split(",");
+        
 
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
           
