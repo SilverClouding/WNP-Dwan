@@ -123,11 +123,11 @@ jQuery(function($){
       var select = $(this).parents('.minicart_add_to_cart').siblings('.minicart_variant').children('select'); 
       $(select).addClass('ok');
 
-            $(select+' option:selected').each(function (i) {
+//             $(select+' option:selected').each(function (i) {
 
-              selectedOptions = $(this).val();
+//               selectedOptions = $(this).val();
 
-            });
+//             });
 
 
 
