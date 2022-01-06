@@ -863,6 +863,27 @@ class VariantRadios extends VariantSelects {
       var data_option1 = $this.getAttribute('data_option1');
       var data_option2 = $this.getAttribute('data_option2');
       console.log(data_option2);
+      var lastChar2 = data_option2.slice(-1);
+      if (lastChar2 == ',') {
+        data_option2 = data_option2.slice(0, -1);
+      }
+      var allOption2 = '';
+      var data_option2Array = data_option2.split(",");
+      .forEach(data_option2Array,function(i){
+        var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        allOption2 = data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+        console.log(i+"-"+data_option2Array[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
+        //       $(".option2_for_below_input .input-"+allOption2).siblings("label").addClass('soldout');
+        //        $(".option2_for_below_input .input-"+allOption2).siblings("label").removeClass('available');
+//         $(".option2_for_below_input label").addClass('soldout');
+//         $(".option2_for_below_input label").removeClass('available');
+        fieldset.querySelectorAll(".option2_for_below_input .input-"+triggerOption2).click(); 
+
+//         $(".option2_for_below_input .label-"+allOption2).removeClass('soldout');
+//         $(".option2_for_below_input .label-"+allOption2).addClass('available');
+//         $(".option2_for_below_input .label-"+triggerOption2).removeClass('soldout');
+//         $(".option2_for_below_input .label-"+triggerOption2).addClass('available');
+      });
       
       
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
