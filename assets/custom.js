@@ -531,6 +531,7 @@ jQuery(function($){
 //    });
      
      var openId = "#qv_"+$(this).attr('data-productid');
+      $(openId).addClass('active');
      $(openId).show();
      
 });
