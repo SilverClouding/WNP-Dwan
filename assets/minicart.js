@@ -106,60 +106,60 @@ jQuery(function($){
        console.log(selectedOptions);
   
   $(document).on('click',".mini-add-button", function (e) {
-    
-    
-    
+
+
+
     e.preventDefault();
     console.log('click work');
-     var product_handle = $(this).data('handle');
+    var product_handle = $(this).data('handle');
     jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
       console.log(product);
       var title = product.title;
       product_handle = product.handle;
       var url = '/products/' + product_handle;
-  	  var qty = 1;
+      var qty = 1;
       var var_id = 0;
-     
+
       var select = $(this).parents('.minicart_add_to_cart').siblings('.minicart_variant').children('select'); 
       $(select).addClass('ok');
-      
-//       $(select+' option:selected').each(function (i) {
 
-//         selectedOptions = $(this).val();
+            $(select+' option:selected').each(function (i) {
 
-//       });
+              selectedOptions = $(this).val();
 
-    
-      
-      
+            });
+
+
+
+
       jQuery.getJSON('/products/' + product_handle + '.js', function (product) {
         $(product.variants).each(function (i, v) { 
-         
-            console.log(product.variants.length);
-          
-//           if(product.variants.length > 1){ }else{
-//             selectedOptions = $('.minicart_variant').attr('var_default_id');
-//           }
-//            
-           if(product.variants.length > 1){
-              if ( v.id == selectedOptions ){ 
+
+          console.log(product.variants.length);
+
+          //           if(product.variants.length > 1){ }else{
+          //             selectedOptions = $('.minicart_variant').attr('var_default_id');
+          //           }
+          //            
+          if(product.variants.length > 1){
+            if ( v.id == selectedOptions ){ 
               var_id = v.id;
               processCart();
-//               console.log(v.available+"-"+v.title);
+              //               console.log(v.available+"-"+v.title);
               console.log(v.id+'='+selectedOptions); 
-//               console.log(selectedOptions);
-              }
-            }else{
-              console.log('else');
-             var_id = v.id;
-               processCart();
+              //               console.log(selectedOptions);
             }
-//          console.log(var_id); 
-          
-          
+          }else{
+            console.log('else');
+            var_id = v.id;
+            processCart();
+          }
+          //          console.log(var_id); 
+
+
         });
       });
-      
+
       function processCart() {
         jQuery.post('/cart/add.js', {
           quantity: qty,
