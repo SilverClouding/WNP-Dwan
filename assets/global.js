@@ -870,18 +870,18 @@ class VariantRadios extends VariantSelects {
       if(fieldsets[0] == fieldset ){
         const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
         var data_option1= $this.getAttribute('data_option1');
+         var data_option2 = $this.getAttribute('data_option2');
         var data_option3 = $this.getAttribute('data_option3');
 
-        count = 1;
+
         var thisValue = $this.getAttribute("value");
-        var data_option2 = $this.getAttribute('data_option2');
         var lastChar2 = data_option2.slice(-1);
         if (lastChar2 == ',') {
           data_option2 = data_option2.slice(0, -1);
         }
         var data_option2Array = data_option2.split(",");
 
-        [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
+        data_option2Array && [fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
 
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log(element);
@@ -891,7 +891,6 @@ class VariantRadios extends VariantSelects {
           }else{
             element.classList.remove('available');
             element.classList.add('soldout');
-
           }
 
         }); 
