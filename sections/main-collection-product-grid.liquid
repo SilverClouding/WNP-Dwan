@@ -271,7 +271,6 @@
             %}
           </li>
           
-          {% render 'new-quickview-content' ,product_card_product: product%}
           {%- endfor -%}
         </ul>
 
@@ -279,6 +278,12 @@
         {% render 'pagination', paginate: paginate, anchor: '' %}
         {%- endif -%}
       </div>
+      
+      {%- for product in collection.products -%}
+      {% render 'new-quickview-content' ,product_card_product: product%}
+      {%- endfor -%}
+  
+      
       {%- endif -%}
       {%- endpaginate -%}
     </div>
