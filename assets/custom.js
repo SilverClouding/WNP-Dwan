@@ -524,8 +524,8 @@ jQuery(function($){
    $(document).on('click',".quick-view_new", function () {
   var productinfohtml = $(this).siblings('.variantselec').html();
 //      console.log(productinfohtml);
-     $(this).siblings('.qv-product-options_html').addClass('active');
-     $(this).siblings('.qv-product-options_html').removeAttr('style');
+     $(this).parents('.quick-view-button').siblings('.qv-product-options_html').addClass('active');
+     $(this).parents('.quick-view-button').siblings('.qv-product-options_html').removeAttr('style');
 //       $(this).siblings('.qv-product-options_html').html(productinfohtml);
 //       theme.varChangefunc();
    });
