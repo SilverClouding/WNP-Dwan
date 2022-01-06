@@ -584,26 +584,29 @@ jQuery(function($){
       'afterClose': function () {
         $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
         $('.qv-product-main-images').slick('unslick');
+      },
+      'beforeLoad': function () {
+        $(openId+' .qv-product-main-images').slick({
+          dots: false,
+          arrows: true,
+          respondTo: 'min',
+          useTransform: false,
+          asNavFor: '.slider-nav'
+        });
+
+        $(openId+' .slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.qv-product-main-images',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          arrows: false,
+        });
+
       }
 
-      $(openId+' .qv-product-main-images').slick({
-      dots: false,
-      arrows: true,
-      respondTo: 'min',
-      useTransform: false,
-      asNavFor: '.slider-nav'
-    });
-
-    $(openId+' .slider-nav').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.qv-product-main-images',
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      arrows: false,
-    });
-
+      
 
   });
   });
