@@ -178,8 +178,9 @@
     <div class="product__info-wrapper" >
       <div class="product__info-container">
      
-      {% render "variant-selector-for-quickshop"  product: product_card_product %}
-           {% render "quantity-selector-for-quickshop"  product: product_card_product %}
+        {% render "product-price-description-for-quickshop"  product: product_card_product %}
+        {% render "variant-selector-for-quickshop"  product: product_card_product %}
+        {% render "quantity-selector-for-quickshop"  product: product_card_product %}
     <product-form class="product-form"> 
     
    
