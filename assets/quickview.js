@@ -109,7 +109,7 @@ jQuery(function($){
         
         
         setTimeout(function() {
-          $(this).siblings('.variantselec').html('')
+          $(this).parents('.quick-view-button').siblings('.variantselec').html('')
         }, 2500);
         
         
