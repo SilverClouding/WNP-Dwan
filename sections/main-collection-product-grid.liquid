@@ -270,6 +270,8 @@
             show_rating: section.settings.show_rating
             %}
           </li>
+          
+          {% render 'new-quickview-content' ,product_card_product: product%}
           {%- endfor -%}
         </ul>
 
