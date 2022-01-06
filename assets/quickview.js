@@ -13,6 +13,10 @@ jQuery(function($){
     $(document).on('click',".quick-view", function () {
       var productdata = $(this).data('product');
       console.log(productdata);
+      var htmlfetchData = $(this).siblings('.variantselec').html();
+      
+      
+      
       if ($('#quick-view').length == 0){$("body").append('<div id="quick-view"></div>');}
       var product_handle = $(this).data('handle');
       $('#quick-view').addClass(product_handle);
@@ -99,6 +103,10 @@ jQuery(function($){
             $('.qv-product-thumb-images').append(image_embed_thumb);
           }
         });
+        
+        
+        $('.qv-product-options_html').html(htmlfetchData);
+        
         $(options).each(function (i, option) {
           var opt = option.name;
           var selectClass = '.option.' + opt.toLowerCase();
