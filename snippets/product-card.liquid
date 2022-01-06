@@ -187,7 +187,7 @@
   {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
   {% endfor %}
   
-<div class="variantselec" style="display:none;">  
+<div class="variantselec" style="display:none;">    <product-form class="product-form"> 
   {%- form 'product', product_card_product, id: product_form_id, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
   <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product_card_product.url }}" {{ block.shopify_attributes }}>
     {%- for option in product_card_product.options_with_values -%}
@@ -261,7 +261,7 @@
      <script type="application/json">{{ product_card_product.variants | json }}</script>
   </variant-radios>
     <div {{ block.shopify_attributes }}>
-              <product-form class="product-form">
+           
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                     <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -314,10 +314,10 @@
                     
                   </div>
                
-              </product-form>
+              
 
              
-            </div> {%- endform -%}
+            </div> {%- endform -%}</product-form>
   </div>
   
 </div>
