@@ -192,6 +192,9 @@
         <span class="product-form__error-message"></span>
       </div>
       <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
+      
+      {% render "variant-selector-for-quickshop", product: product_card_product %}
+      
       <div class="product-form__buttons">
 
         <a id="notifyme" class="  {% if product_card_product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
