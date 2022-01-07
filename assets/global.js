@@ -748,26 +748,33 @@ class VariantSelects extends HTMLElement {
     fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
       .then((response) => response.text())
       .then((responseText) => {
-        const id = `price-${this.dataset.section}`;
-        const html = new DOMParser().parseFromString(responseText, 'text/html')
-        const destination = document.getElementById(id);
-        const source = html.getElementById(id);
+      const id = `price-${this.dataset.section}`;
+      const html = new DOMParser().parseFromString(responseText, 'text/html')
+      const destination = document.getElementById(id);
+      const source = html.getElementById(id);
 
-        if (source && destination) destination.innerHTML = source.innerHTML;
 
-        const price = document.getElementById(`price-${this.dataset.section}`);
+
+      if (source && destination) destination.innerHTML = source.innerHTML;
+
+      const price = document.getElementById(`price-${this.dataset.section}`);  
+      if (price) price.classList.remove('visibility-hidden');
+      this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+
+      const qvid = `.fancybox-inner #price-${this.dataset.section}`;
+      const qvhtml = new DOMParser().parseFromString(responseText, 'text/html')
+      const qvdestination = document.querySelector(qvid);
+      const qvsource = html.querySelector(qvid);
+      if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
-      
+
       console.log(destination);
       console.log(qvprice);
       qvprice.classList.add('check');
 
-        if (price) price.classList.remove('visibility-hidden');
-        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
-      
       if (qvprice) qvprice.classList.remove('visibility-hidden');
-        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
-      
+      this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+
       
       
       });
