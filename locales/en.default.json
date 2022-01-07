@@ -232,6 +232,7 @@
     },
     "cart": {
       "title": "Your cart",
+      "cartparagraph": "You're missing out is all we're saying ",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
