@@ -770,7 +770,7 @@ class VariantSelects extends HTMLElement {
 
       console.log("id-"+id);
       console.log(qvhtml);
-      console.log(this);
+      console.log(this.getAttribute("product_id"));
       qvprice.classList.add('check');
 
       if (qvprice) qvprice.classList.remove('visibility-hidden');
