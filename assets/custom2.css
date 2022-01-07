@@ -432,5 +432,9 @@ a.open_popup_minq_close {
 
 .qv-product-options_html  .form.shopify-product-form .product-form__buttons {
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.qv-product-options_html  .swym-button.swym-add-to-wishlist-view-product{
+  max-width:100%;
 }
