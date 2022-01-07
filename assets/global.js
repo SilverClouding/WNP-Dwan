@@ -664,6 +664,9 @@ class VariantSelects extends HTMLElement {
       
       console.log(inventoryQty);
        console.log(this.getAttribute('data_'+this.currentVariant.id));
+      if(inventoryQty == "undefined" ){
+      inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
+      }
       
       const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg `);
       
