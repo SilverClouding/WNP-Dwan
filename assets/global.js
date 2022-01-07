@@ -587,18 +587,13 @@ class VariantSelects extends HTMLElement {
 
     this.options = fieldsets.map((fieldset) => {
 
-
-      var count = 0
-
+      
       if(fieldsets[0] == fieldset ){
         const $this = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked);
         var thisValue = $this.getAttribute("value");
         var data_option1= $this.getAttribute('data_option1');
         var data_option2 = $this.getAttribute('data_option2');
         var data_option3 = $this.getAttribute('data_option3');
-
-
-
         var lastChar2 = data_option2.slice(-1);
         if (lastChar2 == ',') {
           data_option2 = data_option2.slice(0, -1);
@@ -615,7 +610,6 @@ class VariantSelects extends HTMLElement {
             element.classList.add('soldout');
           }
         }); 
-        
          var lastChar3 = data_option3.slice(-1);
         if (lastChar3 == ',') {
           data_option3 = data_option3.slice(0, -1);
@@ -632,9 +626,6 @@ class VariantSelects extends HTMLElement {
             element.classList.add('soldout');
           }
         }); 
-        
-        
-        
         if(data_option2Array){
           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
@@ -646,18 +637,15 @@ class VariantSelects extends HTMLElement {
 
         console.log("data_option2Array-"+data_option2Array);
         console.log("data_option3Array-"+data_option3Array);
-        
-        
           if(data_option2Array || data_option3Array ){
-
           }else{
             console.log('notifyme')
           }
-
-        
-
-
       }
+      
+      
+      console.log(fieldset);
+      
 
       console.log(this.currentVariant.id);
       
@@ -667,11 +655,6 @@ class VariantSelects extends HTMLElement {
         input.value = this.currentVariant.id;
         input.dispatchEvent(new Event('change', { bubbles: true }));
       });
-      
-//       console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
-
-//       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
-
     });
   }
   
