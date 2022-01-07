@@ -601,7 +601,7 @@ class VariantSelects extends HTMLElement {
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
           if(data_option2Array.indexOf(element.value) > -1 ){
-            console.log(element);
+//             console.log(element);
 
             element.classList.add('available');
             element.classList.remove('soldout');
@@ -618,13 +618,13 @@ class VariantSelects extends HTMLElement {
         console.log(typeof data_option3);
         
         var data_option3Array = ( typeof data_option3 != "undefined" &&  data_option3 != '' )? data_option3.split(",") : false ; 
-        data_option3Array && fieldsets[2] && [...fieldsets[2].querySelectorAll('input')].forEach(function(element){ 
-          if(data_option3Array.indexOf(element.value) > -1 ){
-            element.classList.add('available');
-            element.classList.remove('soldout');
+        data_option3Array && fieldsets[2] && [...fieldsets[2].querySelectorAll('input')].forEach(function(element2){ 
+          if(data_option3Array.indexOf(element2.value) > -1 ){
+            element2.classList.add('available');
+            element2.classList.remove('soldout');
           }else{
-            element.classList.remove('available');
-            element.classList.add('soldout');
+            element2.classList.remove('available');
+            element2.classList.add('soldout');
           }
         }); 
         if(data_option2Array){
