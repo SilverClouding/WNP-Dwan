@@ -748,7 +748,7 @@ class VariantSelects extends HTMLElement {
     fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
       .then((response) => response.text())
       .then((responseText) => {
-     
+      console.log(responseText);
         const id = `price-${this.dataset.section}`;
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(id);
@@ -757,8 +757,9 @@ class VariantSelects extends HTMLElement {
         if (source && destination) destination.innerHTML = source.innerHTML;
 
         const price = document.getElementById(`price-${this.dataset.section}`);
+      const qvprice = document.getElementById(`price-${this.dataset.section}`);
       price.classList.add('check');
- console.log(price);
+
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       
