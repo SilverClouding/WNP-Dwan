@@ -768,11 +768,13 @@ class VariantSelects extends HTMLElement {
       if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
 
-      console.log(destination);
+      console.log(qvdestination);
       console.log(this);
       qvprice.classList.add('check');
 
       if (qvprice) qvprice.classList.remove('visibility-hidden');
+      
+      
       this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
 
       
