@@ -3133,8 +3133,7 @@ select:focus, select:hover{
   .product .product__info-container .product-form__input .swatch-element.soldout,
   .soldout+label{
   position:relative;
-    color: #44444D !important;
-    opacity:0.5;
+    color: rgba(68, 68, 77, 0.5) !important;
   }
   .product .product__info-container .product-form__input .swatch-element.soldout:before,
   .soldout+label:before{
@@ -3142,7 +3141,7 @@ select:focus, select:hover{
     content: '';
     top: 50%;
     background: #44444D;
-    opacity:0.5;
+/*     opacity:0.5; */
     transform: rotate(-12deg);
     height: 1px;
     z-index: 99;
@@ -4366,7 +4365,10 @@ select:focus, select:hover{
 .fancybox-desktop .gallery-container {
     padding-right: 0;
 }
-    
+ .fancybox-desktop .fancybox-skin {
+    margin-bottom: 20px!important;
+    padding: 20px!important;
+}   
     
     
   }
