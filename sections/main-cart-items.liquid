@@ -14,6 +14,7 @@
 
   <div class="cart__warnings">
     <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
+    <p>{{ sections.cart.cartparagraph | t }}</p>
     {% for block in section.blocks %}
     {% case block.type %}
     {%- when 'shop_button' -%}
