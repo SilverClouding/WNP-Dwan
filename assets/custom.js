@@ -324,6 +324,10 @@ jQuery(function($){
 
     $('.'+trigger).siblings().removeClass('active');
     $('.'+trigger).addClass('active');
+    
+    featured_col_Swiper();
+    featured_col_Swiper2();
+    
   });
 });
 
