@@ -756,7 +756,7 @@ class VariantSelects extends HTMLElement {
         if (source && destination) destination.innerHTML = source.innerHTML;
 
         const price = document.getElementById(`price-${this.dataset.section}`);
-      const qvprice = document.querySelector(`price-${this.dataset.section} .variantselec variant-radios`);
+      const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
       
       console.log(destination);
       console.log(qvprice);
