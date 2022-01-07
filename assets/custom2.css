@@ -376,14 +376,20 @@ li.breadcrumbs__item a {
 
 
 .open_popup_minq.active {
-    position: fixed;
-    background: white;
-    z-index: 99999;
-    top: 50%;
-    left: 0;
-    right: 0;
-    width: 367px;
-    margin: 0 auto;
-    transform: translateY(-50%);
-    padding: 0 20px 30px;
+  position: fixed;
+  background: white;
+  z-index: 99999;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 367px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  padding: 0 20px 30px;
+}
+
+a.open_popup_minq_close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
