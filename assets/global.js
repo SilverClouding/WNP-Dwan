@@ -687,6 +687,8 @@ class VariantSelects extends HTMLElement {
           stockmsg.innerHTML="Out of stock";
         }
       }
+      
+      
       const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
       productForms.forEach((productForm) => {
         const input = productForm.querySelector('input[name="id"]');
