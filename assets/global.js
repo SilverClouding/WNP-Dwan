@@ -672,7 +672,7 @@ class VariantSelects extends HTMLElement {
       
       for (let i = 0; i < this.children.length; i++) {
         console.log(this.children[i].getAttribute('class'));
-        const stockmsg = this.children[i];
+        const stockmsg = this.children[0];
 //         stockmsg = document.querySelector(`.${this.children[i]}`);
 
 
