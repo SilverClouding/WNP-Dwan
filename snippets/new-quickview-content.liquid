@@ -52,9 +52,9 @@
               </div>
             </button>
 
-            <!-- Swym button on product pages -->
-            <div class="swym-wishlist-button-bar"></div>
-            <!-- Swym button on product pages -->
+           <!-- Swym Wishlist Plus EPI Button-->
+  <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" data-swaction="addToWishlist" data-product-id="{{ product_card_product.id | json}}" data-variant-id="{{ product_card_product.variants[0].id}}" data-product-url="{{ shop.url }}{{  product_card_product.url }}">Save to wishlist</button>
+  <!-- Swym Wishlist Plus EPI Button-->
 
             {%- if block.settings.show_dynamic_checkout -%}{%- endif -%}
             {{ form | payment_button }}
