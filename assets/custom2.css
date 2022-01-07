@@ -459,3 +459,29 @@ a.open_popup_minq_close {
 .qv-product-options_html  .swym-button.swym-add-to-wishlist-view-product{
   max-width:100%;
 }
+
+.quick-view-button button.swym-button {
+    background: #ffffff;
+    color: #153a33;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding: 8px 20px;
+    box-shadow: none;
+    border: 1px solid #153a33;
+    min-height: unset;
+    max-width: unset;
+    flex-grow: unset!important;
+    opacity: unset;
+    cursor: pointer;
+    box-shadow: none;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    display: block;
+}
+
+.quick-view-button .swym-button.swym-add-to-wishlist-view-product.swym-heart:after {content: "add to wishlist";text-transform: capitalize;}
