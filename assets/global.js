@@ -757,7 +757,7 @@ class VariantSelects extends HTMLElement {
 
       if (source && destination) destination.innerHTML = source.innerHTML;
 
-      const price = document.querySelector(`price-${this.dataset.section}, .fancybox-inner #qvproduct_form`);  
+      const price = document.getElementById(`price-${this.dataset.section}`);  
       if (price) price.classList.remove('visibility-hidden');
       this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
 
@@ -791,7 +791,7 @@ class VariantSelects extends HTMLElement {
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {
-    const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+    const productForm = document.querySelector(`#product-form-${this.dataset.section},  .fancybox-inner #qvproduct_form`);
     console.log(productForm);
     productForm.classList.add('check');
     if (!productForm) return;
