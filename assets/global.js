@@ -661,7 +661,7 @@ class VariantSelects extends HTMLElement {
 
       console.log(this.currentVariant.id);
       
-      const productForms = document.querySelectorAll(`#product-form-${this.dataset.section}, #product-form-installment, #qvproduct_form`);
+      const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
       productForms.forEach((productForm) => {
         const input = productForm.querySelector('input[name="id"]');
         input.value = this.currentVariant.id;
