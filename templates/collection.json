@@ -9,9 +9,8 @@
       }
     },
     "product-grid": {
-      "type": "main-collection-product-grid",
+      "type": "main-search-boost-pfs-original",
       "settings": {
-        "products_per_page": 24,
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
