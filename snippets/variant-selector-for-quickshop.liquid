@@ -14,7 +14,7 @@
 
 
 {%- unless product.has_only_default_variant -%}
-<variant-radios {% for var in product_card_product.variants %}data_{{- var.id -}} = {{ var.inventory_quantity | default: 0 }};{% endfor %} id="product_{{product.id}}" product_id="qv_{{product.id}}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+<variant-radios {% for var in product_card_product.variants %}data_{{- var.id -}} = {{ var.inventory_quantity | default: 0 |json}};{% endfor %} id="product_{{product.id}}" product_id="qv_{{product.id}}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
 
   <h3 id="stockmsg" class="stockmsg">{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
     {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
