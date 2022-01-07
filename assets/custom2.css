@@ -376,16 +376,7 @@ li.breadcrumbs__item a {
 
 
 .open_popup_minq.active {
-/*   position: fixed;
-  background: white;
-  z-index: 99999;
-  top: 50%;
-  left: 0;
-  right: 0;
-  width: 500px;
-  margin: 0 auto;
-  transform: translateY(-50%);
-  padding: 65px 35px; */
+/*   */
   position: fixed;
     top: 0;
     right: 0;
@@ -399,6 +390,18 @@ li.breadcrumbs__item a {
     background: rgba(68,68,77,.3)!important;
     z-index: 9!important;
     text-align: center;
+}
+.open_popup_minq_cont{
+ position: fixed;
+  background: white;
+  z-index: 99999;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 500px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  padding: 65px 35px;
 }
 
 a.open_popup_minq_close {
