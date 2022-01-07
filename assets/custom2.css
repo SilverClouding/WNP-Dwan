@@ -465,7 +465,7 @@ a.open_popup_minq_close {
     background: #ffffff;
     color: #153a33;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 14px !important;
     font-weight: 300;
     font-style: normal;
     text-align: center;
