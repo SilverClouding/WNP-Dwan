@@ -21,7 +21,7 @@ $(".announcement_text_slider").each(function(elem, target){
     }, function() {
         swp.autoplay.start();
     });
-})
+});
 
 
 
