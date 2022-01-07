@@ -192,3 +192,11 @@
   <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" data-swaction="addToWishlist" data-product-id="{{ product_card_product.id | json}}" data-variant-id="{{ product_card_product.variants[0].id}}" data-product-url="{{ shop.url }}{{  product_card_product.url }}"></button>
   <!-- Swym Wishlist Plus EPI Button-->
 </div>
+
+
+<script>
+ var inv_qty = {};
+ {% for var in product_card_product.variants %}
+   inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+ {% endfor %}
+</script>
