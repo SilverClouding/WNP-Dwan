@@ -796,7 +796,7 @@ class VariantSelects extends HTMLElement {
     productForm.classList.add('check');
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
-    const qvnotifyme = productForm.querySelector('.fancybox-inner #notifyme');
+    const qvnotifyme = productForm.querySelector('.fancybox-inner #notifyme, #notifyme');
     const addButtonText = productForm.querySelector('[name="add"] > span');
 
     if (!addButton) return;
@@ -805,11 +805,11 @@ class VariantSelects extends HTMLElement {
       addButton.setAttribute('disabled', 'disabled');
       addButton.classList.add('hide');
       qvnotifyme.classList.remove('hide');
-      document.getElementById('notifyme').classList.remove('hide');
+//       document.getElementById('notifyme').classList.remove('hide');
       if (text) addButtonText.textContent = text;
     } else {
       addButton.removeAttribute('disabled');
-      document.getElementById('notifyme').classList.add('hide');
+//       document.getElementById('notifyme').classList.add('hide');
        addButton.classList.remove('hide');
        qvnotifyme.classList.add('hide');
       addButtonText.textContent = window.variantStrings.addToCart;
