@@ -395,7 +395,7 @@ a.open_popup_minq_close {
   top: 20px;
 }
 
-.open_popup_minq.active {
+/* .open_popup_minq.active {
   z-index: 9999!important;
 }
 
@@ -406,4 +406,4 @@ a.open_popup_minq_close {
   top: 50%;
   margin: 0 auto!important;
   bottom: auto;
-}
+} */
