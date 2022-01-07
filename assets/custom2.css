@@ -389,7 +389,7 @@ li.breadcrumbs__item a {
     box-sizing: border-box;
 background: rgba(68,68,77,.3)!important;
     z-index: 9!important;
-    text-align: center;
+    text-align: left;
 }
 .open_popup_minq_cont{
 position: fixed;
@@ -401,7 +401,7 @@ position: fixed;
   width: 500px;
   margin: 0 auto;
   transform: translateY(-50%);
-  padding: 0 20px 30px;
+  padding: 70px 35px;
 }
 
 a.open_popup_minq_close {
