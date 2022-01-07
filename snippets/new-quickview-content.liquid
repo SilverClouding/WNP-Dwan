@@ -77,6 +77,6 @@
 <script>
  var inv_qty = {};
  {% for var in product_card_product.variants %}
-  {{product_card_product.id}}_inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+  inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
  {% endfor %}
 </script>
