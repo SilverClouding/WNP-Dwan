@@ -470,6 +470,11 @@ jQuery(function($){
   $(document).on('click', '.popup_minq', function(){
     $('.open_popup_minq').addClass('active');
   });
+  
+  $(document).on('click', '.open_popup_minq_close', function(){
+    $(this).parents('.open_popup_minq').removeClass('active');
+  });
+  
 });
 
 
