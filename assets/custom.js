@@ -467,11 +467,13 @@ jQuery(function($){
 //   $("a.fancybox").fancybox()
 // });
 jQuery(function($){
-  $(document).on('click', '.popup_minq', function(){
+  $(document).on('click', '.popup_minq', function(e){
+     e.preventDefault();
     $('.open_popup_minq').addClass('active');
   });
   
-  $(document).on('click', '.open_popup_minq_close', function(){
+  $(document).on('click', '.open_popup_minq_close', function(e){
+     e.preventDefault();
     $(this).parents('.open_popup_minq').removeClass('active');
   });
   
