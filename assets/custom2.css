@@ -384,13 +384,12 @@ li.breadcrumbs__item a {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     padding: 20px;
     box-sizing: border-box;
     background: rgba(68,68,77,.3)!important;
     z-index: 9!important;
     text-align: center;
-  overflow:hidden;
 }
 .open_popup_minq_cont{
  position: fixed;
