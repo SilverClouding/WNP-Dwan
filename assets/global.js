@@ -657,7 +657,10 @@ class VariantSelects extends HTMLElement {
        }
       
 
-      console.log(this.currentVariant.id);
+     
+      
+      var inventoryQty = inv_qty[ this.currentVariant.id ];
+       console.log(this.currentVariant.id+"=="+ inventoryQty);
       
       const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
       productForms.forEach((productForm) => {
