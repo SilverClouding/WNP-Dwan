@@ -620,6 +620,7 @@ jQuery(function($){
         $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
         $('.qv-product-main-images').slick('unslick');
         $('.slider-nav').slick('unslick');
+        $.fancybox.defaults.hash = false;
       },
       'beforeLoad': function () {
         
