@@ -423,3 +423,9 @@ a.open_popup_minq_close {
   margin: 0 auto!important;
   bottom: auto;
 } */
+
+
+
+.swym-button.swym-add-to-wishlist-view-product.swym-heart:before{
+content:"Add to wishlist";
+}
