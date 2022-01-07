@@ -114,6 +114,11 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
+  
+   {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+   {% render 'new-quickview-content' ,product_card_product: product%}
+  {%- endfor -%}
+  
   {% endif %}
   
   
