@@ -390,6 +390,7 @@ li.breadcrumbs__item a {
     background: rgba(68,68,77,.3)!important;
     z-index: 9!important;
     text-align: center;
+  overflow:hidden;
 }
 .open_popup_minq_cont{
  position: fixed;
