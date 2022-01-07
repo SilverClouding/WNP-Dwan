@@ -257,11 +257,12 @@ display:none;
 }
 
 .soldout+label {
-    color: red!important;
+  color: #44444d!important;
+  opacity: 0.5;
 }
 
 .available+label {
-    color: #000!important;
+    color: #44444d!important;
 }
 
 /* wishlist */
