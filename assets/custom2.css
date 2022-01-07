@@ -200,7 +200,7 @@ display:none;
 .swatch-element {
   border: #e2e2e2 1px solid;
   width: auto;
-  height: 40px;
+/*   height: 40px; */
   float: left;
   -webkit-transform: translateZ(0);
   -webkit-font-smoothing: antialiased;
@@ -313,6 +313,7 @@ margin:0!important;
 }
 variant-radios {
     position: relative;
+  display:block;
 }
 h3#stockmsg {
     position: absolute;
