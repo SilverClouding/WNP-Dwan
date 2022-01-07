@@ -3130,12 +3130,14 @@ select:focus, select:hover{
     padding-bottom: 10px;
     letter-spacing:0;
   }
-  .product .product__info-container .product-form__input .swatch-element.soldout{
+  .product .product__info-container .product-form__input .swatch-element.soldout,
+  .soldout+label{
   position:relative;
     color: #44444D !important;
     opacity:0.5;
   }
-  .product .product__info-container .product-form__input .swatch-element.soldout:before{
+  .product .product__info-container .product-form__input .swatch-element.soldout:before,
+  .soldout+label:before{
     position: absolute;
     content: '';
     top: 50%;
