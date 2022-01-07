@@ -604,6 +604,7 @@ jQuery(function($){
       openEffect: 'none',
       closeEffect: 'none',
       'afterShow': function () {
+         theme.varChangefunc();
         $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
           $('.qv-product-main-images').addClass('loaded');
           $('.slider-nav').addClass('loaded');
