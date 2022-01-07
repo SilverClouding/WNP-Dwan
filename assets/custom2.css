@@ -484,4 +484,10 @@ a.open_popup_minq_close {
     display: block;
 }
 
-.quick-view-button .swym-button.swym-add-to-wishlist-view-product.swym-heart:after {content: "add to wishlist";text-transform: capitalize;}
+.quick-view-button .swym-button.swym-add-to-wishlist-view-product.swym-heart:after {
+  content: "add to wishlist";text-transform: capitalize;
+}
+
+.quick-view-button .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
+    content:"Added to wishlist";text-transform: capitalize;
+}
