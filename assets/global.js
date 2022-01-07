@@ -760,7 +760,7 @@ class VariantSelects extends HTMLElement {
       
       console.log(destination);
       console.log(qvprice);
-      price.classList.add('check');
+      qvprice.classList.add('check');
 
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
