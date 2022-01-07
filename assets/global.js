@@ -662,6 +662,17 @@ class VariantSelects extends HTMLElement {
       var inventoryQty = inv_qty[ this.currentVariant.id ];
        console.log(this.currentVariant.id+"=="+ inventoryQty);
       
+      const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg `);
+      if(inventoryQty >= 10){
+        stockmsg.innerHTML="In Stock";   
+      }
+      else if(inventoryQty <= 10 && inventoryQty >0){
+        stockmsg.innerHTML="Low in stock";
+      }
+      else{
+        stockmsg.innerHTML="Out of stock";
+      }
+      
       const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
       productForms.forEach((productForm) => {
         const input = productForm.querySelector('input[name="id"]');
