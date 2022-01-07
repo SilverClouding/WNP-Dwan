@@ -617,8 +617,6 @@ class VariantSelects extends HTMLElement {
         var data_option3Array = ( typeof data_option3 != "undefined" &&  data_option3 != '' )? data_option3.split(",") : false ; 
         data_option3Array && fieldsets[2] && [...fieldsets[2].querySelectorAll('input')].forEach(function(element){ 
           if(data_option3Array.indexOf(element.value) > -1 ){
-            console.log(element);
-
             element.classList.add('available');
             element.classList.remove('soldout');
           }else{
