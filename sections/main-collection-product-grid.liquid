@@ -179,41 +179,7 @@
 
 
     {%- paginate collection.products by section.settings.products_per_page -%}
-    <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
-      <div class="boost-pfs-container-default boost-pfs-filter-wrapper-page facets facets-container">
-        {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
-        {% if boost_in_collection_search == 'true' %}
-        <div class="boost-pfs-in-collection-search">
-          {% render 'boost-pfs-filter-skeleton', width: 4 %}
-        </div>
-        {% endif %}
-        <div class="facets__form">
-          <div class="facets__wrapper"></div>
-          {%- if section.settings.enable_sorting -%}
-          <div class="facet-filters sorting caption">
-            <div class="facet-filters__field">
-              <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-              <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
-                {%- render 'boost-pfs-filter-skeleton' -%}
-              </div>
-            </div>
-          </div>
-          {%- endif -%}
-          <div class="product-count light" role="status">
-            <p class="product-count__text boost-pfs-filter-total-product">
-              {%- render 'boost-pfs-filter-skeleton' -%}
-            </p>
-          </div>
-        </div>
-
-        <div class="boost-pfs-filter-toolbar-top-mobile">
-          <div class="boost-pfs-filter-tree-mobile-button">
-            {%- render 'boost-pfs-filter-skeleton', type: 'button' -%}
-          </div>
-        </div>
-        {%- comment -%} END TOOLBAR TOP MOBILE {%- endcomment -%}
-      </div>
-    </div>
+    
     <div id="CollectionProductGrid">
       <div class="boost-pfs-filter-wrapper collection page-width">
         <div class="boost-pfs-container-default-box">
@@ -268,6 +234,42 @@
               <div class="swiper-button-next"></div>
             </div>
             {% endif %}
+            
+            <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
+              <div class="boost-pfs-container-default boost-pfs-filter-wrapper-page facets facets-container">
+                {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
+                {% if boost_in_collection_search == 'true' %}
+                <div class="boost-pfs-in-collection-search">
+                  {% render 'boost-pfs-filter-skeleton', width: 4 %}
+                </div>
+                {% endif %}
+                <div class="facets__form">
+                  <div class="facets__wrapper"></div>
+                  {%- if section.settings.enable_sorting -%}
+                  <div class="facet-filters sorting caption">
+                    <div class="facet-filters__field">
+                      <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                      <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
+                        {%- render 'boost-pfs-filter-skeleton' -%}
+                      </div>
+                    </div>
+                  </div>
+                  {%- endif -%}
+                  <div class="product-count light" role="status">
+                    <p class="product-count__text boost-pfs-filter-total-product">
+                      {%- render 'boost-pfs-filter-skeleton' -%}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="boost-pfs-filter-toolbar-top-mobile">
+                  <div class="boost-pfs-filter-tree-mobile-button">
+                    {%- render 'boost-pfs-filter-skeleton', type: 'button' -%}
+                  </div>
+                </div>
+                {%- comment -%} END TOOLBAR TOP MOBILE {%- endcomment -%}
+              </div>
+            </div>
             
             <div class="product-grid negative-margin">
               <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
