@@ -427,6 +427,10 @@ a.open_popup_minq_close {
 
 
 .qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart:before{
+  content: "";
+}
+
+.qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart:after {
   content:"Add to wishlist";
 }
 
