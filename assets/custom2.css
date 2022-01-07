@@ -313,13 +313,15 @@ margin:0!important;
 }
 variant-radios {
     position: relative;
+  display:block;
 }
 h3#stockmsg {
     position: absolute;
     right: 0;
-    color: #F5694D;
+    color: #153A33;
     font-style: normal;
     font-weight: 300;
+  line-height:16px;
     font-size: 14px;
     text-align: right;
       padding: 0;
