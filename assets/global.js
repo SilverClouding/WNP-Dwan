@@ -627,11 +627,13 @@ class VariantSelects extends HTMLElement {
             element2.classList.add('soldout');
           }
         }); 
-        if(data_option2Array){
+        
+        if(data_option2Array &&  fieldsets[1] ){
           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
         }
-        if(data_option3Array){
+        
+        if(data_option3Array &&  fieldsets[2] ){
           var triggerOption3 = data_option3Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
           fieldsets[2].querySelector(".option3_for_below_input .input-"+triggerOption3).click(); 
         }
