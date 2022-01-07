@@ -3132,12 +3132,15 @@ select:focus, select:hover{
   position:relative;
   }
   .product .product__info-container .product-form__input .swatch-element.soldout:before{
-  position:absolute;
-    content:'';
-    top:50%;
-    background:#d3d6d9;
-   transform:rotate(90deg);
-    height:1px;
+    position: absolute;
+    content: '';
+    top: 50%;
+    background: #d3d6d9;
+    transform: rotate(-14deg);
+    height: 1px;
+    z-index: 99;
+    left: 0;
+    width: 100%;
     
   }
   .product .product__info-container .product-form__input input[type=radio]:checked+label,
