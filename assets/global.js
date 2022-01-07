@@ -757,7 +757,7 @@ class VariantSelects extends HTMLElement {
 
       if (source && destination) destination.innerHTML = source.innerHTML;
 
-      const price = document.getElementById(`price-${this.dataset.section}`);  
+      const price = document.querySelector(`price-${this.dataset.section}, .fancybox-inner #qvproduct_form`);  
       if (price) price.classList.remove('visibility-hidden');
       this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
 
