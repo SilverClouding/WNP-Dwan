@@ -61,6 +61,15 @@
         "type": "url",
         "id": "button_link",
         "label": "link"
+      },
+      {
+        "type": "header",
+        "content": "Quickview additional payment option"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_dynamic_checkout",
+        "label": "Show additional payment option"
       }
     ]
   },
