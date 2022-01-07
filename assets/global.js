@@ -764,12 +764,12 @@ class VariantSelects extends HTMLElement {
       const qvid = `.fancybox-inner #price-${this.dataset.section}`;
       const qvhtml = new DOMParser().parseFromString(responseText, 'text/html')
       const qvdestination = document.querySelector(qvid);
-      const qvsource = html.querySelector(qvid);
+      const qvsource = qvhtml.querySelector(qvid);
       if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
 
       console.log("id-"+id);
-      console.log("qvid-"+qvid);
+      console.log(qvsource);
       console.log(this);
       qvprice.classList.add('check');
 
