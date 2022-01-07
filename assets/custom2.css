@@ -52,7 +52,7 @@ table td, table tr, table th, table, tbody {border: none!important;box-shadow: n
 
   .featured_col_Swiper2 li.swiper-slide {
     max-width: none!important;
-    width: 100%!important;
+/*     width: 100%!important; */
   }
 
   .featured_col_Swiper li.swiper-slide {
