@@ -638,8 +638,8 @@ class VariantSelects extends HTMLElement {
           fieldsets[2].querySelector(".option3_for_below_input .input-"+triggerOption3).click(); 
         }
 
-        console.log("data_option2Array-"+data_option2Array);
-        console.log("data_option3Array-"+data_option3Array);
+//         console.log("data_option2Array-"+data_option2Array);
+//         console.log("data_option3Array-"+data_option3Array);
           if(data_option2Array || data_option3Array ){
           }else{
             console.log('notifyme')
@@ -650,7 +650,8 @@ class VariantSelects extends HTMLElement {
 //         console.log(elementinput);
       });
 
-        
+         console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+      
        if(fieldsets[1] == fieldset ){
 //       console.log(fieldset);
        }
@@ -813,7 +814,7 @@ class VariantRadios extends VariantSelects {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
     this.options = fieldsets.map((fieldset) => {
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
-      console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+     
     });
 
   }
