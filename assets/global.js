@@ -671,7 +671,7 @@ class VariantSelects extends HTMLElement {
       const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg`);
       
       for (let i = 0; i < this.children.length; i++) {
-        console.log(this.children[i].tagName);
+        console.log(this.children[i].getAttribute('class'));
       }
       
       if(inventoryQty >= 10){
