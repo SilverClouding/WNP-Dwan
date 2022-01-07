@@ -792,6 +792,7 @@ class VariantSelects extends HTMLElement {
 
   toggleAddButton(disable = true, text, modifyClass = true) {
     const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+    console.log(productForm);
     productForm.classList.add('check');
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
