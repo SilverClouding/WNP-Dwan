@@ -621,6 +621,7 @@ jQuery(function($){
         $('.qv-product-main-images').slick('unslick');
         $('.slider-nav').slick('unslick');
         $.fancybox.defaults.hash = false;
+        console.log('close');
       },
       'beforeLoad': function () {
         
