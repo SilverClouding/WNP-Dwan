@@ -768,7 +768,7 @@ class VariantSelects extends HTMLElement {
       const qvdestination = document.querySelector(qvid);
       const qvsource = qvhtml.querySelector(qvid);
       
-//       if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
+      if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
       
       console.log(destination)
