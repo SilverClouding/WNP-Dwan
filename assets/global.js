@@ -658,8 +658,8 @@ class VariantSelects extends HTMLElement {
       
 
      
-      
-      var inventoryQty = inv_qty[ this.currentVariant.id ];
+      const ProductId = `#${this.getAttribute("product_id")}`;
+      var inventoryQty = ProductId+'_'+inv_qty[ this.currentVariant.id ];
        console.log(this.currentVariant.id+"=="+ inventoryQty);
       
       const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg `);
