@@ -763,10 +763,10 @@ class VariantSelects extends HTMLElement {
 
       
       const thisProductId = `#${this.getAttribute("product_id")}`;
-      const qvid = `.fancybox-inner #price-${this.dataset.section}`;
+      const qvid = `${thisProductId} #price-${this.dataset.section}`;
       const qvhtml = new DOMParser().parseFromString(responseText, 'text/html')
       const qvdestination = document.querySelector(qvid);
-      const qvsource = qvhtml.querySelector(thisProductId);
+      const qvsource = qvhtml.querySelector(qvid);
       
 //       if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
