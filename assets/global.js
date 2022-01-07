@@ -647,12 +647,12 @@ class VariantSelects extends HTMLElement {
       }
       
       [...fieldsets[1].querySelectorAll('input')].forEach(function(elementinput){
-        console.log(elementinput);
+//         console.log(elementinput);
       });
 
         
        if(fieldsets[1] == fieldset ){
-      console.log(fieldset);
+//       console.log(fieldset);
        }
       
 
