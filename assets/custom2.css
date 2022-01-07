@@ -424,7 +424,9 @@ a.open_popup_minq_close {
   bottom: auto;
 } */
 
-
+.qv-product-options_html  span.product__media-icon.motion-reduce {
+    display: none;
+}
 
 .qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart:before{
   content: "";
