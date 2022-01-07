@@ -394,7 +394,7 @@ li.breadcrumbs__item a {
 .open_popup_minq_cont{
  position: fixed;
   background: white;
-  z-index: 99999;
+  z-index: 99;
   top: 50%;
   left: 0;
   right: 0;
