@@ -672,6 +672,7 @@ class VariantSelects extends HTMLElement {
       
       for (let i = 0; i < this.children.length; i++) {
         console.log(this.children[i].getAttribute('class'));
+        stockmsg = document.querySelector(`.${this.children[i].getAttribute('class')}`);
       }
       
       if(inventoryQty >= 10){
