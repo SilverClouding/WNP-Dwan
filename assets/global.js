@@ -765,6 +765,11 @@ class VariantSelects extends HTMLElement {
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       
+      if (qvprice) qvprice.classList.remove('visibility-hidden');
+        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+      
+      
+      
       });
   }
 
