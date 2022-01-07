@@ -434,6 +434,15 @@ a.open_popup_minq_close {
   content:"Add to wishlist";
 }
 
+.qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:before {
+    content: "";
+}
+
+.qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
+    content:"Added to wishlist";
+}
+
+
 .qv-product-options_html  .form.shopify-product-form .product-form__buttons {
   align-items: center;
   justify-content: space-between;
