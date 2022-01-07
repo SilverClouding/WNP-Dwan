@@ -13,9 +13,11 @@
 {%- for block in section.blocks -%}
 {%- case block.type -%}
 {%- when 'collapsible_tab' -%}
+    {% comment %}
 <div class="product__accordion accordion" {{ block.shopify_attributes }}>
   <detailss id="Details-{{ block.id }}-{{ section.id }}"></detailss>
 </div>
+    {% endcomment %}
     <summary class="accordion">
       <div class="summary__title">
         {% render 'icon-accordion', icon: block.settings.icon %}
