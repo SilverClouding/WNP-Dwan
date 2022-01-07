@@ -32,6 +32,35 @@
         "type": "text",
         "id": "freeshipping",
         "label": "Free shipping threshold"
+      },
+      {
+        "type": "header",
+        "content": "Collection 5th product"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_bottom",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "image_caption_bottom",
+        "label": "Image caption"
+      },
+      {
+        "type": "richtext",
+        "id": "richtext_bottom",
+        "label": "Text area"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "link"
       }
     ]
   },
