@@ -658,24 +658,15 @@ class VariantSelects extends HTMLElement {
       
 
      
-      const ProductId = `#${this.getAttribute("product_id")}`;
-      
+    
       var inventoryQty = inv_qty[ this.currentVariant.id ];
-      
-      console.log(inventoryQty);
-       console.log(this.getAttribute('data_'+this.currentVariant.id));
       if(inventoryQty == undefined ){
-      inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
+        inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       }
-      
-//       const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg`);
-      
+
+
       for (let i = 0; i < this.children.length; i++) {
-        console.log(this.children[i].getAttribute('class'));
         const stockmsg = this.children[0];
-//         stockmsg = document.querySelector(`.${this.children[i]}`);
-
-
         if(inventoryQty >= 10){
           console.log("ok");
           stockmsg.innerHTML="In Stock";   
