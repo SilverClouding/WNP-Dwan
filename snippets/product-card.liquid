@@ -171,9 +171,22 @@
 <div class="quick-view-button">
 
 <!--   <a class="quick-view" data-handle="{{ product_card_product.handle }}" >Quick View</a> -->
+{% assign current_url = '' %}
 
+{% case template %}
+{% when 'page' %}
+{% assign current_url = page.url %}
+{% when 'blog' %}
+{% assign current_url = blog.url %}
+{% when 'article' %}
+{% assign current_url = blog.url %}
+{% when 'collection' %}
+{% assign current_url = collection.url %}
+{% when 'product' %}
+{% assign current_url = product.url %}
+{% endcase %}
   
-  <a class="quick-view_new" data-handle="{{ product_card_product.handle }}" data-productid="{{product_card_product.id}}">Quick View</a>
+  <a class="quick-view_new" currenturl="<script>window.location.pathname</script>" data-handle="{{ product_card_product.handle }}" data-productid="{{product_card_product.id}}">Quick View</a>
 
 
 </div>
