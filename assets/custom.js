@@ -289,7 +289,7 @@ jQuery(function($){
     });
 
     const featured_col_Swiper2 = new Swiper(".featured_col_Swiper2", {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
         el: ".featured_col_Swiper2 .swiper-pagination",
@@ -307,7 +307,7 @@ jQuery(function($){
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         768: {
