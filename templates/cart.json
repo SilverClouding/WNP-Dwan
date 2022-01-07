@@ -2,6 +2,34 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
+      "blocks": {
+        "5b7aa904-9e04-4e3f-8ec4-f021401a3a37": {
+          "type": "shop_button",
+          "settings": {
+            "button_label": "Shop Dogs",
+            "button_link": "shopify:\/\/pages\/dog"
+          }
+        },
+        "f5f8e3b9-d558-456b-9802-b957edbe2d38": {
+          "type": "shop_button",
+          "settings": {
+            "button_label": "Shop Cats",
+            "button_link": "#"
+          }
+        },
+        "12a7c47c-611b-4563-bf2f-83758ad1276d": {
+          "type": "shop_button",
+          "settings": {
+            "button_label": "Shop Small Animals",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "5b7aa904-9e04-4e3f-8ec4-f021401a3a37",
+        "f5f8e3b9-d558-456b-9802-b957edbe2d38",
+        "12a7c47c-611b-4563-bf2f-83758ad1276d"
+      ],
       "settings": {
         "show_vendor": false
       }
@@ -41,7 +69,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": false
+        "show_rating": false,
+        "sec_class": ""
       }
     }
   },
