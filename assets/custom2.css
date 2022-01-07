@@ -200,7 +200,7 @@ display:none;
 .swatch-element {
   border: #e2e2e2 1px solid;
   width: auto;
-/*   height: 40px; */
+  height: 40px;
   float: left;
   -webkit-transform: translateZ(0);
   -webkit-font-smoothing: antialiased;
@@ -313,15 +313,13 @@ margin:0!important;
 }
 variant-radios {
     position: relative;
-  display:block;
 }
 h3#stockmsg {
     position: absolute;
     right: 0;
-    color: #153A33;
+    color: #F5694D;
     font-style: normal;
     font-weight: 300;
-  line-height:20px;
     font-size: 14px;
     text-align: right;
       padding: 0;
@@ -378,36 +376,33 @@ li.breadcrumbs__item a {
 
 
 .open_popup_minq.active {
-/*   */
   position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box;
-    background: rgba(68,68,77,.3)!important;
-    z-index: 9!important;
-    text-align: left;
-}
-.open_popup_minq_cont{
- position: fixed;
   background: white;
-  z-index: 99;
+  z-index: 99999;
   top: 50%;
   left: 0;
   right: 0;
-  width: 500px;
+  width: 367px;
   margin: 0 auto;
   transform: translateY(-50%);
-  padding: 65px 35px;
+  padding: 0 20px 30px;
 }
 
 a.open_popup_minq_close {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.open_popup_minq.active {
+  z-index: 9999!important;
+}
+
+.open_popup_minq.active .open_popup_minq_cont.fancybox-margin {
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50% );
+  top: 50%;
+  margin: 0 auto!important;
+  bottom: auto;
 }
