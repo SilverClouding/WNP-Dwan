@@ -21,7 +21,7 @@
         
         {% endif %}
 
-<p class="product__text caption-with-letter-spacing"> <a href="/collections/{{ vendor |handle }}">{{product.vendor}}</a></p>
+<p class="product__text caption-with-letter-spacing"> <a href="/collections/{{ product.vendor |handle }}">{{product.vendor}}</a></p>
 
  <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
