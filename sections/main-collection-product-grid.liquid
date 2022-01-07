@@ -14,82 +14,136 @@
 {{ 'component-facets.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 
-{%- paginate collection.products by section.settings.products_per_page -%}
-<div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
-  <div class="boost-pfs-container-default boost-pfs-filter-wrapper-page facets facets-container">
-    {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
-    {% if boost_in_collection_search == 'true' %}
-      <div class="boost-pfs-in-collection-search">
-        {% render 'boost-pfs-filter-skeleton', width: 4 %}
-      </div>
+
+ <div class="left-section">
+    <div class="show-in-desktop">
+      {{breadcrumb}}
+    </div>
+  </div>
+
+  <div class="right-section" >
+    
+    <div class="show-in-desktop">
+      {% if collection.image != blank %}
+      {{banner}}
+      {% else %}
+      <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+    </div>
+    <div class="show-in-mobile">
+      {{breadcrumb}}
+    </div>
+    
+    
+  
+    
+    {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
+    {% if selected_handles.size > 0 %}
+    <div class="swiper main-collection-page_Swiper">
+      <ul class="swiper-wrapper collection_page_linklist" role="list">
+        {% for selected_handle in selected_handles %}
+        {% assign linkCollection = collections[selected_handle] %}  
+        <li class="swiper-slide">
+          <div class="featured-prod-item">
+            <a href="{{ linkCollection.url }}">
+              {% if linkCollection.image %}
+              <img src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% else %}
+              <img src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape  }}" />
+              {% endif %}
+              <h2>{{ linkCollection.title }}</h2>
+            </a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="swiper-scrollbar"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     {% endif %}
-    <div class="facets__form">
-      <div class="facets__wrapper"></div>
-      {%- if section.settings.enable_sorting -%}
-        <div class="facet-filters sorting caption">
-          <div class="facet-filters__field">
-            <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-            <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
-              {%- render 'boost-pfs-filter-skeleton' -%}
+
+
+
+
+    {%- paginate collection.products by section.settings.products_per_page -%}
+    <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
+      <div class="boost-pfs-container-default boost-pfs-filter-wrapper-page facets facets-container">
+        {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
+        {% if boost_in_collection_search == 'true' %}
+        <div class="boost-pfs-in-collection-search">
+          {% render 'boost-pfs-filter-skeleton', width: 4 %}
+        </div>
+        {% endif %}
+        <div class="facets__form">
+          <div class="facets__wrapper"></div>
+          {%- if section.settings.enable_sorting -%}
+          <div class="facet-filters sorting caption">
+            <div class="facet-filters__field">
+              <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+              <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
+                {%- render 'boost-pfs-filter-skeleton' -%}
+              </div>
             </div>
           </div>
+          {%- endif -%}
+          <div class="product-count light" role="status">
+            <p class="product-count__text boost-pfs-filter-total-product">
+              {%- render 'boost-pfs-filter-skeleton' -%}
+            </p>
+          </div>
         </div>
-      {%- endif -%}
-      <div class="product-count light" role="status">
-        <p class="product-count__text boost-pfs-filter-total-product">
-          {%- render 'boost-pfs-filter-skeleton' -%}
-        </p>
-      </div>
-    </div>
 
-    <div class="boost-pfs-filter-toolbar-top-mobile">
-      <div class="boost-pfs-filter-tree-mobile-button">
-        {%- render 'boost-pfs-filter-skeleton', type: 'button' -%}
+        <div class="boost-pfs-filter-toolbar-top-mobile">
+          <div class="boost-pfs-filter-tree-mobile-button">
+            {%- render 'boost-pfs-filter-skeleton', type: 'button' -%}
+          </div>
+        </div>
+        {%- comment -%} END TOOLBAR TOP MOBILE {%- endcomment -%}
       </div>
     </div>
-    {%- comment -%} END TOOLBAR TOP MOBILE {%- endcomment -%}
-  </div>
-</div>
-<div id="CollectionProductGrid">
-  <div class="boost-pfs-filter-wrapper collection page-width">
-    <div class="boost-pfs-container-default-box">
-      <div class="boost-pfs-filter-left-col">
-        <div class="boost-pfs-filter-left-col-inner">
-          <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v">
-            {% render 'boost-pfs-filter-skeleton', type: 'filter-tree' %}
+    <div id="CollectionProductGrid">
+      <div class="boost-pfs-filter-wrapper collection page-width">
+        <div class="boost-pfs-container-default-box">
+          <div class="boost-pfs-filter-left-col">
+            <div class="boost-pfs-filter-left-col-inner">
+              <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v">
+                {% render 'boost-pfs-filter-skeleton', type: 'filter-tree' %}
+              </div>
+            </div>
+          </div>
+          <div class="boost-pfs-filter-right-col">
+            <div class="product-grid negative-margin">
+              <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
+                                                                                      boost-pfs-filter-products
+                                                                                      grid grid--2-col
+                                                                                      {% if collection.products_count < 4 %} grid--{{collection.products_count}}-col-tablet{% else %}
+                                                                                      {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
+                                                                                      {% endif %}">
+                {%- for product in collection.products -%}
+                <li class="grid__item">
+                  {% render 'product-card', product_card_product: product,
+              media_size: section.settings.image_ratio, show_secondary_image:
+                  section.settings.show_secondary_image, add_image_padding:
+                  section.settings.add_image_padding, show_vendor:
+                  section.settings.show_vendor %}
+                </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+
+            <div class="boost-pfs-filter-load-more"></div>
+            <link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+            <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
+            <div class="boost-pfs-filter-bottom-pagination"></div>
           </div>
         </div>
       </div>
-      <div class="boost-pfs-filter-right-col">
-        <div class="product-grid negative-margin">
-          <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-            boost-pfs-filter-products
-            grid grid--2-col
-                    {% if collection.products_count < 4 %} grid--{{collection.products_count}}-col-tablet{% else %}
-                      {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-                    {% endif %}">
-            {%- for product in collection.products -%}
-            <li class="grid__item">
-              {% render 'product-card', product_card_product: product,
-              media_size: section.settings.image_ratio, show_secondary_image:
-              section.settings.show_secondary_image, add_image_padding:
-              section.settings.add_image_padding, show_vendor:
-              section.settings.show_vendor %}
-            </li>
-            {%- endfor -%}
-          </ul>
-        </div>
-
-        <div class="boost-pfs-filter-load-more"></div>
-        <link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
-        <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
-        <div class="boost-pfs-filter-bottom-pagination"></div>
-      </div>
     </div>
-  </div>
-</div>
-{%- endpaginate -%}
+    {%- endpaginate -%}
 
+</div>
 <script>
 // Declare boostPFSThemeConfig variable
 var boostPFSThemeConfig = {
