@@ -671,6 +671,7 @@ class VariantSelects extends HTMLElement {
       const stockmsg = document.querySelector(`.stockmsg, .fancybox-inner .stockmsg `);
       
       if(inventoryQty >= 10){
+        console.log("ok");
         stockmsg.innerHTML="In Stock";   
       }
       else if(inventoryQty <= 10 && inventoryQty >0){
