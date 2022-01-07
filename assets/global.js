@@ -644,8 +644,9 @@ class VariantSelects extends HTMLElement {
           }
       }
       
-      
+       if(fieldsets[1] == fieldset ){
       console.log(fieldset);
+       }
       
 
       console.log(this.currentVariant.id);
