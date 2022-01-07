@@ -560,7 +560,7 @@ jQuery(function($){
     });
   }
 
-//  theme.varChangefunc();
+ theme.varChangefunc();
       
 });
 
