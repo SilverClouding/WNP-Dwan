@@ -761,15 +761,17 @@ class VariantSelects extends HTMLElement {
       if (price) price.classList.remove('visibility-hidden');
       this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
 
+      
+      const thisProductId = `#${this.getAttribute("product_id")}`;
       const qvid = `.fancybox-inner #price-${this.dataset.section}`;
       const qvhtml = new DOMParser().parseFromString(responseText, 'text/html')
       const qvdestination = document.querySelector(qvid);
-      const qvsource = qvhtml.querySelector(qvid);
+      const qvsource = qvhtml.querySelector(thisProductId);
       if (qvsource && qvdestination) qvdestination.innerHTML = qvsource.innerHTML;
       const qvprice = document.querySelector(`.fancybox-inner #price-${this.dataset.section}`);
 
       console.log("id-"+id);
-      console.log(qvhtml);
+      console.log(qvsource);
       console.log(this.getAttribute("product_id"));
       qvprice.classList.add('check');
 
