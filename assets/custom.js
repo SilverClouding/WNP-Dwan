@@ -257,9 +257,7 @@ const text_slider = new Swiper('.text_slider', {
      $("#insta-feed").flickity({
        wrapAround: true,
        pageDots: false,
-       initialIndex: 1,
-       accessibility: true, //true by default
-       autoPlay: false // advance cells every 3 seconds
+       imagesLoaded : true
      });
      
    $('#insta-feed').addClass('active');
