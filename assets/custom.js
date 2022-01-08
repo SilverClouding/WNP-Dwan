@@ -157,7 +157,9 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 });
 
 multicolumn_Swiper.on('slideChange', function () {
-  this.classList.add("check");
+ 
+  const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-active`); 
+  avtiveSlide.classList.add("check");
   console.log(this.activeIndex);
 });
 
