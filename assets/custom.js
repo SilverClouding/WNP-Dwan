@@ -223,7 +223,7 @@ const text_slider = new Swiper('.text_slider', {
     $('#insta-feed').slick({
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 3,
+      slidesToShow: 5,
       responsive: [
         {
           breakpoint: 768,
@@ -231,7 +231,7 @@ const text_slider = new Swiper('.text_slider', {
             arrows: false,
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 5
+            slidesToShow: 3
           }
         },
         {
