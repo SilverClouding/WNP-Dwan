@@ -4,8 +4,11 @@
     <div class="nl-wraper-popup bounceInDown animated">
       
       <div class="nl-wraper-popup-inner">
-        <div class="nl-wraper-popup-left">
+        <div class="nl-wraper-popup-left for-web-img">
  {% include 'image-element', image: section.settings.image, alt: section.settings.image.alt %}
+        </div>
+        <div class="nl-wraper-popup-left for-mob-img">
+ {% include 'image-element', image2: section.settings.image2, alt: section.settings.image2.alt %}
         </div>
         <div class="nl-wraper-popup-right">
           <h3 class="title">{{section.settings.heading}}</h3>    
@@ -173,6 +176,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+		{
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Mobile Image"
         },
 		{
           "type": "text",
