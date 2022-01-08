@@ -157,7 +157,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 });
 
 multicolumn_Swiper.on('slideChange', function () {
-  console.log('slide changed');
+  console.log(this);
 });
 
 
