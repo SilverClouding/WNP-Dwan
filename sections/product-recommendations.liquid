@@ -27,7 +27,15 @@
       {% endfor %}
     </ul>
   {% endif %}
-</product-recommendations>
+  
+   
+  
+  
+</product-recommendations> 
+
+{% for recommendation in recommendations.products %}
+   {% render 'new-quickview-content' ,product_card_product: recommendation %}
+  {%- endfor -%}
 
 {% javascript %}
   class ProductRecommendations extends HTMLElement {
