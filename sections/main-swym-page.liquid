@@ -86,12 +86,17 @@
                         </div>
 
                         </div>
-<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart(${product.du},${product.epi})}>Add To Cart</button>
+<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart()}>Add To Cart</button>
   </li>`
         
         
 
-       
+        _swat.replayAddToCart(product, product.epi, function() {
+          // Successfully added, open cart
+          _swat.openCartPage();
+        });
+        
+        
 
       });
 
