@@ -86,7 +86,7 @@
                         </div>
 
                         </div>
-<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart(${product},${product.epi})}>Add To Cart</button>
+<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart(${product.url},${product.epi})}>Add To Cart</button>
   </li>`
         
         
@@ -103,7 +103,7 @@
       
     }, _swat.EventTypes.addToWishlist);
     
-    _swat.replayAddToCart(productData, productData.epi, function() {
+    _swat.replayAddToCart(function() {
       // Successfully added, open cart
       _swat.openCartPage();
     });
