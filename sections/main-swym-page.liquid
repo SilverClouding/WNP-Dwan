@@ -1,19 +1,16 @@
 
-<div class="card-wrapper">
-  <div class="card-information">
-    <div class="card-information__wrapper">
-      <div class="caption-with-letter-spacing light">WNP Sandbox</div>
+<div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+      <div class="caption-with-letter-spacing light">${product.bt}</div>
       <h3 class="card-information__text h5">
-      <a href="/products/demo-original-adult-formula-dog-dry-food-single-option" class="full-unstyled-link">
-        Demo - Original adult formula dog Dry food single option
+      <a href="${product.du}" class="full-unstyled-link">
+       ${product.dt}
       </a>
       </h3>
       <div class="price " data-wg-notranslate="manual">
         <div>
           <div class="price__regular">
-          <span class="visually-hidden visually-hidden--inline">Regular price</span>
           <span class="price-item price-item--regular">
-            From HK$275.00
+            ${product.pr}
           </span>
           </div>
         </div>
@@ -59,6 +56,32 @@
 
       products.forEach(function(product, index) { 
       console.log(product);
+        
+        
+       const productitem =` <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+      <div class="caption-with-letter-spacing light">${product.bt}</div>
+      <h3 class="card-information__text h5">
+      <a href="${product.du}" class="full-unstyled-link">
+       ${product.dt}
+      </a>
+      </h3>
+      <div class="price " data-wg-notranslate="manual">
+        <div>
+          <div class="price__regular">
+          <span class="price-item price-item--regular">
+            ${product.pr}
+          </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>`
+        
+       console.log(productitem);
+        
       });
           
 
