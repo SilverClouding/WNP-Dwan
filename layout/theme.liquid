@@ -307,6 +307,7 @@ ratingSnippet("ruk_rating_snippet",{
       document.addEventListener("DOMContentLoaded", function () {
 
         const feed = window["insta-feed"];
+        console.log(feed);
         if (!feed ) return;
         const slider = new Flickity(feed, {
           draggable: true,
