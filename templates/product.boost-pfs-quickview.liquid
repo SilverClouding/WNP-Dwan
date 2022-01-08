@@ -284,13 +284,84 @@
       </div>
     </div>
     {% endcomment %}
-    <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet"  style="display:none;">
+    <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
 
 
 
       <div class="product__info-wrapper grid__item" >
         <div class="product__info-container">
 
+          {% assign newTagFlag =  false %}
+          {% for tag in product.tags %}
+          {% assign tagHanlde =  tag | handle %}
+
+          {% if tagHanlde == 'new' %}
+          {% assign newTagFlag =  true %}
+          {% endif %}
+
+          {% endfor %}
+
+          {% if newTagFlag %}
+          <span class="badge price__badge-new color-{{ settings.sale_badge_color_scheme }}">
+            {{ 'products.product.new' | t }}
+          </span>
+          {% else %}
+          {%- if product.compare_at_price > product.price %} 
+        <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+          {{ 'products.product.on_sale' | t }}
+          </span>
+          {%- endif -%}
+
+          {% endif %}
+
+          <p class="product__text caption-with-letter-spacing"> <a href="/collections/{{ product.vendor |handle }}">{{product.vendor}}</a></p>
+
+          <h1 class="product__title" {{ block.shopify_attributes }}>
+            {{ product.title | escape }}
+          </h1>
+
+          <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+            {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+
+          </div>  
+          <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
+
+
+          {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__tax caption rte">
+            {%- if shop.taxes_included -%}
+            {{ 'products.product.include_taxes' | t }}
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank -%}
+            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+          <div {{ block.shopify_attributes }}>
+            {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            {{ form | payment_terms }}
+            {%- endform -%}
+          </div>
+
+
+          {%- if product.description != blank -%}
+          <div class="ProductMeta_Description small__heightt bottomImg" {{ block.shopify_attributes }}>
+            <div class="product__description short_des rte">
+              <p>  {{ product.description | strip_html | truncate: 150}}</p>
+            </div>
+            <div class="product__description long_des hide rte">
+              {{ product.description }}
+            </div>
+            <div class="des_bottom_div">
+              <div class="dec-overlayy"></div>
+
+            </div>
+            <a class="view-product" href="{{product.url}}"><span>Learn More</span></a>
+          </div>
+          {%- endif -%}
+          
+          
           <product-form class="product-form"> 
             <div class="product-form__error-message-wrapper" role="alert" hidden>
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
