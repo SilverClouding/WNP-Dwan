@@ -3,7 +3,8 @@
 if combine_pretext is false, the text before the first <H6> will be shown above all tabs, otherwise added to the first tab
 {% endcomment %}
 <div class="product-tabs {% if section.settings.full_width %}product-tabs--full-width{% else %}page-width{% endif %} color-{{ section.settings.color_scheme }}  gradient color-scheme-{{ section.settings.color_scheme }}">
- <h2>Product details</h2>
+ <div class="product-detailscon">
+  <h2>Product details</h2>
 
 
 <div class="tab-for-desktop">
@@ -45,7 +46,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 </div>
   
   
-  
+ </div> 
 </div>
 
 <script>
