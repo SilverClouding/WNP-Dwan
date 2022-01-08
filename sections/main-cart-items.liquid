@@ -18,7 +18,7 @@
     {% for block in section.blocks %}
     {% case block.type %}
     {%- when 'shop_button' -%}
-    <a role="link" aria-disabled="true" class="button button--primary" href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
+    <div class="cart-btns"><a role="link" aria-disabled="true" class="button button--primary" href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a></div>
     {%- endcase -%}
     {% endfor%}
     {% comment %}
