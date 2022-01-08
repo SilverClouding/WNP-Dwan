@@ -303,52 +303,52 @@ ratingSnippet("ruk_rating_snippet",{
     </script>
     
   <script>  
-    (function () {
-      document.addEventListener("DOMContentLoaded", function () {
+//     (function () {
+//       document.addEventListener("DOMContentLoaded", function () {
 
-        const feed = window["insta-feed"];
-        console.log(feed);
-//         if (!feed ) return;
-        const slider = new Flickity(feed, {
-          draggable: true,
-          prevNextButtons: true,
-          pageDots: true,
-          wrapAround: true,
-        });
-
-        slider.on('settle', function( index ) {
-          slider.resize();
-        });
-
-//         const placeholders = feed.parentNode.querySelectorAll(
-//           "[data-insta-feed-loading]"
-//         );
-
-//         feed.addEventListener("DOMNodeRemoved", function (e) {
-//           placeholders.forEach((element) => {
-//             element.removeAttribute("data-insta-feed-loading");
-//           });
+//         const feed = window["insta-feed"];
+//         console.log(feed);
+// //         if (!feed ) return;
+//         const slider = new Flickity(feed, {
+//           draggable: true,
+//           prevNextButtons: true,
+//           pageDots: true,
+//           wrapAround: true,
 //         });
 
-        feed.addEventListener("DOMNodeInserted", function (e) {
+//         slider.on('settle', function( index ) {
+//           slider.resize();
+//         });
 
-          if (e.target.tagName === "A") {
-            let r = document.createElement('div');
-            r.classList.add('slider-item');
-            r.appendChild(e.target);
-            slider.append(r);
-            r = null;
+// //         const placeholders = feed.parentNode.querySelectorAll(
+// //           "[data-insta-feed-loading]"
+// //         );
 
-            e.target.removeAttribute("style");
-            e.target
-            .querySelectorAll("[style]")
-            .forEach((e) => {
-              e.removeAttribute("style");
-            });
-          }
-        });
-      });
-    })();
+// //         feed.addEventListener("DOMNodeRemoved", function (e) {
+// //           placeholders.forEach((element) => {
+// //             element.removeAttribute("data-insta-feed-loading");
+// //           });
+// //         });
+
+//         feed.addEventListener("DOMNodeInserted", function (e) {
+
+//           if (e.target.tagName === "A") {
+//             let r = document.createElement('div');
+//             r.classList.add('slider-item');
+//             r.appendChild(e.target);
+//             slider.append(r);
+//             r = null;
+
+//             e.target.removeAttribute("style");
+//             e.target
+//             .querySelectorAll("[style]")
+//             .forEach((e) => {
+//               e.removeAttribute("style");
+//             });
+//           }
+//         });
+//       });
+//     })();
 </script>
     
 

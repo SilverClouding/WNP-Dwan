@@ -17,6 +17,55 @@
 <div id="insta-feed-slider" class="insta-feed__wrapper"></div>
 <script>
  
+<script>
+	(function () {
+		document.addEventListener("DOMContentLoaded", function () {
+
+			const feed = window["insta-feed"];
+			const feedSlider = window['insta-feed-slider'];
+			if (!feed || !feedSlider) return;
+			const slider = new Flickity(feedSlider, {
+				draggable: true,
+				prevNextButtons: true,
+				pageDots: true,
+				wrapAround: true,
+			});
+
+			slider.on('settle', function( index ) {
+				slider.resize();
+			});
+
+			const placeholders = feed.parentNode.querySelectorAll(
+				"[data-insta-feed-loading]"
+			);
+
+			feed.addEventListener("DOMNodeRemoved", function (e) {
+				placeholders.forEach((element) => {
+					element.removeAttribute("data-insta-feed-loading");
+				});
+			});
+
+			feed.addEventListener("DOMNodeInserted", function (e) {
+
+				if (e.target.tagName === "A") {
+					let r = document.createElement('div');
+					r.classList.add('slider-item');
+					r.appendChild(e.target);
+					slider.append(r);
+					r = null;
+
+					e.target.removeAttribute("style");
+					e.target
+						.querySelectorAll("[style]")
+						.forEach((e) => {
+							e.removeAttribute("style");
+						});
+				}
+			});
+		});
+	})();
+</script>
+
 </script>
 {%schema%}
 {"name":"Instafeed App","settings":[{"type":"font_picker","label":"Heading font.","id":"heading_font","default": "helvetica_n4"},{"type":"range","id":"heading_size","min":10,"max":30,"step":1,"unit":"px","label":"Heading Size","default":20},{"type":"range","id":"feed_width","min":50,"max":100,"step":5,"unit":"%","label":"Feed Width","default":100},{"type":"textarea","id":"html_area","label":"Custom Code (optional)"}],"presets":[{"name":"Instafeed App","category":"Instagram Feed"}]}{%endschema%}
