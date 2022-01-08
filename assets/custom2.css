@@ -27,7 +27,7 @@ li.mega_parent.active a {
     width: 100%;
 }
 
-table td, table tr, table th, table, tbody {border: none!important;box-shadow: none!important;}
+table td, table tr, table th, table, tbody {border: none;box-shadow: none!important;}
 
 
 .product-form__input input[type=radio]:checked+label {
