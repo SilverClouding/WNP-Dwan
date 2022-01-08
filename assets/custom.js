@@ -122,7 +122,7 @@ featured_col_Swiper2();
 
 // Multicolumn slider
 const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   pagination: {
     el: ".multicolumn_Swiper .swiper-pagination",
@@ -140,7 +140,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     768: {
