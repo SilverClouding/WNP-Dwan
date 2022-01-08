@@ -231,7 +231,7 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "My Cart",
       "cartparagraph": "You're missing out is all we're saying ",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
@@ -239,7 +239,7 @@
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
       "checkout": "Check out",
-      "empty": "Your cart is empty",
+      "empty": "Your Cart is Empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
