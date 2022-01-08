@@ -57,7 +57,10 @@
   window.SwymCallbacks.push(function(){
     _swat.fetchWrtEventTypeET(function(products){
 
-      console.log(products);    
+      forEach(function(product, index) { 
+      console.log(product);
+      });
+          
 
     }, _swat.EventTypes.addToWishlist);
   });
