@@ -590,7 +590,7 @@ div#insta-feed a {
 
 cart-items.page-widthh {
   max-width: 1200px;
-  margin-left: 11.5%;
+
   padding: 0 5rem;
 }
 
@@ -601,4 +601,9 @@ div#main-cart-footer {
 
 .cart-main {
   padding: 100px 0;
+}
+@media(min-width:1289px){
+  cart-items.page-widthh {
+    margin-left: 11.5%;
+  }
 }
