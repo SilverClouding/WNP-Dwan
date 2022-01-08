@@ -85,8 +85,13 @@
                         </div>
                         </div>
 
-                        </div></li>`
+                        </div>
+   <button className="swym-all swym-button swym-background-color" onClick={getHandler("AddAllWishlistToCart")}>Add To Cart</button>
+  </li>`
+        
+        
 
+       
 
       });
 
@@ -95,7 +100,17 @@
 
       //        console.log(productitem);
 
+      
     }, _swat.EventTypes.addToWishlist);
+    
+    _swat.replayAddToCart(productData, productData.epi, function() {
+      // Successfully added, open cart
+      _swat.openCartPage();
+    });
+    _swat.deleteEvent(function callback() {
+      // Successfully deleted, re-render page
+    }, productObj._id);
+    
   });
 </script>
 
