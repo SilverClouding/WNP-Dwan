@@ -219,6 +219,7 @@ const text_slider = new Swiper('.text_slider', {
 
 //instagram slider
  jQuery(function($){
+   setTimeout(function() {
     $('#insta-feed').slick({
       centerMode: true,
       centerPadding: '60px',
@@ -243,7 +244,7 @@ const text_slider = new Swiper('.text_slider', {
           }
         }
       ]
-    });
+    });}, 2000);
   });
 
 
