@@ -558,6 +558,6 @@ div#insta-feed a {
 .brand_logos li.swiper-slide {
     width: calc(85% - 20px)!important;
     border: 1px solid;
-    margin: 0px 10px!important;
+/*     margin: 0px 10px!important; */
 }
 }
