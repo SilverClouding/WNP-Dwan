@@ -566,3 +566,26 @@ div#insta-feed a {
     margin-left: 0!important;
   }
 }
+
+
+/* cart page */
+
+.class-for-cart-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.class-for-cart-page .cart-page-items {
+    width: 70%;
+}
+
+.class-for-cart-page  .cart__footer-wrapper{
+
+    width:30%;
+}
+
+.class-for-cart-page  .featured-collection{
+
+    width:100%;
+}
