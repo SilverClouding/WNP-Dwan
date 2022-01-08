@@ -254,20 +254,66 @@ const text_slider = new Swiper('.text_slider', {
 //     });
 //      $('#insta-feed').slick('slickGoTo', 3);
      
-     $("#insta-feed").flickity({
-       wrapAround: true,
-       pageDots: false,
-       imagesLoaded : true,
-       percentPosition: false,
-       freeScroll: false,
-       contain: true,
-       groupCells: true
-     });
+//      $("#insta-feed").flickity({
+//        wrapAround: true,
+//        pageDots: false,
+//        imagesLoaded : true,
+//        percentPosition: false,
+//        freeScroll: false,
+//        contain: true,
+//        groupCells: true
+//      });
      
    $('#insta-feed').addClass('active');
    }, 3000);
   });
 
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const feed = window["insta-feed"];
+    const feedSlider = window['insta-feed-slider'];
+    if (!feed || !feedSlider) return;
+    const slider = new Flickity(feedSlider, {
+      draggable: true,
+      prevNextButtons: true,
+      pageDots: true,
+      wrapAround: true,
+    });
+
+    slider.on('settle', function( index ) {
+      slider.resize();
+    });
+
+    const placeholders = feed.parentNode.querySelectorAll(
+      "[data-insta-feed-loading]"
+    );
+
+    feed.addEventListener("DOMNodeRemoved", function (e) {
+      placeholders.forEach((element) => {
+        element.removeAttribute("data-insta-feed-loading");
+      });
+    });
+
+    feed.addEventListener("DOMNodeInserted", function (e) {
+
+      if (e.target.tagName === "A") {
+        let r = document.createElement('div');
+        r.classList.add('slider-item');
+        r.appendChild(e.target);
+        slider.append(r);
+        r = null;
+
+        e.target.removeAttribute("style");
+        e.target
+        .querySelectorAll("[style]")
+        .forEach((e) => {
+          e.removeAttribute("style");
+        });
+      }
+    });
+  });
+})();
 
 
 // footer accordion
