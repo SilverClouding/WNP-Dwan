@@ -221,38 +221,47 @@ const text_slider = new Swiper('.text_slider', {
  jQuery(function($){
    
    setTimeout(function() {
-    $('#insta-feed').slick({
-       lazyLoad: 'ondemand',
-      infinite: true,
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 5,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-             lazyLoad: 'ondemand',
-            infinite: true,
-            arrows: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-             lazyLoad: 'ondemand',
-            infinite: true,
-            arrows: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-     $('#insta-feed').slick('slickGoTo', 3);
+//     $('#insta-feed').slick({
+//        lazyLoad: 'ondemand',
+//       infinite: true,
+//       centerMode: true,
+//       centerPadding: '60px',
+//       slidesToShow: 5,
+//       responsive: [
+//         {
+//           breakpoint: 768,
+//           settings: {
+//              lazyLoad: 'ondemand',
+//             infinite: true,
+//             arrows: true,
+//             centerMode: true,
+//             centerPadding: '40px',
+//             slidesToShow: 3
+//           }
+//         },
+//         {
+//           breakpoint: 480,
+//           settings: {
+//              lazyLoad: 'ondemand',
+//             infinite: true,
+//             arrows: true,
+//             centerMode: true,
+//             centerPadding: '40px',
+//             slidesToShow: 1
+//           }
+//         }
+//       ]
+//     });
+//      $('#insta-feed').slick('slickGoTo', 3);
+     
+     $("#featured-courses").flickity({
+       wrapAround: true,
+       pageDots: false,
+       initialIndex: 1,
+       accessibility: true, //true by default
+       autoPlay: false // advance cells every 3 seconds
+     });
+     
    $('#insta-feed').addClass('active');
    }, 3000);
   });
