@@ -587,7 +587,7 @@ jQuery(function($){
   //   new quickview
 jQuery(function($){
   $(document).on('click',".quick-view_new, .boost-pfs-quickview-btn", function () {
-
+console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
     //     $(openId).addClass('active');
     //     $(openId).show(); 
