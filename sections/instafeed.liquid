@@ -7,6 +7,10 @@
     font-family: {{section.settings.heading_font.family }};
   }
   {{ section.settings.heading_font | font_face }}
+  .instafeed-container {
+    width: 100%!important;
+    padding-top: 100%!important;
+  }
 </style>
 {{section.settings.html_area}}
 {% unless section.settings.html_area contains "feed-" %}
