@@ -96,7 +96,7 @@
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
-
+  <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
