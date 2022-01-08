@@ -265,7 +265,7 @@ const text_slider = new Swiper('.text_slider', {
        groupCells: true
      });
      slider.on('settle', function( index ) {
-       slider.resize();
+//        slider.resize();
      });
      feed.addEventListener("DOMNodeInserted", function (e) {
 
