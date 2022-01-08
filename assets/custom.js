@@ -261,14 +261,15 @@ const text_slider = new Swiper('.text_slider', {
        imagesLoaded : true,
        percentPosition: false,
        freeScroll: false,
-       contain: true
+       contain: true,
+       groupCells: true
      });
      slider.on('settle', function( index ) {
-//        slider.resize();
+       slider.resize();
      });
      feed.addEventListener("DOMNodeInserted", function (e) {
-console.log(e);
-       if (e.target.tagName === "A") {
+
+       if (e.target.tagName === "a") {
          let r = document.createElement('div');
          r.classList.add('slider-item');
          r.appendChild(e.target);
