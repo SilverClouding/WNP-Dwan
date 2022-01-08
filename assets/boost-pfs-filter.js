@@ -77,6 +77,7 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
       itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildQuickviewBUtton(data));
+       itemHtml = itemHtml.replace(/{{addtowishlist}}/g, addtowishlist(data));
 		// Add Review
 		if (typeof Integration === 'undefined' ||
 			(typeof Integration != 'undefined' &&
@@ -207,6 +208,15 @@ data-handle="${product.handle}"
     return html;
   }
 
+  function addtowishlist(product_card_product) { 
+  var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
+data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
+            data-variant-id="${ product_card_product.variants[0].id}" 
+            data-product-url="https://wnp.pet/${  product_card_product.url }">
+    </button>`
+  return html;
+  }
+  
 	function buildPrice(data) {
 		var html = '';
 		var noComparePrice = data.price_varies === false && data.compare_at_price_varies;
