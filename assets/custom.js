@@ -223,7 +223,7 @@ const text_slider = new Swiper('.text_slider', {
    setTimeout(function() {
     $('#insta-feed').slick({
        lazyLoad: 'ondemand',
-      centerMode: true,
+      centerMode: false,
       centerPadding: '60px',
       slidesToShow: 5,
       responsive: [
@@ -232,7 +232,7 @@ const text_slider = new Swiper('.text_slider', {
           settings: {
              lazyLoad: 'ondemand',
             arrows: true,
-            centerMode: true,
+            centerMode: false,
             centerPadding: '40px',
             slidesToShow: 3
           }
