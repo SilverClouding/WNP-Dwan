@@ -283,7 +283,8 @@
   </form>
  
 </cart-items> 
-<div class="cart__footer-wrapper page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}_1">
+{% comment %}
+  <div class="cart__footer-wrapper page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}_1">
     {% assign cartTotal = cart.total_price %}
     {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
@@ -398,47 +399,13 @@
     </div>
   </div>
 </div>
-
+{% endcomment %}
 </div>
 
 
 
 
-{% javascript %}
-  class CartNote extends HTMLElement {
-    constructor() {
-      super();
 
-      this.addEventListener('change', debounce((event) => {
-        const body = JSON.stringify({ note: event.target.value });
-        fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
-      }, 300))
-    }
-  }
-
-  customElements.define('cart-note', CartNote);
-{% endjavascript %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    function isIE() {
-      const ua = window.navigator.userAgent;
-      const msie = ua.indexOf('MSIE ');
-      const trident = ua.indexOf('Trident/');
-
-      return (msie > 0 || trident > 0);
-    }
-
-    if (!isIE()) return;
-    const cartSubmitInput = document.createElement('input');
-    cartSubmitInput.setAttribute('name', 'checkout');
-    cartSubmitInput.setAttribute('type', 'hidden');
-    document.querySelector('#cart').appendChild(cartSubmitInput);
-    document.querySelector('#checkout').addEventListener('click', function(event) {
-      document.querySelector('#cart').submit();
-    });
-  });
-</script>
 
 
 {% schema %}
