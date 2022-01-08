@@ -320,9 +320,9 @@ ratingSnippet("ruk_rating_snippet",{
           slider.resize();
         });
 
-        const placeholders = feed.parentNode.querySelectorAll(
-          "[data-insta-feed-loading]"
-        );
+//         const placeholders = feed.parentNode.querySelectorAll(
+//           "[data-insta-feed-loading]"
+//         );
 
 //         feed.addEventListener("DOMNodeRemoved", function (e) {
 //           placeholders.forEach((element) => {
@@ -330,7 +330,7 @@ ratingSnippet("ruk_rating_snippet",{
 //           });
 //         });
 
-        feed.addEventListener("DOMNodeInserted", function (e) {
+//         feed.addEventListener("DOMNodeInserted", function (e) {
 
           if (e.target.tagName === "A") {
             let r = document.createElement('div');
