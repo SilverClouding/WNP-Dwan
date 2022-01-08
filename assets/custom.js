@@ -159,7 +159,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 });
 
 multicolumn_Swiper.on('slideChange', function () {
- console.log(this.activeIndex);
+ console.log(this.activeIndex + 1+"/"+this.imagesLoaded );
    console.log(this);
   const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
   avtiveSlide.classList.add("check");
