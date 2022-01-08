@@ -517,3 +517,9 @@ div#insta-feed h2 {
 div#insta-feed a {
     width: 20%!important;
 }
+
+@media(max-width:768px){
+  div#insta-feed a {
+    width: 88%!important;
+  }
+}
