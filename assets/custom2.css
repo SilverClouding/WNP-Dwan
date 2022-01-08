@@ -587,3 +587,18 @@ div#insta-feed a {
 .class-for-cart-page  .featured-collection{
     width:100%;
 }
+
+cart-items.page-widthh {
+  max-width: 1200px;
+  margin-left: 11.5%;
+  padding: 0 5rem;
+}
+
+div#main-cart-footer {
+  max-width: 400px;
+  padding: 0 5rem;
+}
+
+.cart-main {
+  padding: 100px 0;
+}
