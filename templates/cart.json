@@ -50,11 +50,14 @@
         "68f7cf92-afae-4b54-9069-8f98031c3dbd": {
           "type": "icontext",
           "settings": {
-            "title1": "",
+            "image1": "shopify:\/\/shop_images\/quality_639622a2-04e1-40de-80fd-3e590f799055.png",
+            "title1": "Quality  Products",
             "link1": "",
-            "title2": "",
+            "image2": "shopify:\/\/shop_images\/freedelivery_449d48ac-eda1-45c2-8a0d-a167c5b5e747.png",
+            "title2": "Fast Delivery",
             "link2": "",
-            "title3": "",
+            "image3": "shopify:\/\/shop_images\/dogadoption.png",
+            "title3": "Low Prices",
             "link3": ""
           }
         }
