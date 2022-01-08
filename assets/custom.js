@@ -160,9 +160,9 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 
 multicolumn_Swiper.on('slideChange', function () {
  console.log(this.activeIndex + 1+"/"+this.imagesLoaded );
-   console.log(this);
+   console.log(`[aria-label="${this.activeIndex + 1+" / "+this.imagesLoaded }"]`);
 //   const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
-  const avtiveSlide = document.querySelector(`[aria-label="${this.activeIndex + 1+"/"+this.imagesLoaded }"]`); 
+  const avtiveSlide = document.querySelector(`[aria-label="${this.activeIndex + 1+" / "+this.imagesLoaded }"]`); 
   avtiveSlide.classList.add("check");
   avtiveSlide.style.marginLeft  = (50 / this.activeIndex)*this.activeIndex+"px";
   
