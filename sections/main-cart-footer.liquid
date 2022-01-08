@@ -4,7 +4,7 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
 <div class="page-widthh{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
-  {% assign cartTotal = cart.total_price %}{{cartTotal}}
+  {% assign cartTotal = cart.total_price %}
   {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
   {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
   {% assign mainPercent = percentmainvalue | times: 100.00 %}
