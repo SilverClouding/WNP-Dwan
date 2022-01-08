@@ -85,7 +85,7 @@ var boostPFSFilterConfig = {
 				!Integration.hascompileTemplate('reviews'))) {
 			itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
 		}
-itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
+
 		// Add Vendor
 		itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
 
