@@ -451,6 +451,7 @@
         "settings": {
           "show_popup": true,
           "image": "shopify:\/\/shop_images\/dog.jpg",
+          "image2": "shopify:\/\/shop_images\/dog2.jpg",
           "heading": "15% off your first order",
           "text": "<p>Sign up to receive 15% off your first order and stay up to date on new arrivals & special offers<\/p>",
           "closeit": "No thank you, close this",

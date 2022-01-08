@@ -267,7 +267,7 @@ const text_slider = new Swiper('.text_slider', {
 //        slider.resize();
      });
      feed.addEventListener("DOMNodeInserted", function (e) {
-
+console.log(e);
        if (e.target.tagName === "A") {
          let r = document.createElement('div');
          r.classList.add('slider-item');
