@@ -360,7 +360,137 @@
             <a class="view-product" href="{{product.url}}"><span>Learn More</span></a>
           </div>
           {%- endif -%}
-          
+
+<!--           variant -->
+
+          {% assign current_available_variant = product.selected_or_first_available_variant %}
+          {% assign  current_v_option1_vars  = product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
+
+          {% assign current_option1 = ""  %}
+          {% assign current_option2 = ""  %}
+          {% assign current_option3 = ""  %}
+
+          {% for current_v in current_v_option1_vars %}
+          {% assign current_option1 = current_option1 | append: current_v.option1 |append:","   %}
+          {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
+          {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
+          {% endfor %}
+
+
+
+          {%- unless product.has_only_default_variant -%}
+          <variant-radios {% for var in product.variants %}data_{{- var.id -}} = "{{ var.inventory_quantity | default: 0}}"{% endfor %} id="product_{{product.id}}" product_id="qv_{{product.id}}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+
+            <h3 id="stockmsg" class="stockmsg">{% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}In stock 
+              {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}Low in stock
+              {% else %}Out of stock
+              {% endif %}
+            </h3>  
+
+            {%- for option in product.options_with_values -%}
+
+            {% assign optionString = "option"|append: forloop.index %}
+
+            <fieldset class="option-selection-{{ option.name |handle }}0 js product-form__input {{optionString}}_for_below_input">
+              <legend class="option">{{ option.name }}</legend>
+              {%- for value in option.values -%}
+
+
+              {% assign curValueVars = product.variants | where: optionString, value %}
+
+              {% assign option_1 = "" %}
+              {% assign option_2 = "" %}
+              {% assign option_3 = "" %}
+
+              {% for v in curValueVars %}
+
+              {% if v.available %}
+
+              {% if optionString == "option1" %}
+
+              {% assign option_1 = value %}
+              {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+              {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+              {% endif %}
+
+              {% if optionString == "option2" %} 
+              {% assign option_2 = value %}
+              {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+              {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+              {% endif %}
+
+              {% if optionString == "option3" %}
+              {% assign option_3 = value %}
+              {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+              {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+              {% endif %}
+
+              {% endif %}
+
+
+              {% endfor %}
+
+
+              <input data_option1="{{option_1}}" data_option2="{{option_2}}" data_option3="{{option_3}}" type="radio" id="{{ value | handle }}_{{option.position}}_{{product.id}}"
+                     name="{{ option.name }}-{{product.id}}"
+                     value="{{ value | escape }}"
+                     form="{{ product_form_id }}"
+                     class="input-{{value | handle |replace:"_","-"}}
+                            {%- if option.position == 1 -%} {%- if option_2 != blank -%} available {%- else -%} soldout {%- endif -%}{%- endif -%}
+                            {%- if option.position == 2 -%} {%- if current_option2 contains value -%}available{%- else -%}soldout {%- endif -%}  {%- endif -%}
+                            {%- if option.position == 3 -%} {%- if current_option3 contains value -%}available{%- else -%} soldout {%- endif -%}  {%- endif -%}
+                            "
+                     {% assign current_option1_array = current_option1 | split:"," %}
+                     {% if option.position == 1 %} {% if current_option1_array[0] == value %}checked {% endif %}  {% endif %} 
+                     {% assign current_option2_array = current_option2 | split:"," %}
+                     {% if option.position == 2 %} {% if current_option2_array[0] == value %}checked {% endif %}  {% endif %}
+
+                     {% assign current_option3_array = current_option3 | split:"," %}
+                     {% if option.position == 3 %} {% if current_option3_array[0] == value %}checked {% endif %}  {% endif %} 
+
+                     >
+              <label option_index="{{ option.position }}" 
+                     class="swatch-element label-{{value | handle |replace:"_","-"}}"  
+                     for="{{ value | handle }}_{{option.position}}_{{product.id}}">
+                {{ value }}
+              </label>
+              {%- endfor -%}
+            </fieldset>
+            {%- endfor -%}
+            <script type="application/json">
+                    {{ product.variants | json }}
+            </script>
+          </variant-radios>
+
+          {%- endunless -%}
+
+          <noscript class="product-form__noscript-wrapper-{{ section.id }}">
+            <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+              <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
+              <div class="select">
+                <select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
+                  {%- for variant in product.variants -%}
+                  <option
+                          {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                          {% if variant.available == false %}disabled{% endif %}
+                          value="{{ variant.id }}"
+                          >
+                    {{ variant.title }}
+                    {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                        - {{ variant.price | money | strip_html }}
+                  </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+            </div>
+          </noscript>
+
+
+
+<!-- form -->
+
+
           
           <product-form class="product-form"> 
             <div class="product-form__error-message-wrapper" role="alert" hidden>
