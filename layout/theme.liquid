@@ -191,7 +191,7 @@
 
     </div>
     
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="{% if templete contains 'cart' %} class-for-cart-page {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
      
       {{ content_for_layout }}
     </main>
