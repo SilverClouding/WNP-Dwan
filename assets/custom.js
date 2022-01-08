@@ -272,7 +272,7 @@ const text_slider = new Swiper('.text_slider', {
   document.addEventListener("DOMContentLoaded", function () {
 
     const feed = window["insta-feed"];
-    const feedSlider = window['insta-feed-slider'];
+    const feedSlider = window['insta-feed'];
     if (!feed || !feedSlider) return;
     const slider = new Flickity(feedSlider, {
       draggable: true,
