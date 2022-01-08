@@ -56,6 +56,7 @@
 
             <tbody>
               {%- for item in cart.items -%}
+              {% comment %}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -270,11 +271,61 @@
                       </cart-remove-button>
                 </td>
                 </tr>
-              
+              {% endcomment %}
               
                 
               
-              
+               {% assign product_id = item.product_id %}
+              <div itemid="{{product_id}}" class="min-cart-item" index="{{forloop.index}}">
+                <div class="td-image cart__image">
+                  <img src="{{item.image | img_url: '100x100' }}" /> 
+                </div>
+                <div class="cart__item-details">
+                  <div class="cart__item-title">
+                    <div class="cart__item-title-left">
+                      <a href="{{item.product.url}}"><h2>{{item.product.title }}</h2></a>
+                      <p class="brand">Brand: {{item.vendor}}</p>
+                      <p class="size"><p>{{ item.variant.title | remove: removeTitle }}</p></p>
+
+                    <quantity-input class="quantity">
+                      <button class="quantity__button minus no-js-hidden" name="minus" type="button" onclick="qty_minus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <input class="quantity__input qv-quantity"
+                             type="number"
+                             name="quantity"
+                             id="mini_Quantity-{{ section.id }}"
+                             min="1"
+                             value="{{item.quantity}}"
+                             form="{{ product_form_id }}"
+                             >
+                      <button class="quantity__button plus no-js-hidden" name="plus" type="button" onclick="qty_plus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
+
+
+                  </div>
+                  <div class="cart__item-title-right">
+                    <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
+                    <!--           <a href="#" class="save-whishlist">Save to wishlist</a> -->
+                    <!--          <button class="save-whishlist" data-swaction="addToWishlist" data-product-id="{{item.product.id | json}}">Save to wishlist</button>
+-->
+                    <!-- Swym Wishlist Plus EPI Button-->
+                    <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{item.product.id}}" data-swaction="addToWishlist" data-product-id="{{ item.product.id | json}}" data-variant-id="{{ item.product.variants[0].id}}" data-product-url="{{ shop.url }}{{  item.product.url }}"></button>
+                    <!-- Swym Wishlist Plus EPI Button-->
+
+                    <div class="cart__item-sub">
+                      <span class="cart__price-old hide">{{ item.original_line_price | money }}</span>
+                      <span class="cart__price-new">{{ item.final_line_price | money }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>	
               
               {%- endfor -%}
             </tbody>
