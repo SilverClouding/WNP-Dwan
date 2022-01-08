@@ -193,7 +193,7 @@
     
     <main id="MainContent" class="{% if template contains 'cart' %} class-for-cart-page  {% if cart != empty %} main-empty-class {% endif %}  {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
       {% if template contains 'cart' %}<div class="flex"> {% endif %}
-      {{cart |json }}
+      {{cart.item_count }}
         {{ content_for_layout }}
       
       {% if template contains 'cart' %}</div> {% endif %}
