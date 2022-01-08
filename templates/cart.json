@@ -1,5 +1,4 @@
 {
-  "wrapper": "div#div_id.div_class[attribute-one=value]",
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
