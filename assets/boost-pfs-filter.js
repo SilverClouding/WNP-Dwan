@@ -301,7 +301,11 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
               <p class="rating-count caption">
                 <span aria-hidden="true">(${Utils.getProductMetafield(data, 'reviews', 'rating_count')})</span>
                 <span class="visually-hidden">${Utils.getProductMetafield(data, 'reviews', 'rating_count')} ${boostPFSConfig.label.total_reviews}</span>
-              </p>`;
+              </p>
+
+ <div class="ruk_rating_snippet" data-sku="${ data.handle };${ data.variants | map: 'sku' | join: ';' };${ data.variants | map: 'id' | join: ';' }}"></div>
+      
+`;
 		}
 		return html;
 	}
