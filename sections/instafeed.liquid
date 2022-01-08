@@ -9,12 +9,14 @@
   {{ section.settings.heading_font | font_face }}
   
 </style>
+
+<div class="class="page-width get-the-best"">
 {{section.settings.html_area}}
 {% unless section.settings.html_area contains "feed-" %}
 <div id="insta-feed" class="check"></div>
 <div id="insta-feed-slider" class="insta-feed__wrapper"></div>
 {% endunless  %}
-
+</div>
 
 
 <script>
