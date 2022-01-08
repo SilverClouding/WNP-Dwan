@@ -507,3 +507,13 @@ a.open_popup_minq_close {
 #insta-feed.active{
   display:block;
 }
+
+
+/* for flickity */
+div#insta-feed h2 {
+    display: none;
+}
+
+div#insta-feed a {
+    width: 20%!important;
+}
