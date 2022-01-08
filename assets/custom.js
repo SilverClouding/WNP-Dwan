@@ -160,7 +160,7 @@ multicolumn_Swiper.on('slideChange', function () {
  
   const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
   avtiveSlide.classList.add("check");
-  avtiveSlide.style.marginLeft  = (this.activeIndex * 100)+10+"px";
+  avtiveSlide.style.marginLeft  = 110+"px";
   console.log(this.activeIndex);
    console.log(this);
 });
