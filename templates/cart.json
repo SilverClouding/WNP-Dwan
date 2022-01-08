@@ -73,11 +73,29 @@
         "show_rating": false,
         "sec_class": ""
       }
+    },
+    "164164139832cf5bc7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "new-arrivals",
+        "collection2": "",
+        "products_to_show": 12,
+        "show_view_all": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-products"
+    "featured-products",
+    "164164139832cf5bc7"
   ]
 }
