@@ -89,7 +89,7 @@
                           {%- endfor -%}
                         {%- endif -%}
                         
-                        {{item.product.original_price | money}}
+                        {{item.original_line_price | money}}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
