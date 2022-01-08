@@ -17,9 +17,11 @@
     <p>{{ 'sections.cart.cartparagraph' | t }}</p>
     {% for block in section.blocks %}
     {% case block.type %}
+    <div class="cart-btns">
     {%- when 'shop_button' -%}
-    <div class="cart-btns"><a role="link" aria-disabled="true" class="button button--primary" href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a></div>
+    <a role="link" aria-disabled="true" class="button button--primary" href="{{block.settings.button_link}}" class=""> {{block.settings.button_label}}</a>
     {%- endcase -%}
+    </div>
     {% endfor%}
     {% comment %}
     <a href="{{ routes.all_products_collection_url }}" class="button">
