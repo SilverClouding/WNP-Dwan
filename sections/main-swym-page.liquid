@@ -22,54 +22,54 @@
   if(!window.SwymCallbacks){window.SwymCallbacks = [];}
   window.SwymCallbacks.push(function(){
     _swat.fetchWrtEventTypeET(function(products){
-      const main = document.getElementById('swym_main_collection_product_grid');
 
+      const productitem="";
       products.forEach(function(product, index) { 
-      console.log(product);
-        
-        
-        
-        const productitem =`<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
-      <div class="caption-with-letter-spacing light">${product.bt}</div>
-      <h3 class="card-information__text h5">
-      <a href="${product.du}" class="full-unstyled-link">
-       ${product.dt}
-      </a>
-      </h3>
-      <div class="price " data-wg-notranslate="manual">
-        <div>
-          <div class="price__regular">
-          <span class="price-item price-item--regular">
-            ${product.pr}
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="card card--product card--outline" tabindex="-1">
-    <div class="card__inner">
-      <div>
-      <div class="media media--transparent media--square media--hover-effect">
-        <img src="${product.iu}" 
-             alt="${product.dt}" 
-             class="motion-reduce" 
-             width="1000" height="1000">
-        </div>
-      </div>
-      <div class="card__badge">
-        <span class="badge badge--bottom-left color-accent-1 new-btn">New</span>
-      </div>
+        console.log(product);
 
-    </div>
-  </div>
-  
-</div></li>`
-        
-      
-          main.innerHTML = productitem;
+        productitem =`<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+                      <div class="caption-with-letter-spacing light">${product.bt}</div>
+                      <h3 class="card-information__text h5">
+                      <a href="${product.du}" class="full-unstyled-link">
+                      ${product.dt}
+                        </a>
+                        </h3>
+                      <div class="price " data-wg-notranslate="manual">
+                      <div>
+                      <div class="price__regular">
+                      <span class="price-item price-item--regular">
+                      ${product.pr}
+                        </span>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                      <div class="card card--product card--outline" tabindex="-1">
+                      <div class="card__inner">
+                      <div>
+                      <div class="media media--transparent media--square media--hover-effect">
+                      <img src="${product.iu}" 
+                      alt="${product.dt}" 
+                      class="motion-reduce" 
+                      width="1000" height="1000">
+                        </div>
+                        </div>
+                      <div class="card__badge">
+                      <span class="badge badge--bottom-left color-accent-1 new-btn">New</span>
+                        </div>
+
+                        </div>
+                        </div>
+
+                        </div></li>`
+
+
       });
-    
+
+      const main = document.getElementById('swym_main_collection_product_grid');
+      main.innerHTML = productitem;
+
       //        console.log(productitem);
 
     }, _swat.EventTypes.addToWishlist);
