@@ -252,6 +252,7 @@ const text_slider = new Swiper('.text_slider', {
         }
       ]
     });
+     $('#insta-feed').slick('slickGoTo', 1);
    $('#insta-feed').addClass('active');
    }, 3000);
   });
