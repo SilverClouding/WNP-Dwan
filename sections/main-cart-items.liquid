@@ -281,8 +281,9 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
   </form>
-  
-  <div class="cart__footer-wrapper page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+ 
+</cart-items> 
+<div class="cart__footer-wrapper page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
     {% assign cartTotal = cart.total_price %}
     {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
@@ -398,7 +399,6 @@
   </div>
 </div>
 
-</cart-items>
 </div>
 
 
