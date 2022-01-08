@@ -523,3 +523,7 @@ div#insta-feed a {
     width: 88%!important;
   }
 }
+
+.insta-feed__wrapper .slider-item {
+    width: calc(20% - 30px);
+}
