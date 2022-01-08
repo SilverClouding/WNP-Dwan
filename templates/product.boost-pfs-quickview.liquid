@@ -286,7 +286,9 @@
     {% endcomment %}
     <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
 
-
+<div class="grid__item product__media-wrapper">
+    {% render "image-section-for-quickshop"  product: product_card_product %}
+  </div>
 
       <div class="product__info-wrapper grid__item" >
         <div class="product__info-container">
