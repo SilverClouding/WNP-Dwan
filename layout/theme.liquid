@@ -192,8 +192,11 @@
     </div>
     
     <main id="MainContent" class="{% if template contains 'cart' %} class-for-cart-page {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
-     
-      {{ content_for_layout }}
+      {% if template contains 'cart' %}<div class="page-width"> {% endif %}
+      
+        {{ content_for_layout }}
+      
+      {% if template contains 'cart' %}</div> {% endif %}
     </main>
     {% section 'featured-content-block' %}
     {% section 'newsletter' %}
