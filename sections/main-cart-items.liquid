@@ -88,6 +88,8 @@
                             </div>
                           {%- endfor -%}
                         {%- endif -%}
+                        
+                        {{item.product.price | money}}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
