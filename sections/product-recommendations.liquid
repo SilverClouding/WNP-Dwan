@@ -55,7 +55,9 @@
             const recommendations = html.querySelector('product-recommendations');
             if (recommendations && recommendations.innerHTML.trim().length) {
               this.innerHTML = recommendations.innerHTML;
+              document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
             }
+
           })
           .catch(e => {
             console.error(e);
