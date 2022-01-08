@@ -28,7 +28,7 @@
   }
 </style>
 
-<div class="multicolumn {{ section.settings.section_class}} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn {{ section.settings.section_class}} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} {{ section.settings.sec_class }}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -277,7 +277,12 @@
         "unit": "px",
         "label": "Title Font Size",
         "default": 35
-      }
+      },
+	{
+      "type": "text",
+      "id": "sec_class",
+      "label": "Section Class"
+    }
   ],
   "blocks": [
     {
