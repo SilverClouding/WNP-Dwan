@@ -264,7 +264,7 @@ const text_slider = new Swiper('.text_slider', {
        contain: false
      });
      slider.on('settle', function( index ) {
-       slider.resize();
+//        slider.resize();
      });
      feed.addEventListener("DOMNodeInserted", function (e) {
 
