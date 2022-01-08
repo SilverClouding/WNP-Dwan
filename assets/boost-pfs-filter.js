@@ -76,7 +76,7 @@ var boostPFSFilterConfig = {
 		// Add Price
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
-      itemHtml = itemHtml.replace(/{{product_card_product_handle}}/g,data.handle);
+      itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildPrice(data));
 		// Add Review
 		if (typeof Integration === 'undefined' ||
 			(typeof Integration != 'undefined' &&
@@ -199,6 +199,13 @@ var boostPFSFilterConfig = {
 		}
 		return html;
 	}
+  
+  function buildQuickviewBUtton(product) {
+    var html=`<a class="quick-view_new" 
+data-handle="${product.handle}" 
+       data-productid="${product.id}">Quick View</a>`
+    return html;
+  }
 
 	function buildPrice(data) {
 		var html = '';
