@@ -570,7 +570,7 @@ div#insta-feed a {
 
 /* cart page */
 
-.class-for-cart-page {
+.class-for-cart-page .flex {
     display: flex;
     flex-wrap: wrap;
 }
