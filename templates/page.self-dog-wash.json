@@ -19,7 +19,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title": false
+        "page_title": false,
+        "section_width": 100
       }
     },
     "1639036736f746daec": {
@@ -126,11 +127,13 @@
       "type": "video",
       "settings": {
         "heading": "",
+        "text_alignment": "left",
         "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
-        "section_width": 80
+        "section_width": 80,
+        "sec_class": ""
       }
     },
     "16390286139d4adc54": {
@@ -209,6 +212,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_6.jpg",
+            "img_link": "",
             "title": "",
             "text": "",
             "button_label": "",
@@ -219,6 +223,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_7.jpg",
+            "img_link": "",
             "title": "",
             "text": "",
             "button_label": "",
@@ -236,9 +241,14 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
+        "item_in_row": 4,
         "section_width": 80,
         "swipe_on_mobile": false,
-        "section_class": "two-image-column"
+        "top_padding": 65,
+        "bottom_padding": 65,
+        "title_color": "",
+        "title_font_size": 35,
+        "sec_class": "self-dog-imgs-con"
       }
     },
     "1639042835bcbec2f1": {
@@ -248,35 +258,40 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/unit.png",
-            "title": "Self contained  unit"
+            "title": "Self contained  unit",
+            "link": ""
           }
         },
         "d7f16c68-8181-4281-9dd1-395c5832db3c": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/carpet_1.png",
-            "title": "Non-slip  floor"
+            "title": "Non-slip  floor",
+            "link": ""
           }
         },
         "3cd83085-1062-4245-a18f-84f78ba388a6": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/hair-dryer_2.png",
-            "title": "Professional  dryer"
+            "title": "Professional  dryer",
+            "link": ""
           }
         },
         "fde2f0c3-0618-4c7c-80ea-c974201b4935": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group.png",
-            "title": "Drying & grooming platform"
+            "title": "Drying & grooming platform",
+            "link": ""
           }
         },
         "61cc39c1-73d3-45ad-8009-94a6071928cb": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/vitruvian-man_1.png",
-            "title": "Ergonomic design to suit dogs"
+            "title": "Ergonomic design to suit dogs",
+            "link": ""
           }
         }
       },
@@ -309,7 +324,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": false
+        "show_rating": false,
+        "sec_class": ""
       }
     },
     "1639055992aadcf97f": {
