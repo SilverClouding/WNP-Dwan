@@ -527,3 +527,11 @@ div#insta-feed a {
 .insta-feed__wrapper .slider-item {
     width: calc(20% - 30px);
 }
+
+.insta-feed__wrapper .instafeed-container .js-lazy-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
