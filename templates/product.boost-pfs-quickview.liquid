@@ -108,6 +108,7 @@
 <div class="boost-pfs-quickview-wrapper check">
   <button title="Close" class="boost-pfs-quickview-close boost-pfs-filter-button">×</button>
   <div class="boost-pfs-quickview-content">
+    {%comment %}
     <div class="boost-pfs-quickview-left boost-pfs-quickview-product-thumbs">
 
       {% if product.images.size > 0 %}
@@ -282,5 +283,9 @@
         <div class="boost-pfs-quickview-view-full-wrapper"><a href="{{ product.url | within_collection }}" class="boost-pfs-quickview-view-full">{{ view_full_label }}</a></div>
       </div>
     </div>
+    {% endcomment %}
+    
+    {% render 'new-quickview-content' ,product: product%}
+    
   </div>
 </div>
