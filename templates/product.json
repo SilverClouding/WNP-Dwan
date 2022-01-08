@@ -101,7 +101,7 @@
         "35016f0b-244a-4bef-9949-cd00119b63b6"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "color_scheme": "background-2"
       }
     },
