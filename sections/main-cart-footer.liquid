@@ -85,16 +85,31 @@
                 </small>
               </div>
         {%- when 'icontext'-%}
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        },
+        
+        <div class="subtotal_icontext">
+          {% if block.settings.image1 != blank %}
+          <div class="image__text">
+          <img src="{{ block.settings.image1 | img_url: '550x' }}">
+            <a href="{{block.settings.link1}}"><h3>{{ block.settings.title1 | escape }}</h3></a>
+          </div>
+          {% endif %}
+          
+           {% if block.settings.image2 != blank %}
+          <div class="image__text">
+          <img src="{{ block.settings.image2 | img_url: '550x' }}">
+            <a href="{{block.settings.link2}}"><h3>{{ block.settings.title2 | escape }}</h3></a>
+          </div>
+          {% endif %}
+          
+           {% if block.settings.image3 != blank %}
+          <div class="image__text">
+          <img src="{{ block.settings.image3 | img_url: '550x' }}">
+            <a href="{{block.settings.link3}}"><h3>{{ block.settings.title3 | escape }}</h3></a>
+          </div>
+          {% endif %}
+          
+        </div>
+        
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
