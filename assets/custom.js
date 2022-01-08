@@ -228,7 +228,7 @@ const text_slider = new Swiper('.text_slider', {
         {
           breakpoint: 768,
           settings: {
-            arrows: false,
+            arrows: true,
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 3
@@ -237,7 +237,7 @@ const text_slider = new Swiper('.text_slider', {
         {
           breakpoint: 480,
           settings: {
-            arrows: false,
+            arrows: true,
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 1
