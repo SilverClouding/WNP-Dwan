@@ -555,9 +555,12 @@ div#insta-feed a {
 }
 
 @media(max-width:768px){
-.brand_logos li.swiper-slide {
+  .brand_logos li.swiper-slide {
     width: calc(100% - 20px)!important;
     border: 1px solid;
-/*     margin: 0px 10px!important; */
-}
+    /*     margin: 0px 10px!important; */
+  }
+  .brand_logos  .swiper-slide-next {
+    margin-left: 0!important;
+  }
 }
