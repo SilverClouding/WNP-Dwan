@@ -46,11 +46,23 @@
           "type": "buttons",
           "settings": {
           }
+        },
+        "68f7cf92-afae-4b54-9069-8f98031c3dbd": {
+          "type": "icontext",
+          "settings": {
+            "title1": "",
+            "link1": "",
+            "title2": "",
+            "link2": "",
+            "title3": "",
+            "link3": ""
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "68f7cf92-afae-4b54-9069-8f98031c3dbd"
       ],
       "settings": {
         "show_cart_note": false
