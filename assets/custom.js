@@ -231,7 +231,7 @@ const text_slider = new Swiper('.text_slider', {
             arrows: false,
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 5
           }
         },
         {
