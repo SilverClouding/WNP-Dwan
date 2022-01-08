@@ -560,6 +560,7 @@ div#insta-feed a {
 /*     border: 1px solid; */
     /*     margin: 0px 10px!important; */
     margin-bottom:20px;
+    margin-right:0!important;
   }
   .brand_logos  .swiper-slide-next {
     margin-left: 0!important;
