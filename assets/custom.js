@@ -164,7 +164,7 @@ multicolumn_Swiper.on('slideChange', function () {
 //   const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
   const avtiveSlide = document.querySelector(`[aria-label="${this.activeIndex + 1+" / "+this.imagesLoaded }"]`); 
   avtiveSlide.classList.add("check");
-  avtiveSlide.style.marginLeft  = (55 / this.activeIndex)*this.activeIndex+"px";
+  avtiveSlide.style.marginLeft  = (55 / this.activeIndex)*this.activeIndex+this.activeIndex+"px";
   
 });
 
