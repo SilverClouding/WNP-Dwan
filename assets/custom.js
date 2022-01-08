@@ -220,7 +220,7 @@ const text_slider = new Swiper('.text_slider', {
 //instagram slider
  jQuery(function($){
    
-//    setTimeout(function() {
+   setTimeout(function() {
 //     $('#insta-feed').slick({
 //        lazyLoad: 'ondemand',
 //       infinite: true,
@@ -261,7 +261,7 @@ const text_slider = new Swiper('.text_slider', {
      });
      
    $('#insta-feed').addClass('active');
-//    }, 3000);
+   }, 3000);
   });
 
 
