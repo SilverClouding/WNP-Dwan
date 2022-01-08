@@ -28,14 +28,7 @@
       overflow:hidden;
     }
   </style>
-  <div class="progress-warp">
-    <p>Buy more, Save more</p>
-    <div class="w3-light-grey">
-      <div class="w3-green" style="width:{{mainPercent}}%"></div>
-    </div>
 
-    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}</span> FREE SHIPPING!</div>
-  </div>
 
   <div>
     <div class="cart__footer">
@@ -53,6 +46,14 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
+                <div class="progress-warp">
+                  <p>Buy more, Save more</p>
+                  <div class="w3-light-grey">
+                    <div class="w3-green" style="width:{{mainPercent}}%"></div>
+                  </div>
+
+                  <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}</span> FREE SHIPPING!</div>
+                </div>
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
