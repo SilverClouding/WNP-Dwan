@@ -253,64 +253,85 @@ const text_slider = new Swiper('.text_slider', {
 //       ]
 //     });
 //      $('#insta-feed').slick('slickGoTo', 3);
+     const feed = window["insta-feed"];
+     //      $("#insta-feed").flickity({
+     const slider = new Flickity(feed, {
+       wrapAround: true,
+       pageDots: false,
+       imagesLoaded : true,
+       percentPosition: false,
+       freeScroll: false,
+       contain: true,
+       groupCells: true
+     });
+     slider.on('settle', function( index ) {
+       slider.resize();
+     });
+     feed.addEventListener("DOMNodeInserted", function (e) {
+
+       if (e.target.tagName === "a") {
+         let r = document.createElement('div');
+         r.classList.add('slider-item');
+         r.appendChild(e.target);
+         slider.append(r);
+         r = null;
+
+         e.target.removeAttribute("style");
+         e.target
+         .querySelectorAll("[style]")
+         .forEach((e) => {
+           e.removeAttribute("style");
+         });
+       }
+     });
+
      
-//      $("#insta-feed").flickity({
-//        wrapAround: true,
-//        pageDots: false,
-//        imagesLoaded : true,
-//        percentPosition: false,
-//        freeScroll: false,
-//        contain: true,
-//        groupCells: true
-//      });
-     
-     
-     (function () {
-       document.addEventListener("DOMContentLoaded", function () {
+//      (function () {
+//        document.addEventListener("DOMContentLoaded", function () {
 
-         const feed = window["insta-feed"];
-         const feedSlider = window['insta-feed-slider'];
-         if (!feed || !feedSlider) return;
-         const slider = new Flickity(feed, {
-           draggable: true,
-           prevNextButtons: true,
-           pageDots: true,
-           wrapAround: true,
-         });
+//          const feed = window["insta-feed"];
+//          const feedSlider = window['insta-feed-slider'];
+//          if (!feed || !feedSlider) return;
+//          const slider = new Flickity(feed, {
+//            draggable: true,
+//            prevNextButtons: true,
+//            pageDots: true,
+//            wrapAround: true,
+//          });
 
-         slider.on('settle', function( index ) {
-           slider.resize();
-         });
+//          slider.on('settle', function( index ) {
+//            slider.resize();
+//          });
 
-         const placeholders = feed.parentNode.querySelectorAll(
-           "[data-insta-feed-loading]"
-         );
+//          const placeholders = feed.parentNode.querySelectorAll(
+//            "[data-insta-feed-loading]"
+//          );
 
-         feed.addEventListener("DOMNodeRemoved", function (e) {
-           placeholders.forEach((element) => {
-             element.removeAttribute("data-insta-feed-loading");
-           });
-         });
+//          feed.addEventListener("DOMNodeRemoved", function (e) {
+//            placeholders.forEach((element) => {
+//              element.removeAttribute("data-insta-feed-loading");
+//            });
+//          });
 
-         feed.addEventListener("DOMNodeInserted", function (e) {
+//          feed.addEventListener("DOMNodeInserted", function (e) {
 
-           if (e.target.tagName === "a") {
-             let r = document.createElement('div');
-             r.classList.add('slider-item');
-             r.appendChild(e.target);
-             slider.append(r);
-             r = null;
+//            if (e.target.tagName === "a") {
+//              let r = document.createElement('div');
+//              r.classList.add('slider-item');
+//              r.appendChild(e.target);
+//              slider.append(r);
+//              r = null;
 
-             e.target.removeAttribute("style");
-             e.target
-             .querySelectorAll("[style]")
-             .forEach((e) => {
-               e.removeAttribute("style");
-             });
-           }
-         });
-       });
-     })();
+//              e.target.removeAttribute("style");
+//              e.target
+//              .querySelectorAll("[style]")
+//              .forEach((e) => {
+//                e.removeAttribute("style");
+//              });
+//            }
+//          });
+//        });
+//      })();
      
    $('#insta-feed').addClass('active');
    }, 3000);
