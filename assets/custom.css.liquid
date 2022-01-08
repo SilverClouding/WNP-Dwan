@@ -1037,7 +1037,8 @@ select:focus, select:hover{
   .card-wrapper .card-information{
     text-align:center;
   }
-  .card-wrapper .swym-added.swym-add-to-wishlist-view-product:after {
+  .card-wrapper .swym-added.swym-add-to-wishlist-view-product:after,
+  .cart-items .swym-added.swym-add-to-wishlist-view-product:after {
     color: #F5694D !important;
   }
   .collection .swiper-wrapper{
@@ -2726,7 +2727,12 @@ select:focus, select:hover{
   .cart-items tr.cart-item{
   border-bottom:1px solid #d3d6d9 !important;
   }
-
+  .cart-items .swym-button.swym-add-to-wishlist-view-product{
+  max-width:125px !important;
+  }
+  .cart-items  .cart-remove-button {
+    margin: 0.5rem 0 0 0.5rem !important;
+}
   /*   .cart__contents .cart-items{
   border-bottom:1px solid #d3d6d9;
 } */
@@ -3329,6 +3335,7 @@ select:focus, select:hover{
     text-transform: capitalize!important;
     opacity: 1!important;
   }
+  
   .qv-product-options_html .form.shopify-product-form .product-form__buttons{
     justify-content:unset!important;
   }
