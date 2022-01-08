@@ -90,6 +90,9 @@
                         {%- endif -%}
                         
                        {{item.product.variant.compare_at_price | money }} {{item.product.variant.price | money}}
+                        
+                        {{item.original_line_price}}
+{{item.original_price}}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
