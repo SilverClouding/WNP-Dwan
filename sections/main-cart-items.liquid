@@ -291,7 +291,8 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
-            {%- when 'subtotal' -%}
+            {%- when 'subtotal' -%}  {%- else -%} {%- endcase -%}
+        {% endfor %}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
@@ -324,7 +325,7 @@
                   {%- endif -%}
                 </small>
               </div>
-            {%- else -%}
+            
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
@@ -342,8 +343,7 @@
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
-          {%- endcase -%}
-        {% endfor %}
+       
 
         <div id="cart-errors"></div>
       </div>
