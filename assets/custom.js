@@ -124,6 +124,7 @@ featured_col_Swiper2();
 const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+         loop: true,
   pagination: {
     el: ".multicolumn_Swiper .swiper-pagination",
     clickable: true,
