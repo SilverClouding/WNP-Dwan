@@ -156,6 +156,11 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
   },
 });
 
+multicolumn_Swiper.on('slideChange', function () {
+  console.log('slide changed');
+});
+
+
 // main-collection-page_Swiper
 const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
   slidesPerView: 2,
