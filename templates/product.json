@@ -210,7 +210,7 @@
         "color_scheme": "accent-1",
         "full_width": false,
         "layout": "image_first",
-        "top_padding": 65,
+        "top_padding": 10,
         "bottom_padding": 65,
         "sec_class": ""
       }
