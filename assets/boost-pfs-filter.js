@@ -56,7 +56,7 @@ var boostPFSFilterConfig = {
 
 		// Get Template
 		var itemHtml = boostPFSTemplate.productGridItemHtml; 
-      console.log(itemHtml);
+      console.log(data);
 		// Add Custom class
 		var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
 		var saleClass = onSale ? boostPFSTemplate.saleClass : '';
