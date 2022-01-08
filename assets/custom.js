@@ -244,7 +244,7 @@ const text_slider = new Swiper('.text_slider', {
           }
         }
       ]
-    });}, 2000);
+    });}, 3000);
   });
 
 
