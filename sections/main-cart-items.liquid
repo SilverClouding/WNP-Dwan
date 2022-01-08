@@ -89,7 +89,7 @@
                           {%- endfor -%}
                         {%- endif -%}
                         
-                       {{item.product.price | money }} {{item.product.compare_at_price | money}}
+                       {{item.unit_price | money }} {{item.product.compare_at_price | money}}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
@@ -139,7 +139,7 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_price | money }}
+                              {{ item.original_line_price | money }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
