@@ -4,6 +4,39 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+  {% assign cartTotal = cart.total_price %}
+  {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
+  {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
+  {% assign mainPercent = percentmainvalue | times: 100.00 %}
+  {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
+  <style>
+    .w3-light-grey{
+      color: #000!important;
+      background-color: #f1f1f1!important;
+      margin: 10px 0;
+    }
+    .w3-green, 
+    .w3-hover-green:hover {
+      color: #fff!important;
+      background-color: #F5694D!important;
+      height:6px;
+
+    }
+    .progress-warp {
+      margin: 30px 20px;
+      text-align:center;
+      overflow:hidden;
+    }
+  </style>
+  <div class="progress-warp">
+    <p>Buy more, Save more</p>
+    <div class="w3-light-grey">
+      <div class="w3-green" style="width:{{mainPercent}}%"></div>
+    </div>
+
+    <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}</span> FREE SHIPPING!</div>
+  </div>
+
   <div>
     <div class="cart__footer">
       {%- if section.settings.show_cart_note -%}
