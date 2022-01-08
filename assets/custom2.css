@@ -1,4 +1,8 @@
-
+:focus-visible {
+    outline: none;
+    outline-offset: unset;
+    box-shadow: none;
+}
 
 /* megamenu */
 li.mega_parent.active a {
