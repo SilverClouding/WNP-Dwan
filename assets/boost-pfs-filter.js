@@ -292,6 +292,8 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
       } else if (decimal > 0.7) {
         rating_decimal = 1;
       }
+          
+          
       html = `<div class="rating" role="img" aria-label="${boostPFSConfig.label.star_reviews_info.replace('{{ rating_value }}', ratingObj.value).replace('{{ rating_max }}', ratingObj.value.scale_max)}">
                 <span aria-hidden="true" class="rating-star color-icon-${boostPFSConfig.custom.accent_icons}" style="--rating: ${Math.round(ratingObj.value.rating)}; --rating-max: ${ratingObj.value.scale_max}; --rating-decimal: ${rating_decimal};"></span>
               </div>
@@ -303,7 +305,7 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
                 <span class="visually-hidden">${Utils.getProductMetafield(data, 'reviews', 'rating_count')} ${boostPFSConfig.label.total_reviews}</span>
               </p>
 
- <div class="ruk_rating_snippet" data-sku="${ data.handle };${ data.variants };${ data.variants }"></div>
+ <div class="ruk_rating_snippet" data-sku="${ data.handle };${ data.variants[0].sku };${ data.variants[0].id }"></div>
       
 `;
 		}
