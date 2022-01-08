@@ -90,8 +90,8 @@
                         {%- endif -%}
                         
                     
-                        <dl>
-                          <dt>{{item.original_price | money}}</dt> <del>  {{item.product.compare_at_price | money }}</del>
+                        <dl class="item__price">
+                          <dt>{{item.original_price | money}}</dt> <span><del>  {{item.product.compare_at_price | money }}</del></span>
                         </dl>
 
                         {%- for property in item.properties -%}
