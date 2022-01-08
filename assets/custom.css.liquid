@@ -7648,7 +7648,7 @@ select:focus, select:hover{
 /* review pagination */
 
 .R-PaginationControls__item{
-    border: 1px solid #d3d6d9;
+    border: 1px solid #d3d6d9 !important;
     font-size: 14px!important;
     line-height: 16px!important;
     color: #44444d!important;
@@ -7663,6 +7663,9 @@ select:focus, select:hover{
   .R-PaginationControls__item:hover{
     background:#153A33;
     color:#fff;
+  }
+  .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item{
+   border: 1px solid #d3d6d9 !important;
   }
   
   .R-PaginationControls__item.isActive{
