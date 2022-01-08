@@ -127,7 +127,7 @@ var boostPFSFilterConfig = {
 			}
 		}
 
-      console.log(html);
+      
 		if (images.length > 0) {
 			aspectRatio = images[0]['width'] / images[0]['height'];
 			paddingBottom = 1 / aspectRatio * 100;
@@ -176,6 +176,9 @@ var boostPFSFilterConfig = {
 		return html;
 	}
 
+  console.log(itemHtml);
+  
+  
 	function buildCardProductClass() {
 		var html = '';
 		if (!images || (images && images.length === 0)) {
