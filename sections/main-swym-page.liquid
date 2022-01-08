@@ -1,3 +1,17 @@
+<script>
+if(!window.SwymCallbacks){window.SwymCallbacks = [];}
+window.SwymCallbacks.push(function(){
+  _swat.fetchWrtEventTypeET(function(products){
+   // render products - array of objects with same structure as productData
+   // 
+   // products count - products.length
+   //
+ }, _swat.EventTypes.addToWishlist);});
+
+
+
+</script>
+
 {% schema %}
   {
     "name": "Section name",
