@@ -157,12 +157,12 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 });
 
 multicolumn_Swiper.on('slideChange', function () {
- 
+ console.log(this.activeIndex);
+   console.log(this);
   const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
   avtiveSlide.classList.add("check");
   avtiveSlide.style.marginLeft  = (50 / this.activeIndex)*this.activeIndex+"px";
-  console.log(this.activeIndex);
-   console.log(this);
+  
 });
 
 
