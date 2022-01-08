@@ -84,6 +84,17 @@
                   {%- endif -%}
                 </small>
               </div>
+        {%- when 'icontext'-%}
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
@@ -96,7 +107,7 @@
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
-  <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+              <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
         {% comment %}
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
@@ -171,6 +182,69 @@
       "type": "buttons",
       "name": "t:sections.main-cart-footer.blocks.buttons.name",
       "limit": 1
+    },
+{
+      "type": "icontext",
+      "name": "Icon text",
+      "settings": [
+		{
+        "type": "header",
+        "content": "icon 1"
+      },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+		{
+          "type": "url",
+          "id": "link1",
+          "label": "Link"
+   		},
+{
+        "type": "header",
+        "content": "icon 2"
+      },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+		{
+          "type": "url",
+          "id": "link2",
+          "label": "Link"
+   		},
+{
+        "type": "header",
+        "content": "icon 3"
+      },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title3",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+		{
+          "type": "url",
+          "id": "link3",
+          "label": "Link"
+   		}
+      ]
     },
     {
       "type": "@app"
