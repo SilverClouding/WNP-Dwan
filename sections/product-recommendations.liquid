@@ -39,6 +39,7 @@
 
 {% javascript %}
   class ProductRecommendations extends HTMLElement {
+   document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
     constructor() {
       super();
 
