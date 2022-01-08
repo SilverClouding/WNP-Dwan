@@ -525,7 +525,7 @@ div#insta-feed a {
 } */
 
 .insta-feed__wrapper .slider-item {
-  width: calc(25% - 70px);
+  width: calc(24% - 50px);
   margin-left: 0;
   margin-right: 20px;
 }
