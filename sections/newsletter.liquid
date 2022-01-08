@@ -25,9 +25,11 @@
                     type="email"
                     name="contact[email]"
                     class="field__input"
-                   
-                    
-                    
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
                     {% if form.errors %}
                       autofocus
                       aria-invalid="true"
@@ -38,9 +40,9 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-<!--                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
-                  </label> -->
+                  </label>
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                     {% render 'icon-arrow' %}
                     Sign me up!
