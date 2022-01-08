@@ -86,7 +86,7 @@
                         </div>
 
                         </div>
-<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart(${product})}>Add To Cart</button>
+<button className="swym-all swym-button swym-background-color" onClick={_swat.replayAddToCart(${product},${product.epi})}>Add To Cart</button>
   </li>`
         
         
@@ -107,6 +107,15 @@
       // Successfully added, open cart
       _swat.openCartPage();
     });
+    
+    window._swat.replayAddToCart( {empi: 1234, du: "https://yourstore.com/products/your-another-awesome-product"}, 67,
+                                 function() {
+        console.log("Successfully added product to cart.");
+      },
+      function(e) {
+        console.log(e);
+      }
+    );
     _swat.deleteEvent(function callback() {
       // Successfully deleted, re-render page
     }, productObj._id);
