@@ -258,7 +258,7 @@ const text_slider = new Swiper('.text_slider', {
        wrapAround: true,
        pageDots: false,
        imagesLoaded : true,
-       percentPosition: false
+       percentPosition: true
      });
      
    $('#insta-feed').addClass('active');
