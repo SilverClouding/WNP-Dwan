@@ -55,7 +55,8 @@ var boostPFSFilterConfig = {
 		data = prepareShopifyData(data);
 
 		// Get Template
-		var itemHtml = boostPFSTemplate.productGridItemHtml;
+		var itemHtml = boostPFSTemplate.productGridItemHtml; 
+      console.log(itemHtml);
 		// Add Custom class
 		var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
 		var saleClass = onSale ? boostPFSTemplate.saleClass : '';
@@ -176,7 +177,7 @@ var boostPFSFilterConfig = {
 		return html;
 	}
 
-  console.log(itemHtml);
+ 
   
   
 	function buildCardProductClass() {
