@@ -261,8 +261,7 @@ const text_slider = new Swiper('.text_slider', {
        imagesLoaded : true,
        percentPosition: false,
        freeScroll: false,
-       contain: true,
-       groupCells: true
+       contain: true
      });
      slider.on('settle', function( index ) {
        slider.resize();
