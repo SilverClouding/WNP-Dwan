@@ -495,11 +495,11 @@ a.open_popup_minq_close {
     content:"Added to wishlist";text-transform: capitalize;
 }
 
-.instafeed-container {
+/* .instafeed-container {
     width: 100%!important;
     padding-top: 100%!important;
   }
-
+ */
 #insta-feed{
   display:none;
 }
@@ -510,7 +510,7 @@ a.open_popup_minq_close {
 
 
 /* for flickity */
-div#insta-feed h2 {
+/* div#insta-feed h2 {
     display: none;
 }
 
@@ -522,7 +522,7 @@ div#insta-feed a {
   div#insta-feed a {
     width: 88%!important;
   }
-}
+} */
 
 .insta-feed__wrapper .slider-item {
     width: calc(20% - 30px);
