@@ -253,40 +253,42 @@ const text_slider = new Swiper('.text_slider', {
 //       ]
 //     });
 //      $('#insta-feed').slick('slickGoTo', 3);
-     const feed = window["insta-feed"];
-     //      $("#insta-feed").flickity({
-     const slider = new Flickity(feed, {
-       wrapAround: true,
-       pageDots: false,
-       imagesLoaded : true,
-       percentPosition: false,
-       freeScroll: false,
-       contain: true,
-       groupCells: true
-     });
-     slider.on('settle', function( index ) {
-//        slider.resize();
-     });
-     feed.addEventListener("DOMNodeInserted", function (e) {
+     
+     
+//      const feed = window["insta-feed"];
+//      //      $("#insta-feed").flickity({
+//      const slider = new Flickity(feed, {
+//        wrapAround: true,
+//        pageDots: false,
+//        imagesLoaded : true,
+//        percentPosition: false,
+//        freeScroll: false,
+//        contain: true,
+//        groupCells: true
+//      });
+//      slider.on('settle', function( index ) {
+// //        slider.resize();
+//      });
+//      feed.addEventListener("DOMNodeInserted", function (e) {
 
-       if (e.target.tagName === "a") {
-         let r = document.createElement('div');
-         r.classList.add('slider-item');
-         r.appendChild(e.target);
-         slider.append(r);
-         r = null;
+//        if (e.target.tagName === "a") {
+//          let r = document.createElement('div');
+//          r.classList.add('slider-item');
+//          r.appendChild(e.target);
+//          slider.append(r);
+//          r = null;
 
-         e.target.removeAttribute("style");
-         e.target
-         .querySelectorAll("[style]")
-         .forEach((e) => {
-           e.removeAttribute("style");
-         });
-       }
-     });
+//          e.target.removeAttribute("style");
+//          e.target
+//          .querySelectorAll("[style]")
+//          .forEach((e) => {
+//            e.removeAttribute("style");
+//          });
+//        }
+//      });
 
      
-   $('#insta-feed').addClass('active');
+//    $('#insta-feed').addClass('active');
    }, 3000);
   });
 
