@@ -494,3 +494,8 @@ a.open_popup_minq_close {
 .quick-view-button .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
     content:"Added to wishlist";text-transform: capitalize;
 }
+
+.instafeed-container {
+    width: 100%!important;
+    padding-top: 100%!important;
+  }
