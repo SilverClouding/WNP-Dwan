@@ -254,7 +254,7 @@ const text_slider = new Swiper('.text_slider', {
 //     });
 //      $('#insta-feed').slick('slickGoTo', 3);
      
-     $("#featured-courses").flickity({
+     $("#insta-feed").flickity({
        wrapAround: true,
        pageDots: false,
        initialIndex: 1,
