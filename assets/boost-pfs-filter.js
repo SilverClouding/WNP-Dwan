@@ -76,7 +76,7 @@ var boostPFSFilterConfig = {
 		// Add Price
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
-      itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildPrice(data));
+      itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildQuickviewBUtton(data));
 		// Add Review
 		if (typeof Integration === 'undefined' ||
 			(typeof Integration != 'undefined' &&
