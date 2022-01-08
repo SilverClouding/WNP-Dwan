@@ -499,3 +499,11 @@ a.open_popup_minq_close {
     width: 100%!important;
     padding-top: 100%!important;
   }
+
+#insta-feed{
+  display:none;
+}
+
+#insta-feed.active{
+  display:block;
+}
