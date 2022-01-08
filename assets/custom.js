@@ -158,9 +158,10 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
 
 multicolumn_Swiper.on('slideChange', function () {
  
-  const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-active`); 
+  const avtiveSlide = document.querySelector(`.brand_logos  .swiper-slide-next`); 
   avtiveSlide.classList.add("check");
   console.log(this.activeIndex);
+   console.log(this);
 });
 
 
