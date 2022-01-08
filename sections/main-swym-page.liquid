@@ -38,7 +38,9 @@
 
 
   <!-- Include html in the body -->
-<div id="swym-wishlist-render-container"></div>
+<ul id="swym_main_collection_product_grid" class="swiper-wrapper gridd grid--2-col product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
+
+</ul>
 <script type="text/javascript">
 //   window.SwymCallbacks = window.SwymCallbacks || [];
 //   window.SwymCallbacks.push(function(swat) {
@@ -56,9 +58,10 @@
 
       products.forEach(function(product, index) { 
       console.log(product);
+        const main = document.getElementById('swym_main_collection_product_grid');
         
         
-       const productitem =` <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+       const productitem =`<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
       <div class="caption-with-letter-spacing light">${product.bt}</div>
       <h3 class="card-information__text h5">
       <a href="${product.du}" class="full-unstyled-link">
@@ -78,8 +81,9 @@
   </div>
 
   
-</div>`
+</div></li>`
         
+       main.innerHTML = productitem;
        console.log(productitem);
         
       });
