@@ -637,4 +637,9 @@ div#main-cart-footer {
     width: 100px;
   }
 
+  
+  .cart-mainm .for-mobile .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
+  content:"Save to wishlist"!important;
+  }
+  
 }
