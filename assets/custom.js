@@ -586,7 +586,7 @@ jQuery(function($){
 
   //   new quickview
 jQuery(function($){
-  $(document).on('click',".quick-view_new, .boost-pfs-quickview-btn", function () {
+  $(document).on('click',".quick-view_new", function () {
 console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
     //     $(openId).addClass('active');
@@ -681,5 +681,10 @@ Filter.prototype.afterRender = function() {
 	// The product list data returned from API
 	var data = this.data; 
 	// Your code here 
-  console.log(data.products[0].body_html);
+  console.log(data);
+   $(document).on('click',".quick-view_new", function () {
+     
+   });
+  
+  
 }
