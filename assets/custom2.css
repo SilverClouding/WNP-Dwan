@@ -670,3 +670,11 @@ div#article_page .buttons-section ul {
 div#article_page .buttons-section ul li {
     margin: 14px auto;
 }
+
+
+@media(max-width:768px){
+  div#article_page .buttons-section ul li{
+    width:100%!important;
+  }
+
+}
