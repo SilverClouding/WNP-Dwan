@@ -51,18 +51,20 @@
         "164171732627459864-0": {
           "type": "buttons",
           "settings": {
-            "button_text": "Button",
-            "button_link": "",
+            "button_text": "View all",
+            "button_link": "#",
             "button_width": 20,
+            "button_class": "button--primary",
             "color_scheme": "background-1"
           }
         },
         "164171732627459864-1": {
           "type": "buttons",
           "settings": {
-            "button_text": "Button",
-            "button_link": "",
+            "button_text": "Adopt me",
+            "button_link": "#",
             "button_width": 20,
+            "button_class": "button--secondary",
             "color_scheme": "background-1"
           }
         },
@@ -73,6 +75,7 @@
             "button_text": "Button",
             "button_link": "",
             "button_width": 20,
+            "button_class": "button--primary",
             "color_scheme": "background-1"
           }
         }
