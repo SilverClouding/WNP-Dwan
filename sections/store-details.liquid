@@ -19,7 +19,7 @@
 {% endcapture -%}
 <div data-section-id="{{ section.id }}"
   data-section-type="store-locator"
-  data-maps-key="{{ shop.metafields.stores.google_maps_api_key }}"
+  data-maps-key="{{ shop.metafields.stores.google_maps_api_key |json}}"
   class="store-locator"
   rv-class-is-ready="data.is_ready"
   id="{{ section.id }}"
