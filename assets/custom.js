@@ -681,5 +681,5 @@ Filter.prototype.afterRender = function() {
 	// The product list data returned from API
 	var data = this.data; 
 	// Your code here 
-  console.log(data);
+  console.log(data.products[0].body_html);
 }
