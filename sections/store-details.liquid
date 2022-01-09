@@ -12,6 +12,9 @@
   .head_list {
     width: 30%;
   }
+  .store-locator__titles{
+  width:100%;
+  }
 </style>
 
 {%- capture store_additional_details %}
@@ -55,8 +58,6 @@
 
   <div class="store-locator-wrap container page-width-desktop">
     <div class="is-flex">
-    <div class="head_list">
-      <div class="store-locator__head">
         <div class="store-locator__titles">
 
           <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
@@ -65,6 +66,9 @@
           {%- endif -%}
 
         </div>
+    <div class="head_list">
+      <div class="store-locator__head">
+      
 
 
         <div
