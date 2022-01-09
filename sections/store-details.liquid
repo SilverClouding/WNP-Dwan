@@ -38,177 +38,180 @@
   </div>{% endcomment %}
 
   <div class="store-locator-wrap container page-width-desktop">
-    <div class="store-locator__head">
-      <div class="store-locator__titles">
+    <div class="is-flex">
+    <div class="head_list">
+      <div class="store-locator__head">
+        <div class="store-locator__titles">
 
-        <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
-        {%- if section.settings.subtitle -%}
+          <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
+          {%- if section.settings.subtitle -%}
           <p>{{ section.settings.subtitle }}</p>
-        {%- endif -%}
+          {%- endif -%}
 
-      </div>
+        </div>
 
 
-      <div
-        class="store-locator__filters"
-        rv-if="data.filters | size | gt 0">
+        <div
+             class="store-locator__filters"
+             rv-if="data.filters | size | gt 0">
 
-        <div class="store-locator__filters-list">
-          <div class="store-locator-filter"
-            rv-each-filter="data.filters"
-            rv-data-filter="filter.string"
-            rv-data-filter-id="filter.id"
-            rv-on-click="methods.selectFilter"
-            rv-class-is-active="filter.active"
-            >
+          <div class="store-locator__filters-list">
+            <div class="store-locator-filter"
+                 rv-each-filter="data.filters"
+                 rv-data-filter="filter.string"
+                 rv-data-filter-id="filter.id"
+                 rv-on-click="methods.selectFilter"
+                 rv-class-is-active="filter.active"
+                 >
 
               <div class="store-locator-filter__checkbox"></div>
               <div class="store-locator-filter__icon" rv-html="filter.icon"></div>
               <div class="store-locator-filter__title" rv-html="filter.title"></div>
 
             </div>
+          </div>
+
         </div>
 
-      </div>
+        <div class="store-locator__search control has-icons-right is-relative" rv-if="data.searchEnabled">
 
-      <div class="store-locator__search control has-icons-right is-relative" rv-if="data.searchEnabled">
+          {% comment %}<p class="store-locator__search-title h5 h5--body-text">{{ section.settings.search_title }}</p>{% endcomment %}
 
-        {% comment %}<p class="store-locator__search-title h5 h5--body-text">{{ section.settings.search_title }}</p>{% endcomment %}
+          <input type="search"
+                 id="store-locator-search"
+                 class="store-locator-search__input"
+                 placeholder="Enter a location">
+          <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+            <use href="#icon-search"></use>
+          </svg>
+        </div>
 
-        <input type="search"
-               id="store-locator-search"
-               class="store-locator-search__input"
-               placeholder="Enter a location">
-         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-              <use href="#icon-search"></use>
-            </svg>
-      </div>
+        <div class="store-locator__group">
 
-      <div class="store-locator__group">
+          {% comment %}<p class="store-locator__group-title h5 h5--body-text">{{ section.settings.group_title }}</p>{% endcomment %}
 
-        {% comment %}<p class="store-locator__group-title h5 h5--body-text">{{ section.settings.group_title }}</p>{% endcomment %}
+          <div class="store-locator__group-select-wrapper">
 
-        <div class="store-locator__group-select-wrapper">
-
-          {% comment %}<select
-            class="store-locator__group-select"
-            rv-on-change="methods.selectGroup"
-            rv-data-active-group="data.activeGroup.title">
+            {% comment %}<select
+                                 class="store-locator__group-select"
+                                 rv-on-change="methods.selectGroup"
+                                 rv-data-active-group="data.activeGroup.title">
 
             <option
-              value="none"
-              rv-selected="data.activeGroup | not">
+                    value="none"
+                    rv-selected="data.activeGroup | not">
               {{ 'store_locator.text.placeholder' | t }}
             </option>
 
             <option
-              rv-each-group="data.groups"
-              rv-value="group.id"
-              rv-html="group.title"
-              rv-selected="group.active">
+                    rv-each-group="data.groups"
+                    rv-value="group.id"
+                    rv-html="group.title"
+                    rv-selected="group.active">
             </option>
-          </select>{% endcomment %}
+            </select>{% endcomment %}
 
-          <div class="store-locator__group-find-me" rv-if="data.geolocationEnabled">
-            <button
-              rv-on-click="methods.findUser"
-              rv-class-loading="data.geolocationLoading"
-              class="button is-small is-uppercase">{{ section.settings.find_me_title }}</buton>
+            <div class="store-locator__group-find-me" rv-if="data.geolocationEnabled">
+              <button
+                      rv-on-click="methods.findUser"
+                      rv-class-loading="data.geolocationLoading"
+                      class="button is-small is-uppercase">{{ section.settings.find_me_title }}</buton>
+            </div>
+
           </div>
 
         </div>
 
       </div>
+      <div class="store-locator__stores-list-container column">
+        <div
+             class="store-locator__stores-list"
+             rv-class-filters-active="data.storesAreFiltered"
+             >
 
+          <div class="store-locator-store"
+               rv-each-store="data.stores"
+               rv-data-store-id="store.id"
+               rv-class-in-view="store.in_view"
+               rv-class-in-filter="store.in_filter"
+               rv-class-is-loading="store.is_loading"
+               rv-class-loading="store.is_loading"
+               rv-class-is-active="store.active"
+               rv-class-in-active-group="store.in_active_group"
+               rv-on-click="methods.focusStore"
+               rv-scroll-to="store.is_loading | not | and store.active"
+               >
+
+            <div class="store-locator-store__details">
+
+              <div class="store-locator-store__icon" data-loads rv-html="store.icon"></div>
+
+              <div class="store-locator-store__contact-details">
+
+                <div class="store-locator-store__head">
+                  <p rv-class-active="store.active" class="store-locator-store__title h4">
+                    <span rv-html="store.title"></span>
+                    <span
+                          rv-each-tag="store.tags"
+                          rv-html="tag.icon"></span>
+                  </p>
+                  {% comment %}<div class="store-locator-store__tag"
+                                    rv-each-tag="store.tags"
+                                    rv-html="tag.icon">
+                  </div>{% endcomment %}
+                </div>
+
+                <div class="store-locator-store__street-address">
+                  <p>
+                    <a rv-href="store.google_url" target="_blank">
+                      <span rv-html="store.street"></span> <span rv-html="store.city"></span>, <span rv-html="store.province"> <span rv-html="store.zip"></span>
+                      </a>
+                      </p>
+                </div>
+
+              </div>
+
+              {% comment %}<div class="store-locator-store__tags">
+              <div class="store-locator-store__tag"
+                   rv-each-tag="store.tags"
+                   rv-html="tag.icon">
+              </div>
+              </div>{% endcomment %}
+
+            </div>
+
+            <div class="store-locator-store__additional-details">
+
+              {{ store_additional_details }}
+
+            </div>
+            <a href="#Map-store-locator" class="view-on-map btn btn-primary-o">
+              {{ 'store_locator.text.view_map' | t }}
+            </a>
+
+          </div>
+
+          <div
+               class="store-locator__no-stores-found"
+               rv-if="data.filterNoResults">
+
+            <p>{{ section.settings.no_stores_found_text }}</p>
+            <button
+                    class="btn btn--text btn-text-u"
+                    rv-on-click="methods.clearFilter"
+                    >
+              {{ 'store_locator.text.clear_filter' | t }}
+            </button>
+
+          </div>
+        </div>
+      </div>
     </div>
-
     <div class="store-locator__map-view">
       <div class="store-locator__map" id="Map-{{ section.id }}">
       </div>
     </div>
 
-    <div class="store-locator__stores-list-container column">
-      <div
-        class="store-locator__stores-list"
-        rv-class-filters-active="data.storesAreFiltered"
-        >
-
-        <div class="store-locator-store"
-          rv-each-store="data.stores"
-          rv-data-store-id="store.id"
-          rv-class-in-view="store.in_view"
-          rv-class-in-filter="store.in_filter"
-          rv-class-is-loading="store.is_loading"
-          rv-class-loading="store.is_loading"
-          rv-class-is-active="store.active"
-          rv-class-in-active-group="store.in_active_group"
-          rv-on-click="methods.focusStore"
-          rv-scroll-to="store.is_loading | not | and store.active"
-          >
-
-          <div class="store-locator-store__details">
-
-            <div class="store-locator-store__icon" data-loads rv-html="store.icon"></div>
-
-            <div class="store-locator-store__contact-details">
-
-              <div class="store-locator-store__head">
-                <p rv-class-active="store.active" class="store-locator-store__title h4">
-                  <span rv-html="store.title"></span>
-                  <span
-                    rv-each-tag="store.tags"
-                    rv-html="tag.icon"></span>
-                </p>
-                {% comment %}<div class="store-locator-store__tag"
-                  rv-each-tag="store.tags"
-                  rv-html="tag.icon">
-                </div>{% endcomment %}
-              </div>
-
-              <div class="store-locator-store__street-address">
-                <p>
-                  <a rv-href="store.google_url" target="_blank">
-                    <span rv-html="store.street"></span> <span rv-html="store.city"></span>, <span rv-html="store.province"> <span rv-html="store.zip"></span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-            {% comment %}<div class="store-locator-store__tags">
-              <div class="store-locator-store__tag"
-                rv-each-tag="store.tags"
-                rv-html="tag.icon">
-              </div>
-            </div>{% endcomment %}
-
-          </div>
-
-          <div class="store-locator-store__additional-details">
-
-            {{ store_additional_details }}
-
-          </div>
-          <a href="#Map-store-locator" class="view-on-map btn btn-primary-o">
-            {{ 'store_locator.text.view_map' | t }}
-          </a>
-
-        </div>
-
-        <div
-          class="store-locator__no-stores-found"
-          rv-if="data.filterNoResults">
-
-          <p>{{ section.settings.no_stores_found_text }}</p>
-          <button
-            class="btn btn--text btn-text-u"
-            rv-on-click="methods.clearFilter"
-            >
-            {{ 'store_locator.text.clear_filter' | t }}
-          </button>
-
-        </div>
-      </div>
     </div>
   </div>
 
