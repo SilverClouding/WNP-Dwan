@@ -45,46 +45,8 @@
         "image_ratio": "adapt"
       }
     },
-    "16417173265e4aa7dc": {
+    "custom-buttons": {
       "type": "custom-buttons",
-      "blocks": {
-        "164171732627459864-0": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "View all",
-            "button_link": "#",
-            "button_width": 20,
-            "button_class": "button--primary",
-            "color_scheme": "background-1"
-          }
-        },
-        "164171732627459864-1": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Adopt me",
-            "button_link": "#",
-            "button_width": 20,
-            "button_class": "button--secondary",
-            "color_scheme": "background-1"
-          }
-        },
-        "164171732627459864-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_text": "Button",
-            "button_link": "",
-            "button_width": 20,
-            "button_class": "button--primary",
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "164171732627459864-0",
-        "164171732627459864-1",
-        "164171732627459864-2"
-      ],
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
@@ -95,6 +57,6 @@
   },
   "order": [
     "main",
-    "16417173265e4aa7dc"
+    "custom-buttons"
   ]
 }
