@@ -48,6 +48,32 @@
     },
     "custom-buttons": {
       "type": "custom-buttons",
+      "blocks": {
+        "66dc7d85-2928-4778-a993-703f9fa6e23c": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Adopt me",
+            "button_link": "#",
+            "button_width": 20,
+            "button_class": "button--secondary",
+            "color_scheme": "background-1"
+          }
+        },
+        "e3282fb5-e271-49c3-9cba-abfc8edffcb6": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "View all",
+            "button_link": "",
+            "button_width": 20,
+            "button_class": "button--primary",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "66dc7d85-2928-4778-a993-703f9fa6e23c",
+        "e3282fb5-e271-49c3-9cba-abfc8edffcb6"
+      ],
       "settings": {
         "column_alignment": "center",
         "background_style": "primary",
