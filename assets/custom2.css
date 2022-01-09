@@ -354,7 +354,7 @@ li.breadcrumbs__item a {
     width: 75%;
 }
 
-.quick-view_new {
+.quick-view_new, .boost-pfs-quickview-btn {
     background: #153a33;
     color: #fff;
     font-size: 14px;
