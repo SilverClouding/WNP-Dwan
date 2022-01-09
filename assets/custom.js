@@ -681,9 +681,9 @@ Filter.prototype.afterRender = function() {
 	// The product list data returned from API
 	var data = this.data; 
 	// Your code here 
-  console.log(data);
+ 
    $(document).on('click',".quick-view_new", function () {
-     
+      console.log(data);
    });
   
   
