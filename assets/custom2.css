@@ -639,7 +639,9 @@ div#main-cart-footer {
 
   
   .cart-mainm .for-mobile .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
+  content:"Saved to wishlist"!important;
+  }
+  .cart-mainm .for-mobile .swym-button.swym-add-to-wishlist-view-product.swym-heart:after{
   content:"Save to wishlist"!important;
   }
-  
 }
