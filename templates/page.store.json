@@ -9,8 +9,21 @@
       }
     },
     "storeCode": {
-      "type": "update-store-details",
+      "type": "store-details",
       "settings": {
+        "title": "Store Locator",
+        "subtitle": "Please select a region to view store information.",
+        "filter_title": "Filter by services:",
+        "search_title": "Search:",
+        "group_title": "Filter by region:",
+        "find_me_title": "Or find a store nearest you",
+        "contact_title": "Contact information:",
+        "hours_title": "Shop hours:",
+        "no_stores_found_text": "No stores found matching your selected filters.",
+        "marker_icon_title": "location-pin",
+        "cluster_icon_title": "location-pin",
+        "user_icon_title": "user-location",
+        "search_icon_title": "search-location"
       }
     }
   },
