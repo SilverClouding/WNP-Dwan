@@ -375,7 +375,7 @@ li.breadcrumbs__item a {
     -o-border-radius: 2px!important;
     -ms-border-radius: 2px!important;
     border-radius: 2px!important;
-    display: block!important;
+    display: block;
 }
 
 
