@@ -139,10 +139,7 @@
 
       </div>
       <div class="store-locator__stores-list-container column">
-        <div
-             class="store-locator__stores-list"
-             rv-class-filters-active="data.storesAreFiltered"
-             >
+        <div class="store-locator__stores-list" rv-class-filters-active="data.storesAreFiltered">
 
           <div class="store-locator-store"
                rv-each-store="data.stores"
@@ -154,8 +151,7 @@
                rv-class-is-active="store.active"
                rv-class-in-active-group="store.in_active_group"
                rv-on-click="methods.focusStore"
-               rv-scroll-to="store.is_loading | not | and store.active"
-               >
+               rv-scroll-to="store.is_loading | not | and store.active">
 
             <div class="store-locator-store__details">
 
@@ -196,9 +192,7 @@
             </div>
 
             <div class="store-locator-store__additional-details">
-
               {{ store_additional_details }}
-
             </div>
             <a href="#Map-store-locator" class="view-on-map btn btn-primary-o">
               {{ 'store_locator.text.view_map' | t }}
@@ -206,19 +200,13 @@
 
           </div>
 
-          <div
-               class="store-locator__no-stores-found"
-               rv-if="data.filterNoResults">
-
+          <div class="store-locator__no-stores-found" rv-if="data.filterNoResults">
             <p>{{ section.settings.no_stores_found_text }}</p>
-            <button
-                    class="btn btn--text btn-text-u"
-                    rv-on-click="methods.clearFilter"
-                    >
+            <button class="btn btn--text btn-text-u"  rv-on-click="methods.clearFilter">
               {{ 'store_locator.text.clear_filter' | t }}
             </button>
-
           </div>
+          
         </div>
       </div>
     </div>
