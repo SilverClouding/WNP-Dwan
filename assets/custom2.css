@@ -640,8 +640,20 @@ div#main-cart-footer {
   
   .cart-mainm .for-mobile .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
   content:"Saved to wishlist"!important;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    line-height: 0!important;
+    word-wrap: break-word;
+    word-spacing: 0px;
   }
   .cart-mainm .for-mobile .swym-button.swym-add-to-wishlist-view-product.swym-heart:after{
   content:"Save to wishlist"!important;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    line-height: 0!important;
+    word-wrap: break-word;
+    word-spacing: 0px;
   }
 }
