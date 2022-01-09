@@ -677,14 +677,14 @@ if(window._swat){
 
 
 
-Filter.prototype.afterRender = function() { 
-	// The product list data returned from API
-	var data = this.data; 
-	// Your code here 
+// Filter.prototype.afterRender = function() { 
+// 	// The product list data returned from API
+// 	var data = this.data; 
+// 	// Your code here 
  
-   $(document).on('click',".boost-pfs-quickview-btn", function () {
-      console.log(data);
-   });
+//    $(document).on('click',".boost-pfs-quickview-btn", function () {
+//       console.log(data);
+//    });
   
   
-}
+// }
