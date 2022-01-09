@@ -674,3 +674,12 @@ if(window._swat){
   window.SwymCallbacks = window.SwymCallbacks || []; 
   window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".save-whishlist"); }); 
 } 
+
+
+
+Filter.prototype.afterRender = function() { 
+	// The product list data returned from API
+	var data = this.data; 
+	// Your code here 
+  console.log(data);
+}
