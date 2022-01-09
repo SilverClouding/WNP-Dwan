@@ -657,3 +657,7 @@ div#main-cart-footer {
     word-spacing: 0px;
   }
 }
+
+article share-button.share-button {
+    float: right;
+}
