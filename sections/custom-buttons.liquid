@@ -12,7 +12,7 @@
         {%- for block in section.blocks -%}
         <li  style="width:{{block.settings.button_width}}%;" class="button_item" {{ block.shopify_attributes }}>
           {% if block.settings.button_text != blank %}
-          <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--primary color-{{ block.settings.color_scheme }}" aria-disabled="true" role="link" href="{{block.settings.button_link}}">{{block.settings.button_text}}</a>  
+          <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button {% if block.settings.button_class == blank%}button--primary {% else %}{{block.settings.button_class}} {% endif %} color-{{ block.settings.color_scheme }}" aria-disabled="true" role="link" href="{{block.settings.button_link}}">{{block.settings.button_text}}</a>  
           {% endif %}
         </li>
         {%- endfor -%}
