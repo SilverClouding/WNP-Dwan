@@ -61,15 +61,15 @@
         <div class="store-locator__titles">
 
           <h1 data-mobile-tab-title="{{ section.settings.title }}">{{ section.settings.title }}</h1>
-          {%- if section.settings.subtitle -%}
-          <p>{{ section.settings.subtitle }}</p>
-          {%- endif -%}
+        
 
         </div>
     <div class="head_list">
       <div class="store-locator__head">
       
-
+  {%- if section.settings.subtitle -%}
+          <p>{{ section.settings.subtitle }}</p>
+          {%- endif -%}
 
         <div
              class="store-locator__filters"
