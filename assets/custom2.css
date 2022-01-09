@@ -661,3 +661,12 @@ div#main-cart-footer {
 article share-button.share-button {
     float: right;
 }
+
+div#article_page .buttons-section ul {
+    display: block;
+    text-align: center;
+}
+
+div#article_page .buttons-section ul li {
+    margin: 14px auto;
+}
