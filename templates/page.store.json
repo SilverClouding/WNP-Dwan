@@ -11,7 +11,7 @@
     "storeCode": {
       "type": "store-details",
       "settings": {
-        "title": "Store Locator",
+        "title": "Locations",
         "subtitle": "Please select a region to view store information.",
         "filter_title": "Filter by services:",
         "search_title": "Search:",
