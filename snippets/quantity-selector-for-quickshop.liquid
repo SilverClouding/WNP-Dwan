@@ -5,7 +5,7 @@
               </label>
                 
                 {% assign qty = 1 %} 
-                {% for tag in item.product.tags %}
+                {% for tag in product.tags %}
                 {% if tag contains 'min-qty:' %}
                 {% assign qty = tag | split:":" | last | plus:0 %}
                 {% endif %}
