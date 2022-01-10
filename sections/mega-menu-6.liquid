@@ -120,6 +120,9 @@
                      {% endfor %}
                    </ul>
                  </div>
+              {% for product in collections[linkCollection.handle].products limit:3 %}
+      {% render 'new-quickview-content' ,product_card_product: product%}
+      {%- endfor -%}
                {% endif %}
              {% endif %}
            {% endfor%}
