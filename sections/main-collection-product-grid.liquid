@@ -178,7 +178,7 @@
 
 
 
-    {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- paginate collection.products by section.settings.products_per_page |minus:1 -%}
     
     <div id="CollectionProductGrid">
       <div class="boost-pfs-filter-wrapper collection page-width">
