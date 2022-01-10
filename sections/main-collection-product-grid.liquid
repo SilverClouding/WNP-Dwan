@@ -341,7 +341,7 @@
       
     </div>
     {%- endpaginate -%}  
-     {%- paginate collection.products by 100000000-%}
+     {%- paginate collection.products by 1000-%}
   {%- for product in collection.products -%}
       {% render 'new-quickview-content' ,product_card_product: product%}
       {%- endfor -%}
