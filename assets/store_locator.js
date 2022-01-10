@@ -2189,7 +2189,7 @@ var jsStoreLocator = {
       store = new Store(value);
       self.data.stores.push(store);
       
-      console.log(value);
+      console.log(store);
     })
     
     
