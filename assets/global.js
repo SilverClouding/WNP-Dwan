@@ -659,10 +659,8 @@ class VariantSelects extends HTMLElement {
 
      
     
-      var inventoryQty = 0;
-      if(inventoryQty == undefined ){
-        inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
-      }
+      var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
+      
 
 
       for (let i = 0; i < this.children.length; i++) {
