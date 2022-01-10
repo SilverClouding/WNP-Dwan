@@ -221,12 +221,12 @@ body.page-your-shopping-cart {
          {% assign qty = 1 %} 
           {% for tag in item.product.tags %}
           {% if tag contains 'min-qty:' %}
-          {% assign qty = tag | split:":" | last %}
+          {% assign qty = tag | split:":" | last | plus:0 %}
           {% endif %}
           {% endfor %}
           
           <quantity-input class="quantity">
-            <button {{item.quantity}} {{qty}} {% if item.quantity == qty %} disabled {% endif %}class="quantity__button minus no-js-hidden" name="minus" type="button" onclick="qty_minus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
+            <button {{item.quantity}} qty-{{qty}} {% if item.quantity == qty %} disabled {% endif %}class="quantity__button minus no-js-hidden" name="minus" type="button" onclick="qty_minus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
               <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
               {% render 'icon-minus' %}
             </button>
