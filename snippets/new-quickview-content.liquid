@@ -25,7 +25,7 @@
           </svg>
           <span class="product-form__error-message"></span>
         </div>
-        {%- capture formid -%}qvproduct_form_{{product_card_product.id}}{%- endcapture -%}
+        {%- capture formid -%}qvproduct_form_product_{{product_card_product.id}}{%- endcapture -%}
         {%- form 'product', product_card_product, id: formid , class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
         <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
         <div class="product-form__buttons">
