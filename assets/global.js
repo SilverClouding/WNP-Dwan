@@ -679,6 +679,8 @@ class VariantSelects extends HTMLElement {
         }
       }
       
+       const thisProductId = `${this.getAttribute("id")}`;
+      console.log('updateSwatch-'+thisProductId);
       
       const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
       productForms.forEach((productForm) => {
