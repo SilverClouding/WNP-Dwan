@@ -386,7 +386,12 @@ var boostPFSThemeConfig = {
     show_image_outline: {% if section.settings.show_image_outline %} {{ section.settings.show_image_outline | json }} {% else %} false {% endif %},
     show_secondary_image: {% if section.settings.show_secondary_image %} {{ section.settings.show_secondary_image | json }} {% else %} false {% endif %},
     accent_icons: {% if settings.accent_icons %} {{ settings.accent_icons | json }} {% else  %} '' {% endif %},
-    currency_code_enabled: {% if settings.currency_code_enabled %} {{ settings.currency_code_enabled | json }} {% else %} false {% endif %}
+    currency_code_enabled: {% if settings.currency_code_enabled %} {{ settings.currency_code_enabled | json }} {% else %} false {% endif %},
+    
+    extra_item_img:{{settings.image_bottom |img_url:'1200x' | json}},
+    extra_item_richtext:{{settings.richtext_bottom | json}},
+    extra_item_button_text:{{settings.btn_text | json }},
+    extra_item_button_link:{{settings.button_link | json }}
   }
 };
 
