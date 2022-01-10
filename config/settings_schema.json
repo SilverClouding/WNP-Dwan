@@ -23,6 +23,11 @@
         "info": "This menu use in 'pages\/Grooming','blogs\/adoption','\/pages\/self-dog-wash','\/pages\/cafe'"
       },
       {
+        "type": "url",
+        "id": "link",
+        "label": "Store locator link"
+      },
+      {
         "type": "checkbox",
         "id": "minicart",
         "label": "Show minicart section in customise theme",
