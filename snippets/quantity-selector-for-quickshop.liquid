@@ -3,6 +3,13 @@
               <label class="form__label" for="Quantity-{{ section.id }}_{{product.id}}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
+                
+                {% assign qty = 1 %} 
+                {% for tag in item.product.tags %}
+                {% if tag contains 'min-qty:' %}
+                {% assign qty = tag | split:":" | last | plus:0 %}
+                {% endif %}
+                {% endfor %}
 
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -13,8 +20,8 @@
                     type="number"
                     name="quantity"
                     id="Quantity-{{ section.id }}_{{product.id}}"
-                    min="4"
-                    value="4"
+                    min="{{qty}}"
+                    value="{{qty}}"
                     form="qvproduct_form_product_{{product.id}}"
                   >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
