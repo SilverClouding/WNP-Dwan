@@ -330,6 +330,10 @@
               </ul>
             </div>
 
+              {%- for product in collection.products -%}
+      {% render 'new-quickview-content' ,product_card_product: product%}
+      {%- endfor -%}
+            
             <div class="boost-pfs-filter-load-more"></div>
             <link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
             <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
