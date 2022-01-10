@@ -284,6 +284,8 @@
       </div>
     </div>
     {% endcomment %}
+    
+      {%- capture formid -%}qvproduct_form_product_{{product_card_product.id}}{%- endcapture -%}
     <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
 
       <div class="grid__item product__media-wrapper">
@@ -557,7 +559,7 @@
                        id="Quantity-{{ section.id }}"
                        min="{{qty}}"
                        value="{{qty}}"
-                       form="{{ product_form_id }}"
+                       form="qvproduct_form_product_{{product.id}}"
                        >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
@@ -635,7 +637,7 @@
               </svg>
               <span class="product-form__error-message"></span>
             </div>
-            {%- form 'product', product, id: "qvproduct_form", class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+            {%- form 'product', product, id: formid, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
             <div class="product-form__buttons">
 
