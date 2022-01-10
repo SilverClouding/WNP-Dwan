@@ -811,7 +811,7 @@ class VariantSelects extends HTMLElement {
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {
-     const thisProductId = `#${this.getAttribute("id")}`;
+     const thisProductId = `${this.getAttribute("id")}`;
     console.log(thisProductId);
     const productForm = document.querySelector(`#product-form-${this.dataset.section},  .fancybox-inner #qvproduct_form_${thisProductId}`);
     console.log(productForm);
