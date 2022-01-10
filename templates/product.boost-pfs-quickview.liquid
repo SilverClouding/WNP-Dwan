@@ -284,12 +284,7 @@
       </div>
     </div>
     {% endcomment %}
-    <script>
-      var inv_qty = {};
-      {% for var in product.variants %}
-      inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
-      {% endfor %}
-    </script>
+   
 
       {%- capture formid -%}qvproduct_form_product_{{product.id}}{%- endcapture -%}
     <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
