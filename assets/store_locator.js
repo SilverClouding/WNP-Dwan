@@ -2188,7 +2188,11 @@ var jsStoreLocator = {
       // Build store data
       store = new Store(value);
       self.data.stores.push(store);
+      
+      console.log(value)l
     })
+    
+    
     // Sort stores by title
     self.data.stores = self.data.stores.sort(function(a, b) {
       return a.title.localeCompare(b.title)
