@@ -535,12 +535,11 @@
           
 <!--           qty -->
           <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-  <div>
-              <label class="form__label" for="Quantity-{{ section.id }}_{{product.id}}">
+            <div>
+              <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
-                
-                {% assign qty = 1 %} 
+              {% assign qty = 1 %} 
                 {% for tag in product.tags %}
                 {% if tag contains 'min-qty:' %}
                 {% assign qty = tag | split:":" | last | plus:0 %}
@@ -553,20 +552,19 @@
                   {% render 'icon-minus' %}
                 </button>
                 <input class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}_{{product.id}}"
-                    min="{{qty}}"
-                    value="{{qty}}"
-                    form="qvproduct_form_product_{{product.id}}"
-                  >
+                       type="number"
+                       name="quantity"
+                       id="Quantity-{{ section.id }}"
+                       min="{{qty}}"
+                       value="{{qty}}"
+                       form="{{ product_form_id }}"
+                       >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                   {% render 'icon-plus' %}
                 </button>
               </quantity-input>
-                
-                {% for tag in product.tags %}
+             {% for tag in product.tags %}
                 {% if tag contains 'min-qty:' %}
                   {% assign qty = tag | split:":" | last | plus:0 %}
                 <p>Minimum quantity of {{qty}} <span class="popup_minq"><a href="#one" class="fancybox"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -576,8 +574,7 @@
                 </p>
                 {% endif %}
                 {% endfor %}
-                
-              </div>
+            </div>
             <div>
 
               {% assign cartTotal = cart.total_price %}
