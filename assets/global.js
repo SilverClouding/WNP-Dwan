@@ -682,7 +682,7 @@ class VariantSelects extends HTMLElement {
        const thisProductId = `${this.getAttribute("id")}`;
       console.log('updateSwatch-'+thisProductId);
       
-      const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form`);
+      const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form_${thisProductId}`);
       productForms.forEach((productForm) => {
         const input = productForm.querySelector('input[name="id"]');
         input.value = this.currentVariant.id;
