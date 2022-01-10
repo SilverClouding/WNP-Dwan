@@ -286,6 +286,12 @@
         
         <div class="cart-items  for-mobile">
           {%- for item in cart.items -%}
+          {% assign qty = 1 %} 
+              {% for tag in item.product.tags %}
+              {% if tag contains 'min-qty:' %}
+              {% assign qty = tag | split:":" | last | plus:0 %}
+              {% endif %}
+              {% endfor %}
           {% assign product_id = item.product_id %}
           <div itemid="{{product_id}}" class="min-cart-item" index="{{forloop.index}}">
             <div class="td-image cart__image">
@@ -304,7 +310,7 @@
                         {{ 'products.product.quantity.label' | t }}
                       </label>
                       <quantity-input class="quantity">
-                        <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <button {{item.quantity}} qty-{{qty}} {% if item.quantity == qty %} disabled {% endif %} class="quantity__button no-js-hidden" name="minus" type="button">
                           <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
@@ -312,7 +318,7 @@
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
-                          min="0"
+                          min="{{qty}}"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
