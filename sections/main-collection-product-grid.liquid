@@ -176,8 +176,6 @@
 <div class="listCollection">
 
 
-
-{{section.settings.products_per_page | minus:1 }}
     {%- paginate collection.products by section.settings.products_per_page |minus:1 -%}
     
     <div id="CollectionProductGrid">
@@ -383,7 +381,7 @@ var boostPFSThemeConfig = {
     media_size: {% if section.settings.image_ratio %} {{ section.settings.image_ratio | json }} {% else %} '' {% endif %},
     sold_out_badge_color_scheme: {% if settings.sold_out_badge_color_scheme %} {{ settings.sold_out_badge_color_scheme | json }} {% else %} '' {% endif %},
     sale_badge_color_scheme: {% if settings.sale_badge_color_scheme %} {{ settings.sale_badge_color_scheme | json }} {% else %} '' {% endif %},
-    products_per_page: {% if section.settings.products_per_page %} {{ section.settings.products_per_page | json }} {% else %} 24 {% endif %},
+    products_per_page: {% if section.settings.products_per_page %} {{ section.settings.products_per_page |minus: 1 | json }} {% else %} 24 {% endif %},
     products_per_row: {% if products_per_row %} {{ products_per_row }} {% else %} 4 {% endif %},
     show_image_outline: {% if section.settings.show_image_outline %} {{ section.settings.show_image_outline | json }} {% else %} false {% endif %},
     show_secondary_image: {% if section.settings.show_secondary_image %} {{ section.settings.show_secondary_image | json }} {% else %} false {% endif %},
