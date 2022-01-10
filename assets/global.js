@@ -642,7 +642,7 @@ class VariantSelects extends HTMLElement {
 //         console.log("data_option3Array-"+data_option3Array);
           if(data_option2Array || data_option3Array ){
           }else{
-            console.log('notifyme')
+//             console.log('notifyme')
           }
       }
       
@@ -650,14 +650,14 @@ class VariantSelects extends HTMLElement {
 //         console.log(elementinput);
 //       });
 
-         console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+//          console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
       
        if(fieldsets[1] == fieldset ){
 //       console.log(fieldset);
        }
       
 
-     
+     console.log(this);
     
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
@@ -666,7 +666,7 @@ class VariantSelects extends HTMLElement {
       for (let i = 0; i < this.children.length; i++) {
         const stockmsg = this.children[0];
         if(inventoryQty >= 10){
-          console.log("ok");
+//           console.log("ok");
           stockmsg.innerHTML="In Stock";   
         }
         else if(inventoryQty <= 10 && inventoryQty >0){
@@ -678,7 +678,7 @@ class VariantSelects extends HTMLElement {
       }
       
        const thisProductId = `${this.getAttribute("id")}`;
-      console.log('updateSwatch-'+thisProductId);
+//       console.log('updateSwatch-'+thisProductId);
       
       const productForms = document.querySelectorAll(`.variantselec #product-form-installment, #qvproduct_form_${thisProductId}`);
       productForms.forEach((productForm) => {
@@ -812,9 +812,9 @@ class VariantSelects extends HTMLElement {
 
   toggleAddButton(disable = true, text, modifyClass = true) {
      const thisProductId = `${this.getAttribute("id")}`;
-    console.log(thisProductId);
+//     console.log(thisProductId);
     const productForm = document.querySelector(`#product-form-${this.dataset.section},  .fancybox-inner #qvproduct_form_${thisProductId}`);
-    console.log(productForm);
+//     console.log(productForm);
     productForm.classList.add('check');
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
