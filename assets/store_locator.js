@@ -1933,10 +1933,10 @@ var jsStoreLocator = {
 
         store.place = place;
 
-        // store.open_now = place.opening_hours.open_now;
-        // store.opening_hours = (place.opening_hours.periods ? formatOpeningHours(place.opening_hours.periods) : []);
-        // store.int_phone = place.international_phone_number;
-        // store.phone = (place.formatted_phone_number ? place.formatted_phone_number.replace(/\-/g, ' ') : false);
+        store.open_now = place.opening_hours.open_now;
+        store.opening_hours = (place.opening_hours.periods ? formatOpeningHours(place.opening_hours.periods) : []);
+        store.int_phone = place.international_phone_number;
+        store.phone = (place.formatted_phone_number ? place.formatted_phone_number.replace(/\-/g, ' ') : false);
         // store.permanently_closed = place.permanently_closed;
         store.google_url = place.url;
 
