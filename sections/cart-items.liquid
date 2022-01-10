@@ -226,7 +226,7 @@ body.page-your-shopping-cart {
           {% endfor %}
           
           <quantity-input class="quantity">
-            <button class="quantity__button minus no-js-hidden" name="minus" type="button" onclick="qty_minus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
+            <button {% if item.quantity == qty %} disabled {% endif %}class="quantity__button minus no-js-hidden" name="minus" type="button" onclick="qty_minus_updateItemById('{{ item.id }}', {{item.quantity}} ,'cart-items')">
               <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
               {% render 'icon-minus' %}
             </button>
