@@ -45,15 +45,14 @@ class CartItems extends HTMLElement {
     
     function swymCallbackFn(){
       // your API calls go here
-      window._swat.getProductDetails(
-        params,
-        function(productJson) {
-          console.log("Entire product json:", productJson);
-        },
-        function(e) {
-          console.log(e);
+     
+      window._swat.wishlistCount(
+        function(r) {
+          console.log('Wishlist items - ', r);
         }
       );
+      
+      //api end
     }
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
