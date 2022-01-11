@@ -56,7 +56,9 @@
             if (recommendations && recommendations.innerHTML.trim().length) {
               this.innerHTML = recommendations.innerHTML;
               document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
+
             }
+			window._swat.initializeActionButtons('product-recommendations .grid', '.swym-button');
 
           })
           .catch(e => {
