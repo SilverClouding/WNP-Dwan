@@ -55,7 +55,7 @@ alt="{{dt}}"
           function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
-              console.log(product.dt);
+              console.log(product);
            
               if(product.isInCart){
                 console.log('if cart true')
@@ -64,6 +64,7 @@ alt="{{dt}}"
                 console.log(product.isInCart);
               console.log('else cart false')
               }
+              
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);
 //               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
 //               wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
