@@ -211,7 +211,7 @@
         "color_scheme": "accent-1",
         "full_width": false,
         "layout": "image_first",
-        "top_padding": 10,
+        "top_padding": 0,
         "bottom_padding": 65,
         "sec_class": "product-image-width-text"
       }
