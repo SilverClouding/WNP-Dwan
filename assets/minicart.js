@@ -39,6 +39,7 @@ const showView = (event) => {
     var text = $option.text();//to get <option>Text</option> content
     jQuery('.sizedata').html(text)
     console.log(text);
+    window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
   });
   
 }
@@ -51,11 +52,13 @@ function qty_plus_updateItemById(id,quantity,sections) {
   quantity = quantity + 1;
   console.log(quantity);
   updateItemById(id,quantity,sections);
+  window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
 }
 function qty_minus_updateItemById(id,quantity,sections) {  
   quantity = quantity - 1;
   console.log(quantity);
   updateItemById(id,quantity,sections);
+  window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
 }
 
 // Item remove
@@ -83,7 +86,8 @@ function updateItemById(id,quantity,sections) {
     var sectionHtmlData =  data; 
     var SectionHtml = sectionHtmlData.sections['cart-items'] ;
     var IDminiCart = document.getElementById("mini-cart");
-    IDminiCart.innerHTML = SectionHtml;     
+    IDminiCart.innerHTML = SectionHtml;   
+    window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
   })
   .catch((error) => {
     console.error('Error:', error);
