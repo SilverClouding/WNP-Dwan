@@ -56,7 +56,7 @@ alt="{{dt}}"
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
-           let addtobtn_text = "Add to cart"
+           var addtobtn_text = ""
               window._swat.getProductDetails(product, function(productJson) {
                 console.log("Entire product json:", productJson);
                 if(productJson.available ){
