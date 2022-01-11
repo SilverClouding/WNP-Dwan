@@ -1,9 +1,7 @@
 $(document).ready(function(){
     function swymCallbackFn(){
-//       var wishlistItemsContainer = document.getElementById("wishlist-items");
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
-      if(wishlistItemsContainer){
-           
+      if(wishlistItemsContainer){ 
         window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
@@ -38,17 +36,11 @@ $(document).ready(function(){
                                   width="1000" height="1000">
                                   </div>
                                   </div>
-
                                   </div>
                                   </div>
-
-                                  
-                                    <a href="" id="${product.empi}" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
+                                  <a href="" id="${product.empi}" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                  </div> </li>`
-              
-              
-           fnc_prouductJson(product);
-              
+           fnc_prouductJson(product);  
             });
        
             wishlistItemsContainer.innerHTML = productitem;
