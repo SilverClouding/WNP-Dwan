@@ -54,6 +54,7 @@ alt="{{dt}}"
           function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
+              console.log(product);
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);
 //               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
 //               wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
