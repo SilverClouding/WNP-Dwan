@@ -55,6 +55,7 @@ alt="{{dt}}"
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product.epi);
+              console.log(product.empi);
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
