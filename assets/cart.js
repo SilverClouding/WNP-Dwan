@@ -21,6 +21,18 @@ class CartItems extends HTMLElement {
 
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
+      
+      window._swat.updateWishlistEvent(
+        [
+          {
+            epi: 123,
+            cprops: { x: 1, y: 2 }
+          }
+        ],
+        function(r) { console.log(r) },
+        function(e) { console.log(e) }
+      );
+      
     }, 300);
 
     this.addEventListener('change', this.debouncedOnChange.bind(this));
