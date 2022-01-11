@@ -173,7 +173,7 @@ alt="{{dt}}"
       }); 
     }
   
-    function fnc_prouductJson(productJson){
+    function fnc_prouductJson(product){
       window._swat.getProductDetails(product, function(productJson) {
         console.log("Entire product json:", productJson);
         if(productJson.available ){
