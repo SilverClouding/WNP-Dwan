@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
 <li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
-                      <div class="caption-with-letter-spacing light">${product.bt}</div>
+<div class="caption-with-letter-spacing light">{{bt}}</div>
                       <h3 class="card-information__text h5">
 <a href="{{du}}" class="full-unstyled-link">
 {{dt}}
