@@ -177,12 +177,12 @@ alt="{{dt}}"
       window._swat.getProductDetails(product, function(productJson) {
         console.log("Entire product json:", productJson.title);
         if(productJson.available ){
-          console.log('if cart true')
+//           console.log('if cart true')
           addtobtn_text ="Added in cart"
         }else{
           addtobtn_text = "Sold out"
-          console.log(productJson.available);
-          console.log('else cart false')
+//           console.log(productJson.available);
+//           console.log('else cart false')
         }
       },function(e) {console.log(e);});
     }
