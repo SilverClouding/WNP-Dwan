@@ -344,10 +344,16 @@
 
               </div>
               <div class="cart__item-title-right">
-                <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>  {% render 'icon-remove' %}</a>
-
-                <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{item.product.id}}" data-swaction="addToWishlist" data-product-id="{{ item.product.id | json}}" data-variant-id="{{ item.product.variants[0].id}}" data-product-url="{{ shop.url }}{{  item.product.url }}"></button>
-
+                  <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                        <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                          {% render 'icon-remove' %}
+                        </a>
+                      </cart-remove-button>
+                
+                  <!-- Swym Wishlist Plus EPI Button-->
+                    <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{item.product.id}}" data-swaction="addToWishlist" data-product-id="{{ item.product.id | json}}" data-variant-id="{{ item.variant_id}}" data-product-url="{{ shop.url }}{{  item.product.url }}">Save to wishlist</button>
+                    <!-- Swym Wishlist Plus EPI Button-->
+              
                 
                 <div class="cart__item-sub">
                   <span class="cart__price-old hide">{{ item.original_line_price | money }}</span>
