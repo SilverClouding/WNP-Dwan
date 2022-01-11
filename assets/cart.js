@@ -21,7 +21,7 @@ class CartItems extends HTMLElement {
 
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
-       window._swat.initializeActionButtons('.cart-items', '.swym-button');
+//        window._swat.initializeActionButtons('.cart-items', '.swym-button');
 //       window._swat.updateWishlistEvent(
 //         [
 //           {
@@ -43,25 +43,23 @@ class CartItems extends HTMLElement {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     console.log(event);
     
-//     function swymCallbackFn(){
-//       // your API calls go here
-//       window._swat.initializeActionButtons('.cart-items', '.swym-button');
-//       window._swat.updateWishlistEvent(
-//         [
-//           {
-//             epi: 123,
-//             cprops: { x: 1, y: 2 }
-//           }
-//         ],
-//         function(r) { console.log(r) },
-//         function(e) { console.log(e) }
-//       );
-//     }
-//     if(!window.SwymCallbacks){
-//       window.SwymCallbacks = [];
-//     }
-//     window.SwymCallbacks.push(swymCallbackFn);
-    
+    function swymCallbackFn(){
+      // your API calls go here
+      window._swat.getProductDetails(
+        params,
+        function(productJson) {
+          console.log("Entire product json:", productJson);
+        },
+        function(e) {
+          console.log(e);
+        }
+      );
+    }
+    if(!window.SwymCallbacks){
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymCallbackFn);
+
     
   }
 
