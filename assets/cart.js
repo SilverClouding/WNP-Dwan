@@ -42,22 +42,24 @@ class CartItems extends HTMLElement {
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     console.log(event);
+    window.location.reload();
     
-    function swymCallbackFn(){
-      // your API calls go here
+    
+//     function swymCallbackFn(){
+//       // your API calls go here
      
-      window._swat.wishlistCount(
-        function(r) {
-          console.log('Wishlist items - ', r);
-        }
-      );
+//       window._swat.wishlistCount(
+//         function(r) {
+//           console.log('Wishlist items - ', r);
+//         }
+//       );
       
-      //api end
-    }
-    if(!window.SwymCallbacks){
-      window.SwymCallbacks = [];
-    }
-    window.SwymCallbacks.push(swymCallbackFn);
+//       //api end
+//     }
+//     if(!window.SwymCallbacks){
+//       window.SwymCallbacks = [];
+//     }
+//     window.SwymCallbacks.push(swymCallbackFn);
 
     
   }
