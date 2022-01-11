@@ -90,8 +90,8 @@ class CartItems extends HTMLElement {
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
       
-        window._swat.initializeActionButtons('.cart-items .for-desktop', '.swym-button');
-       window._swat.initializeActionButtons('.cart-items .for-mobile', '.swym-button');
+        window._swat.initializeActionButtons('.cart__items', '.swym-button');
+      
       
       
         this.disableLoading();
