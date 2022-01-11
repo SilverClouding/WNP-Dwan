@@ -130,9 +130,9 @@ $(document).ready(function(){
       window._swat.getProductDetails(product, function(productJson) {
         console.log("Entire product json:", productJson.id);
         if(productJson.available ){
-          document.getElementById(`#${productJson.id}`).inerHtml="Add to cart"
+          document.getElementById(`#${productJson.id}`).innerText ="Add to cart"
         }else{
-        document.getElementById(`#${productJson.id}`).inerHtml="Sold out"          
+        document.getElementById(`#${productJson.id}`).innerText ="Sold out"          
         }
       },function(e) {console.log(e);});
     }
