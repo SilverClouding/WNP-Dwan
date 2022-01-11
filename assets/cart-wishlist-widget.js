@@ -58,8 +58,10 @@ alt="{{dt}}"
               console.log(product);
            
               if(product.isInCart){
+                console.log('if cart true')
                 addtobtn_text ="Added in cart"
-              
+              }else{
+              console.log('else cart false')
               }
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);
 //               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
