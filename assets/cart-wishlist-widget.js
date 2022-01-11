@@ -49,14 +49,14 @@ alt="{{dt}}"
     function swymCallbackFn(){
 //       var wishlistItemsContainer = document.getElementById("wishlist-items");
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
-      if(wishlistItemsContainer){ 
-        var productitem="";
+      if(wishlistItemsContainer){
+           let addtobtn_text = "Add to cart"
         window._swat.fetchWrtEventTypeET(
           function(wishlistProducts) {
-           
+            let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
-              let addtobtn_text = "Add to cart"
+           
               if(product.isInCart){
                 addtobtn_text ="Added in cart"
               
