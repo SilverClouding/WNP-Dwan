@@ -64,6 +64,45 @@
               this.innerHTML = recommendations.innerHTML;
               document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
               window._swat.initializeActionButtons('.product-recommendations', '.swym-button');
+
+			
+	
+
+              const recommendations_col_Swiper = new Swiper(".recommendations_col_Swiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                  el: ".recommendations_col_Swiper .swiper-pagination",
+                  clickable: true,
+                },
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.recommendations_col_Swiper .swiper-button-next',
+                  prevEl: '.recommendations_col_Swiper .swiper-button-prev',
+                },
+                // And if we need scrollbar
+                scrollbar: {
+                  el: '.recommendations_col_Swiper .swiper-scrollbar',
+                  type: "progressbar",
+                },
+                breakpoints: {
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                  },
+                },
+              });
+            
+
+
             }
 			
 
