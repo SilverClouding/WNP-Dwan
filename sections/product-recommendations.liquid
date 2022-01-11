@@ -28,10 +28,11 @@
     </ul>
   {% endif %}
   
-   
+   <div class="featured-product">
   {% for recommendation in recommendations.products %}
    {% render 'new-quickview-content' ,product_card_product: recommendation %}
   {%- endfor -%}
+  </div>
   
 </product-recommendations> 
 
