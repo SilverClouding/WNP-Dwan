@@ -55,6 +55,11 @@ alt="{{dt}}"
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
+              let addtobtn_text = "Add to cart"
+              if(product.isInCart){
+                addtobtn_text ="Added in cart"
+              
+              }
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);
 //               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
 //               wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
@@ -92,7 +97,7 @@ alt="{{dt}}"
                                   </div>
 
                                   </div>
-                                    <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart"> Add to cart </a>
+                                    <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                   </li>`
               
             });
