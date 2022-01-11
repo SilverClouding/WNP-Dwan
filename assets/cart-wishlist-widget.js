@@ -98,9 +98,9 @@ alt="{{dt}}"
                                   </div>
                                   </div>
 
-                                  </div>
+                                  
                                     <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
-                                  </li>`
+                                 </div> </li>`
               
             });
             
