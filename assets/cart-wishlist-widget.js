@@ -129,7 +129,7 @@ alt="{{dt}}"
           {empi: productId, du: du},
           variantId,
           function() {
-            e.target.innerHTML = "Moved to cart";
+            e.target.innerHTML = "Added to cart";
 //             window.location.reload();
             console.log("Successfully added product to cart.");
             //minicart section start
