@@ -102,19 +102,21 @@ alt="{{dt}}"
                                     <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                  </div> </li>`
               
-            });
-            
-            wishlistItemsContainer.innerHTML = productitem;
-
-            attachClickListeners();
-            
-            window._swat.getProductDetails(params, function(productJson) {
+              window._swat.getProductDetails(params, function(productJson) {
                 console.log("Entire product json:", productJson);
               },
               function(e) {
                 console.log(e);
               }
             );
+              
+            });
+            
+            wishlistItemsContainer.innerHTML = productitem;
+
+            attachClickListeners();
+            
+            
             
           },
           window._swat.EventTypes.addToWishList
