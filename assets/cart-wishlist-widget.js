@@ -102,7 +102,7 @@ alt="{{dt}}"
                                     <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                  </div> </li>`
               
-              window._swat.getProductDetails(params, function(productJson) {
+              window._swat.getProductDetails(product, function(productJson) {
                 console.log("Entire product json:", productJson);
               },
               function(e) {
@@ -140,10 +140,7 @@ alt="{{dt}}"
         var variantId = e.target.getAttribute("data-variant-id");
         var du = e.target.getAttribute("data-url");
         e.target.innerHTML = "Moving..";
-        window._swat.replayAddToCart(
-          {empi: productId, du: du},
-          variantId,
-          function() {
+        window._swat.replayAddToCart({empi: productId, du: du},variantId, function() {
             e.target.innerHTML = "Added to cart";
 //             window.location.reload();
             console.log("Successfully added product to cart.");
