@@ -67,11 +67,7 @@ alt="{{dt}}"
                   console.log(productJson.available);
                   console.log('else cart false')
                 }
-              },
-              function(e) {
-                console.log(e);
-              }
-               );
+              
               console.log(addtobtn_text);
               
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
@@ -112,7 +108,12 @@ alt="{{dt}}"
                                  </div> </li>`
               
               
-           
+           },
+              function(e) {
+                console.log(e);
+              }
+               );
+              console.log(addtobtn_text);
               
             });
             
