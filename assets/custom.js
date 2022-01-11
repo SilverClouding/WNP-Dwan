@@ -589,27 +589,6 @@ jQuery(function($){
   $(document).on('click',".quick-view_new", function () {
 console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
-    //     $(openId).addClass('active');
-    //     $(openId).show(); 
-
-    // $('.qv-product-main-images').slick({
-    //           dots: false,
-    //           arrows: true,
-    //           respondTo: 'min',
-    //           useTransform: false,
-    //           asNavFor: '.slider-nav'
-    //         });
-
-    //         $('.slider-nav').slick({
-    //           slidesToShow: 4,
-    //           slidesToScroll: 1,
-    //           asNavFor: '.qv-product-main-images',
-    //           dots: false,
-    //           centerMode: false,
-    //           focusOnSelect: true,
-    //           arrows: false,
-    //         });
-
     $.fancybox({
       href: "#qv_"+$(this).attr('data-productid'),
       maxWidth: 1040,
