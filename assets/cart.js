@@ -41,25 +41,27 @@ class CartItems extends HTMLElement {
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     console.log(event);
-     window._swat.initializeActionButtons('.cart-items', '.swym-button');
-    function swymCallbackFn(){
-      // your API calls go here
-      window._swat.initializeActionButtons('.cart-items', '.swym-button');
-      window._swat.updateWishlistEvent(
-        [
-          {
-            epi: 123,
-            cprops: { x: 1, y: 2 }
-          }
-        ],
-        function(r) { console.log(r) },
-        function(e) { console.log(e) }
-      );
-    }
-    if(!window.SwymCallbacks){
-      window.SwymCallbacks = [];
-    }
-    window.SwymCallbacks.push(swymCallbackFn);
+    
+//     function swymCallbackFn(){
+//       // your API calls go here
+//       window._swat.initializeActionButtons('.cart-items', '.swym-button');
+//       window._swat.updateWishlistEvent(
+//         [
+//           {
+//             epi: 123,
+//             cprops: { x: 1, y: 2 }
+//           }
+//         ],
+//         function(r) { console.log(r) },
+//         function(e) { console.log(e) }
+//       );
+//     }
+//     if(!window.SwymCallbacks){
+//       window.SwymCallbacks = [];
+//     }
+//     window.SwymCallbacks.push(swymCallbackFn);
+    
+    
   }
 
   getSectionsToRender() {
