@@ -57,7 +57,7 @@ if (!customElements.get('product-form')) {
 
 //           var count = document.querySelector('.count-cross .count').getAttribute('count');
 //           document.getElementById("CartCount").innerHTML= count;
-          
+          window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
         });
         //minicart section end
         
