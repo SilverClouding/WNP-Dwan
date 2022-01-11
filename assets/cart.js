@@ -91,7 +91,7 @@ class CartItems extends HTMLElement {
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
       
       
-//        window._swat.initializeActionButtons('.cart-items', '.swym-button');
+       window._swat.initializeActionButtons('.cart-items', '.swym-button');
       
         this.disableLoading();
       }).catch(() => {
