@@ -28,6 +28,7 @@ const showView = (event) => {
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
+    window._swat.initializeActionButtons('.cart-items', '.swym-button');
   });
   
   jQuery(document).on('change', '.minicart_variant select', function() {
