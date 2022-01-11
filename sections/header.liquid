@@ -752,6 +752,7 @@ console.log("bottom - "+this.headerBounds.bottom);
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+console.log('else if 1');
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
         } else {
@@ -764,6 +765,7 @@ console.log("bottom - "+this.headerBounds.bottom);
           requestAnimationFrame(this.hide.bind(this));
         }
       } else if (scrollTop <= this.headerBounds.top) {
+          console.log('else if 2');                                         
         requestAnimationFrame(this.reset.bind(this));
       }
 
