@@ -1,51 +1,4 @@
 $(document).ready(function(){
-
-    // your product card markup
-    var productTileMarkup = `
-
-
-<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
-<div class="caption-with-letter-spacing light">{{bt}}</div>
-                      <h3 class="card-information__text h5">
-<a href="{{du}}" class="full-unstyled-link">
-{{dt}}
-                        </a>
-                        </h3>
-                      <div class="price " data-wg-notranslate="manual">
-                      <div>
-                      <div class="price__regular">
-                      <span class="price-item price-item--regular">
-HK{{Shopify.formatMoney(pr * 100.00}}
-                        </span>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                      <div class="card card--product card--outline" tabindex="-1">
-                      <div class="card__inner">
-                      <div>
-                      <div class="media media--transparent media--square media--hover-effect">
-<img src="{{iu}}" 
-alt="{{dt}}" 
-                      class="motion-reduce" 
-                      width="1000" height="1000">
-                        </div>
-                        </div>
-
-                        </div>
-
-                        </div>
-
-                        </div><a href="" data-product-id="{{empi}}" data-url="{{du}}" data-variant-id="{{epi}}" class="add-to-cart">
-{{#isInCart}}Moved to cart{{/isInCart}}
-{{^isInCart}}Move to cart{{/isInCart}}
-  </a>
-
-  </li>
-
-`;
-
     function swymCallbackFn(){
 //       var wishlistItemsContainer = document.getElementById("wishlist-items");
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
@@ -90,7 +43,7 @@ alt="{{dt}}"
                                   </div>
 
                                   
-                                    <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
+                                    <a href="" id="${product.empi}" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                  </div> </li>`
               
               
