@@ -57,13 +57,20 @@ alt="{{dt}}"
             wishlistProducts.forEach(function(product){
               console.log(product);
            
-              if(product.isInCart == true){
-                console.log('if cart true')
-                addtobtn_text ="Added in cart"
-              }else{
-                console.log(product.isInCart);
-              console.log('else cart false')
+              window._swat.getProductDetails(product, function(productJson) {
+                console.log("Entire product json:", productJson);
+                if(productJson.available ){
+                  console.log('if cart true')
+                  addtobtn_text ="Added in cart"
+                }else{
+                  console.log(productJson.available);
+                  console.log('else cart false')
+                }
+              },
+              function(e) {
+                console.log(e);
               }
+              
               
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
@@ -102,12 +109,7 @@ alt="{{dt}}"
                                     <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
                                  </div> </li>`
               
-              window._swat.getProductDetails(product, function(productJson) {
-                console.log("Entire product json:", productJson);
-              },
-              function(e) {
-                console.log(e);
-              }
+              
             );
               
             });
