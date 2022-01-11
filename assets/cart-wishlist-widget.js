@@ -34,13 +34,13 @@ alt="{{dt}}"
                         </div>
 
                         </div>
-<a href="" data-product-id="{{empi}}" data-url="{{du}}" data-variant-id="{{epi}}" class="add-to-cart">
+
+                        </div>
+
+                        </div><a href="" data-product-id="{{empi}}" data-url="{{du}}" data-variant-id="{{epi}}" class="add-to-cart">
 {{#isInCart}}Moved to cart{{/isInCart}}
 {{^isInCart}}Move to cart{{/isInCart}}
   </a>
-                        </div>
-
-                        </div>
 
   </li>
 
