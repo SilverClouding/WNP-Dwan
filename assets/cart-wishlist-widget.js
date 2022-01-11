@@ -50,13 +50,13 @@ alt="{{dt}}"
 //       var wishlistItemsContainer = document.getElementById("wishlist-items");
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
       if(wishlistItemsContainer){
-           let addtobtn_text = "Add to cart"
+           
         window._swat.fetchWrtEventTypeET(
           function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
-           
+           let addtobtn_text = "Add to cart"
               window._swat.getProductDetails(product, function(productJson) {
                 console.log("Entire product json:", productJson);
                 if(productJson.available ){
