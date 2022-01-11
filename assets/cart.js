@@ -22,18 +22,8 @@ class CartItems extends HTMLElement {
 
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
-//        window._swat.initializeActionButtons('.cart-items', '.swym-button');
-//       window._swat.updateWishlistEvent(
-//         [
-//           {
-//             epi: 123,
-//             cprops: { x: 1, y: 2 }
-//           }
-//         ],
-//         function(r) { console.log(r) },
-//         function(e) { console.log(e) }
-//       );
-       window.location.reload();
+
+//        window.location.reload();
       
     }, 300);
 
@@ -44,24 +34,9 @@ class CartItems extends HTMLElement {
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     console.log(event);
-    window.location.reload();
+//     window.location.reload();
     
     
-//     function swymCallbackFn(){
-//       // your API calls go here
-     
-//       window._swat.wishlistCount(
-//         function(r) {
-//           console.log('Wishlist items - ', r);
-//         }
-//       );
-      
-//       //api end
-//     }
-//     if(!window.SwymCallbacks){
-//       window.SwymCallbacks = [];
-//     }
-//     window.SwymCallbacks.push(swymCallbackFn);
 
     
   }
@@ -123,6 +98,10 @@ class CartItems extends HTMLElement {
         this.updateLiveRegions(line, parsedState.item_count);
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
+      
+      
+       window._swat.initializeActionButtons('.cart-items', '.swym-button');
+      
         this.disableLoading();
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
