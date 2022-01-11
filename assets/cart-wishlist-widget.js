@@ -51,10 +51,48 @@ alt="{{dt}}"
       if(wishlistItemsContainer){
         window._swat.fetchWrtEventTypeET(
           function(wishlistProducts) {
-            wishlistProducts.forEach(function(wishlistProduct){
-              wishlistProduct.isInCart = _swat.platform.isInDeviceCart(wishlistProduct.epi);
-              var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
-              wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
+            let productitem="";
+            wishlistProducts.forEach(function(product){
+              product.isInCart = _swat.platform.isInDeviceCart(product.epi);
+//               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
+//               wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
+              
+                  productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+                                  <div class="caption-with-letter-spacing light">${product.bt}</div>
+                                  <h3 class="card-information__text h5">
+                                  <a href="${product.du}" class="full-unstyled-link">
+                                  ${product.dt}
+                                  </a>
+                                  </h3>
+                                  <div class="price " data-wg-notranslate="manual">
+                                  <div>
+                                  <div class="price__regular">
+                                  <span class="price-item price-item--regular">
+                                  HK${Shopify.formatMoney(product.pr * 100.00)}
+                                  </span>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  <div class="card card--product card--outline" tabindex="-1">
+                                  <div class="card__inner">
+                                  <div>
+                                  <div class="media media--transparent media--square media--hover-effect">
+                                  <img src="${product.iu}" 
+                                  alt="${product.dt}" 
+                                  class="motion-reduce" 
+                                  width="1000" height="1000">
+                                  </div>
+                                  </div>
+
+                                  </div>
+                                  </div>
+
+                                  </div>
+
+                                  </li>`
+              
             });
 
             attachClickListeners();
