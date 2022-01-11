@@ -29,6 +29,14 @@ class CartItems extends HTMLElement {
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     console.log(event);
+    
+    function swymCallbackFn(){
+      // your API calls go here
+    }
+    if(!window.SwymCallbacks){
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymCallbackFn);
   }
 
   getSectionsToRender() {
