@@ -55,7 +55,7 @@ alt="{{dt}}"
           function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
-              console.log(product.id);
+              console.log(product.dt);
            
               if(product.isInCart){
                 console.log('if cart true')
