@@ -57,7 +57,7 @@ alt="{{dt}}"
             wishlistProducts.forEach(function(product){
               console.log(product);
            
-              if(product.isInCart){
+              if(product.isInCart == true){
                 console.log('if cart true')
                 addtobtn_text ="Added in cart"
               }else{
@@ -107,6 +107,15 @@ alt="{{dt}}"
             wishlistItemsContainer.innerHTML = productitem;
 
             attachClickListeners();
+            
+            window._swat.getProductDetails(params, function(productJson) {
+                console.log("Entire product json:", productJson);
+              },
+              function(e) {
+                console.log(e);
+              }
+            );
+            
           },
           window._swat.EventTypes.addToWishList
         );
