@@ -65,11 +65,8 @@ alt="{{dt}}"
               console.log('else cart false')
               }
               
-              product.isInCart = _swat.platform.isInDeviceCart(product.epi);
-//               var renderedProductTile = SwymUtils.renderTemplateString(productTileMarkup, wishlistProduct);
-//               wishlistItemsContainer.insertAdjacentHTML( 'beforeend', renderedProductTile );
-              
-                  productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+              product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
+              productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
                                   <div class="caption-with-letter-spacing light">${product.bt}</div>
                                   <h3 class="card-information__text h5">
                                   <a href="${product.du}" class="full-unstyled-link">
