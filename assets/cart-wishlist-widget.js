@@ -111,6 +111,12 @@ alt="{{dt}}"
       } else {
         attachClickListeners(); 
       }
+      
+      window._swat.fetch( function(r) {
+        console.log(r);
+        //     document.getElementById('demo').innerHTML = r;
+      });
+
     }
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
@@ -177,9 +183,7 @@ alt="{{dt}}"
       }); 
     }
   
-  window._swat.fetch( function(r) {
-    console.log(r);
-//     document.getElementById('demo').innerHTML = r;
-  });
+  
+ 
 
   });
