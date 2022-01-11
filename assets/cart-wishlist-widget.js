@@ -54,7 +54,7 @@ alt="{{dt}}"
         window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
-              console.log(product.dt);
+              console.log(product.epi);
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
@@ -175,7 +175,7 @@ alt="{{dt}}"
   
     function fnc_prouductJson(product){
       window._swat.getProductDetails(product, function(productJson) {
-        console.log("Entire product json:", productJson.title);
+        console.log("Entire product json:", productJson.id);
         if(productJson.available ){
 //           console.log('if cart true')
           addtobtn_text ="Added in cart"
