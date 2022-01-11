@@ -2,30 +2,48 @@ $(document).ready(function(){
 
     // your product card markup
     var productTileMarkup = `
-<li class="grid__item grid__item--collection-template small--one-half medium-up--one-quarter">
-<div class="grid-view-item product-card">
-<a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{du}}">
-<span class="visually-hidden">{{dt}}</span>
-  </a>
 
-<div class="grid-view-item__image-wrapper product-card__image-wrapper js">
-<div style="padding-top: 66.66666666666666%;">
-<img  class="grid-view-item__image lazyautosizes" src="{{iu}}" />
-  </div>
-  </div>
 
-<div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{dt}}</div>
-<dl class="price" data-price="">
-<span class="price-item price-item--sale" data-sale-price="">
-Rs.{{pr}}
-  </span>
-  </dl>
+<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+                      <div class="caption-with-letter-spacing light">${product.bt}</div>
+                      <h3 class="card-information__text h5">
+<a href="{{du}}" class="full-unstyled-link">
+{{dt}}
+                        </a>
+                        </h3>
+                      <div class="price " data-wg-notranslate="manual">
+                      <div>
+                      <div class="price__regular">
+                      <span class="price-item price-item--regular">
+HK{{Shopify.formatMoney(pr * 100.00}}
+                        </span>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                      <div class="card card--product card--outline" tabindex="-1">
+                      <div class="card__inner">
+                      <div>
+                      <div class="media media--transparent media--square media--hover-effect">
+<img src="{{iu}}" 
+alt="{{dt}}" 
+                      class="motion-reduce" 
+                      width="1000" height="1000">
+                        </div>
+                        </div>
+
+                        </div>
 <a href="" data-product-id="{{empi}}" data-url="{{du}}" data-variant-id="{{epi}}" class="add-to-cart">
 {{#isInCart}}Moved to cart{{/isInCart}}
 {{^isInCart}}Move to cart{{/isInCart}}
   </a>
-  </div>
+                        </div>
+
+                        </div>
+
   </li>
+
 `;
 
     function swymCallbackFn(){
