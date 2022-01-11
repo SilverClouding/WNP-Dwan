@@ -744,15 +744,15 @@
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
 
-console.log("scrollTop"+scrollTop);
-console.log(this.currentScrollTop);
-console.log("bottom - "+this.headerBounds.bottom);
+console.log("scrollTop"+scrollTop); 100
+console.log(this.currentScrollTop); 99
+console.log("bottom - "+this.headerBounds.bottom); 181
 
 
-      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+<!--       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-console.log('else if 1');
+		console.log('else if 1');
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
         } else {
@@ -767,7 +767,13 @@ console.log('else if 1');
       } else if (scrollTop <= this.headerBounds.top) {
           console.log('else if 2');                                         
         requestAnimationFrame(this.reset.bind(this));
-      }
+      } -->
+        
+if(scrollTop > 0){
+ requestAnimationFrame(this.reveal.bind(this));
+}else{
+requestAnimationFrame(this.reset.bind(this));
+}
 
 
       this.currentScrollTop = scrollTop;
