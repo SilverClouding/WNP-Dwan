@@ -21,7 +21,7 @@ class CartItems extends HTMLElement {
 
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
-      
+       window._swat.initializeActionButtons('.cart-items', '.swym-button');
       window._swat.updateWishlistEvent(
         [
           {
@@ -36,6 +36,7 @@ class CartItems extends HTMLElement {
     }, 300);
 
     this.addEventListener('change', this.debouncedOnChange.bind(this));
+    
   }
 
   onChange(event) {
