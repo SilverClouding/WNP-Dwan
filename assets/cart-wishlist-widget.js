@@ -61,6 +61,7 @@ alt="{{dt}}"
                 console.log('if cart true')
                 addtobtn_text ="Added in cart"
               }else{
+                console.log(product.isInCart);
               console.log('else cart false')
               }
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);
