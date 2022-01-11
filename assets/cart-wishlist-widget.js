@@ -72,6 +72,7 @@ alt="{{dt}}"
                 console.log(e);
               }
                );
+              console.log(addtobtn_text);
               
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
