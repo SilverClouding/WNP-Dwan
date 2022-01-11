@@ -47,7 +47,8 @@ alt="{{dt}}"
 `;
 
     function swymCallbackFn(){
-      var wishlistItemsContainer = document.getElementById("wishlist-items");
+//       var wishlistItemsContainer = document.getElementById("wishlist-items");
+      const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
       if(wishlistItemsContainer){
         window._swat.fetchWrtEventTypeET(
           function(wishlistProducts) {
@@ -90,10 +91,15 @@ alt="{{dt}}"
                                   </div>
 
                                   </div>
-
+                                    <a href="" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="add-to-cart">
+                                    {{#isInCart}}Moved to cart{{/isInCart}}
+                                    {{^isInCart}}Move to cart{{/isInCart}}
+                                    </a>
                                   </li>`
               
             });
+            
+            wishlistItemsContainer.innerHTML = productitem;
 
             attachClickListeners();
           },
