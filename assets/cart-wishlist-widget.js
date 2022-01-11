@@ -63,6 +63,7 @@ alt="{{dt}}"
                   console.log('if cart true')
                   addtobtn_text ="Added in cart"
                 }else{
+                   addtobtn_text = "Sold out"
                   console.log(productJson.available);
                   console.log('else cart false')
                 }
