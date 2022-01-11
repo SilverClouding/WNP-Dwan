@@ -32,6 +32,7 @@ class CartItems extends HTMLElement {
     
     function swymCallbackFn(){
       // your API calls go here
+      window._swat.initializeActionButtons('.cart-items', '[my-custom-wishlist-btn]');
     }
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
