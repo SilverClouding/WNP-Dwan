@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "mainCollectioPage": {
+      "type": "main-collection-page",
+      "blocks": {
+        "2f363a43-b55b-436a-9adc-8deacf1882d0": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "food-treats"
+          }
+        },
+        "7c970b5b-c885-494b-a079-972908be1ffb": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "health-care"
+          }
+        }
+      },
+      "block_order": [
+        "2f363a43-b55b-436a-9adc-8deacf1882d0",
+        "7c970b5b-c885-494b-a079-972908be1ffb"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_197_f3a41c32-2b99-496b-9b79-577e092a539a.png",
+        "image_2": "shopify:\/\/shop_images\/Group_1d9s7.png",
+        "main_link_list": "dog",
+        "title": "Everything related to Cats",
+        "text": "Here at whiskers n paws, we got you and your paw friend covered",
+        "color_scheme": "background-1",
+        "image_padding": false
+      }
+    },
+    "1638951039c767e2d1": {
+      "type": "brand_logos",
+      "blocks": {
+        "1638951039bab36fc0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beasty_logo.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greenies.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Orijen.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stella_n_Chewy.png",
+            "img_link": ""
+          }
+        },
+        "1638951039bab36fc0-6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nutro_logo.png",
+            "img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638951039bab36fc0-0",
+        "1638951039bab36fc0-1",
+        "1638951039bab36fc0-2",
+        "1638951039bab36fc0-3",
+        "1638951039bab36fc0-4",
+        "1638951039bab36fc0-5",
+        "1638951039bab36fc0-6"
+      ],
+      "settings": {
+        "column_alignment": "left",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": "",
+        "slider": true
+      }
+    },
+    "16389585667234d795": {
+      "type": "image-with-text",
+      "blocks": {
+        "163895856608fdfa54-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dine with your paw friends!"
+          }
+        },
+        "163895856608fdfa54-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
+          }
+        },
+        "163895856608fdfa54-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "163895856608fdfa54-0",
+        "163895856608fdfa54-1",
+        "163895856608fdfa54-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "section_width": 100,
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first",
+        "sec_class": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_title": false,
+        "section_width": 100
+      }
+    }
+  },
+  "order": [
+    "mainCollectioPage",
+    "1638951039c767e2d1",
+    "16389585667234d795",
+    "main"
+  ]
+}
