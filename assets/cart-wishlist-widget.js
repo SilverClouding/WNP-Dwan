@@ -7,7 +7,7 @@ $(document).ready(function(){
         window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
-              console.log(product.empi);
+              console.log(product);
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
