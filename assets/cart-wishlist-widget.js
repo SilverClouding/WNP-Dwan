@@ -61,7 +61,7 @@ alt="{{dt}}"
                 console.log("Entire product json:", productJson);
                 if(productJson.available ){
                   console.log('if cart true')
-                  addtobtn_text ="Added in cart"
+                  addtobtn_text ="Add in cart"
                 }else{
                    addtobtn_text = "Sold out"
                   console.log(productJson.available);
