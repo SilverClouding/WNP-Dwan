@@ -14,7 +14,7 @@
    <div class="slider-mobile-gutter  swiper featured_col_Swiper col_1 active">
     <ul class="swiper-wrapper gridd grid--1-col product-grid{% if recommendations.products_count > 0 %} grid--4-col-desktop grid--quarter-max{% else %} grid--{{ recommendations.products_count }}-col-tablet{% endif %}" role="list">
       {% for recommendation in recommendations.products %}
-        <li class="grid__item">
+        <li class="swiper-slide  grid__item">
           {% render 'product-card',
             product_card_product: recommendation,
             media_size: section.settings.image_ratio,
