@@ -44,7 +44,7 @@
   
       <div class="js-contents">
         {%- if cart != empty -%}
-        <div id="main-cart-items">
+        <div id="main-cart-items" class="cart__items">
           <table class="cart-items  for-desktop">
             <thead>
               <tr>
@@ -285,7 +285,7 @@
           </table>
         
         
-        <div class="cart-items  cart__itemss for-mobile">
+        <div class="cart-items  for-mobile">
           {%- for item in cart.items -%}
           {% assign qty = 1 %} 
               {% for tag in item.product.tags %}
