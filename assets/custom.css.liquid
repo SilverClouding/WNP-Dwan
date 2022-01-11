@@ -1271,7 +1271,11 @@ select:focus, select:hover{
     font-size: 11px;
   }
 
-
+@media screen and (min-width: 750px){
+.product-grid .grid__item {
+    padding-bottom: calc(3rem + var(--page-width-margin));
+}
+}
 
 
   @media(max-width:992px){
