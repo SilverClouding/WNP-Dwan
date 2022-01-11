@@ -28,6 +28,7 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    console.log(event);
   }
 
   getSectionsToRender() {
