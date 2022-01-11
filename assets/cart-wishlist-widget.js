@@ -94,7 +94,7 @@ alt="{{dt}}"
                                  </div> </li>`
               
               
-           
+           fnc_prouductJson(product);
               
             });
        
