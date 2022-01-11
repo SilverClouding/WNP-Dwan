@@ -22,9 +22,6 @@ class CartItems extends HTMLElement {
 
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
-
-//        window.location.reload();
-      
     }, 300);
 
     this.addEventListener('change', this.debouncedOnChange.bind(this));
@@ -33,12 +30,6 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
-//     console.log(event);
-//     window.location.reload();
-    
-    
-
-    
   }
 
   getSectionsToRender() {
@@ -99,8 +90,8 @@ class CartItems extends HTMLElement {
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
       
-      console.log(window._swat.initializeActionButtons());
-       window._swat.initializeActionButtons('.cart-items', '.swym-button');
+      
+//        window._swat.initializeActionButtons('.cart-items', '.swym-button');
       
         this.disableLoading();
       }).catch(() => {
