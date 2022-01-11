@@ -56,20 +56,8 @@ alt="{{dt}}"
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
-           var addtobtn_text = ""
-              window._swat.getProductDetails(product, function(productJson) {
-                console.log("Entire product json:", productJson);
-                if(productJson.available ){
-                  console.log('if cart true')
-                  addtobtn_text ="Add in cart"
-                }else{
-                   addtobtn_text = "Sold out"
-                  console.log(productJson.available);
-                  console.log('else cart false')
-                }
-              
-              console.log(addtobtn_text);
-              
+              let addtobtn_text = "Add to cart"
+              window._swat.getProductDetails(product);
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
                                   <div class="caption-with-letter-spacing light">${product.bt}</div>
@@ -108,12 +96,7 @@ alt="{{dt}}"
                                  </div> </li>`
               
               
-           },
-              function(e) {
-                console.log(e);
-              }
-               );
-              console.log(addtobtn_text);
+           
               
             });
             
@@ -137,6 +120,20 @@ alt="{{dt}}"
     }
     window.SwymCallbacks.push(swymCallbackFn);
 
+  
+  window._swat.getProductDetails(product, function(productJson) {
+    console.log("Entire product json:", productJson);
+    if(productJson.available ){
+      console.log('if cart true')
+      addtobtn_text ="Added in cart"
+    }else{
+      addtobtn_text = "Sold out"
+      console.log(productJson.available);
+      console.log('else cart false')
+    }
+  },function(e) {console.log(e);});
+  
+  
 
     function attachClickListeners(){
       $(".add-to-cart").on("click", function(e){
