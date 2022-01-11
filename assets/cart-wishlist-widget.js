@@ -51,8 +51,7 @@ alt="{{dt}}"
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
       if(wishlistItemsContainer){
            
-        window._swat.fetchWrtEventTypeET(
-          function(wishlistProducts) {
+        window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
               console.log(product);
@@ -99,19 +98,26 @@ alt="{{dt}}"
            
               
             });
-            
+       
             wishlistItemsContainer.innerHTML = productitem;
-
             attachClickListeners();
-            
-            
-            
-          },
-          window._swat.EventTypes.addToWishList
-        );
+          },window._swat.EventTypes.addToWishList);
       } else {
         attachClickListeners(); 
       }
+      
+      window._swat.getProductDetails(function(productJson) {
+        console.log("Entire product json:", productJson);
+        if(productJson.available ){
+          console.log('if cart true')
+          addtobtn_text ="Added in cart"
+        }else{
+          addtobtn_text = "Sold out"
+          console.log(productJson.available);
+          console.log('else cart false')
+        }
+      },function(e) {console.log(e);});
+
       
      
     }
@@ -121,17 +127,6 @@ alt="{{dt}}"
     window.SwymCallbacks.push(swymCallbackFn);
 
   
-  window._swat.getProductDetails(product, function(productJson) {
-    console.log("Entire product json:", productJson);
-    if(productJson.available ){
-      console.log('if cart true')
-      addtobtn_text ="Added in cart"
-    }else{
-      addtobtn_text = "Sold out"
-      console.log(productJson.available);
-      console.log('else cart false')
-    }
-  },function(e) {console.log(e);});
   
   
 
