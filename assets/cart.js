@@ -33,7 +33,7 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
-    console.log(event);
+//     console.log(event);
 //     window.location.reload();
     
     
@@ -99,7 +99,7 @@ class CartItems extends HTMLElement {
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
       
-      
+      console.log(window._swat.initializeActionButtons());
        window._swat.initializeActionButtons('.cart-items', '.swym-button');
       
         this.disableLoading();
