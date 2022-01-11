@@ -1068,7 +1068,8 @@ select:focus, select:hover{
   display:none;
   } */
   
-  .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added{
+  .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added,
+  .cart-items .swym-button.swym-add-to-wishlist-view-product{
   position:relative;
 text-align:center;
   width: 100%; 
@@ -1078,6 +1079,8 @@ text-align:center;
     line-height:11px!important;
     z-index:999;
   }
+  
+  .cart-items .swym-button.swym-add-to-wishlist-view-product.swym-added:after,
   .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
      position:absolute;
     content:'Saved To Wishlist' !important; 
