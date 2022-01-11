@@ -126,6 +126,7 @@ alt="{{dt}}"
             e.target.innerHTML = "Moved to cart";
 //             window.location.reload();
             console.log("Successfully added product to cart.");
+            //minicart section start
             fetch('/?sections=cart-items')
             .then((response) => response.json())
             .then((data) => {
@@ -139,9 +140,6 @@ alt="{{dt}}"
               IDminiCart.classList.remove("hide-minibag");
               document.body.style.overflow = "hidden";
               IDminiCartMask.style.display = 'block';
-
-              //           var count = document.querySelector('.count-cross .count').getAttribute('count');
-              //           document.getElementById("CartCount").innerHTML= count;
               window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
             });
             //minicart section end
@@ -157,16 +155,12 @@ alt="{{dt}}"
               var percentmainvalue = cartTotal / cartthreshhold;
               var mainPercent = percentmainvalue * 100.00 ;
               var needAmmount = Math.abs(cartTotal - cartthreshhold);
-
-              console.log(mainPercent);
-
               document.getElementById("precentfill").style.width = mainPercent+"%";
               if(cartTotal >= cartthreshhold ){
                 document.getElementById("textmsg").innerHTML= Shopify.formatMoney(cartthreshhold) +" Done, You are eligible for";
               }else{
                 document.getElementById("textmsg").innerHTML= "Spend "+Shopify.formatMoney(needAmmount)+" more to receive";
               }
-
             });        
 
           },
