@@ -49,10 +49,11 @@ alt="{{dt}}"
     function swymCallbackFn(){
 //       var wishlistItemsContainer = document.getElementById("wishlist-items");
       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
-      if(wishlistItemsContainer){
+      if(wishlistItemsContainer){ 
+        var productitem="";
         window._swat.fetchWrtEventTypeET(
           function(wishlistProducts) {
-            let productitem="";
+           
             wishlistProducts.forEach(function(product){
               console.log(product);
               let addtobtn_text = "Add to cart"
@@ -112,11 +113,7 @@ alt="{{dt}}"
         attachClickListeners(); 
       }
       
-      window._swat.fetch( function(r) {
-        console.log(r);
-        //     document.getElementById('demo').innerHTML = r;
-      });
-
+     
     }
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
