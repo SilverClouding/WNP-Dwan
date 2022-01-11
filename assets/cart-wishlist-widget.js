@@ -54,7 +54,6 @@ alt="{{dt}}"
         window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
             wishlistProducts.forEach(function(product){
-              console.log(product.epi);
               console.log(product.empi);
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
