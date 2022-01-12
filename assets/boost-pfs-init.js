@@ -10,4 +10,5 @@ if (typeof boostPFSConfig != 'undefined'
 BoostPFS.jQ(window).on('load', function(){
 	boostPFS.initSearchBox();
 	boostPFS.initAnalytics();
+  window._swat.initializeActionButtons('#main-collection-product-grid', '.swym-button');
 });
