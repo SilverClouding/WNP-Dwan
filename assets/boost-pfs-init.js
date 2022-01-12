@@ -5,7 +5,7 @@ if (typeof boostPFSConfig != 'undefined'
 	&& typeof boostPFSConfig.general.isInitFilter != 'undefined'
 	&& typeof boostPFSThemeConfig != 'undefined'
 	&& boostPFSConfig.general.isInitFilter === true) {
-	boostPFS.initFilter(); 
+	boostPFS.initFilter(); console.log('boost-pfs-init.js 1');
 } 
 BoostPFS.jQ(window).on('load', function(){
 	boostPFS.initSearchBox();
