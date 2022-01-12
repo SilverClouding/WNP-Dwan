@@ -5,4 +5,5 @@ var boostPFSIntegrationTemplate = {
   call3rdFunction: {
     reviews: ''
   }
+  console.log('boost-pfs-integration.js');
 };
