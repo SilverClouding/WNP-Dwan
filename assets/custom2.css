@@ -689,7 +689,7 @@ div#article_page .buttons-section ul li {
 
 
 .collection  .swym-button.swym-loaded {
-    opacity: 1;
+    opacity: 1!important;
 }
 
 .collection .swym-button {
