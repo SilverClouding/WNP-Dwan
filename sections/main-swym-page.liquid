@@ -188,7 +188,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
         var pr = e.target.getAttribute("data-pr");
         var stk = e.target.getAttribute("data-stk");
         var variants = e.target.getAttribute("data-variants");
-        window._swat.removeFromWishList({"epi": epi, "du": du, "empi": empi, "iu" : iu, "pr": pr, "stk": stk, "variants":`[{${variants} : ${epi}}]`},function(r) {
+        window._swat.removeFromWishList({"epi": epi, "du": "'"+du+"'", "empi": empi, "iu" : "'"+iu+"'", "pr": pr, "stk": stk, "variants":`[{"${variants}" : ${epi}}]`},function(r) {
           console.log('Removed to wishlist');
         });
       });
