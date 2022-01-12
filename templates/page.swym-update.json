@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/retail.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/retail.jpg",
         "sec_class": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
