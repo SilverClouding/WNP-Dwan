@@ -17,18 +17,31 @@
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-}
+  }
   .collection .col_tab ul#swym_main_collection_product_grid  li:first-child:after{
     display:none;
-  
+
   }
   ul#swym_main_collection_product_grid .disable {
     pointer-events: none;
-}
+  }
   ul#swym_main_collection_product_grid .button {
     order: 3;
     margin-top: 10px;
-}
+  }
+  #swym_main_collection_product_grid a.remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #153a33;
+  }
+
+  #swym_main_collection_product_grid li.grid__item .card-wrapper {
+    position: relative;
+  }
 </style>
 
   <!-- Include html in the body -->
