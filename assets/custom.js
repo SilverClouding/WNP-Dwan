@@ -255,7 +255,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 // always page go top after page load
-//  document.body.scrollTop = document.documentElement.scrollTop = 0;
+ document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 
 
