@@ -10,5 +10,8 @@ if (typeof boostPFSConfig != 'undefined'
 BoostPFS.jQ(window).on('load', function(){
 	boostPFS.initSearchBox();
 	boostPFS.initAnalytics();
-  window._swat.initializeActionButtons('#main-collection-product-grid', '.swym-button');
+//   window._swat.initializeActionButtons('#main-collection-product-grid', '.swym-button');
+
+  console.log('boost-pfs-init.js');
+  
 });
