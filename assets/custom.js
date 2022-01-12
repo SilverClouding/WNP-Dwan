@@ -589,11 +589,11 @@ jQuery(function($){
   $(document).on('click',".quick-view_new", function () {
 console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
-    console.log(openId.size);
+//     console.log(openId.size);
     
-    $(openId).each(function(i){
-    console.log(this);
-    });
+//     $(openId).each(function(i){
+//     console.log(this);
+//     });
     
     $.fancybox({
       href: "#qv_"+$(this).attr('data-productid'),
@@ -607,7 +607,6 @@ console.log('click qv');
       openEffect: 'none',
       closeEffect: 'none',
       'afterShow': function () {
-         console.log(theme.varChangefunc());
         $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
           $('.qv-product-main-images').addClass('loaded');
           $('.slider-nav').addClass('loaded');
