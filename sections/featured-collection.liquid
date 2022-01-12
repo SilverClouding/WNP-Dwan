@@ -115,8 +115,8 @@
     <div class="swiper-button-next"></div>
   </div>
   
-   {%- for product in section.settings.collection2.products limit: section.settings.products_to_show -%}
-   {% render 'new-quickview-content' ,product_card_product: product%}
+   {%- for product_another_col in section.settings.collection2.products limit: section.settings.products_to_show -%}
+   {% render 'new-quickview-content' ,product_card_product: product_another_col%}
   {%- endfor -%}
   
   {% endif %}
