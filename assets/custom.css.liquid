@@ -995,6 +995,8 @@ select:focus, select:hover{
 } */
   .card-information .caption-with-letter-spacing.light{
     opacity:1;
+    position:relative;
+    z-index:9;
   }
   .card-information .caption-with-letter-spacing a{
     color:#153A33;
@@ -7942,10 +7944,13 @@ select:focus, select:hover{
     font-size:16px;
     line-height:22px;
     font-weight:900;
-    color:#4444d;
+    color:#44444d;
     letter-spacing:0;
     text-decoration:underline;
     margin-top:0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
   .template-404 .button:hover,
   .template-404 .button:focus{
