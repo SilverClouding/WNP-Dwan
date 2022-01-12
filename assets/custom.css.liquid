@@ -2461,9 +2461,13 @@ select:focus, select:hover{
     width:100%;
     padding:13px;
     margin-bottom: 0px;
-    border:1px solid #D3D6D9;
+    border-bottom:1px solid #D3D6D9;
     display: flex;
     justify-content: space-between;
+  }
+  #mini-cart .min-cart-item:last-child,
+  .cart-items.for-mobile .min-cart-item:last-child{
+  border-bottom:none;
   }
   #mini-cart .cart__item-title,
   .cart-items.for-mobile .cart__item-title{
