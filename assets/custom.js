@@ -592,7 +592,7 @@ console.log('click qv');
     console.log(openId.size);
     
     $(openId).each(function(i){
-    console.log("i= "+i);
+    console.log(this);
     });
     
     $.fancybox({
