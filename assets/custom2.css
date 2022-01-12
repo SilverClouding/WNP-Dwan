@@ -620,12 +620,12 @@ div#main-cart-footer {
     position: relative;
   }
 
-  .cart-mainm .for-mobile button.swym-button {
+/*   .cart-mainm .for-mobile button.swym-button {
     position: absolute;
     top: 25%;
     right: 0;
     transform: translateY(-25%);
-  }
+  } */
 
   .cart-mainm .for-mobile .cart__item-sub {
     position: absolute;
