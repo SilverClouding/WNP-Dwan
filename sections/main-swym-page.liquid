@@ -56,7 +56,13 @@ $(document).ready(function(){
               console.log(product);
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
-              productitem += `<li class="grid__item"> <div class="card-wrapper"><div class="card-information"><div class="card-information__wrapper">
+              productitem += `<li class="grid__item"> <div class="card-wrapper">
+                                  <a href="" id="${product.empi}" 
+                                  data-product-id="${product.empi}" 
+                                  data-url="${product.du}" 
+                                  data-variant-id="${product.epi}" 
+                                  class="button button--full-width button--primary add-to-cart">X</a>
+                                  <div class="card-information"><div class="card-information__wrapper">
                                   <div class="caption-with-letter-spacing light">${product.bt}</div>
                                   <h3 class="card-information__text h5">
                                   <a href="${product.du}" class="full-unstyled-link">
@@ -167,7 +173,7 @@ $(document).ready(function(){
     }
   
   function attachClickListeners(){
-      $(".add-to-cart").on("click", function(e){
+      $(".remove").on("click", function(e){
         e.preventDefault();
         window._swat.removeFromWishList({
             "epi": 123,
