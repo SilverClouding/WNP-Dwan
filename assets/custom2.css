@@ -686,3 +686,12 @@ div#article_page .buttons-section ul li {
 .card-wrapper a {
     text-decoration: none;
 }
+
+
+.collection  .swym-button.swym-loaded {
+    opacity: 1;
+}
+
+.collection .swym-button {
+    opacity: 0!important;
+}
