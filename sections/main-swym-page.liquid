@@ -57,11 +57,14 @@ $(document).ready(function(){
               let addtobtn_text = "Add to cart"
               product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
               productitem += `<li class="grid__item"> <div class="card-wrapper">
-                                  <a href="" id="${product.empi}" 
-                                  data-product-id="${product.empi}" 
-                                  data-url="${product.du}" 
-                                  data-variant-id="${product.epi}" 
+
+                                  <a href="" 
+                                  data-epi="${product.epi}" 
+                                  data-empi="${product.empi}" 
+                                  data-du="${product.du}" 
+data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-variants="${product.vi}"
                                   class="button button--full-width button--primary add-to-cart">X</a>
+
                                   <div class="card-information"><div class="card-information__wrapper">
                                   <div class="caption-with-letter-spacing light">${product.bt}</div>
                                   <h3 class="card-information__text h5">
