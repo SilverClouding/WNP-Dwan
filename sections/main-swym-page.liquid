@@ -103,7 +103,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
        
             wishlistItemsContainer.innerHTML = productitem;
             attachClickListeners();
-          removeClickListeners(productitem);
+          removeClickListeners();
           },window._swat.EventTypes.addToWishList);
       } else {
         attachClickListeners(); 
@@ -122,7 +122,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
   
   
 
-    function attachClickListeners(){
+  function attachClickListeners(){
       $(".add-to-cart").on("click", function(e){
         e.preventDefault();
         var productId = e.target.getAttribute("data-product-id");
@@ -178,7 +178,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
       }); 
     }
   
-  function removeClickListeners(productitem){
+  function removeClickListeners(){
       $(".remove").on("click", function(e){
         e.preventDefault();
        
@@ -191,7 +191,60 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
         var variants = e.target.getAttribute("data-variants");
         window._swat.removeFromWishList({"epi": epi, "du": "'"+du+"'", "empi": empi, "iu" : "'"+iu+"'", "pr": pr, "stk": stk, "variants":`[{"${variants}" : ${epi}}]`},function(r) {
           console.log('Removed to wishlist');
-          wishlistItemsContainer.innerHTML = productitem;
+          window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
+            let productitem="";
+            wishlistProducts.forEach(function(product){
+              console.log(product);
+              let addtobtn_text = "Add to cart"
+              product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
+              productitem += `<li class="grid__item"> <div class="card-wrapper">
+
+              <a href="" 
+              data-epi="${product.epi}" 
+              data-empi="${product.empi}" 
+              data-du="${product.du}" 
+              data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-variants="${product.vi}"
+              class="button button--full-width button--primary remove">X</a>
+
+              <div class="card-information"><div class="card-information__wrapper">
+              <div class="caption-with-letter-spacing light">${product.bt}</div>
+              <h3 class="card-information__text h5">
+              <a href="${product.du}" class="full-unstyled-link">
+              ${product.dt}
+                </a>
+                </h3>
+              <div class="price " data-wg-notranslate="manual">
+              <div>
+              <div class="price__regular">
+              <span class="price-item price-item--regular">
+              HK${Shopify.formatMoney(product.pr * 100.00)}
+                </span>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+              <div class="card card--product card--outline" tabindex="-1">
+              <div class="card__inner">
+              <div>
+              <div class="media media--transparent media--square media--hover-effect">
+              <img src="${product.iu}" 
+              alt="${product.dt}" 
+              class="motion-reduce" 
+              width="1000" height="1000">
+                </div>
+                </div>
+                </div>
+                </div>
+              <a href="" id="${product.empi}" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
+                </div> </li>`
+              fnc_prouductJson(product);  
+            });
+
+            wishlistItemsContainer.innerHTML = productitem;
+            attachClickListeners();
+            removeClickListeners();
+          },window._swat.EventTypes.addToWishList);
         });
       });
   }
