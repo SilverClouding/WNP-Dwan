@@ -47,8 +47,9 @@
 
 <script>
 $(document).ready(function(){
+  const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
     function swymCallbackFn(){
-      const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
+      
       if(wishlistItemsContainer){ 
         window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
             let productitem="";
@@ -102,7 +103,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
        
             wishlistItemsContainer.innerHTML = productitem;
             attachClickListeners();
-          removeClickListeners();
+          removeClickListeners(productitem);
           },window._swat.EventTypes.addToWishList);
       } else {
         attachClickListeners(); 
@@ -177,7 +178,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
       }); 
     }
   
-  function removeClickListeners(){
+  function removeClickListeners(productitem){
       $(".remove").on("click", function(e){
         e.preventDefault();
        
@@ -190,6 +191,7 @@ data-iu="${product.iu}" data-pr="${product.pr}" data-stk="${product.stk}" data-v
         var variants = e.target.getAttribute("data-variants");
         window._swat.removeFromWishList({"epi": epi, "du": "'"+du+"'", "empi": empi, "iu" : "'"+iu+"'", "pr": pr, "stk": stk, "variants":`[{"${variants}" : ${epi}}]`},function(r) {
           console.log('Removed to wishlist');
+          wishlistItemsContainer.innerHTML = productitem;
         });
       });
   }
