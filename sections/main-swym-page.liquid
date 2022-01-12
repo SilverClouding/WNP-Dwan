@@ -166,6 +166,23 @@ $(document).ready(function(){
       }); 
     }
   
+  function attachClickListeners(){
+      $(".add-to-cart").on("click", function(e){
+        e.preventDefault();
+        window._swat.removeFromWishList({
+            "epi": 123,
+            "du": "https://yourstore.com/products/your-awesome-product",
+            "empi": 1234,
+            "iu" : "//www.understandfrance.org/Images/AsterixObelix.jpg",
+            "pr": 50,
+            "stk": 100,
+            "variants": [{"Blue / XL": 123}]
+          },function(r) {
+            console.log('Removed to wishlist');
+          });
+      });
+  }
+  
     function fnc_prouductJson(product){
       window._swat.getProductDetails(product, function(productJson) {
         console.log("Entire product json:", productJson.id);
