@@ -591,7 +591,7 @@ console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
     console.log(openId.size);
     
-    $.each(openId, function(i){
+    $(openId).each(function(i){
     console.log("i= "+i);
     });
     
