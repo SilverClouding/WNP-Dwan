@@ -183,9 +183,9 @@ var boostPFSFilterConfig = {
 	}
 
   function buildNewLabel(product){
-  console.log(product.tag);
-    var html = ` <span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
-    
+  console.log(product.tags);
+    var html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
+    return html;
   }
   
   
