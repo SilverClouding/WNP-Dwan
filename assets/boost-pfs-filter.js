@@ -32,7 +32,10 @@ var boostPFSFilterConfig = {
        var data_tagArray = data.tags;
       console.log(data_tagArray);
        data_tagArray.forEach(function(v,i){
+         if(v == 'New'){
          console.log(v);
+         }
+         
        });
       
       
