@@ -71,6 +71,8 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
+      // Add New Label
+		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel());
 		// Add Images
 		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
 		// Add Price
