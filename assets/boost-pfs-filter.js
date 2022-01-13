@@ -494,9 +494,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
 		  
-//            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-//              console.log("initialized")
-//            }); 
+           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+             console.log("initialized")
+           }); 
           $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('unslick');
           $('.boost-pfs-quickview-wrapper.fancybox-inner .slider-nav').slick('unslick');
           
