@@ -77,7 +77,7 @@ display:block;
   display:none;
   }
 
-  .mega-menu-container.do-sticky .mega-menu-section.active{
+  .mega-menu-container.do-sticky.active .mega-menu-section.active{
   display:block;
   }
 
