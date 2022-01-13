@@ -65,7 +65,9 @@ display:block;
   }
 
   .mega-menu-container.do-sticky {
-    position: relative;  top: 80px;    z-index: 9;
+    position: sticky;  
+    top: 80px;    
+    z-index: 9;
     
   }
 
