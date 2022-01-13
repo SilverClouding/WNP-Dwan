@@ -75,8 +75,7 @@ var boostPFSFilterConfig = {
 		// Add sold out Label
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
       
-      // Add New Label
-		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
+  
     
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel(data));
@@ -286,17 +285,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		return soldOutLabel;
 	}
 
-        function buildNewLabel(product){
-//           console.log(product.tags);
-//           var html ="";
-//           if(NewTag){
-//             html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
-//             return html;
-//           }else{
-//             html = ``;
-//             return html;
-//           }
-        }  
+
   
       function buildSaleLabel(data) {
         
