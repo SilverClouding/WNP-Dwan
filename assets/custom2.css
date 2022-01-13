@@ -302,6 +302,10 @@ border: 1px solid #d3d6d9!important;
     border: 1px solid #000!important;
 }
 
+.swym-wishlist-notifications-container.swym-ui-component.swym-is-safari {
+    pointer-events: none!important;
+}
+
 a#notifyme {
     background: #44444D;
     color: #fff;
