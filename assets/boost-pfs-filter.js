@@ -523,7 +523,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
          
   $(window).resize(function () {
    
-      $('.qv-product-main-images').slick('setPosition');
+      $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
     
   });
           
