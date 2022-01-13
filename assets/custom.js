@@ -589,7 +589,7 @@ jQuery(function($){
   
   $('[id^=qv_]').filter((idx,element)=>{
     let indexInParent = getElementIndex(element);
-    console.log( element.id.match(/id_\d-\d/));
+    console.log( [0,3].includes(indexInParent));
 //     return element.id.match(/id_\d-\d/) && ![0,3].includes(indexInParent);
   }).remove();
 
