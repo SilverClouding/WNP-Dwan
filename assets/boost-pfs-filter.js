@@ -13,7 +13,7 @@ var boostPFSFilterConfig = {
 (function () {
 	var onSale = false,
 		soldOut = false,
-        NewTag = false,
+        
 		priceVaries = false,
 		images = [],
 		boostPFSRangeWidths = [165, 360, 533, 720, 940, 1066];
@@ -28,16 +28,7 @@ var boostPFSFilterConfig = {
 		onSale = data.compare_at_price_min > data.price_min; // Check a product is on sale
 		priceVaries = data.price_min != data.price_max; // Check a product has many prices
       
-      //       newtag
-       var data_tagArray = data.tags;
-      console.log(data_tagArray);
-       data_tagArray.forEach(function(v,i){
-         if(v == 'New'){
-           NewTag = true,
-         console.log(v+"-"+i);
-         }
-         
-       });
+    
       
       
 		// Convert images to array
@@ -88,7 +79,7 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
     
 		// Add sale Label
-		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
+		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel(data));
     
       
 		// Add Images
@@ -306,7 +297,20 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
           }
         }  
   
-      function buildSaleLabel() {
+      function buildSaleLabel(data) {
+        
+        //       newtag
+        var data_tagArray = data.tags;
+        var NewTag = false,
+        console.log(data_tagArray);
+        data_tagArray.forEach(function(v,i){
+          if(v == 'New'){
+            NewTag = true,
+              console.log(v+"-"+i);
+          }
+
+        });
+
         // Build Sale label
         var saleLabel = '';
         console.log(NewTag);
