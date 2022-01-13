@@ -87,11 +87,39 @@
         "show_rating": true,
         "sec_class": ""
       }
+    },
+    "16420732254d55f94b": {
+      "type": "rich-text",
+      "blocks": {
+        "1642073225b0f9e346-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "1642073225b0f9e346-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642073225b0f9e346-0",
+        "1642073225b0f9e346-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "164164139832cf5bc7"
+    "164164139832cf5bc7",
+    "16420732254d55f94b"
   ]
 }
