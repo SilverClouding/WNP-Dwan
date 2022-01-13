@@ -118,7 +118,8 @@
         {% for image in product.images %}<div class="boost-pfs-quickview-featured-image">
           <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
                 </div>
-        {% endfor %}</div>
+        {% endfor %}
+            </div>
       </div>
       {% if product.compare_at_price > product.price %}
         <div class="boost-pfs-quickview-sale-lable">Sale</div>
@@ -299,6 +300,7 @@
           <div class="gallery-containerr">
 
             <div class="product__media-list gridd grid--peek list-unstyled qv-product-main-images" role="list">
+              {% comment %}
               {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
               {%- if product.selected_or_first_available_variant.featured_media != null -%}
               {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -313,12 +315,28 @@
               </div>
               {%- endunless -%}
               {%- endfor -%}
+              {% endcomment %}
+              
+              {% for image in product.images %}
+              <div class="slide product__media-item grid__item ">
+                <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
+              </div>
+              {% endfor %}
             </div>
+            
+          
+            
+            
 
 
             <div class="qv-product-thumb-images slider-nav product__media-list grid grid--peek list-unstyled" role="list">
+              {% for image in product.images %}
+              <div class="product__media-item slide">
+                <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
+              </div>
+              {% endfor %}
+              {% comment %}
               {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-
               {%- for media in product.media -%}
               {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
               <div class="product__media-item slide" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -326,6 +344,7 @@
               </div>
               {%- endunless -%}
               {%- endfor -%}
+              {% endcomment %}
             </div>       
 
           </div>
