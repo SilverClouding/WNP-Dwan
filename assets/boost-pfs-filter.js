@@ -83,15 +83,13 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{cardProductClass}}/g, buildCardProductClass());
 		// Add sold out Label
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
-      if(NewTag){
-        console.log('if');
+      
       // Add New Label
 		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
-      }else{
-         console.log('else');
+    
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
-      }
+    
       
 		// Add Images
 		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
@@ -300,12 +298,22 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
         console.log(product.tags);
         var html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
         return html;
+        
+         if(NewTag){
+        console.log('if'); 
+         }else{
+         console.log('else');  
+         }
+        
       }  
       function buildSaleLabel() {
         // Build Sale label
         var saleLabel = '';
+        if(NewTag){
+        }else{
         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
           saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
+        }
         }
         return saleLabel;
       }
