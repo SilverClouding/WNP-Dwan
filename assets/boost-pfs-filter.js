@@ -525,7 +525,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
             autoplay: true,
             lazyLoad: 'ondemand',
             autoplaySpeed: 3000,
-            asNavFor: '.product__slider-thmb'
+            asNavFor: '.slider-nav'
           });
 
           var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
@@ -535,7 +535,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
             slidesToShow: 4,
             slidesToScroll: 1,
             lazyLoad: 'ondemand',
-            asNavFor: '.product__slider-main',
+            asNavFor: '.qv-product-main-images',
             dots: false,
             centerMode: false,
             focusOnSelect: true
