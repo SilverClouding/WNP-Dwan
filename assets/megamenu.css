@@ -69,6 +69,9 @@ display:block;
     top: 80px;    
     z-index: 9;
     
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
     transition: transform .3s ease,opacity .2s linear;
     -webkit-transition: transform .3s ease,opacity .2s linear;
     -moz-transition: transform .3s ease,opacity .2s linear;
