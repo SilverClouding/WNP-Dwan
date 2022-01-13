@@ -88,7 +88,12 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
        itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist_heart_icon(data));
-       itemHtml = itemHtml.replace(/{{addtowishlist}}/g, addtowishlist(data));
+//        itemHtml = itemHtml.replace(/{{addtowishlist}}/g, addtowishlist(data));
+      
+      /* Swym integration */
+      var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '"></button>';
+      itemHtml = itemHtml.replace(/{{itemWishlist}}/g, itemWishlistHtml);
+      
 		// Add Review
 		if (typeof Integration === 'undefined' ||
 			(typeof Integration != 'undefined' &&
@@ -213,15 +218,18 @@ var boostPFSFilterConfig = {
   
 
 
-  function addtowishlist(product_card_product) { 
-    var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
-data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
-data-variant-id="${ product_card_product.variants[0].id}" 
-data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
-</button>`
-     document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
-//     window._swat.initializeActionButtons('.boost-pfs-filter-products', '.swym-button');
-    return html;
+  function addtowishlist(data) { 
+//     var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
+// data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
+// data-variant-id="${ product_card_product.variants[0].id}" 
+// data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
+// </button>`
+    
+    /* Swym integration */
+var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '"></button>';
+    
+    
+    return itemWishlistHtml;
   }
   
   function addtowishlist_heart_icon(product_card_product) { 
