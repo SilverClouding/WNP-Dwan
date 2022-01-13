@@ -8,7 +8,7 @@ display:block;
 @media screen and (min-width: 750px) {
   /* Silver edit */
 
-  .mega-menu-section, .level_1_item,.mega-menu-container.do-sticky  {
+  .mega-menu-section, .level_1_item, .mega-menu-container.do-sticky  {
     position: absolute;
     opacity: 0;
     visibility: hidden;
