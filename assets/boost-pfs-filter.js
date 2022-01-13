@@ -309,6 +309,7 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
       function buildSaleLabel() {
         // Build Sale label
         var saleLabel = '';
+        console.log(NewTag);
         if(NewTag){
           saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
         }else{
