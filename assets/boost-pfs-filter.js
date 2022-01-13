@@ -490,6 +490,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent() {
 
         console.log('boost qv click');
+        jQuery('.qv-product-main-images').on('init', function(event, slick){
+          console.log("initialized")
+        });
         jQuery('.qv-product-main-images').slick({
           dots: false,
           arrows: true,
