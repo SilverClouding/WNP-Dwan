@@ -72,7 +72,7 @@ var boostPFSFilterConfig = {
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
       // Add New Label
-		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel());
+		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
 		// Add Images
 		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
 		// Add Price
@@ -182,7 +182,9 @@ var boostPFSFilterConfig = {
 		return html;
 	}
 
- 
+  function buildNewLabel(product){
+  console.log(product);
+  }
   
   
 	function buildCardProductClass() {
