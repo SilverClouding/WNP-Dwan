@@ -8187,21 +8187,23 @@ select:focus, select:hover{
     color:#153a33 !important;
   }
   .boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-item{
-/*   width:50%!important; */
+  width:50%!important;
     border: 1px solid transparent;
-  }
-  
+  }  
  .boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-item:hover {
     border: 1px solid #d3d6d9;
     box-shadow: 0 2px 5px rgb(0 0 0 / 10%) !important;
   }
-  
-  
   .boost-pfs-search-suggestion-item-product .boost-pfs-search-suggestion-left:before{
   padding-top:100% !important;
   }
 
-
+@media (min-width: 768px){
+.boost-pfs-search-suggestion-column-2-non-fullwidth:not(.boost-pfs-search-suggestion-mobile) {
+    width: 739px!important;
+    max-width: 90%;
+}
+}
 
 
   .show-in-mobile{display:none;}
