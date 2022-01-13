@@ -502,13 +502,13 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
               arrows: true,
               respondTo: 'min',
               useTransform: false,
-              asNavFor: '.slider-nav'
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
             });
 
             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
               slidesToShow: 4,
               slidesToScroll: 1,
-              asNavFor: '.qv-product-main-images',
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
               dots: false,
               centerMode: false,
               focusOnSelect: true,
