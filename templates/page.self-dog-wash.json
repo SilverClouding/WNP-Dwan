@@ -258,7 +258,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/unit.png",
-            "title": "Self contained  unit",
+            "title": "Self contained unit",
             "link": ""
           }
         },
@@ -266,7 +266,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/carpet_1.png",
-            "title": "Non-slip  floor",
+            "title": "Non-slip floor",
             "link": ""
           }
         },
@@ -274,7 +274,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/hair-dryer_2.png",
-            "title": "Professional  dryer",
+            "title": "Professional dryer",
             "link": ""
           }
         },
@@ -303,7 +303,7 @@
         "61cc39c1-73d3-45ad-8009-94a6071928cb"
       ],
       "settings": {
-        "heading": "The facility",
+        "heading": "The Facility",
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
