@@ -181,10 +181,10 @@ var boostPFSFilterConfig = {
 		}
 		return html;
 	}
-console.log(boostPFSThemeConfig.lable.new_badge);
+
   function buildNewLabel(product){
   console.log(product.tag);
-    var html = ` <span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn"></span>`;
+    var html = ` <span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
     
   }
   
