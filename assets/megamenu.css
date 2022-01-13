@@ -7,12 +7,14 @@ display:block;
 } */
 @media screen and (min-width: 750px) {
   /* Silver edit */
-
-  .mega-menu-section, .level_1_item, .mega-menu-container.do-sticky  {
+  .mega-menu-container.do-sticky{
+   transform: translateY(-100%);
+  }
+  .mega-menu-section, .level_1_item,.mega-menu-container.do-sticky  {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-100%);
+    transform: translateY(-10px);
     transition: transform .1s,opacity .1s;
     -webkit-transition: transform .1s,opacity .1s;  
     -moz-transition: transform .1s,opacity .1s;  
@@ -66,7 +68,7 @@ display:block;
 
   .mega-menu-container.do-sticky {
     position: sticky;  top: 80px;    z-index: 9;
-
+    display:none;
   }
 
 
