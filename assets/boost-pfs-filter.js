@@ -301,7 +301,7 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
         
         //       newtag
         var data_tagArray = data.tags;
-        var NewTag = false,\;
+        var NewTag = false;
         console.log(data_tagArray);
         data_tagArray.forEach(function(v,i){
           if(v == 'New'){
