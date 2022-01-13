@@ -514,6 +514,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 //               focusOnSelect: true,
 //               arrows: false,
 //             });
+          $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('unslick');
+          $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick('unslick');
+          
           
           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
