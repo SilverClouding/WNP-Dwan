@@ -195,9 +195,9 @@ var boostPFSFilterConfig = {
     function min_qty_indicator(product){
       var html = '';
       var data_tagArray = product.tags;
-      console.log(data_tagArray);
+//       console.log(data_tagArray);
       data_tagArray.forEach(function(v,i){
-        if(v.indexOf("min-qty:") > 0){}
+        if(v.indexOf("min-qty:") > 0){
           var qtyTagArray = v.split(":");
             console.log(v);
           html = ` <p>Minimum quantity of {{qty}} <span class="popup_minq"><a href="#one" class="fancybox"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@ var boostPFSFilterConfig = {
         </svg>
         </a></span>
       </p>`
-        
+        }
 
       });
       return html;
