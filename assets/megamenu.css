@@ -76,7 +76,7 @@ display:block;
     position: sticky;  
     top: 80px;    
     z-index: 9;
-    
+   display:none; 
    
     
   }
