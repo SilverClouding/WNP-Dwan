@@ -5,13 +5,9 @@ if (typeof boostPFSConfig != 'undefined'
 	&& typeof boostPFSConfig.general.isInitFilter != 'undefined'
 	&& typeof boostPFSThemeConfig != 'undefined'
 	&& boostPFSConfig.general.isInitFilter === true) {
-	boostPFS.initFilter(); console.log('boost-pfs-init.js 1');
+	boostPFS.initFilter(); 
 } 
 BoostPFS.jQ(window).on('load', function(){
 	boostPFS.initSearchBox();
 	boostPFS.initAnalytics();
-//   window._swat.initializeActionButtons('#main-collection-product-grid', '.swym-button');
-
-  console.log('boost-pfs-init.js');
-  
 });
