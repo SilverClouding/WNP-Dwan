@@ -34,7 +34,7 @@ var boostPFSFilterConfig = {
        data_tagArray.forEach(function(v,i){
          if(v == 'New'){
            NewTag = true,
-         console.log(v);
+         console.log(v+"-"+i);
          }
          
        });
