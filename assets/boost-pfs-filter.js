@@ -483,6 +483,23 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
 		if (!data) data = this.data;
+      /** Start Swym integration **/
+      window.SwymCallbacks = window.SwymCallbacks || [];
+      window.SwymCallbacks.push(function(swat) { 
+        // Wrap with callback for loading without additional checks
+        var products = [];
+        data.forEach(function(product) {
+          var image_src = Utils.getFeaturedImage(product.images_info);
+          var productCopy = product;
+          productCopy.featured_image = image_src;
+          productCopy.price = product.price_min; // Sometimes I need to multiply the price with 100
+          productCopy.compare_at_price = product.compare_at_price_min; // Sometimes I need to multiply the price with 100
+          products.push(productCopy);
+        });
+        swat.mapShopifyProducts(products); // Product mapped data to swym layer
+        swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
+      });
+      /** End Swym integration **/
 	}
 
 	// Build Additional Elements
