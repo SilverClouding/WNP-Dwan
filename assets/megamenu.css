@@ -67,6 +67,12 @@ display:block;
   .mega-menu-container.do-sticky {
     position: sticky;  top: 80px;    z-index: 9;
     display:none;
+    transition: transform .3s ease,opacity .2s linear;
+    -webkit-transition: transform .3s ease,opacity .2s linear;
+    -moz-transition: transform .3s ease,opacity .2s linear;
+    -o-transition: transform .3s ease,opacity .2s linear;
+    -ms-transition: transform .3s ease,opacity .2s linear;
+    transition-delay: .2s;
   }
 
 
