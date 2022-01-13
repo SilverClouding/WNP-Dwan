@@ -184,6 +184,8 @@ var boostPFSFilterConfig = {
 
   function buildNewLabel(product){
   console.log(product.tag);
+    var html = ` <span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.lable.new_badge}</span>`;
+    
   }
   
   
