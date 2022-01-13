@@ -465,15 +465,6 @@
     "16364545883ef8672a": {
       "type": "faq",
       "blocks": {
-        "dff0aac7-5075-4660-872e-9f4345bc5989": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Do you sell pets?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "about-us",
-            "icon": "box"
-          }
-        },
         "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
           "type": "collapsible_tab",
           "settings": {
@@ -481,6 +472,15 @@
             "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
             "page": "",
             "icon": "none"
+          }
+        },
+        "dff0aac7-5075-4660-872e-9f4345bc5989": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Do you sell pets?",
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
+            "page": "about-us",
+            "icon": "box"
           }
         },
         "886f17c3-f7eb-4e19-864c-819fbe70926a": {
@@ -566,8 +566,8 @@
         }
       },
       "block_order": [
-        "dff0aac7-5075-4660-872e-9f4345bc5989",
         "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
+        "dff0aac7-5075-4660-872e-9f4345bc5989",
         "886f17c3-f7eb-4e19-864c-819fbe70926a",
         "fc03c057-63d9-4c86-b78b-1b8be5ef0723",
         "53aab69f-4b9f-481a-b12a-ed1a8f09338b",
