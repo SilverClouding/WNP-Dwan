@@ -729,3 +729,7 @@ div#article_page .buttons-section ul li {
   height:initial!important;
   width: 130px!important;
 }
+.boost-pfs-modal-container {
+    width: 1255px!important;
+    top: 20px!important;
+}
