@@ -493,9 +493,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         setTimeout(function(){
           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
-
-          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-            console.log("initialized")
+		   console.log("initialized")
 
             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
               dots: false,
@@ -514,7 +512,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
               focusOnSelect: true,
               arrows: false,
             });
-          });
+          
 
         }, 3000); //wait for atleast  3 seconds before console logging
       }
