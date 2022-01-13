@@ -496,51 +496,52 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		  
 //            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
 //              console.log("initialized")
-//            });
-//             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
-//               dots: false,
-//               arrows: true,
-//               respondTo: 'min',
-//               useTransform: false,
-//               asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
-//             });
-
-//             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
-//               slidesToShow: 4,
-//               slidesToScroll: 1,
-//               asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
-//               dots: false,
-//               centerMode: false,
-//               focusOnSelect: true,
-//               arrows: false,
-//             });
+//            }); 
           $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('unslick');
           $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick('unslick');
           
-          
-          var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
-            $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
-          }).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-            lazyLoad: 'ondemand',
-            autoplaySpeed: 3000,
-            asNavFor: '.slider-nav'
-          });
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+              dots: false,
+              arrows: true,
+              respondTo: 'min',
+              useTransform: false,
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+            });
 
-          var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
-            $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').fadeIn(1000);
-          }).slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            lazyLoad: 'ondemand',
-            asNavFor: '.qv-product-main-images',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true
-          });
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+              dots: false,
+              centerMode: false,
+              focusOnSelect: true,
+              arrows: false,
+            });
+         
+          
+//           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
+//             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
+//           }).slick({
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             arrows: true,
+//             autoplay: true,
+//             lazyLoad: 'ondemand',
+//             autoplaySpeed: 3000,
+//             asNavFor: '.slider-nav'
+//           });
+
+//           var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
+//             $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').fadeIn(1000);
+//           }).slick({
+//             slidesToShow: 4,
+//             slidesToScroll: 1,
+//             lazyLoad: 'ondemand',
+//             asNavFor: '.qv-product-main-images',
+//             dots: false,
+//             centerMode: false,
+//             focusOnSelect: true
+//           });
           
           
 
