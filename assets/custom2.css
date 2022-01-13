@@ -744,7 +744,7 @@ div#article_page .buttons-section ul li {
 }
 
 
-.qv-product-thumb-images .product__media-item.slide.slick-slide {
+/* .qv-product-thumb-images .product__media-item.slide.slick-slide {
     width: 200px!important;
 }
 
@@ -756,7 +756,7 @@ div#article_page .buttons-section ul li {
 }
 .qv-product-main-images .slide.product__media-item img{
     width: 100%!important;
-}
+} */
 
 .qv-product-options_html {
     width: 100%;
