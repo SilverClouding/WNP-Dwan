@@ -72,8 +72,14 @@ display:block;
   .mega-menu-container.do-sticky {
     position: sticky;  top: 80px;    z-index: 2;
   }
+  
+  .mega-menu-container.do-sticky .mega-menu-section{
+  display:none;
+  }
 
-
+  .mega-menu-container.do-sticky .mega-menu-section.active{
+  display:block;
+  }
 
   .mega-menu-container.do-sticky.active #shopify-section-mega-menu-1.active,
   .mega-menu-container.do-sticky.active .level_1_item{
