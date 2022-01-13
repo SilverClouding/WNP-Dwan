@@ -745,7 +745,7 @@ div#article_page .buttons-section ul li {
 
 
 .qv-product-thumb-images .product__media-item.slide.slick-slide {
-    width: 20%!important;
+    width: 200px!important;
 }
 
 .qv-product-thumb-images .product__media-item.slide.slick-slide img {
