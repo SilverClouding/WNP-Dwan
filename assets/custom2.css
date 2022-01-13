@@ -116,7 +116,7 @@ input#first-name {
 .cols-banner.collection img {
     width: 190px!important;
     height: auto!important;
-/*     min-height: auto!important; */
+    min-height: auto!important;
     float: right!important;
     margin-right: 60px;
 }
@@ -741,4 +741,13 @@ div#article_page .buttons-section ul li {
 .boost-pfs-modal-container .boost-pfs-modal-content slider-component {
     position: relative;
     display: block;
+}
+
+
+.qv-product-thumb-images .product__media-item.slide.slick-slide {
+    width: 20%!important;
+}
+
+.qv-product-thumb-images .product__media-item.slide.slick-slide img {
+    width: 100%;
 }
