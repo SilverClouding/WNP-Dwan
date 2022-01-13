@@ -291,7 +291,7 @@
     <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
 
       <div class="grid__item product__media-wrapper">
-        {% comment %}
+      
         <slider-component class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
@@ -347,7 +347,7 @@
 
 
         </slider-component>
-        {% endcomment %}
+         {% comment %}
         <div class="boost-pfs-quickview-left boost-pfs-quickview-product-thumbs">
 
           {% if product.images.size > 0 %}
@@ -374,7 +374,7 @@
           </div>
           {% endif %}
 
-        </div>
+        </div> {% endcomment %}
       </div>
 
       <div class="product__info-wrapper grid__item" >
