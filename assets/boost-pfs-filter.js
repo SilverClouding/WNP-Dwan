@@ -487,7 +487,11 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
       
-      
+      document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent() {
+
+        console.log('boost qv click');
+
+      }
       
 	}
 
