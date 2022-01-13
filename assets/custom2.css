@@ -116,7 +116,7 @@ input#first-name {
 .cols-banner.collection img {
     width: 190px!important;
     height: auto!important;
-  
+    min-height: auto!important;
     float: right!important;
     margin-right: 60px;
 }
@@ -747,16 +747,16 @@ div#article_page .buttons-section ul li {
 /* .qv-product-thumb-images .product__media-item.slide.slick-slide {
     width: 200px!important;
 }
-
+*/
 .qv-product-thumb-images .product__media-item.slide.slick-slide img {
     width: 100%!important;
 }
-.qv-product-main-images .slide.product__media-item {
+/*.qv-product-main-images .slide.product__media-item {
     width: 500px!important;
-}
+}*/
 .qv-product-main-images .slide.product__media-item img{
     width: 100%!important;
-} */
+} 
 
 .qv-product-options_html {
     width: 100%;
