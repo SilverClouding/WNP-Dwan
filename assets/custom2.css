@@ -707,10 +707,12 @@ div#article_page .buttons-section ul li {
   display:inherit;
   visibility:hidden;
 }
-
+.boost-pfs-action-list-wrapper.boost-pfs-action-extend {
+    top: 20%!important;
+}
 .boost-pfs-filter-products .grid__item:hover .quick-view-button{
     position: absolute;
-    top: 127px;
+    top: 27%!important;
     left: 2.4rem;
     z-index: 9;
      display:inherit;
