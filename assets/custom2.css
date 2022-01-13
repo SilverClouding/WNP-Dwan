@@ -723,3 +723,9 @@ div#article_page .buttons-section ul li {
     transform: translate(0,0);
     visibility: visible;
 }
+
+
+.boost-pfs-filter-products .boost-pfs-quickview-btn{
+height:initial!important;
+  width: 130px;
+}
