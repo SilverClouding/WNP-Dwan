@@ -329,7 +329,7 @@
             
 
 
-            <div class="qv-product-thumb-images slider-nav product__media-list grid grid--peek list-unstyled" role="list">
+            <div class="qv-product-thumb-images slider-nav product__media-list gridd grid--peek list-unstyled" role="list">
               {% for image in product.images %}
               <div class="product__media-item slide">
                 <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
