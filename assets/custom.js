@@ -379,7 +379,7 @@ jQuery(function($){
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     $('[data-dropdown='+triger_megamenu+']').parents(".mega-menu-section").siblings().removeClass('active');
-    $('[data-dropdown='+triger_megamenu+']').parents(".mega-menu-section").toggleClass('active');
+    $('[data-dropdown='+triger_megamenu+']').parents(".mega-menu-section").addClass('active');
   });
 
 
