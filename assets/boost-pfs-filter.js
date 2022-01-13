@@ -98,7 +98,6 @@ var boostPFSFilterConfig = {
 		// Add Price
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
-      itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildQuickviewBUtton(data));
        itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist_heart_icon(data));
        itemHtml = itemHtml.replace(/{{addtowishlist}}/g, addtowishlist(data));
 		// Add Review
@@ -202,11 +201,6 @@ var boostPFSFilterConfig = {
 		return html;
 	}
 
-  function buildNewLabel(product){
-  console.log(product.tags);
-    var html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
-    return html;
-  }
   
   
 	function buildCardProductClass() {
@@ -228,12 +222,7 @@ var boostPFSFilterConfig = {
 		return html;
 	}
   
-  function buildQuickviewBUtton(product) {
-    var html=`<a class="quick-view_new" 
-data-handle="${product.handle}" 
-       data-productid="${product.id}">Quick View</a>`
-    return html;
-  }
+
 
   function addtowishlist(product_card_product) { 
     var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
@@ -307,14 +296,19 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
 		return soldOutLabel;
 	}
 
-	function buildSaleLabel() {
-		// Build Sale label
-		var saleLabel = '';
-		if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
-			saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
-		}
-		return saleLabel;
-	}
+      function buildNewLabel(product){
+        console.log(product.tags);
+        var html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
+        return html;
+      }  
+      function buildSaleLabel() {
+        // Build Sale label
+        var saleLabel = '';
+        if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
+          saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
+        }
+        return saleLabel;
+      }
 
 	function buildReview(data) {
 		var html = '';
