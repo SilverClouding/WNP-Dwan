@@ -183,7 +183,7 @@ var boostPFSFilterConfig = {
 	}
 
   function buildNewLabel(product){
-  console.log(product);
+  console.log(product.tag);
   }
   
   
