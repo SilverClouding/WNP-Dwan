@@ -184,7 +184,7 @@
 
 </script>
 
-{% if template contains 'collection' %}
+{% unless template contains 'collection' %}
 <div class="quick-view-button">
 
   <!--   <a class="quick-view" data-handle="{{ product_card_product.handle }}" >Quick View</a> -->
@@ -209,5 +209,5 @@
   <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" data-swaction="addToWishlist" data-product-id="{{ product_card_product.id | json}}" data-variant-id="{{ product_card_product.variants[0].id}}" data-product-url="{{ shop.url }}{{  product_card_product.url }}">Add To Wishlist</button>
   <!-- Swym Wishlist Plus EPI Button-->
 </div>
-{% endif %}
+{% endunless %}
 
