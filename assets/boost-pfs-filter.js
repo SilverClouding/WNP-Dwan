@@ -492,25 +492,25 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         console.log('boost qv click');
         jQuery('.qv-product-main-images').on('init', function(event, slick){
           console.log("initialized")
-        });
-        jQuery('.qv-product-main-images').slick({
-          dots: false,
-          arrows: true,
-          respondTo: 'min',
-          useTransform: false,
-          asNavFor: '.slider-nav'
-        });
 
-        jQuery('.slider-nav').slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          asNavFor: '.qv-product-main-images',
-          dots: false,
-          centerMode: false,
-          focusOnSelect: true,
-          arrows: false,
-        });
+          jQuery('.qv-product-main-images').slick({
+            dots: false,
+            arrows: true,
+            respondTo: 'min',
+            useTransform: false,
+            asNavFor: '.slider-nav'
+          });
 
+          jQuery('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.qv-product-main-images',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            arrows: false,
+          });
+        });
       }
       
 	}
