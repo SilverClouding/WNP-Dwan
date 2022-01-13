@@ -85,7 +85,7 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
       if(NewTag){
       // Add New Label
-		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
+		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildNewLabel(data));
       }else{
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
