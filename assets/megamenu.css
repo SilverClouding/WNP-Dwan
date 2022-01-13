@@ -70,7 +70,7 @@ display:block;
   }
 
   .mega-menu-container.do-sticky {
-    position: sticky;  top: 80px;    z-index: 1;
+    position: sticky;  top: 80px;    z-index: 2;
   }
 
 
