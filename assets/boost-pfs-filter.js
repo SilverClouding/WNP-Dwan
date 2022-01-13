@@ -489,10 +489,12 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       
       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent() {
 
-        console.log('boost qv click');
+        console.log('boost qv click'); 
+        document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
+        
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
           console.log("initialized")
-  document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
+ 
           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
             dots: false,
             arrows: true,
