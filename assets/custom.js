@@ -589,14 +589,13 @@ jQuery(function($){
   
   $('[id^=qv_]').filter((idx,element)=>{
     let indexInParent = getElementIndex(element);
-    console.log(indexInParent);
+    console.log(element);
 //     return element.id.match(/id_\d-\d/) && ![0,3].includes(indexInParent);
   }).remove();
 
 
   function getElementIndex (element) {
-    return Array.from(element.parentNode.children)
-    .indexOf(element);
+    return Array.from(element.parentNode.children).indexOf(element);
   }
   
   $(document).on('click',".quick-view_new", function () {
