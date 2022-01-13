@@ -8,7 +8,10 @@ display:block;
 @media screen and (min-width: 750px) {
   /* Silver edit */
   .mega-menu-container.do-sticky{
-   transform: translateY(-100%);
+   transform: translateY(-100%) !important;
+  }
+  .mega-menu-container.do-sticky.active{
+   transform: translateY(-0%) !important;
   }
   .mega-menu-section, .level_1_item,.mega-menu-container.do-sticky  {
     position: absolute;
