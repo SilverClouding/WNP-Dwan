@@ -545,7 +545,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 //           });
           
           
-
+ window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
         }, 3000); //wait for atleast  3 seconds before console logging
       }
       
