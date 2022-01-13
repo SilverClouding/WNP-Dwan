@@ -733,3 +733,8 @@ div#article_page .buttons-section ul li {
     width: 1255px!important;
     top: 20px!important;
 }
+
+.boost-pfs-modal-container .boost-pfs-modal-content slider-component {
+    position: relative;
+    display: block;
+}
