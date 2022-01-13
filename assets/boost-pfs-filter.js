@@ -213,7 +213,7 @@ data-handle="${product.handle}"
   var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
 data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
             data-variant-id="${ product_card_product.variants[0].id}" 
-            data-product-url="https://wnp.pet/products/${  product_card_product.handle }">
+            data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
     </button>`
   return html;
   }
