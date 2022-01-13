@@ -29,7 +29,8 @@ var boostPFSFilterConfig = {
 		priceVaries = data.price_min != data.price_max; // Check a product has many prices
       
       //       newtag
-       var data_tagArray = data.tags.split(",");
+       var data_tagArray = data.tags;
+      console.log(data_tagArray);
        data_tagArray.forEach(function(v,i){
          console.log(v);
        });
