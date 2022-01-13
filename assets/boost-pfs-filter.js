@@ -494,50 +494,50 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
 		  
-           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-             console.log("initialized")
-           });
-            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
-              dots: false,
-              arrows: true,
-              respondTo: 'min',
-              useTransform: false,
-              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
-            });
+//            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+//              console.log("initialized")
+//            });
+//             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+//               dots: false,
+//               arrows: true,
+//               respondTo: 'min',
+//               useTransform: false,
+//               asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+//             });
 
-            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
-              dots: false,
-              centerMode: false,
-              focusOnSelect: true,
-              arrows: false,
-            });
+//             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+//               slidesToShow: 4,
+//               slidesToScroll: 1,
+//               asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+//               dots: false,
+//               centerMode: false,
+//               focusOnSelect: true,
+//               arrows: false,
+//             });
           
-//           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
-//             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
-//           }).slick({
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             arrows: true,
-//             autoplay: true,
-//             lazyLoad: 'ondemand',
-//             autoplaySpeed: 3000,
-//             asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
-//           });
+          var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
+            $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
+          }).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: true,
+            lazyLoad: 'ondemand',
+            autoplaySpeed: 3000,
+            asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+          });
 
-//           var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
-//             $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').fadeIn(1000);
-//           }).slick({
-//             slidesToShow: 4,
-//             slidesToScroll: 1,
-//             lazyLoad: 'ondemand',
-//             asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
-//             dots: false,
-//             centerMode: false,
-//             focusOnSelect: true
-//           });
+          var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
+            $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').fadeIn(1000);
+          }).slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            lazyLoad: 'ondemand',
+            asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true
+          });
           
           
 
