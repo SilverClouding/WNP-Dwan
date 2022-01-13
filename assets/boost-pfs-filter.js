@@ -490,10 +490,10 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent() {
 
         console.log('boost qv click');
-        jQuery('.qv-product-main-images').on('init', function(event, slick){
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
           console.log("initialized")
 
-          jQuery('.qv-product-main-images').slick({
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
             dots: false,
             arrows: true,
             respondTo: 'min',
@@ -501,7 +501,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
             asNavFor: '.slider-nav'
           });
 
-          jQuery('.slider-nav').slick({
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: '.qv-product-main-images',
