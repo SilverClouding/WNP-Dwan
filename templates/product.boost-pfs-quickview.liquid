@@ -291,6 +291,7 @@
     <div id="qv_{{product.id}}" class="variantselec qv-product-options_html product grid grid--1-col js-product_section grid--2-col-tablet">
 
       <div class="grid__item product__media-wrapper">
+        {% comment %}
         <slider-component class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
@@ -323,12 +324,7 @@
               </div>
               {% endfor %}
             </div>
-            
-          
-            
-            
-
-
+    
             <div class="qv-product-thumb-images slider-nav product__media-list gridd grid--peek list-unstyled" role="list">
               {% for image in product.images %}
               <div class="product__media-item slide">
@@ -351,6 +347,34 @@
 
 
         </slider-component>
+        {% endcomment %}
+        <div class="boost-pfs-quickview-left boost-pfs-quickview-product-thumbs">
+
+          {% if product.images.size > 0 %}
+          <div class="boost-pfs-quickview-slider">
+            <div class="boost-pfs-quickview-slider-inner">
+              <div class="boost-pfs-quickview-featured-image-wrapper">
+                {% for image in product.images %}<div class="boost-pfs-quickview-featured-image">
+                <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% if product.compare_at_price > product.price %}
+            <div class="boost-pfs-quickview-sale-lable">Sale</div>
+            {% endif %}<div class="boost-pfs-quickview-slider-nav">
+            <button class="boost-pfs-filter-button boost-pfs-quickview-slider-prev" aria-label="Previous image"> </button>
+            <button class="boost-pfs-filter-button boost-pfs-quickview-slider-next" aria-label="Next image"> </button>
+            </div>
+            <div class="boost-pfs-quickview-slider-dots">
+              {% for image in product.images %}
+              <div class="boost-pfs-quickview-slider-dot" data-image="{{ image.src | product_img_url }}" data-index="{{forloop.index0}}"> </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+        </div>
       </div>
 
       <div class="product__info-wrapper grid__item" >
