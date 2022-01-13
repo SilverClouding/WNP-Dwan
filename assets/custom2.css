@@ -749,5 +749,11 @@ div#article_page .buttons-section ul li {
 }
 
 .qv-product-thumb-images .product__media-item.slide.slick-slide img {
-    width: 100%;
+    width: 100%!important;
+}
+.qv-product-main-images .slide.product__media-item {
+    width: 500px!important;
+}
+.qv-product-main-images .slide.product__media-item img{
+    width: 100%!important;
 }
