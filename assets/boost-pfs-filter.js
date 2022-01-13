@@ -497,7 +497,6 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
              console.log("initialized")
            }); 
-           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
             jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
               dots: false,
               arrows: true,
@@ -519,7 +518,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
               arrows: false,
             });
          
-
+ jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
           
 //           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
 //             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
