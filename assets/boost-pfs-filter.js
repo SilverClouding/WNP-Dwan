@@ -286,15 +286,15 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
 	}
 
         function buildNewLabel(product){
-          console.log(product.tags);
-          var html ="";
-          if(NewTag){
-            html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
-            return html;
-          }else{
-            html = ``;
-            return html;
-          }
+//           console.log(product.tags);
+//           var html ="";
+//           if(NewTag){
+//             html = `<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
+//             return html;
+//           }else{
+//             html = ``;
+//             return html;
+//           }
         }  
   
       function buildSaleLabel(data) {
