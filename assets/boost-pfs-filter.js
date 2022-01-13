@@ -219,6 +219,7 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
 data-variant-id="${ product_card_product.variants[0].id}" 
 data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
 </button>`
+     document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
     window._swat.initializeActionButtons('.boost-pfs-filter-products', '.swym-button');
     return html;
   }
@@ -229,6 +230,7 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
             data-variant-id="${ product_card_product.variants[0].id}" 
             data-product-url="https://wnp.pet/products/${  product_card_product.handle }">
     </button>`
+   document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
   window._swat.initializeActionButtons('.boost-pfs-filter-products', '.swym-button');
   return html;
   }
