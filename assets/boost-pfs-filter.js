@@ -489,6 +489,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
       });
       /** End Swym integration **/
+      
+      
+      
 	}
 
 	// Build Additional Elements
