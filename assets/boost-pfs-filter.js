@@ -521,6 +521,11 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
               arrows: false,
             });
          
+  $(window).resize(function () {
+   
+      $('.qv-product-main-images').slick('setPosition');
+    
+  });
           
 //           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
 //             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
