@@ -314,8 +314,9 @@ data-swaction="addToWishlist" data-product-id="${ product_card_product.id}"
         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
           saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
         }
+       
+        return saleLabel; 
         }
-        return saleLabel;
       }
 
 	function buildReview(data) {
