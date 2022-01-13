@@ -77,7 +77,7 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
 
       itemHtml = itemHtml.replace(/{{quickviewButton}}/g, buildQuickviewBUtton(data));
-       itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist(data));
+       itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist_heart_icon(data));
        itemHtml = itemHtml.replace(/{{addtowishlist}}/g, addtowishlist(data));
 		// Add Review
 		if (typeof Integration === 'undefined' ||
@@ -210,10 +210,19 @@ data-handle="${product.handle}"
   }
 
   function addtowishlist(product_card_product) { 
+    var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
+data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
+data-variant-id="${ product_card_product.variants[0].id}" 
+data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
+</button>`
+    return html;
+  }
+  
+  function addtowishlist_heart_icon(product_card_product) { 
   var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
 data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
             data-variant-id="${ product_card_product.variants[0].id}" 
-            data-product-url="https://wnp.pet/products/${  product_card_product.handle }">Add to wishlist
+            data-product-url="https://wnp.pet/products/${  product_card_product.handle }">
     </button>`
   return html;
   }
