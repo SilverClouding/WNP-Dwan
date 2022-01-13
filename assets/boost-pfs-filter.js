@@ -13,6 +13,7 @@ var boostPFSFilterConfig = {
 (function () {
 	var onSale = false,
 		soldOut = false,
+        NewTag = false,
 		priceVaries = false,
 		images = [],
 		boostPFSRangeWidths = [165, 360, 533, 720, 940, 1066];
@@ -26,6 +27,14 @@ var boostPFSFilterConfig = {
 		soldOut = !data.available; // Check a product is out of stock
 		onSale = data.compare_at_price_min > data.price_min; // Check a product is on sale
 		priceVaries = data.price_min != data.price_max; // Check a product has many prices
+      
+      //       newtag
+       var data_tagArray = data.tags.split(",");
+       data_tagArray.forEach(function(v,i){
+         console.log(v);
+       });
+      
+      
 		// Convert images to array
 		images = data.images_info;
 		// Get First Variant (selected_or_first_available_variant)
