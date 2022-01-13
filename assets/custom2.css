@@ -695,3 +695,29 @@ div#article_page .buttons-section ul li {
     opacity: 0!important;
 }
 
+
+.boost-pfs-filter-products  .quick-view-button {
+    -webkit-transition: transform .4s ease-out;
+    -moz-transition: transform .4s ease-out;
+    -ms-transition: transform .4s ease-out;
+    -o-transition: transform .4s ease-out;
+    transition: transform .4s ease-out;
+    -webkit-transform: translate(0,10px);
+    transform: translate(0,10px);
+  display:inherit;
+  visibility:hidden;
+}
+
+.boost-pfs-filter-products .grid__item:hover .quick-view-button{
+    position: absolute;
+    top: 127px;
+    left: 2.4rem;
+    z-index: 9;
+     display:inherit;
+    width: 130px;
+    margin: 0 auto!important;
+    right: 0;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    visibility: visible;
+}
