@@ -33,6 +33,7 @@ var boostPFSFilterConfig = {
       console.log(data_tagArray);
        data_tagArray.forEach(function(v,i){
          if(v == 'New'){
+           NewTag = true,
          console.log(v);
          }
          
@@ -82,10 +83,14 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{cardProductClass}}/g, buildCardProductClass());
 		// Add sold out Label
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
-		// Add sale Label
-		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
+      if(NewTag){
       // Add New Label
 		itemHtml = itemHtml.replace(/{{itemNewBadge}}/g, buildNewLabel(data));
+      }else{
+		// Add sale Label
+		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel());
+      }
+      
 		// Add Images
 		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
 		// Add Price
