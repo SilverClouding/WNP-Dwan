@@ -192,7 +192,7 @@ var boostPFSFilterConfig = {
 		return html;
 	}
 
-      function min_qty_indicator(product){
+    function min_qty_indicator(product){
         var html = '';
         var data_tagArray = product.tags;
         data_tagArray.forEach(function(v,i){
@@ -227,9 +227,7 @@ var boostPFSFilterConfig = {
 		return html;
 	}
   
-
-
-  function addtowishlist_btn(data) { 
+  	function addtowishlist_btn(data) { 
 
     /* Swym integration */
 var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '">Add to wishlist</button>';
@@ -238,7 +236,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
     return itemWishlistHtml;
   }
   
-  function addtowishlist_heart_icon(data) { 
+  	function addtowishlist_heart_icon(data) { 
   var itemWishlistHtml_heart = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '"></button>';
     return itemWishlistHtml_heart;
   }
@@ -296,10 +294,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		}
 		return soldOutLabel;
 	}
-
-
-  
-      function buildSaleLabel(data) {
+	
+  	function buildSaleLabel(data) {
         
         //       newtag
         var data_tagArray = data.tags;
