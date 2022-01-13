@@ -761,3 +761,11 @@ div#article_page .buttons-section ul li {
 .qv-product-options_html {
     width: 100%;
 }
+
+.boost-pfs-quickview-wrapper.check.fancybox-inner {
+    height: 100%!important;
+}
+
+.boost-pfs-quickview-wrapper .product__info-wrapper.grid__item {
+    padding-left: 35px;
+}
