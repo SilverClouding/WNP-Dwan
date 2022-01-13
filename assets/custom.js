@@ -590,7 +590,7 @@ jQuery(function($){
   $('[id^=qv_]').filter((idx,element)=>{
     let indexInParent = getElementIndex(element);
     console.log(element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/));
-    return element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/) && ![0,15].includes(indexInParent);
+    return element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/) && ![0,1].includes(indexInParent);
   }).remove();
 
 
