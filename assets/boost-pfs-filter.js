@@ -221,21 +221,15 @@ var boostPFSFilterConfig = {
   function addtowishlist_btn(data) { 
 
     /* Swym integration */
-var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '"></button>';
+var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '">Add to wishlist</button>';
     
     
     return itemWishlistHtml;
   }
   
-  function addtowishlist_heart_icon(product_card_product) { 
-  var html=`<button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_${product_card_product.id}" 
-data-swaction="addToWishlist" data-product-id="${ product_card_product.id}" 
-            data-variant-id="${ product_card_product.variants[0].id}" 
-            data-product-url="https://wnp.pet/products/${  product_card_product.handle }">
-    </button>`
-   document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
-//   window._swat.initializeActionButtons('.boost-pfs-filter-products', '.swym-button');
-  return html;
+  function addtowishlist_heart_icon(data) { 
+  var itemWishlistHtml_heart = '<button class="swym-button swym-add-to-wishlist-view-product product_{{itemId}}" data-swaction="addToWishlist"  data-product-id="' + JSON.stringify(data.id) + '"></button>';
+    return itemWishlistHtml_heart;
   }
   
 	function buildPrice(data) {
