@@ -664,7 +664,7 @@ if(window._swat){
 
 
 // boostcommerce quickshop
-document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
+document.querySelector('.boost-pfs-quickview-btn').onclick = function(event) {
 
   console.log('boost qv click'); 
   setTimeout(function(){
