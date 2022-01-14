@@ -109,21 +109,30 @@
           "type": "buttons",
           "settings": {
             "button_text": "Shop Dogs",
-            "button_link": "shopify:\/\/pages\/dog"
+            "button_link": "shopify:\/\/pages\/dog",
+            "button_width": 20,
+            "button_class": "button--primary",
+            "color_scheme": "background-1"
           }
         },
         "1639392069fccd0b13-1": {
           "type": "buttons",
           "settings": {
             "button_text": "Shop Cats",
-            "button_link": "#"
+            "button_link": "#",
+            "button_width": 20,
+            "button_class": "button--primary",
+            "color_scheme": "background-1"
           }
         },
         "1639392069fccd0b13-2": {
           "type": "buttons",
           "settings": {
             "button_text": "Shop Small Animals",
-            "button_link": "#"
+            "button_link": "#",
+            "button_width": 20,
+            "button_class": "button--primary",
+            "color_scheme": "background-1"
           }
         }
       },
@@ -339,6 +348,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/step1.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Step 1: Plan Your Visit<\/strong><br\/>Pop over and visit the <br\/>animals available for <br\/>adoption. <br\/>Find out more about your <br\/>furry friend and get to <br\/>know their personalities to <br\/>see if it’s a match!<\/p>",
             "button_label": "",
@@ -349,6 +359,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/step2.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Step 2: Apply<\/strong><br\/>Now that you have found <br\/>a furry friend you are <br\/>interested in bringing <br\/>home, fill out the <br\/>application form. An <br\/>adoption coordinator will <br\/>get in touch with you for <br\/>the next step.<\/p>",
             "button_label": "",
@@ -359,6 +370,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/step3.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Step 3: Adoption Free<\/strong><br\/>Once your application is <br\/>received & processed, a <br\/>Homing Assistant will be <br\/>in touch. A quick chat on <br\/>the phone or home visit <br\/>may be required. Different <br\/>adoption fees will apply <br\/>dependant on the <br\/>species. *100% adoption <br\/>fee goes to the shelter<\/p>",
             "button_label": "",
@@ -369,6 +381,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/step4.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Step 4: Bring Your Paw Friend Home<\/strong><br\/>Congratulations! You have <br\/>made a new best friend. <br\/>Spread the word and refer <br\/>other animals in need to <br\/>your friends. Let’s help <br\/>clear the shelters!<\/p>",
             "button_label": "",
@@ -394,7 +407,8 @@
         "top_padding": 0,
         "bottom_padding": 0,
         "title_color": "",
-        "title_font_size": 35
+        "title_font_size": 35,
+        "sec_class": ""
       }
     },
     "16395772189326842d": {
@@ -404,6 +418,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/united_1.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Collaborative <br\/>adoption<\/strong> efforts <br\/>since 2008<\/p>",
             "button_label": "",
@@ -414,6 +429,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/house-1.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>1800+<\/strong> puppies & <br\/><strong>900+<\/strong> cats homed<\/p>",
             "button_label": "",
@@ -437,7 +453,8 @@
         "top_padding": 25,
         "bottom_padding": 37,
         "title_color": "#f5694d",
-        "title_font_size": 19
+        "title_font_size": 19,
+        "sec_class": ""
       }
     }
   },
