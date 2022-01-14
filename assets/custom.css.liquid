@@ -8319,17 +8319,17 @@ select:focus, select:hover{
     vertical-align: bottom !important;
     padding:5px 9px !important;
   }  
-.listCollection .boost-pfs-filter-left-col.left-section .show-in-desktop{
+  .listCollection .boost-pfs-filter-left-col.left-section .show-in-desktop{
     margin-bottom:20px;
   }
 
-/* collection plus minus */
-.boost-pfs-filter-option-title{
-      position: relative;
-    }  
- .boost-pfs-filter-option-title:before, 
-   .boost-pfs-filter-option-title:after{
-  content: "";
+  /* collection plus minus */
+  .boost-pfs-filter-option-title{
+    position: relative;
+  }  
+  .boost-pfs-filter-option-title:before, 
+  .boost-pfs-filter-option-title:after{
+    content: "";
     height: 2px;
     width: 10px;
     position: absolute;
@@ -8337,23 +8337,32 @@ select:focus, select:hover{
     top: 50%;
     transform: translateY(-50%);
     background-color: #979797;
-    }
-    
-   .boost-pfs-filter-option-title:after {
-       transform: translateY(-50%) rotate(0);  
-     background-color: #44444d;
-    }  
-  .boost-pfs-filter-tree-v .boost-pfs-filter-option-collapsed .boost-pfs-filter-option-title:after{ 
- background-color: #979797;
-     transition: transform .4s;
-    transform: translateY(-50%) rotate(90deg);
-     
-   }
-  .boost-pfs-filter-tree-v .boost-pfs-filter-option-title-heading{
-  margin-bottom:0 !important;
-    padding-bottom:0 !important;
-    
   }
+
+  .boost-pfs-filter-option-title:after {
+    transform: translateY(-50%) rotate(0);  
+    background-color: #44444d;
+  }  
+  .boost-pfs-filter-tree-v .boost-pfs-filter-option-collapsed .boost-pfs-filter-option-title:after{ 
+    background-color: #979797;
+    transition: transform .4s;
+    transform: translateY(-50%) rotate(90deg);     
+  }
+  .boost-pfs-filter-tree-v .boost-pfs-filter-option-title-heading{
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+  }
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-collapsed .boost-pfs-filter-option-title-text:before{
+display:none;
+}  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
