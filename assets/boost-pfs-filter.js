@@ -486,11 +486,12 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
       });
       /** End Swym integration **/
-      document.addEventListener('click', function(e) {
+    
+        setTimeout(function(){
+            document.addEventListener('click', function(e) {
 console.log(e.target); 
         //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
         console.log('boost qv click'); 
-        setTimeout(function(){
           //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
 
@@ -522,10 +523,12 @@ console.log(e.target);
 
 
           window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+           });
+          
         }, 3000); //wait for atleast  3 seconds before console logging
         //       }
 
-      });
+     
       
       
 //       render function end
