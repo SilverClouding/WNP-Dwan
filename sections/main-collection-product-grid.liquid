@@ -329,11 +329,19 @@
             </div>
 
             
-            
-            <div class="boost-pfs-filter-load-more"></div>
-            <link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
-            <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
-            <div class="boost-pfs-filter-bottom-pagination"></div>
+            <div class="total_number_and_pagination">
+              <div class="product-count light" role="status">
+                <p class="product-count__text boost-pfs-filter-total-product">
+                  {%- render 'boost-pfs-filter-skeleton' -%}
+                </p>
+              </div>
+              <div>
+                <div class="boost-pfs-filter-load-more"></div>
+                <link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+                <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
+                <div class="boost-pfs-filter-bottom-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
