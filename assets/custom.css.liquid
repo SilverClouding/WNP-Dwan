@@ -8340,11 +8340,12 @@ select:focus, select:hover{
     }
     
    .boost-pfs-filter-tree-v .boost-pfs-filter-option:after {
-        transition: transform .4s;
-    transform: translateY(-50%) rotate(90deg);
+       transform: translateY(-50%) rotate(0);   
     }  
   .boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-collapsed:after{ 
-   transform: translateY(-50%) rotate(0); 
+ 
+     transition: transform .4s;
+    transform: translateY(-50%) rotate(90deg);
    }
 
 
