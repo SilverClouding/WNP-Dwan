@@ -486,7 +486,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
       });
       /** End Swym integration **/
-      document.addEventListener('click', function(e) {
+      document.addEventListener('click','.boost-pfs-quickview-btn', function(e) {
 console.log(e); 
         //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
         console.log('boost qv click'); 
