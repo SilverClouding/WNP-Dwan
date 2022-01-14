@@ -8323,8 +8323,29 @@ select:focus, select:hover{
     margin-bottom:20px;
   }
 
-
-
+/* collection plus minus */
+.boost-pfs-filter-tree-v .boost-pfs-filter-option{
+      position: relative;
+    }  
+ .boost-pfs-filter-tree-v .boost-pfs-filter-option:before, 
+   .boost-pfs-filter-tree-v .boost-pfs-filter-option:after{
+  content: "";
+    height: 2px;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #161616;
+    }
+    
+   .boost-pfs-filter-tree-v .boost-pfs-filter-option:after {
+        transition: transform .4s;
+    transform: translateY(-50%) rotate(90deg);
+    }  
+  .boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-collapsed:after{ 
+   transform: translateY(-50%) rotate(0); 
+   }
 
 
 
