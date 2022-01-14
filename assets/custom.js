@@ -667,7 +667,7 @@ if(window._swat){
 setTimeout(function(){
   document.querySelector('.boost-pfs-quickview-btn').onclick = function(event) {
 
-    console.log('boost qv click'); 
+    console.log('boost qv click customise'); 
 
 //     document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
