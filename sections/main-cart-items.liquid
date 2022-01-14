@@ -329,7 +329,7 @@
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
-                          min="{{qty}}"
+                          min="0"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
