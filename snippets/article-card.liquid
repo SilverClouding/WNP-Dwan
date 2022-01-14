@@ -57,9 +57,9 @@
       {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
         <p class="article-card__excerpt rte-width">
           {%- if article.excerpt.size > 0 -%}
-            {{ article.excerpt | strip_html | truncatewords: 30 }}
+            {{ article.excerpt  | truncatewords: 30 }}
           {%- else -%}
-            {{ article.content | strip_html | truncatewords: 30 }}
+            {{ article.content  | truncatewords: 30 }}
           {%- endif -%}
         </p>
       {%- endif -%}
