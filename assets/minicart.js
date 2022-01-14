@@ -55,7 +55,7 @@ function qty_plus_updateItemById(id,quantity,sections) {
   window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
 }
 function qty_minus_updateItemById(id,quantity,sections,minusQty) {  
-  quantity = quantity - minusQty;
+  quantity = minusQty;
   console.log(quantity);
   updateItemById(id,quantity,sections);
   window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
