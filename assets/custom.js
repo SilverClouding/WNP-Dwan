@@ -664,14 +664,64 @@ if(window._swat){
 
 
 
-// Filter.prototype.afterRender = function() { 
-// 	// The product list data returned from API
-// 	var data = this.data; 
-// 	// Your code here 
- 
-//    $(document).on('click',".boost-pfs-quickview-btn", function () {
-//       console.log(data);
-//    });
-  
-  
-// }
+document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
+
+  console.log('boost qv click'); 
+  setTimeout(function(){
+    document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
+
+
+    jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+      console.log("initialized")
+    }); 
+    jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+      dots: false,
+      arrows: true,
+      respondTo: 'min',
+      useTransform: false,
+      asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+    });
+
+    jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(event, slick){
+      console.log("initialized")
+    });
+    jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      arrows: false,
+    });
+
+    jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
+
+    //           var $slider = $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(slick) {
+    //             $('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').fadeIn(1000);
+    //           }).slick({
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //             arrows: true,
+    //             autoplay: true,
+    //             lazyLoad: 'ondemand',
+    //             autoplaySpeed: 3000,
+    //             asNavFor: '.slider-nav'
+    //           });
+
+    //           var $slider2 = $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(slick) {
+    //             $('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').fadeIn(1000);
+    //           }).slick({
+    //             slidesToShow: 4,
+    //             slidesToScroll: 1,
+    //             lazyLoad: 'ondemand',
+    //             asNavFor: '.qv-product-main-images',
+    //             dots: false,
+    //             centerMode: false,
+    //             focusOnSelect: true
+    //           });
+
+
+    window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+  }, 3000); //wait for atleast  3 seconds before console logging
+}
