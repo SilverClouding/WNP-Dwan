@@ -300,7 +300,7 @@
 
           <div class="gallery-containerr">
 
-            <div class="product__media-list gridd grid--peek list-unstyled qv-product-main-images-flickty carousel carousel-main" role="list" data-flickity='{"pageDots": false }'>
+            <div class="product__media-list gridd grid--peek list-unstyled qv-product-main-images" role="list">
               {% comment %}
               {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
               {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -325,7 +325,7 @@
               {% endfor %}
             </div>
     
-            <div class="qv-product-thumb-images-flickty carousel carousel-nav slider-nav product__media-list gridd grid--peek list-unstyled" role="list"  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+            <div class="qv-product-thumb-images slider-nav product__media-list gridd grid--peek list-unstyled" role="list">
               {% for image in product.images %}
               <div class="product__media-item slide">
                 <img src="{{ image.src | img_url: image_size }}" alt="{{ image.alt | escape }}" />
