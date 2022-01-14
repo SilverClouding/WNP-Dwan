@@ -559,3 +559,4 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
 	/************************** END BUILD TOOLBAR **************************/
 })();
+
