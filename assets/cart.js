@@ -17,11 +17,10 @@ class CartItems extends HTMLElement {
 
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status');
 
-    this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
-      .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
+    this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]')).reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
 
     console.log("qtyInput"+parseInt(quantityInput.value));
-    console.log('total'+total);
+    console.log('total'+ this.currentItemCount);
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, 300);
