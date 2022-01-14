@@ -29,6 +29,7 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
+    console.log(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
 
