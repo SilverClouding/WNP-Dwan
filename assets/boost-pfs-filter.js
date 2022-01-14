@@ -487,7 +487,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
       document.addEventListener('click', function(e) {
-console.log(e); 
+console.log(e.target); 
         //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
         console.log('boost qv click'); 
         setTimeout(function(){
