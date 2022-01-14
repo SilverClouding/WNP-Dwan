@@ -486,45 +486,45 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
       });
       /** End Swym integration **/
-      document.addEventListener('click', function(event) {
-
-//       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
+      document.addEventListener('click', function(e) {
+console.log(e); 
+        //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
         console.log('boost qv click'); 
         setTimeout(function(){
-//           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
+          //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
-		 
-           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-             console.log("initialized")
-           }); 
-            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
-              dots: false,
-              arrows: true,
-              respondTo: 'min',
-              useTransform: false,
-              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
-            });
+
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+            console.log("initialized")
+          }); 
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+            dots: false,
+            arrows: true,
+            respondTo: 'min',
+            useTransform: false,
+            asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+          });
 
           jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(event, slick){
-             console.log("initialized")
-           });
-            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
-              dots: false,
-              centerMode: false,
-              focusOnSelect: true,
-              arrows: false,
-            });
-         
- jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
+            console.log("initialized")
+          });
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            arrows: false,
+          });
 
-          
- window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+          jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
+
+
+          window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
         }, 3000); //wait for atleast  3 seconds before console logging
-//       }
-      
+        //       }
+
       });
       
       
