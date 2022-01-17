@@ -105,9 +105,9 @@ var boostPFSFilterConfig = {
       itemHtml = itemHtml.replace(/{{vendorHandle}}/g, data.vendor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
-      console.log(itemHtml);
+      console.log(count);
       if (count == 5){
-//         itemHtml = itemHtml;
+        itemHtml = itemHtml;
           var extraHTML = '<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><div class="image-with-text__media image-with-text__media--adapt media boost-pfs-action-overlay"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"></div><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
         itemHtml = itemHtml.replace(/{{customdiv}}/g, extraHTML);
 //         itemHtml = itemHtml.appendChild(extraHTML);
