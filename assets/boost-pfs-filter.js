@@ -467,22 +467,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		});
 	};
   
-  Productpaginate.prototype.compileTemplate = function () {
-		var html = '';
-		if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
-			
-				var paramSort = Globals.queryParams.paginate || '';
-				
-				html = boostPFSTemplate.paginateByHtml.replace(/{{paginateItems}}/g, 
-                                                              `<option value="10"> 10</option>
-  <option value="22"> 22</option>
-  <option value="34"> 34</option>
-  <option value="46"> 46</option>`                                                              
-                                                              );
-			
-		}
-		return html;
-	};
+
   
   Productpaginate.prototype.bindEvents = function() {
 		jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
