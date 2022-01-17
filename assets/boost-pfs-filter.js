@@ -472,16 +472,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
 			var sortingArr = Utils.getSortingList();
 			if (sortingArr) {
-				var paramSort = Globals.queryParams.sort || '';
-				// Build content
-				var sortingItemsHtml = '';
-				for (var k in sortingArr) {
-					var isSelected = ''
-					if(paramSort == k) {
-						isSelected = 'selected="selected"'
-					}
-					sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + sortingArr[k] + '</option>';
-				}
+				var paramSort = Globals.queryParams.paginate || '';
+				
 				html = boostPFSTemplate.paginateByHtml.replace(/{{paginateItems}}/g, 
                                                               `<option value="10"> 10</option>
   <option value="22"> 22</option>
