@@ -123,9 +123,7 @@ var boostPFSFilterConfig = {
                     <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
                       <a {% if settings.button_link != blank %}href="{{ settings.button_link }}"{% endif %} >
 
-                        {% include 'image-element',imageHight: 'adapt', image: settings.image_bottom, alt: settings.image_bottom.alt %}
-
-
+<img src="${boostPFSThemeConfig.custom.extra_item_img}">
 
 
                         {% if settings.image_caption_bottom != blank %}
