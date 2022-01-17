@@ -107,7 +107,7 @@ var boostPFSFilterConfig = {
       
       if (count == 5){
         
-            itemHtml += '<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
+            itemHtml.add('<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>');
         
        
       }
