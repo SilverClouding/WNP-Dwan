@@ -8815,7 +8815,7 @@ select:focus, select:hover{
       border-bottom:none !important;
       position:relative;
     }
-    div#main-collection-filters:before, div#main-collection-filters:after {
+    div#main-collection-filters:before {
     content: "";
     position: absolute;
     top: 0;
@@ -8826,7 +8826,17 @@ select:focus, select:hover{
     margin: 0 -22px;
     border-top: 1px solid #c6c6c6;
 }
-   
+  div#main-collection-filters:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    display: block;
+    width: 160%;
+    height: 0;
+    margin: 0 -22px;
+    border-bottom: 1px solid #c6c6c6;
+}
 
 
   }
