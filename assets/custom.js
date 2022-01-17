@@ -742,7 +742,7 @@ setTimeout(function(){
 
 
       window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
-    }, 5000); //wait for atleast  3 seconds before console logging
+    }, 500); //wait for atleast  3 seconds before console logging
 //     });
 
 
