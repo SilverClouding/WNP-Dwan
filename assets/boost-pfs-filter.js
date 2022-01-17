@@ -116,6 +116,7 @@ var boostPFSFilterConfig = {
         itemHtml += '<li  class="grid__item"><div class="card-wrapper">lorem ipsum</div></li>';
        
       }
+      console.log(itemHtml);
       
 		return itemHtml;
 	};
