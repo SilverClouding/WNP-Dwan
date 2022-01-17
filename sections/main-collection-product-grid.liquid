@@ -245,6 +245,24 @@
                   <div class="facets__wrapper"></div>
                   {%- if section.settings.enable_sorting -%}
                   <div class="facet-filters sorting caption">
+                    
+                    <label class="facet-filters__label caption-large" for="SortBy">Items per page</label>
+                    <div class="collection__product-per-page ">
+                      <select name="paginateBy" id="paginateBy" class="collection-sort__input">
+
+
+                        <option value="10"> 10</option>
+
+                        <option value="22"> 22</option>
+
+                        <option value="34"> 34</option>
+
+                        <option value="46"> 46</option>
+
+
+                      </select>
+                    </div>
+                    
                     <div class="facet-filters__field">
                       <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
                       <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
