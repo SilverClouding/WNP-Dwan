@@ -55,6 +55,7 @@ var boostPFSFilterConfig = {
 	/************************** BUILD PRODUCT LIST **************************/
 	// Build Product Grid Item
 	ProductGridItem.prototype.compileTemplate = function (data) {
+      console.log(data.length);
 		if (!data) data = this.data;
 		// Customize API data to get the Shopify data
 		data = prepareShopifyData(data);
@@ -475,16 +476,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
     };
   
-  // paginate Sorting event
 
-//   ProductSorting.prototype.bindEvents = function() {
-//     jQ(' .facet-filters__paginate').change(function(e) {
-//       e.preventDefault();
-//       FilterApi.setParam('limit', jQ(this).val());
-//       FilterApi.setParam('page', 1);
-//       FilterApi.applyFilter('limit');
-//     });
-//   };
 
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
