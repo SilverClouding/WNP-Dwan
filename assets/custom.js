@@ -706,8 +706,6 @@ if(window._swat){
 var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
 
 var myFunction = function() {
-  //         var attribute = this.getAttribute("data-myattribute");
-  //         alert(attribute);
   setTimeout(function(){
     document.addEventListener('click', function(e) {
       console.log(e.target); 
