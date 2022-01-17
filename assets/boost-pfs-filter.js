@@ -601,6 +601,14 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
 	};
 
+  // Override Settings
+  var boostPFSFilterConfig = {
+    general: {
+      // Settings list
+      limit: boostPFSThemeConfig.custom.products_per_page
+      loadProductFirst: true
+    }
+  };
 	/************************** END BUILD TOOLBAR **************************/
 })();
 
