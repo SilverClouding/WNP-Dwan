@@ -467,53 +467,24 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 			FilterApi.setParam('page', 1);
 			FilterApi.applyFilter('sort');
 		});
-	};
-  
-  // paginate Sorting
-//   ProductSorting.prototype.compileTemplate = function () {
-//     var html = '';
-//     if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
-      
-//       var paginateByItemsHtml = `
-// 		<option value="10"> 10</option>
-// 		<option value="23"> 23</option>
-// 		<option value="34"> 34</option>
-// 		<option value="46"> 46</option>`;
-      
-//         html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, paginateByItemsHtml);
-//     }
-//     return html;
-//   };
-
-//   ProductSorting.prototype.render = function () {
-//     jQ(Selector.topSorting).html(this.compileTemplate());
-
-//     if (jQ('.select boost-pfs-filter-custom-paginateBy').hasClass('boost-pfs-filter-paginateBy-active')) {
-//       jQ('.select boost-pfs-filter-custom-paginateBy').toggleClass('boost-pfs-filter-paginateBy-active');
-//     }
-
-//     var labelSort = '';
-//     var paramSort = Globals.queryParams.sort || '';
-//     var sortingList = Utils.getSortingList();
-//     if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
-//       labelSort = sortingList[paramSort];
-//     } else {
-//       labelSort = Labels.sorting_heading;
-//     }
-
-//     jQ('.select boost-pfs-filter-custom-paginateBy button span span').text(labelSort);
-//   }
-
-  // paginate Sorting event
-
-  ProductSorting.prototype.bindEvents = function() {
-    jQ(' .facet-filters__paginate').change(function(e) {
+      jQ(' .facet-filters__paginate').change(function(e) {
       e.preventDefault();
       FilterApi.setParam('limit', jQ(this).val());
       FilterApi.setParam('page', 1);
       FilterApi.applyFilter('limit');
     });
-  };
+	};
+  
+  // paginate Sorting event
+
+//   ProductSorting.prototype.bindEvents = function() {
+//     jQ(' .facet-filters__paginate').change(function(e) {
+//       e.preventDefault();
+//       FilterApi.setParam('limit', jQ(this).val());
+//       FilterApi.setParam('page', 1);
+//       FilterApi.applyFilter('limit');
+//     });
+//   };
 
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
