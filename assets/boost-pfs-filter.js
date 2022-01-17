@@ -506,14 +506,14 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
   // paginate Sorting event
 
-//   ProductSorting.prototype.bindEvents = function() {
-//     jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
-//       e.preventDefault();
-//       FilterApi.setParam('limit', jQ(this).val());
-//       FilterApi.setParam('page', 1);
-//       FilterApi.applyFilter('limit');
-//     });
-//   };
+  ProductSorting.prototype.bindEvents = function() {
+    jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
+      e.preventDefault();
+      FilterApi.setParam('limit', jQ(this).val());
+      FilterApi.setParam('page', 1);
+      FilterApi.applyFilter('limit');
+    });
+  };
 
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
