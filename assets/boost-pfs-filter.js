@@ -474,35 +474,35 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
     var html = '';
     if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
       
-      var sortingItemsHtml = `
+      var paginateByItemsHtml = `
 		<option value="10"> 10</option>
 		<option value="23"> 23</option>
 		<option value="34"> 34</option>
 		<option value="46"> 46</option>`;
       
-        html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, sortingItemsHtml);
+        html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, paginateByItemsHtml);
     }
     return html;
   };
 
-  ProductSorting.prototype.render = function () {
-    jQ(Selector.topSorting).html(this.compileTemplate());
+//   ProductSorting.prototype.render = function () {
+//     jQ(Selector.topSorting).html(this.compileTemplate());
 
-    if (jQ('.select boost-pfs-filter-custom-paginateBy').hasClass('boost-pfs-filter-paginateBy-active')) {
-      jQ('.select boost-pfs-filter-custom-paginateBy').toggleClass('boost-pfs-filter-paginateBy-active');
-    }
+//     if (jQ('.select boost-pfs-filter-custom-paginateBy').hasClass('boost-pfs-filter-paginateBy-active')) {
+//       jQ('.select boost-pfs-filter-custom-paginateBy').toggleClass('boost-pfs-filter-paginateBy-active');
+//     }
 
-    var labelSort = '';
-    var paramSort = Globals.queryParams.sort || '';
-    var sortingList = Utils.getSortingList();
-    if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
-      labelSort = sortingList[paramSort];
-    } else {
-      labelSort = Labels.sorting_heading;
-    }
+//     var labelSort = '';
+//     var paramSort = Globals.queryParams.sort || '';
+//     var sortingList = Utils.getSortingList();
+//     if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
+//       labelSort = sortingList[paramSort];
+//     } else {
+//       labelSort = Labels.sorting_heading;
+//     }
 
-    jQ('.select boost-pfs-filter-custom-paginateBy button span span').text(labelSort);
-  }
+//     jQ('.select boost-pfs-filter-custom-paginateBy button span span').text(labelSort);
+//   }
 
   // paginate Sorting event
 
