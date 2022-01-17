@@ -770,3 +770,7 @@ div#article_page .buttons-section ul li {
 .boost-pfs-quickview-wrapper .product__info-wrapper.grid__item {
     padding-left: 35px;
 }
+
+.qv-product-thumb-images .product__media-item {
+    width: 150px;
+}
