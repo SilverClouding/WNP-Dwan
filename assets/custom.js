@@ -702,11 +702,11 @@ if(window._swat){
 //   }
 // }, 3000); //wait for atleast  3 seconds before console logging
 
+setTimeout(function(){
+  var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
 
-var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
+  var myFunction = function() {
 
-var myFunction = function() {
-  setTimeout(function(){
     document.addEventListener('click', function(e) {
       console.log(e.target); 
       //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
@@ -744,10 +744,12 @@ var myFunction = function() {
       window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
     });
 
-  }, 5000); //wait for atleast  3 seconds before console logging
-  console.log('myfunction')
-};
 
-for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener('click', myFunction, false);
-}
+    console.log('myfunction')
+  };
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', myFunction, false);
+  }
+
+}, 5000); //wait for atleast  3 seconds before console logging
