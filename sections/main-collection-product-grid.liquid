@@ -249,6 +249,11 @@
                     
                     
                     <div class="facet-filters__field">
+                      <label class="facet-filters__label caption-large" for="paginateBy">Items per page</label>
+                      <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
+                        {%- render 'boost-pfs-filter-skeleton' -%}
+                      </div>
+                      
                       <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
                       <div class="select boost-pfs-filter-custom-sorting boost-pfs-filter-top-sorting">
                         {%- render 'boost-pfs-filter-skeleton' -%}
