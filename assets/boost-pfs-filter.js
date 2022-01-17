@@ -460,20 +460,20 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	}
 
 	// Build Sorting event
-	ProductSorting.prototype.bindEvents = function() {
-		jQ(Selector.topSorting + ' .facet-filters__sort').change(function(e) {
-			e.preventDefault();
-			FilterApi.setParam('sort', jQ(this).val());
-			FilterApi.setParam('page', 1);
-			FilterApi.applyFilter('sort');
-		});
+    ProductSorting.prototype.bindEvents = function() {
+      jQ(Selector.topSorting + ' .facet-filters__sort').change(function(e) {
+        e.preventDefault();
+        FilterApi.setParam('sort', jQ(this).val());
+        FilterApi.setParam('page', 1);
+        FilterApi.applyFilter('sort');
+      });
       jQ(' .facet-filters__paginate').change(function(e) {
-      e.preventDefault();
-      FilterApi.setParam('limit', jQ(this).val());
-      FilterApi.setParam('page', 1);
-      FilterApi.applyFilter('limit');
-    });
-	};
+        e.preventDefault();
+        FilterApi.setParam('limit', jQ(this).val());
+        FilterApi.setParam('page', 1);
+        FilterApi.applyFilter('limit');
+      });
+    };
   
   // paginate Sorting event
 
