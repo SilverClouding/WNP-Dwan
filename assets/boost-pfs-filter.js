@@ -421,6 +421,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		var html = '';
 		if (boostPFSTemplate.hasOwnProperty('sortingHtml')) {
 			var sortingArr = Utils.getSortingList();
+          console.log(sortingArr);
 			if (sortingArr) {
 				var paramSort = Globals.queryParams.sort || '';
 				// Build content
@@ -467,16 +468,57 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		});
 	};
   
+  // paginate Sorting
+  ProductSorting.prototype.compileTemplate = function () {
+    var html = '';
+    if (boostPFSTemplate.hasOwnProperty('sortingHtml')) {
+      var paginatingArr = Utils.getSortingList();
+      if (sortingArr) {
+        var paramSort = Globals.queryParams.sort || '';
+        // Build content
+        var sortingItemsHtml = '';
+        for (var k in paginatingArr) {
+          var isSelected = ''
+          if(paramSort == k) {
+            isSelected = 'selected="selected"'
+          }
+          sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + sortingArr[k] + '</option>';
+        }
+        html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
+      }
+    }
+    return html;
+  };
 
-  
+  ProductSorting.prototype.render = function () {
+    jQ(Selector.topSorting).html(this.compileTemplate());
+
+    if (jQ('.boost-pfs-filter-custom-sorting').hasClass('boost-pfs-filter-sort-active')) {
+      jQ('.boost-pfs-filter-custom-sorting').toggleClass('boost-pfs-filter-sort-active');
+    }
+
+    var labelSort = '';
+    var paramSort = Globals.queryParams.sort || '';
+    var sortingList = Utils.getSortingList();
+    if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
+      labelSort = sortingList[paramSort];
+    } else {
+      labelSort = Labels.sorting_heading;
+    }
+
+    jQ('.boost-pfs-filter-custom-sorting button span span').text(labelSort);
+  }
+
+  // paginate Sorting event
+
   ProductSorting.prototype.bindEvents = function() {
-		jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
-			e.preventDefault();
-			FilterApi.setParam('limit', jQ(this).val());
-			FilterApi.setParam('page', 1);
-			FilterApi.applyFilter('limit');
-		});
-	};
+    jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
+      e.preventDefault();
+      FilterApi.setParam('limit', jQ(this).val());
+      FilterApi.setParam('page', 1);
+      FilterApi.applyFilter('limit');
+    });
+  };
 
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
