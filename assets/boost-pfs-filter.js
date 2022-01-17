@@ -1,5 +1,5 @@
 // Fix the confict suggestion search in Debut theme
-if (typeof theme !== 'undefined' && theme.hasOwnProperty('settings')) theme.settings.predictiveSearchEnabled = false;
+if (typeof theme !== 'undefined' && theme.hasOwnProperty('settings')) theme.settings.predictiveSearchEnabled = true;
 // Override Settings
 var boostPFSFilterConfig = {
 	general: {
