@@ -115,6 +115,50 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
       if (count == 5){
+        itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
+
+		itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
+
+		// Add Card product class
+		itemHtml = itemHtml.replace(/{{cardProductClass}}/g, buildCardProductClass());
+		// Add sold out Label
+		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
+      
+  
+    
+		// Add sale Label
+		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel(data));
+    
+      
+		// Add Images
+		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
+		// Add Price
+		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
+
+       itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist_heart_icon(data));
+       itemHtml = itemHtml.replace(/{{addtowishlist_btn}}/g, addtowishlist_btn(data));
+      
+		// Add Review
+		if (typeof Integration === 'undefined' ||
+			(typeof Integration != 'undefined' &&
+				typeof Integration.hascompileTemplate == 'function' &&
+				!Integration.hascompileTemplate('reviews'))) {
+			itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
+		}
+
+      //min_qty_indicator
+      itemHtml = itemHtml.replace(/{{min_qty_indicator}}/g, min_qty_indicator(data));
+		// Add Vendor
+		itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
+
+		// Add main attribute (Always put at the end of this function)
+		itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
+		itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
+		itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
+		itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
+      itemHtml = itemHtml.replace(/{{vendorHandle}}/g, data.vendor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
+		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
+      
             itemHtml = `<div class="grid__item text-image-grid-item">
 
                         <div class="collection-grid-image-con">
