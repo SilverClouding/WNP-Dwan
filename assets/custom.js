@@ -707,8 +707,8 @@ setTimeout(function(){
 
   var myFunction = function() {
 
-    document.addEventListener('click', function(e) {
-      console.log(e.target); 
+//     document.addEventListener('click', function(e) {
+//       console.log(e.target); 
       //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
       console.log('boost qv click'); 
       //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
@@ -742,7 +742,7 @@ setTimeout(function(){
 
 
       window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
-    });
+//     });
 
 
     console.log('myfunction')
