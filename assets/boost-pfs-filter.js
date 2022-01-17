@@ -71,28 +71,19 @@ var boostPFSFilterConfig = {
 		var saleClass = onSale ? boostPFSTemplate.saleClass : '';
 
 		itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
-
 		itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
-
 		// Add Card product class
 		itemHtml = itemHtml.replace(/{{cardProductClass}}/g, buildCardProductClass());
 		// Add sold out Label
 		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
-      
-  
-    
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel(data));
-    
-      
 		// Add Images
 		itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
 		// Add Price
 		itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
-
        itemHtml = itemHtml.replace(/{{itemWishlist}}/g, addtowishlist_heart_icon(data));
        itemHtml = itemHtml.replace(/{{addtowishlist_btn}}/g, addtowishlist_btn(data));
-      
 		// Add Review
 		if (typeof Integration === 'undefined' ||
 			(typeof Integration != 'undefined' &&
@@ -116,32 +107,7 @@ var boostPFSFilterConfig = {
       
       if (count == 5){
         
-            itemHtml = itemHtml+`<div class="grid__item text-image-grid-item">
-
-                        <div class="collection-grid-image-con">
-
-
-                        <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-                        <a href="${boostPFSThemeConfig.custom.extra_item_button_text}">
-                        <img src="${boostPFSThemeConfig.custom.extra_item_img}">
-                        <p class="mega-menu__image-caption">${boostPFSThemeConfig.custom.image_caption_bottom}</p>
-
-                        </a>
-                        </div>
-
-
-
-                        <div class="mega-menu__richtext">
-                        ${boostPFSThemeConfig.custom.extra_item_richtext}
-                        </div>
-
-
-
-                        <a class="more-btn" href="${boostPFSThemeConfig.custom.extra_item_button_link}">${boostPFSThemeConfig.custom.extra_item_button_text}</a> 
-
-                        </div>
-
-                        </div>`;
+            itemHtml = itemHtml+'<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
         
        
       }
