@@ -467,7 +467,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		});
 	};
   
-  ProductSorting.prototype.compileTemplate = function () {
+  Productpaginate.prototype.compileTemplate = function () {
 		var html = '';
 		if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
 			var sortingArr = Utils.getSortingList();
@@ -493,7 +493,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		return html;
 	};
   
-  ProductSorting.prototype.bindEvents = function() {
+  Productpaginate.prototype.bindEvents = function() {
 		jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
 			e.preventDefault();
 			FilterApi.setParam('limit', jQ(this).val());
