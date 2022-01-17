@@ -116,7 +116,7 @@ var boostPFSFilterConfig = {
 //         itemHtml += 'lorem ipsum';
        
 //       }
-      console.log(itemHtml);
+//       console.log(itemHtml);
       
 		return itemHtml;
 	};
@@ -508,7 +508,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
     
-
+//quickview slider code
       setTimeout(function(){
         var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
 
@@ -561,7 +561,13 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         }
 
       }, 3000);  
+      //quickview slider code end
      
+//       additional ad code 
+      
+      const el = document.querySelector('ul li:nth-child(1)')
+      el.insertAdjacentHTML('afterend', '<li>ADDDED TEST 6</li>');
+      el.insertAdjacentHTML('afterend', '<li>ADDDED TEST 5</li>');
       
       
 //       render function end
