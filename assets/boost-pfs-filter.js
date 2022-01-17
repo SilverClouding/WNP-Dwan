@@ -507,7 +507,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
   // paginate Sorting event
 
   ProductSorting.prototype.bindEvents = function() {
-    jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
+    jQ(' .facet-filters__paginate').change(function(e) {
       e.preventDefault();
       FilterApi.setParam('limit', jQ(this).val());
       FilterApi.setParam('page', 1);
