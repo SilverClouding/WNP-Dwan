@@ -564,9 +564,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       //quickview slider code end
      
 //       additional ad code 
-      
+      var extraItemHtml = '<li class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><div class="image-with-text__media image-with-text__media--adapt media boost-pfs-action-overlay"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"></div><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></li>';
       const el = document.querySelector('ul#main-collection-product-grid li:nth-child(4)')
-      el.insertAdjacentHTML('afterend', '<li>ADDDED TEST 6</li>');
+      el.insertAdjacentHTML('afterend', extraItemHtml);
       
 //       render function end
 	}
