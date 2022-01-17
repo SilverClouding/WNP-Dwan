@@ -427,6 +427,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 				// Build content
 				var sortingItemsHtml = '';
 				for (var k in sortingArr) {
+                  console.log('paramSort-'+paramSort+',k-'+k);
 					var isSelected = ''
 					if(paramSort == k) {
 						isSelected = 'selected="selected"'
@@ -473,7 +474,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 //     var html = '';
 //     if (boostPFSTemplate.hasOwnProperty('sortingHtml')) {
 //       var paginatingArr = Utils.getSortingList();
-//       if (sortingArr) {
+//       if (paginatingArr) {
 //         var paramSort = Globals.queryParams.sort || '';
 //         // Build content
 //         var sortingItemsHtml = '';
@@ -482,7 +483,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 //           if(paramSort == k) {
 //             isSelected = 'selected="selected"'
 //           }
-//           sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + sortingArr[k] + '</option>';
+//           sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + paginatingArr[k] + '</option>';
 //         }
 //         html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
 //       }
