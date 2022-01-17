@@ -579,7 +579,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
 
       window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
-    }, 1000); //wait for atleast  3 seconds before console logging
+    }, 1500); //wait for atleast  3 seconds before console logging
 //     });
 
 
@@ -590,7 +590,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
     elements[i].addEventListener('click', myFunction, false);
   }
 
-}, 5000);  
+}, 3000);  
      
       
       
