@@ -470,45 +470,39 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	};
   
   // paginate Sorting
-//   ProductSorting.prototype.compileTemplate = function () {
-//     var html = '';
-//     if (boostPFSTemplate.hasOwnProperty('sortingHtml')) {
-//       var paginatingArr = Utils.getSortingList();
-//       if (paginatingArr) {
-//         var paramSort = Globals.queryParams.sort || '';
-//         // Build content
-//         var sortingItemsHtml = '';
-//         for (var k in paginatingArr) {
-//           var isSelected = ''
-//           if(paramSort == k) {
-//             isSelected = 'selected="selected"'
-//           }
-//           sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + paginatingArr[k] + '</option>';
-//         }
-//         html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
-//       }
-//     }
-//     return html;
-//   };
+  ProductSorting.prototype.compileTemplate = function () {
+    var html = '';
+    if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
+      
+      var sortingItemsHtml = `
+		<option value="10"> 10</option>
+		<option value="23"> 23</option>
+		<option value="34"> 34</option>
+		<option value="46"> 46</option>`;
+      
+        html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, sortingItemsHtml);
+    }
+    return html;
+  };
 
-//   ProductSorting.prototype.render = function () {
-//     jQ(Selector.topSorting).html(this.compileTemplate());
+  ProductSorting.prototype.render = function () {
+    jQ(Selector.topSorting).html(this.compileTemplate());
 
-//     if (jQ('.boost-pfs-filter-custom-sorting').hasClass('boost-pfs-filter-sort-active')) {
-//       jQ('.boost-pfs-filter-custom-sorting').toggleClass('boost-pfs-filter-sort-active');
-//     }
+    if (jQ('.select boost-pfs-filter-custom-paginateBy').hasClass('boost-pfs-filter-paginateBy-active')) {
+      jQ('.select boost-pfs-filter-custom-paginateBy').toggleClass('boost-pfs-filter-paginateBy-active');
+    }
 
-//     var labelSort = '';
-//     var paramSort = Globals.queryParams.sort || '';
-//     var sortingList = Utils.getSortingList();
-//     if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
-//       labelSort = sortingList[paramSort];
-//     } else {
-//       labelSort = Labels.sorting_heading;
-//     }
+    var labelSort = '';
+    var paramSort = Globals.queryParams.sort || '';
+    var sortingList = Utils.getSortingList();
+    if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
+      labelSort = sortingList[paramSort];
+    } else {
+      labelSort = Labels.sorting_heading;
+    }
 
-//     jQ('.boost-pfs-filter-custom-sorting button span span').text(labelSort);
-//   }
+    jQ('.select boost-pfs-filter-custom-paginateBy button span span').text(labelSort);
+  }
 
   // paginate Sorting event
 
