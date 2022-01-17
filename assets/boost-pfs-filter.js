@@ -115,38 +115,32 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
       if (count == 5){
-      itemHtml = `<div class="grid__item text-image-grid-item">
+            itemHtml = `<div class="grid__item text-image-grid-item">
 
-                  <div class="collection-grid-image-con">
-
-                    {% if settings.image_bottom != nil or settings.image_caption_bottom != blank %}
-                    <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-                      <a {% if settings.button_link != blank %}href="{{ settings.button_link }}"{% endif %} >
-
-<img src="${boostPFSThemeConfig.custom.extra_item_img}">
+                        <div class="collection-grid-image-con">
 
 
-                        {% if settings.image_caption_bottom != blank %}
-                        <p class="mega-menu__image-caption">{{ settings.image_caption_bottom }}</p>
-                        {% endif %}
-                      </a>
-                    </div>
-                    {% endif %}
+                        <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
+                        <a href="${boostPFSThemeConfig.custom.extra_item_button_text}">
+                        <img src="${boostPFSThemeConfig.custom.extra_item_img}">
+                        <p class="mega-menu__image-caption">${boostPFSThemeConfig.custom.extra_item_richtext}</p>
 
-                    {% comment %}Richtext{% endcomment %}
-                    {% if settings.richtext_bottom %}
-                    <div class="mega-menu__richtext">
-                      {{ settings.richtext_bottom }}
-                    </div>
-                    {% endif %}
+                        </a>
+                        </div>
 
-                    {% comment %}button{% endcomment %}
-                    {% if settings.button_link != blank %}
-                    <a class="more-btn" href="{{settings.button_link}}">{{settings.btn_text}}</a> 
-                    {% endif %}
-                  </div>
 
-                </div>`;
+
+                        <div class="mega-menu__richtext">
+                        ${boostPFSThemeConfig.custom.extra_item_richtext}
+                        </div>
+
+
+
+                        <a class="more-btn" href="${boostPFSThemeConfig.custom.extra_item_button_link}">${boostPFSThemeConfig.custom.extra_item_button_text}</a> 
+
+                        </div>
+
+                        </div>`;
       }
       
 		return itemHtml;
