@@ -713,7 +713,7 @@ setTimeout(function(){
       console.log('boost qv click'); 
       //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
-
+    setTimeout(function(){
       jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
         console.log("initialized")
       }); 
@@ -742,6 +742,7 @@ setTimeout(function(){
 
 
       window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+    }, 5000); //wait for atleast  3 seconds before console logging
 //     });
 
 
