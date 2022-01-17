@@ -251,7 +251,16 @@
                     <div class="facet-filters__field">
                       <label class="facet-filters__label caption-large" for="paginateBy">Items per page</label>
                       <div class="select boost-pfs-filter-custom-paginateBy boost-pfs-filter-top-paginateBy">
-                        {%- render 'boost-pfs-filter-skeleton' -%}
+                        <select name="paginateBy" class="facet-filters__paginate select__select caption-large" id="paginateBy" aria-describedby="a11y-refresh-page-message">
+                          <option value="10"> 10</option>
+                          <option value="23"> 23</option>
+                          <option value="34"> 34</option>
+                          <option value="46"> 46</option>
+                        </select>
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                          </path></svg>
+
                       </div>
                       
                       <label class="facet-filters__label caption-large" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
