@@ -470,20 +470,20 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	};
   
   // paginate Sorting
-  ProductSorting.prototype.compileTemplate = function () {
-    var html = '';
-    if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
+//   ProductSorting.prototype.compileTemplate = function () {
+//     var html = '';
+//     if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
       
-      var paginateByItemsHtml = `
-		<option value="10"> 10</option>
-		<option value="23"> 23</option>
-		<option value="34"> 34</option>
-		<option value="46"> 46</option>`;
+//       var paginateByItemsHtml = `
+// 		<option value="10"> 10</option>
+// 		<option value="23"> 23</option>
+// 		<option value="34"> 34</option>
+// 		<option value="46"> 46</option>`;
       
-        html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, paginateByItemsHtml);
-    }
-    return html;
-  };
+//         html = boostPFSTemplate.sortingHtml.replace(/{{paginateItems}}/g, paginateByItemsHtml);
+//     }
+//     return html;
+//   };
 
 //   ProductSorting.prototype.render = function () {
 //     jQ(Selector.topSorting).html(this.compileTemplate());
