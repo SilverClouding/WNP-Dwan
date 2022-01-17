@@ -565,10 +565,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
      
 //       additional ad code 
       
-      const el = document.querySelector('ul li:nth-child(1)')
+      const el = document.querySelector('ul#main-collection-product-grid li:nth-child(4)')
       el.insertAdjacentHTML('afterend', '<li>ADDDED TEST 6</li>');
-      el.insertAdjacentHTML('afterend', '<li>ADDDED TEST 5</li>');
-      
       
 //       render function end
 	}
