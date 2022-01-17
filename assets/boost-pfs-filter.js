@@ -432,7 +432,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 			var sortingArr = Utils.getSortingList();
           console.log(sortingArr);
 			if (sortingArr) {
-				var paramSort = Globals.queryParams.sort || '';
+				var paramSort = Globals.queryParams.sort || 'relevance';
 				// Build content
 				var sortingItemsHtml = '';
 				for (var k in sortingArr) {
