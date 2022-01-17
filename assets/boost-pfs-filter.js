@@ -467,6 +467,32 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		});
 	};
   
+  ProductSorting.prototype.compileTemplate = function () {
+		var html = '';
+		if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
+			var sortingArr = Utils.getSortingList();
+			if (sortingArr) {
+				var paramSort = Globals.queryParams.sort || '';
+				// Build content
+				var sortingItemsHtml = '';
+				for (var k in sortingArr) {
+					var isSelected = ''
+					if(paramSort == k) {
+						isSelected = 'selected="selected"'
+					}
+					sortingItemsHtml += '<option value="' + k + '"' + isSelected + '>' + sortingArr[k] + '</option>';
+				}
+				html = boostPFSTemplate.paginateByHtml.replace(/{{paginateItems}}/g, 
+                                                              `<option value="10"> 10</option>
+  <option value="22"> 22</option>
+  <option value="34"> 34</option>
+  <option value="46"> 46</option>`                                                              
+                                                              );
+			}
+		}
+		return html;
+	};
+  
   ProductSorting.prototype.bindEvents = function() {
 		jQ(Selector.topSorting + ' .facet-filters__paginate').change(function(e) {
 			e.preventDefault();
