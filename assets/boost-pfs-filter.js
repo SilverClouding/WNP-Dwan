@@ -4,7 +4,7 @@ if (typeof theme !== 'undefined' && theme.hasOwnProperty('settings')) theme.sett
 var boostPFSFilterConfig = {
 	general: {
 		limit: boostPFSConfig.custom.products_per_page,
-		loadProductFirst: true,
+		loadProductFirst: false,
 		numberFilterTree: 2,
 		filterTreeMobileStyle: 'style2'
 	},
