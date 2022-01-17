@@ -115,6 +115,34 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
       if (count == 5){
+        
+            itemHtml = `<div class="grid__item text-image-grid-item">
+
+                        <div class="collection-grid-image-con">
+
+
+                        <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
+                        <a href="${boostPFSThemeConfig.custom.extra_item_button_text}">
+                        <img src="${boostPFSThemeConfig.custom.extra_item_img}">
+                        <p class="mega-menu__image-caption">${boostPFSThemeConfig.custom.image_caption_bottom}</p>
+
+                        </a>
+                        </div>
+
+
+
+                        <div class="mega-menu__richtext">
+                        ${boostPFSThemeConfig.custom.extra_item_richtext}
+                        </div>
+
+
+
+                        <a class="more-btn" href="${boostPFSThemeConfig.custom.extra_item_button_link}">${boostPFSThemeConfig.custom.extra_item_button_text}</a> 
+
+                        </div>
+
+                        </div>`;
+        
         itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
 
 		itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
@@ -159,32 +187,6 @@ var boostPFSFilterConfig = {
       itemHtml = itemHtml.replace(/{{vendorHandle}}/g, data.vendor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
-            itemHtml = `<div class="grid__item text-image-grid-item">
-
-                        <div class="collection-grid-image-con">
-
-
-                        <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
-                        <a href="${boostPFSThemeConfig.custom.extra_item_button_text}">
-                        <img src="${boostPFSThemeConfig.custom.extra_item_img}">
-                        <p class="mega-menu__image-caption">${boostPFSThemeConfig.custom.image_caption_bottom}</p>
-
-                        </a>
-                        </div>
-
-
-
-                        <div class="mega-menu__richtext">
-                        ${boostPFSThemeConfig.custom.extra_item_richtext}
-                        </div>
-
-
-
-                        <a class="more-btn" href="${boostPFSThemeConfig.custom.extra_item_button_link}">${boostPFSThemeConfig.custom.extra_item_button_text}</a> 
-
-                        </div>
-
-                        </div>`;
       }
       
 		return itemHtml;
