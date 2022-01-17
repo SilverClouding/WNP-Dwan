@@ -470,8 +470,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
   Productpaginate.prototype.compileTemplate = function () {
 		var html = '';
 		if (boostPFSTemplate.hasOwnProperty('paginateByHtml')) {
-			var sortingArr = Utils.getSortingList();
-			if (sortingArr) {
+			
 				var paramSort = Globals.queryParams.paginate || '';
 				
 				html = boostPFSTemplate.paginateByHtml.replace(/{{paginateItems}}/g, 
@@ -480,7 +479,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
   <option value="34"> 34</option>
   <option value="46"> 46</option>`                                                              
                                                               );
-			}
+			
 		}
 		return html;
 	};
