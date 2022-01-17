@@ -116,7 +116,7 @@ var boostPFSFilterConfig = {
       
       if (count == 5){
         
-            itemHtml = itemHtml`<div class="grid__item text-image-grid-item">
+            itemHtml = itemHtml+`<div class="grid__item text-image-grid-item">
 
                         <div class="collection-grid-image-con">
 
