@@ -497,6 +497,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
           productCopy.price = product.price_min; // Sometimes I need to multiply the price with 100
           productCopy.compare_at_price = product.compare_at_price_min; // Sometimes I need to multiply the price with 100
           products.push(productCopy);
+          console.log(product);
         });
         swat.mapShopifyProducts(products); // Product mapped data to swym layer
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
