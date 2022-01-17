@@ -113,7 +113,7 @@ var boostPFSFilterConfig = {
 //           var extraHTML = '<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><div class="image-with-text__media image-with-text__media--adapt media boost-pfs-action-overlay"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"></div><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
 //         itemHtml = itemHtml.replace(/{{customdiv}}/g, extraHTML);
 //         itemHtml = itemHtml.appendChild(extraHTML);
-        itemHtml += '<li  class="grid__item"><div class="card-wrapper">lorem ipsum</div></li>';
+//         itemHtml += '<li  class="grid__item"><div class="card-wrapper">lorem ipsum</div></li>';
        
       }
       
@@ -500,7 +500,10 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
           productCopy.price = product.price_min; // Sometimes I need to multiply the price with 100
           productCopy.compare_at_price = product.compare_at_price_min; // Sometimes I need to multiply the price with 100
           products.push(productCopy);
+          
+          var extraHTML = '<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><div class="image-with-text__media image-with-text__media--adapt media boost-pfs-action-overlay"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"></div><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
           console.log(product);
+            products.push(extraHTML);
         });
         swat.mapShopifyProducts(products); // Product mapped data to swym layer
         swat.initializeActionButtons('.boost-pfs-filter-products'); // Buttons can now be initialized
