@@ -113,7 +113,7 @@ var boostPFSFilterConfig = {
 //           var extraHTML = '<div class="grid__item text-image-grid-item"><div class="collection-grid-image-con"><div class="mega-menu__image-caption-link" aspectRatio="0"><a href="'+boostPFSThemeConfig.custom.extra_item_button_text+'"><div class="image-with-text__media image-with-text__media--adapt media boost-pfs-action-overlay"><img src="'+boostPFSThemeConfig.custom.extra_item_img+'"></div><p class="mega-menu__image-caption">'+boostPFSThemeConfig.custom.image_caption_bottom+'</p></a></div><div class="mega-menu__richtext">'+boostPFSThemeConfig.custom.extra_item_richtext+'</div><a class="more-btn" href="'+boostPFSThemeConfig.custom.extra_item_button_link+'">'+boostPFSThemeConfig.custom.extra_item_button_text+'</a> </div></div>';
 //         itemHtml = itemHtml.replace(/{{customdiv}}/g, extraHTML);
 //         itemHtml = itemHtml.appendChild(extraHTML);
-        itemHtml += '<div  class="grid__item">lorem ipsum</div>';
+        itemHtml += '<li  class="grid__item">lorem ipsum</li>';
        
       }
       
@@ -508,58 +508,58 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       /** End Swym integration **/
     
 
-     setTimeout(function(){
-  var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
+      setTimeout(function(){
+        var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
 
-  var myFunction = function() {
+        var myFunction = function() {
 
-//     document.addEventListener('click', function(e) {
-//       console.log(e.target); 
-      //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
-      console.log('boost qv click'); 
-      //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
+          //     document.addEventListener('click', function(e) {
+          //       console.log(e.target); 
+          //       document.querySelector('.boost-pfs-quickview-btn').onclick = function changeContent(event) {
+          console.log('boost qv click'); 
+          //           document.querySelector('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').classList.add('class-by-click');
 
-    setTimeout(function(){
-      jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-        console.log("initialized")
-      }); 
-      jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
-        dots: false,
-        arrows: true,
-        respondTo: 'min',
-        useTransform: false,
-        asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
-      });
+          setTimeout(function(){
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+              console.log("initialized")
+            }); 
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+              dots: false,
+              arrows: true,
+              respondTo: 'min',
+              useTransform: false,
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+            });
 
-      jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(event, slick){
-        console.log("initialized")
-      });
-      jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        arrows: false,
-      });
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(event, slick){
+              console.log("initialized")
+            });
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+              dots: false,
+              centerMode: false,
+              focusOnSelect: true,
+              arrows: false,
+            });
 
-      jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
-
-
-      window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
-    }, 1500); //wait for atleast  3 seconds before console logging
-//     });
+            jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
 
 
-    console.log('myfunction')
-  };
+            window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+          }, 1500); //wait for atleast  3 seconds before console logging
+          //     });
 
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', myFunction, false);
-  }
 
-}, 3000);  
+          console.log('myfunction')
+        };
+
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener('click', myFunction, false);
+        }
+
+      }, 3000);  
      
       
       
