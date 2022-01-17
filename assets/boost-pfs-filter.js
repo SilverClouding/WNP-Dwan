@@ -60,7 +60,7 @@ var boostPFSFilterConfig = {
 		// Customize API data to get the Shopify data
 		data = prepareShopifyData(data);
       
- console.log(data);
+ console.log(data.length);
       
 		// Get Template
 		var itemHtml = boostPFSTemplate.productGridItemHtml; 
