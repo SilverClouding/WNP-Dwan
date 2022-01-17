@@ -447,6 +447,17 @@ var boostPFSTemplate = {
   // Pagination Template
   'paginateByHtml': {%- render 'boost-pfs-filter-html', layout: 'paginateByHtml' -%}
 };
+  
+
+  // Override Settings
+  var boostPFSFilterConfig = {
+    general: {
+      // Settings list
+      limit: boostPFSThemeConfig.custom.products_per_page
+      loadProductFirst: true
+    }
+  };
+  
 </script>
 {% schema %}
 
