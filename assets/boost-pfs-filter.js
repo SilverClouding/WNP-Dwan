@@ -115,7 +115,40 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
       
       if (count == 5){
-      itemHtml = `<div>5th item</div>`;
+      itemHtml = `<div class="grid__item text-image-grid-item">
+
+                  <div class="collection-grid-image-con">
+
+                    {% if settings.image_bottom != nil or settings.image_caption_bottom != blank %}
+                    <div class="mega-menu__image-caption-link" aspectRatio="{{ block.settings.image_bottom.aspect_ratio | times: 100 }}">
+                      <a {% if settings.button_link != blank %}href="{{ settings.button_link }}"{% endif %} >
+
+                        {% include 'image-element',imageHight: 'adapt', image: settings.image_bottom, alt: settings.image_bottom.alt %}
+
+
+
+
+                        {% if settings.image_caption_bottom != blank %}
+                        <p class="mega-menu__image-caption">{{ settings.image_caption_bottom }}</p>
+                        {% endif %}
+                      </a>
+                    </div>
+                    {% endif %}
+
+                    {% comment %}Richtext{% endcomment %}
+                    {% if settings.richtext_bottom %}
+                    <div class="mega-menu__richtext">
+                      {{ settings.richtext_bottom }}
+                    </div>
+                    {% endif %}
+
+                    {% comment %}button{% endcomment %}
+                    {% if settings.button_link != blank %}
+                    <a class="more-btn" href="{{settings.button_link}}">{{settings.btn_text}}</a> 
+                    {% endif %}
+                  </div>
+
+                </div>`;
       }
       
 		return itemHtml;
