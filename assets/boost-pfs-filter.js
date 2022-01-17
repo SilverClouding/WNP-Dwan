@@ -54,13 +54,14 @@ var boostPFSFilterConfig = {
 	/************************** END CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
 	/************************** BUILD PRODUCT LIST **************************/
 	// Build Product Grid Item
+  var count = 0;
 	ProductGridItem.prototype.compileTemplate = function (data) {
      
 		if (!data) data = this.data;
 		// Customize API data to get the Shopify data
 		data = prepareShopifyData(data);
-      
- console.log(data.length);
+      count = count + 1;
+ console.log(count);
       
 		// Get Template
 		var itemHtml = boostPFSTemplate.productGridItemHtml; 
