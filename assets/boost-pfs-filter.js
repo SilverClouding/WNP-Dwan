@@ -488,10 +488,17 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
     
-      const el = document.getElementsByClassName('.boost-pfs-quickview-btn');
-      el.addEventListener("click", () => { 
-      console.log('before set timeout');
-    }, false);
+      var elements = document.getElementsByClassName("boost-pfs-quickview-btn");
+
+      var myFunction = function() {
+//         var attribute = this.getAttribute("data-myattribute");
+//         alert(attribute);
+        console.log('myfunction')
+      };
+
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', myFunction, false);
+      }
       
       setTimeout(function(){
         document.addEventListener('click', function(e) {
