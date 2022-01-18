@@ -774,3 +774,8 @@ div#article_page .buttons-section ul li {
 .qv-product-thumb-images .product__media-item {
     width: 150px;
 }
+
+
+h2.h0 {
+    text-transform: none;
+}
