@@ -6941,7 +6941,17 @@ select:focus, select:hover{
     }
     .swiper.swiper.main-collection-page_Swiper{
     overflow:hidden;
+      border-bottom:none;
+      position:relative;
     }
+     .swiper.swiper.main-collection-page_Swiper:before{
+  content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    border-bottom:1px solid #d3d6d9;
+    width:100%;
+  }
     .swiper.swiper.main-collection-page_Swiper h2{
     font-size:30px;
       line-height:38px;
