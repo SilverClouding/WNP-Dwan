@@ -60,7 +60,7 @@
           {%- if article.excerpt.size > 0 -%}
             {{ article.excerpt  | truncatewords: 30 }}
           {%- else -%}
-            {{ article.excerpt  | truncatewords: 30 }}
+            {{ article.content  | truncatewords: 30 | escape }}
           {%- endif -%}
         </p>
       {%- endif -%}
