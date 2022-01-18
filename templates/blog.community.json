@@ -49,8 +49,8 @@
         "show_title": false,
         "show_readmore": true,
         "layout": "collage",
-        "show_image": false,
-        "image_height": "small",
+        "show_image": true,
+        "image_height": "medium",
         "show_date": true,
         "show_author": false
       }
