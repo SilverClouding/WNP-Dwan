@@ -8731,10 +8731,14 @@ select:focus, select:hover{
       width:100% !important;
     }
     .boost-pfs-filter-mobile-toolbar-items .boost-pfs-filter-mobile-toolbar-left span:before {
-      content: '\2190';
+      content: '';
+      position:absolute;
       border: none;
-      transform: rotate(0deg);
+/*       transform: rotate(0deg); */
       font-size: 32px;
+       background:url({{ 'back.png' | asset_url }}) left no-repeat;
+      width:15px;
+      height:15px;
     }
     .boost-pfs-filter-mobile-toolbar-items .boost-pfs-filter-mobile-toolbar-left span{
       padding-left: 0;
