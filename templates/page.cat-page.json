@@ -5,6 +5,7 @@
       "blocks": {
         "2f363a43-b55b-436a-9adc-8deacf1882d0": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "main_link_list": "food-treats"
           }
