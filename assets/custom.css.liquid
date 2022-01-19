@@ -1472,17 +1472,12 @@ select:focus, select:hover{
       line-height:20.49px;
       letter-spacing:0;
     }
-    .listCollection .price-item.price-item--regular{
-    padding-bottom:5px;
-      display: inline-block;
-    }
     .listCollection .collection .price__sale,
     .listCollection .card-information .price .price-item--regular,
     .listCollection .collection .card-information .price{
       font-size: 16px!important;
       font-weight: 800;
       line-height: 16px!important;
-      flex-direction:column;
       margin-right:0;
     }
     .swiper-horizontal>.swiper-scrollbar{
@@ -1494,6 +1489,22 @@ select:focus, select:hover{
 
   }
 
+  
+  @media(max-width:767px){
+   .listCollection .price-item.price-item--regular{
+    padding-bottom:5px;
+      display: inline-block;
+    }
+    .listCollection .collection .price__sale,
+    .listCollection .card-information .price .price-item--regular,
+    .listCollection .collection .card-information .price{
+      flex-direction:column;
+    }
+  }
+  
+  
+  
+  
 
   /* multicolumn  */
   .brand_logos .swiper{
