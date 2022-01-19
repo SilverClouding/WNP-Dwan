@@ -155,12 +155,33 @@
     {%- endcase -%}
   {%- endfor -%}
 {% comment %} {% endcomment %}
+  
+  {% if article.tags contains "Show button" %}
+  <style>
+    .col_center{justify-content: center;}
+  </style>
+
+  <ul class="grid col_center grid--1-col grid--3-col-tablet" role="list">
+    <li style="width:20%;" class="button_item">
+
+      <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--secondary  color-background-1" aria-disabled="true" role="link" href="#">Adopt me</a>  
+
+    </li><li style="width:20%;" class="button_item">
+
+    <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--primary  color-background-1" aria-disabled="true" role="link" href="">View all</a>  
+
+    </li>
+  </ul>
+  {% else %}
   <div class="element-margin center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-     {% comment %} {{ 'blogs.article.back_to_blog' | t: title: blog.title }}{% endcomment %} Back to {{blog.title}}
+      {% comment %} {{ 'blogs.article.back_to_blog' | t: title: blog.title }}{% endcomment %} Back to {{blog.title}}
     </a>
   </div>
+  {% endif %}
+  
+  
  
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
