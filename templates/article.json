@@ -47,6 +47,7 @@
     },
     "custom-buttons": {
       "type": "custom-buttons",
+      "disabled": true,
       "blocks": {
         "66dc7d85-2928-4778-a993-703f9fa6e23c": {
           "type": "buttons",
