@@ -5027,23 +5027,23 @@ select:focus, select:hover{
 
 
   @media(max-width:992px){
-    .fancybox-wrap{
+    .fancybox-wrap.fancybox-desktop{
       width:90% !important; 
 /*       top:50% !important;
       transform: translateY(-50%) !important; */
     }
-   .fancybox-inner{
+    .fancybox-desktop .fancybox-inner{
       height:auto !important; 
       min-height:300px;
     }
-   .gallery-container {
+    .fancybox-desktop .gallery-container {
       padding-right: 0;
     }
-     .fancybox-skin {
-      margin-bottom: 20px!important;
+    .fancybox-desktop .fancybox-skin {
+      margin-bottom: 0px!important;
       padding: 20px!important;
-             height: 100% !important;
-     /* overflow-y: scroll; */
+      /*       height: 90vh !important;
+      overflow-y: scroll; */
     }  
     .qv-product-options_html{
       padding-right:0 !important;
@@ -5071,7 +5071,7 @@ select:focus, select:hover{
     .fancybox-wrap.fancybox-mobile{
       width: 90% !important;
       height: auto!important;
-      top: 20px!important; 
+      top: 20px!important;
       left: 20px!important;
     }
 /*     .fancybox-inner {
