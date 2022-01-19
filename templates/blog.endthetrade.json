@@ -146,6 +146,7 @@
             "button_text": "#Signtosave",
             "button_link": "",
             "button_width": 20,
+            "button_class": "button--primary",
             "color_scheme": "accent-1"
           }
         }
@@ -194,7 +195,7 @@
         "collection": "new-arrivals",
         "collection2": "",
         "products_to_show": 4,
-        "show_view_all": true,
+        "show_view_all": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
@@ -202,6 +203,30 @@
         "show_vendor": false,
         "show_rating": false,
         "sec_class": "endthetrade-collection"
+      }
+    },
+    "16425796361d8186ca": {
+      "type": "custom-buttons",
+      "blocks": {
+        "1642579636ae758e67-0": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "#Signtosave",
+            "button_link": "",
+            "button_width": 20,
+            "button_class": "button--primary",
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1642579636ae758e67-0"
+      ],
+      "settings": {
+        "column_alignment": "center",
+        "background_style": "primary",
+        "section_width": 100,
+        "sec_class": "cust-btn-sec"
       }
     },
     "1640069976922bfe06": {
@@ -244,14 +269,6 @@
         "sec_class": "cust-textcon text-width"
       }
     },
-    "16400703110fc2fe9e": {
-      "type": "divider",
-      "settings": {
-        "include_margins": true,
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
     "1640070251fa08ca3a": {
       "type": "custom-buttons",
       "blocks": {
@@ -261,6 +278,7 @@
             "button_text": "Donation",
             "button_link": "",
             "button_width": 20,
+            "button_class": "button--primary",
             "color_scheme": "accent-1"
           }
         }
@@ -358,6 +376,7 @@
             "button_text": "Learn more about WildAid",
             "button_link": "",
             "button_width": 20,
+            "button_class": "button--primary",
             "color_scheme": "accent-1"
           }
         }
@@ -379,6 +398,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_159_bbba631e-cd79-454a-96b3-bc86fb642f8c.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>At-Home 3D Origami <br\/>Video Tutorial<\/strong><\/p><p><strong> <\/strong>Construct 3D wildlife <br\/>origami at-home with the <br\/>help of a video tutorial to <br\/>spread awareness and <br\/>educate the next <br\/>generation on the impacts <br\/>of the wildlife trade.<\/p>",
             "button_label": "",
@@ -389,6 +409,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_160.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Public Awareness <\/strong><\/p><p>To spread the word on the<br\/>campaign offline and <br\/>online to an existing <br\/>community of animal <br\/>lovers and beyond via <br\/>partnerships - charities,<br\/>veterinarians, pet-friendly<br\/>businesses.<\/p>",
             "button_label": "",
@@ -399,6 +420,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_161.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Art Auction & <br\/>Exhibitions<\/strong> <\/p><p>Wildlife photography <br\/>exhibition and art <br\/>installation from WildAid, <br\/>and celebrity <br\/>collaboration on 3D <br\/>origami of wildlife with art <br\/>decoration, display, and <br\/>auction.<\/p>",
             "button_label": "",
@@ -409,6 +431,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_158.png",
+            "img_link": "",
             "title": "",
             "text": "<p><strong>Communication <\/strong><\/p><p>Marketing and advertising <br\/>support on WildAid’s <br\/>public service <br\/>announcement to further <br\/>inform the global <br\/>community on the <br\/>campaign to grow more <br\/>petition signatures.<\/p>",
             "button_label": "",
@@ -434,7 +457,8 @@
         "top_padding": 65,
         "bottom_padding": 65,
         "title_color": "",
-        "title_font_size": 40
+        "title_font_size": 40,
+        "sec_class": ""
       }
     }
   },
@@ -449,10 +473,10 @@
     "1640068262e98b8790",
     "1640069784319e024b",
     "16400698433e6a11c1",
+    "16425796361d8186ca",
     "1640069976922bfe06",
     "1640070225a5dfc3a9",
     "1640070222d5d9f851",
-    "16400703110fc2fe9e",
     "1640070251fa08ca3a",
     "1640076947a75dd97b",
     "164007695350e2b98e",
