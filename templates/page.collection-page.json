@@ -11,6 +11,7 @@
         },
         "7c970b5b-c885-494b-a079-972908be1ffb": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "main_link_list": "health-care"
           }
