@@ -576,7 +576,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
                         </li>`;
           const el = document.querySelector('ul#main-collection-product-grid li:nth-child(4)')
-      el.insertAdjacentHTML('afterend', extraItemHtml);
+      	  if (el) el.insertAdjacentHTML('afterend', extraItemHtml);
       
 //       render function end
 	}
