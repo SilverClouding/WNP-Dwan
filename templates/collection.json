@@ -22,10 +22,76 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
+    },
+    "1642588501f5f948df": {
+      "type": "image-with-text",
+      "blocks": {
+        "16425885018de76426-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dine with your paw friends!"
+          }
+        },
+        "16425885018de76426-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
+          }
+        },
+        "16425885018de76426-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16425885018de76426-0",
+        "16425885018de76426-1",
+        "16425885018de76426-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "section_width": 100,
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first",
+        "sec_class": ""
+      }
+    },
+    "16425886176678f54c": {
+      "type": "rich-text",
+      "blocks": {
+        "1642588617446ec0b9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the best for your dogs here",
+            "heading_size": "h1"
+          }
+        },
+        "1642588617446ec0b9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To help you shop with confidence, Whiskers N Paws guarantees service quality for Dog & Cat kibble.*<br\/><br\/>The purpose of Happiness Guarantee is to ensure your furry friend finds the right food. <br\/>If your pet are unsatisfied with the kibble you have chosen, ​our pet advisors will help & contact you to find a suitable food for your furry friend.<br\/><br\/>All ​returns can be made by mail or in-store at Horizon Plaza Store. <br\/>*Specific brands, kibble types, and bag sizes only<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642588617446ec0b9-0",
+        "1642588617446ec0b9-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": "text-left"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1642588501f5f948df",
+    "16425886176678f54c"
   ]
 }
