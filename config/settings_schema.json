@@ -75,6 +75,28 @@
         "type": "checkbox",
         "id": "show_dynamic_checkout",
         "label": "Show additional payment option"
+      },
+      {
+        "type": "header",
+        "content": "Article Sharing options"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_facebook",
+        "label": "Share on Facebook",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_twitter",
+        "label": "Tweet on Twitter",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_pinterest",
+        "label": "Pin on Pinterest",
+        "default": true
       }
     ]
   },
