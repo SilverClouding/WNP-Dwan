@@ -8384,9 +8384,6 @@ select:focus, select:hover{
 } */
 
   @media (max-width: 992px){
-    .boost-pfs-search-suggestion{
-      flex-direction:column;
-    }
     .boost-pfs-search-suggestion-mobile .boost-pfs-search-suggestion .boost-pfs-search-suggestion-item{
       border:none !important;
       width:50%!important;
@@ -8500,7 +8497,11 @@ select:focus, select:hover{
 
   }
 
-
+  @media (max-width: 767px){
+    .boost-pfs-search-suggestion{
+      flex-direction:column;
+    }
+  }
 
 
   @media (min-width: 768px){
