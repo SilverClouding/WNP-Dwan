@@ -8450,7 +8450,6 @@ select:focus, select:hover{
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      justify-content: center;
     }
     .boost-pfs-search-suggestion-item-product .boost-pfs-search-suggestion-left{
       float:none!important;
@@ -8500,6 +8499,9 @@ select:focus, select:hover{
   @media (max-width: 767px){
     .boost-pfs-search-suggestion{
       flex-direction:column;
+    }
+    .boost-pfs-search-suggestion .boost-pfs-search-suggestion-group li{
+      justify-content: flex-start;
     }
   }
 
