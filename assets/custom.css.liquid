@@ -5167,7 +5167,6 @@ select:focus, select:hover{
   }
   .contact-flex{
     display:flex;
-    flex-direction:row;
     margin-top:25px;
   }
   .contact-flex .store-locator-store__street-phone{
@@ -5209,7 +5208,11 @@ select:focus, select:hover{
   width:100%!important;
   }
     .contact-flex{
-    flex-direction:column;
+        margin-top: 25px;
+    flex-wrap: wrap;
+    }
+    .contact-flex .store-locator-store__street-phone{
+    margin-bottom:10px;
     }
     .cus-our-story .rich-text .rich-text__blocks h2 {
       color: #153a33;
