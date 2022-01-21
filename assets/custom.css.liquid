@@ -9368,22 +9368,28 @@ select:focus, select:hover{
   }
 
   @media(max-width:992px){
-  .template-search .filters-toolbar-wrapper {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+    .template-search .filters-toolbar-wrapper {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
     .template-search__search .field__label{
-    font-size:16px !important;
+      font-size:16px !important;
       letter-spacing:0!important;
       color:#44444d !important;
     }
-    .price--on-sale .price__sale{
-    flex-direction:column !important;
-    }
+
   }  
-  
-  
-  
+
+  @media(max-width:767px){
+    .price--on-sale .price__sale{
+      flex-direction:column !important;
+    }
+    .card-information .price .price-item--regular{
+      margin-right:0 !important;
+    }
+  }
+
+
 
 
 
