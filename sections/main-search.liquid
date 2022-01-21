@@ -45,31 +45,7 @@
 
 <div
 	class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}">
-	<div class="page-width center">
-		{%- if search.performed -%}
-		<h1 class="boost-pfs-search-result-header h2">{{ 'templates.search.title' | t }}</h1>
-		{%- else -%}
-		<h1 class="h2">{{ 'general.search.search' | t }}</h1>
-		{%- endif -%}
-		<div class="template-search__search">
-			<form action="{{ routes.search_url }}" method="get" role="search" class="search">
-				<div class="field">
-					<input class="search__input field__input" id="Search-In-Template" type="search" name="q"
-						value="{{ search.terms | escape }}" {% if search.performed %}autofocus{% endif %}
-						placeholder="{{ 'general.search.search' | t }}">
-					<label class="field__label" for="Search-In-Template" aria-hidden="true">{{ 'general.search.search' |
-						t }}</label>
-					<input name="options[prefix]" type="hidden" value="last">
-					<button type="submit" class="search__button field__button focus-inset"
-						aria-label="{{ 'general.search.search' | t }}">
-						<svg class="icon icon-search">
-							<use xlink:href="#icon-search">
-						</svg>
-					</button>
-				</div>
-			</form>
-		</div>
-	</div>
+	
 
 
 
@@ -79,6 +55,33 @@
               {% render 'boost-pfs-filter-skeleton', type: 'filter-tree' %}
             </div>
             <div class="boost-pfs-filter-right boost-pfs-filter-right-col right-section">
+              
+              <div class="center">
+                {%- if search.performed -%}
+                <h1 class="boost-pfs-search-result-header h2">{{ 'templates.search.title' | t }}</h1>
+                {%- else -%}
+                <h1 class="h2">{{ 'general.search.search' | t }}</h1>
+                {%- endif -%}
+                <div class="template-search__search">
+                  <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+                    <div class="field">
+                      <input class="search__input field__input" id="Search-In-Template" type="search" name="q"
+                             value="{{ search.terms | escape }}" {% if search.performed %}autofocus{% endif %}
+                             placeholder="{{ 'general.search.search' | t }}">
+                      <label class="field__label" for="Search-In-Template" aria-hidden="true">{{ 'general.search.search' |
+						t }}</label>
+                      <input name="options[prefix]" type="hidden" value="last">
+                      <button type="submit" class="search__button field__button focus-inset"
+                              aria-label="{{ 'general.search.search' | t }}">
+                        <svg class="icon icon-search">
+                          <use xlink:href="#icon-search">
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+              
 
               <div class="filters-toolbar-wrapper">
                 <div class="boost-pfs-search-result-toolbar-wrap">
