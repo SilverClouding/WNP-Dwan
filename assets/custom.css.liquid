@@ -6344,6 +6344,46 @@ select:focus, select:hover{
     padding-right: 98px;
     text-align: right;
   }
+  
+  .contact .field select {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  color: #aaa;
+  cursor: pointer;
+  float: left;
+  overflow: hidden;
+  padding-right: 3em;
+  position: relative;
+  width: 100%;
+}
+
+.contact .field select.field__input {
+  -webkit-appearance: none;
+  background-color: #eee;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 1em 1em;
+  width: 100%;
+  width: calc(100% + 2em);
+}
+.contact .field select.field__input:focus {
+  outline: none;
+}
+
+.select-icon {
+  position: absolute;
+  top: .8em;
+  right: 1em;
+}
+  
+  
+  
+  
+  
   @media(max-width:992px){
     .contact h2{
       font-size:30px;
