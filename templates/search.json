@@ -1,10 +1,61 @@
 {
   "sections": {
     "main": {
-      "type": "main-search"
+      "type": "main-search",
+      "settings": {
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "article_show_date": true,
+        "article_show_author": false
+      }
+    },
+    "1642745022a920dbef": {
+      "type": "image-with-text",
+      "blocks": {
+        "164274502299c46937-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "164274502299c46937-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "164274502299c46937-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164274502299c46937-0",
+        "164274502299c46937-1",
+        "164274502299c46937-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "section_width": 100,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "sec_class": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1642745022a920dbef"
   ]
 }
