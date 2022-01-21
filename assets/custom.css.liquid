@@ -6359,8 +6359,19 @@ select:focus, select:hover{
   box-sizing: border-box;
   cursor: pointer;
   width: 100%;
-  width: calc(100% + 2em);
+  width: calc(100% + 2em);  
+  position:relative;
 }
+  .contact .field select.field__input:after{
+  content:'';
+    position:absolute;
+    top:4px;
+    right:0px;
+    z-index:2;
+    width:13px;
+    height:7px;
+    background:url({{ 's-arrow.png' | asset_url }}) center no-repeat;
+  }
 .contact .field select.field__input:focus {
   outline: none;
 }
