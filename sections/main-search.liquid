@@ -71,38 +71,7 @@
 		</div>
 	</div>
 
-	<div class="filters-toolbar-wrapper">
-		<div class="boost-pfs-search-result-toolbar-wrap">
-			<div class="boost-pfs-search-result-toolbar page-width">
-				<div class="boost-pfs-search-result-item">
-					<ul class="boost-pfs-search-result-panel-controls">
-						<li>{% render 'boost-pfs-filter-skeleton', width: 2 %}</li>
-					</ul>
-				</div>
-				<div class="boost-pfs-search-result-item">
-					<span class="boost-pfs-search-total-result">
-						{% render 'boost-pfs-filter-skeleton', width: 2 %}
-					</span>
-				</div>
-			</div>
-		</div>
 
-		<div class="page-width sorting-wrapper boost-pfs-search-panel-product-show">
-			<div class="filters-toolbar">
-				<div class="filters-toolbar__item-wrapper">
-					<div class="filters-toolbar__item-child">
-						<label class="collection-filters__label" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-						<div class="boost-pfs-filter-top-sorting">
-							{% render 'boost-pfs-filter-skeleton', width: 2 %}
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="boost-pfs-filter-tree-mobile-button boost-pfs-search-panel-product-show">
-				{% render 'boost-pfs-filter-skeleton', type: 'button' %}
-			</div>
-		</div>
-	</div>
 
 	<div class="page-width">
 		<div class="boost-pfs-filter-wrapper boost-pfs-search-panel-product-show">
@@ -110,6 +79,41 @@
 				{% render 'boost-pfs-filter-skeleton', type: 'filter-tree' %}
 			</div>
 			<div class="boost-pfs-filter-right">
+              
+              <div class="filters-toolbar-wrapper">
+                <div class="boost-pfs-search-result-toolbar-wrap">
+                  <div class="boost-pfs-search-result-toolbar page-width">
+                    <div class="boost-pfs-search-result-item">
+                      <ul class="boost-pfs-search-result-panel-controls">
+                        <li>{% render 'boost-pfs-filter-skeleton', width: 2 %}</li>
+                      </ul>
+                    </div>
+                    <div class="boost-pfs-search-result-item">
+                      <span class="boost-pfs-search-total-result">
+                        {% render 'boost-pfs-filter-skeleton', width: 2 %}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page-width sorting-wrapper boost-pfs-search-panel-product-show">
+                  <div class="filters-toolbar">
+                    <div class="filters-toolbar__item-wrapper">
+                      <div class="filters-toolbar__item-child">
+                        <label class="collection-filters__label" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                        <div class="boost-pfs-filter-top-sorting">
+                          {% render 'boost-pfs-filter-skeleton', width: 2 %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="boost-pfs-filter-tree-mobile-button boost-pfs-search-panel-product-show">
+                    {% render 'boost-pfs-filter-skeleton', type: 'button' %}
+                  </div>
+                </div>
+              </div>
+              
+              
 				<div class="boost-pfs-filter-products grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max">
 					{% comment %} Fix Shopify search term report {% endcomment %}
 					{% paginate search.results by 2 %}
