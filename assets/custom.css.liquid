@@ -6361,8 +6361,9 @@ select:focus, select:hover{
   width: 100%;
   width: calc(100% + 2em);  
   position:relative;
+   background:url({{ 's-arrow.png' | asset_url }}) 5px 12px no-repeat;
 }
-  .contact .field select.field__input:after{
+/*   .contact .field select.field__input:after{
   content:'';
     position:absolute;
     top:4px;
@@ -6371,7 +6372,7 @@ select:focus, select:hover{
     width:13px;
     height:7px;
     background:url({{ 's-arrow.png' | asset_url }}) center no-repeat;
-  }
+  } */
 .contact .field select.field__input:focus {
   outline: none;
 }
