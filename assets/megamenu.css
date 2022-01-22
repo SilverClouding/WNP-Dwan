@@ -41,9 +41,9 @@ display:block;
   }
   
   .mega-menu-container.do-sticky.active {
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.48);
+/*     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.48);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.48);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.48); */
     background-color:#fff;
   }
   
