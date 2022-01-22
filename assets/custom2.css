@@ -766,7 +766,7 @@ div#article_page .buttons-section ul li {
 }
 
 .boost-pfs-quickview-wrapper.check.fancybox-inner {
-    height: 100%!important;
+    height: 95vh!important;
 }
 
 .boost-pfs-quickview-wrapper .product__info-wrapper.grid__item {
