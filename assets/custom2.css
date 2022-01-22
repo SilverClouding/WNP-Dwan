@@ -5,9 +5,9 @@
 }
 
 /* megamenu */
-li.mega_parent.active a {
+/* li.mega_parent.active a {
     color: #f5694d;
-}
+} */
 
 .text-left {
     text-align: left;
