@@ -3285,15 +3285,15 @@ select:focus, select:hover{
     margin:0 auto;
     width:1149px;
   }
-  .mega-menu-container .mega-menus{
+  .mega-menu-container.not-sticky .mega-menus{
   position:relative;
   }
-  .mega-menu-container .mega-menus:before{
+  .mega-menu-container.not-sticky .mega-menus:before{
     position:absolute;
     content:'';
     background: rgba(41,41,41,.5);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1;
