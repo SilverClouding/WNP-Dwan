@@ -157,6 +157,7 @@
     {% section 'header' %}
  
     <div class="mega-menu-container not-sticky">
+      <div class="menucont">
       <div class="level_1_for_sticky">
         <ul>
           {% for link in linklists[settings.menu].links %}
@@ -188,7 +189,7 @@
       {% section 'mega-menu-6' %}
       {% endif %}
       </div>
-
+      </div>
     </div>
     
     <main id="MainContent" class="{% if template contains 'cart' %} class-for-cart-page  {% if cart.item_count  == 0 %} main-empty-class {% endif %}  {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
