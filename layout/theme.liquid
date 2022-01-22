@@ -155,7 +155,7 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    
+   <div class="megamenu-con"> 
     <div class="mega-menu-container not-sticky">
       <div class="level_1_for_sticky">
         <ul>
@@ -190,7 +190,7 @@
       </div>
 
     </div>
-    
+    </div>
     <main id="MainContent" class="{% if template contains 'cart' %} class-for-cart-page  {% if cart.item_count  == 0 %} main-empty-class {% endif %}  {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
       {% if template contains 'cart' %}<div class="flex"> {% endif %}
      
