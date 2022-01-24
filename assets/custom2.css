@@ -868,4 +868,8 @@ h2.h0 {
 .reorder-btn.loading .pt-reorder-text{
   display: none;
 }
+td.re_order {
+    padding-top: 12px!important;
+    margin-top: 0!important;
+}
 /* reorder style end */
