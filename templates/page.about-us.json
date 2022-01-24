@@ -80,7 +80,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/hand.png",
             "title": "",
-            "text": "<p><strong>Collaborative adoption<\/strong> efforts since 2008<\/p>"
+            "text": "<p><strong>Collaborative adoption<\/strong> efforts since <strong>2008<\/strong><\/p>"
           }
         },
         "16384414225707b0ab-2": {
@@ -116,7 +116,7 @@
           "type": "heading",
           "settings": {
             "heading": "We work as a team to unite likeminded people to leave a positive paw print in places we go and people we encounter.",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "1638442037250169f1-1": {
