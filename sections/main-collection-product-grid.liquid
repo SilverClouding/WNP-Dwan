@@ -173,9 +173,9 @@
 {% endcapture %}
 
 <div class="show-in-mobile">
-                {{banner}}
-              {{breadcrumb}}
-            </div>
+  {{banner}}
+</div>
+
 <div class="listCollection">
 
 
@@ -206,7 +206,10 @@
               <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
               {% endif %}
             </div>
-            
+            <div class="show-in-mobile">
+              
+              {{breadcrumb}}
+            </div>
             {% assign selected_handles = collection.metafields.accentuate.collections | split: '|' %}
             {% if selected_handles.size > 0 %}
             <div class="swiper main-collection-page_Swiper">
