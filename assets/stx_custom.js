@@ -23,7 +23,58 @@
           if(i >= data.length - 1){
             //products from queue are now added to the cart -> stop loading signal and go to cart
             el.removeClass('loading');
-            window.location.href = '/cart';
+//             window.location.href = '/cart';
+            
+            
+            //       mini cart section render
+
+
+            fetch('/?sections=cart-items')
+            .then((response) => response.json())
+            .then((data) => {
+              console.log(data);
+
+              var SectionHtml = data['cart-items'] ;
+              var IDminiCart = document.getElementById("mini-cart");
+              var IDminiCartMask = document.getElementById("minibag_mask");
+              IDminiCart.innerHTML = SectionHtml;
+              IDminiCart.classList.add("show-minibag");
+              IDminiCart.classList.remove("hide-minibag");
+              document.body.style.overflow = "hidden";
+              IDminiCartMask.style.display = 'block';
+
+              //           var count = document.querySelector('.count-cross .count').getAttribute('count');
+              //           document.getElementById("CartCount").innerHTML= count;
+              window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
+            });
+            //minicart section end
+
+            fetch('/cart.js')
+            .then((response) => response.json())
+            .then((cart) => {
+              var count = cart.item_count;
+              console.log(cart.total_price);
+              document.getElementById("CartCount").innerHTML= count;
+              var cartTotal = cart.total_price;
+              var cartthreshhold = 1000 * 100.00;
+              var percentmainvalue = cartTotal / cartthreshhold;
+              var mainPercent = percentmainvalue * 100.00 ;
+              var needAmmount = Math.abs(cartTotal - cartthreshhold);
+
+              console.log(mainPercent);
+
+              document.getElementById("precentfill").style.width = mainPercent+"%";
+              if(cartTotal >= cartthreshhold ){
+                document.getElementById("textmsg").innerHTML= Shopify.formatMoney(cartthreshhold) +" Done, You are eligible for";
+              }else{
+                document.getElementById("textmsg").innerHTML= "Spend "+Shopify.formatMoney(needAmmount)+" more to receive";
+              }
+
+            });
+
+
+            console.log("notification off");
+            
             return;
           }else{
             // Calls are async as required by Shopify Docs
