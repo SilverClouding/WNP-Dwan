@@ -40,6 +40,22 @@
       },
       {
         "type": "header",
+        "content": "Product page"
+      },
+      {
+        "type": "color",
+        "id": "above_description_icon_text_bg_color",
+        "default": "#334FB4",
+        "label": "above_description_icon_text background color"
+      },
+      {
+        "type": "color",
+        "id": "above_description_icon_text_text_color",
+        "default": "#334FB4",
+        "label": "above_description_icon_text text color"
+      },
+      {
+        "type": "header",
         "content": "Collection 5th product"
       },
       {
