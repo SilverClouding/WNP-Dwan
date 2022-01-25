@@ -74,7 +74,7 @@
           "type": "content",
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_2_title.value }}",
-            "text": "<p>{{ product.metafields.my_fields.tab_2_content.value }} Test Test HELLLOOOOOO<\/p>",
+            "text": "<p>{{ product.metafields.my_fields.tab_2_content.value }}<\/p>",
             "show_desc": false
           }
         },
