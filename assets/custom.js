@@ -754,3 +754,10 @@ setTimeout(function(){
   }
 
 }, 5000); //wait for atleast  3 seconds before console logging
+$.fancybox({
+    scrolling: 'hidden',
+    helpers: {
+        overlay: {
+            locked: true 
+        }
+    });
