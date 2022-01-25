@@ -127,7 +127,7 @@
       "type": "video",
       "settings": {
         "heading": "sadsadsa",
-        "text_alignment": "left",
+        "text_alignment": "centre",
         "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
