@@ -63,7 +63,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "View all",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/3m",
             "button_width": 20,
             "button_class": "button--primary",
             "color_scheme": "background-1"
