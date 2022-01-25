@@ -53,7 +53,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Adopt me",
-            "button_link": "#",
+            "button_link": "https:\/\/www.google.com\/",
             "button_width": 20,
             "button_class": "button--secondary",
             "color_scheme": "background-1"
