@@ -44,7 +44,8 @@
     
     
     {% for product_handle in products %}
-    {{product_handle}}<br>
+    {% assign product = all_products[product_handle] %}
+    {{product.id}}<br>
     {% endfor %}
       
     
