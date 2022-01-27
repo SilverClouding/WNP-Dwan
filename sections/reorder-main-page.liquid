@@ -39,29 +39,42 @@
     
     
     {% assign products = productsArray  | split:" " | uniq %}
-    
-    <div class="collection ">
+    <div id="ProductGridContainer">
+      {%- paginate collection.products by section.settings.products_per_page -%}
+      <div class="collection ">
 
-      <ul id="product-grid" data-id="{{ section.id }}" class=" grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max ">
-        {% for product_handle in products %}
-        {% assign product = all_products[product_handle] %}
+        <ul id="product-grid" data-id="{{ section.id }}" class=" grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max ">
+          {% for product_handle in products %}
+          {% assign product = all_products[product_handle] %}
 
-        <li class="grid__item">
-          {% render 'product-card',
+          <li class="grid__item">
+            {% render 'product-card',
                 product_card_product: product,
-          media_size: "adapt",
-          show_secondary_image: false,
-          add_image_padding: false,
-          show_vendor: false,
-          show_image_outline: true,
-          show_rating: true
-          %}
-        </li>
+            media_size: "adapt",
+            show_secondary_image: false,
+            add_image_padding: false,
+            show_vendor: false,
+            show_image_outline: true,
+            show_rating: true
+            %}
+          </li>
 
 
 
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </ul>
+        {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '' %}
+        {%- endif -%}
+      </div>
+      
+      {% for product_handle in products %}
+      {% assign product = all_products[product_handle] %}
+      {% render 'new-quickview-content' ,product_card_product: product%}
+      {%- endfor -%}
+
+
+      {%- endpaginate -%}
     </div>
       
     
