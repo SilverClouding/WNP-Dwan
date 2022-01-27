@@ -36,10 +36,13 @@
     {%-endfor-%}
 
     
-    {{products}}
     
-    {% assign products = productsArray | uniq | split:"" %}
-
+    
+    {% assign products = productsArray  | split:"" | uniq %}
+    
+{{products}}
+    
+    
     {% for product_handle in products %}
     {{product_handle}}
     {% endfor %}
