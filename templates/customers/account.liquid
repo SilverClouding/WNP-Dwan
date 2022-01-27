@@ -19,6 +19,8 @@
       <h1>{{ 'customer.account.title' | t }}</h1>
       <p>Welcome back, {{customer.first_name}}</p>
 
+      <div class="address-order">
+      <div>
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <table role="table" class="order-history">
@@ -109,9 +111,8 @@
           {%- endif -%}
         {%- endif -%}
       {% endpaginate %}
-    </div>
-
-    <div>
+      </div>
+      <div>
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
@@ -120,6 +121,11 @@
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
     </div>
+      </div>
+      
+    </div>
+
+    
 
   </div>
 </div>
