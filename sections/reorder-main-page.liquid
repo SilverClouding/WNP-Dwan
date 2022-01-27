@@ -1,4 +1,7 @@
-<meta http-equiv="refresh" content="2;url=/account/login" />
+{% unless customer %}
+<meta http-equiv="refresh" content="1;url=/account/login" />
+{% else %}
+
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -135,7 +138,7 @@
   </div>
   
 </div>
-
+{% endunless %}
 {% schema %}
 {
   "name": "t:sections.main-page.name",
