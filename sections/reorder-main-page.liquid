@@ -29,10 +29,13 @@
   <div class="left-side-product-items">
     <ul>
      
+      {% assign products = "" | split: ',' %}
+      
     {%- for order in customer.orders -%}
       {{forloop.index}}-order
     {% for item in order.line_items %}
       <li>  {{item.product.title }}</li>
+      {% assign products = products | push: item.product.title  %}
     {% endfor %}
     {%-endfor-%}
     </ul>
