@@ -35,7 +35,7 @@
       {% if itemhandle == item.handle %}
       {% break %}
       {% endif %}
-      {% assign itemhandle = "" %}
+      {% assign itemhandle = item.handle %}
     {% endfor %}
     {%-endfor-%}
     </ul>
