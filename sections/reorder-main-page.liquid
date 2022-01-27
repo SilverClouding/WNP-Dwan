@@ -28,21 +28,21 @@
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
    
-      {% assign productsArray = '' %}
-      
+    {% assign productsArray = '' %}
     {%- for order in customer.orders -%}
-    
     {% for item in order.line_items %}
-     
-      {% assign products = products | append: " " | append: item.product.handle  %}
+    {% assign products = products | append: " " | append: item.product.handle  %}
     {% endfor %}
     {%-endfor-%}
-      
-      {% assign products = productsArray | uniq | split:"" %}
-      
-      {% for product_handle in products %}
-      {{product_handle}}
-      {% endfor %}
+
+    
+    {{products}}
+    
+    {% assign products = productsArray | uniq | split:"" %}
+
+    {% for product_handle in products %}
+    {{product_handle}}
+    {% endfor %}
       
     
     
