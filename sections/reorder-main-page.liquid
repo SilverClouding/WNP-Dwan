@@ -27,9 +27,13 @@
 
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
+    <ul>
     {%- for order in customer.orders -%}
-    {{order.line_items[forloop.index].title }}<br>
+    {% for item in order.line_items %}
+      <li>  {{item.title}}</li>
+    {% endfor %}
     {%-endfor-%}
+    </ul>
   </div>
   
   <div class="order-table-right">
