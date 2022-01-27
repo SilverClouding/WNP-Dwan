@@ -783,7 +783,10 @@ h2.h0 {
 }
 
 
-
+.title-reorder-btn {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
