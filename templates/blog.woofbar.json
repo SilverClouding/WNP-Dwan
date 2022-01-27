@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Mask_Group_e6ffcdb2-e92d-458a-a80b-4e1dee99230f.png",
+        "mobile_image": "shopify:\/\/shop_images\/woofbar.jpg",
         "sec_class": "",
         "image_height": "large",
         "adapt_height_first_image": true,
