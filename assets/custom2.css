@@ -793,3 +793,6 @@ h2.h0 {
     display: flex;
     justify-content: space-between;
 }
+.order-table{width:75%;}
+
+.order-address{width:25%; padding:0 20px;}
