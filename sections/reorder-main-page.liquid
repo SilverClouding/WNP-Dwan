@@ -32,7 +32,7 @@
     {%- for order in customer.orders -%}
       {{forloop.index}}-order
     {% for item in order.line_items %}
-      <li>  {{item.product.title | handle }}</li>
+      <li>  {{item.product.title }}</li>
       {% assign loophandle = item.title  | handle %}
       
       {% assign itemhandle = loophandle %}
