@@ -31,7 +31,7 @@
     {% assign productsArray = '' %}
     {%- for order in customer.orders -%}
     {% for item in order.line_items %}
-    {% assign productsArray = productsArray | append: "," | append: item.product.handle  %}
+    {% assign productsArray = productsArray | append: " " | append: item.product.handle  %}
     {% endfor %}
     {%-endfor-%}
 
@@ -40,11 +40,11 @@
     
     {% assign products = productsArray  | split:" " %}
     
-{{products}}
+
     
     
     {% for product_handle in products %}
-    {{product_handle}}
+    {{product_handle}}<br>
     {% endfor %}
       
     
