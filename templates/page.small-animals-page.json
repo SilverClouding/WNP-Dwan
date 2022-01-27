@@ -61,13 +61,6 @@
             "img_link": ""
           }
         },
-        "1638951039bab36fc0-4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
-          }
-        },
         "1638951039bab36fc0-5": {
           "type": "column",
           "settings": {
@@ -88,7 +81,6 @@
         "1638951039bab36fc0-1",
         "1638951039bab36fc0-2",
         "1638951039bab36fc0-3",
-        "1638951039bab36fc0-4",
         "1638951039bab36fc0-5",
         "1638951039bab36fc0-6"
       ],
