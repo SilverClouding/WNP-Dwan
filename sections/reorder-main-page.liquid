@@ -39,10 +39,10 @@
     {% endfor %}
     {%-endfor-%}
       
-      {% assign products = productsArray | uniq | split:" " %}
+      {% assign products = productsArray | uniq | split:"" %}
       
-      {% for product in products %}
-      {{product}}
+      {% for product_handle in products %}
+      {{product_handle}}
       {% endfor %}
       
     </ul>
