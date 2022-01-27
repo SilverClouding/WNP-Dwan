@@ -1,12 +1,54 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
   }
+
+</style>
+{%- if section.settings.page_title or page.content != blank -%}
+<div class="page-width page-width--narrow main-page-cont">
+  {%- if section.settings.page_title -%}
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  {% endif %}
+  <div class="rte section_width">
+    {{ page.content }}
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section",
+
+"settings": [
+{
+      "type": "checkbox",
+      "id": "page_title",
+      "default": false,
+      "label": "Page Title"
+    },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      }
+]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+ 
