@@ -42,7 +42,7 @@
       {% assign products = productsArray | uniq | split:" " %}
       
       {% for product in products %}
-      {{product.title}}
+      {{product}}
       {% endfor %}
       
     </ul>
