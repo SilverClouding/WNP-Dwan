@@ -31,7 +31,7 @@
       {% assign itemhandle = "" %}
     {%- for order in customer.orders -%}
     {% for item in order.line_items %}
-      <li>  {{item.title}}</li>
+      <li>  {{item.handle }}</li>
       {% if itemhandle == item.handle %}
       {% break %}
       {% endif %}
