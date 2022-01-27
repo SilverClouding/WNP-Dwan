@@ -28,17 +28,15 @@
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
     <ul>
-      {% assign itemhandle = "" %}
+     
     {%- for order in customer.orders -%}
       {{forloop.index}}-order
     {% for item in order.line_items %}
       <li>  {{item.product.title }}</li>
-      {% assign loophandle = item.title  | handle %}
-      
-      {% assign itemhandle = loophandle %}
     {% endfor %}
     {%-endfor-%}
     </ul>
+    
   </div>
   
   <div class="order-table-right">
