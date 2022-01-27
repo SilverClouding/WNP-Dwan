@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_452.png",
+        "mobile_image": "shopify:\/\/shop_images\/1801_c876e961-33bd-42b9-b25b-62ebe4054922.jpg",
         "sec_class": "",
         "image_height": "large",
         "adapt_height_first_image": true,
