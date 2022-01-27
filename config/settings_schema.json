@@ -28,6 +28,11 @@
         "label": "Store locator link"
       },
       {
+        "type": "url",
+        "id": "reorde_link",
+        "label": "Reorder link"
+      },
+      {
         "type": "checkbox",
         "id": "minicart",
         "label": "Show minicart section in customise theme",
