@@ -13,7 +13,9 @@
 
   <div>
     <div>
+      {% comment %}
       <h2>{{ 'customer.orders.title' | t }}</h2>
+      {% endcomment %}
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
