@@ -26,7 +26,7 @@
                 <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                 <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
-<!--                 <th></th> -->
+                <th></th>
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -54,7 +54,7 @@
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_price | money_with_currency }}</td>
                   
-               {% comment %}   <td headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</td> {% endcomment %}
+               {% comment %}{% endcomment %}   <td headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</td> 
                 </tr>
               {%- endfor -%}
             </tbody>
