@@ -39,8 +39,9 @@
     
     
     {% assign products = productsArray  | split:" " | uniq %}
+    
     <div id="ProductGridContainer">
-      {%- paginate products by 12 -%}
+    
       <div class="collection ">
 
         <ul id="product-grid" data-id="{{ section.id }}" class=" grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max ">
@@ -63,9 +64,7 @@
 
           {% endfor %}
         </ul>
-        {%- if paginate.pages > 1 -%}
-        {% render 'pagination', paginate: paginate, anchor: '' %}
-        {%- endif -%}
+        
       </div>
       
       {% for product_handle in products %}
@@ -74,7 +73,6 @@
       {%- endfor -%}
 
 
-      {%- endpaginate -%}
     </div>
       
     
