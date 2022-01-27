@@ -20,7 +20,7 @@
       <p>Welcome back, {{customer.first_name}}</p>
 
       <div class="address-order">
-      <div>
+      <div class="order-table">
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <table role="table" class="order-history">
@@ -112,7 +112,7 @@
         {%- endif -%}
       {% endpaginate %}
       </div>
-      <div>
+      <div class="order-address">
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
