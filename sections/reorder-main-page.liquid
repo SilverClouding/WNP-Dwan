@@ -31,7 +31,7 @@
       {% assign itemhandle = "" %}
     {%- for order in customer.orders -%}
     {% for item in order.line_items %}
-      <li>  {{item.title  }}</li>
+      <li>  {{item.title | handle }}</li>
       {% assign loophandle = item.title | split:"-" | first | handle %}
       {% if itemhandle == loophandle %}
       {% break %}
