@@ -31,11 +31,12 @@
       {% assign itemhandle = "" %}
     {%- for order in customer.orders -%}
     {% for item in order.line_items %}
-      <li>  {{item.handle }}</li>
-      {% if itemhandle == item.handle %}
+      <li>  {{item.title |split:"-" |first }}</li>
+      {% assign loophandle = item.title | split:"-" | first | handle %}
+      {% if itemhandle == loophandle %}
       {% break %}
       {% endif %}
-      {% assign itemhandle = item.handle %}
+      {% assign itemhandle = loophandle %}
     {% endfor %}
     {%-endfor-%}
     </ul>
