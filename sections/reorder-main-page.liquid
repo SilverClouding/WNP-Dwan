@@ -30,6 +30,7 @@
     <ul>
       {% assign itemhandle = "" %}
     {%- for order in customer.orders -%}
+      {{forloop.index}}-order
     {% for item in order.line_items %}
       <li>  {{item.title | handle }}</li>
       {% assign loophandle = item.title  | handle %}
