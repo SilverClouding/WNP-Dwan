@@ -28,9 +28,14 @@
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
     <ul>
+      {% assign itemhandle = "" %}
     {%- for order in customer.orders -%}
     {% for item in order.line_items %}
       <li>  {{item.title}}</li>
+      {% if itemhandle == item.handle %}
+      {% break %}
+      {% endif %}
+      {% assign itemhandle = "" %}
     {% endfor %}
     {%-endfor-%}
     </ul>
