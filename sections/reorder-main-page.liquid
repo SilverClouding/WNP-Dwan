@@ -27,8 +27,8 @@
 
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
-     {%- for order in customer.orders -%}
-  {{order.line_items |json }}<br>
+    {%- for order in customer.orders -%}
+    {{order.line_items |json }}<br>
     {%-endfor-%}
   </div>
   
