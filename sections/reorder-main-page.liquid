@@ -35,11 +35,11 @@
       {{forloop.index}}-order
     {% for item in order.line_items %}
       <li>  {{item.product.title }}</li>
-      {% assign products = products | append: item.product.title  %}
+      {% assign products = products | append: "," | append: item.product.handle  %}
     {% endfor %}
     {%-endfor-%}
       
-      {{products |json}}
+      {{products | json}}
       
     </ul>
     
