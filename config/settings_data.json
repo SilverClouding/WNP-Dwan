@@ -2,6 +2,7 @@
   "current": {
     "main_link_list": "our-services",
     "link": "shopify:\/\/pages\/retail",
+    "reorde_link": "shopify:\/\/pages\/reorder-1",
     "minicart": true,
     "freeshipping": "1000",
     "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
