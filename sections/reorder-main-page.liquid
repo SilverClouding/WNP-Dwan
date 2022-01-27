@@ -27,7 +27,9 @@
 
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
-  
+     {%- for order in customer.orders -%}
+  {{order.line_items}}
+    {%-endfor-%}
   </div>
   
   <div class="order-table-right">
