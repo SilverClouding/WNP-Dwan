@@ -40,7 +40,7 @@
     
     {% assign products = productsArray  | split:" " | uniq %}
     <div id="ProductGridContainer">
-      {%- paginate collection.products by section.settings.products_per_page -%}
+      {%- paginate collection.products by 12 -%}
       <div class="collection ">
 
         <ul id="product-grid" data-id="{{ section.id }}" class=" grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max ">
