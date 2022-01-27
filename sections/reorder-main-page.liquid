@@ -27,14 +27,13 @@
 
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
-    <ul>
-     
+   
       {% assign productsArray = '' %}
       
     {%- for order in customer.orders -%}
-      {{forloop.index}}-order
+    
     {% for item in order.line_items %}
-      <li>  {{item.product.title }}</li>
+     
       {% assign products = products | append: " " | append: item.product.handle  %}
     {% endfor %}
     {%-endfor-%}
@@ -45,7 +44,7 @@
       {{product_handle}}
       {% endfor %}
       
-    </ul>
+    
     
   </div>
   
