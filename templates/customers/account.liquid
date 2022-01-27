@@ -113,7 +113,10 @@
       {% endpaginate %}
       </div>
       <div class="order-address">
+        {% comment %}
       <h2>{{ 'customer.account.details' | t }}</h2>
+        {% endcomment %}
+        <p class="title_address">Primary address</p>
 
       {{ customer.default_address | format_address }}
 
