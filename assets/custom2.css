@@ -789,4 +789,7 @@ h2.h0 {
 }
 
 
-
+.address-order {
+    display: flex;
+    justify-content: space-between;
+}
