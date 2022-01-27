@@ -28,7 +28,7 @@
 <div class="page-width page-width--narrow main-page-cont">
   <div class="left-side-product-items">
     {%- for order in customer.orders -%}
-    {{order.line_items[1].title }}<br>
+    {{order.line_items[forloop.index].title }}<br>
     {%-endfor-%}
   </div>
   
