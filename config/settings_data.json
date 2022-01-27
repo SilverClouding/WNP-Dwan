@@ -179,69 +179,13 @@
               "img": "shopify:\/\/shop_images\/prices.png",
               "svg_icon1_text": "<p>Prices are lower than or at least the same as competitors<\/p>"
             }
-          },
-          "c2bc4ee9-5138-4468-ac03-b115a1ef728e": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "50c3358a-8246-4794-9fb4-ecca54c6947b": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "c6f72396-a561-4b25-a88d-bbd4fa20facf": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "7bccbd55-9920-4084-9910-b30d7890f916": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "cc083626-7cba-4dd4-a393-cfe77941d687": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "75a1606f-63d4-4bf5-b3bd-32a31d70e526": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "75ce5059-e476-4c39-b064-9b33769c071f": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
-          },
-          "fd3be265-9184-41b3-8383-3a5dbb01179c": {
-            "type": "icon_text",
-            "settings": {
-              "svg_icon1_text": "<p>Free Delivery<\/p>"
-            }
           }
         },
         "block_order": [
           "6aad0037-229a-4620-bee4-1062816db5cf",
           "52d5e5ff-c33d-4062-b246-61780b9d829e",
           "c10c9531-0b07-4473-996c-723a1204f2b7",
-          "ce19bb72-db5f-4aed-80c7-96035e5ed571",
-          "c2bc4ee9-5138-4468-ac03-b115a1ef728e",
-          "50c3358a-8246-4794-9fb4-ecca54c6947b",
-          "c6f72396-a561-4b25-a88d-bbd4fa20facf",
-          "7bccbd55-9920-4084-9910-b30d7890f916",
-          "cc083626-7cba-4dd4-a393-cfe77941d687",
-          "75a1606f-63d4-4bf5-b3bd-32a31d70e526",
-          "75ce5059-e476-4c39-b064-9b33769c071f",
-          "fd3be265-9184-41b3-8383-3a5dbb01179c"
+          "ce19bb72-db5f-4aed-80c7-96035e5ed571"
         ],
         "settings": {
           "color_scheme": "background-1",
