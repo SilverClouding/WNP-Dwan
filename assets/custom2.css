@@ -898,6 +898,6 @@ p.title_address {
 
 .reorder-page .page-width {
     display: flex;
-    align-items: center;
+/*     align-items: center; */
     justify-content: space-between;
 }
