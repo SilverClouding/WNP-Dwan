@@ -34,9 +34,7 @@
     {% for item in order.line_items %}
       <li>  {{item.title | handle }}</li>
       {% assign loophandle = item.title  | handle %}
-      {% if itemhandle == loophandle %}
-      {% break %}
-      {% endif %}
+      
       {% assign itemhandle = loophandle %}
     {% endfor %}
     {%-endfor-%}
