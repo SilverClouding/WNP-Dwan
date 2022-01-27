@@ -887,3 +887,17 @@ p.title_address {
     padding: 17px 0;
     border-bottom: 0.01rem solid rgba(var(--color-foreground),.08);
 }
+
+.left-side-product-items {
+    width: 50%;
+}
+
+.order-table-right {
+    width: 50%;
+}
+
+.reorder-page .page-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

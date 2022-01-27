@@ -127,7 +127,7 @@
       "type": "video",
       "settings": {
         "heading": "Testing",
-        "text_alignment": "centre",
+        "text_alignment": "left",
         "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
