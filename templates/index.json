@@ -357,7 +357,7 @@
             "title": "",
             "text": "<p>We are firm advocates of pet adoption<\/p>",
             "button_label": "Adoption",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/services"
           }
         },
         "1636470578a33ad6f3-1": {
@@ -469,99 +469,77 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Can I track my order?",
-            "content": "<p>Yes, you can track the status your order by logging into the \"My Order\" section of our online store. Just click on your order history and you will be able to see which stage your delivery is at.<\/p>",
-            "page": "",
-            "icon": "none"
+            "content": "<p>Yes, you can track the status your order by logging into the \"My Order\" section of our online store. Just click on your order history and you will be able to see which stage your delivery is at.<\/p>"
           }
         },
         "dff0aac7-5075-4660-872e-9f4345bc5989": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do you sell pets?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "about-us",
-            "icon": "box"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "886f17c3-f7eb-4e19-864c-819fbe70926a": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Can I cancel or exchange my order?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "none"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "fc03c057-63d9-4c86-b78b-1b8be5ef0723": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Can I request for contactless delivery?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "53aab69f-4b9f-481a-b12a-ed1a8f09338b": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "I don't have a credit card, do you accept cash on delivery?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "8288b65b-8d59-4136-b899-4a72f1bc3a5e": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "What is your best dog food advice?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "2dbcd349-8a31-4f7e-a389-2b0e1d54ef5e": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "What is the best size for my dog?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "bfe3dabd-6520-4932-ba0f-af286f30331f": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do you offer bank transfer payments?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "2490d883-850c-45ff-9fc9-964475f17595": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do you ship overseas?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "6164e4da-8b3d-4dc0-bf8a-86426aeb4013": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do you deliver after 6pm?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         },
         "182f07f6-8752-455e-bf08-9092c8251343": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do I have to be home to receive the delivery?",
-            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>",
-            "page": "",
-            "icon": "check_mark"
+            "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
         }
       },
