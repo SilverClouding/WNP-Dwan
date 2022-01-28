@@ -832,9 +832,8 @@ h2.h0 {
 
   .reorder-btn{
     width: 100px;
-    height: 38px;
     display: inline-block;
-    padding: 12px 14px 9px;
+    padding: 8px 10px;
     margin: 0;
     line-height: 1;
     text-align: center;
@@ -843,7 +842,7 @@ h2.h0 {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 2px;
-    font-size: 13px;
+    font-size: 12px;
     background-color: #153a33;
     color: #ffffff;
     -webkit-transition: background-color 0.2s ease-out;
