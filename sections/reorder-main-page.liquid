@@ -111,7 +111,7 @@
       </div>
       <div role="rowgroup"  class="order-history-body">
         {%- for order in customer.orders -%}
-        <div role="row">
+     
           <div
               id="RowOrder"
               role="cell"
@@ -135,7 +135,7 @@
             {{ order.total_price | money_with_currency }}</div>
 
           {% comment %}{% endcomment %}   <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
-        </div>
+       
         {%- endfor -%}
       </div>
     </div>
