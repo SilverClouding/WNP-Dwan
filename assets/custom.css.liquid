@@ -7887,7 +7887,7 @@ select:focus, select:hover{
     top:39%; 
     left:50%;
     transform:translate(-50%, -39%);
-    z-index:9;
+    z-index:3;
     display:block;
     width:130px;
 /*     margin-left:1.2rem; */
@@ -7896,7 +7896,7 @@ select:focus, select:hover{
     padding-top:30px;
     position:relative;
   }
-  .product-grid .card-information__wrapper p{
+  .product-grid .card-information__wrapper p, #product-grid .card-information__wrapper p{
     position:absolute;
     top:0;
     width: 100%;
@@ -7909,7 +7909,8 @@ select:focus, select:hover{
     text-decoration:underline;
     font-family: 'Avenir LT Std';
   } 
-  .product-grid .card-information__wrapper p b{
+  .product-grid .card-information__wrapper p b,
+  #product-grid .card-information__wrapper p b{
     font-weight:800;
   }
 
@@ -7917,7 +7918,8 @@ select:focus, select:hover{
     .product-grid .card-information__wrapper {
       padding-top: 0;
     }
-    .product-grid .card-information__wrapper p{
+    .product-grid .card-information__wrapper p,
+    #product-grid .card-information__wrapper p{
       position:relative;
     }
   }
@@ -9915,17 +9917,19 @@ select:focus, select:hover{
     text-decoration:underline;
   }
 
-    @media(max-width:992px){
+  @media(max-width:992px){
     .left-side-product-items {
       width: 100% !important;
     }
- /*   .order-table-right {
+
+    .order-table-right {
       width: calc(100% - 0px)!important;
       padding-left:0px!important;
       border-left:none!important;
       overflow-x: auto;
     }
-    .reorder-page .page-width {
+
+   /*   .reorder-page .page-width {
       display: block!important;
     }
   h2.p-items-head{
