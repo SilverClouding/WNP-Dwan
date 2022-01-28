@@ -100,7 +100,7 @@
     <div role="table" class="order-history">
       <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
       <div role="rowgroup" class="order-history-head">
-        <div role="row">
+        <div role="row" class="order-history-head-inner">
           <div id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</div>
           <div id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</div>
           <div id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</div>
@@ -111,7 +111,7 @@
       </div>
       <div role="rowgroup"  class="order-history-body">
         {%- for order in customer.orders -%}
-        <div role="row">
+        <div role="row" class="order-history-body-inner">
           <div
               id="RowOrder"
               role="cell"
