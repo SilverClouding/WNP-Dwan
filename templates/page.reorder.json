@@ -5,6 +5,7 @@
       "settings": {
         "page_title": false,
         "heading": "Reorder Individual Items From Past Orders",
+        "rightheading": "Reorder All Items From A Past Order",
         "section_width": 100
       }
     }
