@@ -889,11 +889,11 @@ p.title_address {
 }
 
 .left-side-product-items {
-    width: 50%;
+    width: 45%;
 }
 
 .order-table-right {
-    width: calc(50% - 40px);
+    width: calc(55% - 40px);
   padding-left:40px;
   border-left:1px solid #d3d6d9;
 }
