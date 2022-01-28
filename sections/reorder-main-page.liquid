@@ -87,6 +87,9 @@
   </div>
   
   <div class="order-table-right">
+     {% if section.settings.heading != blank %}
+      <h2 class="p-items-head">{{ section.settings.heading }}</h2>
+      {% endif %}
     {% paginate customer.orders by 20 %}
     {%- if customer.orders.size > 0 -%}
     <table role="table" class="order-history">
