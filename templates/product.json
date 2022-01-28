@@ -66,7 +66,7 @@
           "type": "content",
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_1_title.value }}",
-            "text": "<p>Test Test Test<\/p>",
+            "text": "<p>Test Test Test<\/p><p>Hello Hello Hello<\/p>",
             "show_desc": true
           }
         },
