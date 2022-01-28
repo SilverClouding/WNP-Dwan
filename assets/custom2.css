@@ -893,7 +893,8 @@ p.title_address {
 }
 
 .order-table-right {
-    width: 50%;
+    width: calc(50% - 30px);
+  padding-left:30px;
 }
 
 .reorder-page .page-width {
