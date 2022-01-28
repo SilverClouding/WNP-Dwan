@@ -46,7 +46,9 @@
     {% assign products = productsArray  | split:" " | uniq %}
     
     <div id="ProductGridContainer">
-    
+      {% if section.settings.heading != blank %}
+      <h2 class="p-items-head">{{ section.settings.heading }}</h2>
+      {% endif %}
       <div class="collection ">
 
         <ul id="product-grid" data-id="{{ section.id }}" class=" grid grid--2-col negative-margin grid--2-col-tablet grid--one-third-max grid--2-col-desktop grid--quarter-max ">
@@ -152,6 +154,12 @@
       "default": false,
       "label": "Page Title"
     },
+	{
+		  "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+	},
 	{
         "type": "range",
         "id": "section_width",
