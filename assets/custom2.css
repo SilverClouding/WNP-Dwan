@@ -885,7 +885,7 @@ h2.h0 {
 .order-address{width:25%; padding:0 20px;}
 
 p.title_address {
-    padding: 17px 0;
+    padding: 8px 0;
     border-bottom: 0.01rem solid rgba(var(--color-foreground),.08);
 }
 
