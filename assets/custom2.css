@@ -853,7 +853,9 @@ h2.h0 {
     transition: background-color 0.2s ease-out;
   }
   .reorder-btn:hover{
-    background-color: #fdb819;
+       background: #fff;
+    border: 1px solid #44444d;
+    color: #44444d;
   }
 
 
