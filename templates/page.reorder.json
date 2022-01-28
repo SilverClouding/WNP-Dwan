@@ -4,8 +4,8 @@
       "type": "reorder-main-page",
       "settings": {
         "page_title": false,
-        "heading": "Reorder Individual Items From Past Orders",
-        "rightheading": "Reorder All Items From A Past Order",
+        "heading": "Reorder individual items from past orders",
+        "rightheading": "Reorder all Items from a past order",
         "section_width": 100
       }
     }
