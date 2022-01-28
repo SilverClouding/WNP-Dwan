@@ -139,6 +139,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "page_title": false,
         "section_width": 100
