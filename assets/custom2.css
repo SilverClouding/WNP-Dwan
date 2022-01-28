@@ -895,6 +895,7 @@ p.title_address {
 .order-table-right {
     width: calc(50% - 30px);
   padding-left:30px;
+  border-left:1px solid #d3d6d9;
 }
 
 .reorder-page .page-width {
