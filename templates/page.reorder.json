@@ -3,6 +3,9 @@
     "main": {
       "type": "reorder-main-page",
       "settings": {
+        "page_title": false,
+        "heading": "Reorder Individual Items From Past Orders",
+        "section_width": 100
       }
     }
   },
