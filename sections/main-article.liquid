@@ -177,7 +177,8 @@
   <ul class="grid col_center grid--1-col grid--3-col-tablet" role="list">
     <li style="width:20%;" class="button_item">
 
-      <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--secondary  color-background-1" aria-disabled="true" role="link" href="#">Adopt me</a>  
+      <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--secondary  color-background-1" aria-disabled="true" role="link"
+         href="{{ article.metafields.global.adapt_link.value }}"> {% if article.metafields.global.adapt_title.value != blank %}{{article.metafields.global.adapt_title.value}} {% else %}Adopt me {% endif %}</a>  
 
    
 
