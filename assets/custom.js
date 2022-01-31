@@ -758,7 +758,7 @@ setTimeout(function(){
 
 $(function(){
      var fancyboxVisible = false;
-        $(document).on('click', '.fancybox-overlay', function() {
+        $(document).on('click', '.fancybox-opened', function() {
            if(fancyboxVisible) {
                $('html, body').removeClass('fancybox-lock');
                fancyboxVisible = false;
