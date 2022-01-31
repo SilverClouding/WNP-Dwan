@@ -182,7 +182,8 @@
 
    
 
-    <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--primary  color-background-1" aria-disabled="true" role="link" href="/blogs/{{blog.handle}}">View all</a>  
+    <a style="width:100%;  padding: 15px 20px;   min-width: 100%;" class="button button--primary  color-background-1" aria-disabled="true" role="link" 
+       href="{% if article.metafields.global.view_link.value != blnak %}{{ article.metafields.global.view_link.value }}{% else %}/blogs/{{blog.handle}}{% endif %}">View all</a>  
 
     </li>
   </ul>
