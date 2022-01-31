@@ -754,20 +754,3 @@ setTimeout(function(){
   }
 
 }, 5000); //wait for atleast  3 seconds before console logging
-
-
-$(function(){
-     var fancyboxVisible = false;
-        $(document).on('click', '.fancybox-opened', function() {
-           if(fancyboxVisible) {
-               $('html, body').removeClass('fancybox-lock');
-               fancyboxVisible = false;
-           } else {
-               $('html, body').addClass('fancybox-lock');
-               fancyboxVisible = true;
-           }
-        });
-});
-
-
-
