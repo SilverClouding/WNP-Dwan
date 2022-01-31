@@ -23,7 +23,7 @@
           "type": "heading",
           "settings": {
             "heading": "#endthetrade",
-            "heading_size": "h0"
+            "heading_size": "h2"
           }
         },
         "bf9aedc0-a61a-406f-b3f7-0dc29446da30": {
@@ -40,7 +40,7 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "sec_class": "events-con"
+        "sec_class": "events-con endthetrade"
       }
     },
     "164006682368642e55": {
