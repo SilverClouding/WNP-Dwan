@@ -548,7 +548,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
       }, 3000);  
       //quickview slider code end
-     
+      
 //       additional ad code 
       var extraItemHtml = `<li class="grid__item text-image-grid-item">
 
@@ -586,6 +586,12 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		if (!data) data = this.data;
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
 	};
+  
+  
+  
+  
+  
+  
 
 	/************************** END BUILD TOOLBAR **************************/
 })();
