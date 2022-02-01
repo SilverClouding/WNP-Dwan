@@ -756,8 +756,3 @@ if(window._swat){
 // }, 5000); //wait for atleast  3 seconds before console logging
 
 
-console.log(this);
-FilterClearButton.inject(this);
-FilterClearButton.prototype.isBindEvents = function() {
-  console.log($(this));
-};
