@@ -590,7 +590,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
   
 //   quickshop
   console.log(this.onChangeVariant);
-    BoostOTP.inject(this);
+//     BoostOTP.inject(this);
 	QuickView.prototype.bindQuickViewModalEvents = function() {
 		// Bind changing options with enter/space key for ADA
 // 		jQ('.boost-pfs-swatch-element label').on('keydown', (event) => {
