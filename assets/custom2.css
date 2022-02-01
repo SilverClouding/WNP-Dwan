@@ -444,12 +444,15 @@ a.open_popup_minq_close {
 .qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart:after {
   content:"Add to wishlist";
   padding-left: 5px;
-    font-size: 10px;
+     font-weight:300;
+  line-height:22px;
+  color:#44444d!important;
     letter-spacing: 0px;
 }
 
 .qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:before {
     content: "";
+  color:#F5694D !important;
 }
 
 .qv-product-options_html .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
