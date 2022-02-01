@@ -9598,9 +9598,21 @@ select:focus, select:hover{
     .boost-pfs-modal-content .product__media-list.qv-product-main-images .slick-slide{
       height:380px;
     } 
-
   }
-
+  @media(min-width:990px)
+  .boost-pfs-modal-backdrop .boost-pfs-modal-container{
+    height:100% !important;
+  }
+  .boost-pfs-modal-backdrop .boost-pfs-modal-container .boost-pfs-modal-content{
+    vertical-align:middle !important;
+  }
+  .boost-pfs-modal-container .boost-pfs-modal-content{
+  top:unset !important;
+  }
+}
+  
+  
+  
 
   /* search page  */
   .boost-pfs-search-result-toolbar.page-width{
