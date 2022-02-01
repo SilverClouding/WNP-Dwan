@@ -718,7 +718,7 @@ div#article_page .buttons-section ul li {
   position: absolute;
   top: 27%!important;
   left: 2.4rem;
-  z-index: 9;
+  z-index:2;
   display:inherit;
   width: 130px;
   margin: 0 auto!important;
