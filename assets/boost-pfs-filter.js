@@ -598,45 +598,46 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 				jQ(event.target).click();
 			}
 		});
-		if (this.isGetQuickViewOption) {
-			if (Settings.getSettingValue('general.enableAjaxCart')) {
-				this.parent.$element.find('#boost-pfs-quickview-cart-form-' + this.parent.data.id).on('submit', this.onClickAddToCart.bind(this));
-			}
+// 		if (this.isGetQuickViewOption) {
+// 			if (Settings.getSettingValue('general.enableAjaxCart')) {
+// 				this.parent.$element.find('#boost-pfs-quickview-cart-form-' + this.parent.data.id).on('submit', this.onClickAddToCart.bind(this));
+// 			}
 
-			// Bind close
-			jQ('.boost-pfs-select-option-close').on('click', function () {
-				jQ('.boost-pfs-select-option-wrapper').hide();
-				jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
-				jQ('body').removeClass('boost-pfs-select-option-show-body');
-			});
+// 			// Bind close
+// 			jQ('.boost-pfs-select-option-close').on('click', function () {
+// 				jQ('.boost-pfs-select-option-wrapper').hide();
+// 				jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
+// 				jQ('body').removeClass('boost-pfs-select-option-show-body');
+// 			});
 
-			// Bind trap focus
-			jQ('.boost-pfs-quickview-cart-btn, .boost-pfs-select-option-close').on('keydown', this.trapFocus.bind(this));
+// 			// Bind trap focus
+// 			jQ('.boost-pfs-quickview-cart-btn, .boost-pfs-select-option-close').on('keydown', this.trapFocus.bind(this));
 
-			// Focus inside quickview
-			jQ('.boost-pfs-select-option-close').focus();
+// 			// Focus inside quickview
+// 			jQ('.boost-pfs-select-option-close').focus();
 
-			// Bind changing options
-			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
+// 			// Bind changing options
+// 			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
 
-		} else {
-			this.initImageSlider();
-			jQ('.boost-pfs-quickview-close').on('click', this.closeModal.bind(this));
+// 		} 
+//       else {
+// 			this.initImageSlider();
+// 			jQ('.boost-pfs-quickview-close').on('click', this.closeModal.bind(this));
 
-			// Bind changing options
-			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
-			jQ('.boost-pfs-quickview-select-option-color').on('change', this.onChangeVariant.bind(this));
+// 			// Bind changing options
+// 			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
+// 			jQ('.boost-pfs-quickview-select-option-color').on('change', this.onChangeVariant.bind(this));
 
-			if (Settings.getSettingValue('general.enableAjaxCart')) {
-				jQ('#boost-pfs-quickview-cart-form').on('submit', this.onClickAddToCart.bind(this));
-			}
+// 			if (Settings.getSettingValue('general.enableAjaxCart')) {
+// 				jQ('#boost-pfs-quickview-cart-form').on('submit', this.onClickAddToCart.bind(this));
+// 			}
 
-			// Bind trap focus
-			jQ('.boost-pfs-quickview-view-full, .boost-pfs-quickview-close').on('keydown', this.trapFocus.bind(this));
+// 			// Bind trap focus
+// 			jQ('.boost-pfs-quickview-view-full, .boost-pfs-quickview-close').on('keydown', this.trapFocus.bind(this));
 
-			// Focus inside quickview
-			jQ('.boost-pfs-quickview-close').focus();
-		}
+// 			// Focus inside quickview
+// 			jQ('.boost-pfs-quickview-close').focus();
+// 		}
 
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
           console.log("initialized")
