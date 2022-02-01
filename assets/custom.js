@@ -756,4 +756,4 @@ if(window._swat){
 // }, 5000); //wait for atleast  3 seconds before console logging
 
 
-console.log(BoostOTP);
+console.log(this);
