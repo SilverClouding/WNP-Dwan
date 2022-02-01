@@ -588,8 +588,84 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	};
   
   
-  
-  
+//   quickshop
+    BoostOTP.inject(this);
+	QuickView.prototype.bindQuickViewModalEvents = function() {
+		// Bind changing options with enter/space key for ADA
+		jQ('.boost-pfs-swatch-element label').on('keydown', (event) => {
+			if (event.target && (event.keyCode == 13 || event.keyCode == 32)) {
+				jQ(event.target).click();
+			}
+		});
+		if (this.isGetQuickViewOption) {
+			if (Settings.getSettingValue('general.enableAjaxCart')) {
+				this.parent.$element.find('#boost-pfs-quickview-cart-form-' + this.parent.data.id).on('submit', this.onClickAddToCart.bind(this));
+			}
+
+			// Bind close
+			jQ('.boost-pfs-select-option-close').on('click', function () {
+				jQ('.boost-pfs-select-option-wrapper').hide();
+				jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
+				jQ('body').removeClass('boost-pfs-select-option-show-body');
+			});
+
+			// Bind trap focus
+			jQ('.boost-pfs-quickview-cart-btn, .boost-pfs-select-option-close').on('keydown', this.trapFocus.bind(this));
+
+			// Focus inside quickview
+			jQ('.boost-pfs-select-option-close').focus();
+
+			// Bind changing options
+			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
+
+		} else {
+			this.initImageSlider();
+			jQ('.boost-pfs-quickview-close').on('click', this.closeModal.bind(this));
+
+			// Bind changing options
+			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
+			jQ('.boost-pfs-quickview-select-option-color').on('change', this.onChangeVariant.bind(this));
+
+			if (Settings.getSettingValue('general.enableAjaxCart')) {
+				jQ('#boost-pfs-quickview-cart-form').on('submit', this.onClickAddToCart.bind(this));
+			}
+
+			// Bind trap focus
+			jQ('.boost-pfs-quickview-view-full, .boost-pfs-quickview-close').on('keydown', this.trapFocus.bind(this));
+
+			// Focus inside quickview
+			jQ('.boost-pfs-quickview-close').focus();
+		}
+
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
+          console.log("initialized")
+        }); 
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
+          dots: false,
+          arrows: true,
+          respondTo: 'min',
+          useTransform: false,
+          asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav'
+        });
+
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').on('init', function(event, slick){
+          console.log("initialized")
+        });
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner  .slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          arrows: false,
+        });
+
+        jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick('setPosition');
+
+
+        window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+	}
   
   
 
