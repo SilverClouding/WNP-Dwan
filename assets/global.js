@@ -657,7 +657,7 @@ class VariantSelects extends HTMLElement {
        }
       
 
-     console.log(this);
+     console.log("this is all variant-radios");
     
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
