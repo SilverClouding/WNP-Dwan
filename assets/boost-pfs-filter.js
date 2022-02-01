@@ -593,11 +593,11 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
     BoostOTP.inject(this);
 	QuickView.prototype.bindQuickViewModalEvents = function() {
 		// Bind changing options with enter/space key for ADA
-		jQ('.boost-pfs-swatch-element label').on('keydown', (event) => {
-			if (event.target && (event.keyCode == 13 || event.keyCode == 32)) {
-				jQ(event.target).click();
-			}
-		});
+// 		jQ('.boost-pfs-swatch-element label').on('keydown', (event) => {
+// 			if (event.target && (event.keyCode == 13 || event.keyCode == 32)) {
+// 				jQ(event.target).click();
+// 			}
+// 		});
 // 		if (this.isGetQuickViewOption) {
 // 			if (Settings.getSettingValue('general.enableAjaxCart')) {
 // 				this.parent.$element.find('#boost-pfs-quickview-cart-form-' + this.parent.data.id).on('submit', this.onClickAddToCart.bind(this));
