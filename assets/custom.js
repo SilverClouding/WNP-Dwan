@@ -759,5 +759,5 @@ if(window._swat){
 console.log(this);
 FilterClearButton.inject(this);
 FilterClearButton.prototype.isBindEvents = function() {
-  console.log($(this).value());
+  console.log($(this));
 });
