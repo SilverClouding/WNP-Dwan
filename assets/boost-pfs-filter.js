@@ -422,7 +422,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 				// Build content
 				var sortingItemsHtml = '';
 				for (var k in sortingArr) {
-                  console.log('paramSort-'+paramSort+',k-'+k);
+//                   console.log('paramSort-'+paramSort+',k-'+k);
 					var isSelected = ''
 					if(paramSort == k) {
 						isSelected = 'selected="selected"'
