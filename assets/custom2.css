@@ -724,7 +724,7 @@ div#article_page .buttons-section ul li {
 .boost-pfs-filter-products .grid__item:hover .quick-view-button{
   position: absolute;
   top: 27%!important;
-  left: 2.4rem;
+  left: 1rem;
   z-index:2;
   display:inherit;
   width: 130px;
