@@ -643,7 +643,23 @@ console.log('click qv');
         console.log('close');
       },
       'beforeLoad': function () {
+		$('.qv-product-main-images').slick({
+          dots: false,
+          arrows: true,
+          respondTo: 'min',
+          useTransform: false,
+          asNavFor: '.slider-nav'
+        });
 
+        $('.slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.qv-product-main-images',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          arrows: false,
+        });
 
       }
 
