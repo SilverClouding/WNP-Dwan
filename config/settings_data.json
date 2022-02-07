@@ -256,11 +256,11 @@
           "mega-menu-2-0": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
-              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
-              "btn_text": "More about loppy",
-              "button_link": "#"
+              "image_bottom": "shopify:\/\/shop_images\/New_Online_R-02.jpg",
+              "image_caption_bottom": "For Your Kittens",
+              "richtext_bottom": "<p>Test - Grab the essentials for the newbies! Meow!<\/p>",
+              "btn_text": "Shop Now",
+              "button_link": "shopify:\/\/collections\/new-arrivals"
             }
           }
         },
