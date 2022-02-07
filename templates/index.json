@@ -71,7 +71,7 @@
             "button_label_1": "Test 1",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "btn_bg_color": "#ffffff",
             "button_label_2": "Test 2",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -82,7 +82,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/CNY_banner_DOG_Homepage_Mobile_732x340_a9373cf7-8039-44dd-89f9-6e33b2cf4beb.jpg",
             "image_height": "large",
-            "two_col_banner": true,
+            "two_col_banner": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
             "image_overlay_opacity": 0,
@@ -95,7 +95,7 @@
             "button_label_1": "Test",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "btn_bg_color": "#ffffff",
             "button_label_2": "Test",
             "button_link_2": "",
             "button_style_secondary_2": false
