@@ -52,20 +52,11 @@
               "text": "<p><strong>Welcome<\/strong> to our store<\/p>",
               "link": ""
             }
-          },
-          "44c0f945-079f-411c-b61f-657e41cacdbc": {
-            "type": "announcement",
-            "settings": {
-              "icon": "",
-              "text": "<p>TEST -  Free Poo Bags to New Customer <\/p>",
-              "link": ""
-            }
           }
         },
         "block_order": [
           "8bdda846-35bb-495c-a642-c491e301205b",
-          "1b9b9e9f-4587-4a95-96d1-6c9f563ff5f0",
-          "44c0f945-079f-411c-b61f-657e41cacdbc"
+          "1b9b9e9f-4587-4a95-96d1-6c9f563ff5f0"
         ],
         "settings": {
           "show_n_window": false,
@@ -237,11 +228,11 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
-              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
-              "btn_text": "More about loppy",
-              "button_link": "shopify:\/\/collections\/alfa-pet"
+              "image_bottom": "shopify:\/\/shop_images\/New_Online_R-01.jpg",
+              "image_caption_bottom": "NEW YEAR NEW ARRIVALS",
+              "richtext_bottom": "<p>testing<\/p>",
+              "btn_text": "Shop Now",
+              "button_link": "shopify:\/\/collections\/new-arrivals"
             }
           }
         },
