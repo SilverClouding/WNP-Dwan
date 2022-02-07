@@ -293,11 +293,23 @@
             "button_label": "Shop Cats",
             "button_link": "#"
           }
+        },
+        "0b0bc208-f580-4995-90c4-9232c2fd9c6f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bunny-statue-watches-eggs.jpg",
+            "img_link": "",
+            "title": "",
+            "text": "<p>testing<br\/>testing<\/p>",
+            "button_label": "Shop Small Animals",
+            "button_link": "shopify:\/\/pages\/small-animals"
+          }
         }
       },
       "block_order": [
         "16364715337b2e2d80-0",
-        "16364715337b2e2d80-1"
+        "16364715337b2e2d80-1",
+        "0b0bc208-f580-4995-90c4-9232c2fd9c6f"
       ],
       "settings": {
         "title": "",
