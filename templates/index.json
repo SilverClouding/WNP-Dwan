@@ -616,6 +616,13 @@
             "heading": "Do I have to be home to receive the delivery?",
             "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
           }
+        },
+        "422a5073-ab9d-490c-a08e-065f1f34917d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "test",
+            "content": "<p>test<\/p>"
+          }
         }
       },
       "block_order": [
@@ -629,7 +636,8 @@
         "bfe3dabd-6520-4932-ba0f-af286f30331f",
         "2490d883-850c-45ff-9fc9-964475f17595",
         "6164e4da-8b3d-4dc0-bf8a-86426aeb4013",
-        "182f07f6-8752-455e-bf08-9092c8251343"
+        "182f07f6-8752-455e-bf08-9092c8251343",
+        "422a5073-ab9d-490c-a08e-065f1f34917d"
       ],
       "settings": {
         "title": "Frequently asked questions",
