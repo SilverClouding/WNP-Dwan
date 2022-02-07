@@ -89,7 +89,7 @@
             "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
             "show_text_below": true,
-            "heading": "Image banner",
+            "heading": "",
             "heading_size": "medium",
             "text": "Test",
             "button_label_1": "Test",
