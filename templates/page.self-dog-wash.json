@@ -317,7 +317,7 @@
         "title": "Featured Products",
         "collection": "dog-grooming",
         "collection2": "",
-        "products_to_show": 6,
+        "products_to_show": 12,
         "show_view_all": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
