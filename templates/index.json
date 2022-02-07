@@ -391,12 +391,25 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "294b9d7d-dd37-4226-a267-add84b258606": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC05037_Cricket-E.jpg",
+            "image_link": "",
+            "preheading": "#ADOPTDONTSHOP",
+            "heading": "Check Out Our Temporary Residents",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/services"
+          }
         }
       },
       "block_order": [
         "16365383186b9876cd-0",
         "16365383186b9876cd-1",
-        "16365383186b9876cd-2"
+        "16365383186b9876cd-2",
+        "294b9d7d-dd37-4226-a267-add84b258606"
       ],
       "settings": {
         "height": "adapt",
