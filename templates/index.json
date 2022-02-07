@@ -62,7 +62,7 @@
             "desktop_text_box_position": "center",
             "show_text_box": true,
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
+            "color_scheme": "accent-1",
             "stack_images_on_mobile": true,
             "show_text_below": true,
             "heading": "Test",
