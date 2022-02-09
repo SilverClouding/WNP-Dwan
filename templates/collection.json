@@ -91,7 +91,9 @@
     "1644409022afe0adc2": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{collection.metafields.collection_field.collection_bottom_description.html}}"
+        "custom_liquid": "{{collection.metafields.collection_field.collection_bottom_description.html}}",
+        "color_scheme": "background-1",
+        "full_width": false
       }
     }
   },
