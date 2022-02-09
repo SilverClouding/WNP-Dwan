@@ -312,7 +312,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         console.log('if Newtag'+NewTag);
         saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
       }else{
-         console.log('else Newtag'+saleLabel);
+         console.log('else saleLabel'+saleLabel);
         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
           saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
         }
