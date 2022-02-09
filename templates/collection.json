@@ -62,6 +62,7 @@
     },
     "16425886176678f54c": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1642588617446ec0b9-0": {
           "type": "heading",
@@ -86,12 +87,19 @@
         "full_width": false,
         "sec_class": "text-left get-the-best"
       }
+    },
+    "1644409022afe0adc2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{collection.metafields.collection_field.collection_bottom_description.html}}"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "1642588501f5f948df",
-    "16425886176678f54c"
+    "16425886176678f54c",
+    "1644409022afe0adc2"
   ]
 }
