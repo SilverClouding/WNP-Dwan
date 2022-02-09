@@ -312,12 +312,11 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         console.log('if Newtag'+NewTag);
         saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
       }else{
-         saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
-       
-//         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
-//           console.log('else saleLabel'+saleLabel);
-//           saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
-//         }
+         
+        if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && soldOut) {
+          console.log('else saleLabel'+saleLabel);
+          saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
+        }
       }
 
       return saleLabel;
