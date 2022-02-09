@@ -394,6 +394,7 @@
         },
         "294b9d7d-dd37-4226-a267-add84b258606": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC05037_Cricket-E.jpg",
             "image_link": "",
