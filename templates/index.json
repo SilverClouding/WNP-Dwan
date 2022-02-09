@@ -117,9 +117,9 @@
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best sellerss",
-        "collection": "for-cats-test",
-        "collection2": "dogs-only",
+        "title": "What's In Store",
+        "collection": "new-arrivals",
+        "collection2": "dog-best-sellers",
         "products_to_show": 12,
         "show_view_all": false,
         "image_ratio": "square",
