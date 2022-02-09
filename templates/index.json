@@ -117,7 +117,7 @@
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "What’s in store",
+        "title": "Best sellerss",
         "collection": "for-cats-test",
         "collection2": "dogs-only",
         "products_to_show": 12,
