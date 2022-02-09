@@ -293,31 +293,33 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	
   	function buildSaleLabel(data) {
         
-        //       newtag
-        var data_tagArray = data.tags;
-        var NewTag = false;
-//         console.log(data_tagArray);
-        data_tagArray.forEach(function(v,i){
-          if(v == 'New'){
-            NewTag = true;
-//               console.log(v+"-"+i);
-          }
-
-        });
-
-        // Build Sale label
-        var saleLabel = '';
-//         console.log(NewTag);
-        if(NewTag){
-          saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
-        }else{
-          if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
-            saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
-          }
+      //       newtag
+      var data_tagArray = data.tags;
+      var NewTag = false;
+      //         console.log(data_tagArray);
+      data_tagArray.forEach(function(v,i){
+        if(v == 'New'){
+          NewTag = true;
+          //               console.log(v+"-"+i);
         }
-        
-        return saleLabel;
+
+      });
+
+      // Build Sale label
+      var saleLabel = '';
+      //         console.log(NewTag);
+      if(NewTag){
+        console.log('if Newtag'+NewTag);
+        saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
+      }else{
+         console.log('else Newtag'+saleLabel);
+        if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale && !soldOut) {
+          saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
+        }
       }
+
+      return saleLabel;
+    }
 
 	function buildReview(data) {
 		var html = '';
