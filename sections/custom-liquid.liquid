@@ -1,4 +1,17 @@
-{{ section.settings.custom_liquid }}
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="{% unless section.settings.full_width %}page-width{% endunless %} {{ section.settings.sec_class }}">
+  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+    <div class="rich-text__blocks">
+      {{ section.settings.custom_liquid }}
+
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
