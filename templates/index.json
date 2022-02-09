@@ -100,13 +100,37 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "d918db71-4170-4b1e-b5e0-bdb4d4067dd6": {
+          "type": "heading",
+          "settings": {
+            "image_height": "medium",
+            "two_col_banner": false,
+            "desktop_text_box_position": "center",
+            "show_text_box": true,
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true,
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "3f81934b-837c-4b0b-a096-9d30503c5615",
         "4eb85f4a-298e-4700-bc92-339f46f1932f",
         "3cbe7d2c-90b1-4bed-8434-a2112240a512",
-        "8085e367-ca9c-4750-a2ca-6476a15bd6c9"
+        "8085e367-ca9c-4750-a2ca-6476a15bd6c9",
+        "d918db71-4170-4b1e-b5e0-bdb4d4067dd6"
       ],
       "settings": {
         "showpagination": true,
