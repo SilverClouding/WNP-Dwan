@@ -308,6 +308,9 @@ body.page-your-shopping-cart {
   
   {% if section.settings.continue_link != blank %}
   <a href="{{section.settings.continue_link}}" class="link button-label">{{ 'general.continue_shopping' | t }}</a>
+  {% else %}
+ 
+  <div class="link button-label">{{ 'general.continue_shopping' | t }}</div>
   {% endif %}
 
 </div>
