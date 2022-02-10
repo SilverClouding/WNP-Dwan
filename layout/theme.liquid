@@ -348,7 +348,7 @@ ratingSnippet("ruk_rating_snippet",{
 		YOU MUST CHANGE THE YOUR_SECRET_KEY VALUE BELOW TO SOMETHING ELSE.
 		The value will look something like this: 30ab3459e46e7b209b45dba8378fcbba67297304
 		*/
-        var customerCookieValue = {{ customer.id | hmac_sha256: "YOUR_SECRET_KEY" | json }};
+        var customerCookieValue = {{ customer.id | hmac_sha256: "30ab3459e46e7b209b45dba8378fcbba67297304" | json }};
 
         /* A console logging function */
         var log = function(a){
