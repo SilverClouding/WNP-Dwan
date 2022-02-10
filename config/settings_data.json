@@ -65,6 +65,19 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "0b19743b-c62e-4eac-85b1-94998ba0691e": {
+            "type": "announcement",
+            "settings": {
+              "icon": "",
+              "text": "<p>Get <strong>FREE <\/strong>Delivery with <strong>purchases over $100!<\/strong><\/p>",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "0b19743b-c62e-4eac-85b1-94998ba0691e"
+        ],
         "settings": {
           "show_n_window": false,
           "announcement_color_scheme": "accent-1",
