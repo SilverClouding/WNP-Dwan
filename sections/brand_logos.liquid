@@ -32,6 +32,7 @@
                    
                 {% if block.settings.image != blank %}
                <div class="media media--transparent">
+                 <a href="{% if block.settings.img_link %}{% endif %}">
                 <img
                      srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
                              {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
@@ -46,7 +47,7 @@
                      height="{{ block.settings.image.height }}"
                      width="{{ block.settings.image.width }}"
                      loading="lazy"
-                     >
+                     ></a>
                  </div>
                 {% else %}
                <div> {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}</div>
