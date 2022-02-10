@@ -3,7 +3,7 @@
     "main_link_list": "our-services",
     "link": "shopify:\/\/pages\/retail",
     "reorde_link": "shopify:\/\/pages\/reorder-1",
-    "minicart": true,
+    "minicart": false,
     "freeshipping": "300",
     "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
     "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
@@ -471,6 +471,7 @@
           "654b495c-c1b2-4bc9-a662-6b1ac9bb0242"
         ],
         "settings": {
+          "continue_link": ""
         }
       },
       "newsletter-popup": {
