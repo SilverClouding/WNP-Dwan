@@ -207,13 +207,13 @@
     {% section 'newsletter-popup' %}
     {% endunless %}
     
-    {% comment %}
+    {% comment %}{% endcomment %}
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
       {% section 'cart-items' %}
     </div>
     {% endif %}
-    {% endcomment %}
+    
   
     <script>
 //       jQuery('[id^=qv_]').filter((idx,element)=>{
