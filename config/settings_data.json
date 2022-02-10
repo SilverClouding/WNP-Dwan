@@ -65,28 +65,6 @@
       },
       "header": {
         "type": "header",
-        "blocks": {
-          "4612801f-2248-42e2-a72a-ad76d2c2ba8b": {
-            "type": "announcement",
-            "settings": {
-              "icon": "",
-              "text": "<p>Welcome to our store<\/p>",
-              "link": ""
-            }
-          },
-          "93902d1d-5604-4444-a41a-7ef7394a6d4c": {
-            "type": "announcement",
-            "settings": {
-              "icon": "",
-              "text": "<p>Welcome to our store<\/p>",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "4612801f-2248-42e2-a72a-ad76d2c2ba8b",
-          "93902d1d-5604-4444-a41a-7ef7394a6d4c"
-        ],
         "settings": {
           "show_n_window": false,
           "announcement_color_scheme": "accent-1",
