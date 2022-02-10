@@ -398,6 +398,7 @@ ratingSnippet("ruk_rating_snippet",{
           xhr.onload = function() {
             if (xhr.status === 200) {
               var cartJson = JSON.parse(xhr.responseText);
+              console.log(cartJson);
               if(cartJson && cartJson.item_count){ 
 
                 /* 
