@@ -59,8 +59,11 @@
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+               {% if block.settings.img_link != blank %}
                   <a href="{{ block.settings.img_link }}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    {% endif %}
+                 
+                    <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                     
                        {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
@@ -81,8 +84,13 @@
                       width="{{ block.settings.image.width }}"
                       loading="lazy"
                          >
-                  </div></a>
-                </div>
+                  </div>
+              
+                 {% if block.settings.img_link != blank %}     
+                  </a>
+                 {% endif %}
+              
+              </div>
               {% else %}
               
                <div> {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}</div>
