@@ -73,14 +73,23 @@
               "text": "<p>Get <strong>FREE <\/strong>Delivery with <strong>purchases over $100!<\/strong><\/p>",
               "link": ""
             }
+          },
+          "02103d41-185d-49b8-bac5-906845e181e9": {
+            "type": "announcement",
+            "settings": {
+              "icon": "",
+              "text": "<p>Welcome to our<strong> store<\/strong><\/p>",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "0b19743b-c62e-4eac-85b1-94998ba0691e"
+          "0b19743b-c62e-4eac-85b1-94998ba0691e",
+          "02103d41-185d-49b8-bac5-906845e181e9"
         ],
         "settings": {
           "show_n_window": false,
-          "announcement_color_scheme": "accent-1",
+          "announcement_color_scheme": "accent-2",
           "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/logo.png",
           "sticky_logo": "shopify:\/\/shop_images\/sticky-logo.png",
