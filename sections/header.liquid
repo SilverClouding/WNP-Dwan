@@ -148,7 +148,7 @@
 </svg>
 
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ section.shopify_attributes }}>
+  <div class="announcement-bar color-{{ section.settings.announcement_color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ section.shopify_attributes }}>
   <div class="page-width announcement-bar-con swiper {% if section.blocks.size > 1 %}announcement_text_slider{% endif %}">
     <div class="announcement_content-wrap swiper-wrapper">
     {%- for block in section.blocks -%}
