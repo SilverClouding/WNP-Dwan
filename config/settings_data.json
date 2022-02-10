@@ -21,7 +21,7 @@
     "mega_menu_2": true,
     "mega_menu_3": true,
     "mega_menu_4": true,
-    "mega_menu_5": true,
+    "mega_menu_5": false,
     "mega_menu_6": true,
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
