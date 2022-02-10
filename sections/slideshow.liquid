@@ -84,7 +84,8 @@
              >
       </div>
       {%- endif -%}
-      <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
+      
+      <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width {% if block.settings.banner_content %}small-hide{% endif%}">
         <div class="banner__box color-{{ block.settings.color_scheme }}">
 
           <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
@@ -226,7 +227,7 @@
 	{
       "type": "checkbox",
       "id": "banner_content",
-      "label": "Banner Content"
+      "label": "Hide Banner Content On Mobile"
     },
     {
       "type": "checkbox",
