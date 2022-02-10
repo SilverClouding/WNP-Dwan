@@ -305,8 +305,10 @@ body.page-your-shopping-cart {
   <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
     <button class="button button--primary button--full-width" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
   </form>
+  
+  {% if section.settings.continue_link != blank %}
   <a href="{{section.settings.continue_link}}" class="link button-label">{{ 'general.continue_shopping' | t }}</a>
-
+  {% endif %}
 
 </div>
 {% for block in section.blocks %}
