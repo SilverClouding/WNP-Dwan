@@ -166,7 +166,9 @@
     "163903484555fca6d9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>Size of Dog<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>Size of Dog<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1638442037a72cd96a": {
@@ -212,7 +214,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_6.jpg",
-            "img_link": "",
+            "img_link": "#",
             "title": "",
             "text": "",
             "button_label": "",
