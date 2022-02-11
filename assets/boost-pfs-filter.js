@@ -150,7 +150,7 @@ var boostPFSFilterConfig = {
 				html += ' class="card__media-full-spacer"';
 			}
 			html += '>';
-			html += '<div class="media +'soldOut'+ media--transparent media--';
+			html += '<div class="media '+soldOut+'media--transparent media--';
 			if (boostPFSThemeConfig.custom.hasOwnProperty('media_size')) {
 				html += boostPFSThemeConfig.custom.media_size;
 			}
