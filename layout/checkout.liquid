@@ -143,7 +143,10 @@
         var district = stateObject[countySel.value][this.value];
         for (var i = 0; i < district.length; i++) {
            var option = document.createElement("option");
-          districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+          option.value = district[i];
+          option.text = district[i].charAt(0).toUpperCase() + district[i].slice(1);
+          select.appendChild(option);
+//           districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
         }
 
         var label = document.createElement("label");
