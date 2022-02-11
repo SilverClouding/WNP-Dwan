@@ -151,7 +151,11 @@ var boostPFSFilterConfig = {
 				html += ' class="card__media-full-spacer"';
 			}
 			html += '>';
+          if(soldOut){
+            html += '<div class="media media--transparent out-of-stock media--';
+          }else{
 			html += '<div class="media media--transparent media--';
+          }
 			if (boostPFSThemeConfig.custom.hasOwnProperty('media_size')) {
 				html += boostPFSThemeConfig.custom.media_size;
 			}
