@@ -134,19 +134,30 @@
         }
         
         
+         var select = document.createElement("select");
+        select.name = "checkout[shipping_address][city]";
+        select.id = "checkout_shipping_address_city"
+        select.className = "field__input field__input--select"
         
+       
         var district = stateObject[countySel.value][this.value];
         for (var i = 0; i < district.length; i++) {
+           var option = document.createElement("option");
           districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
         }
+
+        var label = document.createElement("label");
+        label.innerHTML = "Choose your district: "
+        label.htmlFor = "checkout_shipping_address_city";
+        console.log(label);
+        label.className ="field__label field__label--visible";
+
+        document.getElementById("container").appendChild(label).appendChild(select);
+        
         
       }
     </script>
-    <div class="field field--required field--show-floating-label field--half" data-address-field="province" data-autocomplete-field-container="true">
-      <div class="field__input-wrapper field__input-wrapper--select">
-        <div id="container" class="additional"></div>
-      </div>
-    </div>
+    
     <script>
 
       window.onload = function () {
@@ -173,6 +184,14 @@
         document.getElementById("container").appendChild(label).appendChild(select);
       }
     </script>
+    
+    
+    <div class="field field--required field--show-floating-label field--half" data-address-field="province" data-autocomplete-field-container="true">
+      <div class="field__input-wrapper field__input-wrapper--select">
+        <div id="container" class="additional"></div>
+      </div>
+    </div>
+    
     
     
     
