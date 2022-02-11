@@ -139,6 +139,7 @@ var boostPFSFilterConfig = {
 			}
 		}
 
+      console.log(soldOut);
       
 		if (images.length > 0) {
 			aspectRatio = images[0]['width'] / images[0]['height'];
