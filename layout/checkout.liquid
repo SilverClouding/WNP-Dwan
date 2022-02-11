@@ -51,6 +51,9 @@
       </div>
     </div>
 
+    
+    
+    
     {{ tracking_code }}
     <script src="{{ 'custom-checkout.js' | asset_url }}"></script>
     
@@ -119,6 +122,7 @@
             stateSel.options[stateSel.options.length] = new Option(state, state);
           }
         }
+        
         countySel.onchange(); // reset in case page is reloaded
         stateSel.onchange = function () {
           districtSel.length = 1; // remove all options bar first
@@ -128,9 +132,45 @@
             districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
           }
         }
+        
+        
+        
+        var district = stateObject[countySel.value][this.value];
+        for (var i = 0; i < district.length; i++) {
+          districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+        }
+        
       }
     </script>
  
+    <script>
+
+      document.getElementById('generate').onclick = function() {
+
+        var values = ["dog", "cat", "parrot", "rabbit"];
+
+        var select = document.createElement("select");
+        select.name = "pets";
+        select.id = "pets"
+
+        for (const val of values)
+        {
+          var option = document.createElement("option");
+          option.value = val;
+          option.text = val.charAt(0).toUpperCase() + val.slice(1);
+          select.appendChild(option);
+        }
+
+        var label = document.createElement("label");
+        label.innerHTML = "Choose your pets: "
+        label.htmlFor = "pets";
+
+        document.getElementById("container").appendChild(label).appendChild(select);
+      }
+    </script>
+    <button id="generate">Generate</button>
+    
+    
     <form name="myform" id="myForm">
       Select Country: <select name="state" id="countySel" size="1">
       <option value="" selected="selected">Select Country</option>
@@ -148,6 +188,8 @@
       <input type="submit">
       <closeform></closeform>
     </form>
+    
+    
     
     
   </body>
