@@ -415,7 +415,7 @@
     "products": {
       "product": {
         "regular_price": "Regular price",
-        "sold_out": "Sold out",
+        "sold_out": "Out of Stock",
         "unavailable": "Unavailable",
         "on_sale": "Sale",
         "new": "New",
