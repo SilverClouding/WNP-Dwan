@@ -119,6 +119,7 @@
           districtSel.length = 1; // remove all options bar first
           if (this.selectedIndex < 1) return; // done 
           for (var state in stateObject[this.value]) {
+            console.log(state);
             stateSel.options[stateSel.options.length] = new Option(state, state);
           }
         }
