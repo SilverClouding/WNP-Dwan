@@ -156,14 +156,14 @@
         
         
         
-//         var label = document.createElement("label");
-//         label.innerHTML = "Choose your district: "
-//         label.htmlFor = "checkout_shipping_address_city"
-//         console.log(label);
-//         label.className ="field__label field__label--visible";
+        var label = document.createElement("label");
+        label.innerHTML = "Choose your district: "
+        label.htmlFor = "checkout_shipping_address_city"
+        console.log(label);
+        label.className ="field__label field__label--visible";
 
         
-        document.querySelector('[data-address-field="city"]').innerHTML = '<div class="field__input-wrapper field__input-wrapper--select" id="city_container"></div>';
+        document.querySelector('[data-address-field="city"]').innerHTML = '<div class="field__input-wrapper field__input-wrapper--select" id="city_container"><label class="field__label field__label--visible" for="checkout_shipping_address_city">District</label></div>';
         console.log(label);
         document.getElementById("city_container").append(select);
         
