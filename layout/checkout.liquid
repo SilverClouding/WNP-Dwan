@@ -109,11 +109,12 @@
       }
       window.onload = function () {
         var countySel = document.getElementById("checkout_shipping_address_country"),
-            stateSel = document.getElementById("checkout_shipping_address_provincae"),
+            stateSel = document.getElementById("checkout_shipping_address_province"),
             districtSel = document.getElementById("checkout_shipping_address_city");
         for (var country in stateObject) {
           countySel.options[countySel.options.length] = new Option(country, country);
         }
+        
         countySel.onchange = function () {
           stateSel.length = 1; // remove all options bar first
           districtSel.length = 1; // remove all options bar first
@@ -135,8 +136,9 @@
         
         
         
-        var district = stateObject[countySel.value][this.value];
+        var district = stateObject[countySel.value][stateSel.value];
         for (var i = 0; i < district.length; i++) {
+          console.log(district[i]);
           districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
         }
         
