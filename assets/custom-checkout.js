@@ -109,12 +109,14 @@ window.onload = function () {
 
 
   document.querySelector('[data-address-field="city"]').innerHTML = '<div class="field__input-wrapper field__input-wrapper--select" id="city_container"><label class="field__label field__label--visible" for="checkout_shipping_address_city">District</label></div>';
-  
+  document.getElementById("city_container").appendChild(select).appendChild(label);
   
   
   var svg = `<div class="field__caret shown-if-js">
         <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
       </div>`;
-  document.getElementById("city_container").appendChild(select).appendChild(svg).appendChild(label);
+  document.getElementById("city_container").insertAdjacentHTML( `<div class="field__caret shown-if-js">
+        <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
+      </div>` );
 
 }
