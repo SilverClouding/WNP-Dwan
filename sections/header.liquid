@@ -612,7 +612,7 @@
               <ul class="list-menu list-menu--inline" role="list">
                 {%- for link in settings.menu.links -%}
                 
-                <li terget_megamenu="{{ link.title | handle }}" class="mega_parent{% if link.links.size > 0 %}{% endif %}" linksize="{{link.links.size}}"><a href="{{link.url}}" class="header__menu-item list-menu__item link focus-inset {% if section.settings.menu_item_name == 'link.title' %} custom-color{% endif %}"><span>{{link.title}}</span></a></li>
+                <li terget_megamenu="{{ link.title | handle }}" class="mega_parent{% if link.links.size > 0 %}{% endif %}" linksize="{{link.links.size}}"><a href="{{link.url}}" class="header__menu-item list-menu__item link focus-inset {% if section.settings.menu_item_name != blank %} custom-color{% endif %}"><span>{{link.title}}</span></a></li>
                 {% comment %}
                 <li terget_megamenu="{{ link.title | handle }}">
                   {%- if link.links != blank -%}
