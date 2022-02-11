@@ -156,7 +156,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/orijen_e2238d43-3f69-451f-a241-24c9c9d26f1b.png",
-            "img_link": ""
+            "img_link": "shopify:\/\/collections\/orijen"
           }
         },
         "163646666171e43149-4": {
@@ -432,7 +432,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_143.png",
-            "img_link": "Image Link",
+            "img_link": "",
             "title": "",
             "text": "<p>We are firm advocates of pet adoption<\/p>",
             "button_label": "Adoption",
@@ -443,7 +443,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_144.png",
-            "img_link": "Image Link",
+            "img_link": "",
             "title": "",
             "text": "<p>We have grooming services<\/p>",
             "button_label": "Grooming",
