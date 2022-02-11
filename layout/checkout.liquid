@@ -81,13 +81,15 @@
             "Tsuen Wan","Kowloon City",
             "Eastern","Central and Western",
             "Southern","Wan Chai","Hong Kong"
-          ]
+          ],
+          "Hong Kong Island":[],
+          
         },
         
       }
       window.onload = function () {
         var countySel = document.getElementById("checkout_shipping_address_country"),
-            stateSel = document.getElementById("stateSel"),
+            stateSel = document.getElementById("checkout_shipping_address_province"),
             districtSel = document.getElementById("districtSel");
         for (var country in stateObject) {
           countySel.options[countySel.options.length] = new Option(country, country);
