@@ -152,29 +152,29 @@
     </div>
     <script>
 
-      window.onload = function () {
-        var values = ["dog", "cat", "parrot", "rabbit"];
-        var select = document.createElement("select");
-        select.name = "checkout[shipping_address][city]";
-        select.id = "checkout_shipping_address_city"
-        select.className = "field__input field__input--select"
+//       window.onload = function () {
+//         var values = ["dog", "cat", "parrot", "rabbit"];
+//         var select = document.createElement("select");
+//         select.name = "checkout[shipping_address][city]";
+//         select.id = "checkout_shipping_address_city"
+//         select.className = "field__input field__input--select"
         
-        for (const val of values)
-        {
-          var option = document.createElement("option");
-          option.value = val;
-          option.text = val.charAt(0).toUpperCase() + val.slice(1);
-          select.appendChild(option);
-        }
+//         for (const val of values)
+//         {
+//           var option = document.createElement("option");
+//           option.value = val;
+//           option.text = val.charAt(0).toUpperCase() + val.slice(1);
+//           select.appendChild(option);
+//         }
         
-        var label = document.createElement("label");
-        label.innerHTML = "Choose your district: "
-        label.htmlFor = "checkout_shipping_address_city";
-        console.log(label);
-        label.className ="field__labell field__label--visible";
+//         var label = document.createElement("label");
+//         label.innerHTML = "Choose your district: "
+//         label.htmlFor = "checkout_shipping_address_city";
+//         console.log(label);
+//         label.className ="field__labell field__label--visible";
 
-        document.getElementById("container").appendChild(label).appendChild(select);
-      }
+//         document.getElementById("container").appendChild(label).appendChild(select);
+//       }
     </script>
     
     
