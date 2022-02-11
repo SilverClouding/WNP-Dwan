@@ -130,17 +130,18 @@
           if (this.selectedIndex < 1) return; // done 
           var district = stateObject[countySel.value][this.value];
           for (var i = 0; i < district.length; i++) {
+            console.log(district[i]);
             districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
           }
         }
         
         
         
-        var district = stateObject[countySel.value][stateSel.value];
-        for (var i = 0; i < district.length; i++) {
-          console.log(district[i]);
-          districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
-        }
+//         var district = stateObject[countySel.value][stateSel.value];
+//         for (var i = 0; i < district.length; i++) {
+//           console.log(district[i]);
+//           districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+//         }
         
       }
     </script>
