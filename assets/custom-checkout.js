@@ -55,9 +55,9 @@ window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
       stateSel = document.getElementById("checkout_shipping_address_province"),
       districtSel = document.getElementById("checkout_shipping_address_city");
-  //         for (var country in stateObject) {
-  //           countySel.options[countySel.options.length] = new Option(country, country);
-  //         }
+          for (var country in stateObject) {
+            countySel.options[countySel.options.length] = new Option(country, country);
+          }
 
   //         countySel.onchange = function () {
   //           stateSel.length = 1; // remove all options bar first
