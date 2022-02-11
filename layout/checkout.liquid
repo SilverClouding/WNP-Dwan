@@ -169,7 +169,7 @@
         var label = document.createElement("label");
         label.innerHTML = "Choose your pets: "
         label.htmlFor = "pets";
-        label.className +="field__label field__label--visible";
+        label.classList.add("field__label field__label--visible");
 
         document.getElementById("container").appendChild(label).appendChild(select);
       }
