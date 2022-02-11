@@ -107,7 +107,7 @@ window.onload = function () {
   console.log(label);
   label.className ="field__label field__label--visible";
 
-
+document.querySelector('[data-address-field="city"]').classList.add('field--show-floating-label');
   document.querySelector('[data-address-field="city"]').innerHTML = '<div class="field__input-wrapper field__input-wrapper--select" id="city_container"><label class="field__label field__label--visible" for="checkout_shipping_address_city">District</label></div>';
   document.getElementById("city_container").appendChild(select).appendChild(label);
   
