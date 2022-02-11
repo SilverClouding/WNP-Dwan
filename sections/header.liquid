@@ -57,7 +57,9 @@
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
-  
+  .header__inline-menu .header__menu-item.custom-color{
+    color:{{ section.settings.custom_color_menu }};
+  }
 
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
@@ -610,7 +612,7 @@
               <ul class="list-menu list-menu--inline" role="list">
                 {%- for link in settings.menu.links -%}
                 
-                <li terget_megamenu="{{ link.title | handle }}" class="mega_parent{% if link.links.size > 0 %}{% endif %}" linksize="{{link.links.size}}"><a href="{{link.url}}" class="header__menu-item list-menu__item link focus-inset {% if settings.menu_item_name contains link.title %} custom-color{% endif %}"><span>{{link.title}}</span></a></li>
+                <li terget_megamenu="{{ link.title | handle }}" class="mega_parent{% if link.links.size > 0 %}{% endif %}" linksize="{{link.links.size}}"><a href="{{link.url}}" class="header__menu-item list-menu__item link focus-inset {% if section.settings.menu_item_name contains link.title %} custom-color{% endif %}"><span>{{link.title}}</span></a></li>
                 {% comment %}
                 <li terget_megamenu="{{ link.title | handle }}">
                   {%- if link.links != blank -%}
@@ -946,11 +948,12 @@ requestAnimationFrame(this.reset.bind(this));
         "type": "header",
         "content": "Announcement Bar"
       },
-	{
-      "type": "color",
-      "id": "custom_color_menu",
-      "label": "Custom Color For Particular Menu"
-    },
+{
+        "id": "show_n_window",
+        "type": "checkbox",
+        "label": "Store Open in new window",
+        "default": false
+      },
 	{
           "type": "select",
           "id": "announcement_color_scheme",
