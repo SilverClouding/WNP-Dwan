@@ -115,7 +115,7 @@ window.onload = function () {
   var svg = `<div class="field__caret shown-if-js">
         <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
       </div>`;
-  document.getElementById("city_container").insertAdjacentHTML( `<div class="field__caret shown-if-js">
+  $("#city_container").append( `<div class="field__caret shown-if-js">
         <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
       </div>` );
 
