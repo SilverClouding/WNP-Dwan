@@ -90,7 +90,7 @@
         "settings": {
           "show_n_window": false,
           "menu_item_name": "Sale, Dogs",
-          "custom_color_menu": "#cf1616",
+          "custom_color_menu": "#f5694d",
           "announcement_color_scheme": "accent-2",
           "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/logo.png",
