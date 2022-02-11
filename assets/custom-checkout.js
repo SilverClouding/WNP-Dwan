@@ -119,4 +119,4 @@ window.onload = function () {
 //         <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
 //       </div>` );
 
-// }
+}
