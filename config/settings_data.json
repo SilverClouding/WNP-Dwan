@@ -10,6 +10,7 @@
     "richtext_bottom": "<p>Hello hoomans! My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
     "btn_text": "More about loppy",
     "button_link": "shopify:\/\/collections\/loveanimalslovelife",
+    "menu_item_name": "Sale",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#153a33",
     "colors_accent_2": "#fff9ee",
@@ -88,8 +89,6 @@
           "02103d41-185d-49b8-bac5-906845e181e9"
         ],
         "settings": {
-          "show_n_window": false,
-          "menu_item_name": "Sale",
           "custom_color_menu": "#f5694d",
           "announcement_color_scheme": "accent-2",
           "color_scheme": "accent-1",
