@@ -4,7 +4,8 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "page_title": false
+        "page_title": false,
+        "section_width": 100
       }
     },
     "16395743364aa1e8ed": {
@@ -27,7 +28,7 @@
       "type": "contact-form",
       "settings": {
         "heading": "Contact Us",
-        "dropdown_values": "Subject 1, Subject 2, Subject 3, Subject 4"
+        "dropdown_values": "Customer Service,Community Enquiries,Marketing, Partnership or Media Enquiries,Merchandise or Products Enquiries,Career Enquiries"
       }
     }
   },
