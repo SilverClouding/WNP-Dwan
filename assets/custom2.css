@@ -912,3 +912,7 @@ p.title_address {
 /*     align-items: center; */
     justify-content: space-between;
 }
+[disabled] {
+    opacity: 0.2;
+    pointer-events: none;
+}
