@@ -740,9 +740,13 @@ div#article_page .buttons-section ul li {
   height:initial!important;
   width: 130px!important;
 }
+.boost-pfs-modal-container .boost-pfs-modal-content{
+    width: 1255px!important;
+  }
+
 @media(min-width:769px){
   .boost-pfs-modal-container .boost-pfs-modal-content{
-    width: 1255px!important;
+/*     width: 1255px!important; */
 /*     top: 20px!important; */
   }
 }
