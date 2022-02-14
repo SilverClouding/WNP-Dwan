@@ -56,7 +56,12 @@
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "img1": "shopify:\/\/shop_images\/freedelivery_449d48ac-eda1-45c2-8a0d-a167c5b5e747.png",
+        "svg_icon1_text1": "<p>Free Delivery<\/p>",
+        "svg_icon1_text2": "<p>Free Delivery<\/p>",
+        "svg_icon1_text3": "<p>Free Delivery<\/p>",
+        "svg_icon1_text4": "<p>Free Delivery<\/p>"
       }
     },
     "product-details-tab": {
