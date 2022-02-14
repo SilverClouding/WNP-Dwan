@@ -37,7 +37,7 @@
             "image_height": "large",
             "two_col_banner": false,
             "desktop_text_box_position": "flex-end",
-            "banner_content": true,
+            "banner_content": false,
             "show_text_box": false,
             "image_overlay_opacity": 0,
             "color_scheme": "accent-2",
