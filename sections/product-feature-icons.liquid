@@ -36,7 +36,7 @@
     {% render 'product-feature-icons', icon: block.settings.icons %}
     </div>
      
-    <h2>{{ block.settings.svg_icon1_text }}</h2> 
+    <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endfor %} 
 </div>
@@ -140,7 +140,7 @@
 
 		{
           "type": "text",
-          "id": "svg_icon1_text",
+          "id": "title",
 		  "default": "Free Delivery",
           "label": "Text"
         }
