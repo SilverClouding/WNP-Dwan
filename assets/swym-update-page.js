@@ -37,7 +37,7 @@ alt="{{dt}}"
 `;
   
   function swymCallbackFn(){
-      
+       const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
         _swat.fetchWrtEventTypeET(
           function (products){
             var productCardsMarkup = SwymUtils.renderTemplateString(productCardsMarkup,{products:products});
