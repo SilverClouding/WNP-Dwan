@@ -21,6 +21,25 @@
   {%- endfor -%}
 </div>
 </div>
+
+
+<section class="product-tabs{% if section.settings.full_width %} image-with-text--full-width{% else %} page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}" gradient " >
+ 
+{% if product.metafields.abv_icon_text.image.size > 0 %}
+<div class="above_description_icon_text" data-size="{{product.metafields.abv_icon_text.image.size}}">
+  {% for images in product.metafields.abv_icon_text.image %}
+  <div class="under_media_icon_text_item text-center"> 
+    {% for image in images %} 
+    <img src="{{ image.src }}" alt="{{ image.alt }}"/>
+    {% endfor %} 
+    <h2>{{product.metafields.abv_icon_text.icon_description[forloop.index0] }}</h2> 
+  </div>
+  {% endfor %} 
+</div>
+{% endif %}
+</section>
+
+
 {% schema %}
   {
     "name": "Featured Content Block",
