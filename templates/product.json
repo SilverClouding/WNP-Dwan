@@ -87,13 +87,22 @@
         "1644842428b52fe24f-2": {
           "type": "icon_text",
           "settings": {
-            "svg_icon1_text": "Free Delivery"
+            "img": "shopify:\/\/shop_images\/Vector-1_1.png",
+            "svg_icon1_text": "Reduced symptoms of IBS & IBD"
           }
         },
         "1644842428b52fe24f-3": {
           "type": "icon_text",
           "settings": {
-            "svg_icon1_text": "Free Delivery"
+            "img": "shopify:\/\/shop_images\/Vector-2_1.png",
+            "svg_icon1_text": "Decreased food allergy sensitivities"
+          }
+        },
+        "081138e9-e121-4fb9-803c-18d464cc6ec4": {
+          "type": "icon_text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group-1_1.png",
+            "svg_icon1_text": "Healthy skin and coat"
           }
         }
       },
@@ -101,7 +110,8 @@
         "1644842428b52fe24f-0",
         "1644842428b52fe24f-1",
         "1644842428b52fe24f-2",
-        "1644842428b52fe24f-3"
+        "1644842428b52fe24f-3",
+        "081138e9-e121-4fb9-803c-18d464cc6ec4"
       ],
       "settings": {
         "color_scheme": "background-1",
