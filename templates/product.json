@@ -67,6 +67,46 @@
         "svg_icon1_text4": "<p><strong>Prices are lower than or at least the same as competitors<\/strong><\/p>"
       }
     },
+    "1644842428399f7086": {
+      "type": "product-feature-icons",
+      "blocks": {
+        "1644842428b52fe24f-0": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "Free Delivery"
+          }
+        },
+        "1644842428b52fe24f-1": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "Free Delivery"
+          }
+        },
+        "1644842428b52fe24f-2": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "Free Delivery"
+          }
+        },
+        "1644842428b52fe24f-3": {
+          "type": "icon_text",
+          "settings": {
+            "svg_icon1_text": "Free Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "1644842428b52fe24f-0",
+        "1644842428b52fe24f-1",
+        "1644842428b52fe24f-2",
+        "1644842428b52fe24f-3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "section_width": 100,
+        "full_width": false
+      }
+    },
     "product-details-tab": {
       "type": "product-details-tab",
       "blocks": {
@@ -258,55 +298,15 @@
         "include_margins": true,
         "sec_class": ""
       }
-    },
-    "1644842428399f7086": {
-      "type": "product-feature-icons",
-      "blocks": {
-        "1644842428b52fe24f-0": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "Free Delivery"
-          }
-        },
-        "1644842428b52fe24f-1": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "Free Delivery"
-          }
-        },
-        "1644842428b52fe24f-2": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "Free Delivery"
-          }
-        },
-        "1644842428b52fe24f-3": {
-          "type": "icon_text",
-          "settings": {
-            "svg_icon1_text": "Free Delivery"
-          }
-        }
-      },
-      "block_order": [
-        "1644842428b52fe24f-0",
-        "1644842428b52fe24f-1",
-        "1644842428b52fe24f-2",
-        "1644842428b52fe24f-3"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "section_width": 100,
-        "full_width": true
-      }
     }
   },
   "order": [
     "main",
+    "1644842428399f7086",
     "product-details-tab",
     "metafield-icon-text",
     "product-recommendations",
     "1637669479d78c349e",
-    "1637740585579a4231",
-    "1644842428399f7086"
+    "1637740585579a4231"
   ]
 }
