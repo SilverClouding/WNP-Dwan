@@ -162,7 +162,7 @@
       {% if product.metafields.product_icon_text.icons.size > 0 %}
       <div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
 
-
+{% comment %}
         {% for images in product.metafields.product_icon_text.icons %}
         <div class="under_media_icon_text_item text-center"> 
           {% for image in images %} 
@@ -171,6 +171,26 @@
           <h2>{{product.metafields.product_icon_text.text[forloop.index0] }}</h2> 
         </div>
         {% endfor %} 
+  {% endcomment %}
+        
+        <div class="under_media_icon_text_item text-center"> 
+          <img src="{{ section.settings.img1 }}" alt="{{ section.settings.img1.alt  }}"/>          
+          <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
+        </div>
+        <div class="under_media_icon_text_item text-center"> 
+          <img src="{{ section.settings.img2 }}" alt="{{ section.settings.img2.alt  }}"/>          
+          <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
+        </div>
+        <div class="under_media_icon_text_item text-center"> 
+          <img src="{{ section.settings.img3 }}" alt="{{ section.settings.img3.alt  }}"/>          
+          <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
+        </div>
+        <div class="under_media_icon_text_item text-center"> 
+          <img src="{{ section.settings.img4 }}" alt="{{ section.settings.img4.alt  }}"/>          
+          <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
+        </div>
+        
+        
 
       </div>
       {% endif %}
