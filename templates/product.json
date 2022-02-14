@@ -73,6 +73,7 @@
         "1644842428b52fe24f-0": {
           "type": "icon_text",
           "settings": {
+            "img": "shopify:\/\/shop_images\/quality.png",
             "svg_icon1_text": "Free Delivery"
           }
         },
