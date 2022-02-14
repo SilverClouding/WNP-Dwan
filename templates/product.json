@@ -74,42 +74,42 @@
           "type": "icon_text",
           "settings": {
             "icons": "icon_1",
-            "svg_icon1_text": "Better Appetite For Picky Dogs"
+            "title": "Better Appetite For Picky Dogs"
           }
         },
         "1644842428b52fe24f-1": {
           "type": "icon_text",
           "settings": {
             "icons": "icon_3",
-            "svg_icon1_text": "Improved digestion"
+            "title": "Improved Digestion"
           }
         },
         "1644842428b52fe24f-2": {
           "type": "icon_text",
           "settings": {
-            "icons": "icon_1",
-            "svg_icon1_text": "Reduced symptoms of IBS & IBD"
+            "icons": "icon_6",
+            "title": "Reduced Symptoms Of IBS & IBD"
           }
         },
         "1644842428b52fe24f-3": {
           "type": "icon_text",
           "settings": {
-            "icons": "icon_1",
-            "svg_icon1_text": "Decreased food allergy sensitivities"
+            "icons": "icon_4",
+            "title": "Decreased Food Allergy Sensitivities"
           }
         },
         "081138e9-e121-4fb9-803c-18d464cc6ec4": {
           "type": "icon_text",
           "settings": {
-            "icons": "icon_1",
-            "svg_icon1_text": "Healthy skin and coat"
+            "icons": "icon_2",
+            "title": "Healthy Skin And Coat"
           }
         },
         "88deb5cc-5642-4e91-8ba1-372ffef9010e": {
           "type": "icon_text",
           "settings": {
-            "icons": "icon_1",
-            "svg_icon1_text": "Joint health and mobility"
+            "icons": "icon_5",
+            "title": "Joint Health And Mobility"
           }
         }
       },
