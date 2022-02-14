@@ -1,7 +1,117 @@
+<style>
+
+  #shopify-section-{{section.id}} .section_width{
+    width:{{section.settings.section_width}}%;
+    margin: 0 auto;
+  }
+
+</style>
+<div class="section_width four-icons-sec">
+<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+  {%- for block in section.blocks -%}
+  {% case block.type %}
+  {%- when 'icon_text' -%}
+  <div class="icon__text_item">
+    <span>
+      <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}">
+    </span>
+    {{block.settings.svg_icon1_text}}
+  </div>
+  {%- endcase -%}
+  {%- endfor -%}
+</div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Featured Content Block",
+ "class": "spaced-section spaced-section--full-width",
+    "settings": [
+	{
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "accent-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.image-with-text.settings.color_scheme.label"
+    },
+	{
+        "type": "range",
+        "id": "section_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    }
+	],
+	"blocks": [
+    {
+      "type": "icon_text",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "settings": [
+		 {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image (.png) format"
+        },
+		{
+          "type": "richtext",
+          "id": "svg_icon1_text",
+		  "default": "<p>Free Delivery</p>",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product feature icons",
+      "blocks": [
+        {
+          "type": "icon_text"
+        },
+		{
+          "type": "icon_text"
+        },
+        {
+          "type": "icon_text"
+        },
+        {
+          "type": "icon_text"
+        }
+      ]
+    }
+  ],
+"templates": [
+    "product"
+  ]
   }
 {% endschema %}
 
