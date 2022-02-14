@@ -271,7 +271,7 @@ console.log(productitem);
                           </div> </li>`;
   
   function swymCallbackFn(){
-      if(wishlistItemsContainer){ 
+      
         _swat.fetchWrtEventTypeET(
           function (products){
             var productCardsMarkup = SwynUtils.renderTemplateString(productCardsMarkup,{products:products});
@@ -279,10 +279,10 @@ console.log(productitem);
           }
         )
       
-      } else {
-        attachClickListeners(); 
-        removeClickListeners();
-      }
+//      if(wishlistItemsContainer){  } else {
+//         attachClickListeners(); 
+//         removeClickListeners();
+//       }
     }
   
   
