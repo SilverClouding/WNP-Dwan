@@ -56,9 +56,10 @@
     </ul>
   </div>
 </div>
-<script src="{{ 'swym-update-page.js' | asset_url }}"></script>
-
 {% comment %}
+<script src="{{ 'swym-update-page.js' | asset_url }}"></script>
+{% endcomment %}
+
 <script>
 $(document).ready(function(){
   const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
@@ -240,7 +241,7 @@ console.log(productitem);
 
   });
 </script>
-{% endcomment %}
+
 
 {% schema %}
   {
