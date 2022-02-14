@@ -7,7 +7,7 @@
 <div class="reorder-btn btn flip-front"
     data-variant-ids="{{ variant_ids }}"
     data-variant-quantities="{{ variant_quantities }}"
-    data-variant-inventories="{{ variant_inventories }}"
+    data-variant-inventories="{{ variant_inventories }}" {% if variant_inventories contains "-" %} disabled {% endif %}
     data-variant-inventory-policies="{{ variant_inventory_policies }}"
     data-variant-inventory-trackers="{{ variant_inventory_trackers }}">
   <span class="pt-reorder-text">RE-ORDER</span>
