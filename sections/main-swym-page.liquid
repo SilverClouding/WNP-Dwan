@@ -60,11 +60,7 @@
 
 <script>
 $(document).ready(function(){
-  const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
-  
-  
-   
-  
+  const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');  
   function fetchProduct(){
     window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
       let productitem="";
@@ -217,18 +213,32 @@ console.log(productitem);
   
   
  
-   function swymCallbackFn(){
-      
+//    function swymCallbackFn(){
+//       if(wishlistItemsContainer){ 
+//        fetchProduct()
+//       } else {
+//         attachClickListeners(); 
+//         removeClickListeners();
+//       }
+//     }
+  
+  
+  function swymCallbackFn(){
       if(wishlistItemsContainer){ 
-       fetchProduct()
+        _swat.fetchWrtEventTypeET(
+          function (products){
+            var productCardsMarkup = SwynUtils.renderTemplateString(productCardsMarkup,{products:products});
+             wishlistItemsContainer.innerHTML = productCardsMarkup;
+          }
+        )
+      
       } else {
         attachClickListeners(); 
         removeClickListeners();
       }
-      
-      
-     
     }
+  
+  
     if(!window.SwymCallbacks){
       window.SwymCallbacks = [];
     }
