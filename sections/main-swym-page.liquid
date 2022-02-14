@@ -77,7 +77,7 @@ $(document).ready(function(){
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
         var colHandle = product.bt;
          if (typeof colHandle !== "undefined") {
-          var ColHandleLowerCase = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
+          var ColHandleLowerCase = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
         }
         console.log(ColHandleLowerCase);
         productitem += `<li class="grid__item"> <div class="card-wrapper">
@@ -214,6 +214,9 @@ console.log(productitem);
         console.log("Entire product json:", productJson);
         if(productJson.available ){
           document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
+          var  colHandle = productJson.vendor;
+          var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+          document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href", vendorLink);
           document.getElementById(`${productJson.id}`).innerText ="Add to cart";
           document.getElementById(`${productJson.id}`).classList.remove('disable'); 
         }else{
