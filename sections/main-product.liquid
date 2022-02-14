@@ -159,7 +159,7 @@
       {%- endif -%}
       
       
-      {% if product.metafields.product_icon_text.icons.size > 0%}
+      {% if product.metafields.product_icon_text.icons.size > 0 %}
       <div class="under_media_icon_text" data-size="{{product.metafields.product_icon_text.icons.size}}">
 
 
@@ -1290,7 +1290,75 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
-    }
+    },
+
+
+	{
+      "type": "header",
+      "content": "Image text under product media"
+    },
+{
+      "type": "header",
+      "content": "icon text 1"
+    },
+	{
+          "type": "image_picker",
+          "id": "img1",
+          "label": "Image (.png) format"
+        },
+		{
+          "type": "richtext",
+          "id": "svg_icon1_text1",
+		  "default": "<p>Free Delivery</p>",
+          "label": "Text"
+        },
+{
+      "type": "header",
+      "content": "icon text 2"
+    },
+	{
+          "type": "image_picker",
+          "id": "img2",
+          "label": "Image (.png) format"
+        },
+		{
+          "type": "richtext",
+          "id": "svg_icon1_text2",
+		  "default": "<p>Free Delivery</p>",
+          "label": "Text"
+        },
+{
+      "type": "header",
+      "content": "icon text 3"
+    },
+	{
+          "type": "image_picker",
+          "id": "img3",
+          "label": "Image (.png) format"
+        },
+		{
+          "type": "richtext",
+          "id": "svg_icon1_text3",
+		  "default": "<p>Free Delivery</p>",
+          "label": "Text"
+        },
+{
+      "type": "header",
+      "content": "icon text 4"
+    },
+	{
+          "type": "image_picker",
+          "id": "img4",
+          "label": "Image (.png) format"
+        },
+		{
+          "type": "richtext",
+          "id": "svg_icon1_text4",
+		  "default": "<p>Free Delivery</p>",
+          "label": "Text"
+        }
+
+
   ]
 }
 {% endschema %}
