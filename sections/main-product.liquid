@@ -173,23 +173,33 @@
         {% endfor %} 
   {% endcomment %}
         
+        {% if section.settings.img1 != blank %}
         <div class="under_media_icon_text_item text-center"> 
           <img src="{{ section.settings.img1 | img_url:"50x"}}" alt="{{ section.settings.img1.alt  }}"/>          
           <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
         </div>
+        {% endif %}
+        
+        {% if section.settings.img2 != blank %}
         <div class="under_media_icon_text_item text-center"> 
           <img src="{{ section.settings.img2 | img_url:"50x"}}" alt="{{ section.settings.img2.alt  }}"/>          
           <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
         </div>
+        {% endif %}
+        
+        {% if section.settings.img3 != blank %}
         <div class="under_media_icon_text_item text-center"> 
           <img src="{{ section.settings.img3 | img_url:"50x"}}" alt="{{ section.settings.img3.alt  }}"/>          
           <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
         </div>
+        {% endif %}
+        
+        {% if section.settings.img4 != blank %}
         <div class="under_media_icon_text_item text-center"> 
           <img src="{{ section.settings.img4 | img_url:"50x"}}" alt="{{ section.settings.img4.alt  }}"/>          
           <h2>{{section.settings.section.settings.svg_icon1_text4}}</h2> 
         </div>
-        
+        {% endif %}
         
 
       </div>
