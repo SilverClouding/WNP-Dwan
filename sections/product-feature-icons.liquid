@@ -31,7 +31,7 @@
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
   <div class="under_media_icon_text_item text-center"> 
-    <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}">
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
     <div>
     {% render 'product-feature-icons', icon: block.settings.icons %}
     </div>
