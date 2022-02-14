@@ -61,7 +61,6 @@ class="remove">X</a>
 <div class="card-information"><div class="card-information__wrapper">
 
 <div class="caption-with-letter-spacing light">
-<a href="/collections/${(product.bt).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')}">${product.bt}</a>
 </div>
 
 <h3 class="card-information__text h5">
