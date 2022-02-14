@@ -104,6 +104,13 @@
             "img": "shopify:\/\/shop_images\/Group-1_1.png",
             "svg_icon1_text": "Healthy skin and coat"
           }
+        },
+        "88deb5cc-5642-4e91-8ba1-372ffef9010e": {
+          "type": "icon_text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Vector_1.png",
+            "svg_icon1_text": "Joint health and mobility"
+          }
         }
       },
       "block_order": [
@@ -111,7 +118,8 @@
         "1644842428b52fe24f-1",
         "1644842428b52fe24f-2",
         "1644842428b52fe24f-3",
-        "081138e9-e121-4fb9-803c-18d464cc6ec4"
+        "081138e9-e121-4fb9-803c-18d464cc6ec4",
+        "88deb5cc-5642-4e91-8ba1-372ffef9010e"
       ],
       "settings": {
         "color_scheme": "background-1",
