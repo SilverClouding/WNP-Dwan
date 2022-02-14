@@ -1,5 +1,5 @@
 //   new code 
-  var productCardsMarkup = `<ul>
+  var productCardsMarkup = `
 {{#products}}
 <li class="grid__item"> <div class="card-wrapper"> <a href="" data-epi="{{epi}}" data-empi="{{empi}}"data-du="{{du}}" data-iu="{{iu}}" data-pr="{{pr}}" data-stk="{{stk}}" data-variants="{{vi}}"class="remove">X</a><div class="card-information"><div class="card-information__wrapper"><div class="caption-with-letter-spacing light"></div>
                        
@@ -33,7 +33,7 @@ alt="{{dt}}"
                           </div>
 <a href="" id="{{empi}}" data-product-id="{{empi}}" data-url="{{du}}" data-variant-id="{{epi}}" class="button button--full-width button--primary add-to-cart">{{addtobtn_text}}</a>
                           </div> </li>
-{{/products}}</ul>
+{{/products}}
 `;
   
   function swymCallbackFn(){
