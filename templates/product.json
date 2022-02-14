@@ -104,7 +104,7 @@
       "settings": {
         "color_scheme": "background-1",
         "section_width": 100,
-        "full_width": true
+        "full_width": false
       }
     },
     "product-details-tab": {
