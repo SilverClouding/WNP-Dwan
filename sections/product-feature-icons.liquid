@@ -34,7 +34,7 @@
     {% for image in images %} 
     <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}">
     {% endfor %} 
-    <h2>{{product.metafields.abv_icon_text.icon_description[forloop.index0] }}</h2> 
+    <h2>{{block.settings.svg_icon1_text}}</h2> 
   </div>
   {% endfor %} 
 </div>
