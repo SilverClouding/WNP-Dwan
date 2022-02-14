@@ -56,17 +56,12 @@
     </ul>
   </div>
 </div>
-{% comment %}
-<script src="{{ 'swym-update-page.js' | asset_url }}"></script>
-{% endcomment %}
+
 
 <script>
 $(document).ready(function(){
   const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
-  
-  
-   
-  
+
   function fetchProduct(){
     window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
       let productitem="";
