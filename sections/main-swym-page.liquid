@@ -70,16 +70,11 @@ $(document).ready(function(){
   function fetchProduct(){
     window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
       let productitem="";
-      console.log(wishlistProducts);
+//       console.log(wishlistProducts);
       wishlistProducts.forEach(function(product){
         
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
-        var colHandle = product.bt;
-         if (typeof colHandle !== "undefined") {
-          var ColHandleLowerCase = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-        }
-        console.log(ColHandleLowerCase);
         productitem += `<li class="grid__item"> <div class="card-wrapper">
 
                         <a href="" 
@@ -127,7 +122,7 @@ $(document).ready(function(){
                           </div> </li>`
         fnc_prouductJson(product);  
       });
-console.log(productitem);
+// console.log(productitem);
       wishlistItemsContainer.innerHTML = productitem;
       attachClickListeners();
       removeClickListeners();
