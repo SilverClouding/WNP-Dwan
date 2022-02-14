@@ -39,12 +39,12 @@ alt="{{dt}}"
   function swymCallbackFn(){
       
         _swat.fetchWrtEventTypeET(
-          function (products){
+          function (wishlistProducts){
 //             var productCardsMarkup = SwymUtils.renderTemplateString(productCardsMarkup,{products:products});
 //              wishlistItemsContainer.innerHTML = productCardsMarkup;
             
             let productitem="";
-            console.log(products);
+            console.log(wishlistProducts);
             wishlistProducts.forEach(function(product){
 
               let addtobtn_text = "Add to cart"
