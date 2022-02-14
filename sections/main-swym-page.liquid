@@ -212,11 +212,12 @@ console.log(productitem);
   function fnc_prouductJson(product){
       window._swat.getProductDetails(product, function(productJson) {
         console.log("Entire product json:", productJson);
-        if(productJson.available ){
-          document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
+        document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
           var  colHandle = productJson.vendor;
           var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
           document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
+        if(productJson.available ){
+          
           document.getElementById(`${productJson.id}`).innerText ="Add to cart";
           document.getElementById(`${productJson.id}`).classList.remove('disable'); 
         }else{
