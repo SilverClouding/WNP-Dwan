@@ -76,7 +76,10 @@ $(document).ready(function(){
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
         var colHandle = product.bt;
-        console.log(colHandle);
+         if (typeof colHandle !== "undefined") {
+          var ColHandleLowerCase = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '')
+        }
+        console.log(ColHandleLowerCase);
         productitem += `<li class="grid__item"> <div class="card-wrapper">
 
                         <a href="" 
@@ -89,7 +92,7 @@ $(document).ready(function(){
                         <div class="card-information"><div class="card-information__wrapper">
 
                         <div class="caption-with-letter-spacing light">
-<a href="/collections/${colHandle}">${product.bt}</a>
+<a href="/collections/${ColHandleLowerCase}">${product.bt}</a>
   </div>
                        
 <h3 class="card-information__text h5">
