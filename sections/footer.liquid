@@ -431,13 +431,13 @@
       {% if section.settings.image != blank %}
         {%- assign image_size = section.settings.image_width | append: 'x' -%}
         <img
-                        srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                        src="{{ block.settings.image | img_url: '400x' }}"
-                        alt="{{ block.settings.image.alt | escape }}"
+                        srcset= "{{ section.settings.image | img_url: image_size }}, {{ section.settings.image | img_url: image_size, scale: 2 }} 2x"
+                        src="{{ section.settings.image | img_url: '400x' }}"
+                        alt="{{ section.settings.image.alt | escape }}"
                         loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        width="{{ section.settings.image.width }}"
+                        height="{{ section.settings.image.height }}"
+                        style="max-width: min(100%, {{ section.settings.image_width }}px);"
                       >
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
