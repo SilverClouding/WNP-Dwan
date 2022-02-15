@@ -18,7 +18,7 @@ window.onload = function () {
       stateSel = document.getElementById("checkout_shipping_address_province"),
       districtSel = document.getElementById("checkout_shipping_address_city");
   
-  console.log(countySel.val);
+  console.log(countySel.value);
   
   var select = document.createElement("select");
   select.name = "checkout[shipping_address][city]";
