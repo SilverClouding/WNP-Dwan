@@ -20,6 +20,8 @@ window.onload = function () {
   
   console.log(countySel.value);
   
+  if(countySel.value == 'Hong Kong' ){
+  
   var select = document.createElement("select");
   select.name = "checkout[shipping_address][city]";
   select.id = "checkout_shipping_address_city"
@@ -50,4 +52,7 @@ window.onload = function () {
 <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
 </div>` );
 
+  }
+  
+  
 }
