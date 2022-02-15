@@ -1,5 +1,5 @@
 var contryObject = {
-    "Singapur": {
+    "Singapore": {
 //     "South Australia": ["Dunstan", "Mitchell"],
 //     "Victoria": ["Altona", "Euroa"]
   }, 
