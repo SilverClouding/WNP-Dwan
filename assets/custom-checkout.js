@@ -38,7 +38,7 @@ window.onload = function () {
     if(cuntryVal == 'Hong Kong'){ 
       forhongkong();
     }else{
-    console.log(districtSel.html);
+    console.log(districtSel.innerHTML());
     }
   }
 console.log(cuntryVal);
