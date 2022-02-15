@@ -30,10 +30,11 @@ window.onload = function () {
   
   countySel.onchange = function () {
   
-  cuntryVal = this.value;
+  cuntryVal = this.value; 
+    console.log(cuntryVal);
   }
   
-  console.log(cuntryVal);
+ 
   
   if(cuntryVal == 'Hong Kong'){
   
