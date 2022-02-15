@@ -34,12 +34,12 @@ window.onload = function () {
   countySel.onchange = function () {
 
     cuntryVal = this.value; 
-    console.log(cuntryVal);
+    
     if(cuntryVal == 'Hong Kong'){ 
       forhongkong();
     }
   }
-
+console.log(cuntryVal);
 
 
 
