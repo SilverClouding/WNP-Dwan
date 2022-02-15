@@ -682,7 +682,7 @@
               <span class="product-form__error-message"></span>
             </div>
             {%- form 'product', product, id: formid, class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
             <div class="product-form__buttons">
 
               <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
