@@ -1,8 +1,3 @@
-jQuery(function(){
-console.log('workcheckout');
-});
-
-
 var stateObject = {
 //   "India": { 
 //     "Delhi": ["new Delhi", "North Delhi"],
