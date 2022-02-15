@@ -4,19 +4,19 @@ console.log('workcheckout');
 
 
 var stateObject = {
-  "India": { 
-    "Delhi": ["new Delhi", "North Delhi"],
-    "Kerala": ["Thiruvananthapuram", "Palakkad"],
-    "Goa": ["North Goa", "South Goa"],
-  },
-  "Australia": {
-    "South Australia": ["Dunstan", "Mitchell"],
-    "Victoria": ["Altona", "Euroa"]
-  }, 
-  "Canada": {
-    "Alberta": ["Acadia", "Bighorn"],
-    "Columbia": ["Washington", ""]
-  },
+//   "India": { 
+//     "Delhi": ["new Delhi", "North Delhi"],
+//     "Kerala": ["Thiruvananthapuram", "Palakkad"],
+//     "Goa": ["North Goa", "South Goa"],
+//   },
+//   "Australia": {
+//     "South Australia": ["Dunstan", "Mitchell"],
+//     "Victoria": ["Altona", "Euroa"]
+//   }, 
+//   "Canada": {
+//     "Alberta": ["Acadia", "Bighorn"],
+//     "Columbia": ["Washington", ""]
+//   },
   "Hong Kong": {
     "Kowloon": [
       "Kwai Tsing","North",
