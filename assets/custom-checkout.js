@@ -27,7 +27,9 @@ window.onload = function () {
               countySel.options[countySel.options.length] = new Option(country, country);
             }
   
-  
+  if(cuntryVal == 'Hong Kong'){ 
+ var districtSel = document.getElementById("checkout_shipping_address_city");
+    }
   countySel.onchange = function () {
 
     cuntryVal = this.value; 
