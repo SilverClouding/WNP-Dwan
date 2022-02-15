@@ -1,17 +1,17 @@
 var stateObject = {
-//   "India": { 
-//     "Delhi": ["new Delhi", "North Delhi"],
-//     "Kerala": ["Thiruvananthapuram", "Palakkad"],
-//     "Goa": ["North Goa", "South Goa"],
-//   },
-//   "Australia": {
-//     "South Australia": ["Dunstan", "Mitchell"],
-//     "Victoria": ["Altona", "Euroa"]
-//   }, 
-//   "Canada": {
-//     "Alberta": ["Acadia", "Bighorn"],
-//     "Columbia": ["Washington", ""]
-//   },
+  //   "India": { 
+  //     "Delhi": ["new Delhi", "North Delhi"],
+  //     "Kerala": ["Thiruvananthapuram", "Palakkad"],
+  //     "Goa": ["North Goa", "South Goa"],
+  //   },
+  //   "Australia": {
+  //     "South Australia": ["Dunstan", "Mitchell"],
+  //     "Victoria": ["Altona", "Euroa"]
+  //   }, 
+  //   "Canada": {
+  //     "Alberta": ["Acadia", "Bighorn"],
+  //     "Columbia": ["Washington", ""]
+  //   },
   "Hong Kong": {
     "Kowloon": [
       "Kwai Tsing","North",
@@ -23,25 +23,7 @@ var stateObject = {
       "Tsuen Wan","Kowloon City",
       "Eastern","Central and Western",
       "Southern","Wan Chai","Hong Kong"
-    ],
-    "Hong Kong Island":["Kwai Tsing","North",
-                        "Tuen Mun","Yuen Long",
-                        "Sham Shui Po","Kwun Tong",
-                        "Wong Tai Sin","Tai Po",
-                        "Sha Tin","Islands",
-                        "Sai Kung","Yau Tsim Mong",
-                        "Tsuen Wan","Kowloon City",
-                        "Eastern","Central and Western",
-                        "Southern","Wan Chai","Hong Kong"],
-    "New Territories":["Kwai Tsing","North",
-                       "Tuen Mun","Yuen Long",
-                       "Sham Shui Po","Kwun Tong",
-                       "Wong Tai Sin","Tai Po",
-                       "Sha Tin","Islands",
-                       "Sai Kung","Yau Tsim Mong",
-                       "Tsuen Wan","Kowloon City",
-                       "Eastern","Central and Western",
-                       "Southern","Wan Chai","Hong Kong"]
+    ]
 
   },
 
@@ -50,37 +32,6 @@ window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
       stateSel = document.getElementById("checkout_shipping_address_province"),
       districtSel = document.getElementById("checkout_shipping_address_city");
-  //           for (var country in stateObject) {
-  //             countySel.options[countySel.options.length] = new Option(country, country);
-  //           }
-
-  //         countySel.onchange = function () {
-  //           stateSel.length = 1; // remove all options bar first
-  //           districtSel.length = 1; // remove all options bar first
-  //           if (this.selectedIndex < 1) return; // done 
-  //           for (var state in stateObject[this.value]) {
-  //             console.log(state);
-  //             stateSel.options[stateSel.options.length] = new Option(state, state);
-  //           }
-  //         }
-
-  //         countySel.onchange(); // reset in case page is reloaded
-  //         stateSel.onchange = function () {
-  //           districtSel.length = 1; // remove all options bar first
-  //           if (this.selectedIndex < 1) return; // done 
-  //           var district = stateObject[countySel.value][this.value];
-  //           console.log(district);
-
-  //           for (var i = 0; i < district.length; i++) {
-  //             console.log(district[i]);
-  //             districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
-  //           }
-  //         }
-
-
-
-
-
   var select = document.createElement("select");
   select.name = "checkout[shipping_address][city]";
   select.id = "checkout_shipping_address_city"
