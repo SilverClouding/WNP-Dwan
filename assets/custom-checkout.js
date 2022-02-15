@@ -28,7 +28,7 @@ window.onload = function () {
   }
 
   if(cuntryVal == 'Hong Kong'){ 
-    forhongkong();
+//     forhongkong();
   }
 
   countySel.onchange = function () {
@@ -37,6 +37,8 @@ window.onload = function () {
     
     if(cuntryVal == 'Hong Kong'){ 
       forhongkong();
+    }else{
+    console.log('else');
     }
   }
 console.log(cuntryVal);
