@@ -108,7 +108,7 @@
             "type": "image",
             "settings": {
               "image_heading": "Animals can teach us to be better people.",
-              "image": "shopify:\/\/shop_images\/logo_35940c4a-d2e6-4407-8684-8965141068aa.png",
+              "image": "shopify:\/\/shop_images\/logo_601c3a21-b31a-437d-8414-88d1095fdeb1.png",
               "image_width": 150,
               "alignment": "center"
             }
@@ -170,7 +170,7 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false,
-          "image": "shopify:\/\/shop_images\/logo_35940c4a-d2e6-4407-8684-8965141068aa.png",
+          "image": "shopify:\/\/shop_images\/logo_601c3a21-b31a-437d-8414-88d1095fdeb1.png",
           "logoHeading": "Animals can teach us to be better people."
         }
       },
