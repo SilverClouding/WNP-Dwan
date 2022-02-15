@@ -29,9 +29,6 @@ window.onload = function () {
     option.text = val.charAt(0).toUpperCase() + val.slice(1);
     select.appendChild(option);
   }
-
-
-
   var label = document.createElement("label");
   label.innerHTML = "Choose your district: "
   label.htmlFor = "checkout_shipping_address_city"
