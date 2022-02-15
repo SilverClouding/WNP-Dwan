@@ -25,7 +25,12 @@ window.onload = function () {
               for (var country in contryObject) {
               countySel.options[countySel.options.length] = new Option(country, country);
             }
-  console.log($('#checkout_shipping_address_country option:selected').text());
+  
+  countySel.onchange = function () {
+   console.log(this.value);
+  }
+  
+ 
   
   if(countySel.value == 'Hong Kong' ){
   
