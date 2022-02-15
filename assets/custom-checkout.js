@@ -1,4 +1,9 @@
 var contryObject = {
+    "India": { 
+    "Delhi": ["new Delhi", "North Delhi"],
+    "Kerala": ["Thiruvananthapuram", "Palakkad"],
+    "Goa": ["North Goa", "South Goa"],
+  },
   "Hong Kong": {
     "district": [
       "Kwai Tsing","North",
@@ -17,7 +22,9 @@ window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
       stateSel = document.getElementById("checkout_shipping_address_province"),
       districtSel = document.getElementById("checkout_shipping_address_city");
-  
+              for (var country in stateObject) {
+              countySel.options[countySel.options.length] = new Option(country, country);
+            }
   console.log(countySel.value);
   
   if(countySel.value == 'Hong Kong' ){
