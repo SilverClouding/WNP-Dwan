@@ -478,29 +478,6 @@ jQuery(function($){
   
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var theme = theme || {};
 //disable soldout option in product page 
 jQuery(function($){
