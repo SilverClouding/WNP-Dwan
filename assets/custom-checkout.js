@@ -1,17 +1,4 @@
-var stateObject = {
-  //   "India": { 
-  //     "Delhi": ["new Delhi", "North Delhi"],
-  //     "Kerala": ["Thiruvananthapuram", "Palakkad"],
-  //     "Goa": ["North Goa", "South Goa"],
-  //   },
-  //   "Australia": {
-  //     "South Australia": ["Dunstan", "Mitchell"],
-  //     "Victoria": ["Altona", "Euroa"]
-  //   }, 
-  //   "Canada": {
-  //     "Alberta": ["Acadia", "Bighorn"],
-  //     "Columbia": ["Washington", ""]
-  //   },
+var contryObject = {
   "Hong Kong": {
     "district": [
       "Kwai Tsing","North",
@@ -24,9 +11,7 @@ var stateObject = {
       "Eastern","Central and Western",
       "Southern","Wan Chai","Hong Kong"
     ]
-
   },
-
 }
 window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
@@ -36,7 +21,7 @@ window.onload = function () {
   select.name = "checkout[shipping_address][city]";
   select.id = "checkout_shipping_address_city"
   select.className = "field__input field__input--select"
-  var district = stateObject[countySel.value]["district"];
+  var district = contryObject[countySel.value]["district"];
   for (const val of district)
   {
     var option = document.createElement("option");
