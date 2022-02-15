@@ -4,6 +4,8 @@ var contryObject = {
     "Kerala": ["Thiruvananthapuram", "Palakkad"],
     "Goa": ["North Goa", "South Goa"],
   },
+  "Canada": { 
+  },
   "Hong Kong": {
     "district": [
       "Kwai Tsing","North",
