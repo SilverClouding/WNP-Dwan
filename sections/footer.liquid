@@ -429,6 +429,7 @@
       
       <div class="footer__column footer__logoText">
       {% if section.settings.image != blank %}
+        {%- assign image_size = block.settings.image_width | append: 'x' -%}
         <img
             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
               {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
