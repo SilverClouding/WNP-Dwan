@@ -28,7 +28,7 @@ window.onload = function () {
   }
 
   if(cuntryVal == 'Hong Kong'){ 
-//     forhongkong();
+    forhongkong();
   }
 
   countySel.onchange = function () {
@@ -39,6 +39,9 @@ window.onload = function () {
       forhongkong();
     }else{
     console.log(districtSel);
+        document.querySelector('[data-address-field="city"]').innerHTML = `
+<label for="checkout_shipping_address_city" class="field__label field__label--visible">City</label>
+<input placeholder="City" autocomplete="shipping address-level2" autocorrect="off" data-backup="city" class="field__input" aria-required="true" size="30" type="text" name="checkout[shipping_address][city]" id="checkout_shipping_address_city">`;
     }
   }
 console.log(cuntryVal);
