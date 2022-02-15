@@ -27,7 +27,7 @@
         </div>
         {%- capture formid -%}qvproduct_form_product_{{product_card_product.id}}{%- endcapture -%}
         {%- form 'product', product_card_product, id: formid , class: 'form shopify-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-        <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" >
+        <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
         <div class="product-form__buttons">
 
           <a id="notifyme" class="  {% if product_card_product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
