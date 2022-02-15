@@ -13,7 +13,7 @@ var stateObject = {
   //     "Columbia": ["Washington", ""]
   //   },
   "Hong Kong": {
-    "Kowloon": [
+    "district": [
       "Kwai Tsing","North",
       "Tuen Mun","Yuen Long",
       "Sham Shui Po","Kwun Tong",
@@ -36,7 +36,7 @@ window.onload = function () {
   select.name = "checkout[shipping_address][city]";
   select.id = "checkout_shipping_address_city"
   select.className = "field__input field__input--select"
-  var district = stateObject[countySel.value]["Kowloon"];
+  var district = stateObject[countySel.value]["district"];
   for (const val of district)
   {
     var option = document.createElement("option");
