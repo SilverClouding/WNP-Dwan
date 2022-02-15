@@ -62,7 +62,6 @@
     },
     "16425886176678f54c": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1642588617446ec0b9-0": {
           "type": "heading",
@@ -90,6 +89,7 @@
     },
     "1644409022afe0adc2": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{{collection.metafields.collection_field.collection_bottom_description.html}}",
         "color_scheme": "background-1",
