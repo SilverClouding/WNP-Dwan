@@ -94,7 +94,7 @@ $(document).ready(function(){
                         <div>
                         <div class="price__regular">
                         <span class="price-item price-item--regular">
-                        HK${Shopify.formatMoney(product.pr * 100.00)}
+                        HK<span id="product_price__${product.empi}"></span>
                           </span>
                           </div>
                           </div>
@@ -201,7 +201,7 @@ $(document).ready(function(){
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
       console.log("Entire product json vendor:", Shopify.formatMoney(productJson.price));
-      document.getElementById(`vendor__name__${productJson.id}`).innerText =`Shopify.formatMoney(productJson.price)`;
+      document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
