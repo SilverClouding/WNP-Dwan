@@ -34,6 +34,7 @@
     {% render 'meta-tags' %}
     <script src="{{ 'vendor.js' | asset_url }}"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    
     {{ content_for_header }}
 
     {%- liquid
@@ -112,12 +113,14 @@
       }
     {% endstyle %}
 
+    {{ 'option_selection.js' | shopify_asset_url | script_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
      {{ 'fancybox.min.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    {{ 'custom2.css' | asset_url | stylesheet_tag }}
+   
       {{ 'megamenu.css' | asset_url | stylesheet_tag }}
     
     {{ 'store_locator.css' | asset_url | stylesheet_tag }}
@@ -138,6 +141,12 @@
   
   {% render 'weglot_hreftags' %}
 {% render 'weglot_switcher' %}
+
+<!--begin-boost-pfs-filter-css-->
+  {% render 'boost-pfs-style' %}
+<!--end-boost-pfs-filter-css-->
+
+ {{ 'custom2.css' | asset_url | stylesheet_tag }}
 </head>
 
   <body class="gradient">
@@ -145,14 +154,15 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% section 'announcement-bar' %}
+   {% comment %} {% section 'announcement-bar' %}{% endcomment %}
     {% section 'header' %}
-    
+ 
     <div class="mega-menu-container not-sticky">
+      <div class="menucont">
       <div class="level_1_for_sticky">
         <ul>
           {% for link in linklists[settings.menu].links %}
-          <li class="level_1_item main_nav_{{forloop.index}}" id="main_nav_{{forloop.index}}" triger_megamenu="{{link.handle}}"> {{link.title}}</li>
+          <li class="level_1_item main_nav_{{forloop.index}}" id="main_nav_{{forloop.index}}" triger_megamenu="{{link.handle}}"> <a href="{{link.url}}" class="{% if settings.menu_item_name contains link.title %}custom-color{% endif %}">{{link.title}}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -180,12 +190,15 @@
       {% section 'mega-menu-6' %}
       {% endif %}
       </div>
-
+      </div>
     </div>
     
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="{% if template contains 'cart' %} class-for-cart-page  {% if cart.item_count  == 0 %} main-empty-class {% endif %}  {% endif %}content-for-layout focus-none" role="main" tabindex="-1">
+      {% if template contains 'cart' %}<div class="flex"> {% endif %}
      
-      {{ content_for_layout }}
+        {{ content_for_layout }}
+      
+      {% if template contains 'cart' %}</div> {% endif %}
     </main>
     {% section 'featured-content-block' %}
     {% section 'newsletter' %}
@@ -194,12 +207,24 @@
     {% section 'newsletter-popup' %}
     {% endunless %}
     
+    {% comment %}{% endcomment %}
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
       {% section 'cart-items' %}
     </div>
     {% endif %}
+    
   
+    <script>
+//       jQuery('[id^=qv_]').filter((idx,element)=>{
+//         let indexInParent = getElementIndex(element);
+//         console.log(element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/));
+//         return element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/) && ![0,1].includes(indexInParent);
+//       }).remove();
+//       function getElementIndex (element) {
+//         return Array.from(element.parentNode.children).indexOf(element);
+//       }
+    </script>
     
     
     <ul hidden>
@@ -246,9 +271,23 @@
     {% endunless %}
  {% comment %}   {% endcomment %}
     
+    <div  id="one"  class="open_popup_minq">
+      <div  class="open_popup_minq_cont">
+      <a href="#" class="open_popup_minq_close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6387 13.7664C12.9501 14.0779 13.455 14.0779 13.7664 13.7664C14.0779 13.455 14.0779 12.9501 13.7664 12.6387L8.12774 7L13.7664 1.3613C14.0779 1.04989 14.0779 0.544979 13.7664 0.233562C13.455 -0.0778541 12.9501 -0.0778541 12.6387 0.233562L7 5.87226L1.3613 0.233563C1.04989 -0.0778534 0.544979 -0.0778541 0.233562 0.233563C-0.0778541 0.544979 -0.0778541 1.04989 0.233562 1.3613L5.87226 7L0.233563 12.6387C-0.0778537 12.9501 -0.0778534 13.455 0.233563 13.7664C0.544979 14.0779 1.04989 14.0779 1.3613 13.7664L7 8.12774L12.6387 13.7664Z" fill="#44444D"/>
+</svg>
+        </a>
+      <h2>WOOF!</h2>
+      <p> Some products have a minimum quantity rule. This is to ensure the product retains its coldness when it reaches you. The multiples of quantity can be made up of any combination of products in that product category.</p>
+    </div>
+     </div>
+<!--      <div class="qv-product-options_html"></div> -->
+    <script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+     <script src="{{ 'store_locator.js' | asset_url }}" defer="defer"></script>
+    
+
     <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
 <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
 <script>
@@ -261,12 +300,147 @@ ratingSnippet("ruk_rating_snippet",{
 });
 </script>
    
-<script>
-Shopify.Products.recordRecentlyViewed();
+
+  {%comment%}
+  {% render 'linked-options' %}{%endcomment%}
   
-  
-</script>
-  
-  {% render 'linked-options' %}
-  </body>
+    
+{% include 'swymSnippet' %}
+ {% include 'swym-header-counter'%}
+     {%include 'swym-custom'%}
+    <script> 
+//       if(window._swat){
+//         window._swat.initializeActionButtons(".save-whishlist"); 
+//       }else{ 
+//         window.SwymCallbacks = window.SwymCallbacks || []; 
+//         window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".save-whishlist"); }); 
+//       } console.log(window._swat);
+    </script>
+
+
+<!--begin-boost-pfs-js-->
+  {% render 'boost-pfs' %}
+<!--end-boost-pfs-js-->
+    
+   
+    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    {% comment %}{% endcomment %}
+    <script src="{{ 'stx_custom.js' | asset_url }}" defer="defer"></script>
+    
+    {% comment %}
+    <script>
+      {%- if customer -%}
+
+      (function(){
+
+        "use strict";
+
+        /* In case you want to output a bunch of things to the debug console */
+        var debug = false;
+
+        /* the cookie value var */
+        var cartCookieValue;
+
+        /* you should leave this as is, but if you want to experiement with larger values you can */
+        var cookieExpireDays = 14;
+
+        /* 
+		IMPORTANT. 
+		YOU MUST CHANGE THE YOUR_SECRET_KEY VALUE BELOW TO SOMETHING ELSE.
+		The value will look something like this: 30ab3459e46e7b209b45dba8378fcbba67297304
+		*/
+        var customerCookieValue = {{ customer.id | hmac_sha256: "30ab3459e46e7b209b45dba8378fcbba67297304" | json }};
+
+        /* A console logging function */
+        var log = function(a){
+          if(!debug){ return }
+          console.log(a);
+        };
+
+        /* get cookie by name */
+        var getCookie = function(name) {
+          var value = "; " + document.cookie;
+          var parts = value.split('; '+name+'=');
+          if (parts.length == 2) return parts.pop().split(";").shift();
+        };
+
+        /* update the cart cookie value */
+        var setCartCookie = function(a) {
+          var date = new Date();
+          date.setTime(date.getTime()+(cookieExpireDays*86400000));
+          var expires = '; expires='+date.toGMTString();
+          document.cookie = 'cart='+a+expires+'; path=/';
+        };
+
+        var init = function(){
+          /* get the current value of the cart cookie */
+          cartCookieValue = getCookie('cart');
+
+          if(!cartCookieValue){ 
+            /* cookie not found so we don't have a cart at all. Let's make a new one */
+            setCartCookie(customerCookieValue);
+            return;
+          }
+
+          if(cartCookieValue === customerCookieValue){
+            /* the customer is already using the correct cookie. Do nothing */
+            return;
+          }
+
+          /* 
+				If we've got this far we either don't have a cookie or the cookie is
+				already set to be hmac_sha256 value.
+
+				Cookies do not match. 
+				Do we have products already in the cart? 
+			*/
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', '/cart.js');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var cartJson = JSON.parse(xhr.responseText);
+              console.log(cartJson);
+              if(cartJson && cartJson.item_count){ 
+
+                /* 
+						Do nothing as there's already items in the cart.
+
+						If you want to extend the code this is where you'd take the items 
+						in the current cart and move them into the persistant cart. In other
+						words - change the cookie value and re-add all the existing products.
+						*/
+                return;
+              }
+
+              /* 
+						we don't have items in the cart so this means that we can easily 
+						change the cart cookie value.
+
+						Once set, all products added will be to a cart with this value.
+						(in theory)
+					*/
+              setCartCookie(customerCookieValue);
+
+              /*
+						With the cookie value changed the next step would be to check to see
+						if the cart now has products or not. If it does, it would be worth 
+						reloading the page (or better - trigger an on screen cart notifications).
+
+						Visit the cart page manually for now and see if you have items from the
+						other shipping session.
+					*/
+            }
+          };
+          xhr.send();
+        };
+
+        init();
+
+      })();
+
+      {%- endif -%}
+    </script>
+    {% endcomment %}
+    
+</body>
 </html>
