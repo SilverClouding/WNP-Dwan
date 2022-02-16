@@ -704,7 +704,7 @@
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
             <div class="product-form__buttons">
 
-              <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+              <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} notifyme {% else %} hide {% endif %} button button--full-width{% if product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
                 Notify me
               </a> 
               <button
