@@ -834,7 +834,7 @@ class VariantSelects extends HTMLElement {
 
     if( parseInt(inventoryQty) < minQty){
     disable = true;
-      console.log(inventoryQty);
+      console.log("if- "+inventoryQty);
     }else{
     disable = false;
     }
