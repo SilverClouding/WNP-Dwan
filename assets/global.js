@@ -825,6 +825,13 @@ class VariantSelects extends HTMLElement {
     const addButtonText = productForm.querySelector('[name="add"] > span');
 
     if (!addButton) return;
+    
+    var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
+
+    var minQty = this.getAttribute('data-min-qty');
+
+    console.log(inventoryQty+'='+minQty);
+
 
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
