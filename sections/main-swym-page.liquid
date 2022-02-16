@@ -200,7 +200,7 @@ $(document).ready(function(){
   
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
-      console.log("Entire product json vendor:", productJson.vendor);
+      console.log("Entire product json vendor:", productJson);
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
