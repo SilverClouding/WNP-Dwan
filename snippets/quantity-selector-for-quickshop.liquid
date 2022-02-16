@@ -11,7 +11,7 @@
                 {% endif %}
                 {% endfor %}
                 <p>Product qty:<span class="qty_cus">{{product.selected_or_first_available_variant.inventory_quantity}}</span></p>
-              <quantity-input class="quantity">
+              <quantity-input class="quantity" data-min-qty="{{qty}}">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
                   {% render 'icon-minus' %}
