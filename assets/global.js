@@ -832,7 +832,7 @@ class VariantSelects extends HTMLElement {
 
     console.log(disable+'-toggle button-'+inventoryQty+'='+minQty);
 
-    if( inventoryQty < minQty){
+    if( parseInt(inventoryQty) < minQty){
     disable = true;
       console.log(inventoryQty);
     }else{
