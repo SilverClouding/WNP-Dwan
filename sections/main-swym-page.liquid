@@ -67,7 +67,7 @@ $(document).ready(function(){
       let productitem="";
 //       console.log(wishlistProducts);
       wishlistProducts.forEach(function(product){
-        
+        console.log(product);
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
         productitem += `<li class="grid__item"> <div class="card-wrapper">
