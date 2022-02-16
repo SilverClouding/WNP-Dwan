@@ -202,11 +202,11 @@ $(document).ready(function(){
     window._swat.getProductDetails(product, function(productJson) {
       console.log("Entire product json vendor:",productJson);
       
-//       if(productJson){
-//         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
-//       }else{
-//         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
-//       }
+      if(productJson.available){
+        document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
+      }else{
+        document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
+      }
       
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
