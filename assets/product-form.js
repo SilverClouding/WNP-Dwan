@@ -104,7 +104,7 @@ if (!customElements.get('product-form')) {
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
 
       this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);
-
+console.log(errorMessage);
       if (errorMessage) {
         this.errorMessage.textContent = errorMessage;
       }
