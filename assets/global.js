@@ -661,6 +661,7 @@ class VariantSelects extends HTMLElement {
     
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
+      var minQty =
 
       console.log(inventoryQty);
       
@@ -671,7 +672,7 @@ class VariantSelects extends HTMLElement {
 //           console.log("ok");
           stockmsg.innerHTML="In Stock";   
         }
-        else if(inventoryQty <= 10 && inventoryQty >0){
+        else if(inventoryQty <= 10 && inventoryQty >0 && inventoryQty > minQty ){
           stockmsg.innerHTML="Low in stock";
         }
         else{
