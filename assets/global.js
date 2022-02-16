@@ -661,9 +661,9 @@ class VariantSelects extends HTMLElement {
     
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
-      var minQty =
+      var minQty = this.getAttribute('data-min-qty');
 
-      console.log(inventoryQty);
+      console.log(inventoryQty+'='+minQty);
       
 
       for (let i = 0; i < this.children.length; i++) {
