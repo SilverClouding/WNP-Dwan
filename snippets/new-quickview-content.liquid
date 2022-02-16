@@ -43,7 +43,7 @@
           {{product_card_product.selected_or_first_available_variant.inventory_quantity}}={{qty}}
           
           <a id="notifyme" class="  
-                                  {% if product_card_product.selected_or_first_available_variant.available == false and product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                                  {% if product_card_product.selected_or_first_available_variant.available == false or product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
                                   notifyme 
                                   {% else %} 
                                   hide 
