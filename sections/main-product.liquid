@@ -719,9 +719,22 @@
                 
                   <div class="product-form__buttons">
                  
-                    <a id="notifyme" class="  {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} notifyme {% else %} hide {% endif %} button button--full-width{% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+                    <a id="notifyme" 
+                       class="  {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                              notifyme 
+                              {% else %} 
+                              hide 
+                              {% endif %} 
+                              button button--full-width
+                              {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}
+                              button--secondary{% else %}
+                              button--primary{% endif %}">
                     Notify me
                     </a> 
+                    
+                        <a class="klaviyo-bis-trigger Button  Button--secondary Button--full" 
+                           href="#" style="margin-top: 20px;">Notify Me When Available</a>
+
                   
                     <button
                       type="submit"
