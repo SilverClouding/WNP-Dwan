@@ -662,6 +662,8 @@ class VariantSelects extends HTMLElement {
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
 
+      document.querySelector.innerHTML=inventoryQty;
+      
 
       for (let i = 0; i < this.children.length; i++) {
         const stockmsg = this.children[0];
