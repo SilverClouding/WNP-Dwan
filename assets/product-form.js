@@ -106,7 +106,8 @@ if (!customElements.get('product-form')) {
       this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);
 console.log(errorMessage);
       if (errorMessage) {
-        this.errorMessage.textContent = errorMessage;
+//         this.errorMessage.textContent = errorMessage;
+        this.errorMessage.textContent = 'Quantity exceeds available stock';
       }
     }
   });
