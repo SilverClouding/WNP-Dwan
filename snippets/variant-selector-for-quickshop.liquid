@@ -27,10 +27,14 @@
   {% assign product_var_qty = product.selected_or_first_available_variant.inventory_quantity %}
   
   <h3 id="stockmsg" class="stockmsg">
+    {% if product_var_qty > qty %}
     {% if product_var_qty >= 10 %}
     In stock 
-    {% else if product_var_qty < 10 and product_var_qty > 0 and product_var_qty > qty   %}
+    {% else if product_var_qty < 10 and product_var_qty > 0 %}
     Low in stock
+    {% else %}
+    Out of stock
+    {% endif %}
     {% else %}
     Out of stock
     {% endif %}
