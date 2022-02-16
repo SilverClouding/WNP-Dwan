@@ -662,7 +662,7 @@ class VariantSelects extends HTMLElement {
       var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
       
 
-      document.querySelector('.qty_cus').innerHTML=inventoryQty;
+      console.log(inventoryQty);
       
 
       for (let i = 0; i < this.children.length; i++) {
