@@ -201,6 +201,7 @@ $(document).ready(function(){
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
       console.log("Entire product json vendor:", Shopify.formatMoney(productJson.price));
+      document.getElementById(`vendor__name__${productJson.id}`).innerText =`Shopify.formatMoney(productJson.price)`;
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
@@ -210,7 +211,7 @@ $(document).ready(function(){
         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
         document.getElementById(`${productJson.id}`).classList.remove('disable'); 
       }else{
-        document.getElementById(`${productJson.id}`).innerText ="Sold out";  
+        document.getElementById(`${productJson.id}`).innerText ="Out of stock";  
         document.getElementById(`${productJson.id}`).classList.add('disable'); 
       }
     },function(e) {console.log(e);});
