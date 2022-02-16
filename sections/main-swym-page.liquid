@@ -70,7 +70,7 @@ $(document).ready(function(){
         console.log(product);
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
-        productitem += `<li class="grid__item"> <div class="card-wrapper">
+        productitem += `<li class="grid__item" id="product_li__${product.empi}"> <div class="card-wrapper">
 
                         <a href="" 
                         data-epi="${product.epi}" 
@@ -200,7 +200,10 @@ $(document).ready(function(){
   
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
-      console.log("Entire product json vendor:", Shopify.formatMoney(productJson.price));
+      console.log("Entire product json vendor:",productJson);
+      
+      product_li__
+      
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
