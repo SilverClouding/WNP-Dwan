@@ -40,7 +40,7 @@
         <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
         <div class="product-form__buttons">
 
-          {{product_card_product.selected_or_first_available_variant.inventory_quantity}}={{qty}}
+         
           
           <a id="notifyme" class="  
                                   {% if product_card_product.selected_or_first_available_variant.available == false or product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
