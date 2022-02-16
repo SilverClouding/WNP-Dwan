@@ -15,6 +15,16 @@
       {% render "product-price-description-for-quickshop"  product: product_card_product %}
       {% render "variant-selector-for-quickshop"  product: product_card_product %}
       {% render "quantity-selector-for-quickshop"  product: product_card_product %}
+      
+      {% assign qty = 1 %} 
+      {% assign minTag = false %}
+      {% for tag in product_card_product.tags %}
+      {% if tag contains 'min-qty:' %}
+      {% assign minTag = true %}
+      {% assign qty = tag | split:":" | last | plus:0 %}
+      {% endif %}
+      {% endfor %}
+      
       <product-form class="product-form"> 
         <div class="product-form__error-message-wrapper" role="alert" hidden>
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -30,7 +40,13 @@
         <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
         <div class="product-form__buttons">
 
-          <a id="notifyme" class="  {% if product_card_product.selected_or_first_available_variant.available == false %} notifyme {% else %} hide {% endif %} button button--full-width{% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
+          <a id="notifyme" class="  
+                                  {% if product_card_product.selected_or_first_available_variant.available == false and product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                                  notifyme 
+                                  {% else %} 
+                                  hide 
+                                  {% endif %}
+                                  button button--full-width{% if product_card_product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}">
             Notify me
           </a> 
           <button
