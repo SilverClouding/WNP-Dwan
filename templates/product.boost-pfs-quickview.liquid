@@ -710,8 +710,9 @@
               <button
                       type="submit"
                       name="add"
-                      class="{% if product.selected_or_first_available_variant.available == false %} hide {% endif %}  product-form__submit  button button--full-width {% if product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                      {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      class="{% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                             hide {% endif %}  product-form__submit  button button--full-width {% if product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %}disabled{% endif %}
                       >
                 <span>
                   {%- if product.selected_or_first_available_variant.available -%}
