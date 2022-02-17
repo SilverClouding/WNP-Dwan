@@ -174,7 +174,7 @@
       
       
       
-      <a id="notifyme" 
+      <a 
          class="  {% if product_card_product.selected_or_first_available_variant.available == false or product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
                 notifyme col_notify_btn klaviyo-bis-trigger Button  Button--secondary Button--full badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}
                 {% else %} 
@@ -183,7 +183,7 @@
                 button button--full-width
                 {% if block.settings.show_dynamic_checkout and product_card_product.selling_plan_groups == empty %}
                 button--secondary{% else %}
-                button--primary{% endif %}" id='klaviyo-data-handle-{{ product.handle }}' data-klaviyo-handle='{{ product.handle }}'>
+                button--primary{% endif %}" id='klaviyo-data-handle-{{ product_card_product.handle }}' data-klaviyo-handle='{{ product_card_product.handle }}'>
         Notify me
       </a> 
       
