@@ -3876,7 +3876,7 @@
     h.components.back_in_stock.MainView = P.View.extend({
         events: {
             change: "variantChange",
-            "click .klaviyo-bis-trigger": "handleBISTriggerClick"
+//             "click .klaviyo-bis-trigger": "handleBISTriggerClick"
         },
         settings: function() {
             return this.model.get("settings")
