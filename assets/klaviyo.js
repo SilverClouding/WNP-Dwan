@@ -4062,7 +4062,7 @@
             })
         },
         handleBISTriggerClick: function(d) {
-          console.log(this.getAttribute('id'));
+          console.log(this);
             d && d.preventDefault() && d.stopPropagation();
             var f = this;
             if (this.model.get("is_on_collections_page")) {
