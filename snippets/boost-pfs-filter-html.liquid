@@ -39,7 +39,14 @@
 {%- when 'soldOutLabelHtml' -%}
 <span class="badge badge--bottom-left color-[[soldOutBadgeClass]]" aria-hidden="true">
   {{ 'products.product.sold_out' | t }}
+
 </span>
+
+<a href="{{itemUrl}}"
+   class="notifyme col_notify_btn  Button  Button--secondary Button--full badge badge--bottom-left button button--full-width button--secondary">
+  Notify me
+</a> 
+
 
 {%- when 'saleLabelHtml' -%}
 <span class="badge badge--bottom-left color-[[saleBadgeClass]]" aria-hidden="true">
