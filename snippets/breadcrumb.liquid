@@ -84,7 +84,7 @@
         {%- endif -%}
       {%- when 'blog' -%}
         {%- if current_tags -%}
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item blog-title">
             {{ blog.title | link_to: blog.url }}
           </li>
           <li class="breadcrumbs__item">
