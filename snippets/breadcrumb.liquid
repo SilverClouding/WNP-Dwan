@@ -92,6 +92,9 @@
             <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
           </li>
         {%- else -%}
+    <li class="breadcrumbs__item blog-title">
+            {{ blog.title | link_to: blog.url }}
+          </li>
           <li class="breadcrumbs__item else">
             <a class="breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
           </li>
