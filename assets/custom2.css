@@ -919,3 +919,16 @@ p.title_address {
     opacity: 0.2;
     pointer-events: none;
 }
+
+.product-form__error-message-wrapper {
+    align-items: center!important;
+}
+
+.product-form__error-message-wrapper svg {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+span.product-form__error-message {
+    font-size: 1.5rem;
+}
