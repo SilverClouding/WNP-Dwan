@@ -441,38 +441,6 @@ ratingSnippet("ruk_rating_snippet",{
       {%- endif -%}
     </script>
     {% endcomment %}
-    <!-- <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script> -->
-    <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Kc4sAW"></script>
-    <script src="{{ 'klaviyo.js' | asset_url }}"></script>
-    <script>
-      var klaviyo = klaviyo || [];
-      klaviyo.init({
-        account: "Kc4sAW",
-        platform: "shopify"
-      });
-      klaviyo.enable("backinstock",{ 
-        modal: {
-          headline: "{product_name}",
-          body_content: "Register to receive a notification when this item comes back in stock.",
-          email_field_label: "Email",
-          button_label: "Notify me when available",
-          subscription_success_label: "You're in! We'll let you know when it's back.",
-          footer_content: '',
-          additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
-          drop_background_color: "#000",
-          background_color: "#fff",
-          text_color: "#222",
-          button_text_color: "#fff",
-          button_background_color: "#439fdb",
-          close_button_color: "#ccc",
-          close_label: '×',
-          email_field_value: '{{ customer.email }}',
-          error_background_color: "#fcd6d7",
-          error_text_color: "#C72E2F",
-          success_background_color: "#d3efcd",
-          success_text_color: "#1B9500"
-        }
-      });
-    </script>
+    
 </body>
 </html>
