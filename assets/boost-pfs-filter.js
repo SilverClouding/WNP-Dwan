@@ -67,7 +67,7 @@ var boostPFSFilterConfig = {
 		// Add Custom class
 		var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
 		var saleClass = onSale ? boostPFSTemplate.saleClass : '';
-itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
+
 		itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
 		itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
 		// Add Card product class
@@ -101,7 +101,7 @@ itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
 		itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
 		itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
       itemHtml = itemHtml.replace(/{{vendorHandle}}/g, data.vendor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-		
+		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
 
 
 		return itemHtml;
@@ -292,6 +292,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		var soldOutLabel = '';
 		if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_badge_color_scheme') && soldOut) {
 			soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{soldOutBadgeClass}}/g, boostPFSThemeConfig.custom.sold_out_badge_color_scheme);
+          soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{itemUrl}}/g,  Utils.buildProductItemUrl(data));
 		}
 		return soldOutLabel;
 	}
