@@ -600,7 +600,6 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
   
     BoostOTP.inject(this);
 	QuickView.prototype.bindQuickViewModalEvents = function() {
-      
       customSubmitEvent()
       // Bind close
       jQ('.boost-pfs-select-option-close').on('click', function () {
