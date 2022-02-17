@@ -183,7 +183,7 @@
                 button button--full-width
                 {% if block.settings.show_dynamic_checkout and product_card_product.selling_plan_groups == empty %}
                 button--secondary{% else %}
-                button--primary{% endif %}">
+                button--primary{% endif %}" id='klaviyo-data-handle-{{ product.handle }}' data-klaviyo-handle='{{ product.handle }}'>
         Notify me
       </a> 
       
