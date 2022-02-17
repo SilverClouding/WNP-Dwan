@@ -4090,7 +4090,7 @@
         },
         showModal: function(d) {
             var f = this.model.get("product");
-          console.log(this.attr('id'));
+          console.log(this);
             d = this.model.get("selected_variant_id") || d || f.variants[0].id;
             d = this.model.get("variants_by_id")[d];
             var g = this.model.get("variants").length
