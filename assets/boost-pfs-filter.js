@@ -73,7 +73,7 @@ var boostPFSFilterConfig = {
 		// Add Card product class
 		itemHtml = itemHtml.replace(/{{cardProductClass}}/g, buildCardProductClass());
 		// Add sold out Label
-		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel());
+		itemHtml = itemHtml.replace(/{{itemSoldOut}}/g, buildSoldOutLabel(data));
 		// Add sale Label
 		itemHtml = itemHtml.replace(/{{itemSale}}/g, buildSaleLabel(data));
 		// Add Images
