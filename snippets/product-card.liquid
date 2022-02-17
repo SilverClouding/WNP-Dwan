@@ -169,6 +169,7 @@
       
      
         {%- if product_card_product.available == false -%} 
+      {% comment %}
       <div class="card__badge sold_out_right">
 <!--           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span> -->
       
@@ -188,6 +189,12 @@
       </a> 
       
       </div>
+      {% endcomment %}
+      <div class='klaviyo-product-container' id='klaviyo-data-handle-{{ product.handle }}' data-klaviyo-handle='{{ product.handle }}'>
+        <div class="klaviyo-button-container">
+        </div>
+      </div>
+      
       {%- endif -%}
   
       
