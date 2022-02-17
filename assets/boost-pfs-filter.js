@@ -289,6 +289,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
 	function buildSoldOutLabel(data) {
 		// Build Sold out label
+      console.log(data);
 		var soldOutLabel = '';
 		if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_badge_color_scheme') && soldOut) {
 			soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{soldOutBadgeClass}}/g, boostPFSThemeConfig.custom.sold_out_badge_color_scheme);
