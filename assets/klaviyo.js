@@ -3723,24 +3723,19 @@
     ;
     h.platforms.bigcommerce.isVariantOutOfStock = function(d, f, g) {
         return h.platforms.bigcommerce.isVariantTrackableBasedOnInventoryManagementPolicy(d) && h.platforms.bigcommerce.isVariantOutOfInventory(f, g) && h.platforms.bigcommerce.isVariantAvailable(f, g) && h.platforms.bigcommerce.isVariantIncludedBasedOnTags(d, g.include_on_tags, g.exclude_on_tags)
-    }
-    ;
+    };
     h.platforms.bigcommerce.isVariantOutOfInventory = function(d, f) {
         return n.isNull(d.inventory_quantity) || n.isUndefined(d.inventory_quantity) ? !d.available : d.inventory_quantity < f.inventory_quantity_threshold
-    }
-    ;
+    };
     h.platforms.bigcommerce.isVariantTrackableBasedOnInventoryManagementPolicy = function(d) {
         return h.platforms.bigcommerce.INVENTORY_TRACKING_TYPES.includes(d.inventory_policy)
-    }
-    ;
+    };
     h.platforms.bigcommerce.isVariantAvailable = function(d, f) {
         return d.available
-    }
-    ;
+    };
     h.platforms.bigcommerce.isVariantIncludedBasedOnTags = function(d, f, g) {
         return g.length && d.tags.length && n.intersection(d.tags, g).length || f.length && (!n.intersection(d.tags, f).length || !d.tags.length) ? !1 : !0
-    }
-    ;
+    };
     h.platforms.bigcommerce.findSelectedVariantId = function() {
         var d = []
           , f = n.map([h.platforms.bigcommerce.ADD_TO_CART_FORM_ID + " " + h.platforms.bigcommerce.OPTION_NAME_ELEMENT, h.platforms.bigcommerce.ADD_TO_CART_FORM_ID + " " + h.platforms.bigcommerce.DROPDOWN_NAME_ELEMENT], function(d) {
@@ -3772,22 +3767,18 @@
                 }
             }),
             null
-    }
-    ;
+    };
     h.platforms.bigcommerce.isValidVariant = function(d) {
         return !0
-    }
-    ;
+    };
     h.platforms.bigcommerce.productId = function() {
         product_id_element = h.platforms.bigcommerce.ADD_TO_CART_FORM_ID + " " + h.platforms.bigcommerce.PRODUCT_ID_ELEMENT;
         return p(product_id_element).val()
-    }
-    ;
+    };
     h.platforms.bigcommerce.productDetailsUrl = function(d) {
         product_id = h.platforms.bigcommerce.productId();
         return "https://fast.a.klaviyo.com/api/v1/catalog/bigcommerce/product-variants?a=" + d.account_id + "&p=" + product_id
-    }
-    ;
+    };
     h.platforms.bigcommerce.format_product_json = function(d) {
         data = d.data;
         product = {
@@ -3807,8 +3798,7 @@
             })
         });
         return product
-    }
-    ;
+    };
     h.components = h.components || {};
     h.components.back_in_stock = h.components.back_in_stock || {};
     h.components.back_in_stock.BASE_CSS = 'body, html { background: transparent;-webkit-font-smoothing: antialiased;height: 100%;}html {font-family: sans-serif;font-size: 14px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}body {margin: 0;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 14px;line-height: 1.5;color: #222;overflow: hidden;-moz-transition: background-color 0.15s linear;-webkit-transition: background-color 0.15s linear;-o-transition: background-color 0.15s linear;transition: background-color 0.15s cubic-bezier(0.785, 0.135, 0.150, 0.860);}body.fadein {background: rgba(0, 0, 0, 0.65);}a {background-color: transparent;}a:active,a:hover {outline: 0;}h1 {font-size: 2em;margin: 0.67em 0;}h3 { font-size: 24px;}h4 {  font-size: 18px;  margin-top: 10px;  margin-bottom: 10px;}h3, h4 {  font-family: inherit;  font-weight: 500;  line-height: 1.1;  color: inherit;}button,input,optgroup,select,textarea {color: inherit;font: inherit;margin: 0;font-family: inherit;font-size: inherit;line-height: inherit;}button {overflow: visible;}button,select {text-transform: none;}button {-webkit-appearance: button;cursor: pointer;}button[disabled] {opacity: 0.6;}button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}input {line-height: normal;}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto;}* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}#container {position: relative;background: white;padding: 12px 18px 40px 18px;}.fade {opacity: 0;-webkit-transition: opacity 0.15s linear;-o-transition: opacity 0.15s linear;transition: opacity 0.15s linear;}.fade.in {opacity: 1;}.modal {  overflow-x: hidden;  overflow-y: auto;  position: fixed;  top: 0;  right: 0;  bottom: 0;  left: 0;  z-index: 999;  -webkit-overflow-scrolling: touch;  outline: 0;}.modal-title {  margin: 0;  font-size: 24px;  line-height: 1.5;}.clearfix:before,.clearfix:after {  content: " ";  display: table;}.clearfix:after {  clear: both;}.form-control {  display: block;  width: 100%;  height: 34px;  padding: 6px 12px;  font-size: 14px;  line-height: 1.5;  color: #222;  background-color: #fff;  background-image: none;  border: 1px solid #ccc;  border-radius: 2px;  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}.input-lg {  font-size: 14px;  height: 46px;  padding: 10px 16px;  line-height: 1.3333333;}.submit-container {  margin-top: 20px;}.form-group {  margin-bottom: 15px;}.btn {  display: inline-block;  padding: 8px 12px;  margin-bottom: 0;  font-size: 14px;  font-weight: bold;  line-height: 1.5;  text-align: center;  white-space: nowrap;  vertical-align: middle;  -ms-touch-action: manipulation;  touch-action: manipulation;  cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  background-image: none;  border: 1px solid transparent;  border-radius: 2px;}.btn-success {  width: 100%;  color: #fff;  background-color: #439fdb;  border-color: #439fdb;}.btn-lg {  line-height: 24px;  font-size: 15px;  padding: 14px;  line-height: 1.3333333;}.close {  -webkit-appearance: none;  padding: 0;  cursor: pointer;  background: 0 0;  border: 0;  position: absolute;  top: 7px;  right: 15px;  font-size: 30px;  font-weight: 700;  line-height: 1;  color: #ccc;  text-shadow: 0 1px 0 #fff;}.alert {  padding: 6px 11px;  font-size: 13px;  margin: 15px 0;  border: 1px solid transparent;  border-radius: 2px;}.alert-success {  color: #1B9500;  background-color: #d3efcd;  border-color: #d3efcd;}.alert-success a {   color: #1B9500;}.alert-danger {  color: #C72E2F;  background-color: #fcd6d7;  border-color: #fcd6d7;}.pull-right {  float: right;}.text-right {  text-align: right;}.small-print {  font-size: 14px;  line-height: 1.5;}.small-print a {  color: inherit;  text-decoration: underline;}.powered-by {  opacity: 0.8;}.product-title {  margin-bottom: 20px;}.accepts_marketing {  opacity: 0.835;  font-size: 13px;}.accepts_marketing input {  margin-right: 10px;}.completed_message, .error_message {  display: none;}.complete .completed_message {  display: block;}#klaviyo-bis-modal.in {  position: relative;  z-index: 999;  height: 100%;  overflow: hidden;  overflow-y: auto;  -webkit-overflow-scrolling: touch;}@media only screen and (min-width:500px) {  #klaviyo-bis-modal {    max-width: 460px;    margin: auto;  }  #container {    border-radius: 3px;    padding: 30px 40px;  }}@media only screen and (min-width:992px) {  #container {    margin-top: 100px;  }}';
@@ -3876,7 +3866,7 @@
     h.components.back_in_stock.MainView = P.View.extend({
         events: {
             change: "variantChange",
-//             "click .klaviyo-bis-trigger": "handleBISTriggerClick"
+            "click .klaviyo-bis-trigger": "handleBISTriggerClick"
         },
         settings: function() {
             return this.model.get("settings")
