@@ -4108,8 +4108,7 @@
                 settings: d
             })
         })
-    }
-    ;
+    };
     h.components = h.components || {};
     h.components.back_in_stock = h.components.back_in_stock || {};
     h.components.back_in_stock.Trigger = P.Model.extend({});
