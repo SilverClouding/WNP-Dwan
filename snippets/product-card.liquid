@@ -168,9 +168,27 @@
       {% endif %}
       
      
-        {%- if product_card_product.available == false -%} <div class="card__badge sold_out_right">
-          <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
-            </div> {%- endif -%}
+        {%- if product_card_product.available == false -%} 
+      <div class="card__badge sold_out_right">
+<!--           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span> -->
+      
+      
+      
+      <a id="notifyme" 
+         class="  {% if product_card_product.selected_or_first_available_variant.available == false or product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                notifyme klaviyo-bis-trigger Button  Button--secondary Button--full badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}
+                {% else %} 
+                hide 
+                {% endif %} 
+                button button--full-width
+                {% if block.settings.show_dynamic_checkout and product_card_product.selling_plan_groups == empty %}
+                button--secondary{% else %}
+                button--primary{% endif %}">
+        Notify me
+      </a> 
+      
+      </div>
+      {%- endif -%}
   
       
       
