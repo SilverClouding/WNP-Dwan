@@ -932,3 +932,6 @@ p.title_address {
 span.product-form__error-message {
     font-size: 1.5rem;
 }
+span.swym-wishlist-cta {
+    margin-left: 5px;
+}
