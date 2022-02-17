@@ -943,3 +943,15 @@ span.swym-wishlist-cta {
 .notifyme.hide.klaviyo-bis-trigger {
   display: none!important;
 }
+
+div#klaviyo-bis-modal .btn {
+  background: #153A33;
+  color: #fff;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 12px 20px;
+  font-weight: 500;
+  max-width: 380px;
+  margin-bottom: 0;
+  border-color: #153A33;
+}
