@@ -293,7 +293,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		var soldOutLabel = '';
 		if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_badge_color_scheme') && soldOut) {
 			soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{soldOutBadgeClass}}/g, boostPFSThemeConfig.custom.sold_out_badge_color_scheme);
-          soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{itemUrl}}/g,  Utils.buildProductItemUrl(data));
+          soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{itemUrl}}/g, 'google.com' );
 		}
 		return soldOutLabel;
 	}
