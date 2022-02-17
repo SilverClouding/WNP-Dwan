@@ -190,15 +190,34 @@
       </div>
       {%- endif -%}
   {% endcomment %}
-      
-       {% unless product.available %}
-       <div class="card__badge sold_out_right">
-      <div class='klaviyo-product-container' id='klaviyo-data-handle-{{ product_card_product.handle }}' data-klaviyo-handle='{{ product_card_product.handle }}'>
-        <div class="klaviyo-button-container" style="opacity:1">
-        </div>
-      </div>
-      </div>
-      {% endunless %}
+      <script type="text/javascript">
+        var _learnq = _learnq || [];
+
+        var item = {
+          Name: {{ product_card_product.title|json }},
+          ProductID: {{ product_card_product.id|json }},
+          Categories: {{ product_card_product.collections|map:'title'|json }},
+          ImageURL: "https:{{ product_card_product.featured_image.src|img_url:'grande' }}",
+          URL: "{{ shop.secure_url }}{{ product.url }}",
+          Brand: {{ product_card_product.vendor|json }},
+          Price: {{ product_card_product.price|money|json }},
+          CompareAtPrice: {{ product_card_product.compare_at_price_max|money|json }}
+        };
+
+        _learnq.push(['track', 'Viewed Product', item]);
+        _learnq.push(['trackViewedItem', {
+          Title: item.Name,
+          ItemId: item.ProductID,
+          Categories: item.Categories,
+          ImageUrl: item.ImageURL,
+          Url: item.URL,
+          Metadata: {
+            Brand: item.Brand,
+            Price: item.Price,
+            CompareAtPrice: item.CompareAtPrice
+          }
+        }]);
+      </script>
       
       
       
