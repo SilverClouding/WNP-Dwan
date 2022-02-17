@@ -37,10 +37,12 @@
 {%- endraw -%}
 
 {%- when 'soldOutLabelHtml' -%}
+{% comment %}
 <span class="badge badge--bottom-left color-[[soldOutBadgeClass]]" aria-hidden="true">
   {{ 'products.product.sold_out' | t }}
 
 </span>
+{% endcomment %}
 
 <a href="{{itemUrl}}"
    class="notifyme col_notify_btn  Button badge badge--bottom-left color-[[soldOutBadgeClass]] Button--secondary Button--full  button button--full-width button--secondary">
