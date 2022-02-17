@@ -70,6 +70,9 @@
         <div class="page-width page-width--narrow">
           {% render block %}
         </div>
+  
+  {%- when 'breadcrumb_block' -%}
+  {% render 'breadcrumb' %}
       {%- when 'featured_image'-%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
@@ -537,6 +540,10 @@
   "blocks": [
     {
       "type": "@app"
+    },
+{
+      "type": "breadcrumb_block",
+	   "name": "Breadcrumb"
     },
     {
       "type": "featured_image",
