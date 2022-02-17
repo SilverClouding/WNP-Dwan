@@ -167,7 +167,7 @@
       
       {% endif %}
       
-     {% comment %}
+     {% comment %}{% endcomment %}
         {%- if product_card_product.available == false -%} 
       <div class="card__badge sold_out_right">
 <!--           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span> -->
@@ -189,7 +189,7 @@
       
       </div>
       {%- endif -%}
-  {% endcomment %}
+  
       <script type="text/javascript">
         var _learnq = _learnq || [];
 
