@@ -10,6 +10,11 @@
             "image_height": "small"
           }
         },
+        "cca84dd5-9ede-4a0e-a390-1e71064cdff8": {
+          "type": "breadcrumb_block",
+          "settings": {
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -31,6 +36,7 @@
       },
       "block_order": [
         "featured_image",
+        "cca84dd5-9ede-4a0e-a390-1e71064cdff8",
         "title",
         "content",
         "dbc7f7b0-e662-46c7-a0a9-8c766b86e509"
