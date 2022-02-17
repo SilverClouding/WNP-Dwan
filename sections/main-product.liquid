@@ -721,7 +721,7 @@
                  
                     <a id="notifyme" 
                        class="  {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} 
-                              notifyme 
+                              notifyme klaviyo-bis-trigger Button  Button--secondary Button--full
                               {% else %} 
                               hide 
                               {% endif %} 
@@ -732,10 +732,10 @@
                     Notify me
                     </a> 
                     
-                    {% comment %}{% endcomment %}
+                    {% comment %}
                         <a class="klaviyo-bis-trigger Button  Button--secondary Button--full" 
                            href="#" style="margin-top: 20px;">Notify Me When Available</a>
-
+{% endcomment %}
                   
                     <button
                       type="submit"
