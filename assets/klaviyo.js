@@ -4075,7 +4075,7 @@
           console.log(this.model.get("is_on_collections_page"));
             d && d.preventDefault() && d.stopPropagation();
             var f = this;
-            if (this.model.get("is_on_collections_page")) {
+            
                 var g = p(d.currentTarget).data("klaviyo-handle")
                   , h = p(p(d.currentTarget).data("klaviyo-quickview-variant")).val();
                 d = f.platform_implementation.productDetailsUrl({
@@ -4086,7 +4086,7 @@
                     (!n.isUndefined(h) && n.isUndefined(this.modal) || t) && f.createModal();
                     f.showModal(h)
                 })
-            } else
+            if (this.model.get("is_on_collections_page")) {} else
               console.log('else showModal');
 //                 f.showModal()
         },
