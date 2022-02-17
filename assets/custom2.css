@@ -307,8 +307,8 @@ border: 1px solid #d3d6d9!important;
 }
 
 a#notifyme, .notifyme {
-    background: #44444D;
-    color: #fff;
+    background: #44444D!important;
+    color: #fff!important;
     font-size: 15px;
     line-height: 18px;
     padding: 12px 20px;
