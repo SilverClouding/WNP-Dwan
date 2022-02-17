@@ -72,8 +72,10 @@
         </div>
   
   {%- when 'breadcrumb_block' -%}
+  <div class="page-width">
   {% render 'breadcrumb' %}
-      {%- when 'featured_image'-%}
+  </div>  
+    {%- when 'featured_image'-%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
             <div class="article-template__hero-{{ block.settings.image_height }} media"
