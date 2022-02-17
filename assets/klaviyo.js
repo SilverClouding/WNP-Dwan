@@ -4087,7 +4087,8 @@
                     f.showModal(h)
                 })
             } else
-                f.showModal()
+              console.log('else showModal');
+//                 f.showModal()
         },
         showModal: function(d) {
             var f = this.model.get("product");
