@@ -935,3 +935,11 @@ span.product-form__error-message {
 span.swym-wishlist-cta {
     margin-left: 5px;
 }
+
+.notifyme.klaviyo-bis-trigger {
+  display: block!important;
+}
+
+.notifyme.hide.klaviyo-bis-trigger {
+  display: none!important;
+}
