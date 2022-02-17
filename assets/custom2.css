@@ -306,7 +306,7 @@ border: 1px solid #d3d6d9!important;
     pointer-events: none!important;
 }
 
-a#notifyme {
+a#notifyme, .notifyme {
     background: #44444D;
     color: #fff;
     font-size: 15px;
