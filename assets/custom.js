@@ -474,9 +474,9 @@ jQuery(function($){
 
 
 // notify me
-  $(document).on('click', '.notifyme', function(){
-    console.log('click work notify')
-  });
+//   $(document).on('click', '.notifyme', function(){
+//     console.log('click work notify')
+//   });
 
 
 //open qty popup
