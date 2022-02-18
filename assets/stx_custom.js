@@ -7,7 +7,7 @@
 
     this.pushQueue = function(i, data, el){
 
-      console.log(data);
+      console.log(data[i]);
       //LOW STOCK -- add as many as possible if stock is below requested ammount
       if(data[i].check_inventory){
         data[i].quantity = Math.min(parseInt(data[i].inventory), parseInt(data[i].quantity));
