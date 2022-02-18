@@ -107,7 +107,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book An Appointment",
-            "button_link": "#",
+            "button_link": "shopify:\/\/products\/copy-of-wash-a-dog-help-a-dog",
             "button_style_secondary": true
           }
         }
@@ -317,7 +317,9 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured Products",
+        "col_title1": "",
         "collection": "dog-grooming",
+        "col_title2": "",
         "collection2": "",
         "products_to_show": 12,
         "show_view_all": false,
