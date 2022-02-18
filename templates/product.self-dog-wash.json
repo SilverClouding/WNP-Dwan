@@ -3,13 +3,6 @@
     "main": {
       "type": "main-appointment-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -27,49 +20,39 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
+        "5182bd43-5365-4c57-b6cc-e0bb7471fed8": {
           "type": "buy_buttons",
           "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
+            "show_dynamic_checkout": true
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "subtitle",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "share"
+        "5182bd43-5365-4c57-b6cc-e0bb7471fed8"
       ],
       "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "svg_icon1_text1": "<p>Free Delivery<\/p>",
+        "svg_icon1_text2": "<p>Free Delivery<\/p>",
+        "svg_icon1_text3": "<p>Free Delivery<\/p>",
+        "svg_icon1_text4": "<p>Free Delivery<\/p>"
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
     }
   },
