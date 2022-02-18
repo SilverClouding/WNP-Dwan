@@ -284,6 +284,11 @@
         "section_width": 100
       }
     },
+    "groomingForm": {
+      "type": "grooming-form",
+      "settings": {
+      }
+    },
     "16388773760b7fb856": {
       "type": "column-content-cards",
       "blocks": {
@@ -350,6 +355,7 @@
     "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
+    "groomingForm",
     "16388773760b7fb856"
   ]
 }
