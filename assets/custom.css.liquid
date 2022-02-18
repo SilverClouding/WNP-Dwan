@@ -10317,7 +10317,27 @@ justify-content: flex-start;
   width:100%;
   }
 
+.grooming-form select {
+    cursor: pointer;
+    overflow: hidden;
+    padding-right: 3em;
+    position: relative;
+    width: 100%;
+  }
 
+  .grooming-form select.field__input {
+    -webkit-appearance: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    width: calc(100% + 2em);  
+    position:relative;
+    background:url({{ 's-arrow.png' | asset_url }}) 96.5% center no-repeat;
+  }
+  .grooming-form select.field__input:focus {
+    outline: none;
+  }
 
 
 
