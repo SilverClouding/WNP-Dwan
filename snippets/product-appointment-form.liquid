@@ -72,7 +72,7 @@ for size, we use it to display a size chart (if applicable)
   {%- endcomment -%}
 
   <!-- Temporarily Remarked / Restored by Hades, 20200715 / 20200903, Self-Dog Wash Booking Form, Service was temporarily suspended due to the COVID-19 pandemic -->
-  <button type="submit" class="ProductForm__AddToCart button {% if selected_variant.available and section.settings.show_payment_button == false %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if selected_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+  <button type="submit" class="ProductForm__AddToCart button {% if selected_variant.available and section.settings.show_payment_button == false %}button--primary{% else %}button--secondary{% endif %} button--full" {% if selected_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
     
       <span>Book now</span>
       
