@@ -51,9 +51,11 @@
             <div class="Form__Item item-{{ forloop.index }}">
                 <label class="Form__Label">{{ block.settings.title | escape }}</label>
               <div class="Form__Select Select Select--primary">
+                {% comment %}
                <svg class="icon icon--select-arrow" role="presentation" viewBox="0 0 19 12">
       <polyline fill="none" stroke="currentColor" points="17 2 9.5 10 2 2" fill-rule="evenodd" stroke-width="2" stroke-linecap="square"></polyline>
     </svg>
+                {% endcomment %}
                 
                 <select class="Form__Input" name="contact[{{ field_title | escape }}]" title="{{ block.settings.title | escape }}" required>
                   <option value="" disabled selected>{{ block.settings.placeholder | upcase | escape }}</option>
