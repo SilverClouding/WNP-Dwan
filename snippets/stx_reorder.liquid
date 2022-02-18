@@ -8,7 +8,7 @@
 {% assign qtyFlag = false %}
 {% for line_item in order.line_items %}
 {{line_item.variant.inventory_quantity}}
-{% if line_item.variant.inventory_quantity >= 0 %}
+{% if line_item.variant.inventory_quantity <= 0 %}
 {% assign qtyFlag = true %}
 {% endif %}
 {% endfor %}
