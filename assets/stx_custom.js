@@ -58,7 +58,7 @@
 
               console.log(mainPercent);
 
-              document.getElementById("precentfill").style.width = mainPercent+"%";
+//               document.getElementById("precentfill").style.width = mainPercent+"%";
               if(cartTotal >= cartthreshhold ){
                 document.getElementById("textmsg").innerHTML= Shopify.formatMoney(cartthreshhold) +" Done, You are eligible for";
               }else{
