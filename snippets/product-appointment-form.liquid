@@ -95,8 +95,7 @@ for size, we use it to display a size chart (if applicable)
             </ul>
           {%- else -%}
             <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}" {% if product_in_cart %}disabled{% endif %}>
-              <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span class="ProductForm__SelectedValue"></span></span>
-            
+              <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span class="ProductForm__SelectedValue"></span></span>         
             </button>
 
             {%- capture popover_html -%}
@@ -230,56 +229,15 @@ for size, we use it to display a size chart (if applicable)
     {%- else -%}
       <input type="hidden" name="id" data-productid="{{ product.id }}" data-sku="{{ selected_variant.sku }}" value="{{ selected_variant.id }}">
     {%- endunless -%}
-    {% comment %} Temporarily Remarked / Restored by Hades, 20200715 / 20200903, Self-Dog Wash Booking Form, Service was temporarily suspended due to the COVID-19 pandemic {% endcomment %}
-    {% render 'booking-form' %}
-    {% comment %} {% endcomment %}
   
+    {% render 'booking-form' %}
+   
     {%- if section.settings.show_quantity_selector -%}
     {%- if show_option_label -%}
         <span class="ProductForm__Label">{{ 'product.form.quantity' | t }}:</span>
       {%- endif -%}
 	{%- endif -%}
-    <div class="quantity-bar">
-    {%- if section.settings.show_quantity_selector -%}
-      <div class="ProductForm__QuantitySelector">
-        
-        <div class="QuantitySelector QuantitySelector--large">
-          {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
-
-          <span class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% include 'icon' with 'minus' %}</span>
-          <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1">
-          <span class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% include 'icon' with 'plus' %}</span>
-        </div>
-      </div>
-    {%- else -%}
-      <input type="hidden" name="quantity" value="1">
-    {%- endif -%}
-    
-    <div class="progress-bar" id="progress-bar">
-            <div id="progress-heading"></div>
-            <div id="progress-bar-image"><span></span></div>
-          </div>
-    </div>
-
-    {%- if section.settings.show_inventory_quantity -%}
-      {%- assign hide_inventory_quantity_by_default = false -%}
-      
-      {%- if selected_variant.inventory_management == blank or selected_variant.inventory_quantity <= 0 -%}
-        {%- assign hide_inventory_quantity_by_default = true -%}
-      {%- endif -%}
-
-      {%- if section.settings.inventory_quantity_threshold != 0 and selected_variant.inventory_quantity > section.settings.inventory_quantity_threshold -%}
-        {%- assign hide_inventory_quantity_by_default = true -%}
-      {%- endif -%}
-
-      <p class="ProductForm__Inventory Text--subdued" {% if hide_inventory_quantity_by_default %}style="display: none"{% endif %}>
-        {%- if section.settings.inventory_quantity_threshold == 0 -%}
-          {{ 'product.form.inventory_quantity_count' | t: count: selected_variant.inventory_quantity }}
-        {%- else -%}
-          {{ 'product.form.low_inventory_quantity_count' | t: count: selected_variant.inventory_quantity }}
-        {%- endif -%}
-      </p>
-    {%- endif -%}
+   
   </div>
 
   {%- comment -%}
