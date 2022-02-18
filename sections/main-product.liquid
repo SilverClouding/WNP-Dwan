@@ -698,6 +698,12 @@
         
         
           {%- when 'buy_buttons' -%}
+        
+        {% if template contains 'self-dog-wash' %}
+        {%- render 'product-appointment-form', product:product -%}
+        
+        {% else %}
+        
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -789,6 +795,7 @@
                 </template>
               </pickup-availability>
             </div>
+        {% endif %}
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
