@@ -90,18 +90,6 @@
     </div>
   </div>
 
-
-
-
-</div>
-
-<script>
- var inv_qty = {};
- {% for var in product_card_product.variants %}
-  inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
- {% endfor %}
-</script>
-
 <script type="text/javascript">
   var _learnq = _learnq || [];
 
@@ -136,3 +124,9 @@
       _learnq.push(['track', 'Added to Cart', item]);
     });
 </script>
+
+
+
+</div>
+
+
