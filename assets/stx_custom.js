@@ -95,6 +95,7 @@
       for(var i=0; i<ids.length; i++){
         data.push({
           id: ids[i],
+          product_title: productTitle[i],
           quantity: quantities[i],
           inventory: inventories[i],
           check_inventory: (inventory_policies[i] == "deny" && inventory_trackers[i] != "")
