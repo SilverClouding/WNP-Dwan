@@ -79,6 +79,7 @@
     this.listen = function(){
       var el = $(this);
       var ids = el.attr('data-variant-ids').split(',');
+      var productTitle = el.attr('data-product-title').split(',');
       var quantities = el.attr('data-variant-quantities').split(',');
       var inventories = el.attr('data-variant-inventories').split(',');
       var inventory_policies = el.attr('data-variant-inventory-policies').split(',');
