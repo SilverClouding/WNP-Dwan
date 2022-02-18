@@ -139,9 +139,12 @@
           
           <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
         </div>
-        {%- endfor -%}
+      
         
-        {% for line_item in order.line_items %}{{ line_item.title }}<br>{% endfor %}
+        {% for line_item in order.line_items %}
+        {{ line_item.title }}<br>
+        {% endfor %} 
+        {%- endfor -%}
         
       </div>
     </div>
