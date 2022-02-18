@@ -1,0 +1,332 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "img1": "shopify:\/\/shop_images\/free-delivery.png",
+        "svg_icon1_text1": "<p><strong>Free Delivery with purchases above $100<\/strong><\/p>",
+        "img2": "shopify:\/\/shop_images\/quick.png",
+        "svg_icon1_text2": "<p><strong>Quick and Fast Delivery around Hong Kong Islands<\/strong><\/p>",
+        "img3": "shopify:\/\/shop_images\/curated.png",
+        "svg_icon1_text3": "<p><strong>Curated products ensuring they are of high quality!<\/strong><\/p>",
+        "img4": "shopify:\/\/shop_images\/prices.png",
+        "svg_icon1_text4": "<p><strong>Prices are lower than or at least the same as competitors<\/strong><\/p>"
+      }
+    },
+    "1644842428399f7086": {
+      "type": "product-feature-icons",
+      "blocks": {
+        "1644842428b52fe24f-0": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_1",
+            "title": "Better Appetite For Picky Dogs"
+          }
+        },
+        "1644842428b52fe24f-1": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_3",
+            "title": "Improved Digestion"
+          }
+        },
+        "1644842428b52fe24f-2": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_6",
+            "title": "Reduced Symptoms Of IBS & IBD"
+          }
+        },
+        "1644842428b52fe24f-3": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_4",
+            "title": "Decreased Food Allergy Sensitivities"
+          }
+        },
+        "081138e9-e121-4fb9-803c-18d464cc6ec4": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_2",
+            "title": "Healthy Skin And Coat"
+          }
+        },
+        "88deb5cc-5642-4e91-8ba1-372ffef9010e": {
+          "type": "icon_text",
+          "settings": {
+            "icons": "icon_5",
+            "title": "Joint Health And Mobility"
+          }
+        }
+      },
+      "block_order": [
+        "1644842428b52fe24f-0",
+        "1644842428b52fe24f-1",
+        "1644842428b52fe24f-2",
+        "1644842428b52fe24f-3",
+        "081138e9-e121-4fb9-803c-18d464cc6ec4",
+        "88deb5cc-5642-4e91-8ba1-372ffef9010e"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "section_width": 100,
+        "full_width": false
+      }
+    },
+    "product-details-tab": {
+      "type": "product-details-tab",
+      "blocks": {
+        "41ed38d6-9953-4e33-93aa-bacd2a53d017": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.tab_1_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_1_content.value }} <\/p>",
+            "show_desc": true
+          }
+        },
+        "caaa1210-0d12-4b90-ad24-6cc6d346b71a": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.tab_2_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_2_content.value }} <\/p>",
+            "show_desc": false
+          }
+        },
+        "08d6b74e-e309-4797-aba1-ec35f123e229": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.tab_3_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_3_content.value }}<\/p>",
+            "show_desc": false
+          }
+        },
+        "35016f0b-244a-4bef-9949-cd00119b63b6": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.tab_4_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.tab_4_content.value }}<\/p>",
+            "show_desc": false
+          }
+        }
+      },
+      "block_order": [
+        "41ed38d6-9953-4e33-93aa-bacd2a53d017",
+        "caaa1210-0d12-4b90-ad24-6cc6d346b71a",
+        "08d6b74e-e309-4797-aba1-ec35f123e229",
+        "35016f0b-244a-4bef-9949-cd00119b63b6"
+      ],
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-2"
+      }
+    },
+    "metafield-icon-text": {
+      "type": "metafield-icon-text",
+      "disabled": true,
+      "blocks": {
+        "17320d80-23f0-45fc-ba4f-4f3194c47e1c": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "2464531f-3874-4232-81c1-22878466a08b": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "4f426fb0-646d-43bc-ba79-2231896d6002": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "de433e20-3f19-41fc-bbdc-27606cf0adca": {
+          "type": "column",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.icon_image_1.value }}",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "17320d80-23f0-45fc-ba4f-4f3194c47e1c",
+        "2464531f-3874-4232-81c1-22878466a08b",
+        "4f426fb0-646d-43bc-ba79-2231896d6002",
+        "de433e20-3f19-41fc-bbdc-27606cf0adca"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "heading_size": "h1",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "color_scheme": "background-1",
+        "section_width": 100,
+        "sec_class": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Pet-Lovers Also Bought",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": true
+      }
+    },
+    "1637669479d78c349e": {
+      "type": "img-with-text-slider",
+      "blocks": {
+        "1637669479a8e4be19-0": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_46_629ef9f9-9746-4c5f-ae10-6bc78631b375.png",
+            "image_link": "",
+            "preheading": "Our services",
+            "heading": "Grooming - is more than a good look",
+            "text": "<p>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>",
+            "button_label": "Learn More",
+            "button_link": ""
+          }
+        },
+        "1637669479a8e4be19-1": {
+          "type": "content",
+          "settings": {
+            "image_link": "",
+            "preheading": "Story",
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "1637669479a8e4be19-2": {
+          "type": "content",
+          "settings": {
+            "image_link": "",
+            "preheading": "Story",
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637669479a8e4be19-0",
+        "1637669479a8e4be19-1",
+        "1637669479a8e4be19-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "layout": "image_first",
+        "top_padding": 0,
+        "bottom_padding": 65,
+        "sec_class": "product-image-width-text"
+      }
+    },
+    "1637740585579a4231": {
+      "type": "apps",
+      "blocks": {
+        "19b5bf93-6632-436d-b16a-940301bbd777": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#f5694d",
+            "review_type": "product_review,questions",
+            "per_page": 2,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#d3d6d9",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_bg_color": "rgba(0,0,0,0)",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_avatar": true,
+            "enable_replies": false,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "19b5bf93-6632-436d-b16a-940301bbd777"
+      ],
+      "settings": {
+        "include_margins": true,
+        "sec_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1644842428399f7086",
+    "product-details-tab",
+    "metafield-icon-text",
+    "product-recommendations",
+    "1637669479d78c349e",
+    "1637740585579a4231"
+  ]
+}
