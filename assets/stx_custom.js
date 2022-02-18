@@ -19,7 +19,7 @@
         url: '/cart/add.js',
         method: 'POST',
         data: {
-          quantity: data[i].quantity,
+          quantity: 1,
           id: data[i].id
         },
         complete: function(res){
