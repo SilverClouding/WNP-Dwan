@@ -317,7 +317,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       //         console.log(NewTag);
       if(NewTag){
         console.log('if Newtag'+NewTag);
-        saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">${boostPFSThemeConfig.label.new_badge}</span>`;
+        saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">New</span>`;
       }else{
          console.log('else saleLabel'+saleLabel);
         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale || !soldOut) {
