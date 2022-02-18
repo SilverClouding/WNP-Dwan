@@ -314,7 +314,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
       // Build Sale label
       var saleLabel = '';
-      //         console.log(NewTag);
+      console.log(`${boostPFSThemeConfig.label.new_badge}`);
       if(NewTag){
         console.log('if Newtag'+NewTag);
         saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">New</span>`;
