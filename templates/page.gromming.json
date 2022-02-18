@@ -65,17 +65,17 @@
         "8df8757a-93c2-4d4e-8b5e-b92aff64f8b1": {
           "type": "text",
           "settings": {
-            "title": "Custom field",
-            "placeholder": "",
+            "title": "Dog Name",
+            "placeholder": "Dog Name",
             "use_long_text": false,
-            "is_required": false
+            "is_required": true
           }
         },
         "730e33b4-bfc4-4e08-9787-e400f9246f0e": {
           "type": "text",
           "settings": {
-            "title": "Custom field",
-            "placeholder": "",
+            "title": "Dog Age",
+            "placeholder": "Dog Age",
             "use_long_text": false,
             "is_required": false
           }
@@ -83,21 +83,41 @@
         "74d92648-4a16-4268-8370-057e140af5a3": {
           "type": "dropdown",
           "settings": {
-            "title": "Custom field",
-            "values": "value 1, value 2, value 3",
-            "placeholder": ""
+            "title": "Dog Breed",
+            "values": "Akita, Alaskan Malamute, Beagle, Bernese, Bichon Frise, Border Collie, Boston Terrier, Bull dog, Chihuahua, Chow Chow, Dachshund, English Cocker Spaniel, English Sheepdog, French Bulldog, Golden Retriever, Greyhound, Jack Russell, Japanese Spitz, King Charles Cavalier, King Charles Spaniel, Labradoodle, Labrador, Maltese, Miniature Poodle, Papillon, Pekingese, Pinscher, Pomeranian, Pug, Samoyed, Schnauzer, Scottish Terrier, Shetland Sheepdog, Shiba Inu, Siberian Husky, Silky Terrier, St Bernard, Terrier, Toy Poodle, Welsh Corgi, Yorkshire Terrier, West Highland White Terrier, Multibreed, Other",
+            "placeholder": "Dog Breed"
+          }
+        },
+        "9bf84d1b-3a2c-4f9b-a065-f74b61dd8117": {
+          "type": "text",
+          "settings": {
+            "title": "Owner",
+            "placeholder": "Owner",
+            "use_long_text": false,
+            "is_required": true
+          }
+        },
+        "71c8ed36-081b-47ca-b49a-b8c9ecc8fdda": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "placeholder": "Phone",
+            "use_long_text": false,
+            "is_required": false
           }
         }
       },
       "block_order": [
         "8df8757a-93c2-4d4e-8b5e-b92aff64f8b1",
         "730e33b4-bfc4-4e08-9787-e400f9246f0e",
-        "74d92648-4a16-4268-8370-057e140af5a3"
+        "74d92648-4a16-4268-8370-057e140af5a3",
+        "9bf84d1b-3a2c-4f9b-a065-f74b61dd8117",
+        "71c8ed36-081b-47ca-b49a-b8c9ecc8fdda"
       ],
       "settings": {
-        "form_title": "",
-        "form_button": "",
-        "form_successfull": ""
+        "form_title": "Contact Fom",
+        "form_button": "Submit",
+        "form_successfull": "Thank you! Your Grooming reservation request has been successfully submitted. We will contact you shortly for confirmation."
       }
     },
     "16384269895954df72": {
