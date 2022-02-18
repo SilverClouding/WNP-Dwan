@@ -13,14 +13,13 @@
         data[i].quantity = Math.min(parseInt(data[i].inventory), parseInt(data[i].quantity));
       }
       
-      console.log(data[i].check_inventory);
 
       $.ajax({
         url: '/cart/add.js',
         method: 'POST',
         data: {
-          quantity: 1,
-          id: 39859899072621
+          quantity: data[i].quantity,
+          id: data[i].id
         },
         complete: function(res){
           if(i >= data.length - 1){
