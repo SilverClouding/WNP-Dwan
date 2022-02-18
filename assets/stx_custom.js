@@ -85,6 +85,7 @@
       var inventory_policies = el.attr('data-variant-inventory-policies').split(',');
       var inventory_trackers = el.attr('data-variant-inventory-trackers').split(',');
       ids.splice(-1, 1);
+      productTitle.splice(-1, 1);
       quantities.splice(-1, 1);
       inventories.splice(-1, 1);
       inventory_policies.splice(-1, 1);
