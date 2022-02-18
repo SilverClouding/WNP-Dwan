@@ -1,7 +1,7 @@
 {% capture variant_ids %}{% for line_item in order.line_items %}{{ line_item.variant_id }},{% endfor %}{% endcapture %}
 {% capture product_title %}{% for line_item in order.line_items %}{{ line_item.product.title }},{% endfor %}{% endcapture %}
 {% capture variant_quantities %}{% for line_item in order.line_items %}{{ line_item.quantity }},{% endfor %}{% endcapture %}
-{% capture variant_inventories %}{% for line_item in order.line_items %}{% if line_item.variant.inventory_quantity == 0 %}1{% else %}{{ line_item.variant.inventory_quantity }}{% endif %},{% endfor %}{% endcapture %}
+{% capture variant_inventories %}{% for line_item in order.line_items %}{% if line_item.variant.inventory_quantity == 0 %}{{line_item.quantity}}{% else %}{{ line_item.variant.inventory_quantity }}{% endif %},{% endfor %}{% endcapture %}
 {% capture variant_inventory_policies %}{% for line_item in order.line_items %}{{ line_item.variant.inventory_policy }},{% endfor %}{% endcapture %}
 {% capture variant_inventory_trackers %}{% for line_item in order.line_items %}{{ line_item.variant.inventory_management }},{% endfor %}{% endcapture %}
 
