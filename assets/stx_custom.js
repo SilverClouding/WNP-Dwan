@@ -12,6 +12,8 @@
       if(data[i].check_inventory){
         data[i].quantity = Math.min(parseInt(data[i].inventory), parseInt(data[i].quantity));
       }
+      
+      console.log(data[i].quantity);
 
       $.ajax({
         url: '/cart/add.js',
