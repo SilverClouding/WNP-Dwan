@@ -218,7 +218,6 @@ for size, we use it to display a size chart (if applicable)
 
       <div class="no-js ProductForm__Option">
         <div class="Select Select--primary">
-          {%- include 'icon' with 'select-arrow' -%}
 
           <select id="product-select-{{ product.id }}" name="id" data-productid="{{ product.id }}" title="Variant">
             {%- for variant in product.variants -%}
@@ -232,7 +231,7 @@ for size, we use it to display a size chart (if applicable)
       <input type="hidden" name="id" data-productid="{{ product.id }}" data-sku="{{ selected_variant.sku }}" value="{{ selected_variant.id }}">
     {%- endunless -%}
     {% comment %} Temporarily Remarked / Restored by Hades, 20200715 / 20200903, Self-Dog Wash Booking Form, Service was temporarily suspended due to the COVID-19 pandemic {% endcomment %}
-    {% include 'booking-form' %}
+    {% render 'booking-form' %}
     {% comment %} {% endcomment %}
   
     {%- if section.settings.show_quantity_selector -%}
