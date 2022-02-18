@@ -59,6 +59,47 @@
         "sec_class": "grooming-textcon"
       }
     },
+    "groomingForm": {
+      "type": "grooming-form",
+      "blocks": {
+        "8df8757a-93c2-4d4e-8b5e-b92aff64f8b1": {
+          "type": "text",
+          "settings": {
+            "title": "Custom field",
+            "placeholder": "",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "730e33b4-bfc4-4e08-9787-e400f9246f0e": {
+          "type": "text",
+          "settings": {
+            "title": "Custom field",
+            "placeholder": "",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "74d92648-4a16-4268-8370-057e140af5a3": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Custom field",
+            "values": "value 1, value 2, value 3",
+            "placeholder": ""
+          }
+        }
+      },
+      "block_order": [
+        "8df8757a-93c2-4d4e-8b5e-b92aff64f8b1",
+        "730e33b4-bfc4-4e08-9787-e400f9246f0e",
+        "74d92648-4a16-4268-8370-057e140af5a3"
+      ],
+      "settings": {
+        "form_title": "",
+        "form_button": "",
+        "form_successfull": ""
+      }
+    },
     "16384269895954df72": {
       "type": "image-with-text",
       "blocks": {
@@ -284,11 +325,6 @@
         "section_width": 100
       }
     },
-    "groomingForm": {
-      "type": "grooming-form",
-      "settings": {
-      }
-    },
     "16388773760b7fb856": {
       "type": "column-content-cards",
       "blocks": {
@@ -351,11 +387,11 @@
   "order": [
     "16384259656000056e",
     "1638426342c59892bd",
+    "groomingForm",
     "16384269895954df72",
     "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
-    "groomingForm",
     "16388773760b7fb856"
   ]
 }
