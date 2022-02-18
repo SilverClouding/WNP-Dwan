@@ -7,6 +7,7 @@
 
     this.pushQueue = function(i, data, el){
 
+      console.log(data);
       //LOW STOCK -- add as many as possible if stock is below requested ammount
       if(data[i].check_inventory){
         data[i].quantity = Math.min(parseInt(data[i].inventory), parseInt(data[i].quantity));
@@ -22,13 +23,8 @@
         complete: function(res){
           if(i >= data.length - 1){
             //products from queue are now added to the cart -> stop loading signal and go to cart
-            el.removeClass('loading');
-//             window.location.href = '/cart';
-            
-            
+            el.removeClass('loading');            
             //       mini cart section render
-
-
             fetch('/?sections=cart-items')
             .then((response) => response.json())
             .then((data) => {
@@ -48,7 +44,6 @@
               window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
             });
             //minicart section end
-
             fetch('/cart.js')
             .then((response) => response.json())
             .then((cart) => {
@@ -71,10 +66,7 @@
               }
 
             });
-
-
-            console.log("notification off");
-            
+            console.log("notification off");            
             return;
           }else{
             // Calls are async as required by Shopify Docs
