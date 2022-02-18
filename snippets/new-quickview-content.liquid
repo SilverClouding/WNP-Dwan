@@ -44,7 +44,7 @@
           
           <a id="notifyme" class="  
                                   {% if product_card_product.selected_or_first_available_variant.available == false or product_card_product.selected_or_first_available_variant.inventory_quantity < qty %} 
-                                  notifyme klaviyo-bis-trigger Button  Button--secondary Button--full
+                                  notifyme 
                                   {% else %} 
                                   hide 
                                   {% endif %}
@@ -91,38 +91,38 @@
   </div>
 
 <script type="text/javascript">
-  var _learnq = _learnq || [];
+//   var _learnq = _learnq || [];
 
-  var item = {
-    Name: {{ product_card_product.title|json }},
-    ProductID: {{ product_card_product.id|json }},
-    Categories: {{ product_card_product.collections|map:'title'|json }},
-    ImageURL: "https:{{ product_card_product.featured_image.src|img_url:'grande' }}",
-    URL: "{{ shop.secure_url }}{{ product_card_product.url }}",
-    Brand: {{ product_card_product.vendor|json }},
-    Price: {{ product_card_product.price|money|json }},
-    CompareAtPrice: {{ product_card_product.compare_at_price_max|money|json }}
-  };
+//   var item = {
+//     Name: {{ product_card_product.title|json }},
+//     ProductID: {{ product_card_product.id|json }},
+//     Categories: {{ product_card_product.collections|map:'title'|json }},
+//     ImageURL: "https:{{ product_card_product.featured_image.src|img_url:'grande' }}",
+//     URL: "{{ shop.secure_url }}{{ product_card_product.url }}",
+//     Brand: {{ product_card_product.vendor|json }},
+//     Price: {{ product_card_product.price|money|json }},
+//     CompareAtPrice: {{ product_card_product.compare_at_price_max|money|json }}
+//   };
 
-  _learnq.push(['track', 'Viewed Product', item]);
-  _learnq.push(['trackViewedItem', {
-    Title: item.Name,
-    ItemId: item.ProductID,
-    Categories: item.Categories,
-    ImageUrl: item.ImageURL,
-    Url: item.URL,
-    Metadata: {
-      Brand: item.Brand,
-      Price: item.Price,
-      CompareAtPrice: item.CompareAtPrice
-    }
-  }]);
+//   _learnq.push(['track', 'Viewed Product', item]);
+//   _learnq.push(['trackViewedItem', {
+//     Title: item.Name,
+//     ItemId: item.ProductID,
+//     Categories: item.Categories,
+//     ImageUrl: item.ImageURL,
+//     Url: item.URL,
+//     Metadata: {
+//       Brand: item.Brand,
+//       Price: item.Price,
+//       CompareAtPrice: item.CompareAtPrice
+//     }
+//   }]);
 </script>
   <script type="text/javascript">
-    var _learnq = _learnq || [];
-    document.querySelector(".product-form__submit").addEventListener('click',function (){
-      _learnq.push(['track', 'Added to Cart', item]);
-    });
+//     var _learnq = _learnq || [];
+//     document.querySelector(".product-form__submit").addEventListener('click',function (){
+//       _learnq.push(['track', 'Added to Cart', item]);
+//     });
 </script>
 
 
