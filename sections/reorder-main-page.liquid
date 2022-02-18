@@ -137,7 +137,7 @@
           {% comment %}{% endcomment %}  
           
           {% for item in  order.line_items %}
-          {{item.available}}
+          {{item.product.available}}
           {% endfor %}
           <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
         </div>
