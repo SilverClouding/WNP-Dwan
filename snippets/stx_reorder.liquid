@@ -6,11 +6,13 @@
 {% capture variant_inventory_trackers %}{% for line_item in order.line_items %}{{ line_item.variant.inventory_management }},{% endfor %}{% endcapture %}
 
 {% assign qtyFlag = false %}
-{% for item in  order.line_items %}
+{% for line_item in order.line_items %}
 {% if item.variant.inventory_quantity <= 0 %}
 {% assign qtyFlag = true %}
 {% endif %}
 {% endfor %}
+
+{{qtyFlag}}
 
 <div class="reorder-btn btn flip-front" data-qtyFlag="qtyFlag_{{qtyFlag}}"
     data-variant-ids="{{ variant_ids }}"data-product-title="{{ product_title }}"
