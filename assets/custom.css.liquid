@@ -10273,7 +10273,7 @@ color:#F5694D;
   .grooming-form .Form.Form--spacingTight{
   width:100%;
   }
-  .grooming-form label{
+  .grooming-form label, .ProductForm label{
     display:none;
   }
   .grooming-form .input-box label{
@@ -10289,7 +10289,9 @@ color:#F5694D;
     font-weight: 900;
     margin-top:0;
   }
-  .grooming-form input, .grooming-form select{
+  .grooming-form input, .grooming-form select,
+  .ProductForm input, .ProductForm select,
+   {
     border: 1px solid #D9D9D9;
     height: 46px;
     padding: 5px 10px;
@@ -10311,18 +10313,21 @@ align-items: flex-start;
 justify-content: flex-start;
   }
 
-.grooming-form .input-box input{
+.grooming-form .input-box input,
+  .ProductForm input{
   width:auto;
   height:auto;
   line-height: 10px;
 margin-top: 0;
   margin-right:5px;
 }
-  .growming-submit button{
+  .growming-submit button,
+  .ProductForm button{
   width:100%;
   }
 
-.grooming-form select {
+.grooming-form select,
+ .ProductForm select{
     cursor: pointer;
     overflow: hidden;
     padding-right: 3em;
@@ -10330,7 +10335,8 @@ margin-top: 0;
     width: 100%;
   }
 
-  .grooming-form select.Form__Input {
+  .grooming-form select.Form__Input,
+  .ProductForm select{
     -webkit-appearance: none;
     background-color: transparent;
     box-sizing: border-box;
@@ -10340,11 +10346,13 @@ margin-top: 0;
     position:relative;
     background:url({{ 's-arrow.png' | asset_url }}) 96.5% center no-repeat;
   }
-  .grooming-form select.Form__Input:focus {
+  .grooming-form select.Form__Input:focus,
+  .ProductForm select:focus{
     outline: none;
   }
 
-.grooming-form select.Form__Input {
+.grooming-form select.Form__Input,
+  .ProductForm select{
   color: #737373;
   font-size: 18px;
   line-height: 18px;
@@ -10371,7 +10379,8 @@ margin-top: 0;
   width:100% !important;
   }
   .grooming-form input, .grooming-form select, 
-  .grooming-form select.Form__Input
+  .grooming-form select.Form__Input,
+  .ProductForm input, .ProductForm select, 
   {
   font-size:16px;
   }
