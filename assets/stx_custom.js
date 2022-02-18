@@ -13,7 +13,7 @@
         data[i].quantity = Math.min(parseInt(data[i].inventory), parseInt(data[i].quantity));
       }
       
-      console.log(data[i].quantity);
+      console.log(data[i].check_inventory);
 
       $.ajax({
         url: '/cart/add.js',
