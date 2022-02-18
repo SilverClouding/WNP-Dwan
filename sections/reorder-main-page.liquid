@@ -142,7 +142,9 @@
       
         
         {% for line_item in order.line_items %}
+        {% if line_item.variant.inventory_quantity <= 0 %}
         {{ line_item.title }}<br>
+        {% endif %}
         {% endfor %} 
         {%- endfor -%}
         
