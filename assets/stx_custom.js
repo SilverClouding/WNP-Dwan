@@ -20,7 +20,7 @@
         method: 'POST',
         data: {
           quantity: 1,
-          id: data[i].id
+          id: 39859899072621
         },
         complete: function(res){
           if(i >= data.length - 1){
