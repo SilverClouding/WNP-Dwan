@@ -122,7 +122,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "What's In Store",
-        "col_title1": "New Arrival for dog",
+        "col_title1": "",
         "collection": "new-arrivals",
         "col_title2": "",
         "collection2": "dog-best-sellers",
