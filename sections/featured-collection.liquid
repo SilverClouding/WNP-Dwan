@@ -32,10 +32,22 @@
     <ul>
 
       {% if section.settings.collection != blank %}
-      <li triggerValue="col_1"class="active"><h3>{{section.settings.collection.title}}</h3></li>
+      <li triggerValue="col_1"class="active"><h3>
+        {% if section.settings.col_title1 != blank%}
+        {{section.settings.col_title1}}
+        {% else %}
+        {{section.settings.collection.title}}
+        {% endif %}
+        </h3></li>
       {% endif %}
       {% if section.settings.collection2 != blank %}
-      <li triggerValue="col_2"><h3>{{section.settings.collection2.title}}</h3></li>
+      <li triggerValue="col_2"><h3>
+        {% if section.settings.col_title2 != blank %}
+        {{section.settings.col_title2}}
+        {% else %}
+        {{section.settings.collection2.title}}
+        {% endif %}
+        </h3></li>
       {% endif %}
     </ul>
   </div>
@@ -159,7 +171,6 @@
 {
       "type": "text",
       "id": "col_title1",
-      "default": "Featured collection",
       "label": "Collection 1 title"
     },
     {
@@ -170,7 +181,6 @@
 {
       "type": "text",
       "id": "col_title2",
-      "default": "Featured collection",
       "label": "Collection 2 title"
     },
 	{
