@@ -117,7 +117,8 @@
       "settings": {
         "form_title": "Contact Fom",
         "form_button": "Submit",
-        "form_successfull": "Thank you! Your Grooming reservation request has been successfully submitted. We will contact you shortly for confirmation."
+        "form_successfull": "Thank you! Your Grooming reservation request has been successfully submitted. We will contact you shortly for confirmation.",
+        "section_width": 90
       }
     },
     "16384269895954df72": {
