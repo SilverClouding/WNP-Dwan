@@ -1,4 +1,5 @@
 {% capture variant_ids %}{% for line_item in order.line_items %}{{ line_item.variant_id }},{% endfor %}{% endcapture %}
+{% capture product_title %}{% for line_item in order.line_items %}{{ line_item.product.title }},{% endfor %}{% endcapture %}
 {% capture variant_quantities %}{% for line_item in order.line_items %}{{ line_item.quantity }},{% endfor %}{% endcapture %}
 {% capture variant_inventories %}{% for line_item in order.line_items %}{{ line_item.variant.inventory_quantity }},{% endfor %}{% endcapture %}
 {% capture variant_inventory_policies %}{% for line_item in order.line_items %}{{ line_item.variant.inventory_policy }},{% endfor %}{% endcapture %}
@@ -12,7 +13,7 @@
 {% endfor %}
 
 <div class="reorder-btn btn flip-front" data-qtyFlag="qtyFlag_{{qtyFlag}}"
-    data-variant-ids="{{ variant_ids }}"
+    data-variant-ids="{{ variant_ids }}"data-product-title="{{ product_title }}"
     data-variant-quantities="{{ variant_quantities }}"
     data-variant-inventories="{{ variant_inventories }}"
     data-variant-inventory-policies="{{ variant_inventory_policies }}"
