@@ -1,12 +1,169 @@
+
+
+<div class="grooming-form">
+    <h1 class="Heading">{{ section.settings.form_title }}</h1>
+
+    {% form 'contact', class: 'Form Form--spacingTight' %}
+        {% if form.posted_successfully? %}
+          <p class="Alert Alert--success">{{ section.settings.form_successfull }}</p>
+        {% endif %}
+        {% if form.errors %}
+          <div class="Form__Alert Alert Alert--error">
+            <ul class="Alert__ErrorList">
+              {% for field in form.errors %}
+                {% if field == 'form' %}
+                  <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+                {% else %}
+                  <li class="Alert__ErrorItem"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {% assign field_title = block.settings.title %}
+          {% if field_title == blank %}
+            {% capture field_title %}Custom field {% increment custom_field %}{% endcapture %}
+          {% endif %}
+          {% if block.type == 'text' %}
+            <div class="Form__Item item-{{ forloop.index }}">
+              {% if block.settings.use_long_text %}
+                <label class="Form__Label">{{ block.settings.title | escape }}</label>
+                <textarea name="contact[{{ field_title | escape }}]" cols="30" rows="10" class="Form__Textarea" placeholder="{{ block.settings.placeholder | escape }}" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
+              {% else %}
+              <label class="Form__Label">{{ block.settings.title | escape }}</label>
+                <input type="text" class="Form__Input" name="contact[{{ field_title | escape }}]" placeholder="{{ block.settings.placeholder | escape }}" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}>
+              {% endif %}
+            </div>
+          {% elsif block.type == 'dropdown' %}
+            {% assign values = block.settings.values | split: ',' %}
+            {% if values == empty %}
+              {% continue %}
+            {% endif %}
+            <div class="Form__Item item-{{ forloop.index }}">
+                <label class="Form__Label">{{ block.settings.title | escape }}</label>
+              <div class="Form__Select Select Select--primary">
+                {% include 'icon' with 'select-arrow' %}
+
+                <select class="Form__Input" name="contact[{{ field_title | escape }}]" title="{{ block.settings.title | escape }}" required>
+                  <option value="" disabled selected>{{ block.settings.placeholder | upcase | escape }}</option>
+
+                  {% for value in values %}
+                    {% assign trim_value = value | strip %}
+
+                    <option value="{{ trim_value | escape }}">{{ trim_value | escape }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+        <div class="Form__Item">
+        <label class="Form__Label"><ly-as-316715>Email</ly-as-316715></label>
+        <input type="email" class="Form__Input" name="contact[email]" placeholder="Email"  required {% if customer %}value="{{ customer.email }}"{% endif %}>
+        </div>
+        <div class="Form__Item">
+          <div class="input-box">
+            <input class="styled-checkbox" id="styled-checkbox-1"  name="is_first" type="checkbox">
+            <label for="styled-checkbox-1" class="Form__Label"><ly-as-316716>First Grooming*</ly-as-316716></label>
+            
+          </div>
+        </div>
+        
+        <button type="submit" class="Form__Submit Button Button--primary Button--full">{{ section.settings.form_button }}</button>
+      {% endform %}
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Grooming Form",
+    "settings": [
+        {
+            "type": "header",
+            "content":"Form details"
+        },
+        {
+            "type": "text",
+            "id": "form_title",
+            "label": "Form title"
+        },
+        {
+            "type": "text",
+            "id": "form_button",
+            "label": "Form button text"
+        },
+        {
+          "type": "text",
+          "id": "form_successfull",
+          "label": "Form success text"
+      }
+	],
+    "blocks": [
+    {
+      "type": "text",
+      "name": "Text field",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Custom field"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_long_text",
+          "label": "Use long text",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "is_required",
+          "label": "Field is required",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "Dropdown",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Custom field"
+        },
+        {
+          "type": "text",
+          "id": "values",
+          "label": "Values",
+          "info": "Separate each value by a comma.",
+          "default": "value 1, value 2, value 3"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "First default text"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {
+          "title": "Your phone (optional)"
+        }
+      }
+    ]
+  }
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
