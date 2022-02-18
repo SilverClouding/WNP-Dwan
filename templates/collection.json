@@ -66,14 +66,14 @@
         "1642588617446ec0b9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Hi",
+            "heading": "Get The Best For Your Dogs Here",
             "heading_size": "h1"
           }
         },
         "1642588617446ec0b9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>FRIDAY<\/p>"
+            "text": "<p>To help you shop with confidence, Whiskers N Paws guarantees service quality for Dog & Cat kibble.<br\/><br\/>The purpose of Happiness Guarantee is to ensure your furry friend finds the right food. <br\/>If your pet are unsatisfied with the kibble you have chosen, our pet advisors will help & contact you to find a suitable food for your furry friend.<br\/><br\/>All returns can be made by mail or in-store at Horizon Plaza Store. <br\/><br\/>*Specific brands, kibble types, and bag sizes only<\/p>"
           }
         }
       },
@@ -89,7 +89,6 @@
     },
     "1644409022afe0adc2": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{{collection.metafields.collection_field.collection_bottom_description.html}}",
         "color_scheme": "background-1",
