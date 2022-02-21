@@ -85,9 +85,10 @@
       </div>
       {%- endif -%}
       
-      <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width {% if block.settings.banner_content %}small-hide{% endif%}">
+      <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width {% if block.settings.banner_content %}small-hidee{% endif%}">
         <div class="banner__box color-{{ block.settings.color_scheme }}">
 
+          {% unless block.settings.banner_content %}
           <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
@@ -95,6 +96,7 @@
           <div class="banner__text" {{ block.shopify_attributes }}>
             <span>{{ block.settings.text | escape }}</span>
           </div>
+          {% endunless%}
 
           <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
             {%- if block.settings.button_label_1 != blank -%}
