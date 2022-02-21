@@ -6,7 +6,8 @@ var boostPFSFilterConfig = {
 		limit: boostPFSConfig.custom.products_per_page,
 		loadProductFirst: false,
 		numberFilterTree: 2,
-		filterTreeMobileStyle: 'style2'
+		filterTreeMobileStyle: 'style2',
+      enableAjaxCart: false
 	},
 };
 
