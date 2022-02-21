@@ -35,7 +35,7 @@ BookThatApp 'Form 3 - Date and Time'
            data-bta-product-config="{{ product.metafields.bookthatapp.config }}"
            data-bta-variant-config="{% for variant in product.variants %}{{ variant.id }}:{{ variant.metafields.bookthatapp.config }}{% unless forloop.last %},{% endunless %}{% endfor %}"
            data-time="" data-bta-time-bound="false"
-           placeholder="date" />
+           placeholder="Date" />
   </div>
 
   <div class="ProductForm__Item required in-row">
@@ -44,7 +44,7 @@ BookThatApp 'Form 3 - Date and Time'
     <select id="{{ attribute }}-{{ product.handle }}" name="properties[Time]"
             class="bta-opening-hours bta-load-enable" disabled="disabled"
             data-datepicker="booking-start-{{ product.handle }}"
-            data-prompt="TIME" data-bta-display-range="false" data-bta-strict-duration="true"
+            data-prompt="Time" data-bta-display-range="false" data-bta-strict-duration="true"
             data-bta-slot-type="duration" data-bta-slot-interval="15">
       <option class="loading">Loading...</option>
     </select>
