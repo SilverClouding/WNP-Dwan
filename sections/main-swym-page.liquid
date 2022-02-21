@@ -220,6 +220,7 @@ $(document).ready(function(){
       }else{
         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
         document.getElementById(`${productJson.id}`).classList.add('disable'); 
+         document.getElementById(`${productJson.id}`).setAttribute("href",productJson.url);
         
       }
     },function(e) {console.log(e);});
