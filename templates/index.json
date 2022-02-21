@@ -62,7 +62,7 @@
             "image_height": "large",
             "two_col_banner": true,
             "desktop_text_box_position": "center",
-            "banner_content": false,
+            "banner_content": true,
             "show_text_box": true,
             "image_overlay_opacity": 0,
             "color_scheme": "accent-2",
