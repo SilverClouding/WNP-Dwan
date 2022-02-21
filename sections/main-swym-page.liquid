@@ -115,7 +115,7 @@ $(document).ready(function(){
                           </div>
 
                         <a href="" id="${product.empi}" data-product-id="${product.empi}" data-url="${product.du}" data-variant-id="${product.epi}" class="button button--full-width button--primary add-to-cart">${addtobtn_text}</a>
-                         <a id="${product.empi}" href="${product.du}" class="notifyme col_notify_btn ">Notify Me</a>
+                         <a id="noti_${product.empi}" href="${product.du}" class="hide notifyme col_notify_btn ">Notify Me</a>
                        
 
   </div> </li>`
@@ -225,8 +225,8 @@ $(document).ready(function(){
       }else{
         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
         document.getElementById(`${productJson.id}`).classList.add('disable');
-        document.getElementById(`${productJson.id}`).classList.remove('add-to-cart');
-         document.getElementById(`${productJson.id}`).setAttribute("href",productJson.url);
+        document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
+        
         
       }
     },function(e) {console.log(e);});
