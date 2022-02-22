@@ -148,7 +148,8 @@ class QuantityInput extends HTMLElement {
 
   onButtonClick(event) {
     event.preventDefault();
-    const previousValue = this.input.value;
+//     const previousValue = this.input.value;
+    const previousValue = this.input.getAttribute('placeholder');
 console.log(previousValue);
     
     event.target.name === 'plus' ? this.input.setAttribute("placeholder", parseInt(previousValue) + 1) : this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
