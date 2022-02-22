@@ -722,8 +722,8 @@
                   <div class="product-form__buttons">
                  
                     <a id="notifyme" {{qty}}
-                       class="klaviyo-bis-trigger  {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} 
-                              notifyme  Button  Button--secondary Button--full
+                       class="klaviyo-bis-trigger  notifyme {% if product.selected_or_first_available_variant.available == false or product.selected_or_first_available_variant.inventory_quantity < qty %} 
+                               Button  Button--secondary Button--full
                               {% else %} 
                               hide 
                               {% endif %} 
