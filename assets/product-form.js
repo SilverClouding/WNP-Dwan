@@ -33,7 +33,7 @@ if (!customElements.get('product-form')) {
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
-         console.log("status"+response);
+         console.log(response);
           if (response.status) {
            
             this.handleErrorMessage(response.description);
