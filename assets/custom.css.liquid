@@ -10473,7 +10473,19 @@ text-transform: uppercase;
      text-transform: none;
     font-weight:normal!important;
   }
-  
+  .bta-validation-date-missing{
+  position:relative;
+  }
+  .bta-validation-date-missing:before{
+    position:absolute;
+    left:0px;
+    top:4px;
+    content:'';
+    background:url({{ 'errormsg.png' | asset_url }}) center no-repeat;
+    width:10px;
+    height:10px;
+    background-size:100%;
+  } 
   @media(max-width:992px){
     #grooming_form{
       width:100% !important;
