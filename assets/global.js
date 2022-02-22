@@ -159,9 +159,9 @@ class QuantityInput extends HTMLElement {
        this.input.setAttribute("value", parseInt(previousValue) + 1);
     }else{
     
-      if(previousValue <=  minValue){
+      if(previousValue >=  minValue){
         
-      }else{
+      
     this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
       this.input.setAttribute("value", parseInt(previousValue) - 1);
     
