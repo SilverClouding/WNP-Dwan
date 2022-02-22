@@ -26,7 +26,7 @@
 
   {% assign product_var_qty = product.selected_or_first_available_variant.inventory_quantity %}
   
-  <h3 id="stockmsg" class="stockmsg">
+  <h3 id="stockmsg" class="stockmsg" {{qty}}>
     {% if product_var_qty > qty %}
     {% if product_var_qty >= 10 %}
     In stock 
