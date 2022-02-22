@@ -517,6 +517,7 @@ jQuery(function($){
       $('#bta-field-comments_about_the_booking').attr("Placeholder", "Comments");
       var e = $("#bta-field-dog_breed");
       $("#bta-field-dog_breed option").each(function(i){
+        $(this).addClass('disabled');
         console.log(i);
       });
 //       var strUser = e.options[e.selectedIndex];
