@@ -515,10 +515,11 @@ jQuery(function($){
       var nameOfYourDog = capitalizeFirstLetter($("[for=bta-field-name_of_your_dog]").text().toLowerCase()).replace(/:/g,'');
       $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
       $('#bta-field-comments_about_the_booking').attr("Placeholder", "Comments");
-      var e = $("#bta-field-dog_breed");
+      var text = capitalizeFirstLetter($("[for=bta-field-dog_breed]").text().toLowerCase()).replace(/:/g,'');
       $("#bta-field-dog_breed option").each(function(i){
         if(i == 0){
         $(this).attr('disabled','disabled');
+          $(this).text(text)
         console.log(i);
         }
       });
