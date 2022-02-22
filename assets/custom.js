@@ -507,10 +507,11 @@ jQuery(function($){
 
 jQuery(function($){
   $( document ).ready(function() {
-     setTimeout(function() {
-    console.log('load');
-    $('#bta-field-name_of_your_dog').attr("Placeholder", "name_of_your_dog");
-     },4000);
+    setTimeout(function() {
+      console.log('load');
+      var nameOfYourDog = $("[for=bta-field-name_of_your_dog]").text();
+      $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
+    },4000);
   });
 });
 
