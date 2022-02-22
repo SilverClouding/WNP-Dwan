@@ -36,8 +36,9 @@ if (!customElements.get('product-form')) {
          let selectedId = this.form.querySelector('[name=id]').value;
         let IdValue = "[data_"+selectedId+"]";
 //         console.log(document.querySelector('.no-js-hidden').getAttribute(IdValue))
-        console.log(IdValue)
-        document.querySelector(".fancybox-inner variant-radios").getAttribute(IdValue);
+       
+       let variant__Qty = document.querySelector(".fancybox-inner variant-radios").getAttribute(IdValue);
+         console.log(variant__Qty)
           if (response.status) {
            
             this.handleErrorMessage(response.description);
