@@ -42,6 +42,7 @@ if (!customElements.get('product-form')) {
           if (response.status) {
            
            document.querySelector(".fancybox-inner .quantity__input").setAttribute('value',parseInt(variant__Qty));
+             document.querySelector(".fancybox-inner .quantity__input").setAttribute('placeholder',parseInt(variant__Qty));
             this.handleErrorMessage(response.description);
             return;
           }
