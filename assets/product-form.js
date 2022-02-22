@@ -34,6 +34,7 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
+            console.log("status"+response.status);
             this.handleErrorMessage(response.description);
             return;
           }
