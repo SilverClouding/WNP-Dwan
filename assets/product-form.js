@@ -41,6 +41,7 @@ if (!customElements.get('product-form')) {
          console.log(variant__Qty)
           if (response.status) {
            
+           document.querySelector(".fancybox-inner .quantity__input").setAttribute('value',variant__Qty);
             this.handleErrorMessage(response.description);
             return;
           }
