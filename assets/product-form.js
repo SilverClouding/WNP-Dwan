@@ -104,7 +104,7 @@ if (!customElements.get('product-form')) {
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
 
       this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);
-console.log(errorMessage);
+console.log("errorMessage"+errorMessage);
       if (errorMessage) {
 //         this.errorMessage.textContent = errorMessage;
         this.errorMessage.textContent = 'Quantity exceeds available stock';
