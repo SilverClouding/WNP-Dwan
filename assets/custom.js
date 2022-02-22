@@ -509,7 +509,7 @@ jQuery(function($){
   $( document ).ready(function() {
     setTimeout(function() {
       console.log('load');
-      var nameOfYourDog = $("[for=bta-field-name_of_your_dog]").text();
+      var nameOfYourDog = $("[for=bta-field-name_of_your_dog]").text().toLowerCase();;
       $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
     },4000);
   });
