@@ -10426,17 +10426,22 @@ text-transform: uppercase;
     margin-bottom:15px;
   }
   .ProductForm_date_time{
-  display:flex;
+    display:flex;
     justify-content:space-between;
   }
   .ProductForm_date_time .ProductForm__Item{
-  width:calc(50% - 12px);
+    width:calc(50% - 12px);
     margin-right:12px;
   }
   .ProductForm_date_time .ProductForm__Item:last-child{
-  width:50%;
+    width:50%;
     margin-right:0;
   }
+  
+  .ProductForm_date_time select, .ProductForm_date_time select option{
+  text-transform: none;
+  } 
+  
   @media(max-width:992px){
     #grooming_form{
       width:100% !important;
