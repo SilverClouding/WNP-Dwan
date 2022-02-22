@@ -516,8 +516,11 @@ jQuery(function($){
       $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
       $('#bta-field-comments_about_the_booking').attr("Placeholder", "Comments");
       var e = $("#bta-field-dog_breed");
-      var strUser = e.options[e.selectedIndex];
-      console.log(strUser);
+      $("#bta-field-dog_breed option").each(function(i){
+        console.log(i+"-"+this.val());
+      });
+//       var strUser = e.options[e.selectedIndex];
+      
     },4000);
   });
 });
