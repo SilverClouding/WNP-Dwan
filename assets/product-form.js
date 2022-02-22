@@ -35,7 +35,8 @@ if (!customElements.get('product-form')) {
         .then((response) => {
          let selectedId = this.form.querySelector('[name=id]').value;
         let IdValue = "[data_"+selectedId+"]";
-        console.log(document.querySelector('.no-js-hidden').getAttribute(IdValue))
+//         console.log(document.querySelector('.no-js-hidden').getAttribute(IdValue))
+        console.log(IdValue)
           if (response.status) {
            
             this.handleErrorMessage(response.description);
