@@ -33,7 +33,9 @@ if (!customElements.get('product-form')) {
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
-         console.log( this.form.querySelector('[name=id]').value);
+         let selectedId = this.form.querySelector('[name=id]').value;
+        let IdValue = "data_"+selectedId;
+        console.log(IdValue)
           if (response.status) {
            
             this.handleErrorMessage(response.description);
