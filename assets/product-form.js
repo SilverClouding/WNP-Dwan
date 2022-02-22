@@ -35,7 +35,7 @@ if (!customElements.get('product-form')) {
         .then((response) => {
          let selectedId = this.form.querySelector('[name=id]').value;
         let IdValue = "data_"+selectedId;
-        console.log(document.querySelector('variant-radios').getAttribute(IdValue))
+        console.log(document.querySelector('variant-radios').getAttribute("["+IdValue+"]"))
           if (response.status) {
            
             this.handleErrorMessage(response.description);
