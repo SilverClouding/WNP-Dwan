@@ -514,6 +514,9 @@ jQuery(function($){
       console.log('load');
       var nameOfYourDog = capitalizeFirstLetter($("[for=bta-field-name_of_your_dog]").text().toLowerCase()).replace(/:/g,'');
       $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
+      $('#bta-field-comments_about_the_booking').attr("Placeholder", "Comments");
+      
+      
     },4000);
   });
 });
