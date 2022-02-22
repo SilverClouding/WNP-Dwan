@@ -2182,7 +2182,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
   .header__inline-menu {
     display: block;
   }
