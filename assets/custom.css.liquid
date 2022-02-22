@@ -10442,6 +10442,19 @@ text-transform: uppercase;
   text-transform: none;
   } 
   
+  .bta-booking-field input::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+
+  .bta-booking-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+
+  .bta-booking-field input::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+  }
+  
   @media(max-width:992px){
     #grooming_form{
       width:100% !important;
