@@ -36,11 +36,11 @@ if (!customElements.get('product-form')) {
         
         let selectedId = this.form.querySelector('[name=id]').value;
         let IdValue = "data_"+selectedId;
-        let variant__Qty = document.querySelector(".fancybox-inner variant-radios").getAttribute(IdValue);
+        let variant__Qty = document.querySelector(".fancybox-inner variant-radios , .product-handle variant-radios").getAttribute(IdValue);
          console.log(variant__Qty)
           if (response.status) {
-           document.querySelector(".fancybox-inner .quantity__input, .product-handle .quantity__input").setAttribute('value',parseInt(variant__Qty));
-             document.querySelector(".fancybox-inner .quantity__input, .product-handle .quantity__input").setAttribute('placeholder',parseInt(variant__Qty));
+           document.querySelector(".fancybox-inner .quantity__input").setAttribute('value',parseInt(variant__Qty));
+             document.querySelector(".fancybox-inner .quantity__input").setAttribute('placeholder',parseInt(variant__Qty));
             this.handleErrorMessage(response.description);
             return;
           }
