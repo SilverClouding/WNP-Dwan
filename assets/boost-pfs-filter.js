@@ -729,7 +729,12 @@ function customSubmitEvent(){
       fetch(`${routes.cart_add_url}`, config)
       .then((response) => response.json())
       .then((response) => {
+        let selectedId = this.form.querySelector('[name=id]').value;
+        let IdValue = "data_"+selectedId;
+        let variant__Qty = document.querySelector(".fancybox-inner variant-radios").getAttribute(IdValue);
         if (response.status) {
+          document.querySelector(".fancybox-inner .quantity__input").setAttribute('value',parseInt(variant__Qty));
+          document.querySelector(".fancybox-inner .quantity__input").setAttribute('placeholder',parseInt(variant__Qty));
           this.handleErrorMessage(response.description);
           return;
         }
@@ -750,6 +755,8 @@ function customSubmitEvent(){
           //           document.getElementById("CartCount").innerHTML= count;
           window._swat.initializeActionButtons('.min-cart-items', '.swym-button');
         });
+        
+        
         //minicart section end
         fetch('/cart.js')
         .then((response) => response.json())
