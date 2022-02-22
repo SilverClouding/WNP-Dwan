@@ -33,7 +33,15 @@ if (!customElements.get('product-form')) {
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
+        
+        let selectedId = this.form.querySelector('[name=id]').value;
+        let IdValue = "data_"+selectedId;
+        let variant__Qty = document.querySelector(".fancybox-inner variant-radios").getAttribute(IdValue);
+         console.log(variant__Qty)
           if (response.status) {
+           
+//            document.querySelector(".fancybox-inner .quantity__input").setAttribute('value',parseInt(variant__Qty));
+//              document.querySelector(".fancybox-inner .quantity__input").setAttribute('placeholder',parseInt(variant__Qty));
             this.handleErrorMessage(response.description);
             return;
           }
@@ -104,7 +112,7 @@ if (!customElements.get('product-form')) {
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
 
       this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);
-console.log(errorMessage);
+console.log("errorMessage"+errorMessage);
       if (errorMessage) {
 //         this.errorMessage.textContent = errorMessage;
         this.errorMessage.textContent = 'Quantity exceeds available stock';
