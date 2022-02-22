@@ -155,16 +155,14 @@ class QuantityInput extends HTMLElement {
 //     event.target.name === 'plus' ? this.input.setAttribute("placeholder", parseInt(previousValue) + 1) : this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
 //     event.target.name === 'plus' ? this.input.setAttribute("value", parseInt(previousValue) + 1) : this.input.setAttribute("value", parseInt(previousValue) - 1);
     if( event.target.name === 'plus'){
-    this.input.setAttribute("placeholder", parseInt(previousValue) + 1);
-       this.input.setAttribute("value", parseInt(previousValue) + 1);
+      this.input.setAttribute("placeholder", parseInt(previousValue) + 1);
+      this.input.setAttribute("value", parseInt(previousValue) + 1);
     }else{
-    
-      if(previousValue >=  minValue){
-        
-      
-    this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
-      this.input.setAttribute("value", parseInt(previousValue) - 1);
-    
+
+      if(previousValue >  minValue){
+        this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
+        this.input.setAttribute("value", parseInt(previousValue) - 1);
+      }
     }  
 //     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
