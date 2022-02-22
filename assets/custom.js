@@ -507,8 +507,10 @@ jQuery(function($){
 
 jQuery(function($){
   $( document ).ready(function() {
+     setTimeout(function() {
     console.log('load');
     $('#bta-field-name_of_your_dog').attr("Placeholder", "name_of_your_dog");
+     },2000);
   });
 });
 
