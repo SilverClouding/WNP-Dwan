@@ -37,6 +37,7 @@ if (!customElements.get('product-form')) {
         let IdValue = "[data_"+selectedId+"]";
 //         console.log(document.querySelector('.no-js-hidden').getAttribute(IdValue))
         console.log(IdValue)
+        document.querySelector(IdValue).classList.remove('hidden');
           if (response.status) {
            
             this.handleErrorMessage(response.description);
