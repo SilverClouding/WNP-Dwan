@@ -507,9 +507,12 @@ jQuery(function($){
 
 jQuery(function($){
   $( document ).ready(function() {
+    function capitalizeFirstLetter(string){
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
     setTimeout(function() {
       console.log('load');
-      var nameOfYourDog = $("[for=bta-field-name_of_your_dog]").text().toLowerCase();;
+      var nameOfYourDog = capitalizeFirstLetter($("[for=bta-field-name_of_your_dog]").text().toLowerCase());
       $('#bta-field-name_of_your_dog').attr("Placeholder", nameOfYourDog);
     },4000);
   });
