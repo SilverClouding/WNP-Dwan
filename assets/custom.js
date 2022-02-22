@@ -525,7 +525,7 @@ jQuery(function($){
       });
 //       var strUser = e.options[e.selectedIndex];
       
-    },4000);
+    },3000);
   });
 });
 
