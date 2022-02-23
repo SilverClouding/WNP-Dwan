@@ -147,7 +147,7 @@
           {% comment %}{% endcomment %}  
           
           
-          <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
+          <div headers="RowOrder" class="re_order {% if allOutOfStock %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
         </div>
       
         {% if flag %}

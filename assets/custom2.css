@@ -1005,7 +1005,9 @@ width: 100px;
     pointer-events: none;
 }
 @media(max-width:992px){
-.reorder-outofstock-items .reorder-item .btn.button
+  .reorder-outofstock-items .reorder-item .btn.button{
+  padding:5px;
+  }
 }
 
 
