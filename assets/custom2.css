@@ -967,7 +967,6 @@ div#klaviyo-bis-modal .btn {
   }
 
   .reorder-outofstock-items {
-    /* width: 90%; */
     margin: 0 auto;
     border-top: none;
   }
@@ -998,8 +997,10 @@ width: 100px;
   text-decoration:none;
   min-width:unset;
   min-height:unset;
-      margin-right: 2.9%;
   cursor:unset;
+}
+.customer.account .reorder-outofstock-items .reorder-item .btn.button{
+margin-right:3%;
 }
 .disabled .reorder-btn {
     opacity: 0.5;
