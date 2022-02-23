@@ -41,7 +41,7 @@
             "banner_content": false,
             "show_text_box": false,
             "image_overlay_opacity": 0,
-            "bg_color": "rgba(0,0,0,0)",
+            "bg_color": "#fff9ee",
             "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
             "show_text_below": true,
