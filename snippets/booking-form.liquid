@@ -77,7 +77,7 @@ BookThatApp 'Form 3 - Date and Time'
               event.preventDefault();
               var text_val = $('.bta-booking-field input[type=checkbox]').attr('name').split('[')[1].split(']')[0];
               if(!$('.ProductForm__Variants .checkbox-error')[0]){
-                $('.bta-booking-field input[type=checkbox]').parents('.bta-booking-field').after('<p class="checkbox-error error">Please select '+text_val+'</p>');
+                $('.bta-booking-field input[type=checkbox]').parents('.bta-booking-field').after('<p class="checkbox-error error">I agree to the '+text_val+'</p>');
               }
             }
           }
