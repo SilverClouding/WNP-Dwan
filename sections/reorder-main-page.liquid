@@ -123,6 +123,12 @@
       </div>
       <div role="rowgroup"  class="order-history-body">
         {%- for order in customer.orders -%}
+        {% assign flag = false %}
+        {%- for line_item in order.line_items -%}
+        {% unless line_item.variant.available %}
+        {% assign flag = true %}
+        {% endunless %}
+        {%- endfor -%}
         <div role="row" class="order-history-body-inner">
           <div
               id="RowOrder"
@@ -152,13 +158,6 @@
           <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
         </div>
       
-        {% assign flag = false %}
-        {%- for line_item in order.line_items -%}
-        {% unless line_item.variant.available %}
-        {% assign flag = true %}
-        {% endunless %}
-        {%- endfor -%}
-        
         {% if flag %}
         <div class="reorder-outofstock-items">
           {%- for line_item in order.line_items -%}
