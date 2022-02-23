@@ -1,5 +1,18 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
+{% assign flag = false %}
+{% assign allOutOfStock = false %}
+{%- for order in customer.orders -%}
+{%- for line_item in order.line_items -%}
+{% unless line_item.variant.available %}
+{% if order.line_items.size == forloop.index %}
+{% assign allOutOfStock = true %}
+{% endif %}
+{% assign flag = true %}
+{% endunless %}
+{%- endfor -%}
+{%- endfor -%}
+
 <div class="customer order">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
@@ -24,7 +37,7 @@
         <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
         {%- endif -%}
       </div>
-      <div class="stx-reorder-button">{% render "stx_reorder" %}</div>
+      <div class="stx-reorder-button {% if allOutOfStock %} disabled {% endif %}">{% render "stx_reorder" %}</div>
       </div>
 
       <table role="table" class="order-details">
