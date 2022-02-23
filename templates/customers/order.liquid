@@ -2,7 +2,6 @@
 
 {% assign flag = false %}
 {% assign allOutOfStock = false %}
-{%- for order in customer.orders -%}
 {%- for line_item in order.line_items -%}
 {% unless line_item.variant.available %}
 {% if order.line_items.size == forloop.index %}
@@ -11,7 +10,7 @@
 {% assign flag = true %}
 {% endunless %}
 {%- endfor -%}
-{%- endfor -%}
+
 
 <div class="customer order">
   <svg style="display:none">
