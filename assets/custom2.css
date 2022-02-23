@@ -959,3 +959,17 @@ div#klaviyo-bis-modal .btn {
   margin-bottom: 0;
   border-color: #153A33;
 }
+
+  .reorder-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reorder-outofstock-items {
+    border: 1px solid #d3d6d9;
+    /* width: 90%; */
+    margin: 0 auto;
+    padding: 0 10px;
+    border-top: none;
+  }
