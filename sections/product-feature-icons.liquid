@@ -40,6 +40,8 @@
   
   {% assign blockTitleHandle = block.settings.title | handle %}
   {{blockTitleHandle}}
+  
+  {% if blockTitleHandle contains 'better-appetite' and product.metafields.icon.better_appetite %}
   <div class="under_media_icon_text_item text-center"> 
   {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
     <div>
@@ -48,6 +50,7 @@
      
     <h2>{{ block.settings.title }}</h2> 
   </div>
+  {% endif %}
  
   
   {% endfor %} 
