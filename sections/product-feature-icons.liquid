@@ -26,20 +26,20 @@
 
 
 <section class="section_width product-tabs color-accent-1 {% if section.settings.full_width %} image-with-text--full-width {% else %} page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} gradient">
- 
+ {% comment %}
   product.metafields.icon.better_appetite
   product.metafields.accentuate.improved_digestion
   product.metafields.accentuate.reduce_ibs_ibd_symptoms
   product.metafields.icon.decreased_allergy
   product.metafields.icon.healthy_skin_coat
   product.metafields.accentuate.joint_health
-  
+  {% endcomment %}
 
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
   
   {% assign blockTitleHandle = block.settings.title | handle %}
-  {{blockTitleHandle}}
+
   
   {% if blockTitleHandle contains 'better-appetite' and product.metafields.icon.better_appetite %}
   <div class="under_media_icon_text_item text-center"> 
