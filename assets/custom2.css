@@ -1016,6 +1016,14 @@ margin-left:48px;
   .reorder-outofstock-items .reorder-item .btn.button{
   padding:5px;
   }
+  .customer.account .reorder-outofstock-items .reorder-item .btn.button{
+margin-right:0;
+}
+.customer.account .reorder-outofstock-items .reorder-item img{
+margin-left:0;
+}
+  
+  
 }
 
 
