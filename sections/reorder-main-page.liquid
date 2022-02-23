@@ -140,7 +140,7 @@
           <div headers="RowOrder" class="re_order">{% render "stx_reorder" order:order %}</div> 
         </div>
       
-        {% comment %}  {% endcomment %}
+        
         {% for line_item in order.line_items %}
         {% if line_item.variant.available %}
         {{ line_item.title }}<br>
