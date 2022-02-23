@@ -1024,7 +1024,7 @@ margin-left:0;
 }
   .reorder-outofstock-items .reorder-item {
     border-bottom: 1px solid #d3d6d9;
-    padding: 10px 42px 0 0;
+    padding: 10px 0 42px 10px;
     position: relative;
 }
   .reorder-outofstock-items .reorder-item .btn.button{
