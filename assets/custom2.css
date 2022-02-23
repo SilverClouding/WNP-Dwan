@@ -996,6 +996,7 @@ width: 100px;
     background-color: #fff;
     color: #44444d;
   text-decoration:none;
+  min-height:unset;
 /*     -webkit-transition: background-color .2s ease-out;
     -moz-transition: background-color .2s ease-out;
     -ms-transition: background-color .2s ease-out;
