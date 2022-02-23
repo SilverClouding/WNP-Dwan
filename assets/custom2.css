@@ -975,3 +975,20 @@ div#klaviyo-bis-modal .btn {
 border-bottom: 1px solid #d3d6d9;
   padding: 10px 0px;
 }
+.reorder-outofstock-items .card-information__text a{
+text-decoration:none;
+  text-underline-offset:unset;
+  text-decoration-thickness:unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
