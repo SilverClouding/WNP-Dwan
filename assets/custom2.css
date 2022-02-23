@@ -998,9 +998,10 @@ width: 100px;
   min-width:unset;
   min-height:unset;
   cursor:unset;
+  box-shadow:none;
 }
 .customer.account .reorder-outofstock-items .reorder-item .btn.button{
-margin-right:3%;
+margin-right:30px;
 }
 .disabled .reorder-btn {
     opacity: 0.5;
