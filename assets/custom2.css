@@ -996,6 +996,7 @@ width: 100px;
     background-color: #fff;
     color: #44444d;
   text-decoration:none;
+  min-width:unset;
   min-height:unset;
       margin-right: 2.9%;
   cursor:unset;
