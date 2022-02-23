@@ -6,7 +6,7 @@
     {%- if block.settings.adapt_height_first_image and block.settings.image != blank -%}
     {%- style -%}
     .two-block-section .banner__content{
-    background:{{ section.settings.bg_color }}; 
+    background:{{ block.settings.bg_color }}; 
   }
     @media screen and (max-width: 749px) {
     #Banner-{{ block.id }}::before,
