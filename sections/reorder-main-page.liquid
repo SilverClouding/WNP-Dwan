@@ -112,7 +112,11 @@
       <div role="rowgroup"  class="order-history-body">
         {%- for order in customer.orders -%}
         {% assign flag = false %}
+         {% assign allOutOfStock = false %}
         {%- for line_item in order.line_items -%}
+        {% if order.line_items.size == forloop.index %}
+        {% assign allOutOfStock = true %}
+        {% endif %}
         {% unless line_item.variant.available %}
         {% assign flag = true %}
         {% endunless %}
