@@ -104,11 +104,11 @@
           {{ blog.title | link_to: blog.url }}
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+          <p class="breadcrumbs__link" aria-current="page">{{ article.title }}</p>
         </li>
       {%- else -%}
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+          <p class="breadcrumbs__link" aria-current="page">{{ page_title }}</p>
         </li>
     {%- endcase -%}
   </ol>
