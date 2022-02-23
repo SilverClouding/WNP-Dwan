@@ -38,7 +38,7 @@
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
   
-  {% assign blockTitleHandle = block.title | handle %}
+  {% assign blockTitleHandle = block.settings.title | handle %}
   {{blockTitleHandle}}
   <div class="under_media_icon_text_item text-center"> 
   {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
