@@ -62,6 +62,56 @@
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
+  
+  {% if blockTitleHandle contains 'reduced-symptoms' and product.metafields.accentuate.reduce_ibs_ibd_symptoms %}
+  <div class="under_media_icon_text_item text-center"> 
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
+    <div>
+    {% render 'product-feature-icons', icon: block.settings.icons %}
+    </div>
+     
+    <h2>{{ block.settings.title }}</h2> 
+  </div>
+  {% endif %}
+ 
+  
+  {% if blockTitleHandle contains 'decreased-food' and product.metafields.accentuate.decreased_allergy %}
+  <div class="under_media_icon_text_item text-center"> 
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
+    <div>
+    {% render 'product-feature-icons', icon: block.settings.icons %}
+    </div>
+     
+    <h2>{{ block.settings.title }}</h2> 
+  </div>
+  {% endif %}
+ 
+  
+  {% if blockTitleHandle contains 'healthy-skin' and product.metafields.accentuate.healthy_skin_coat %}
+  <div class="under_media_icon_text_item text-center"> 
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
+    <div>
+    {% render 'product-feature-icons', icon: block.settings.icons %}
+    </div>
+     
+    <h2>{{ block.settings.title }}</h2> 
+  </div>
+  {% endif %}
+ 
+  
+  {% if blockTitleHandle contains 'joint-health' and product.metafields.accentuate.joint_health %}
+  <div class="under_media_icon_text_item text-center"> 
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
+    <div>
+    {% render 'product-feature-icons', icon: block.settings.icons %}
+    </div>
+     
+    <h2>{{ block.settings.title }}</h2> 
+  </div>
+  {% endif %}
+ 
+  
+ 
  
   
   {% endfor %} 
