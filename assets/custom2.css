@@ -1000,7 +1000,13 @@ width: 100px;
       margin-right: 2.9%;
   cursor:unset;
 }
-
+.disabled .reorder-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+@media(max-width:992px){
+.reorder-outofstock-items .reorder-item .btn.button
+}
 
 
 
