@@ -14,7 +14,7 @@
             "banner_content": true,
             "show_text_box": false,
             "image_overlay_opacity": 0,
-            "bg_color": "#5c4a28",
+            "bg_color": "#fff9ee",
             "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
             "show_text_below": true,
