@@ -978,6 +978,8 @@ border-bottom: 1px solid #d3d6d9;
 text-decoration:none;
   text-underline-offset:unset;
   text-decoration-thickness:unset;
+  color:#44444d;
+  font-size:14px;
 }
 .reorder-outofstock-items .reorder-item .btn.button{
 width: 100px;
