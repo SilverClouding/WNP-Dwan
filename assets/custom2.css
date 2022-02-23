@@ -980,7 +980,27 @@ text-decoration:none;
   text-underline-offset:unset;
   text-decoration-thickness:unset;
 }
-
+.reorder-outofstock-items .reorder-item .btn.button{
+width: 100px;
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: #153a33;
+    color: #fff;
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -ms-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+}
 
 
 
