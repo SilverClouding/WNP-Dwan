@@ -51,6 +51,17 @@
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
+  
+  {% if blockTitleHandle contains 'improved-digestion' and product.metafields.icon.improved_digestion %}
+  <div class="under_media_icon_text_item text-center"> 
+  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
+    <div>
+    {% render 'product-feature-icons', icon: block.settings.icons %}
+    </div>
+     
+    <h2>{{ block.settings.title }}</h2> 
+  </div>
+  {% endif %}
  
   
   {% endfor %} 
