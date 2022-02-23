@@ -143,8 +143,11 @@
         
         {% for line_item in order.line_items %}
         {% if line_item.variant.available %}
-        {{ line_item.title }}<br>
-        {% endif %}
+        <div>
+          <img src="{{line_item.product.featured_image}}"/>
+        <h2>{{ line_item.title }}</h2>
+          </div>
+          {% endif %}
         {% endfor %} 
       
         
