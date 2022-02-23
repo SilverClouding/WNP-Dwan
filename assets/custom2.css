@@ -1022,7 +1022,17 @@ margin-right:0;
 .customer.account .reorder-outofstock-items .reorder-item img{
 margin-left:0;
 }
-  
+  .reorder-outofstock-items .reorder-item {
+    border-bottom: 1px solid #d3d6d9;
+    padding: 10px 42px 0 0;
+    position: relative;
+}
+  .reorder-outofstock-items .reorder-item .btn.button{
+  position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   
 }
 
