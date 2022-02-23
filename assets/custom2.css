@@ -1009,6 +1009,9 @@ margin-right:30px;
     opacity: 0.5;
     pointer-events: none;
 }
+.customer.account .reorder-outofstock-items .reorder-item img{
+margin-left:48px;
+}
 @media(max-width:992px){
   .reorder-outofstock-items .reorder-item .btn.button{
   padding:5px;
