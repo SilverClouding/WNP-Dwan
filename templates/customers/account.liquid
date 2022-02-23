@@ -78,7 +78,7 @@
           <div class="reorder-item">
             <img src="{{line_item.product.featured_image | img_url:'50x'}}"/>
             <h3 class="card-information__text h5"><a href="{{line_item.url }}">{{ line_item.title }}</a></h2>
-            <a>Out of Stock</a>
+            <a  class="btn button">Out of Stock</a>
           </div>
           {% endunless %}
           {%- endfor -%}
