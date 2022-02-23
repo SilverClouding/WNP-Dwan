@@ -27,11 +27,19 @@
 
 <section class="section_width product-tabs color-accent-1 {% if section.settings.full_width %} image-with-text--full-width {% else %} page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} gradient">
  
-
+  product.metafields.icon.better_appetite
+  product.metafields.accentuate.improved_digestion
+  product.metafields.accentuate.reduce_ibs_ibd_symptoms
+  product.metafields.icon.decreased_allergy
+  product.metafields.icon.healthy_skin_coat
+  product.metafields.accentuate.joint_health
   
 
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
+  
+  {% assign blockTitleHandle = block.title | handle %}
+  {{blockTitleHandle}}
   <div class="under_media_icon_text_item text-center"> 
   {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
     <div>
@@ -40,6 +48,8 @@
      
     <h2>{{ block.settings.title }}</h2> 
   </div>
+ 
+  
   {% endfor %} 
 </div>
 
