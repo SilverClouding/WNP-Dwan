@@ -72,7 +72,7 @@
             "show_text_box": true,
             "image_overlay_opacity": 0,
             "bg_color": "#fff9ee",
-            "banner_head_text_color": "#f5694d",
+            "banner_head_text_color": "#153a33",
             "banner_paragrapgh_text_color": "",
             "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
