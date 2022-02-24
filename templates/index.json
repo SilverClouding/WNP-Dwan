@@ -379,9 +379,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_46.png",
             "image_link": "",
+            "bg_color": "#153a33",
             "preheading": "Story",
+            "preheading_color": "",
             "heading": "The Importance of Fostering",
+            "heading_color": "",
             "text": "<p>With many people being able to work from home in the past year, more families are considering adopting a dog. However it is important to remember that a dog is a lifetime commitment, and they will still need to be cared for even after work from home arrangements end. If you are unable to commit to taking care of a dog long term, fostering is a great option! <\/p>",
+            "description_color": "",
             "button_label": "Learn More",
             "button_link": ""
           }
@@ -391,9 +395,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/slide2.jpg",
             "image_link": "",
+            "bg_color": "",
             "preheading": "Cafe",
+            "preheading_color": "",
             "heading": "Dine with your paw friends!",
+            "heading_color": "",
             "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>",
+            "description_color": "",
             "button_label": "Learn More",
             "button_link": ""
           }
@@ -402,9 +410,13 @@
           "type": "content",
           "settings": {
             "image_link": "",
+            "bg_color": "",
             "preheading": "Story",
+            "preheading_color": "",
             "heading": "Image with text3",
+            "heading_color": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_color": "",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -415,9 +427,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC05037_Cricket-E.jpg",
             "image_link": "",
+            "bg_color": "",
             "preheading": "#ADOPTDONTSHOP",
+            "preheading_color": "",
             "heading": "Check Out Our Temporary Residents",
+            "heading_color": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_color": "",
             "button_label": "Learn More",
             "button_link": "shopify:\/\/pages\/services"
           }
