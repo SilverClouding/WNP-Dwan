@@ -381,11 +381,11 @@
             "image_link": "",
             "bg_color": "#f5694d",
             "preheading": "Story",
-            "preheading_color": "",
+            "preheading_color": "#ffffff",
             "heading": "The Importance of Fostering",
-            "heading_color": "",
+            "heading_color": "#ffffff",
             "text": "<p>With many people being able to work from home in the past year, more families are considering adopting a dog. However it is important to remember that a dog is a lifetime commitment, and they will still need to be cared for even after work from home arrangements end. If you are unable to commit to taking care of a dog long term, fostering is a great option! <\/p>",
-            "description_color": "",
+            "description_color": "#ffffff",
             "button_label": "Learn More",
             "button_link": ""
           }
