@@ -6,9 +6,7 @@
     margin-top:{{section.settings.top_padding}}px;
     margin-bottom:{{section.settings.bottom_padding}}px;
   }
-  .image-with-text__contentt .swiper-slide .grid__item{
-    background:{{ block.settings.bg_color}};
-  }
+  
 </style>
 
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
@@ -23,6 +21,7 @@
         {%- for block in section.blocks -%}
         {% case block.type %}
         {%- when 'content' -%}
+        
         <div class="swiper-slide grid grid--gapless grid--1-col grid--2-col-tablet">
           <div class="grid__item" >
             <div class="image__section_img_text_slider">
@@ -54,7 +53,7 @@
                 </div></a>
             </div>
           </div>
-          <div class="grid__item" >
+          <div class="grid__item" style="background:{{ block.settings.bg_color}}">
             <div class="content_texts">
               <h4>{{block.settings.preheading}}</h4>
               <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
