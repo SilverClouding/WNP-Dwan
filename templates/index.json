@@ -379,7 +379,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_46.png",
             "image_link": "",
-            "bg_color": "#153a33",
+            "bg_color": "#f5694d",
             "preheading": "Story",
             "preheading_color": "",
             "heading": "The Importance of Fostering",
@@ -395,7 +395,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/slide2.jpg",
             "image_link": "",
-            "bg_color": "",
+            "bg_color": "#153a33",
             "preheading": "Cafe",
             "preheading_color": "",
             "heading": "Dine with your paw friends!",
