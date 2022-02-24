@@ -91,11 +91,11 @@
         <div class="banner__box color-{{ block.settings.color_scheme }} {% if block.settings.button_label_1 == blank %} banner__buttons--hide{% endif %}" >
 
           
-          <h2 class="{% if block.settings.banner_content %}small-hide{% endif%} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }} style="background: {{ block.settings.banner_head_text_color }}">
+          <h2 class="{% if block.settings.banner_content %}small-hide{% endif%} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }} style="color: {{ block.settings.banner_head_text_color }}">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
 
-          <div class=" {% if block.settings.banner_content %}small-hide{% endif%} banner__text" {{ block.shopify_attributes }}>
+          <div class=" {% if block.settings.banner_content %}small-hide{% endif%} banner__text" {{ block.shopify_attributes }} style="color: {{ block.settings.banner_paragrapgh_text_color }}">
             <span>{{ block.settings.text | escape }}</span>
           </div>
          
