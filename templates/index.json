@@ -314,7 +314,6 @@
         },
         "0b0bc208-f580-4995-90c4-9232c2fd9c6f": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/bunny-statue-watches-eggs.jpg",
             "img_link": "",
