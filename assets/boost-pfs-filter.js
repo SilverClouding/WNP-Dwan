@@ -553,7 +553,9 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       customSubmitEvent()
       // Bind close
      
-      
+      jQ('.boost-pfs-quickview-close').on('click', function () {
+            console.log('close');
+          });
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
         jQ('.boost-pfs-select-option-wrapper').hide();
@@ -571,10 +573,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 // 				jQ(event.target).click();
 // 			}
 // 		});
-		if (this.isGetQuickViewOption) {
-          jQ('.boost-pfs-quickview-close').on('click', function () {
-            console.log('close');
-          }
+// 		if (this.isGetQuickViewOption) {
 // 			if (Settings.getSettingValue('general.enableAjaxCart')) {
 // 				this.parent.$element.find('#boost-pfs-quickview-cart-form-' + this.parent.data.id).on('submit', this.onClickAddToCart.bind(this));
 // 			}
@@ -595,7 +594,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 // 			// Bind changing options
 // 			jQ('.boost-pfs-quickview-select-option').on('change', this.onChangeVariant.bind(this));
 
-		} 
+// 		} 
 //       else {
 // 			this.initImageSlider();
 // 			jQ('.boost-pfs-quickview-close').on('click', this.closeModal.bind(this));
