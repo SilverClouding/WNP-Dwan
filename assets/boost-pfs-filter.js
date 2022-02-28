@@ -552,14 +552,25 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	QuickView.prototype.bindQuickViewModalEvents = function() {
       customSubmitEvent()
       // Bind close
-      if(window._swat){ 
-        window._swat.initializeActionButtons("#bc-sf-filter-products"); 
-      }else{ 
-        window.SwymCallbacks = window.SwymCallbacks || []; 
-        window.SwymCallbacks.push(function(){ 
-          window._swat.initializeActionButtons("#bc-sf-filter-products"); 
-        }); 
-      } 
+     
+      //     swym 
+      function swymCallbackFn(swat) {
+        // your API calls go here 
+        // detect variant change event
+        // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation
+        document.addEventListener("variantChange", function(event) {
+          var variantId = event.detail.variant.id; /* the current selected variant id */
+          window.triggerSwymVariantEvent(variantId);
+          swat.initializeActionButtons("#bc-sf-filter-products"); /* parent container of the where the button is rendered */
+        });
+      }
+
+      if (!window.SwymCallbacks) {
+        window.SwymCallbacks = [];
+      }
+      window.SwymCallbacks.push(swymCallbackFn);
+      /* Called when swym is loaded! */
+      // swym end
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
         jQ('.boost-pfs-select-option-wrapper').hide();
