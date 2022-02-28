@@ -228,6 +228,7 @@ $(document).ready(function(){
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
+      
       if(productJson.available ){
         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
@@ -240,11 +241,11 @@ $(document).ready(function(){
       
       
       console.log(variant__Id);
-
+let varFlagCheck = false;
       productJson.variants.forEach(function(variant) { 
       if(variant.id == variant__Id){
-        console.log(variant)
-        }
+        if(variant.available){varFlagCheck = true;}
+      }
       });
       
     },function(e) {console.log(e);});
