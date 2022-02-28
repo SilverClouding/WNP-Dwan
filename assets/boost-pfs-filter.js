@@ -553,25 +553,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       customSubmitEvent()
       // Bind close
      
-      //     swym 
-      function swymCallbackFn(swat) {
-        // your API calls go here 
-        // detect variant change event
-        // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation
-        document.addEventListener("variantChange", function(event) {
-          var variantId = event.detail.variant.id; /* the current selected variant id */
-          console.log(variantId);
-          window.triggerSwymVariantEvent(variantId);
-          swat.initializeActionButtons("#bc-sf-filter-products"); /* parent container of the where the button is rendered */
-        });
-      }
-
-      if (!window.SwymCallbacks) {
-        window.SwymCallbacks = [];
-      }
-      window.SwymCallbacks.push(swymCallbackFn);
-      /* Called when swym is loaded! */
-      // swym end
+      
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
         jQ('.boost-pfs-select-option-wrapper').hide();
@@ -657,6 +639,28 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
 
         window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
+      
+      //     swym 
+      function swymCallbackFn(swat) {
+        // your API calls go here 
+        // detect variant change event
+        // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation
+        document.addEventListener("variantChange", function(event) {
+          var variantId = event.detail.variant.id; /* the current selected variant id */
+          console.log(variantId);
+          window.triggerSwymVariantEvent(variantId);
+          swat.initializeActionButtons("#bc-sf-filter-products"); /* parent container of the where the button is rendered */
+        });
+      }
+
+      if (!window.SwymCallbacks) {
+        window.SwymCallbacks = [];
+      }
+      window.SwymCallbacks.push(swymCallbackFn);
+      /* Called when swym is loaded! */
+      // swym end
+      
+      
 	}
   
     
