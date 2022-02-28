@@ -559,6 +559,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         jQ('.boost-pfs-select-option-wrapper').hide();
         jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
         jQ('body').removeClass('boost-pfs-select-option-show-body');
+        console.log('close');
       });
 //       jQ(".shopify-product-form").on("submit", function(){
 //         jQ(".boost-pfs-modal-backdrop .boost-pfs-modal-container .boost-pfs-quickview-close").trigger("click") 
