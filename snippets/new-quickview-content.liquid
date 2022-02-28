@@ -71,7 +71,7 @@
             </div>
           </button>
 
-          <!-- Swym Wishlist Plus EPI Button-->
+        {%comment%}   <!-- Swym Wishlist Plus EPI Button-->
          <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" 
                   data-swaction="addToWishlist" data-product-id="{{ product_card_product.id | json}}" 
                   data-variant-id="{{ product_card_product.variants[0].id}}" 
@@ -79,8 +79,8 @@
             <span class="swym-wishlist-cta">Add to Wishlist</span>
           </button>
           <!-- Swym Wishlist Plus EPI Button-->
-          
-          {%comment%}
+          {% endcomment %}
+         
           {% include 'swym-product-view', product: product_card_product %} 
           <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product_card_product.id}}" 
                   data-swaction="addToWishlist" data-product-id="{{ product_card_product.id | json}}" 
@@ -89,7 +89,7 @@
                   data-product-url="{{ shop.url }}{{  product_card_product.url }}">
             <span class="swym-wishlist-cta">Add to Wishlist</span>
           </button>
-          {% endcomment %}
+          
           
           {%- if settings.show_dynamic_checkout -%}
           {{ form | payment_button }}
