@@ -227,7 +227,6 @@ $(document).ready(function(){
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
       if(productJson.available ){
-
         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
@@ -235,9 +234,10 @@ $(document).ready(function(){
         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
         document.getElementById(`${productJson.id}`).classList.add('hide');
         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
-        
-        
       }
+      
+      
+      
     },function(e) {console.log(e);});
   }
  
