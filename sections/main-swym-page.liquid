@@ -241,8 +241,10 @@ $(document).ready(function(){
       
       console.log(variant__Id);
 
-      productJson.variants.forEach(function(element) { 
-        console.log(element)
+      productJson.variants.forEach(function(variant) { 
+      if(variant.available){
+        console.log(variant)
+        }
       });
       
     },function(e) {console.log(e);});
