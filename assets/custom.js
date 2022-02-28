@@ -261,7 +261,7 @@ function swymCallbackFn(swat) {
   var variantId = event.detail.variant.id; /* the current selected variant id */
     console.log(variantId);
   window.triggerSwymVariantEvent(variantId);
-  swat.initializeActionButtons(".product-page-wishlist-grid");/* parent container of the where the button is rendered */
+  swat.initializeActionButtons(".swym-btn-container");/* parent container of the where the button is rendered */
 });
 }
 if (!window.SwymCallbacks) {
