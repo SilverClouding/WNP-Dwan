@@ -505,15 +505,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
  
-      if(window._swat){ 
-        window._swat.initializeActionButtons("#bc-sf-filter-products"); 
-      }else{ 
-        window.SwymCallbacks = window.SwymCallbacks || []; 
-        window.SwymCallbacks.push(function(){ 
-          window._swat.initializeActionButtons("#bc-sf-filter-products"); 
-        }); 
-      } 
-      
+
       
 //       additional ad code 
       var extraItemHtml = `<li class="grid__item text-image-grid-item">
@@ -560,6 +552,15 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	QuickView.prototype.bindQuickViewModalEvents = function() {
       customSubmitEvent()
       // Bind close
+      if(window._swat){ 
+        window._swat.initializeActionButtons("#bc-sf-filter-products"); 
+      }else{ 
+        window.SwymCallbacks = window.SwymCallbacks || []; 
+        window.SwymCallbacks.push(function(){ 
+          window._swat.initializeActionButtons("#bc-sf-filter-products"); 
+        }); 
+      } 
+
       jQ('.boost-pfs-select-option-close').on('click', function () {
         jQ('.boost-pfs-select-option-wrapper').hide();
         jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
