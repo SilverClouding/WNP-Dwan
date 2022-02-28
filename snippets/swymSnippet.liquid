@@ -38,7 +38,7 @@
         variants: [{ {{ variant.title | json }} : {{variant.id|json}}}]
       };
     {%- endfor -%}
-  console.log(variants)
+  console.log({{product.title}})
     window.SwymProductInfo.currentVariant = {{currentVariant.id | json}};
     var product_data = {
       et: 1, empi: window.SwymProductInfo.product.id, epi: window.SwymProductInfo.currentVariant,
