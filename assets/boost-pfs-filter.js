@@ -552,9 +552,10 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 	QuickView.prototype.bindQuickViewModalEvents = function() {
       customSubmitEvent()
       // Bind close
-     
+     var url = window.location.pathname;
+      
       jQ('.boost-pfs-quickview-close').on('click', function () {
-            console.log('close');
+            console.log('close'+url);
           });
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
