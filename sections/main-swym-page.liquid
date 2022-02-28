@@ -256,15 +256,15 @@ $(document).ready(function(){
         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
       }
       
-      if(productJson.available ){
-        document.getElementById(`${productJson.id}`).innerText ="Add to cart";
-        document.getElementById(`${productJson.id}`).classList.remove('hide'); 
-        document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
-      }else{
-        document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
-        document.getElementById(`${productJson.id}`).classList.add('hide');
-        document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
-      }
+//       if(productJson.available ){
+//         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
+//         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
+//         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
+//       }else{
+//         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
+//         document.getElementById(`${productJson.id}`).classList.add('hide');
+//         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
+//       }
       
       
     },function(e) {console.log(e);});
