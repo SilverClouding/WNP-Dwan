@@ -234,7 +234,7 @@ ${product.dt}-${product.epi}
      
       let varFlagCheck = null;
       productJson.variants.forEach(function(variant) { 
-//         if(variant.id == variant__Id){
+        if(variant.id == variant__Id){
 //           console.log(variant.available); 
           console.log(variant__Id);
           if(variant.available == false ){
@@ -259,7 +259,7 @@ ${product.dt}-${product.epi}
 //             document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.add('hide');
 
           }
-//         }
+        }
       });
 
      
