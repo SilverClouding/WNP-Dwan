@@ -505,6 +505,15 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
  
+      if(window._swat){ 
+        window._swat.initializeActionButtons("#bc-sf-filter-products"); 
+      }else{ 
+        window.SwymCallbacks = window.SwymCallbacks || []; 
+        window.SwymCallbacks.push(function(){ 
+          window._swat.initializeActionButtons("#bc-sf-filter-products"); 
+        }); 
+      } 
+      
       
 //       additional ad code 
       var extraItemHtml = `<li class="grid__item text-image-grid-item">
