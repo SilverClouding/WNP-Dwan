@@ -70,13 +70,15 @@
 <script>
 $(document).ready(function(){
   const wishlistItemsContainer = document.getElementById('swym_main_collection_product_grid');
+  let variant__Id = '';
 
   function fetchProduct(){
     window._swat.fetchWrtEventTypeET(function(wishlistProducts) {
       let productitem="";
 //       console.log(wishlistProducts);
       wishlistProducts.forEach(function(product){
-        console.log(product);
+        console.log("Variant id"+product.epi);
+        variant__Id = product.epi;
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
         productitem += `<li class="grid__item" id="product_li__${product.empi}"> <div class="card-wrapper">
@@ -236,6 +238,8 @@ $(document).ready(function(){
         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
       }
       
+      
+      console.log(product.epi);
       
       
     },function(e) {console.log(e);});
