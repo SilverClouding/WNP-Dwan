@@ -239,22 +239,22 @@ $(document).ready(function(){
           if(variant.available == false ){
             varFlagCheck = false;
             console.log("if");
-//             document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
-//             document.getElementById(`${productJson.id}`).classList.add('hide');
-//             document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
-            document.querySelector(`data-noti_variant-id="${variant.id}"`).innerText ="Notify Me";
-            document.querySelector(`data-variant-id="${variant.id}"`).classList.add('hide');
-            document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.remove('hide');
+            document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
+            document.getElementById(`${productJson.id}`).classList.add('hide');
+            document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
+//             document.querySelector(`data-noti_variant-id="${variant.id}"`).innerText ="Notify Me";
+//             document.querySelector(`data-variant-id="${variant.id}"`).classList.add('hide');
+//             document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.remove('hide');
           }else{
             varFlagCheck = true;
             console.log("else");
-//             document.getElementById(`${productJson.id}`).innerText ="Add to cart";
-//             document.getElementById(`${productJson.id}`).classList.remove('hide'); 
-//             document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
+            document.getElementById(`${productJson.id}`).innerText ="Add to cart";
+            document.getElementById(`${productJson.id}`).classList.remove('hide'); 
+            document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
             
-             document.querySelector(`data-variant-id="${variant.id}"`).innerText ="Add to cart";
-            document.querySelector(`data-variant-id="${variant.id}"`).classList.remove('hide');
-            document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.add('hide');
+//              document.querySelector(`data-variant-id="${variant.id}"`).innerText ="Add to cart";
+//             document.querySelector(`data-variant-id="${variant.id}"`).classList.remove('hide');
+//             document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.add('hide');
 
           }
         }
