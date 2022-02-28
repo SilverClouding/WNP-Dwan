@@ -640,7 +640,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
         window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
       
-      //     swym 
+      // swym 
       function swymCallbackFn(swat) {
         // your API calls go here 
         // detect variant change event
