@@ -78,7 +78,7 @@ $(document).ready(function(){
 //       console.log(wishlistProducts);
       wishlistProducts.forEach(function(product){
         console.log(product);
-        variant__Id = product.epi;
+        
         let addtobtn_text = "Add to cart"
         product.isInCart = _swat.platform.isInDeviceCart(product.epi);    
         productitem += `<li class="grid__item" id="product_li__${product.empi}"> <div class="card-wrapper">
@@ -216,7 +216,7 @@ ${product.dt}
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
 //       console.log("Entire product json vendor:",productJson);
-      
+      variant__Id = product.epi;
       if(productJson.available){
         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
       }else{
