@@ -231,12 +231,13 @@ $(document).ready(function(){
       
      
 
-      console.log(variant__Id);
+     
       let varFlagCheck = null;
       productJson.variants.forEach(function(variant) { 
         if(variant.id == variant__Id){
 //           console.log(variant.available);
           if(variant.available == false ){
+             console.log(variant);
             varFlagCheck = false;
             console.log("if");
             document.getElementById(`${variant.id}`).innerText ="Notify Me";  
