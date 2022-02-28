@@ -253,6 +253,21 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+function swymCallbackFn(swat) {
+  // your API calls go here 
+  // detect variant change event
+  // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation    document.addEventListener("variantChange", function(event) {
+  var variantId = event.detail.variant.id; /* the current selected variant id */
+  window.triggerSwymVariantEvent(variantId);
+  swat.initializeActionButtons(".product-page-wishlist-grid");/* parent container of the where the button is rendered */
+});
+}
+if (!window.SwymCallbacks) {
+  window.SwymCallbacks = [];
+}
+window.SwymCallbacks.push(swymCallbackFn);
+/* Called when swym is loaded! */
+
 
 // always page go top after page load
  document.body.scrollTop = document.documentElement.scrollTop = 0;
