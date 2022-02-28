@@ -259,6 +259,7 @@ function swymCallbackFn(swat) {
   // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation    
   document.addEventListener("variantChange", function(event) {
   var variantId = event.detail.variant.id; /* the current selected variant id */
+    console.log(variantId);
   window.triggerSwymVariantEvent(variantId);
   swat.initializeActionButtons(".product-page-wishlist-grid");/* parent container of the where the button is rendered */
 });
