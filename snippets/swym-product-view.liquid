@@ -8,7 +8,7 @@
   if(!window[k]) window[k] = {};
 });
 (function(et){
-    var collections = {{product.type | json}};
+    var collections = {{product.type | json}}; 
     var o={}, empi={{ product.id | json }},
     piu = {{ product.featured_image | img_url: '620x620' | json }};
     {% assign currentVariant = product.variants[0] %}
