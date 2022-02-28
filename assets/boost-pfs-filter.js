@@ -553,9 +553,11 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       customSubmitEvent()
       // Bind close
      var url = window.location.href;
+      var origin   = window.location.origin;
       
       jQ('.boost-pfs-quickview-close').on('click', function () {
-            console.log('close'+url);
+            console.log('url-'+url);
+        console.log('origin-'+origin);
           });
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
