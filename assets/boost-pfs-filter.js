@@ -646,7 +646,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         // your API calls go here 
         // detect variant change event
         // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation
-        document.addEventListener("change", function(event) {
+        const input = document.querySelector('.boost-pfs-quickview-wrapper input');
+        input.addEventListener("change", function(event) {
           console.log(event);
           var variantId = event.detail.variant.id; /* the current selected variant id */
 
