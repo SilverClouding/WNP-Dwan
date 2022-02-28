@@ -222,7 +222,6 @@ ${product.dt}
       }else{
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
-      
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
