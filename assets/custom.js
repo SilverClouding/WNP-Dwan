@@ -256,7 +256,8 @@ for (i = 0; i < acc.length; i++) {
 function swymCallbackFn(swat) {
   // your API calls go here 
   // detect variant change event
-  // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation    document.addEventListener("variantChange", function(event) {
+  // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation    
+  document.addEventListener("variantChange", function(event) {
   var variantId = event.detail.variant.id; /* the current selected variant id */
   window.triggerSwymVariantEvent(variantId);
   swat.initializeActionButtons(".product-page-wishlist-grid");/* parent container of the where the button is rendered */
