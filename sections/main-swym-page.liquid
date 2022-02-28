@@ -227,10 +227,7 @@ ${product.dt}
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
-      
-     
-
-     
+ 
       let varFlagCheck = null;
       productJson.variants.forEach(function(variant) { 
         if(variant.id == variant__Id){
