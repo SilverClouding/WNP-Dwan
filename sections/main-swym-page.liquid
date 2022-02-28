@@ -244,7 +244,13 @@ $(document).ready(function(){
         }
       });
 
-      if(productJson.available || varFlagCheck ){
+      if(varFlagCheck){
+      console.log("if");
+      }else{
+      console.log("else");
+      }
+      
+      if(productJson.available ){
         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
