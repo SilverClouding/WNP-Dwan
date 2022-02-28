@@ -242,7 +242,7 @@ $(document).ready(function(){
       console.log(variant__Id);
 
       productJson.variants.forEach(function(variant) { 
-      if(variant.available){
+      if(variant.id == variant__Id){
         console.log(variant)
         }
       });
