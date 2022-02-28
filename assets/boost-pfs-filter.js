@@ -642,12 +642,13 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       
       // swym 
       function swymCallbackFn(swat) {
+        console.log(swat);
         // your API calls go here 
         // detect variant change event
         // Based on your theme code - this event detection may be different - this is only a SAMPLE implementation
         document.addEventListener("variantChange", function(event) {
           var variantId = event.detail.variant.id; /* the current selected variant id */
-          console.log(variantId);
+          
           window.triggerSwymVariantEvent(variantId);
           swat.initializeActionButtons("#bc-sf-filter-products"); /* parent container of the where the button is rendered */
         });
