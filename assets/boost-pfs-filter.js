@@ -556,7 +556,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       var origin   = window.location.origin;
       
       jQ('.boost-pfs-quickview-close').on('click', function () {
-            console.log('url-'+url);
+            console.log('url-'+url.replace(origin,''));
         console.log('origin-'+origin);
           });
 
