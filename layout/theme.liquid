@@ -305,9 +305,9 @@ ratingSnippet("ruk_rating_snippet",{
   {% render 'linked-options' %}{%endcomment%}
   
     
-{% render 'swymSnippet' %}
- {% render 'swym-header-counter'%}
-     {% render 'swym-custom'%}
+{% include 'swymSnippet' %}
+ {% include 'swym-header-counter'%}
+     {%include 'swym-custom'%}
     <script> 
 //       if(window._swat){
 //         window._swat.initializeActionButtons(".save-whishlist"); 
