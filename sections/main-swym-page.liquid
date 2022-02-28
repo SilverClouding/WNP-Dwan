@@ -235,36 +235,35 @@ $(document).ready(function(){
       let varFlagCheck = null;
       productJson.variants.forEach(function(variant) { 
         if(variant.id == variant__Id){
-          console.log(variant.available);
+//           console.log(variant.available);
           if(variant.available == false ){
             varFlagCheck = false;
+            console.log("if");
+            document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
+            document.getElementById(`${productJson.id}`).classList.add('hide');
+            document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
           }else{
             varFlagCheck = true;
+            console.log("else");
+            document.getElementById(`${productJson.id}`).innerText ="Add to cart";
+            document.getElementById(`${productJson.id}`).classList.remove('hide'); 
+            document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
+
           }
         }
       });
 
-      if(varFlagCheck){
-      console.log("if");
-           document.getElementById(`${productJson.id}`).innerText ="Add to cart";
+     
+      
+      if(productJson.available ){
+        document.getElementById(`${productJson.id}`).innerText ="Add to cart";
         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
       }else{
-      console.log("else");
-         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
+        document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
         document.getElementById(`${productJson.id}`).classList.add('hide');
         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
       }
-      
-//       if(productJson.available ){
-//         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
-//         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
-//         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
-//       }else{
-//         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
-//         document.getElementById(`${productJson.id}`).classList.add('hide');
-//         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
-//       }
       
       
     },function(e) {console.log(e);});
