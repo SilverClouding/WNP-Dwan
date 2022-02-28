@@ -558,7 +558,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       jQ('.boost-pfs-quickview-close').on('click', function () {
             console.log('url-'+url.replace(origin,''));
         console.log('origin-'+origin);
-        window.location.href = url;
+//         window.location.href = url;
+        window.history.replaceState(url);
           });
 
       jQ('.boost-pfs-select-option-close').on('click', function () {
