@@ -649,7 +649,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
       
       	jQ('.swatch-element').on("click", function(el) {
-          	jQ(this).closest('.boost-pfs-quickview-content').find('.swym-add-to-wishlist-view-product').attr('data-variant-id',jQ('input[name="id"]').val());
+          	jQ(this).closest('.boost-pfs-modal-content').find('.swym-add-to-wishlist-view-product').attr('data-variant-id',jQ('.boost-pfs-modal-content product-form input[name="id"]').val());
             // console.log(jQ('input[name="id"]').val()); 
         });
       // swym 
