@@ -19,11 +19,11 @@
     "1638426342c59892bd": {
       "type": "rich-text",
       "blocks": {
-        "163842634207ed9d0c-0": {
+        "492ec22f-1085-46a9-9016-067642e1536e": {
           "type": "heading",
           "settings": {
             "heading": "Grooming",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "011561ee-aacd-49be-97c9-f3bb19b95abd": {
@@ -49,7 +49,7 @@
         }
       },
       "block_order": [
-        "163842634207ed9d0c-0",
+        "492ec22f-1085-46a9-9016-067642e1536e",
         "011561ee-aacd-49be-97c9-f3bb19b95abd",
         "163842634207ed9d0c-1",
         "1d025c24-b599-46a5-b80a-4250f397d7c5"
