@@ -752,7 +752,7 @@
 
     </div>
     <script>
-      jQ('form#qvproduct_form_product_{{product.id}} input[name="id"]').on("change paste keyup", function() {
+      jQ('form#qvproduct_form_product_{{product.id}} input[name="id"]').bind("change", function() {
          console.log(jQ(this).val()); 
       });
     </script>
