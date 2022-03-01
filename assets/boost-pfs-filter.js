@@ -620,7 +620,10 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 // 		}
 
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
-          console.log("initialized")
+          //console.log("initialized")
+          jQ('.boost-pfs-quickview-content form[\'data-type="add-to-cart-form"\'] input[name="id"]').bind("change", function() {
+             console.log(jQ(this).val()); 
+          });
         }); 
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
           dots: false,
