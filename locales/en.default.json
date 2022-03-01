@@ -418,7 +418,6 @@
         "sold_out": "Sold out",
         "unavailable": "Unavailable",
         "on_sale": "Sale",
-        "new": "New",
         "quantity": "Quantity",
         "add_to_cart": "Add to cart",
         "back_to_collection": "Back to {{ title }}",
