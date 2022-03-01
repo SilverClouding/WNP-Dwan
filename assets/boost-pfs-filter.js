@@ -621,9 +621,6 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').on('init', function(event, slick){
           //console.log("initialized")
-          jQ('input[name="id"]').on("change", function(el) {
-             console.log(jQ(el).val()); 
-          });
         }); 
         jQuery('.boost-pfs-quickview-wrapper.fancybox-inner .qv-product-main-images').slick({
           dots: false,
@@ -651,6 +648,10 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
         window._swat.initializeActionButtons('.qv-product-options_html', '.swym-button');
       
+      	jQ('input[name="id"]').on("change", function(el) {
+          	console.log(123);
+             console.log(jQ(el).val()); 
+        });
       // swym 
 //       function swymCallbackFn(swat) {
 //         console.log(swat);
