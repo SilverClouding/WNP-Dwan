@@ -650,9 +650,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       
       	jQ('.swatch-element').on("click", function(el) {
           	//jQ(this).closest('.boost-pfs-modal-content').find('.swym-add-to-wishlist-view-product').attr('data-variant-id',);
-            jQ('.boost-pfs-modal-content product-form input[name="id"]').on('change',function(el){
-            	console.log(jQ(el).val());
-              	jQ(this).closest('.boost-pfs-modal-content').find('.swym-add-to-wishlist-view-product').attr('data-variant-id',jQ(el).val());
+            jQ('.boost-pfs-modal-content product-form input[name="id"]').on('change',function(){
+              	jQ(this).closest('.boost-pfs-modal-content').find('.swym-add-to-wishlist-view-product').attr('data-variant-id',jQ('.boost-pfs-modal-content product-form input[name="id"]').val());
             });
         });
       // swym 
