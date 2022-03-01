@@ -752,7 +752,9 @@
 
     </div>
     <script>
-    console.log(jQuery);
+      jQ('form input[name="id"]').on("change paste keyup", function() {
+         console.log(jQ(this).val()); 
+      });
     </script>
   </div>
 </div>
