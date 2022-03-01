@@ -19,11 +19,11 @@
     "1638426342c59892bd": {
       "type": "rich-text",
       "blocks": {
-        "d5e21f21-fdbd-4c6e-b95c-70581a5837a1": {
+        "a217ef1a-b301-45e9-961a-6a0d2d229de3": {
           "type": "heading",
           "settings": {
             "heading": "Adoption",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "dd48b041-ca56-44ce-b79d-2a1e837e46e5": {
@@ -40,7 +40,7 @@
         }
       },
       "block_order": [
-        "d5e21f21-fdbd-4c6e-b95c-70581a5837a1",
+        "a217ef1a-b301-45e9-961a-6a0d2d229de3",
         "dd48b041-ca56-44ce-b79d-2a1e837e46e5",
         "163842634207ed9d0c-1"
       ],
