@@ -796,7 +796,8 @@ if(window._swat){
 // variant prod click
 
 // console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
-document.querySelector('.card-information__text a').onclick = function(event){
+let button = document.querySelector('.card-information__text a');
+  button.onclick = function click(event) {
   console.log(event);
   event.preventDefault();
   var variantProdHandle = this.getAttribute('data-with-collection');
