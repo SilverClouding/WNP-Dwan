@@ -813,15 +813,14 @@ if(breadcrumbObject){
   }
 
   // variant prod click
-  var variantProds = document.querySelectorAll('.All_variants .variant_value li a');
+  var variantProds = document.querySelectorAll('.card-information a');
 console.log(variantProds);
-  for (var i = 0; i < variantProds.length; ++i) {
-    variantProds[i].onclick = function(event){
+    document.querySelectorAll('.card-information a').onclick = function(event){
       var variantProdHandle = this.getAttribute('href').split('/products/')[1];
       breadcrumbObject["prodHandle"] = variantProdHandle;
       localStorage.setItem('breadcrumbCollection', JSON.stringify(breadcrumbObject));
     };
-  }
+  
 }
 
 
