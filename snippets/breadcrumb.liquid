@@ -88,6 +88,9 @@
             <a class="breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
           </li>
         {%- endif -%}
+    <script>
+      localStorage.setItem('breadcrumbCollection',{{collection.handle}} );
+    </script>
       {%- when 'blog' -%}
         {%- if current_tags -%}
           <li class="breadcrumbs__item blog-title">

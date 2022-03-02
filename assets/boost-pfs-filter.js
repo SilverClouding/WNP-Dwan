@@ -510,14 +510,14 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       });
       /** End Swym integration **/
  
-      let button = document.querySelector('.card-information__text a');
-      button.onclick = function click(event) {
-        console.log(event);
-        event.preventDefault();
-        var variantProdHandle = this.getAttribute('data-with-collection');
-        console.log( this.getAttribute('data-with-collection'));
-        localStorage.setItem('breadcrumbCollection',variantProdHandle );
-      };
+//       let button = document.querySelector('.card-information__text a');
+//       button.onclick = function click(event) {
+//         console.log(event);
+//         event.preventDefault();
+//         var variantProdHandle = this.getAttribute('data-with-collection');
+//         console.log( this.getAttribute('data-with-collection'));
+//         localStorage.setItem('breadcrumbCollection',variantProdHandle );
+//       };
 
       
 //       additional ad code 
