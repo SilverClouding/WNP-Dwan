@@ -447,7 +447,7 @@ jQuery(function($){
       }
     }
      console.log(date);
-    console.log(localStorage.tmx-newsletter);
+    console.log(localStorage.getItem('tmx-newsletter'));
   }
 
   $(document).ready(function(){
