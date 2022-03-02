@@ -542,6 +542,16 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       	  if (el) el.insertAdjacentHTML('afterend', extraItemHtml);
       
 //       render function end
+      
+      // variant prod click
+      var variantProds = document.querySelectorAll('.card-information a');
+      console.log(variantProds);
+      document.querySelectorAll('.card-information a').onclick = function(event){
+        var variantProdHandle = this.getAttribute('href').split('/products/')[1];
+        breadcrumbObject["prodHandle"] = variantProdHandle;
+        localStorage.setItem('breadcrumbCollection', JSON.stringify(breadcrumbObject));
+      };
+      
 	}
 
 	// Build Additional Elements
@@ -798,20 +808,6 @@ function customSubmitEvent(){
 }
 
 
-function customColInBreadcrumb(){
 
-  // variant prod click
-  var variantProds = document.querySelectorAll('.card-information a');
-  console.log(variantProds);
-  document.querySelectorAll('.card-information a').onclick = function(event){
-    var variantProdHandle = this.getAttribute('href').split('/products/')[1];
-    breadcrumbObject["prodHandle"] = variantProdHandle;
-    localStorage.setItem('breadcrumbCollection', JSON.stringify(breadcrumbObject));
-  };
+ 
 
-
-
-
-  // End breadcrumb
-
-}
