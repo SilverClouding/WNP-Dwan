@@ -792,3 +792,17 @@ if(window._swat){
 // }, 5000); //wait for atleast  3 seconds before console logging
 
 
+// Show Collection in breadcrumb
+console.log(localStorage);
+var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
+if(breadcrumbObject){
+  var localWithinColl = breadcrumbObject.prodWithinCollection;
+  // if(cameFromColl == localstrColl && this.options.productHandle == breadcrumbObject.prodHandle){
+  if(localWithinColl.indexOf('/collections/') != -1 && this.options.productHandle == breadcrumbObject.prodHandle){
+    var breadcrumbCol = document.getElementById('collection-breadcrumb');
+    breadcrumbCol.setAttribute("href", breadcrumbObject.url);
+    breadcrumbCol.text = breadcrumbObject.title;
+    breadcrumbCol.style.display = null;
+    document.querySelector(".collection-breadcrumb-separator").style.display = null;
+  }
+}
