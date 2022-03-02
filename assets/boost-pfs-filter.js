@@ -106,7 +106,7 @@ var boostPFSFilterConfig = {
 
 
 		return itemHtml;
-      console.log(Utils.buildProductItemUrl(data));
+//       console.log(Utils.buildProductItemUrl(data));
 	};
 
   
@@ -142,7 +142,7 @@ var boostPFSFilterConfig = {
 			}
 		}
 
-      console.log(soldOut);
+//       console.log(soldOut);
       
 		if (images.length > 0) {
 			aspectRatio = images[0]['width'] / images[0]['height'];
