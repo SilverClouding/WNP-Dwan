@@ -796,3 +796,35 @@ function customSubmitEvent(){
 });
 }
 }
+
+
+function customColInBreadcrumb(){
+// Show Collection in breadcrumb
+var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
+if(breadcrumbObject){
+  var localWithinColl = breadcrumbObject.prodWithinCollection;
+  // if(cameFromColl == localstrColl && this.options.productHandle == breadcrumbObject.prodHandle){
+  if(localWithinColl.indexOf('/collections/') != -1 && this.options.productHandle == breadcrumbObject.prodHandle){
+    var breadcrumbCol = document.getElementById('collection-breadcrumb');
+    breadcrumbCol.setAttribute("href", breadcrumbObject.url);
+    breadcrumbCol.text = breadcrumbObject.title;
+    breadcrumbCol.style.display = null;
+    document.querySelector(".collection-breadcrumb-separator").style.display = null;
+  }
+
+  // variant prod click
+  var variantProds = document.querySelectorAll('.All_variants .variant_value li a');
+
+  for (var i = 0; i < variantProds.length; ++i) {
+    variantProds[i].onclick = function(event){
+      var variantProdHandle = this.getAttribute('href').split('/products/')[1];
+      breadcrumbObject["prodHandle"] = variantProdHandle;
+      localStorage.setItem('breadcrumbCollection', JSON.stringify(breadcrumbObject));
+    };
+  }
+}
+
+
+// End breadcrumb
+  
+  }
