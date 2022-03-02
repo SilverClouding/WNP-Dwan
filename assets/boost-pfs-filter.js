@@ -545,8 +545,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       
       // variant prod click
       var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
-      var variantProds = document.querySelector('.card-information .card-information__text a');
-      console.log(variantProds);
+
        console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
       document.querySelector('.card-information .card-information__text a').onclick = function(event){
         var variantProdHandle = this.getAttribute('data-with-collection').split('/products/')[1];
