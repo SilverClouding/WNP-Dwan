@@ -106,7 +106,7 @@ var boostPFSFilterConfig = {
 
 
 		return itemHtml;
-//       console.log(Utils.buildProductItemUrl(data));
+      console.log(data);
 	};
 
   
