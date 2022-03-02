@@ -292,7 +292,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
 	function buildSoldOutLabel(data) {
 		// Build Sold out label
-      console.log(data);
+//       console.log(data);
 		var soldOutLabel = '';
 		if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_badge_color_scheme') && soldOut) {
 			soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{soldOutBadgeClass}}/g, boostPFSThemeConfig.custom.sold_out_badge_color_scheme);
@@ -317,12 +317,12 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
       // Build Sale label
       var saleLabel = '';
-      console.log(`${boostPFSThemeConfig.label.new_badge}`);
+//       console.log(`${boostPFSThemeConfig.label.new_badge}`);
       if(NewTag){
-        console.log('if Newtag'+NewTag);
+//         console.log('if Newtag'+NewTag);
         saleLabel=`<span class="badge badge--bottom-left color-${boostPFSThemeConfig.custom.sale_badge_color_scheme} new-btn">New</span>`;
       }else{
-         console.log('else saleLabel'+saleLabel);
+//          console.log('else saleLabel'+saleLabel);
         if (boostPFSThemeConfig.custom.hasOwnProperty('sale_badge_color_scheme') && onSale || !soldOut) {
           
           saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{saleBadgeClass}}/g, boostPFSThemeConfig.custom.sale_badge_color_scheme);
@@ -429,7 +429,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		var html = '';
 		if (boostPFSTemplate.hasOwnProperty('sortingHtml')) {
 			var sortingArr = Utils.getSortingList();
-          console.log(sortingArr);
+//           console.log(sortingArr);
 			if (sortingArr) {
 				var paramSort = Globals.queryParams.sort || 'relevance';
 				// Build content
@@ -558,8 +558,8 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       var origin   = window.location.origin;
       
       jQ('.boost-pfs-quickview-close, .boost-pfs-modal-container').on('click', function () {
-            console.log('url-'+url.replace(origin,''));
-        console.log('origin-'+origin);
+//             console.log('url-'+url.replace(origin,''));
+//         console.log('origin-'+origin);
 //         window.location.href = url;
         window.history.replaceState({ }, '',url);
           });
@@ -568,7 +568,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         jQ('.boost-pfs-select-option-wrapper').hide();
         jQ('.boost-pfs-action-list-enabled').removeClass('boost-pfs-select-option-show');
         jQ('body').removeClass('boost-pfs-select-option-show-body');
-        console.log('close');
+//         console.log('close');
       });
 //       jQ(".shopify-product-form").on("submit", function(){
 //         jQ(".boost-pfs-modal-backdrop .boost-pfs-modal-container .boost-pfs-quickview-close").trigger("click") 
