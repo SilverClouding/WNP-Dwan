@@ -559,7 +559,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 		if (!data) data = this.data;
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
 	};
-  customColInBreadcrumb();
+  
   
 //   quickshop
   
