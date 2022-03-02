@@ -71,6 +71,19 @@
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
         </li>
+    
+    {% if collection.url %}
+      <span aria-hidden="true">/</span>
+      {{ collection.title | link_to: collection.url }}
+    {% endif %}
+    <span aria-hidden="true">/</span>
+  
+  	<a href="#" id="collection-breadcrumb" style="display: none;"></a>
+    <span aria-hidden="true" class="collection-breadcrumb-separator" style="display: none;">/</span>
+  
+    <span>{{ product.title }}</span>
+    
+    
       {%- when 'collection' and collection.handle -%}
         {%- if current_tags -%}
           <li class="breadcrumbs__item">
