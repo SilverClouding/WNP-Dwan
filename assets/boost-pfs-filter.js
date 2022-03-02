@@ -548,6 +548,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       console.log(variantProds);
       document.querySelectorAll('.card-information a').onclick = function(event){
         var variantProdHandle = this.getAttribute('data-with-collection').split('/products/')[1];
+        console.log(variantProdHandle);
         breadcrumbObject["prodHandle"] = variantProdHandle;
         localStorage.setItem('breadcrumbCollection', JSON.stringify(breadcrumbObject));
       };
