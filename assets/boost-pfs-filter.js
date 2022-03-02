@@ -552,7 +552,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
         var variantProdHandle = this.getAttribute('data-with-collection');
         console.log( this.getAttribute('data-with-collection'));
         
-        localStorage.setItem('breadcrumbCollection',JSON.stringify(variantProdHandle) );
+        localStorage.setItem('breadcrumbCollection',variantProdHandle );
       };
       
 	}
