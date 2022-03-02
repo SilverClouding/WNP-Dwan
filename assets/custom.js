@@ -794,7 +794,7 @@ if(window._swat){
 
 // Show Collection in breadcrumb
 
-var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
+var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
 if(breadcrumbObject){
   var localWithinColl = breadcrumbObject.prodWithinCollection;
   // if(cameFromColl == localstrColl && this.options.productHandle == breadcrumbObject.prodHandle){
