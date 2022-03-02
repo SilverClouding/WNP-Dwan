@@ -89,7 +89,7 @@
           </li>
         {%- endif -%}
     <script>
-      localStorage.setItem('breadcrumbCollection',{{collection.handle}} );
+      localStorage.setItem('breadcrumbCollection',{{collection.handle|json}} );
     </script>
       {%- when 'blog' -%}
         {%- if current_tags -%}
