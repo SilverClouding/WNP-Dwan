@@ -547,6 +547,7 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
 
        console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
       document.querySelector('.card-information .card-information__text a').onclick = function(event){
+        console.log(event);
         var variantProdHandle = this.getAttribute('data-with-collection').split('/products/')[1];
         console.log( this.getAttribute('data-with-collection').split('/products/')[1]);
         
