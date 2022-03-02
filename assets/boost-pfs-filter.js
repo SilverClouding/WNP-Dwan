@@ -102,7 +102,10 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
 		itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
       itemHtml = itemHtml.replace(/{{vendorHandle}}/g, data.vendor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, ''));
-		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
+// 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
+      
+      itemHtml = itemHtml.replace(/{{itemUrl}}/g, "/products/"+data.handle);
+      
 console.log("/products/"+data.handle);
 
 		return itemHtml;
