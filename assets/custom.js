@@ -795,15 +795,15 @@ if(window._swat){
 // Show Collection in breadcrumb
 
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
-if(breadcrumbObject){
-  var localWithinColl = breadcrumbObject.prodWithinCollection;
-  // if(cameFromColl == localstrColl && this.options.productHandle == breadcrumbObject.prodHandle){
-  if(localWithinColl.indexOf('/collections/') != -1 && this.options.productHandle == breadcrumbObject.prodHandle){
-    var breadcrumbCol = document.getElementById('collection-breadcrumb');
-    breadcrumbCol.setAttribute("href", breadcrumbObject.url);
-    breadcrumbCol.text = breadcrumbObject.title;
-    breadcrumbCol.style.display = null;
-    document.querySelector(".collection-breadcrumb-separator").style.display = null;
-  }
-}
+// if(breadcrumbObject){
+//   var localWithinColl = breadcrumbObject.prodWithinCollection;
+//   // if(cameFromColl == localstrColl && this.options.productHandle == breadcrumbObject.prodHandle){
+//   if(localWithinColl.indexOf('/collections/') != -1 && this.options.productHandle == breadcrumbObject.prodHandle){
+//     var breadcrumbCol = document.getElementById('collection-breadcrumb');
+//     breadcrumbCol.setAttribute("href", breadcrumbObject.url);
+//     breadcrumbCol.text = breadcrumbObject.title;
+//     breadcrumbCol.style.display = null;
+//     document.querySelector(".collection-breadcrumb-separator").style.display = null;
+//   }
+// }
 console.log(localStorage.getItem('breadcrumbCollection'));
