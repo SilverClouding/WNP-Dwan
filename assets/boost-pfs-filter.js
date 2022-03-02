@@ -106,7 +106,7 @@ var boostPFSFilterConfig = {
       
       itemHtml = itemHtml.replace(/{{itemUrl}}/g, "/products/"+data.handle);
       
-console.log("/products/"+data.handle);
+// console.log("/products/"+data.handle);
 
 		return itemHtml;
       
