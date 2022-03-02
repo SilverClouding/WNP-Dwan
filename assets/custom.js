@@ -793,7 +793,17 @@ if(window._swat){
 
 
 // Show Collection in breadcrumb
+// variant prod click
 
+console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
+document.querySelector('.card-information__text a').onclick = function(event){
+  console.log(event);
+  event.preventDefault();
+  var variantProdHandle = this.getAttribute('data-with-collection');
+  console.log( this.getAttribute('data-with-collection'));
+
+  localStorage.setItem('breadcrumbCollection',variantProdHandle );
+};
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
 // if(breadcrumbObject){
 //   var localWithinColl = breadcrumbObject.prodWithinCollection;
