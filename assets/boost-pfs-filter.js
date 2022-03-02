@@ -106,7 +106,7 @@ var boostPFSFilterConfig = {
       
       itemHtml = itemHtml.replace(/{{itemUrl}}/g, "/products/"+data.handle);
       
-// console.log("/products/"+data.handle);
+console.log("/products/"+data.handle);
 
 		return itemHtml;
       
@@ -542,19 +542,6 @@ var itemWishlistHtml = '<button class="swym-button swym-add-to-wishlist-view-pro
       	  if (el) el.insertAdjacentHTML('afterend', extraItemHtml);
       
 //       render function end
-      
-      // variant prod click
-
-       console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
-      document.querySelector('.card-information .card-information__text a').onclick = function(event){
-        console.log(event);
-        event.preventDefault();
-        var variantProdHandle = this.getAttribute('data-with-collection');
-        console.log( this.getAttribute('data-with-collection'));
-        
-        localStorage.setItem('breadcrumbCollection',variantProdHandle );
-      };
-      
 	}
 
 	// Build Additional Elements
@@ -811,6 +798,4 @@ function customSubmitEvent(){
 }
 
 
-
- 
 
