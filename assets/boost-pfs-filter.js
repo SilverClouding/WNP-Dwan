@@ -814,7 +814,7 @@ if(breadcrumbObject){
 
   // variant prod click
   var variantProds = document.querySelectorAll('.All_variants .variant_value li a');
-
+console.log(variantProds);
   for (var i = 0; i < variantProds.length; ++i) {
     variantProds[i].onclick = function(event){
       var variantProdHandle = this.getAttribute('href').split('/products/')[1];
