@@ -793,7 +793,7 @@ if(window._swat){
 
 
 // Show Collection in breadcrumb
-console.log(localStorage);
+
 var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
 if(breadcrumbObject){
   var localWithinColl = breadcrumbObject.prodWithinCollection;
@@ -806,3 +806,4 @@ if(breadcrumbObject){
     document.querySelector(".collection-breadcrumb-separator").style.display = null;
   }
 }
+console.log(localStorage.getItem('breadcrumbCollection'));
