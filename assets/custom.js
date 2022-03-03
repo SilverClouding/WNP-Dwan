@@ -800,9 +800,7 @@ if(window._swat){
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
   var collectionObj = json.parse($("#CollectionProductGrid").attr('data-collection'));
-  console.log(collectionObj);
     var collection = {"template": $('.template_name_js').attr('template'), "name": collectionObj.title, "url":"/collections/"+collectionObj.handle};
-    
 console.log(collection);
   localStorage.setItem('breadcrumbCollection', JSON.stringify(collection) );
   
@@ -810,7 +808,7 @@ console.log(collection);
 
 
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
- console.log(JSON.parse(breadcrumbObject));
+//  console.log(JSON.parse(breadcrumbObject));
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
