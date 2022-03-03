@@ -808,14 +808,14 @@ $(document).click(".card-information__text a",function(e){
       url:"/collections/"+collectionObj.handle ,
     };
     collection.push(data);
-// console.log(collection);
+console.log(collection);
   localStorage.setItem('breadcrumbCollection', JSON.stringify(collection) );
   
 })
 
 
 var breadcrumbObject =localStorage.getItem('breadcrumbCollection');
- console.log(breadcrumbObject);
+ console.log(JSON.parse(breadcrumbObject));
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
