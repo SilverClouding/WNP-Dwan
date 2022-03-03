@@ -488,8 +488,8 @@ ratingSnippet("ruk_rating_snippet",{
     <script>
       var collection = [];
       var data = {
-        name: {{collection.title}},
-        url:{{collection.url}},
+        name: {{collection.title | json}},
+        url:{{collection.url | json }},
       };
       collection.push(data);
 
