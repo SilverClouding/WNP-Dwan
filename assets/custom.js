@@ -815,7 +815,7 @@ $(document).click(".card-information__text a",function(e){
 
 
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
- console.log(breadcrumbObject);
+ console.log(breadcrumbObject.title);
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
