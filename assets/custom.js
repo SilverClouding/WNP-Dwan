@@ -809,12 +809,12 @@ $(document).click(".card-information__text a",function(e){
     };
     collection.push(data);
 // console.log(collection);
-  localStorage.setItem('breadcrumbCollection', JSON.stringify(collectionObj) );
+  localStorage.setItem('breadcrumbCollection', JSON.stringify(collection) );
   
 })
 
 
-var breadcrumbObject = json.parse(localStorage.getItem('breadcrumbCollection'));
+var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
  console.log(breadcrumbObject);
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
