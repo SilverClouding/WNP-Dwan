@@ -483,13 +483,13 @@ ratingSnippet("ruk_rating_snippet",{
 
     
     
-    <script>
-      {% if template contains 'index' %}
-      localStorage.setItem('breadcrumbCollection',{{collection.handle|json}} );
-      {% elsif template contains 'collection' %}
-      localStorage.setItem('breadcrumbCollection',false );
-                           {% endif %}
-    </script>
+  
+    {% if template contains 'index' %}
+    <script> localStorage.setItem('breadcrumbCollection','{{collection.handle|json}} );</script>
+    {% elsif template contains 'collection' %}
+    <script> localStorage.setItem('breadcrumbCollection','index' );</script>
+    {% endif %}
+
     
 </body>
 </html>
