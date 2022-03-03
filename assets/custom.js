@@ -815,10 +815,8 @@ console.log(collection);
 
 
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
- console.log(breadcrumbObject.name);
+ console.log(breadcrumbObject);
 if(breadcrumbObject != undefined){
- 
-
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
     breadcrumbCol.text = breadcrumbObject[0].name;
