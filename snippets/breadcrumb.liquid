@@ -68,8 +68,9 @@
             {{ collection.title | link_to: collection.url }}
           </li>
         {%- endif -%}
-    <a href="#" id="collection-breadcrumb" style="display: none;"></a>
-    <span aria-hidden="true" class="collection-breadcrumb-separator" style="display: none;">/</span>
+    <li class="breadcrumbs__item">
+      <a href="#" id="collection-breadcrumb" style="display: none;"></a>
+    </li>
     
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
