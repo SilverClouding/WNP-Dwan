@@ -180,7 +180,16 @@
 
 
     {%- paginate collection.products by section.settings.products_per_page -%}
-    {% capture collectionObj %}{{collection.json}}{% endcapture %}
+  <script>
+    var collection_fromSection = [];
+    var data = {
+      template:{{template | json}},
+      name: {{collection.title | json}},
+      url:{{collection.url | json }},
+    };
+    collection_fromSection.push(data);
+  
+  </script>
     <div id="CollectionProductGrid" data-collection=`"{{collection | json}}"`>
       <div class="boost-pfs-filter-wrapper collection page-width">
         <div class="boost-pfs-container-default-box">
