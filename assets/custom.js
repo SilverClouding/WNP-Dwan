@@ -798,7 +798,7 @@ if(window._swat){
 // console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
 
 $(document).click(".card-information__text a",function(e){
-  e.preventDefault();
+//   e.preventDefault();
   var collection_title = $("#CollectionProductGrid").attr('title');
   var collection_url = $("#CollectionProductGrid").attr('url');
     var collection = {"template": $('.template_name_js').attr('template'), "name":collection_title , "url":collection_url};
