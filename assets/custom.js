@@ -808,14 +808,14 @@ $(document).click(".card-information__text a",function(e){
     url:collectionObj.url ,
   };
   collection.push(data);
-
+console.log(collection);
   localStorage.setItem('breadcrumbCollection', collection );
   
 })
 
 
 var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
- console.log(breadcrumbObject);
+ console.log(breadcrumbObject.name);
 if(breadcrumbObject != "not collection"){
  
 
