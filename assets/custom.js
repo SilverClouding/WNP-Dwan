@@ -799,9 +799,9 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
-  console.log(collection_fromSection);
-  var collectionObj = JSON.parse($("#CollectionProductGrid").attr('data-collection'));
-    var collection = {"template": $('.template_name_js').attr('template'), "name": collectionObj.title, "url":"/collections/"+collectionObj.handle};
+  var collection_title = $("#CollectionProductGrid").attr('title');
+  var collection_url = $("#CollectionProductGrid").attr('url');
+    var collection = {"template": $('.template_name_js').attr('template'), "name":collection_title , "url":collection_url};
 // console.log(collection);
   localStorage.setItem('breadcrumbCollection', JSON.stringify(collection) );
   
