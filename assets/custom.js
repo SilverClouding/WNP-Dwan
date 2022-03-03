@@ -799,7 +799,7 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
-  var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
+  var collectionObj = JSON.parse($("#CollectionProductGrid").attr('data-collection'));
   console.log(collectionObj);
   var collection = [];
   var data = {
