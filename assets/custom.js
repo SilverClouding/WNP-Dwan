@@ -801,20 +801,20 @@ $(document).click(".card-information__text a",function(e){
 //   e.preventDefault();
   var collectionObj = JSON.parse($("#CollectionProductGrid").attr('data-collection'));
   console.log(collectionObj);
-  var collection = [];
-  var data = {
-    template: $('.template_name_js').attr('template'),
-    name: collectionObj.title ,
-    url:"/collections/"+collectionObj.handle ,
-  };
-  collection.push(data);
-console.log(collection);
-  localStorage.setItem('breadcrumbCollection', collection );
+//   var collection = [];
+//   var data = {
+//     template: $('.template_name_js').attr('template'),
+//     name: collectionObj.title ,
+//     url:"/collections/"+collectionObj.handle ,
+//   };
+//   collection.push(data);
+// console.log(collection);
+  localStorage.setItem('breadcrumbCollection', collectionObj );
   
 })
 
 
-var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
+var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
  console.log(breadcrumbObject);
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
