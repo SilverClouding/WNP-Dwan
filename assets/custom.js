@@ -798,10 +798,10 @@ if(window._swat){
 // console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
 
 var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
-
+ console.log("breadcrumbObject - "+breadcrumbObject);
 if(breadcrumbObject != "not collection"){
-  console.log("breadcrumbObject - "+breadcrumbObject);
-  var localWithinColl = localStorage.getItem('breadcrumbCollection');
+ 
+
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", "/collections/"+localWithinColl);
     breadcrumbCol.text = localWithinColl;
