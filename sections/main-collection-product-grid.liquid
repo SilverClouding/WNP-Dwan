@@ -180,8 +180,8 @@
 
 
     {%- paginate collection.products by section.settings.products_per_page -%}
-    
-    <div id="CollectionProductGrid" data-collection='[{{collection | json }}]'>
+    {% capture collectionObj %}{"name": {{collection.title}}, "url":"/collections/{{collection.handle}}{% endcapture %}
+    <div id="CollectionProductGrid" data-collection='{{collectionObj}}'>
       <div class="boost-pfs-filter-wrapper collection page-width">
         <div class="boost-pfs-container-default-box">
           <div class="boost-pfs-filter-left-col left-section">
