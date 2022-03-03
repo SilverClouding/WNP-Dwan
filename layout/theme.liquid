@@ -149,7 +149,7 @@
  {{ 'custom2.css' | asset_url | stylesheet_tag }}
 </head>
 
-  <body class="gradient">
+  <body class="gradient template_name_js" template="{{template}}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
