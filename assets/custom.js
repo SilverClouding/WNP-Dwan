@@ -809,8 +809,8 @@ $(document).click(".card-information__text a",function(e){
 
 var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
  console.log(breadcrumbObject);
-var tempName = $('.template_name_js').attr('template')
-if(tempName == breadcrumbObject.template){
+// var tempName = $('.template_name_js').attr('template')
+if(breadcrumbObject.template == "collection"){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject.url);
     breadcrumbCol.text = breadcrumbObject.name;
