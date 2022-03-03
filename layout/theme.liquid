@@ -498,14 +498,15 @@ ratingSnippet("ruk_rating_snippet",{
     
     
      {% else %}
+    {% endif %}
+   {% endcomment %}
     
     <script> 
       {% unless template contains 'product' %}
       localStorage.setItem('breadcrumbCollection',JSON.stringify('not collection') );
       {% endunless %}
     </script>
-    {% endif %}
-   {% endcomment %}
+    
 
     
 </body>
