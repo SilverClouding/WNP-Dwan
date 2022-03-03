@@ -797,7 +797,7 @@ if(window._swat){
 
 // console.log( document.querySelector('.card-information .card-information__text a').getAttribute('data-with-collection').split('/products/')[1]);
 
-$(document).click("card-information__text a",function(e){
+$(document).click(".card-information__text a",function(e){
   e.preventDefault();
   console.log($(this).data("with-collection"));
 })
