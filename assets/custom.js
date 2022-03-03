@@ -799,7 +799,7 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
-  console.log($(this).attr("data-with-collection"));
+  console.log(JSON.parse(localStorage.getItem('breadcrumbCollection'));
 })
 
 
