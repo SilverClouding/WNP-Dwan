@@ -809,10 +809,10 @@ $(document).click(".card-information__text a",function(e){
 
 var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
  console.log(breadcrumbObject);
-if(breadcrumbObject != undefined){
+if(breadcrumbObject.template == "collection"){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
-    breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
-    breadcrumbCol.text = breadcrumbObject[0].name;
+    breadcrumbCol.setAttribute("href", breadcrumbObject.url);
+    breadcrumbCol.text = breadcrumbObject.name;
     document.querySelector(".hide_collection_breadcrumb").style.display = "inline-block";
  
 }
