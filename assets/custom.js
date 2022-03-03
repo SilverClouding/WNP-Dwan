@@ -814,7 +814,7 @@ console.log(collection);
 })
 
 
-var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
+var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
  console.log(breadcrumbObject);
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
