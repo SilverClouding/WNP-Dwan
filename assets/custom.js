@@ -800,6 +800,7 @@ if(window._swat){
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
   var collectionObj = $("#CollectionProductGrid").attr('data-collection');
+  localStorage.setItem('breadcrumbCollection',JSON.stringify(collectionObj) );
   console.log(JSON.parse(collectionObj));
 })
 
