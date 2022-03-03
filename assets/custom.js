@@ -805,7 +805,7 @@ $(document).click(".card-information__text a",function(e){
   var data = {
     template: $('.template_name_js').attr('template'),
     name: collectionObj.title ,
-    url:collectionObj.url ,
+    url:"/collections/"+collectionObj.url ,
   };
   collection.push(data);
 console.log(collection);
