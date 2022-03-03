@@ -802,9 +802,8 @@ $(document).click(".card-information__text a",function(e){
   var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
   var collection = [];
   var data = {
-    temp:{{template | json}},
-      name: {{collectionObj.title | json}},
-        url:{{collectionObj.url | json }},
+    name: {{collectionObj.title | json}},
+      url:{{collectionObj.url | json }},
 };
                   collection.push(data);
 
