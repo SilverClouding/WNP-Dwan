@@ -801,7 +801,7 @@ $(document).click(".card-information__text a",function(e){
   e.preventDefault();
   var collectionObj = JSON.parse($("#CollectionProductGrid").attr('data-collection'));
     var collection = {"template": $('.template_name_js').attr('template'), "name": collectionObj.title, "url":"/collections/"+collectionObj.handle};
-console.log(collection);
+// console.log(collection);
   localStorage.setItem('breadcrumbCollection', JSON.stringify(collection) );
   
 })
