@@ -800,7 +800,7 @@ if(window._swat){
 var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
 
 if(breadcrumbObject != "not collection"){
-  console.log(breadcrumbObject);
+  console.log("breadcrumbObject - "+breadcrumbObject);
   var localWithinColl = localStorage.getItem('breadcrumbCollection');
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", "/collections/"+localWithinColl);
