@@ -800,6 +800,7 @@ if(window._swat){
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
   var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
+  console.log(collectionObj);
   var collection = [];
   var data = {
     template: $('.template_name_js').attr('template'),
@@ -808,8 +809,8 @@ $(document).click(".card-information__text a",function(e){
   };
   collection.push(data);
 
-  localStorage.setItem('breadcrumbCollection',collection );
-  console.log(JSON.parse(collectionObj));
+  localStorage.setItem('breadcrumbCollection', collection );
+  
 })
 
 
