@@ -502,7 +502,7 @@ ratingSnippet("ruk_rating_snippet",{
    {% endcomment %}
     
     <script> 
-      {% unless template contains 'product' %}
+      {% unless template contains 'product' or template contains 'collection'  %}
       localStorage.setItem('breadcrumbCollection',JSON.stringify('not collection') );
       {% endunless %}
     </script>
