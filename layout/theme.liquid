@@ -485,7 +485,7 @@ ratingSnippet("ruk_rating_snippet",{
     
   
     {% if template contains 'collection' %}
-    <script> localStorage.setItem('breadcrumbCollection','{{collection.handle|json}} );</script>
+    <script> localStorage.setItem('breadcrumbCollection',{{collection.handle|json}} );</script>
     {% else %}
     <script> localStorage.setItem('breadcrumbCollection','not collection' );</script>
     {% endif %}
