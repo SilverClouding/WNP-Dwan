@@ -485,7 +485,17 @@ ratingSnippet("ruk_rating_snippet",{
     
   
     {% if template contains 'collection' %}
-    <script> localStorage.setItem('breadcrumbCollection',JSON.stringify({{collection|json}}) );</script>
+    <script>
+      var collection = [];
+      var data = {
+        name: {{collection.title}},
+        url:{{collection.url}},
+      };
+      collection.push(data);
+
+      localStorage.setItem('breadcrumbCollection',JSON.stringify(collection) );
+    
+    </script>
     {% else %}
     <script> localStorage.setItem('breadcrumbCollection','not collection' );</script>
     {% endif %}
