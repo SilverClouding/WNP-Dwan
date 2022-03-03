@@ -799,7 +799,8 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
-  console.log(JSON.parse(localStorage.getItem('breadcrumbCollection')));
+  var collectionObj = $("#CollectionProductGrid").attr('data-collection');
+  console.log(JSON.parse(collectionObj));
 })
 
 
