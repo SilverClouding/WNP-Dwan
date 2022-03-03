@@ -492,9 +492,7 @@ ratingSnippet("ruk_rating_snippet",{
         url:{{collection.url | json }},
       };
       collection.push(data);
-
       localStorage.setItem('breadcrumbCollection',JSON.stringify(collection) );
-    
     </script>
     {% else %}
     <script> localStorage.setItem('breadcrumbCollection','not collection' );</script>
