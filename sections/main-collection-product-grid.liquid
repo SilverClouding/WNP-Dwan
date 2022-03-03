@@ -181,7 +181,7 @@
 
     {%- paginate collection.products by section.settings.products_per_page -%}
     
-    <div id="CollectionProductGrid" data-collection='{{collection }}'>
+    <div id="CollectionProductGrid" data-collection='{{collection | json }}'>
       <div class="boost-pfs-filter-wrapper collection page-width">
         <div class="boost-pfs-container-default-box">
           <div class="boost-pfs-filter-left-col left-section">
