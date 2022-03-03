@@ -799,7 +799,7 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
 //   e.preventDefault();
-  var collectionObj = JSON.parse($("#CollectionProductGrid").attr('data-collection'));
+  var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
   console.log(collectionObj);
 //   var collection = [];
 //   var data = {
@@ -814,8 +814,8 @@ $(document).click(".card-information__text a",function(e){
 })
 
 
-var breadcrumbObject = localStorage.getItem('breadcrumbCollection');
- console.log(breadcrumbObject.title);
+var breadcrumbObject = JSON.parse(localStorage.getItem('breadcrumbCollection'));
+ console.log(breadcrumbObject);
 if(breadcrumbObject != undefined){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
