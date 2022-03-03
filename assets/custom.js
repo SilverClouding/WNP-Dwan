@@ -799,17 +799,17 @@ if(window._swat){
 
 $(document).click(".card-information__text a",function(e){
   e.preventDefault();
-  var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
+  var collectionObj = json.parse($("#CollectionProductGrid").attr('data-collection'));
   console.log(collectionObj);
-//   var collection = [];
-//   var data = {
-//     template: $('.template_name_js').attr('template'),
-//     name: collectionObj.title ,
-//     url:"/collections/"+collectionObj.handle ,
-//   };
-//   collection.push(data);
+    var collection = [];
+    var data = {
+      template: $('.template_name_js').attr('template'),
+      name: collectionObj.title ,
+      url:"/collections/"+collectionObj.handle ,
+    };
+    collection.push(data);
 // console.log(collection);
-  localStorage.setItem('breadcrumbCollection', collectionObj );
+  localStorage.setItem('breadcrumbCollection', JSON.stringify(collectionObj) );
   
 })
 
