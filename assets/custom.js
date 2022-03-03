@@ -805,6 +805,6 @@ if(breadcrumbObject != "not collection"){
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
     breadcrumbCol.setAttribute("href", breadcrumbObject[0].url);
     breadcrumbCol.text = breadcrumbObject[0].name;
-    document.querySelector(".hide_collection_breadcrumb").style.display = "block";
+    document.querySelector(".hide_collection_breadcrumb").style.display = "inline-block";
  
 }
