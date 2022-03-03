@@ -803,8 +803,8 @@ if(breadcrumbObject != "not collection"){
  
 
   var breadcrumbCol = document.getElementById('collection-breadcrumb');
-    breadcrumbCol.setAttribute("href", "/collections/"+localWithinColl);
-    breadcrumbCol.text = localWithinColl;
+    breadcrumbCol.setAttribute("href", breadcrumbObject.url);
+    breadcrumbCol.text = breadcrumbObject.name;
     breadcrumbCol.style.display = null;
     document.querySelector(".collection-breadcrumb-separator").style.display = null;
  
