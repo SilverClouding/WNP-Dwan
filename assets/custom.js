@@ -802,9 +802,9 @@ $(document).click(".card-information__text a",function(e){
   var collectionObj = JSON.stringify($("#CollectionProductGrid").attr('data-collection'));
   var collection = [];
   var data = {
-    name: {{collectionObj.title | json}},
-      url:{{collectionObj.url | json }},
-};
+    name: collectionObj.title ,
+    url:collectionObj.url ,
+  };
                   collection.push(data);
 
   localStorage.setItem('breadcrumbCollection',collection );
