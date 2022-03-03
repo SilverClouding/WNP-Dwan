@@ -488,6 +488,7 @@ ratingSnippet("ruk_rating_snippet",{
     <script>
       var collection = [];
       var data = {
+        template:{{template | json}},
         name: {{collection.title | json}},
         url:{{collection.url | json }},
       };
