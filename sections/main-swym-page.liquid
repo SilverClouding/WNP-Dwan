@@ -215,7 +215,7 @@ ${product.dt}-${product.vi}
   
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
-      console.log("Entire product json vendor:",productJson);
+      console.log("Entire product json vendor:",productJson.id);
       variant__Id = product.epi;
       if(productJson.available){
         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
