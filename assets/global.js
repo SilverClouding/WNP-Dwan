@@ -148,8 +148,8 @@ class QuantityInput extends HTMLElement {
 
   onButtonClick(event) {
     event.preventDefault();
-    const previousValue = this.input.value;
-     const minValue = this.input.getAttribute('min');
+    const previousValue = parseInt(this.input.value);
+     const minValue = parseInt(this.input.getAttribute('min'));
     console.log("previousValue-"+previousValue);
     console.log(minValue);
    
@@ -157,14 +157,14 @@ class QuantityInput extends HTMLElement {
 //     event.target.name === 'plus' ? this.input.setAttribute("placeholder", parseInt(previousValue) + 1) : this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
 //     event.target.name === 'plus' ? this.input.setAttribute("value", parseInt(previousValue) + 1) : this.input.setAttribute("value", parseInt(previousValue) - 1);
     if( event.target.name === 'plus'){
-      this.input.setAttribute("placeholder", parseInt(previousValue) + 1);
-      this.input.setAttribute("value", parseInt(previousValue) + 1);
+      this.input.setAttribute("placeholder", previousValue + 1);
+      this.input.setAttribute("value", previousValue + 1);
     }else if(event.target.name === 'minus'){
  console.log(event.target.name);
-      if(parseInt(previousValue) > parseInt(minValue)){
+      if( previousValue > minValue){
 console.log("else previousvalu > mainvalue");
-        this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
-        this.input.setAttribute("value", parseInt(previousValue) - 1);
+        this.input.setAttribute("placeholder", previousValue - 1);
+        this.input.setAttribute("value", previousValue - 1);
       }
     }  
 //     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
