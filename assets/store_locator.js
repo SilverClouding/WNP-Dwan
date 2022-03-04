@@ -2152,9 +2152,10 @@ var jsStoreLocator = {
   },
 
   _handleize(str) {
-    console.log("str"+str);
+    
     return str.toLowerCase().replace(/[^\w\u00C0-\u024f]+/g, "-").replace(/^-+|-+$/g, "");
   },
+  console.log("str"+str);
   _prepareStoresData() {
 
     var self = this;
