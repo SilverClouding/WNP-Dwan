@@ -166,7 +166,7 @@ console.log("else previousvalu > mainvalue");
         this.input.setAttribute("placeholder", previousValue - 1);
         this.input.setAttribute("value", previousValue - 1);
       }else{
-        event.target.classList.add("disabled");
+        event.currentTarget.classList.add("disabled");
        
       }
     }  
