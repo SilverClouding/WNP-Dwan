@@ -215,7 +215,7 @@ ${product.dt}-${product.vi}
   
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
-      console.log("Entire product json vendor:",productJson.id);
+//       console.log("Entire product json vendor:",productJson);
       variant__Id = product.epi;
       if(productJson.available){
         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
@@ -223,6 +223,9 @@ ${product.dt}-${product.vi}
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
 //       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
+      
+      console.log("Entire product json ID:",productJson.id);
+      console.log("Entire product json ID:",productJson.vendor);
       
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
