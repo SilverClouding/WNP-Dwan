@@ -161,6 +161,7 @@ class QuantityInput extends HTMLElement {
     }else{
 
       if(previousValue >  minValue){
+console.log("else previousvalu > mainvalue");
         this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
         this.input.setAttribute("value", parseInt(previousValue) - 1);
       }
