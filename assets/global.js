@@ -165,6 +165,8 @@ class QuantityInput extends HTMLElement {
 console.log("else previousvalu > mainvalue");
         this.input.setAttribute("placeholder", previousValue - 1);
         this.input.setAttribute("value", previousValue - 1);
+      }else{
+        this.input.addClass.add="desabled";
       }
     }  
 //     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
