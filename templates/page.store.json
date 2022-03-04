@@ -75,11 +75,51 @@
         "user_icon_title": "user-location",
         "search_icon_title": "search-location"
       }
+    },
+    "16463912147e19cbb4": {
+      "type": "rich-text",
+      "blocks": {
+        "164639121423c8235a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>IMPORTANT NOTE - Vaccine pass arrangement in Horizon Plaza<\/strong><\/p><p>From Feb 24, Vaccine Pass enforcement will be in effect. Except for exempted persons, those who enter the shopping mall must use the LeaveHomeSafe mobile application and must hold the valid Vaccine Pass.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164639121423c8235a-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
+    "1646391324dd4f049d": {
+      "type": "rich-text",
+      "blocks": {
+        "1646391324365a81ae-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>COVID-19 Extra Precautions<\/strong><\/p><p>• Cashier\/ Adoption Corners\/ Patio\/ Shopping carts and baskets will be disinfected with professional-grade disinfectant every hour<\/p><p>•  Crowd control safety measures has been put in place at ALC store<\/p><p>•  Warehouse will be disinfected with professional-grade disinfectant on a regular basis<\/p><p>•  All products for delivery will be disinfected before shipping outClick<a href=\"http:\/\/www.wnp.com.hk\/\" title=\"Shop Food & Supplies Online | Whiskers N Paws\">here<\/a>to pick the products for your fur kids now!<\/p><p>#LoveAnimalsLoveLife  #WeAreBetterTogether<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646391324365a81ae-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
     }
   },
   "order": [
     "main",
     "16417150465b421498",
-    "storeCode"
+    "storeCode",
+    "16463912147e19cbb4",
+    "1646391324dd4f049d"
   ]
 }
