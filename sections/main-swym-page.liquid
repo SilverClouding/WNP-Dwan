@@ -232,7 +232,7 @@ ${product.dt}-${product.vi}
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       
       let $vendorSelector = document.querySelectorAll(`.vendor__name__${productJson.id}`);
-      $vendorSelector && [..$vendorSelector].forEach(function(element) {
+      $vendorSelector && [...$vendorSelector].forEach(function(element) {
         element.innerText =`${productJson.vendor}`;
         element.setAttribute("href","/collections/"+vendorLink);
       });
