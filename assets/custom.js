@@ -437,8 +437,8 @@ jQuery(function($){
       var ms = check_time % 1000;
       check_time = (check_time - ms) / 1000;
       var days = Math.floor(check_time / 86400);//200 is sec for day set
-      console.log('check_time:- '+check_time);
-      console.log('days:- '+days);
+//       console.log('check_time:- '+check_time);
+//       console.log('days:- '+days);
       if(days > 1){
         $("#newsletter-popup").modal({
           fadeDuration: 500
@@ -446,8 +446,8 @@ jQuery(function($){
         localStorage.setItem('tmx-newsletter', date );
       }
     }
-     console.log(date);
-    console.log(localStorage.getItem('tmx-newsletter'));
+//      console.log(date);
+//     console.log(localStorage.getItem('tmx-newsletter'));
   }
 
   $(document).ready(function(){
