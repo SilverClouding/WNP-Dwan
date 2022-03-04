@@ -227,10 +227,18 @@ ${product.dt}-${product.vi}
       console.log("Entire product json ID:",productJson.id);
       console.log("Entire product json ID:",productJson.vendor);
       
-      document.querySelector(`.vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
+      
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      document.querySelector(`.vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
+      
+      let $vendorSelector = document.querySelector(`.vendor__name__${productJson.id}`);
+      $vendorSelector && [..$vendorSelector].forEach(function(element) {
+        element.innerText =`${productJson.vendor}`;
+        element.setAttribute("href","/collections/"+vendorLink);
+      });
+      
+//       document.querySelector(`.vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
+//       document.querySelector(`.vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
  
       
       
