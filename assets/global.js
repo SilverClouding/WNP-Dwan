@@ -160,13 +160,13 @@ class QuantityInput extends HTMLElement {
       this.input.setAttribute("placeholder", previousValue + 1);
       this.input.setAttribute("value", previousValue + 1);
     }else if(event.target.name === 'minus'){
- console.log(event.target.name);
+ console.log(event);
       if( previousValue > minValue){
 console.log("else previousvalu > mainvalue");
         this.input.setAttribute("placeholder", previousValue - 1);
         this.input.setAttribute("value", previousValue - 1);
       }else{
-        document.querySelector('[name="'+event.target.name+'"]').classList.add("disabled");
+        event.target.classList.add("disabled");
        
       }
     }  
