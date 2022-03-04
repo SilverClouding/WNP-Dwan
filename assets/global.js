@@ -152,14 +152,14 @@ class QuantityInput extends HTMLElement {
      const minValue = this.input.getAttribute('min');
     console.log("previousValue-"+previousValue);
     console.log(minValue);
-    console.log(this);
+    console.log(event.target.name);
 
 //     event.target.name === 'plus' ? this.input.setAttribute("placeholder", parseInt(previousValue) + 1) : this.input.setAttribute("placeholder", parseInt(previousValue) - 1);
 //     event.target.name === 'plus' ? this.input.setAttribute("value", parseInt(previousValue) + 1) : this.input.setAttribute("value", parseInt(previousValue) - 1);
     if( event.target.name === 'plus'){
       this.input.setAttribute("placeholder", parseInt(previousValue) + 1);
       this.input.setAttribute("value", parseInt(previousValue) + 1);
-    }else if(event.target.name === 'plus'){
+    }else if(event.target.name === 'minus'){
 
       if(previousValue >  minValue){
 console.log("else previousvalu > mainvalue");
