@@ -2169,7 +2169,7 @@ var jsStoreLocator = {
       this.id = self._handleize(this.title);
       this.icon = locationMarkerSVG;
       this.google_url = googleMapsSearchURLPrefix + self._handleize(this.title).replace(/\-/g, '+') + '+' + self._handleize(this.street).replace(/\-/g, '+');
-      this.opening_hours = this.opening_hours.split(/,/).map(function(period) {
+      this.patio_grooming_opening_hours = this.patio_grooming_opening_hours.split(/,/).map(function(period) {
         return period.replace(/:/, '#').split(/#/).map(function(v){
           return v.trim()
         });
