@@ -93,7 +93,7 @@ $(document).ready(function(){
                         <div class="card-information"><div class="card-information__wrapper">
 
                         <div class="caption-with-letter-spacing light">
-<a id="vendor__name__${product.empi}" href=""></a>
+<a class="vendor__name__${product.empi}" href=""></a>
   </div>
                        
 <h3 class="card-information__text h5">
@@ -227,10 +227,10 @@ ${product.dt}-${product.vi}
       console.log("Entire product json ID:",productJson.id);
       console.log("Entire product json ID:",productJson.vendor);
       
-      document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
+      document.querySelector(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-      document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
+      document.querySelector(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
  
       
       
