@@ -159,7 +159,8 @@ class QuantityInput extends HTMLElement {
     if( event.target.name === 'plus'){
       this.input.setAttribute("placeholder", previousValue + 1);
       this.input.setAttribute("value", previousValue + 1);
-      event.currentTarget.parentNode.document.querySelector('[name="minus"]').classList.remove('disabled');
+      console.log()
+      event.currentTarget.parentNode.querySelector('[name="minus"]').classList.remove('disabled');
     }else if(event.target.name === 'minus'){
  console.log(event);
       if( previousValue > minValue){
