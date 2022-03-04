@@ -313,24 +313,35 @@
   .contact_us_phone_block {
     float: left;
     margin-right: 5%;
-}
-.location-content-icon {
+  }
+  .location-content-icon {
     color: #4a1100;
     margin-bottom: 10px;
     font-size: 16px;
     letter-spacing: 1px;
-}
- .location-content-icon .phone {
+  }
+  .location-content-icon .phone {
     height: 24px;
-}
-.wechat {
+  }
+  .wechat {
     width: 26px;
-}
-.location-content-icon svg {
+  }
+  .location-content-icon svg {
     width: 22px;
     vertical-align: middle;
     margin-right: 10px;
-}
+  }
+  @media(max-width:768px){
+    .contact_us_block, .contact_us_phone_block,.contact_us_email_block {width: 100%;}
+
+    .contact_us_block {
+      display: block;
+    }
+
+    .contact_us_phone_block {
+      margin-bottom: 20px;
+    }
+  }
   </style>
 
 <script>
