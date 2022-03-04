@@ -61,7 +61,7 @@
 <div data-section-id="{{ section.id }}"
   data-section-type="store-locator"
   data-maps-key="{{ shop.metafields.stores.google_maps_api_key | json}}"
-  class="store-locator"
+  class="store-locator location-content"
   rv-class-is-ready="data.is_ready"
   id="{{ section.id }}"
   data-mobile-tab="{{ section.id }}"
@@ -316,6 +316,15 @@
     margin-bottom: 10px;
     font-size: 16px;
     letter-spacing: 1px;
+}
+  .location-content .phone {
+    height: 24px;
+}
+
+.location-content svg {
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
   </style>
 
