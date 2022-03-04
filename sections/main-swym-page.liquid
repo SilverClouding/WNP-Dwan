@@ -105,7 +105,7 @@ ${product.dt}-${product.vi}
                         <div>
                         <div class="price__regular">
                         <span class="price-item price-item--regular">
-                        HK<span id="product_price__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span>
+                        HK<span id="product_pricee__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span>
                           </span>
                           </div>
                           </div>
@@ -215,61 +215,41 @@ ${product.dt}-${product.vi}
   
   function fnc_prouductJson(product){
     window._swat.getProductDetails(product, function(productJson) {
-//       console.log("Entire product json vendor:",productJson);
+      console.log("Entire product json vendor:",productJson);
       variant__Id = product.epi;
       if(productJson.available){
         document.getElementById(`product_li__${productJson.id}`).classList.remove('disable');
       }else{
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
-      document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
+//       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
+      
       document.getElementById(`vendor__name__${productJson.id}`).innerText =`${productJson.vendor}`;
       var  colHandle = productJson.vendor;
       var vendorLink = colHandle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
       document.getElementById(`vendor__name__${productJson.id}`).setAttribute("href","/collections/"+vendorLink);
  
+      
+      
       let varFlagCheck = null;
       productJson.variants.forEach(function(variant) { 
         if(variant.id == variant__Id){
-//           console.log(variant.available); 
           console.log(variant__Id);
           if(variant.available == false ){
-            
             varFlagCheck = false;
             console.log("if");
             document.getElementById(`${variant.id}`).innerText ="Notify Me";  
             document.getElementById(`${variant.id}`).classList.add('hide');
             document.getElementById(`noti_${variant.id}`).classList.remove('hide');
-//             document.querySelector(`data-noti_variant-id="${variant.id}"`).innerText ="Notify Me";
-//             document.querySelector(`data-variant-id="${variant.id}"`).classList.add('hide');
-//             document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.remove('hide');
           }else{
             varFlagCheck = true;
             console.log("else");
             document.getElementById(`${variant.id}`).innerText ="Add to cart";
             document.getElementById(`${variant.id}`).classList.remove('hide'); 
             document.getElementById(`${variant.id}`).classList.add('add-to-cart');
-            
-//              document.querySelector(`data-variant-id="${variant.id}"`).innerText ="Add to cart";
-//             document.querySelector(`data-variant-id="${variant.id}"`).classList.remove('hide');
-//             document.querySelector(`data-noti_variant-id="${variant.id}"`).classList.add('hide');
-
           }
         }
       });
-
-     
-      
-//       if(productJson.available ){
-//         document.getElementById(`${productJson.id}`).innerText ="Add to cart";
-//         document.getElementById(`${productJson.id}`).classList.remove('hide'); 
-//         document.getElementById(`${productJson.id}`).classList.add('add-to-cart');
-//       }else{
-//         document.getElementById(`${productJson.id}`).innerText ="Notify Me";  
-//         document.getElementById(`${productJson.id}`).classList.add('hide');
-//         document.getElementById(`noti_${productJson.id}`).classList.remove('hide');
-//       }
-      
       
     },function(e) {console.log(e);});
   }
