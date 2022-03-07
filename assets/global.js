@@ -623,7 +623,7 @@ class VariantSelects extends HTMLElement {
         var this_alt = this;
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
-//           console.log(element);
+          console.log(data_option2Array.indexOf(element.value));
           
           if(data_option2Array.indexOf(element.value) > -1 ){
             console.log("qty if-"+ this_alt.getAttribute('data_'+this_alt.currentVariant.id));
