@@ -536,6 +536,12 @@ div#insta-feed a {
 }
 
 */
+@media(max-width:992px){
+.quick-view-button button.swym-button{
+width: 150px;
+}
+}
+
 @media(max-width:768px){
   div#insta-feed a {
     width: 88%!important;
