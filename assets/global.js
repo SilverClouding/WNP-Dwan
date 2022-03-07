@@ -626,8 +626,8 @@ class VariantSelects extends HTMLElement {
           
           if(data_option2Array.indexOf(element.value) > -1 ){
 
-            element.classList.add('available');
-            element.classList.remove('soldout');
+            element.classList.add('availablee');
+            element.classList.remove('soldoutt');
           }else{
             element.classList.remove('available');
             element.classList.add('soldout');
