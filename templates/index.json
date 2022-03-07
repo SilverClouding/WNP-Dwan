@@ -445,8 +445,8 @@
         "1636470578a33ad6f3-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_143.png",
-            "img_link": "",
+            "image": "shopify:\/\/shop_images\/Homepage_04_Service_Adoption.jpg",
+            "img_link": "shopify:\/\/pages\/services",
             "title": "",
             "text": "<p>We are firm advocates of pet adoption<\/p>",
             "button_label": "Adoption",
@@ -456,10 +456,10 @@
         "1636470578a33ad6f3-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_144.png",
-            "img_link": "",
+            "image": "shopify:\/\/shop_images\/Homepage_04_Service_Grooming.jpg",
+            "img_link": "shopify:\/\/pages\/grooming",
             "title": "",
-            "text": "<p>We have grooming services<\/p>",
+            "text": "<p>Professional dog grooming services<\/p>",
             "button_label": "Grooming",
             "button_link": "shopify:\/\/pages\/grooming"
           }
@@ -467,7 +467,7 @@
         "1636470578a33ad6f3-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_147.png",
+            "image": "shopify:\/\/shop_images\/Homepage_04_Service_SelfDogWash.jpg",
             "img_link": "https:\/\/wnp.pet\/pages\/self-dog-wash",
             "title": "",
             "text": "<p>Come enjoy our community space<\/p>",
