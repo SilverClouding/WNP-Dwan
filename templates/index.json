@@ -374,22 +374,6 @@
     "16365383186b9876cd": {
       "type": "img-with-text-slider",
       "blocks": {
-        "16365383186b9876cd-0": {
-          "type": "content",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC03645_Bobo_1200x_90542f4d-7bc0-42eb-a9c6-049a86a9c953.jpg",
-            "image_link": "",
-            "bg_color": "#153a33",
-            "preheading": "Journal",
-            "preheading_color": "#fafafa",
-            "heading": "Dog Food Ingredients 101: What's good and what to look out for",
-            "heading_color": "#f5694d",
-            "text": "<p>There’s lots of information listed on dog food labels, but what is the most important? Keep an eye out for the following 4 things to get the most out of those package labels.<\/p>",
-            "description_color": "#ffffff",
-            "button_label": "Learn More",
-            "button_link": ""
-          }
-        },
         "16365383186b9876cd-1": {
           "type": "content",
           "settings": {
@@ -403,11 +387,28 @@
             "text": "<p>Visit our 20,000sq ft space featuring our store, outdoor terrace & plant-based pet-friendly Café. Bring your furry friends along to mingle and run around outside.<\/p>",
             "description_color": "",
             "button_label": "Learn More",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/cafe"
+          }
+        },
+        "16365383186b9876cd-0": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC03645_Bobo_1200x_90542f4d-7bc0-42eb-a9c6-049a86a9c953.jpg",
+            "image_link": "",
+            "bg_color": "#153a33",
+            "preheading": "Journal",
+            "preheading_color": "#fafafa",
+            "heading": "Dog Food Ingredients 101: What's good and what to look out for",
+            "heading_color": "#f5694d",
+            "text": "<p>There’s lots of information listed on dog food labels, but what is the most important? Keep an eye out for the following 4 things to get the most out of those package labels.<\/p>",
+            "description_color": "#ffffff",
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/blogs\/journal\/dog-food-ingredients-101-whats-good-and-what-to-look-out-for"
           }
         },
         "294b9d7d-dd37-4226-a267-add84b258606": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC05037_Cricket-E.jpg",
             "image_link": "",
@@ -424,8 +425,8 @@
         }
       },
       "block_order": [
-        "16365383186b9876cd-0",
         "16365383186b9876cd-1",
+        "16365383186b9876cd-0",
         "294b9d7d-dd37-4226-a267-add84b258606"
       ],
       "settings": {
