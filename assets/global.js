@@ -621,9 +621,10 @@ class VariantSelects extends HTMLElement {
           data_option2 = data_option2.slice(0, -1);
         }
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
-        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
+        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
+          console.log(element);
+          
           if(data_option2Array.indexOf(element.value) > -1 ){
-//             console.log(element);
 
             element.classList.add('available');
             element.classList.remove('soldout');
