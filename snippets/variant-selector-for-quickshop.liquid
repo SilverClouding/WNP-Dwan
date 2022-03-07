@@ -44,7 +44,7 @@
 
   {% assign optionString = "option"|append: forloop.index %}
 
-  <fieldset class="option-selection-{{ option.name |handle }}0 js product-form__input {{optionString}}_for_below_input">
+  <fieldset {% if minTag %} data-min-qty="{{qty | plus: 0}}" {% endif %} class="option-selection-{{ option.name |handle }}0 js product-form__input {{optionString}}_for_below_input">
     <legend class="option">{{ option.name }}</legend>
     {%- for value in option.values -%}
 
@@ -57,7 +57,7 @@
 
     {% for v in curValueVars %}
 
-    {% if v.available %}
+    {% if v.available and v.inventory_quantity >= qty %}
 
     {% if optionString == "option1" %}
 
