@@ -320,14 +320,14 @@
         "163938824280798705-0": {
           "type": "heading",
           "settings": {
-            "heading": "Puppy adoption sunday",
+            "heading": "HOW TO ADOPT A FURRY FRIEND",
             "heading_size": "h1"
           }
         },
         "163938824280798705-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Every Sunday 2pm - 4pm <\/strong><\/p><p>Over 1800 puppies are homed through this event. HKDR brings puppies that are ready to be homed to Whiskers N Paws. Starting a friendship is easier than you think!<\/p>"
+            "text": "<p><strong>STEP-BY-STEP GUIDELINE<\/strong><\/p>"
           }
         }
       },
@@ -442,7 +442,7 @@
         "1639577218a0aad59e-1"
       ],
       "settings": {
-        "title": "Thank you for choosing WnP Adoption!",
+        "title": "THANK YOU FOR CHOOSING WNP ADOPTION",
         "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "center",
