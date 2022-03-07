@@ -3,8 +3,8 @@
     "16384259656000056e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/self-dong-banner.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/mob.jpg",
+        "image": "shopify:\/\/shop_images\/ServicePage_TopBanner_SelfDogWash_Desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/ServicePage_TopBanner_SelfDogWash_Mobile.jpg",
         "sec_class": "cust-image-banner",
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -213,7 +213,7 @@
         "1638877376cf53eb2a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_6.jpg",
+            "image": "shopify:\/\/shop_images\/SelfDogWashPage_CoverImage.jpg",
             "img_link": "",
             "title": "",
             "text": "",
@@ -224,7 +224,7 @@
         "1638877376cf53eb2a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_7.jpg",
+            "image": "shopify:\/\/shop_images\/SelfDogWashPage-03.jpg",
             "img_link": "",
             "title": "",
             "text": "",
