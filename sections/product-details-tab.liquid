@@ -5,6 +5,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
 <div class="product-tabs {% if section.settings.full_width %}product-tabs--full-width{% else %}page-width{% endif %} color-{{ section.settings.color_scheme }}  gradient color-scheme-{{ section.settings.color_scheme }}">
  <div class="product-detailscon">
   <h2>Product details</h2>
+   {{ product.metafields.product_info.tab_1_content  }}
 
 
 <div class="tab-for-desktop">
