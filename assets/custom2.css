@@ -1039,7 +1039,7 @@ margin-left:0;
 }
 @media(max-width:992px){
 .quick-view-button button.swym-button{
-width: 90%;
+width: 100%;
 }
   .boost-pfs-filter-products .boost-pfs-quickview-btn,
   .boost-pfs-filter-products .grid__item:hover .quick-view-button{
