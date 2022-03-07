@@ -620,20 +620,14 @@ class VariantSelects extends HTMLElement {
         if (lastChar2 == ',') {
           data_option2 = data_option2.slice(0, -1);
         }
-        var this_alt = this;
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
-        
-          console.log("data_option2Array--"+data_option2);
-        
-        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
-        
-          
+        data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){ 
           if(data_option2Array.indexOf(element.value) > -1 ){
-            console.log("qty if-"+ this_alt.getAttribute('data_'+this_alt.currentVariant.id));
-            element.classList.add('availablee');
-            element.classList.remove('soldoutt');
+//             console.log(element);
+
+            element.classList.add('available');
+            element.classList.remove('soldout');
           }else{
-            console.log("qty else-"+this_alt.getAttribute('data_'+this_alt.currentVariant.id));
             element.classList.remove('available');
             element.classList.add('soldout');
           }
