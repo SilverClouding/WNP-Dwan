@@ -293,7 +293,7 @@
         "16364715337b2e2d80-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_143.jpg",
+            "image": "shopify:\/\/shop_images\/Homepage_02_Shop_Dog.jpg",
             "img_link": "https:\/\/wnp.pet\/pages\/dog",
             "title": "",
             "text": "<p>Shop for top dog brands & accessories<\/p>",
@@ -304,21 +304,21 @@
         "16364715337b2e2d80-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_144.jpg",
-            "img_link": "",
+            "image": "shopify:\/\/shop_images\/Homepage_02_Shop_Cat.jpg",
+            "img_link": "shopify:\/\/pages\/cat",
             "title": "",
             "text": "<p>Your cat deserves the best of everything<\/p>",
             "button_label": "Shop Cats",
-            "button_link": "#"
+            "button_link": "shopify:\/\/pages\/cat"
           }
         },
         "0b0bc208-f580-4995-90c4-9232c2fd9c6f": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bunny-statue-watches-eggs.jpg",
-            "img_link": "",
+            "image": "shopify:\/\/shop_images\/Homepage_02_Shop_Small_Animals.jpg",
+            "img_link": "shopify:\/\/pages\/small-animals",
             "title": "",
-            "text": "<p>testing<br\/>testing<\/p>",
+            "text": "<p>Hand-picked small animals & reptiles products<\/p>",
             "button_label": "Shop Small Animals",
             "button_link": "shopify:\/\/pages\/small-animals"
           }
