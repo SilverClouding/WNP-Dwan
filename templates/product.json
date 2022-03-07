@@ -239,9 +239,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_46_629ef9f9-9746-4c5f-ae10-6bc78631b375.png",
             "image_link": "",
+            "bg_color": "",
             "preheading": "Our services",
+            "preheading_color": "",
             "heading": "Grooming - is more than a good look",
+            "heading_color": "",
             "text": "<p>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>",
+            "description_color": "#ffffff",
             "button_label": "Learn More",
             "button_link": ""
           }
@@ -250,9 +254,13 @@
           "type": "content",
           "settings": {
             "image_link": "",
+            "bg_color": "",
             "preheading": "Story",
+            "preheading_color": "",
             "heading": "Image with text",
+            "heading_color": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_color": "",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -261,9 +269,13 @@
           "type": "content",
           "settings": {
             "image_link": "",
+            "bg_color": "",
             "preheading": "Story",
+            "preheading_color": "",
             "heading": "Image with text",
+            "heading_color": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_color": "",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -303,6 +315,7 @@
             "heading_font": "helvetica_n4",
             "enable_rich_snippets": true,
             "show_location": true,
+            "show_dates": true,
             "show_avatar": true,
             "enable_replies": false,
             "capitalise_headers": false,
