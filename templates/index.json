@@ -393,7 +393,7 @@
         "16365383186b9876cd-1": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide2.jpg",
+            "image": "shopify:\/\/shop_images\/Homepage_03_TextImage_cafe-01.jpg",
             "image_link": "",
             "bg_color": "#153a33",
             "preheading": "Cafe",
@@ -403,22 +403,6 @@
             "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>",
             "description_color": "",
             "button_label": "Learn More",
-            "button_link": ""
-          }
-        },
-        "16365383186b9876cd-2": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "image_link": "",
-            "bg_color": "",
-            "preheading": "Story",
-            "preheading_color": "",
-            "heading": "Image with text3",
-            "heading_color": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_color": "",
-            "button_label": "Button label",
             "button_link": ""
           }
         },
@@ -442,7 +426,6 @@
       "block_order": [
         "16365383186b9876cd-0",
         "16365383186b9876cd-1",
-        "16365383186b9876cd-2",
         "294b9d7d-dd37-4226-a267-add84b258606"
       ],
       "settings": {
