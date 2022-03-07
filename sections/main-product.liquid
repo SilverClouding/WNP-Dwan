@@ -570,7 +570,7 @@
                           {% assign option_3 = "" %}
 
                           {% for v in curValueVars %}
-                        {{v.inventory_quantity}}
+                        {{v.title}}--{{v.inventory_quantity}}
                            {% if v.available %}
                         
                             {% if optionString == "option1" %}
