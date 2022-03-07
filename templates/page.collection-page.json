@@ -106,20 +106,20 @@
         "163895856608fdfa54-0": {
           "type": "heading",
           "settings": {
-            "heading": "Dine with your paw friends!"
+            "heading": "FULL SERVICE DOG GROOMING"
           }
         },
         "163895856608fdfa54-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
+            "text": "<p>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>"
           }
         },
         "163895856608fdfa54-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": "#"
+            "button_label": "BOOK NOW",
+            "button_link": "shopify:\/\/pages\/grooming"
           }
         }
       },
@@ -129,7 +129,7 @@
         "163895856608fdfa54-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "image": "shopify:\/\/shop_images\/PetPage_02_TextImage_Grooming.jpg",
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
