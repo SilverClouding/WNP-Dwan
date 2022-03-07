@@ -451,7 +451,14 @@
             <a class="view-product" href="{{product.url}}"><span>Learn More</span></a>
           </div>
           {%- endif -%}
-
+ {% assign qty = 1 %} 
+          {% assign minTag = false %}
+          {% for tag in product.tags %}
+          {% if tag contains 'min-qty:' %}
+          {% assign minTag = true %}
+          {% assign qty = tag | split:":" | last | plus:0 %}
+          {% endif %}
+          {% endfor %}
 <!--           variant -->
 
           {% assign current_available_variant = product.selected_or_first_available_variant %}
@@ -469,14 +476,7 @@
           {% endif %}
           {% endfor %}
 
-          {% assign qty = 1 %} 
-          {% assign minTag = false %}
-          {% for tag in product.tags %}
-          {% if tag contains 'min-qty:' %}
-          {% assign minTag = true %}
-          {% assign qty = tag | split:":" | last | plus:0 %}
-          {% endif %}
-          {% endfor %}
+         
 
           {%- unless product.has_only_default_variant -%}
           <variant-radios {% if minTag %} data-min-qty="{{qty | plus: 0}}" {% endif %} {% for var in product.variants %}data_{{- var.id -}} = "{{ var.inventory_quantity | default: 0}}"{% endfor %} id="product_{{product.id}}" product_id="qv_{{product.id}}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
