@@ -83,11 +83,20 @@
               "text": "<p>Check COVID-19 Temporary Delivery Arrangement here.<\/p>",
               "link": "shopify:\/\/pages\/delivery"
             }
+          },
+          "ce2fcb48-9ac2-482f-b183-9845a98a9d67": {
+            "type": "announcement",
+            "settings": {
+              "icon": "",
+              "text": "<p>IMPORTANT NOTE - Vaccine pass arrangement in Horizon Plaza. Detail here. <\/p>",
+              "link": "shopify:\/\/pages\/retail"
+            }
           }
         },
         "block_order": [
           "0b19743b-c62e-4eac-85b1-94998ba0691e",
-          "02103d41-185d-49b8-bac5-906845e181e9"
+          "02103d41-185d-49b8-bac5-906845e181e9",
+          "ce2fcb48-9ac2-482f-b183-9845a98a9d67"
         ],
         "settings": {
           "show_n_window": false,
