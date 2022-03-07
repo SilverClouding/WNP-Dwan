@@ -15,7 +15,8 @@
 }
 
 .article {
-  display: flex;
+/*   display: flex; */
+	display:inherit;
   align-items: center;
 }
 
