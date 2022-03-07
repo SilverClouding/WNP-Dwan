@@ -313,7 +313,7 @@
             "settings": {
               "image_bottom": "shopify:\/\/shop_images\/MegaMenu_SmallAnimals.jpg",
               "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "richtext_bottom": "<p>Adoption 7 days a week. This dedicated space is for pets to meet & greet their new families.<\/p>",
+              "richtext_bottom": "",
               "btn_text": "Checkout our current residents",
               "button_link": "shopify:\/\/pages\/services"
             }
