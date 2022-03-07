@@ -152,7 +152,7 @@
         "16384269892b584b49-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/dog1.jpg",
+        "image": "shopify:\/\/shop_images\/GroomingPage_01_First_Image.jpg",
         "section_width": 90,
         "height": "adapt",
         "color_scheme": "background-1",
@@ -353,7 +353,7 @@
         "1638877376cf53eb2a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img1.jpg",
+            "image": "shopify:\/\/shop_images\/GroomingPage_02_Column_Image-02.jpg",
             "img_link": "",
             "title": "",
             "text": "",
@@ -364,7 +364,7 @@
         "1638877376cf53eb2a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img2.jpg",
+            "image": "shopify:\/\/shop_images\/GroomingPage_02_Column_Image-03.jpg",
             "img_link": "",
             "title": "",
             "text": "",
@@ -375,7 +375,7 @@
         "1638877376cf53eb2a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img3.jpg",
+            "image": "shopify:\/\/shop_images\/GroomingPage_02_Column_Image-04.jpg",
             "img_link": "",
             "title": "",
             "text": "",
