@@ -570,7 +570,8 @@
                           {% assign option_3 = "" %}
 
                           {% for v in curValueVars %}
-                          {% if v.available %}
+                        {{v}}
+                           {% if v.available %}
                         
                             {% if optionString == "option1" %}
                               {% assign option_1 = value %}
