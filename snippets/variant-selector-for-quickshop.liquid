@@ -57,7 +57,7 @@
 
     {% for v in curValueVars %}
 
-    {% if v.available %}
+    {% if v.available and v.inventory_quantity >= qty %}
 
     {% if optionString == "option1" %}
 
