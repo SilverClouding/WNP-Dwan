@@ -29,20 +29,20 @@
         "16425885018de76426-0": {
           "type": "heading",
           "settings": {
-            "heading": "Dine with your paw friends!"
+            "heading": "Wash a dog. help a dog."
           }
         },
         "16425885018de76426-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
+            "text": "<p>Self-Dog Wash community space. <br\/><br\/>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together.<\/p><p>No more furry bathrooms to tidy up at home.<\/p>"
           }
         },
         "16425885018de76426-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": ""
+            "button_label": "BOOK NOW",
+            "button_link": "shopify:\/\/pages\/self-dog-wash"
           }
         }
       },
@@ -52,7 +52,7 @@
         "16425885018de76426-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "image": "shopify:\/\/shop_images\/PetPage_02_TextImage_SelfDogWash.jpg",
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
