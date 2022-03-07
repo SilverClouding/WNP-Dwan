@@ -1,3 +1,12 @@
+{% assign qty = 1 %} 
+{% assign minTag = false %}
+{% for tag in product.tags %}
+{% if tag contains 'min-qty:' %}
+{% assign minTag = true %}
+{% assign qty = tag | split:":" | last | plus:0 %}
+{% endif %}
+{% endfor %}
+
 {% assign current_available_variant = product.selected_or_first_available_variant %}
 {% assign  current_v_option1_vars  = product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
 
@@ -13,14 +22,7 @@
 {% endif %}
 {% endfor %}
 
-{% assign qty = 1 %} 
-{% assign minTag = false %}
-{% for tag in product.tags %}
-{% if tag contains 'min-qty:' %}
-{% assign minTag = true %}
-{% assign qty = tag | split:":" | last | plus:0 %}
-{% endif %}
-{% endfor %}
+
 
 
 {%- unless product.has_only_default_variant -%}
