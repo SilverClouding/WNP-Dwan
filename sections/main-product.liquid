@@ -532,7 +532,7 @@
          {% assign current_option3 = ""  %}
         
         {% for current_v in current_v_option1_vars %}
-        {{qty}}
+      
         {% if current_v.inventory_quantity >= qty%}
         {% assign current_option1 = current_option1 | append: current_v.option1 |append:","   %}
          {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
