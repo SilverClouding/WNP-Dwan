@@ -625,10 +625,11 @@ class VariantSelects extends HTMLElement {
           console.log(element);
           
           if(data_option2Array.indexOf(element.value) > -1 ){
-
+            console.log("qty-"+this.getAttribute('data_'+this.currentVariant.id));
             element.classList.add('availablee');
             element.classList.remove('soldoutt');
           }else{
+            console.log("qty-"+this.getAttribute('data_'+this.currentVariant.id));
             element.classList.remove('available');
             element.classList.add('soldout');
           }
