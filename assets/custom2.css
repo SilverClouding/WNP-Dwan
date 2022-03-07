@@ -71,6 +71,7 @@ table td, table tr, table th, table, tbody {border: none;box-shadow: none!import
 
 .tabcontent-cus h4, .accordion__content h4 {
     margin-bottom: 0;
+   font-family: 'Comfortaa', cursive;
 }
 
 
