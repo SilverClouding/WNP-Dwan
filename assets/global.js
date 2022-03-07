@@ -623,7 +623,7 @@ class VariantSelects extends HTMLElement {
         var this_alt = this;
         var data_option2Array = ( typeof data_option2 != "undefined" &&  data_option2 != '' )? data_option2.split(",") : false ; 
         
-          console.log("data_option2Array--"+data_option2Array);
+          console.log("data_option2Array--"+data_option2);
         
         data_option2Array && fieldsets[1] && [...fieldsets[1].querySelectorAll('input')].forEach(function(element){
         
