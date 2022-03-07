@@ -525,16 +525,18 @@
         
       {% assign current_available_variant = product.selected_or_first_available_variant %}
        {% assign  current_v_option1_vars  = product.variants | where: "option1" , current_available_variant.option1 | where: "available" %}
-        {{current_v_option1_vars | json}}
+    
         
         {% assign current_option1 = ""  %}
         {% assign current_option2 = ""  %}
          {% assign current_option3 = ""  %}
         
         {% for current_v in current_v_option1_vars %}
+        {% if current_v.inventory_quantity >= 4%}
         {% assign current_option1 = current_option1 | append: current_v.option1 |append:","   %}
          {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
          {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
+        {% endif %}
         {% endfor %}
         
         
