@@ -563,40 +563,34 @@
                       <fieldset class="js swatch product-form__input {{optionString}}_for_below_input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
+                          {% assign curValueVars = product.variants | where: optionString, value %}
+
+                          {% assign option_1 = "" %}
+                          {% assign option_2 = "" %}
+                          {% assign option_3 = "" %}
+
+                          {% for v in curValueVars %}
+                          {% if v.available %}
                         
+                            {% if optionString == "option1" %}
+                              {% assign option_1 = value %}
+                              {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+                              {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+                            {% endif %}
+
+                            {% if optionString == "option2" %} 
+                              {% assign option_2 = value %}
+                              {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                              {% assign option_3 = option_3 | append: v.option3 |append:"," %}
+                            {% endif %}
+
+                            {% if optionString == "option3" %}
+                              {% assign option_3 = value %}
+                              {% assign option_1 = option_1 | append: v.option1 |append:"," %}
+                              {% assign option_2 = option_2 | append: v.option2 |append:"," %}
+                            {% endif %}
                         
-                        {% assign curValueVars = product.variants | where: optionString, value %}
-                    
-                        {% assign option_1 = "" %}
-                        {% assign option_2 = "" %}
-                        {% assign option_3 = "" %}
-
-                        {% for v in curValueVars %}
-
-                        {% if v.available %}
-
-                        {% if optionString == "option1" %}
-                        
-                        {% assign option_1 = value %}
-                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
-                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
-                        {% endif %}
-                        
-                        {% if optionString == "option2" %} 
-                         {% assign option_2 = value %}
-                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
-                        {% assign option_3 = option_3 | append: v.option3 |append:"," %}
-                        {% endif %}
-                        
-                        {% if optionString == "option3" %}
-                        {% assign option_3 = value %}
-                        {% assign option_1 = option_1 | append: v.option1 |append:"," %}
-                        {% assign option_2 = option_2 | append: v.option2 |append:"," %}
-                        {% endif %}
-
-                        {% endif %}
-
-
+                          {% endif %}
                         {% endfor %}
                         
                         
