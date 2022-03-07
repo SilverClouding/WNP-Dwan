@@ -255,9 +255,9 @@
           "a8e27b05-84be-4109-b2e2-482ee8038cf8": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/New_Online_R-01.jpg",
-              "image_caption_bottom": "NEW YEAR NEW ARRIVALS",
-              "richtext_bottom": "<p>testing<\/p>",
+              "image_bottom": "shopify:\/\/shop_images\/MegaMenu_Dog.jpg",
+              "image_caption_bottom": "Latest hand-picked goods for your dogs & puppies.",
+              "richtext_bottom": "",
               "btn_text": "Shop Now",
               "button_link": "shopify:\/\/collections\/new-arrivals"
             }
@@ -283,9 +283,9 @@
           "mega-menu-2-0": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/New_Online_R-02.jpg",
-              "image_caption_bottom": "For Your Kittens",
-              "richtext_bottom": "<p>Test - Grab the essentials for the newbies! Meow!<\/p>",
+              "image_bottom": "shopify:\/\/shop_images\/MegaMenu_Cat.jpg",
+              "image_caption_bottom": "Latest hand-picked goods for your cats & kittens.",
+              "richtext_bottom": "",
               "btn_text": "Shop Now",
               "button_link": "shopify:\/\/collections\/new-arrivals"
             }
@@ -311,11 +311,11 @@
           "mega-menu-3-0": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
+              "image_bottom": "shopify:\/\/shop_images\/MegaMenu_SmallAnimals.jpg",
               "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "richtext_bottom": "<p>Hello hoomans! <br\/>My name is Loopy, a 3-month-old girl, currently looking for loving pawrents...<\/p>",
-              "btn_text": "More about loopy",
-              "button_link": "#"
+              "richtext_bottom": "<p>Adoption 7 days a week. This dedicated space is for pets to meet & greet their new families.<\/p>",
+              "btn_text": "Checkout our current residents",
+              "button_link": "shopify:\/\/pages\/services"
             }
           }
         },
@@ -340,6 +340,7 @@
           },
           "mega-menu-4-0": {
             "type": "column",
+            "disabled": true,
             "settings": {
               "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
               "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
@@ -399,11 +400,11 @@
           "b31c3040-11d9-4b40-80f4-6a272e7bf995": {
             "type": "column",
             "settings": {
-              "image_bottom": "shopify:\/\/shop_images\/cats.jpg",
-              "image_caption_bottom": "#Everydayisadoptionday @whiskersnpaws",
-              "richtext_bottom": "<p>Hello hoomans! <br\/>My name is Loopy, a 3-month-old girl, currently looking for loving pawrents<\/p>",
-              "btn_text": "More about loopy",
-              "button_link": "#"
+              "image_bottom": "shopify:\/\/shop_images\/MegaMenu_SelfDogWash.jpg",
+              "image_caption_bottom": "WASH A DOG | HELP A DOG",
+              "richtext_bottom": "<p>100% proceeds go towards our community work!<\/p>",
+              "btn_text": "BOOK NOW",
+              "button_link": "shopify:\/\/pages\/self-dog-wash"
             }
           }
         },
