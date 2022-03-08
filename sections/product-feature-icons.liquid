@@ -41,11 +41,11 @@
   "decreased_allergy": true,
   "healthy_skin_coat": false,
   "joint_health": true
-  {% endcomment %}
+  
   
       <div>{{ product.metafields.my_fields.product_info.value.tab_1_title }}</div>
     <div>{{ product.metafields.my_fields.product_info.value.tab_4_content }}</div>
-
+{% endcomment %}
 {% assign iconsArray = product.metafields.my_fields.description %}
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
