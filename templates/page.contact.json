@@ -11,8 +11,8 @@
     "16395743364aa1e8ed": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/contact_4fa9b289-6780-4b14-9d39-a354a2e84524.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/contact-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/ContactUsPage-01.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/ContactUsPage_01_TopBanner_Mobile.jpg",
         "sec_class": "contact-banner",
         "image_height": "small",
         "adapt_height_first_image": false,
