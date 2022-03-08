@@ -537,6 +537,14 @@
         "sec_class": ""
       }
     },
+    "16467286119511ccb2": {
+      "type": "divider",
+      "settings": {
+        "include_margins": true,
+        "top_padding": 3,
+        "bottom_padding": 3
+      }
+    },
     "16416260792211a337": {
       "type": "instafeed",
       "settings": {
@@ -713,6 +721,7 @@
     "16365383186b9876cd",
     "1636470578a33ad6f3",
     "164672290286024fe6",
+    "16467286119511ccb2",
     "16416260792211a337",
     "1640092794003e0620",
     "16365411454faad6c2",
