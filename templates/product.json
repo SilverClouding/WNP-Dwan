@@ -129,10 +129,10 @@
     },
     "product-details-tab": {
       "type": "product-details-tab",
-      "disabled": true,
       "blocks": {
         "41ed38d6-9953-4e33-93aa-bacd2a53d017": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_1_title.value }}",
             "text": "<p>{{ product.metafields.my_fields.tab_1_content.value }} <\/p>",
@@ -141,6 +141,7 @@
         },
         "caaa1210-0d12-4b90-ad24-6cc6d346b71a": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_2_title.value }}",
             "text": "<p>{{ product.metafields.my_fields.tab_2_content.value }} <\/p>",
@@ -149,6 +150,7 @@
         },
         "08d6b74e-e309-4797-aba1-ec35f123e229": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_3_title.value }}",
             "text": "<p>{{ product.metafields.my_fields.tab_3_content.value }}<\/p>",
@@ -157,6 +159,7 @@
         },
         "35016f0b-244a-4bef-9949-cd00119b63b6": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "{{ product.metafields.my_fields.tab_4_title.value }}",
             "text": "<p>{{ product.metafields.my_fields.tab_4_content.value }}<\/p>",
