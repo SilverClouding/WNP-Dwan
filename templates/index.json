@@ -6,10 +6,10 @@
         "3f81934b-837c-4b0b-a096-9d30503c5615": {
           "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner.png",
-            "image_2": "shopify:\/\/shop_images\/banner1.png",
+            "image": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Desktop.jpg",
+            "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile.jpg",
             "image_height": "large",
-            "two_col_banner": true,
+            "two_col_banner": false,
             "desktop_text_box_position": "center",
             "banner_content": true,
             "show_text_box": false,
@@ -20,14 +20,14 @@
             "color_scheme": "accent-2",
             "stack_images_on_mobile": true,
             "show_text_below": true,
-            "heading": "Curated because we  are fur parents too.",
+            "heading": "",
             "heading_size": "medium",
-            "text": "Improving the quality of life of everyone when it comes to sharing the love of animals",
-            "button_label_1": "Shop Dogs",
-            "button_link_1": "shopify:\/\/pages\/dog",
+            "text": "",
+            "button_label_1": "",
+            "button_link_1": "",
             "button_style_secondary_1": false,
             "btn_bg_color": "#ffffff",
-            "button_label_2": "Shop Cats",
+            "button_label_2": "",
             "button_link_2": "#",
             "button_style_secondary_2": false
           }
@@ -232,6 +232,7 @@
       "blocks": {
         "86c4d9b0-660f-4b82-8e3e-cc3173289ac0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/collagen.png",
             "title": "Collagen",
@@ -240,6 +241,7 @@
         },
         "9c908212-0e53-46df-9ef8-021d728b48ad": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/keto.png",
             "title": "Keto",
@@ -248,6 +250,7 @@
         },
         "eca67bd9-e73b-4211-b85f-c4a085660ce5": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_413.png",
             "title": "Superfood",
@@ -256,6 +259,7 @@
         },
         "725613ab-b3ca-43d0-bc8c-69db86903ad9": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Vector.png",
             "title": "Protein",
@@ -264,6 +268,7 @@
         },
         "58763729-9a45-44c3-8770-d8b51863092c": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/feeding-bottle_1.png",
             "title": "Grain Free",
@@ -279,9 +284,9 @@
         "58763729-9a45-44c3-8770-d8b51863092c"
       ],
       "settings": {
-        "heading": "Healthy pet care made easy",
+        "heading": "Shop By Pets",
         "heading_size": "h1",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat commodo lectus magna congue. Arcu est viverra consectetur volutpat amet, orci, magna iaculis eu.<\/p>",
+        "text": "",
         "color_scheme": "inverse",
         "section_width": 80,
         "sec_class": ""
