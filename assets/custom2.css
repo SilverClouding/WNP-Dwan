@@ -732,7 +732,8 @@ div#article_page .buttons-section ul li {
   left: 2.4rem;
   z-index:2;
   display:inherit;
-  width: 200px;
+  max-width: 200px;
+  width:90%;
   margin: 0 auto!important;
   right: 0;
   -webkit-transform: translate(0,0);
