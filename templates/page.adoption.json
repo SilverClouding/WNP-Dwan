@@ -227,7 +227,7 @@
         "b6a46501-6c90-4a9c-bedc-aa6bf60b6164": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AdoptionPage_01_ImageCollage_1440x440_1af29b8e-4fd5-4196-a5b0-625acccb4f03.jpg",
+            "image": "shopify:\/\/shop_images\/MegaMenu_SmallAnimals.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
@@ -253,8 +253,8 @@
         "163938661982f1051c-0": {
           "type": "video",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Screenshot_2021-07-14_at_11.48_1.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify:\/\/shop_images\/AdoptionPage_CoverImage.jpg",
+            "video_url": "https:\/\/youtu.be\/s4Y58B5TwA8",
             "description": "Describe the video",
             "image_padding": false
           }
@@ -278,7 +278,7 @@
         "4380b640-25ff-476f-8212-052b613b1d8b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AdoptionPage_01_ImageCollage_375x400-05.jpg",
+            "image": "shopify:\/\/shop_images\/AdoptionPage_ImageCollage-02.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
