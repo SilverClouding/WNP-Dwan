@@ -113,7 +113,7 @@
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify:\/\/collections\/high5dogs",
             "button_style_secondary_1": false,
-            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "btn_bg_color": "#ffffff",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -446,6 +446,39 @@
         "sec_class": "story-slide-con"
       }
     },
+    "164672290286024fe6": {
+      "type": "icon-text-section",
+      "blocks": {
+        "6f87b802-e96d-47e4-bfe5-b77d11982dd9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "f46dd5f8-a306-482e-8491-2cbab2f95f95": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f87b802-e96d-47e4-bfe5-b77d11982dd9",
+        "f46dd5f8-a306-482e-8491-2cbab2f95f95"
+      ],
+      "settings": {
+        "heading": "Expat Living Award",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "background-1",
+        "section_width": 70,
+        "sec_class": ""
+      }
+    },
     "1636470578a33ad6f3": {
       "type": "column-content-cards",
       "blocks": {
@@ -678,6 +711,7 @@
     "16364715337b2e2d80",
     "1640771118fe09f2d8",
     "16365383186b9876cd",
+    "164672290286024fe6",
     "1636470578a33ad6f3",
     "16416260792211a337",
     "1640092794003e0620",
