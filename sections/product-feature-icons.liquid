@@ -33,88 +33,87 @@
   product.metafields.icon.decreased_allergy
   product.metafields.icon.healthy_skin_coat
   product.metafields.accentuate.joint_health
+  
+  json
+  "better_appetite": false,
+  "improved_digestion": true,
+  "reduce_ibs_ibd_symptoms": true,
+  "decreased_allergy": true,
+  "healthy_skin_coat": false,
+  "joint_health": true
   {% endcomment %}
   
       <div>{{ product.metafields.my_fields.product_info.value.tab_1_title }}</div>
     <div>{{ product.metafields.my_fields.product_info.value.tab_4_content }}</div>
 
+{% assign data = product.metafields.my_fields.description %}
+{{data.icons.better_appetite}}
+  
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
   
   {% assign blockTitleHandle = block.settings.title | handle %}
 
   
-  {% if blockTitleHandle contains 'better-appetite' and product.metafields.icon.better_appetite %}
+  {% if blockTitleHandle contains 'better-appetite' and data.icons.better_appetite %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-    <div>
+   <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
  {% endif %}
   
-  {% if blockTitleHandle contains 'improved-digestion' and product.metafields.accentuate.improved_digestion %}
+  {% if blockTitleHandle contains 'improved-digestion' and data.icons.improved_digestion %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-     <div>
+   <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
   
-  {% if blockTitleHandle contains 'reduced-symptoms' and product.metafields.accentuate.reduce_ibs_ibd_symptoms %}
+  {% if blockTitleHandle contains 'reduced-symptoms' and data.icons.reduce_ibs_ibd_symptoms %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-     <div>
+   <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'decreased-food' and product.metafields.icon.decreased_allergy %}
+  {% if blockTitleHandle contains 'decreased-food' and data.icons.decreased_allergy %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-    <div>
+ <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'healthy-skin' and product.metafields.icon.healthy_skin_coat %}
+  {% if blockTitleHandle contains 'healthy-skin' and data.icons.healthy_skin_coat %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-    <div>
+  <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'joint-health' and product.metafields.accentuate.joint_health %}
+  {% if blockTitleHandle contains 'joint-health' and data.icons.accentuate.joint_health %}
   <div class="under_media_icon_text_item text-center"> 
-  {% comment %}  <img src="{{ block.settings.img | img_url: '50x' }}"alt="{{ block.settings.img.alt | escape }}"> {% endcomment %}
-     <div>
+  <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
       {{block.settings.icons}}
     </div>
-     
     <h2>{{ block.settings.title }}</h2> 
   </div>
   {% endif %}
