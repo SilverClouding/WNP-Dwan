@@ -29,20 +29,20 @@
         "16425885018de76426-0": {
           "type": "heading",
           "settings": {
-            "heading": "Wash a dog. help a dog."
+            "heading": "Every Day Is Adoption Day"
           }
         },
         "16425885018de76426-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Self-Dog Wash community space. <br\/><br\/>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together.<\/p><p>No more furry bathrooms to tidy up at home.<\/p>"
+            "text": "<p>Nurturing an animal-loving community every day. All of our pets come from local Hong Kong shelters and Whiskers N Paws looks after them until they find their way into your heart & homes.<\/p>"
           }
         },
         "16425885018de76426-2": {
           "type": "button",
           "settings": {
-            "button_label": "BOOK NOW",
-            "button_link": "shopify:\/\/pages\/self-dog-wash"
+            "button_label": "Checkout our current residents",
+            "button_link": "shopify:\/\/pages\/adoption"
           }
         }
       },
@@ -52,7 +52,7 @@
         "16425885018de76426-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PetPage_02_TextImage_SelfDogWash.jpg",
+        "image": "shopify:\/\/shop_images\/CollectionPage_ImageText_Adoption.jpg",
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
