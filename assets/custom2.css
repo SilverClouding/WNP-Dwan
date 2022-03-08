@@ -985,7 +985,7 @@ text-decoration:none;
   font-size:14px;
 }
 .reorder-outofstock-items .reorder-item .btn.button{
-width: 100px;
+/* width: 100px; */
     display: inline-block;
     padding: 8px 10px;
     margin: 0;
@@ -1006,7 +1006,7 @@ width: 100px;
   box-shadow:none;
 }
 .customer.account .reorder-outofstock-items .reorder-item .btn.button{
-margin-right:30px;
+margin-right:25px;
 }
 .disabled .reorder-btn {
     opacity: 0.5;
