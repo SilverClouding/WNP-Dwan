@@ -9,6 +9,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
  <div class="product-detailscon">
   <h2>Product details</h2>
 
+   {% comment %}
    <div class="tab-for-desktop">
      <div class="tab-customize">
        <div class="tablinks-cus" onclick="openTab(event, 'tab-1')"id="tab-cus-active">{{data.tab_1_title}}</div>
@@ -21,6 +22,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
      <div id="tab-3" class="tabcontent-cus">{{data.tab_3_content}}</div>
      <div id="tab-4" class="tabcontent-cus">{{data.tab_4_content}}</div>
    </div>
+   {% endcomment %}
 
    
 <div class="tab-for-desktop">
