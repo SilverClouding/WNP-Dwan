@@ -32,7 +32,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
     {% endfor %}
   </div>
     {% for block in section.blocks %}
-   <div id="tab-{{forloop.index}}" class="tabcontent-cus">{% if block.settings.show_desc %} {{product.description}} {% else %}{{ block.settings.text }}{% endif %}</div>
+   <div id="tab-{{forloop.index}}" class="tabcontent-cus ingredients">{% if block.settings.show_desc %} {{product.description}} {% else %}{{ block.settings.text }}{% endif %}</div>
   {% endfor %}
 </div>
 
