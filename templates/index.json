@@ -116,13 +116,43 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "6487ae94-099f-4418-b69d-16dbd23fec1d": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Desktop.jpg",
+            "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile.jpg",
+            "image_height": "medium",
+            "two_col_banner": false,
+            "desktop_text_box_position": "center",
+            "banner_content": false,
+            "show_text_box": true,
+            "image_overlay_opacity": 0,
+            "bg_color": "",
+            "banner_head_text_color": "",
+            "banner_paragrapgh_text_color": "",
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true,
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "3f81934b-837c-4b0b-a096-9d30503c5615",
         "4eb85f4a-298e-4700-bc92-339f46f1932f",
         "3cbe7d2c-90b1-4bed-8434-a2112240a512",
-        "8085e367-ca9c-4750-a2ca-6476a15bd6c9"
+        "8085e367-ca9c-4750-a2ca-6476a15bd6c9",
+        "6487ae94-099f-4418-b69d-16dbd23fec1d"
       ],
       "settings": {
         "showpagination": true,
