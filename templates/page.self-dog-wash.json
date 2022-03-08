@@ -128,7 +128,7 @@
       "settings": {
         "heading": "",
         "text_alignment": "left",
-        "cover_image": "shopify:\/\/shop_images\/video-bg.jpg",
+        "cover_image": "shopify:\/\/shop_images\/SelfDogWashPage_CoverImage.jpg",
         "video_url": "https:\/\/youtu.be\/bznOb2M_e7o",
         "description": "",
         "full_width": false,
@@ -213,7 +213,7 @@
         "1638877376cf53eb2a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SelfDogWashPage_CoverImage.jpg",
+            "image": "shopify:\/\/shop_images\/SelfDogWashPage_ColumnImage.jpg",
             "img_link": "",
             "title": "",
             "text": "",
