@@ -54,7 +54,7 @@
   {% assign blockTitleHandle = block.settings.title | handle %}
 
   
-  {% if blockTitleHandle contains 'better-appetite' and data.icons.better_appetite %}
+  {% if blockTitleHandle contains 'better-appetite' and iconsArray.icons.better_appetite %}
   <div class="under_media_icon_text_item text-center"> 
    <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
@@ -64,7 +64,7 @@
   </div>
  {% endif %}
   
-  {% if blockTitleHandle contains 'improved-digestion' and data.icons.improved_digestion %}
+  {% if blockTitleHandle contains 'improved-digestion' and iconsArray.icons.improved_digestion %}
   <div class="under_media_icon_text_item text-center"> 
    <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
@@ -74,7 +74,7 @@
   </div>
   {% endif %}
   
-  {% if blockTitleHandle contains 'reduced-symptoms' and data.icons.reduce_ibs_ibd_symptoms %}
+  {% if blockTitleHandle contains 'reduced-symptoms' and iconsArray.icons.reduce_ibs_ibd_symptoms %}
   <div class="under_media_icon_text_item text-center"> 
    <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
@@ -85,7 +85,7 @@
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'decreased-food' and data.icons.decreased_allergy %}
+  {% if blockTitleHandle contains 'decreased-food' and iconsArray.icons.decreased_allergy %}
   <div class="under_media_icon_text_item text-center"> 
  <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
@@ -96,7 +96,7 @@
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'healthy-skin' and data.icons.healthy_skin_coat %}
+  {% if blockTitleHandle contains 'healthy-skin' and iconsArray.icons.healthy_skin_coat %}
   <div class="under_media_icon_text_item text-center"> 
   <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
@@ -107,7 +107,7 @@
   {% endif %}
  
   
-  {% if blockTitleHandle contains 'joint-health' and data.icons.accentuate.joint_health %}
+  {% if blockTitleHandle contains 'joint-health' and iconsArray.icons.accentuate.joint_health %}
   <div class="under_media_icon_text_item text-center"> 
   <div>
   {% comment %}  {% render 'product-feature-icons', icon: block.settings.icons %}{% endcomment %}
