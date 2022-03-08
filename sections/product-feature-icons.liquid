@@ -46,8 +46,8 @@
       <div>{{ product.metafields.my_fields.product_info.value.tab_1_title }}</div>
     <div>{{ product.metafields.my_fields.product_info.value.tab_4_content }}</div>
 
-{% assign data = product.metafields.my_fields.description %}
-{{data.icons}}
+{% assign iconsArray = product.metafields.my_fields.description %}
+{{iconsArray.icons}}
 <div class="above_description_icon_text">
   {%- for block in section.blocks -%}
   
