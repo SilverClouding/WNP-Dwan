@@ -129,6 +129,7 @@
     },
     "product-details-tab": {
       "type": "product-details-tab",
+      "disabled": true,
       "blocks": {
         "41ed38d6-9953-4e33-93aa-bacd2a53d017": {
           "type": "content",
