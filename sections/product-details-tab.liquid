@@ -1,8 +1,14 @@
 
 {% assign data = product.metafields.my_fields.description %}
-
+<div>
 {{data.tab_1_title}}<br>
 {{data.tab_1_content}}
+</div>
+<hr>
+<div>
+{{data.tab_2_title}}<br>
+{{data.tab_2_content}}
+</div>
 
 {% comment %}
 if combine_pretext is false, the text before the first <H6> will be shown above all tabs, otherwise added to the first tab
