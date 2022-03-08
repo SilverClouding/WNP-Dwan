@@ -103,25 +103,24 @@
     },
     "16389585667234d795": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "163895856608fdfa54-0": {
           "type": "heading",
           "settings": {
-            "heading": "Dine with your paw friends!"
+            "heading": "Every Day Is Adoption Day"
           }
         },
         "163895856608fdfa54-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This pet-friendly café is all about promoting animal adoption and raising public awareness on animal welfare as well as responsible pet ownership. While they certainly know how to take care of our furry friends, they, too, are up for the task of taking care of their human guests’ food cravings with their wide food selections.<\/p>"
+            "text": "<p>Nurturing an animal-loving community every day. All of our pets come from local Hong Kong shelters and Whiskers N Paws looks after them until they find their way into your heart & homes.<\/p>"
           }
         },
         "163895856608fdfa54-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": "#"
+            "button_label": "Checkout our current residents",
+            "button_link": "shopify:\/\/pages\/adoption"
           }
         }
       },
@@ -131,7 +130,7 @@
         "163895856608fdfa54-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mask_Group.png",
+        "image": "shopify:\/\/shop_images\/DSC01543_Lego.jpg",
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
