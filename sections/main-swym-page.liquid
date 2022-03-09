@@ -225,8 +225,9 @@ ${product.dt}
       }
       
        productJson.variants && [...productJson.variants].forEach(function(element) {
+         if(product.epi == element.id){
          console.log(element.id+"="+element.price);
-        
+         }
        });
       
       
