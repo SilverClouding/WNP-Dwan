@@ -97,7 +97,7 @@
             "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile.jpg",
             "image_height": "large",
             "two_col_banner": false,
-            "desktop_text_box_position": "flex-end",
+            "desktop_text_box_position": "center",
             "banner_content": false,
             "show_text_box": false,
             "image_overlay_opacity": 0,
