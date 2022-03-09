@@ -378,6 +378,47 @@
         "sec_class": "Review-con"
       }
     },
+    "164672290286024fe6": {
+      "type": "icon-text-section",
+      "blocks": {
+        "6f87b802-e96d-47e4-bfe5-b77d11982dd9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "f46dd5f8-a306-482e-8491-2cbab2f95f95": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_6.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f87b802-e96d-47e4-bfe5-b77d11982dd9",
+        "f46dd5f8-a306-482e-8491-2cbab2f95f95"
+      ],
+      "settings": {
+        "heading": "Expat Living Award",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "background-1",
+        "section_width": 58,
+        "sec_class": ""
+      }
+    },
+    "16467286119511ccb2": {
+      "type": "divider",
+      "settings": {
+        "include_margins": true,
+        "top_padding": 3,
+        "bottom_padding": 3
+      }
+    },
     "16365383186b9876cd": {
       "type": "img-with-text-slider",
       "blocks": {
@@ -502,47 +543,6 @@
         "title_color": "",
         "title_font_size": 35,
         "sec_class": "ourdream"
-      }
-    },
-    "164672290286024fe6": {
-      "type": "icon-text-section",
-      "blocks": {
-        "6f87b802-e96d-47e4-bfe5-b77d11982dd9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_6.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "f46dd5f8-a306-482e-8491-2cbab2f95f95": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_6.png",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "6f87b802-e96d-47e4-bfe5-b77d11982dd9",
-        "f46dd5f8-a306-482e-8491-2cbab2f95f95"
-      ],
-      "settings": {
-        "heading": "Expat Living Award",
-        "heading_size": "h1",
-        "text": "",
-        "color_scheme": "background-1",
-        "section_width": 58,
-        "sec_class": ""
-      }
-    },
-    "16467286119511ccb2": {
-      "type": "divider",
-      "settings": {
-        "include_margins": true,
-        "top_padding": 3,
-        "bottom_padding": 3
       }
     },
     "16416260792211a337": {
@@ -718,10 +718,10 @@
     "16364684436965f7cf",
     "16364715337b2e2d80",
     "1640771118fe09f2d8",
-    "16365383186b9876cd",
-    "1636470578a33ad6f3",
     "164672290286024fe6",
     "16467286119511ccb2",
+    "16365383186b9876cd",
+    "1636470578a33ad6f3",
     "16416260792211a337",
     "1640092794003e0620",
     "16365411454faad6c2",
