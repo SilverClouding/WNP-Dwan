@@ -1,4 +1,4 @@
-{% comment %}
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
@@ -288,10 +288,10 @@ ${product.dt}
 
   });
 </script>
-{% endcomment %}
 
+{% comment %}
 {% render 'test-given-code-from-wishlist' %}
-
+{% endcomment %}
 {% schema %}
   {
     "name": "Wishlist Page",
