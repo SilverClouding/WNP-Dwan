@@ -224,6 +224,11 @@ ${product.dt}
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
       
+       productJson.variants && [...productJson.variants].forEach(function(element) {
+         console.log(element);
+       });
+      
+      
       
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
       
