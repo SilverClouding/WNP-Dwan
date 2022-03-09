@@ -224,15 +224,17 @@ ${product.dt}
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
       
+      var variantPrice = null;
        productJson.variants && [...productJson.variants].forEach(function(element) {
          if(product.epi == element.id){
          console.log(element.id+"="+element.price);
+           variantPrice = element.price;
          }
        });
       
       
       
-      document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(productJson.price)}`;
+      document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantPrice)}`;
       
 //       console.log("Entire product json ID:",productJson.id);
 //       console.log("Entire product json ID:",productJson.vendor);
