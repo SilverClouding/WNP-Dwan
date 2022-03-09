@@ -102,13 +102,15 @@ $(document).ready(function(){
 ${product.dt} 
                           </a>
                           </h3>
-                        <div class="price price--sold-out price--on-sale" data-wg-notranslate="manual">
+                        <div class="price " data-wg-notranslate="manual">
                         <div>
                         <div class="price__regular">
                         <span class="price-item price-item--regular">
- <span id="product_price__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span> </span>
+<span class="price-item price-item--sale price-item--last" id="com_price__${product.empi}"></span>
+                        <span id="product_price__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span>
+
+                          </span>
                           </div>
-<div class="price__sale"><span class="price-item price-item--sale price-item--last" id="com_price__${product.empi}"></span></div>
                           </div>
                           </div>
                           </div>
