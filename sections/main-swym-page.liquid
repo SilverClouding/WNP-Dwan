@@ -107,6 +107,7 @@ ${product.dt}
                         <div class="price__regular">
                         <span class="price-item price-item--regular">
                         HK<span id="product_price__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span>
+HK<span class="price-item price-item--sale price-item--last" id="com_price__${product.empi}"></span>
                           </span>
                           </div>
                           </div>
@@ -224,17 +225,21 @@ ${product.dt}
         document.getElementById(`product_li__${productJson.id}`).classList.add('disable');
       }
       
-      var variantPrice = null;
+      var variantPrice = null,
+      variantComPrice = null
        productJson.variants && [...productJson.variants].forEach(function(element) {
          if(product.epi == element.id){
          console.log(element.id+"="+element.price);
            variantPrice = element.price;
+           variantComPrice = element.compare_at_price
          }
        });
       
       
       
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantPrice)}`;
+      
+      document.getElementById(`com_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantComPrice)}`;
       
 //       console.log("Entire product json ID:",productJson.id);
 //       console.log("Entire product json ID:",productJson.vendor);
