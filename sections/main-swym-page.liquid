@@ -245,7 +245,7 @@ HK<span class="price-item price-item--sale price-item--last" id="com_price__${pr
       if(variantComPrice != 0 ){
       document.getElementById(`com_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantComPrice)}`;
       }else{
-      document.getElementById(`com_price__${productJson.id}`).hide();
+      document.getElementById(`com_price__${productJson.id}`).style.display = "none";;
       }  
 //       console.log("Entire product json ID:",productJson.id);
 //       console.log("Entire product json ID:",productJson.vendor);
