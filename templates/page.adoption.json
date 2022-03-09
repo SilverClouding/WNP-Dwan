@@ -56,21 +56,21 @@
         "1638861661efc699ec-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/spca.png",
+            "image": "shopify:\/\/shop_images\/Charity_logos_HKDR.jpg",
             "img_link": "#"
           }
         },
         "1638861661efc699ec-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hkdr.png",
+            "image": "shopify:\/\/shop_images\/Charity_logos_LAP.jpg",
             "img_link": "#"
           }
         },
         "1638861661efc699ec-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lap.png",
+            "image": "shopify:\/\/shop_images\/Charity_logos_SPCA.jpg",
             "img_link": "#"
           }
         }
