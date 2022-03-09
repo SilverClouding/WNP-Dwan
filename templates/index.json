@@ -112,7 +112,7 @@
             "text": "",
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify:\/\/collections\/high5dogs",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "btn_bg_color": "#ffffff",
             "button_label_2": "",
             "button_link_2": "",
