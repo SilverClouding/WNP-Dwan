@@ -106,20 +106,20 @@
         "163895856608fdfa54-0": {
           "type": "heading",
           "settings": {
-            "heading": "FULL SERVICE DOG GROOMING"
+            "heading": "WNP Adoption Program"
           }
         },
         "163895856608fdfa54-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using top-quality dog grooming products and state-of-the-art equipment for a professional finish each and every time.<\/p>"
+            "text": "<p>Everyday is adoption day at Whiskers N Paws! This dedicated space is for pets to meet & greet their new families. Come over any day of the week and meet your potential soul-mate.<\/p>"
           }
         },
         "163895856608fdfa54-2": {
           "type": "button",
           "settings": {
-            "button_label": "BOOK NOW",
-            "button_link": "shopify:\/\/pages\/grooming"
+            "button_label": "Checkout our current residents",
+            "button_link": "shopify:\/\/pages\/adoption"
           }
         }
       },
@@ -129,7 +129,7 @@
         "163895856608fdfa54-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PetPage_02_TextImage_Grooming.jpg",
+        "image": "shopify:\/\/shop_images\/CollectionPage_ImageText_Adoption.jpg",
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
