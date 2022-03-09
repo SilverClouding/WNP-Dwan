@@ -232,14 +232,16 @@ HK<span class="price-item price-item--sale price-item--last" id="com_price__${pr
          if(product.epi == element.id){
          console.log(element.id+"="+element.price);
            variantPrice = element.price;
+           if(variantComPrice > variantPrice ){
            variantComPrice = element.compare_at_price
+           }
          }
        });
       
       
       
       document.getElementById(`product_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantPrice)}`;
-      
+      console.log(variantComPrice);
       document.getElementById(`com_price__${productJson.id}`).innerText =`${Shopify.formatMoney(variantComPrice)}`;
       
 //       console.log("Entire product json ID:",productJson.id);
