@@ -239,7 +239,9 @@ ${product.dt} - <span id="var_title__${product.epi}"></span>
        productJson.variants && [...productJson.variants].forEach(function(element) {
          if(product.epi == element.id){
          console.log("variant title="+element.title);
+           if( element.title != "Default Title"){
            varTitle = element.title;
+           }
            varId =  element.id;
            variantPrice = element.price;
            if(element.compare_at_price > variantPrice ){
