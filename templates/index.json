@@ -384,7 +384,7 @@
         "6f87b802-e96d-47e4-bfe5-b77d11982dd9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HK-RCA2022-DECALS-GOLD75_1_4c7232c0-9f3a-488c-b736-4bf9d7d97d38.jpg",
+            "image": "shopify:\/\/shop_images\/HK-RCA2022-DECALS-GOLD75_1_1.jpg",
             "title": "",
             "link": ""
           }
@@ -392,7 +392,7 @@
         "f46dd5f8-a306-482e-8491-2cbab2f95f95": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HK-RCA2022-DECALS-GOLD34_2_08e61a26-2ac8-458f-b459-a44bd645a4ec.jpg",
+            "image": "shopify:\/\/shop_images\/HK-RCA2022-DECALS-GOLD34_2_1.jpg",
             "title": "",
             "link": ""
           }
@@ -407,7 +407,7 @@
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
-        "section_width": 40,
+        "section_width": 65,
         "sec_class": ""
       }
     },
