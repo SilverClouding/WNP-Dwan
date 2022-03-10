@@ -236,7 +236,7 @@ ${product.dt}
       variantComPrice = 0
        productJson.variants && [...productJson.variants].forEach(function(element) {
          if(product.epi == element.id){
-         console.log(element);
+         console.log("variant title="+element.title);
            variantPrice = element.price;
            if(element.compare_at_price > variantPrice ){
            variantComPrice = element.compare_at_price
