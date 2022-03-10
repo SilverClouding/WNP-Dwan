@@ -240,7 +240,7 @@ ${product.dt} <span id="var_title__${product.epi}"></span>
          if(product.epi == element.id){
          console.log("variant title="+element.title);
            if( element.title != "Default Title"){
-           varTitle = element.title;
+           varTitle = "- "+element.title;
            }
            varId =  element.id;
            variantPrice = element.price;
@@ -254,13 +254,13 @@ ${product.dt} <span id="var_title__${product.epi}"></span>
       
       document.getElementById(`product_price__${varId}`).innerText =`HK${Shopify.formatMoney(variantPrice)}`;
       
-      document.getElementById(`var_title__${varId}`).innerText ="- "+varTitle;
+      document.getElementById(`var_title__${varId}`).innerText =varTitle;
       
       console.log(variantComPrice);
       if(variantComPrice != 0 ){
       document.getElementById(`com_price__${varId}`).innerText =`HK${Shopify.formatMoney(variantComPrice)}`;
       }else{
-      document.getElementById(`com_price__${varId}`).style.display = "none";;
+      document.getElementById(`com_price__${varId}`).style.display = "none";
       }  
 //       console.log("Entire product json ID:",productJson.id);
 //       console.log("Entire product json ID:",productJson.vendor);
