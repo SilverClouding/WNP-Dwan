@@ -233,10 +233,12 @@ ${product.dt} <span id="var_title__${product.empi}"></span>
       }
       
       var variantPrice = 0,
-      variantComPrice = 0
+      variantComPrice = 0,
+           varTitle = ""
        productJson.variants && [...productJson.variants].forEach(function(element) {
          if(product.epi == element.id){
          console.log("variant title="+element.title);
+           varTitle = element.title;
            variantPrice = element.price;
            if(element.compare_at_price > variantPrice ){
            variantComPrice = element.compare_at_price
@@ -247,6 +249,9 @@ ${product.dt} <span id="var_title__${product.empi}"></span>
       
       
       document.getElementById(`product_price__${productJson.id}`).innerText =`HK${Shopify.formatMoney(variantPrice)}`;
+      
+      document.getElementById(`var_title__${productJson.id}`).innerText =varTitle;
+      
       console.log(variantComPrice);
       if(variantComPrice != 0 ){
       document.getElementById(`com_price__${productJson.id}`).innerText =`HK${Shopify.formatMoney(variantComPrice)}`;
