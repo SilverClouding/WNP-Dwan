@@ -110,10 +110,10 @@ ${product.dt} - <span id="var_title__${product.epi}"></span>
                         <div class="price " data-wg-notranslate="manual">
                         <div>
                         <div class="price__regular">
-<span class="price-item price-item--sale price-item--last" id="com_price__${product.empi}"></span>
+<span class="price-item price-item--sale price-item--last" id="com_price__${product.epi}"></span>
                         <span class="price-item price-item--regular">
 
-                        <span id="product_price__${product.empi}">${Shopify.formatMoney(product.pr * 100)}</span>
+                        <span id="product_price__${product.epi}">${Shopify.formatMoney(product.pr * 100)}</span>
 
                           </span>
                           </div>
@@ -250,15 +250,15 @@ ${product.dt} - <span id="var_title__${product.epi}"></span>
       
       
       
-      document.getElementById(`product_price__${productJson.id}`).innerText =`HK${Shopify.formatMoney(variantPrice)}`;
+      document.getElementById(`product_price__${varId}`).innerText =`HK${Shopify.formatMoney(variantPrice)}`;
       
       document.getElementById(`var_title__${varId}`).innerText =varTitle;
       
       console.log(variantComPrice);
       if(variantComPrice != 0 ){
-      document.getElementById(`com_price__${productJson.id}`).innerText =`HK${Shopify.formatMoney(variantComPrice)}`;
+      document.getElementById(`com_price__${varId}`).innerText =`HK${Shopify.formatMoney(variantComPrice)}`;
       }else{
-      document.getElementById(`com_price__${productJson.id}`).style.display = "none";;
+      document.getElementById(`com_price__${varId}`).style.display = "none";;
       }  
 //       console.log("Entire product json ID:",productJson.id);
 //       console.log("Entire product json ID:",productJson.vendor);
