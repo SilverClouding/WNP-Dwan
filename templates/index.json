@@ -32,6 +32,35 @@
             "button_style_secondary_2": false
           }
         },
+        "7ec30cb4-2f4d-4bd9-a5d3-2d7518edfc0f": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homepage_01_TopBanner_Animals_Day_Desktop.jpg",
+            "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_Animals_Day_Mobile.jpg",
+            "image_height": "large",
+            "two_col_banner": false,
+            "desktop_text_box_position": "center",
+            "banner_content": false,
+            "show_text_box": false,
+            "image_overlay_opacity": 0,
+            "bg_color": "",
+            "banner_head_text_color": "",
+            "banner_paragrapgh_text_color": "",
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true,
+            "show_text_below": true,
+            "heading": "",
+            "heading_size": "medium",
+            "text": "",
+            "button_label_1": "LEARN MORE",
+            "button_link_1": "shopify:\/\/pages\/adoption",
+            "button_style_secondary_1": false,
+            "btn_bg_color": "rgba(255, 255, 255, 0.5)",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
         "4eb85f4a-298e-4700-bc92-339f46f1932f": {
           "type": "heading",
           "settings": {
@@ -122,6 +151,7 @@
       },
       "block_order": [
         "6487ae94-099f-4418-b69d-16dbd23fec1d",
+        "7ec30cb4-2f4d-4bd9-a5d3-2d7518edfc0f",
         "4eb85f4a-298e-4700-bc92-339f46f1932f",
         "3cbe7d2c-90b1-4bed-8434-a2112240a512",
         "8085e367-ca9c-4750-a2ca-6476a15bd6c9"
