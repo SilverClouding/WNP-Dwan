@@ -129,13 +129,41 @@
         "show_view_all": true
       }
     },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "page_title": false,
+        "section_width": 100
+      }
+    },
+    "1647252436d487cc2b": {
+      "type": "rich-text",
+      "blocks": {
+        "1647252436f9f13e74-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Ready For Your Fur kids",
+            "heading_size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "1647252436f9f13e74-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "163939206952b859af": {
       "type": "custom-buttons",
       "blocks": {
         "1639392069fccd0b13-0": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Dogs",
+            "button_text": "Shop For Dogs",
             "button_link": "shopify:\/\/pages\/dog",
             "button_width": 20,
             "button_class": "button--primary",
@@ -145,7 +173,7 @@
         "1639392069fccd0b13-1": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Cats",
+            "button_text": "Shop For Cats",
             "button_link": "#",
             "button_width": 20,
             "button_class": "button--primary",
@@ -155,7 +183,7 @@
         "1639392069fccd0b13-2": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Small Animals",
+            "button_text": "Shop For Small Animals",
             "button_link": "#",
             "button_width": 20,
             "button_class": "button--primary",
@@ -173,14 +201,6 @@
         "background_style": "none",
         "section_width": 100,
         "sec_class": "custom-btn-section"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "page_title": false,
-        "section_width": 100
       }
     },
     "16393858930aa1f067": {
@@ -547,8 +567,9 @@
     "163886166197cb2a7e",
     "16472521240893611c",
     "1639385432343a7373",
-    "163939206952b859af",
     "main",
+    "1647252436d487cc2b",
+    "163939206952b859af",
     "16393858930aa1f067",
     "1639385897b8a7a6a9",
     "16393863577a5ae4a0",
