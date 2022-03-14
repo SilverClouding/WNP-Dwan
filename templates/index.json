@@ -162,6 +162,25 @@
         "shownextPrevButtom": false
       }
     },
+    "164724785011ac9c44": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "WFH Treats Essentials",
+        "col_title1": "For Dogs",
+        "collection": "dog-freeze-dried-treats",
+        "col_title2": "For Cat",
+        "collection2": "freeze-dried-cat-treats",
+        "products_to_show": 12,
+        "show_view_all": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "sec_class": ""
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -735,6 +754,7 @@
   },
   "order": [
     "1635762495f8f522da",
+    "164724785011ac9c44",
     "featured_products",
     "163646666171e43149",
     "16364684436965f7cf",
