@@ -101,7 +101,7 @@
         "1647252124a861cb25-1": {
           "type": "text",
           "settings": {
-            "text": "<p>@ WHISKERSNPAWS<br\/><\/p><p><\/p><p><strong>CHECKOUT OUR CURRENT RESIDENTS<\/strong><\/p>"
+            "text": "<p>@ WHISKERSNPAWS<br\/><\/p>"
           }
         }
       },
@@ -118,7 +118,7 @@
     "1639385432343a7373": {
       "type": "featured-blog",
       "settings": {
-        "heading": "",
+        "heading": "CHECKOUT OUR CURRENT RESIDENTS",
         "blog": "adoption",
         "post_limit": 3,
         "show_image": true,
