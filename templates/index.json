@@ -3,6 +3,35 @@
     "1635762495f8f522da": {
       "type": "slideshow",
       "blocks": {
+        "6487ae94-099f-4418-b69d-16dbd23fec1d": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Desktop_4dafc6be-6d7f-4e04-be44-a20a5b9f3e21.jpg",
+            "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile_f9dec654-c64e-4334-98e6-fd12c35b91f1.jpg",
+            "image_height": "large",
+            "two_col_banner": false,
+            "desktop_text_box_position": "flex-end",
+            "banner_content": false,
+            "show_text_box": false,
+            "image_overlay_opacity": 0,
+            "bg_color": "",
+            "banner_head_text_color": "",
+            "banner_paragrapgh_text_color": "",
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true,
+            "show_text_below": true,
+            "heading": "",
+            "heading_size": "medium",
+            "text": "",
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify:\/\/collections\/high5dogs",
+            "button_style_secondary_1": false,
+            "btn_bg_color": "#ffffff",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
         "4eb85f4a-298e-4700-bc92-339f46f1932f": {
           "type": "heading",
           "settings": {
@@ -89,42 +118,13 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "6487ae94-099f-4418-b69d-16dbd23fec1d": {
-          "type": "heading",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Desktop.jpg",
-            "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile.jpg",
-            "image_height": "large",
-            "two_col_banner": false,
-            "desktop_text_box_position": "flex-end",
-            "banner_content": false,
-            "show_text_box": false,
-            "image_overlay_opacity": 0,
-            "bg_color": "",
-            "banner_head_text_color": "",
-            "banner_paragrapgh_text_color": "",
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true,
-            "show_text_below": true,
-            "heading": "",
-            "heading_size": "medium",
-            "text": "",
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify:\/\/collections\/high5dogs",
-            "button_style_secondary_1": false,
-            "btn_bg_color": "#ffffff",
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
+        "6487ae94-099f-4418-b69d-16dbd23fec1d",
         "4eb85f4a-298e-4700-bc92-339f46f1932f",
         "3cbe7d2c-90b1-4bed-8434-a2112240a512",
-        "8085e367-ca9c-4750-a2ca-6476a15bd6c9",
-        "6487ae94-099f-4418-b69d-16dbd23fec1d"
+        "8085e367-ca9c-4750-a2ca-6476a15bd6c9"
       ],
       "settings": {
         "showpagination": true,
