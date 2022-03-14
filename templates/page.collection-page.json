@@ -3,16 +3,28 @@
     "mainCollectioPage": {
       "type": "main-collection-page",
       "blocks": {
+        "43975c5b-def8-4b65-b243-4d2535dd7b2b": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "trending"
+          }
+        },
+        "c08e62b6-eb11-4d86-9784-e3595fa67efb": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "new-arrivals"
+          }
+        },
         "7c0b558b-7c37-4a5a-8a8e-aadddf831994": {
           "type": "link_list",
           "settings": {
             "main_link_list": "dog-food"
           }
         },
-        "2f363a43-b55b-436a-9adc-8deacf1882d0": {
+        "2e04c78a-5e9d-4c79-990e-575f8c6172ea": {
           "type": "link_list",
           "settings": {
-            "main_link_list": "food-treats"
+            "main_link_list": "dog-treats"
           }
         },
         "7c970b5b-c885-494b-a079-972908be1ffb": {
@@ -20,12 +32,49 @@
           "settings": {
             "main_link_list": "health-care"
           }
+        },
+        "9361bf60-bf6b-4c42-9886-eebdc48e3d8a": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-grooming"
+          }
+        },
+        "6844dedd-48d0-4362-93b4-47f538464087": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-cleaning"
+          }
+        },
+        "36226e53-010e-483c-bb38-93c24a6516b3": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-toys"
+          }
+        },
+        "8a71c3e5-192f-403d-8c7d-5ed8750f3be7": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-at-home"
+          }
+        },
+        "2f363a43-b55b-436a-9adc-8deacf1882d0": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-supplies"
+          }
         }
       },
       "block_order": [
+        "43975c5b-def8-4b65-b243-4d2535dd7b2b",
+        "c08e62b6-eb11-4d86-9784-e3595fa67efb",
         "7c0b558b-7c37-4a5a-8a8e-aadddf831994",
-        "2f363a43-b55b-436a-9adc-8deacf1882d0",
-        "7c970b5b-c885-494b-a079-972908be1ffb"
+        "2e04c78a-5e9d-4c79-990e-575f8c6172ea",
+        "7c970b5b-c885-494b-a079-972908be1ffb",
+        "9361bf60-bf6b-4c42-9886-eebdc48e3d8a",
+        "6844dedd-48d0-4362-93b4-47f538464087",
+        "36226e53-010e-483c-bb38-93c24a6516b3",
+        "8a71c3e5-192f-403d-8c7d-5ed8750f3be7",
+        "2f363a43-b55b-436a-9adc-8deacf1882d0"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/PetPage_01_TopBanner_Dog_Desktop.jpg",
