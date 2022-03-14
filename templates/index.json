@@ -165,11 +165,11 @@
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "What's In Store",
-        "col_title1": "",
-        "collection": "new-arrivals",
-        "col_title2": "",
-        "collection2": "dog-best-sellers",
+        "title": "New Arrivals",
+        "col_title1": "For Dogs",
+        "collection": "now-online-dog",
+        "col_title2": "For Cats",
+        "collection2": "now-online-cat",
         "products_to_show": 12,
         "show_view_all": false,
         "image_ratio": "square",
