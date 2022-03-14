@@ -252,6 +252,58 @@
         "slider": false
       }
     },
+    "16393866196725b26b": {
+      "type": "collage",
+      "blocks": {
+        "163938661982f1051c-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/AdoptionPage_CoverImage-08.jpg",
+            "video_url": "https:\/\/youtu.be\/s4Y58B5TwA8",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "163938661982f1051c-0"
+      ],
+      "settings": {
+        "heading": "",
+        "text_align": "center",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "top_padding": 65,
+        "bottom_padding": 10
+      }
+    },
+    "164725286058b08cc2": {
+      "type": "rich-text",
+      "blocks": {
+        "164725286005f9bbb3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHISKERS N PAWS ADOPTION SPACE",
+            "heading_size": "h2"
+          }
+        },
+        "164725286005f9bbb3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adoption 7 days a week. This dedicated space is for pets to meet & greet their new families.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164725286005f9bbb3-0",
+        "164725286005f9bbb3-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "16393863577a5ae4a0": {
       "type": "collage",
       "blocks": {
@@ -292,31 +344,6 @@
         "mobile_layout": "collage",
         "top_padding": 24,
         "bottom_padding": 65
-      }
-    },
-    "16393866196725b26b": {
-      "type": "collage",
-      "blocks": {
-        "163938661982f1051c-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/AdoptionPage_CoverImage-08.jpg",
-            "video_url": "https:\/\/youtu.be\/s4Y58B5TwA8",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        }
-      },
-      "block_order": [
-        "163938661982f1051c-0"
-      ],
-      "settings": {
-        "heading": "Whiskers N Paws adoption space",
-        "text_align": "center",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "top_padding": 65,
-        "bottom_padding": 10
       }
     },
     "163938668074ea1a46": {
@@ -572,8 +599,9 @@
     "163939206952b859af",
     "16393858930aa1f067",
     "1639385897b8a7a6a9",
-    "16393863577a5ae4a0",
     "16393866196725b26b",
+    "164725286058b08cc2",
+    "16393863577a5ae4a0",
     "163938668074ea1a46",
     "1647251120363e296b",
     "16472513866f0711a0",
