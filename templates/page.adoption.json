@@ -88,6 +88,33 @@
         "slider": false
       }
     },
+    "16472521240893611c": {
+      "type": "rich-text",
+      "blocks": {
+        "1647252124a861cb25-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "#EVERYDAYISADOPTIONDAY",
+            "heading_size": "h2"
+          }
+        },
+        "1647252124a861cb25-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@ WHISKERSNPAWS<br\/><\/p><p><\/p><p><strong>CHECKOUT OUR CURRENT RESIDENTS<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647252124a861cb25-0",
+        "1647252124a861cb25-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "1639385432343a7373": {
       "type": "featured-blog",
       "settings": {
@@ -518,6 +545,7 @@
     "16384259656000056e",
     "1638426342c59892bd",
     "163886166197cb2a7e",
+    "16472521240893611c",
     "1639385432343a7373",
     "163939206952b859af",
     "main",
