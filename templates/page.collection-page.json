@@ -3,6 +3,12 @@
     "mainCollectioPage": {
       "type": "main-collection-page",
       "blocks": {
+        "7c0b558b-7c37-4a5a-8a8e-aadddf831994": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "dog-food"
+          }
+        },
         "2f363a43-b55b-436a-9adc-8deacf1882d0": {
           "type": "link_list",
           "settings": {
@@ -17,6 +23,7 @@
         }
       },
       "block_order": [
+        "7c0b558b-7c37-4a5a-8a8e-aadddf831994",
         "2f363a43-b55b-436a-9adc-8deacf1882d0",
         "7c970b5b-c885-494b-a079-972908be1ffb"
       ],
