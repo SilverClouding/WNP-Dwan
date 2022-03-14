@@ -456,6 +456,51 @@
         "title_font_size": 19,
         "sec_class": ""
       }
+    },
+    "1647251120363e296b": {
+      "type": "rich-text",
+      "blocks": {
+        "16472511190827e217-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WNP ADOPTION PROGRAMME",
+            "heading_size": "h2"
+          }
+        },
+        "16472511190827e217-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>CHERISH EVERY MOMENT WITH YOU<\/p>"
+          }
+        },
+        "16472511190827e217-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16472511190827e217-0",
+        "16472511190827e217-1",
+        "16472511190827e217-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
+    "16472513866f0711a0": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<p style=\"text-align:center;\"><img alt=\"\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0201\/6988\/3748\/files\/World_Animal_Day-Web-Kona-White-18_480x480.jpg?v=1632910750\">  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0201\/6988\/3748\/files\/World_Animal_Day-Web-white_Lai_Cha_Dong_Yueng-_card_480x480.jpg?v=1632910791\" alt=\"\" data-mce-fragment=\"1\" data-mce-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0201\/6988\/3748\/files\/World_Animal_Day-Web-white_Lai_Cha_Dong_Yueng-_card_480x480.jpg?v=1632910791\">  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0201\/6988\/3748\/files\/World_Animal_Day-Web-white_Milk_-_card_480x480.jpg?v=1632910832\" alt=\"\" data-mce-fragment=\"1\" data-mce-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0201\/6988\/3748\/files\/World_Animal_Day-Web-white_Milk_-_card_480x480.jpg?v=1632910832\"><\/p>",
+        "color_scheme": "background-1",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -472,6 +517,8 @@
     "163938668074ea1a46",
     "163938824283985989",
     "1639388359b939a1e1",
-    "16395772189326842d"
+    "16395772189326842d",
+    "1647251120363e296b",
+    "16472513866f0711a0"
   ]
 }
