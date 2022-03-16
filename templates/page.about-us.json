@@ -155,6 +155,26 @@
         "sec_class": "custom-multi-icon"
       }
     },
+    "16474205503fe3f504": {
+      "type": "rich-text",
+      "blocks": {
+        "16474205501bc59ec0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR DREAM ...IS TO CONNECT MILLIONS OF PEOPLE THROUGH THE LOVE OF ANIMALS IN HONG KONG AND BEYOND!",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "16474205501bc59ec0-0"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "1638442037a72cd96a": {
       "type": "rich-text",
       "blocks": {
@@ -162,7 +182,7 @@
           "type": "heading",
           "settings": {
             "heading": "We work as a team to unite likeminded people to leave a positive paw print in places we go and people we encounter.",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "1638442037250169f1-1": {
@@ -177,7 +197,7 @@
         "1638442037250169f1-1"
       ],
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "full_width": true,
         "sec_class": "team-con"
       }
@@ -300,7 +320,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AboutUs_05_ColumnImages-13.jpg",
             "title": "",
-            "text": "<p><strong>“Be the person your dog thinks you are”<\/strong> is the motto we bring into work everyday.<\/p>"
+            "text": "<p><strong>Be the person your dog thinks you are<\/strong> is the motto we bring into work everyday.<\/p>"
           }
         },
         "16396596689bdc6722-1": {
@@ -308,7 +328,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AboutUs_05_ColumnImages-12_6b806196-690f-4e9f-87fb-02053cd39a8b.jpg",
             "title": "",
-            "text": "<p><strong>“Always show those who love you how excited we are to see them”<\/strong> is how we treat each other and <br\/>our friends<\/p>"
+            "text": "<p><strong>Always show those who love you how excited we are to see them<\/strong> is how we treat each other and <br\/>our friends<\/p>"
           }
         },
         "16396596689bdc6722-2": {
@@ -316,7 +336,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AboutUs_05_ColumnImages-14.jpg",
             "title": "",
-            "text": "<p><strong>“Walk away if you can’t chew it, eat it or pee on it”<\/strong> is how we make every problem work for us.<br\/><br\/><strong>“We have 9 lives’<\/strong> and we aren’t afraid of to try new things.<\/p>"
+            "text": "<p><strong>Walk away if you can’t chew it, eat it or pee on it<\/strong> is how we make every problem work for us.<br\/><br\/><strong>We have 9 lives<\/strong> and we aren’t afraid of to try new things.<\/p>"
           }
         },
         "16507dec-6531-4600-95de-90b21943b32c": {
@@ -324,7 +344,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AboutUs_05_ColumnImages-11.jpg",
             "title": "",
-            "text": "<p><strong>“Live with a pure heart and act with integrity” <\/strong>is our approach to every decision about our product choices and the things we do.<\/p>"
+            "text": "<p><strong>Live with a pure heart and act with integrity <\/strong>is our approach to every decision about our product choices and the things we do.<\/p>"
           }
         }
       },
@@ -361,6 +381,7 @@
     "16384269895954df72",
     "16384414226ce52222",
     "1647420245338ce4dd",
+    "16474205503fe3f504",
     "1638442037a72cd96a",
     "1639658963cbfe40f4",
     "1638447520c7d2c592",
