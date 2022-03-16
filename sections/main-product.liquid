@@ -559,7 +559,7 @@
                      	 Out of stock
                       {% endif %}
                     {% else %}
-                    Out of stock 1={{qty}}
+                    Out of stock {{product.selected_or_first_available_variant.inventory_quantity}}=:={{qty}}
                     {% endif %}
                   </h3>  
                   
