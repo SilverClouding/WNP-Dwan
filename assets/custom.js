@@ -818,3 +818,6 @@ if(breadcrumbObject.template == "collection"){
     document.querySelector(".hide_collection_breadcrumb").style.display = "inline-block";
  
 }
+
+
+ document.querySelector("[option_index='1'].swatch-element").click();
