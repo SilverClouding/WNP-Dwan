@@ -71,28 +71,28 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
    {% endcomment %}
   
    <div class="accordion-for-mobile">
- {% if data.tab_1_title != blank and data.tab_1_content != blank %}
+     {% if data.tab_1_title != blank and data.tab_1_content != blank %}
      <div class="product__accordion accordion top" {{ block.shopify_attributes }}>
        <details> <summary> <div class="summary__title"> <h2 class="h4 accordion__title">{{data.tab_1_title}}</h2> </div> {% render 'icon-caret' %}  </summary>
          <div title="{{product.title}}" class="accordion__content rte">{% if block.settings.show_desc %} {{product.description}} {% else %}{{data.tab_1_content}}{% endif %}</div>
        </details>
      </div>
      {% endif %}
- {% if data.tab_2_title != blank and data.tab_2_content != blank %}
+     {% if data.tab_2_title != blank and data.tab_2_content != blank %}
      <div class="product__accordion accordion top" {{ block.shopify_attributes }}>
        <details> <summary> <div class="summary__title"> <h2 class="h4 accordion__title">{{data.tab_2_title}}</h2> </div> {% render 'icon-caret' %}  </summary>
          <div title="{{product.title}}" class="accordion__content rte">{% if block.settings.show_desc %} {{product.description}} {% else %}{{data.tab_2_content}}{% endif %}</div>
        </details>
      </div>
      {% endif %}
- {% if data.tab_3_title != blank and data.tab_3_content != blank %}
+     {% if data.tab_3_title != blank and data.tab_3_content != blank %}
      <div class="product__accordion accordion top" {{ block.shopify_attributes }}>
        <details> <summary> <div class="summary__title"> <h2 class="h4 accordion__title">{{data.tab_3_title}}</h2> </div> {% render 'icon-caret' %}  </summary>
          <div title="{{product.title}}" class="accordion__content rte">{% if block.settings.show_desc %} {{product.description}} {% else %}{{data.tab_3_content}}{% endif %}</div>
        </details>
      </div>
      {% endif %}
- {% if data.tab_4_title != blank and data.tab_4_content != blank %}
+     {% if data.tab_4_title != blank and data.tab_4_content != blank %}
      <div class="product__accordion accordion top" {{ block.shopify_attributes }}>
        <details> <summary> <div class="summary__title"> <h2 class="h4 accordion__title">{{data.tab_4_title}}</h2> </div> {% render 'icon-caret' %}  </summary>
          <div title="{{product.title}}" class="accordion__content rte">{% if block.settings.show_desc %} {{product.description}} {% else %}{{data.tab_4_content}}{% endif %}</div>
