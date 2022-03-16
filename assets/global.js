@@ -694,7 +694,7 @@ class VariantSelects extends HTMLElement {
 //           console.log("ok");
           stockmsg.innerHTML="In Stock";   
         }
-        else if(inventoryQty <= 10 && inventoryQty > 0 && inventoryQty > minQty ){
+        else if(inventoryQty <= 10 && inventoryQty > 0 && inventoryQty >= minQty ){
           stockmsg.innerHTML="Low in stock";
         }
         else{
