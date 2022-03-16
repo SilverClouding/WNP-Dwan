@@ -652,8 +652,8 @@ class VariantSelects extends HTMLElement {
         
         if(data_option2Array &&  fieldsets[1] ){
           var triggerOption2 = data_option2Array[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
-          fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
-//           option_index="1"
+//           fieldsets[1].querySelector(".option2_for_below_input .input-"+triggerOption2).click(); 
+          document.querySelector("[option_index='1']").click();
         }
         
         if(data_option3Array &&  fieldsets[2] ){
