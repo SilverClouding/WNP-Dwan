@@ -331,13 +331,7 @@
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
-                {% assign qty = 0 %} 
-                {% for tag in product.tags %}
-                {% if tag contains 'min-qty:' %}
-                {% assign qty = tag | split:":" | last | plus:0 %}
-                {% endif %}
-                {% endfor %}
-                
+               
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
