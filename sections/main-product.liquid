@@ -551,15 +551,15 @@
                   
                   <h3 id="stockmsg" class="stockmsg">
                     {% if product.selected_or_first_available_variant.inventory_quantity > qty %}
-                    {% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}
-                    In stock 
-                    {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}
-                    Low in stock
+                      {% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}
+                     	 In stock 
+                      {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}
+                     	 Low in stock
+                      {% else %}
+                     	 Out of stock
+                      {% endif %}
                     {% else %}
-                    Out of stock
-                    {% endif %}
-                    {% else %}
-                    Out of stock
+                    Out of stock 1
                     {% endif %}
                   </h3>  
                   
