@@ -90,35 +90,11 @@
             "title": "",
             "text": "<p><strong>1800+<\/strong> Puppies<br\/><strong>900+<\/strong><br\/>Cats homed.<\/p>"
           }
-        },
-        "0788f1b8-b49d-4817-96d9-291f6e06fa04": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>2+ FOOTBALL FIELDS IN SIZE OF MEALS AND SUPPLIES <\/strong>donated to<br\/>shelters across HK.<\/p>"
-          }
-        },
-        "5530aa1a-edb1-401f-8ac5-42fbfc897aa6": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>EVERY DAY ISADOPTION DAY<br\/><\/strong>@ Whiskers N Paws.<\/p>"
-          }
-        },
-        "5f7255d5-9073-43e7-ba53-56fb2a0962ce": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>All proceeds from our<br\/>self-dog wash goes<br\/><strong>BACK TO THE COMMUNITY<\/strong><\/p>"
-          }
         }
       },
       "block_order": [
         "16384414225707b0ab-1",
-        "16384414225707b0ab-2",
-        "0788f1b8-b49d-4817-96d9-291f6e06fa04",
-        "5530aa1a-edb1-401f-8ac5-42fbfc897aa6",
-        "5f7255d5-9073-43e7-ba53-56fb2a0962ce"
+        "16384414225707b0ab-2"
       ],
       "settings": {
         "title": "",
@@ -126,6 +102,52 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "sec_class": "custom-multi-icon"
+      }
+    },
+    "1647420245338ce4dd": {
+      "type": "multicolumn",
+      "blocks": {
+        "16474202457b6e6a3e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Asset_25.png",
+            "title": "",
+            "text": "<p><strong>2+ FOOTBALL FIELDS IN SIZE OF MEALS AND SUPPLIES <\/strong>donated to<br\/>shelters across HK.<\/p>"
+          }
+        },
+        "16474202457b6e6a3e-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Asset_25.png",
+            "title": "",
+            "text": "<p><strong>EVERY DAY ISADOPTION DAY<br\/><\/strong>@ Whiskers N Paws.<\/p>"
+          }
+        },
+        "16474202457b6e6a3e-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Asset_25.png",
+            "title": "",
+            "text": "<p>All proceeds from our<br\/>self-dog wash goes<br\/><strong>BACK TO THE COMMUNITY<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16474202457b6e6a3e-0",
+        "16474202457b6e6a3e-1",
+        "16474202457b6e6a3e-2"
+      ],
+      "settings": {
+        "title": "",
+        "section_width": 50,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
@@ -338,6 +360,7 @@
     "1638426342c59892bd",
     "16384269895954df72",
     "16384414226ce52222",
+    "1647420245338ce4dd",
     "1638442037a72cd96a",
     "1639658963cbfe40f4",
     "1638447520c7d2c592",
