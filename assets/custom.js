@@ -820,4 +820,4 @@ if(breadcrumbObject.template == "collection"){
 }
 
 
- document.querySelector("[option_index='1'].swatch-element").click();
+//  document.querySelector("[option_index='1'].swatch-element").click();
