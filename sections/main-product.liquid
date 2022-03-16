@@ -550,7 +550,7 @@
                                 class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   
                   <h3 id="stockmsg" class="stockmsg">
-                    {% if product.selected_or_first_available_variant.inventory_quantity >= qty %}
+                    {% if product.selected_or_first_available_variant.inventory_quantity > qty %}
                       {% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}
                      	 In stock 
                       {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}
@@ -559,7 +559,7 @@
                      	 Out of stock
                       {% endif %}
                     {% else %}
-                    Out of stock {{product.selected_or_first_available_variant.inventory_quantity}}=:={{qty}}
+                    Out of stock 
                     {% endif %}
                   </h3>  
                   
