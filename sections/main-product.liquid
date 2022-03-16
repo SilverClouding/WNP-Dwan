@@ -341,7 +341,11 @@
                     type="text"
                     name="quantity"
                     id="Quantity-{{ section.id }}"
+                       {% if minTag %}
                     min="{{qty}}"
+                       {% else %}
+                       min="1"
+                       {% endif %}
                     value="{{qty}}"
                     form="{{ product_form_id }}"
                   >
