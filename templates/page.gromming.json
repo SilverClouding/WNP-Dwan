@@ -404,6 +404,65 @@
         "title_font_size": 35,
         "sec_class": ""
       }
+    },
+    "1647415773ec3e2f1f": {
+      "type": "faq",
+      "blocks": {
+        "5bdc6c2e-c15c-452f-9bf4-2653f8079647": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How much does grooming cost?",
+            "content": "<p>Grooming costs depend on the type & size of breed. Please contact our pet care team at <a href=\"mailto:customercare@wnp.com.hk\" title=\"mailto:customercare@wnp.com.hk\">customercare@wnp.com.hk<\/a> with <a href=\"\/pages\/grooming-service\" title=\"Grooming Service\">contact form<\/a> or give us a call on 2552 6200 and we will be able to help you with your enquiry. Please allow at least 1 week for advanced booking, so that we can give your furry friend the one-on-one attention they deserve.<\/p>"
+          }
+        },
+        "322af67f-8bf5-468c-a014-812101fed88d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What services are included in grooming?",
+            "content": "<p>We provide both Mini-Groom & Full-Groom to suit your preferences. You can find further details on what is included on our <a href=\"\/pages\/grooming\" title=\"Grooming\">Grooming page<\/a> to choose which service is best for your pooch.<\/p>"
+          }
+        },
+        "cb365cd5-cedc-47b0-bc4e-0e6a25fde493": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I book a grooming session?",
+            "content": "<p>Give us a call on 2552 6200 or visit our <a href=\"\/pages\/grooming\" title=\"Grooming\">Grooming Services<\/a> page to make a grooming appointment for your dog. Because we believe that the grooming experience should be as happy and fun as possible for your pet, we do not accept a great number of appointments each day. This means that your pet is given gentle, individual attention so that he\/she does not feel rushed or anxious. Please call us one week in advance to make sure we have your preferred time slot.<\/p>"
+          }
+        },
+        "c0df09b5-5fc0-44e6-afe3-8f5b565a3ae0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How long does a grooming session take?",
+            "content": "<p>As a general rule of thumb, we need 1.5 - 2 hours to groom a small dog, 2 - 3 hours for a medium dog and up to 3.5 - 4 hours for a large dog. Bear in mind that a puppy, senior and first time dog may require more time because extra TLC is needed. Please let us know if your pet falls into these categories at the time of booking so that we can make plans to ensure that these special visitors feel extra comfortable.<\/p>"
+          }
+        },
+        "914b9ecc-5d91-4f63-9975-9fc7ba4286ab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How often does my dog need grooming?",
+            "content": "<p>This depends on the type of breed you have and the type of coat. Regular grooming can be done about once a month, but if your pet also has long nails and their fur is matted, we recommend your pet to go in for a grooming session. You can choose from a Mini-Groom or Full-Groom. Find further details on what services are included for each on our <a href=\"\/pages\/grooming\" title=\"Grooming\">Grooming page<\/a>. Your pet will also need to empty their anal gland from time to time to prevent discomfort.<\/p>"
+          }
+        },
+        "d5485329-7a15-4836-917f-05a607c66e10": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I know when to excrete the anal gland of my dog?",
+            "content": "<p>To avoid discomfort, we recommend anal glands to be emptied on a regular basis. The frequency can differ between individual dogs. Signs to notice are if you dog sits down a lot or is dragging it bottom along the floor due to the weight. Our professional groomers will check your pet during grooming. Anal gland expressing is included for both <a href=\"\/pages\/grooming\" title=\"Grooming\">Mini Groom and Full Groom Services<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5bdc6c2e-c15c-452f-9bf4-2653f8079647",
+        "322af67f-8bf5-468c-a014-812101fed88d",
+        "cb365cd5-cedc-47b0-bc4e-0e6a25fde493",
+        "c0df09b5-5fc0-44e6-afe3-8f5b565a3ae0",
+        "914b9ecc-5d91-4f63-9975-9fc7ba4286ab",
+        "d5485329-7a15-4836-917f-05a607c66e10"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions - Grooming",
+        "section_width": 100
+      }
     }
   },
   "order": [
@@ -414,6 +473,7 @@
     "1638957600d7b2d304",
     "1638442037a72cd96a",
     "main",
-    "16388773760b7fb856"
+    "16388773760b7fb856",
+    "1647415773ec3e2f1f"
   ]
 }
