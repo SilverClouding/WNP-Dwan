@@ -420,22 +420,36 @@
         "d14c7f59-3e37-44b0-b3a4-67ab7c63e073": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "content": ""
+            "heading": "How much is self-dog wash?",
+            "content": "<p>Because our self-dog wash station is a community space for animal lovers to share and use, we ask for a $100 donation for each use. Donations are contributed back to the Whiskers N Paws community to continue supporting you.<\/p>"
           }
         },
         "114039d8-f38d-4d34-b258-a065575b4032": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "content": ""
+            "heading": "Can I walk in? Do I need to make an appointment?",
+            "content": "<p>Walk-ins are accepted subject to availability at the time. We recommend advance booking through our <a href=\"\/collections\/self-dog-wash\" title=\"Self-Dog-Wash\">website<\/a> or contact with our customer care team :<a href=\"mailto:customercare@wnp.com.hk\">customercare@wnp.com.hk<\/a> \/ 2552 6200 to secure your spot.<\/p>"
           }
         },
         "6d52215d-6e30-4d87-b0a1-8d0258875ff4": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "content": ""
+            "heading": "How do I use the self-dog wash service?",
+            "content": "<p>Self-dog wash is a specialised area for pet parents to be able to clean their dogs. A spacious tub is provided to allow for plenty of wiggle room for your furry friend while you lather then down. Professional salon-grade hairdryer is provided.<\/p>"
+          }
+        },
+        "e0050137-ccfb-495e-bbb6-2414ee9db2d0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How many dogs can be washed at the self-dog wash station?",
+            "content": "<p>We have 1 self-dog wash station fitted with 2 bath tubs. Only 1 dog can be washed per bath tub at a time.<\/p>"
+          }
+        },
+        "4561f96c-14b8-43e3-a196-97c274ea398c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Do you provide towels?",
+            "content": "<p>Feel free to bring your own towel. Alternatively, Whiskers N Paws towels are available for purchase behind the cashier & <a href=\"https:\/\/www.wnp.com.hk\/pages\/search-results-page?q=towel\" title=\"https:\/\/www.wnp.com.hk\/pages\/search-results-page?q=towel\">online store<\/a>.<\/p>"
           }
         }
       },
@@ -443,7 +457,9 @@
         "afd3ef73-218b-4595-9ca9-187340e743ac",
         "d14c7f59-3e37-44b0-b3a4-67ab7c63e073",
         "114039d8-f38d-4d34-b258-a065575b4032",
-        "6d52215d-6e30-4d87-b0a1-8d0258875ff4"
+        "6d52215d-6e30-4d87-b0a1-8d0258875ff4",
+        "e0050137-ccfb-495e-bbb6-2414ee9db2d0",
+        "4561f96c-14b8-43e3-a196-97c274ea398c"
       ],
       "settings": {
         "title": "Frequently Asked Question - Self-Dog Wash",
