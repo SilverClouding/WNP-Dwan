@@ -214,7 +214,7 @@
     "163903484555fca6d9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>A FLAT FEE FOR ALL PAWS, BIG OR SMALL!<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\"><strong><u>SIZE OF DOG<\/u><\/strong><\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\"><strong><u>DURATION<\/u><\/strong><\/span>\n<strong><u>PRICE<\/u><\/strong><\/div><\/div>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>A flat fee for all paws, big or small!<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\"><strong><u>SIZE OF DOG<\/u><\/strong><\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\"><strong><u>DURATION<\/u><\/strong><\/span>\n<strong><u>PRICE<\/u><\/strong><\/div><\/div>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "full_width": true
       }
@@ -225,14 +225,14 @@
         "1638442037250169f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "Operating Hours",
-            "heading_size": "h1"
+            "heading": "Self-Dog Wash service hours:",
+            "heading_size": "h3"
           }
         },
         "1638442037250169f1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Monday - Friday 10AM - 6PM<br\/>Weekends & Public Holiday  10AM - 7PM<\/p>"
+            "text": "<p>Monday - Friday 10AM - 5PM<br\/>Weekends & Public Holiday  10AM - 6PM<\/p>"
           }
         },
         "7fe12759-4b59-4100-ad9a-e2001c0e1f69": {
@@ -308,7 +308,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/unit.png",
-            "title": "Self contained unit",
+            "title": "Full self-contained unit",
             "link": ""
           }
         },
@@ -406,6 +406,49 @@
         "full_width": true,
         "sec_class": "get-the-best"
       }
+    },
+    "164741526284f7f29f": {
+      "type": "faq",
+      "blocks": {
+        "afd3ef73-218b-4595-9ca9-187340e743ac": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What is a self-dog wash?",
+            "content": "<p><a href=\"\/collections\/self-dog-wash\" title=\"Self-Dog-Wash\">Self-dog wash <\/a>is a dedicated area in-store created for pet parents to be able to clean their dogs in a comfortable space with plenty of wiggle room. A professional hair dryer is provided to dry-off your furry friend. You will find a comfortably sized bathtub to fit dogs of all sizes into and a railing to attach a leash to for extra safety.<\/p>"
+          }
+        },
+        "d14c7f59-3e37-44b0-b3a4-67ab7c63e073": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": ""
+          }
+        },
+        "114039d8-f38d-4d34-b258-a065575b4032": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": ""
+          }
+        },
+        "6d52215d-6e30-4d87-b0a1-8d0258875ff4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "afd3ef73-218b-4595-9ca9-187340e743ac",
+        "d14c7f59-3e37-44b0-b3a4-67ab7c63e073",
+        "114039d8-f38d-4d34-b258-a065575b4032",
+        "6d52215d-6e30-4d87-b0a1-8d0258875ff4"
+      ],
+      "settings": {
+        "title": "Frequently Asked Question - Self-Dog Wash",
+        "section_width": 100
+      }
     }
   },
   "order": [
@@ -423,6 +466,7 @@
     "16388773760b7fb856",
     "1639042835bcbec2f1",
     "163905749726fb2691",
-    "1639055992aadcf97f"
+    "1639055992aadcf97f",
+    "164741526284f7f29f"
   ]
 }
