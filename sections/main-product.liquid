@@ -550,7 +550,7 @@
                                 {% endfor %} 
                                 class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   
-                  <h3 id="stockmsg" class="stockmsg" firstvarQty="{{product.variant[0].inventory_quantity }}">
+                  <h3 id="stockmsg" class="stockmsg" firstvarQty=" {% for var in product.variants %}{% if forloop.first%}{{ var.inventory_quantity}}{% endif %}{% endfor %}">
                     {% if product.selected_or_first_available_variant.inventory_quantity > qty %}
                       {% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}
                      	 In stock 
