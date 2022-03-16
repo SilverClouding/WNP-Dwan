@@ -128,7 +128,7 @@
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together. No more furry bathrooms to tidy up at home.<\/p>"
+            "text": "<p>A comfortable space for your furry friend to get clean and smell great. Give your dog the gift of quality time together. <\/p><p><\/p><p>No more furry bathrooms to tidy up at home.<\/p>"
           }
         },
         "1d025c24-b599-46a5-b80a-4250f397d7c5": {
@@ -194,7 +194,7 @@
     "163903484555fca6d9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>Size of Dog<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"dog-size-con\">\n<h3>A FLAT FEE FOR ALL PAWS, BIG OR SMALL!<\/h3>\n<div class=\"size-row\">\n<div class=\"size-kg\"><strong><u>SIZE OF DOG<\/u><\/strong><\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\"><strong><u>DURATION<\/u><\/strong><\/span>\n<strong><u>PRICE<\/u><\/strong><\/div><\/div>\n<div class=\"size-row\">\n<div class=\"size-kg\">Small (up to 7kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">50 mins<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Medium (Up to 15kg)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">1.5 hour<\/span>\nHK$100* per dog <\/div><\/div>\n<div class=\"size-row\"><div class=\"size-kg\">Large (15kg onwards)<\/div> <div class=\"size-row-inner\"> <span class=\"minutes-t\">2 hours<\/span>\nHK$100* per dog <\/div><\/div>\n\n<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "full_width": true
       }
