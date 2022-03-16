@@ -331,7 +331,7 @@
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
-                {% assign qty = 1 %} 
+                {% assign qty = 0 %} 
                 {% for tag in product.tags %}
                 {% if tag contains 'min-qty:' %}
                 {% assign qty = tag | split:":" | last | plus:0 %}
