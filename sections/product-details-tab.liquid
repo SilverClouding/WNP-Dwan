@@ -12,7 +12,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
    {% comment %} {% endcomment %}
    {% assign data = product.metafields.my_fields.product_info.value %}
    
-   {{data.size}}
+   {% if data.size > 0 %}
    <div class="tab-for-desktop">
      <div class="tab-customize">
        {% if data.tab_1_title != blank and data.tab_1_content != blank %}
@@ -41,7 +41,7 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
      <div id="tab-4" class="tabcontent-cus ingredients">{{data.tab_4_content}}</div>
      {% endif %}
    </div>
-  
+  {% endif %}
    
 <div class="tab-for-desktop">
   <div class="tab-customize">
