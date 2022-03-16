@@ -38,16 +38,44 @@
           "settings": {
             "main_link_list": "our-services"
           }
+        },
+        "eb291e74-4d19-4e19-82df-c048ff8b25f5": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>COMMUNITY SPACE<\/strong><\/p>"
+          }
         }
       },
       "block_order": [
         "4e1a4225-f7e2-4f44-b6aa-6e1c46c86dfc",
-        "6d823805-e8c4-40be-88da-e2ae637e44bc"
+        "6d823805-e8c4-40be-88da-e2ae637e44bc",
+        "eb291e74-4d19-4e19-82df-c048ff8b25f5"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
         "sec_class": "cust-menubar"
+      }
+    },
+    "1647413848ba526a6c": {
+      "type": "rich-text",
+      "blocks": {
+        "164741384836115b1c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Community Space",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "164741384836115b1c-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
       }
     },
     "163896747815618038": {
@@ -58,7 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/dog_1.png",
             "title": "",
-            "text": "<p><strong>Over 1365 dogs tried self dog was since 2017<\/strong><\/p>"
+            "text": "<p><strong>Over 3,987 DOGS<br\/>TRIED SELF DOG WASH<br\/>SINCE 2018<\/strong><\/p>"
           }
         },
         "163896747886605c55-1": {
@@ -66,7 +94,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/support_1.png",
             "title": "",
-            "text": "<p><strong>100% proceeds go towards our community work! <\/strong><\/p>"
+            "text": "<p><strong>100%<br\/>PROCEEDS GO TOWARDS<br\/>OUR COMMUNITY WORK!<\/strong><\/p>"
           }
         }
       },
@@ -364,6 +392,7 @@
     "16384259656000056e",
     "main",
     "1639036736f746daec",
+    "1647413848ba526a6c",
     "163896747815618038",
     "1638426342c59892bd",
     "16389683664bc495b8",
