@@ -827,4 +827,5 @@ var url = window.location.href;
 
 function getPathFromUrl(url) {
   return url.split("?")[0];
+  window.location.replace(url);
 }
