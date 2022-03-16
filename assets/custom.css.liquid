@@ -1,15 +1,29 @@
 /* font family Comfortaa for email template */
-/*  @font-face {
+  @font-face {
     font-family: 'Comfortaa';
-    src: url('Comfortaa-Regular.eot');
-    src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Comfortaa-Regular.woff2') format('woff2'),
-        url('Comfortaa-Regular.woff') format('woff'),
-        url('Comfortaa-Regular.ttf') format('truetype');
+    src: url({{ 'Comfortaa-Regular.eot' | asset_url }});
+    src: url({{'Comfortaa-Regular.eot?#iefix' | asset_url}}) format('embedded-opentype'),
+        url({{ 'Comfortaa-Regular.woff2' | asset_url }}) format('woff2'),
+        url({{ 'Comfortaa-Regular.woff' | asset_url }}) format('woff'),
+        url({{ 'Comfortaa-Regular.ttf' | asset_url }}) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}  */
+}  
+
+/* for email templete font family */
+/* @font-face {
+    font-family: 'Mr Dodo';
+    src: url({{ 'MrDodo-Regular.eot' | asset_url }});
+    src: url({{'MrDodo-Regular.eot?#iefix' | asset_url}}) format('embedded-opentype'),
+        url({{ 'MrDodo-Regular.woff2' | asset_url }}) format('woff2'),
+        url({{ 'MrDodo-Regular.woff' | asset_url }}) format('woff'),
+        url({{ 'MrDodo-Regular.ttf' | asset_url }}) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Text:ital@0;1&family=Oswald&family=Work+Sans&display=swap');
 @font-face {
     font-family: 'Mr Dodo';
@@ -33,20 +47,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-/* for email templete font family */
-/* @font-face {
-    font-family: 'Mr Dodo';
-    src: url({{ 'MrDodo-Regular.eot' | asset_url }});
-    src: url({{'MrDodo-Regular.eot?#iefix' | asset_url}}) format('embedded-opentype'),
-        url({{ 'MrDodo-Regular.woff2' | asset_url }}) format('woff2'),
-        url({{ 'MrDodo-Regular.woff' | asset_url }}) format('woff'),
-        url({{ 'MrDodo-Regular.ttf' | asset_url }}) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-} */
-
 
 body{ 
   font-family: 'Comfortaa', cursive;
