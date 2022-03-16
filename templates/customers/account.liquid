@@ -75,9 +75,13 @@
           <div headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
             {{ order.total_price | money_with_currency }}</div>
 
-          {% comment %}{% endcomment %}   <div headers="RowOrder" class="re_order {% if allOutOfStock %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
+          {% comment %}
+          <div headers="RowOrder" class="re_order {% if allOutOfStock %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
+          {% endcomment %}   
+          <div headers="RowOrder" class="re_order {% if flag %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
         </div>
         
+        {% comment %}
         {% if flag %}
         <div class="reorder-outofstock-items">
           {%- for line_item in order.line_items -%}
@@ -91,6 +95,7 @@
           {%- endfor -%}
         </div>
         {% endif %}
+        {% endcomment %}
 
         {%- endfor -%}
       </div>
