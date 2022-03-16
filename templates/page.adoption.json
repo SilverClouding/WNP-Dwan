@@ -565,6 +565,65 @@
         "title_font_size": 19,
         "sec_class": ""
       }
+    },
+    "1647418788372c42df": {
+      "type": "faq",
+      "blocks": {
+        "e226d766-1a40-41b8-b1a6-e0b0d129906a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I adopt at Whiskers N Paws?",
+            "content": "<p>Yes! Whiskers N Paws partners with local animal welfare organisations to help rehome abandoned or stray animals. These include dogs, cats and small animals. We have 3 in-store adoption stations to help these pets find forever homes. Come and visit us! You can also visit our <a href=\"\/pages\/adoption\" title=\"Pet Adoption in Hong Kong\">adoption page <\/a>for further details.<\/p>"
+          }
+        },
+        "100419c7-9ce5-4837-85a8-fbd65d3526fb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How does the adoption process work?",
+            "content": "<p>The adoption process varies depending on which charity you are adopting from at Whiskers N Paws. The process can consist of obtaining personal details, an adoption questionnaire, a possible home visit by the charity, and an adoption fee. For further details, please feel free to contact our staff in-store or directly with our partner charities.<\/p>"
+          }
+        },
+        "b9b8440a-c24a-40c1-a6ec-26bfd05b2221": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "When can I adopt at Whiskers N Paws?",
+            "content": "<p>Depending on the adoption process laid out by our partner charity, interested parties can adopt from Whiskers N Paws any day of the week. Come visit our animals in-store on weekdays and weekends during store visiting hours. We advise interested parties to contact our customer care team in advance to see if the animals they are interested are still available for viewing.<\/p>"
+          }
+        },
+        "ace24e78-39cf-4095-9f44-923fc2a7f491": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Which animal welfare organisations do you partner with?",
+            "content": "<p>Whiskers N Paws partners with many animal welfare organisations to help rehome shelter animals. In-store, we partner with different charities for different animals. Dogs come from Hong Kong Dog Rescue (HKDR), cats come from Lifelong Animal Protection (LAP), and small animals come from The Society for the Prevention & Crulety of Animals (SPCA).<\/p>"
+          }
+        },
+        "ea797c52-4528-4b4a-acf1-b3d7520a0f4f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Where do the animals up for adoption come from?",
+            "content": "<p>The animals for adoption at Whiskers N Paws come from charities we partner together with to help shelter animals be rehomed. Dogs come from Hong Kong Dog Rescue (HKDR), cats come from Lifelong Animal Protection (LAP), and small animals come from The Society for the Prevention & Cruelty of Animals (SPCA).<\/p>"
+          }
+        },
+        "9223ac05-b6fa-4c19-9c9e-06c16a588d1e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Is there an adoption fee?",
+            "content": "<p>Yes. As Whiskers N Paws partners with local non-profit organisations to rehome pets, each charity asks for a one-off fee to help support the welfare of other animals in need looking for forever homes. This includes medical expenses and daily food. The fee varies on each charity, please contact our staff in-store or the charity directly for enquiries.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e226d766-1a40-41b8-b1a6-e0b0d129906a",
+        "100419c7-9ce5-4837-85a8-fbd65d3526fb",
+        "b9b8440a-c24a-40c1-a6ec-26bfd05b2221",
+        "ace24e78-39cf-4095-9f44-923fc2a7f491",
+        "ea797c52-4528-4b4a-acf1-b3d7520a0f4f",
+        "9223ac05-b6fa-4c19-9c9e-06c16a588d1e"
+      ],
+      "settings": {
+        "title": "Frequently Asked Question - Adoption",
+        "section_width": 100
+      }
     }
   },
   "order": [
@@ -586,6 +645,7 @@
     "16472513866f0711a0",
     "163938824283985989",
     "1639388359b939a1e1",
-    "16395772189326842d"
+    "16395772189326842d",
+    "1647418788372c42df"
   ]
 }
