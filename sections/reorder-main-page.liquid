@@ -154,7 +154,7 @@
           {% endcomment %}  
           
          
-          <div headers="RowOrder" class="re_order {% if flag %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
+          <div headers="RowOrder" class="re_order {% if flag %} disabled {% endif %}">{% render "stx_reorder" order:order, flag:flag %}</div> 
         </div>
       
         {% comment %}
