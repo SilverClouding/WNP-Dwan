@@ -29,7 +29,7 @@
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>We believe that animals make us better people <\/strong>They teach us mindfulness. Remind us to be compassionate. Show us the important of having fun. They open our hearts and more importantly animals connects us human to one another without barriers.<\/p><p><\/p><p><strong>We love what we do <\/strong>We feel blessed to be part of so many furry friend's lives and we take our job seriously! We study every product to make sure they are free form harmful ingredients, safe to play with and are wholesome to nibble. By partnering with likeminded suppliers, we make sure products are made with love, handled with care and stored properly en route to you.<\/p>"
+            "text": "<p><strong>WE BELIEVE THAT ANIMALS MAKE US BETTER PEOPLE<\/strong> <\/p><p>They teach us mindfulness. Remind us to be compassionate. Show us the important of having fun. They open our hearts and more importantly animals connects us human to one another without barriers.<\/p><p><\/p><p><strong>WE LOVE WHAT WE DO <\/strong><\/p><p>We feel blessed to be part of so many furry friend's lives and we take our job seriously! We study every product to make sure they are free form harmful ingredients, safe to play with and are wholesome to nibble. By partnering with likeminded suppliers, we make sure products are made with love, handled with care and stored properly en route to you.<\/p>"
           }
         }
       },
@@ -80,7 +80,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/hand.png",
             "title": "",
-            "text": "<p><strong>Collaborative adoption<\/strong> efforts since 2008<\/p>"
+            "text": "<p><strong>SUPPORTING ADOPTION<\/strong><br\/>Since 2008.<\/p>"
           }
         },
         "16384414225707b0ab-2": {
@@ -88,13 +88,21 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/house_1.png",
             "title": "",
-            "text": "<p><strong>1800+<\/strong> puppies &<strong> 900+<\/strong> cats homed<\/p>"
+            "text": "<p><strong>1800+<\/strong> Puppies<br\/><strong>900+<\/strong><br\/>Cats homed.<\/p>"
+          }
+        },
+        "0788f1b8-b49d-4817-96d9-291f6e06fa04": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>2+ FOOTBALL FIELDS IN SIZE OF MEALS AND SUPPLIES <\/strong>donated to<br\/>shelters across HK.<\/p>"
           }
         }
       },
       "block_order": [
         "16384414225707b0ab-1",
-        "16384414225707b0ab-2"
+        "16384414225707b0ab-2",
+        "0788f1b8-b49d-4817-96d9-291f6e06fa04"
       ],
       "settings": {
         "title": "",
