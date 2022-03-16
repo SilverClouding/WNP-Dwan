@@ -65,7 +65,7 @@
               >
                 <div>
                   {%- if line_item.url != blank -%}
-                    <a href="{{ line_item.url }}">{{ line_item.title }}</a>
+                    <a href="{{ line_item.product.url }}">{{ line_item.title }}</a>
                   {%- else -%}
                     <p>{{ line_item.title }}</p>
                   {%- endif -%}
