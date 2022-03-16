@@ -541,7 +541,13 @@
         {% endif %}
         {% endfor %}
         
-        
+        {% assign firstVarQty = 0 %}
+         {% for var in product.variants %}
+        {% if forloop.first%}
+         {% assign firstVarQty = var.inventory_quantity | plus:0%}
+      
+        {% endif %}
+        {% endfor %}
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -550,11 +556,11 @@
                                 {% endfor %} 
                                 class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   
-                  <h3 id="stockmsg" class="stockmsg" firstvarQty=" {% for var in product.variants %}{% if forloop.first%}{{ var.inventory_quantity}}{% endif %}{% endfor %}">
-                    {% if product.selected_or_first_available_variant.inventory_quantity > qty %}
-                      {% if product.selected_or_first_available_variant.inventory_quantity >= 10 %}
+                  <h3 id="stockmsg" class="stockmsg" firstvarQty="{{firstVarQty}}">
+                    {% if firstVarQty > qty %}
+                      {% if firstVarQty >= 10 %}
                      	 In stock 
-                      {% else if product.selected_or_first_available_variant.inventory_quantity < 10 and product.selected_or_first_available_variant.inventory_quantity > 0  %}
+                      {% else if firstVarQty < 10 and firstVarQty > 0  %}
                      	 Low in stock
                       {% else %}
                      	 Out of stock
