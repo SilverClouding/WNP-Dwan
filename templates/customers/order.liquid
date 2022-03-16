@@ -36,7 +36,10 @@
         <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
         {%- endif -%}
       </div>
+        {% comment %}
       <div class="stx-reorder-button {% if allOutOfStock %} disabled {% endif %}">{% render "stx_reorder" %}</div>
+        {% endcomment %}
+         <div class="stx-reorder-button {% if flag %} disabled {% endif %}">{% render "stx_reorder", flag:flag %}</div>
       </div>
 
       <table role="table" class="order-details">
