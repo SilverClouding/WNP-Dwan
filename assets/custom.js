@@ -821,4 +821,6 @@ if(breadcrumbObject.template == "collection"){
 
 
  document.querySelector("[option_index='2'].available.first").click();
-option_index="2"
+// option_index="2"
+var url = window.location.href;
+url = url.substring(0 , url.indexOf('?')+1);
