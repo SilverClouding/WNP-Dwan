@@ -22,7 +22,7 @@
         "492ec22f-1085-46a9-9016-067642e1536e": {
           "type": "heading",
           "settings": {
-            "heading": "Grooming",
+            "heading": "FULL SERVICE DOG GROOMING",
             "heading_size": "h1"
           }
         },
@@ -35,7 +35,7 @@
         "163842634207ed9d0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using <em><strong>top-quality dog grooming products <\/strong><\/em>and state-of-the-art equipment for a professional finish each and every time.<\/p>"
+            "text": "<p><strong>Grooming is more than a good look -<br\/>It is a healthy skin & coat (plus a clean home!)<\/strong><br\/>Pamper your dog with a clean coat & smart look by our professional grooming team. We work together with our furry clients to provide a comfortable, stress-free environment. Best-in-class services include using <a href=\"\/collections\/dog-grooming\" title=\"Dog Grooming Supplies\"><em>top-quality dog grooming products<\/em><\/a><em> <\/em>and state-of-the-art equipment for a professional finish each and every time.<\/p>"
           }
         },
         "1d025c24-b599-46a5-b80a-4250f397d7c5": {
@@ -67,7 +67,7 @@
           "type": "text",
           "settings": {
             "title": "Dog Name",
-            "placeholder": "Dog Name",
+            "placeholder": "DOG NAME",
             "use_long_text": false,
             "is_required": true
           }
@@ -76,7 +76,7 @@
           "type": "text",
           "settings": {
             "title": "Dog Age",
-            "placeholder": "Dog Age",
+            "placeholder": "DOG AGE",
             "use_long_text": false,
             "is_required": false
           }
@@ -86,14 +86,14 @@
           "settings": {
             "title": "Dog Breed",
             "values": "Akita, Alaskan Malamute, Beagle, Bernese, Bichon Frise, Border Collie, Boston Terrier, Bull dog, Chihuahua, Chow Chow, Dachshund, English Cocker Spaniel, English Sheepdog, French Bulldog, Golden Retriever, Greyhound, Jack Russell, Japanese Spitz, King Charles Cavalier, King Charles Spaniel, Labradoodle, Labrador, Maltese, Miniature Poodle, Papillon, Pekingese, Pinscher, Pomeranian, Pug, Samoyed, Schnauzer, Scottish Terrier, Shetland Sheepdog, Shiba Inu, Siberian Husky, Silky Terrier, St Bernard, Terrier, Toy Poodle, Welsh Corgi, Yorkshire Terrier, West Highland White Terrier, Multibreed, Other",
-            "placeholder": "Dog Breed"
+            "placeholder": "DOG BREED"
           }
         },
         "9bf84d1b-3a2c-4f9b-a065-f74b61dd8117": {
           "type": "text",
           "settings": {
             "title": "Owner",
-            "placeholder": "Owner",
+            "placeholder": "OWNER",
             "use_long_text": false,
             "is_required": true
           }
@@ -102,7 +102,7 @@
           "type": "text",
           "settings": {
             "title": "Phone",
-            "placeholder": "Phone",
+            "placeholder": "PHONE",
             "use_long_text": false,
             "is_required": false
           }
@@ -116,7 +116,7 @@
         "71c8ed36-081b-47ca-b49a-b8c9ecc8fdda"
       ],
       "settings": {
-        "form_title": "Contact Fom",
+        "form_title": "Contact Form",
         "form_button": "Submit",
         "form_successfull": "Thank you! Your Grooming reservation request has been successfully submitted. We will contact you shortly for confirmation.",
         "section_width": 30
@@ -309,7 +309,7 @@
         "1638442037250169f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "Operating Hours",
+            "heading": "Grooming service hours:",
             "heading_size": "h1"
           }
         },
