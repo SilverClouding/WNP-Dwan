@@ -533,7 +533,7 @@
         
         {% for current_v in current_v_option1_vars %}
       
-        {% if current_v.inventory_quantity >= qty%}
+        {% if current_v.inventory_quantity >= qty %}
         {% assign current_option1 = current_option1 | append: current_v.option1 |append:","   %}
          {% assign current_option2 = current_option2 | append: current_v.option2 |append:"," %}
          {% assign current_option3 = current_option3 | append: current_v.option3 |append:"," %}
@@ -559,7 +559,7 @@
                      	 Out of stock
                       {% endif %}
                     {% else %}
-                    Out of stock 
+                    Out of stock {{product.selected_or_first_available_variant.inventory_quantity}}=:={{qty}}
                     {% endif %}
                   </h3>  
                   
