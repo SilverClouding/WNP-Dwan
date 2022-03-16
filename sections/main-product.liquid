@@ -343,10 +343,12 @@
                     id="Quantity-{{ section.id }}"
                        {% if minTag %}
                     min="{{qty}}"
+                        value="{{qty}}"
                        {% else %}
+                        value="1"
                        min="1"
                        {% endif %}
-                    value="{{qty}}"
+                   
                     form="{{ product_form_id }}"
                   >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
