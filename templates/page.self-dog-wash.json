@@ -164,6 +164,26 @@
         "sec_class": ""
       }
     },
+    "1647414820d4019763": {
+      "type": "rich-text",
+      "blocks": {
+        "1647414820e3215dd1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WASH A DOG | HELP A DOG",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "1647414820e3215dd1-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "sec_class": ""
+      }
+    },
     "16390286139d4adc54": {
       "type": "rich-text",
       "blocks": {
@@ -171,13 +191,13 @@
           "type": "heading",
           "settings": {
             "heading": "Why a flat fee?",
-            "heading_size": "h2"
+            "heading_size": "h3"
           }
         },
         "16390286133aa0930d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p>"
+            "text": "<p>We believe we are all the same. Any size, breed, and age is welcome to our self-serve dog wash space. All deserve to feel, look and smell great! And the best part? All proceeds donated go towards our community work.<\/p><p><\/p>"
           }
         }
       },
@@ -396,6 +416,7 @@
     "163896747815618038",
     "1638426342c59892bd",
     "16389683664bc495b8",
+    "1647414820d4019763",
     "16390286139d4adc54",
     "163903484555fca6d9",
     "1638442037a72cd96a",
