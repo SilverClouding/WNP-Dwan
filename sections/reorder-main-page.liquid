@@ -157,6 +157,7 @@
           <div headers="RowOrder" class="re_order {% if flag %} disabled {% endif %}">{% render "stx_reorder" order:order %}</div> 
         </div>
       
+        {% comment %}
         {% if flag %}
         <div class="reorder-outofstock-items">
           {%- for line_item in order.line_items -%}
@@ -170,6 +171,7 @@
           {%- endfor -%}
         </div>
         {% endif %}
+        {% endcomment %}
         
        {%- endfor -%}
         
