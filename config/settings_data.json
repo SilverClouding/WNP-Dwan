@@ -190,29 +190,29 @@
           "6aad0037-229a-4620-bee4-1062816db5cf": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/free-delivery.png",
-              "svg_icon1_text": "<p>Free Delivery with purchases above $100<\/p>"
+              "img": "shopify:\/\/shop_images\/website_icon_FreeDelivery.png",
+              "svg_icon1_text": "<p>Free Delivery above $300<\/p>"
             }
           },
           "52d5e5ff-c33d-4062-b246-61780b9d829e": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/quick.png",
-              "svg_icon1_text": "<p>Quick and Fast Delivery around Hong Kong Islands<\/p>"
+              "img": "shopify:\/\/shop_images\/website_icon_QuickDelivery.png",
+              "svg_icon1_text": "<p>Deliver within 3 days<\/p>"
             }
           },
           "c10c9531-0b07-4473-996c-723a1204f2b7": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/curated.png",
-              "svg_icon1_text": "<p>Curated products ensuring they are of high quality!<\/p>"
+              "img": "shopify:\/\/shop_images\/website_icon_QualityFood.png",
+              "svg_icon1_text": "<p>Selected with care<\/p>"
             }
           },
           "ce19bb72-db5f-4aed-80c7-96035e5ed571": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/prices.png",
-              "svg_icon1_text": "<p>Prices are lower than or at least the same as competitors<\/p>"
+              "img": "shopify:\/\/shop_images\/website_icon_BestPrice.png",
+              "svg_icon1_text": "<p>Low price guaranteed<\/p>"
             }
           }
         },
