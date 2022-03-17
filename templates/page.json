@@ -38,11 +38,19 @@
         "page_title": false,
         "section_width": 63
       }
+    },
+    "16474865255324d9ef": {
+      "type": "faq",
+      "settings": {
+        "title": "test",
+        "section_width": 100
+      }
     }
   },
   "order": [
     "16393980993262203f",
     "16393953318db2df51",
-    "main"
+    "main",
+    "16474865255324d9ef"
   ]
 }
