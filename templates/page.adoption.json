@@ -456,7 +456,7 @@
         "1639388358b9c550c2-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step1.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-09.png",
             "img_link": "",
             "title": "",
             "text": "<p><strong>Step 1: Plan Your Visit<\/strong><br\/>Pop over and visit the animals available for adoption. Find out more about your furry friend and get to know their personalities to see if it’s a match!<\/p>",
@@ -467,7 +467,7 @@
         "1639388358b9c550c2-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step2.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-10.png",
             "img_link": "",
             "title": "",
             "text": "<p><strong>Step 2: Apply<\/strong><br\/>Now that you have found a furry friend you are interested in bringing home, fill out the application form. An adoption coordinator will get in touch with you for the next step.<\/p>",
@@ -478,10 +478,10 @@
         "1639388358b9c550c2-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step3.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-11.png",
             "img_link": "",
             "title": "",
-            "text": "<p><strong>Step 3: Adoption Free<\/strong><br\/>Once your application is received & processed, a Homing Assistant will be in touch. A quick chat on the phone or home visit may be required. Different adoption fees will apply dependant on the species. *100% adoption fee goes to the shelter<\/p>",
+            "text": "<p><strong>Step 3: Adoption Fee<\/strong><br\/>Once your application is received & processed, a Homing Assistant will be in touch. A quick chat on the phone or home visit may be required. Different adoption fees will apply dependant on the species. *100% adoption fee goes to the shelter<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -489,10 +489,10 @@
         "c393cecd-e13b-4453-b99e-eb99f70cfa99": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step4.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-12.png",
             "img_link": "",
             "title": "",
-            "text": "<p><strong>Step 4: Bring Your Paw Friend Home<\/strong><br\/>Congratulations! You have made a new best friend. Spread the word and refer other animals in need to your friends. Let’s help clear the shelters!<\/p>",
+            "text": "<p><strong>Step 4: Bring Your Furry Friend Home<\/strong><br\/>Congratulations! You have made a new best friend. Spread the word and refer other animals in need to your friends. Let’s help clear the shelters!<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -526,7 +526,7 @@
         "1639577218a0aad59e-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/united_1.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-11.png",
             "img_link": "",
             "title": "",
             "text": "<p><strong>Collaborative <br\/>adoption<\/strong> efforts <br\/>since 2008<\/p>",
@@ -537,7 +537,7 @@
         "1639577218a0aad59e-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/house-1.png",
+            "image": "shopify:\/\/shop_images\/website_icon_adoption-12.png",
             "img_link": "",
             "title": "",
             "text": "<p><strong>1800+<\/strong> puppies & <br\/><strong>900+<\/strong> cats homed<\/p>",
