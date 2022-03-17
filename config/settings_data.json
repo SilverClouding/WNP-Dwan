@@ -190,28 +190,28 @@
           "6aad0037-229a-4620-bee4-1062816db5cf": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/website_icon_FreeDelivery_c0ae8e0b-3807-4dae-a73c-9a1c6497aa6f.png",
+              "img": "shopify:\/\/shop_images\/website_icon_FreeDelivery_79f90270-39eb-45e5-8a4a-bc99af149ef9.png",
               "svg_icon1_text": "<p>Free Delivery above $300<\/p>"
             }
           },
           "52d5e5ff-c33d-4062-b246-61780b9d829e": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/website_icon_QuickDelivery_6f69870a-8e7e-4c66-9658-c7debfde8005.png",
+              "img": "shopify:\/\/shop_images\/website_icon_QuickDelivery_ad75b049-edc7-4f7c-a2c7-14b2a656e24d.png",
               "svg_icon1_text": "<p>Deliver within 3 days<\/p>"
             }
           },
           "c10c9531-0b07-4473-996c-723a1204f2b7": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/website_icon_QualityFood.png",
+              "img": "shopify:\/\/shop_images\/website_icon_QualityFood_55b2b868-08f1-494b-9c88-65d5f61cbbe3.png",
               "svg_icon1_text": "<p>Selected with care<\/p>"
             }
           },
           "ce19bb72-db5f-4aed-80c7-96035e5ed571": {
             "type": "icon_text",
             "settings": {
-              "img": "shopify:\/\/shop_images\/website_icon_BestPrice_adca28e7-4922-4422-b8ae-d5de035183a7.png",
+              "img": "shopify:\/\/shop_images\/website_icon_BestPrice_27d1a212-8363-4950-b48b-a9ae82f90e11.png",
               "svg_icon1_text": "<p>Low price guaranteed<\/p>"
             }
           }
