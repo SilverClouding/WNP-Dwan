@@ -144,12 +144,64 @@
         "page_title": false,
         "section_width": 100
       }
+    },
+    "1647575900a23b8012": {
+      "type": "faq",
+      "blocks": {
+        "c0837ddf-16fe-4997-9d6b-beb20b7db224": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Tips for choosing a hamster cage",
+            "content": "<p>Find a place that is suitable for hamster to stay. <a href=\"\/collections\/small-animal-habitats\" target=\"_blank\" title=\"Small Animal Habitats\">Cages<\/a> composed of lines allow hamsters to climb. If you buy cages with different layers, that can provide more space for them to explore and play. No matter which kind of squirrel cages you choose, the size should be at least 360 square inches or 80 x 50 cm. Make sure that the hamsters have enough space. It's also recommend if you can give them a <a href=\"\/collections\/small-animal-hideouts\" target=\"_blank\" title=\"Small Animal Hideouts\">small house<\/a> to hide for rest or when they are feeling uncomfortable.<\/p>"
+          }
+        },
+        "cfd1a117-959f-4d48-860f-084397e8f43b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to choose hamster food?",
+            "content": "<p>Hamsters also need a balanced diet. Seeds, fruits, and vegetables are all nutritious <a href=\"\/collections\/hamster-food\" target=\"_blank\" title=\"Hamster Food.\">foods<\/a> they need. In order to add protein to them, some owners occasionally feed hamsters with mealworms. You can also choose grains with a protein content of 18-22%. If it prefers seeds instead of dry grains, you can choose mixed seeds that contain a variety of food elements, such as mixed seeds of dried fruits, vegetables, and sunflowers.<\/p>"
+          }
+        },
+        "ced4f7b6-d15e-47ff-9b79-66a0cc97d9ea": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How long do rabbits, guinea pigs and hamsters live?",
+            "content": "<p>Rabbits are about 8-12 years old, guinea pigs are about 5-6 years old, and hamsters are about 2-3 years old.<\/p>"
+          }
+        },
+        "42d7b423-c6fd-4e6d-b156-a45c6c37ce9b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What should I put in rabbit cage?",
+            "content": "<p>1. <a href=\"https:\/\/wnp.com.hk\/pages\/search-results-page?q=litter+pan&page=1&rb_snize_facet1=101_For+Small+Animals\" target=\"_blank\" title=\"Shop Small Animal Litter Pan at WNP\">Litter box<\/a>. If the rabbit cage is placed indoors, try to train the rabbit to use the litter box. The triangular rabbit litter box is suitable to be placed in the corner of the cage. Rabbits may not be familiar with litter box at first, please be patient and teach them how to use it. <br\/>2. <a href=\"https:\/\/wnp.com.hk\/pages\/search-results-page?q=water+bottle&page=1&rb_snize_facet1=101_For+Small+Animals\" target=\"_blank\" title=\"Shop Small Animal Food Bowls at WNP\">Food bowls<\/a> and <a href=\"https:\/\/wnp.com.hk\/pages\/search-results-page?q=bowl&page=1&rb_snize_facet1=101_For+Small+Animals\" target=\"_blank\" title=\"Shop Small Animal Water Bottles at WNP\">drinking fountains<\/a>. Choose a heavy flat bottom plate for the food bowl. It is difficult for rabbits to tip over when eating. <br\/>3. <a href=\"\/collections\/small-animal-toys\" target=\"_blank\" title=\"Small Animal Toys\">Hay rack<\/a>. Place the hay rack as close to the ground as possible. Rabbits usually don't like to look up.<\/p>"
+          }
+        },
+        "9538d368-b52f-4c43-8432-f101b2833fa4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How big should a rabbit cage be?",
+            "content": "<p>The size of the <a href=\"\/collections\/small-animal-habitats\" target=\"_blank\" title=\"Small Animal Habitats\">rabbit cage<\/a> should be considered by the size of the rabbit after it grows up. The height of the cage can be determined according to the rabbit's body length after standing upright. The length should be three body size of the rabbit, and the width should be two body size. If you raise two rabbits, the recommended cage size should be 150cm x 60cm x 60cm or 185cm x 90cm x 90cm.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c0837ddf-16fe-4997-9d6b-beb20b7db224",
+        "cfd1a117-959f-4d48-860f-084397e8f43b",
+        "ced4f7b6-d15e-47ff-9b79-66a0cc97d9ea",
+        "42d7b423-c6fd-4e6d-b156-a45c6c37ce9b",
+        "9538d368-b52f-4c43-8432-f101b2833fa4"
+      ],
+      "settings": {
+        "title": "Frequently Asked Question - Small Animals",
+        "section_width": 100
+      }
     }
   },
   "order": [
     "mainCollectioPage",
     "1638951039c767e2d1",
     "16389585667234d795",
-    "main"
+    "main",
+    "1647575900a23b8012"
   ]
 }
