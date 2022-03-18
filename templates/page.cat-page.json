@@ -5,29 +5,55 @@
       "blocks": {
         "2f363a43-b55b-436a-9adc-8deacf1882d0": {
           "type": "link_list",
-          "disabled": true,
           "settings": {
-            "main_link_list": "food-treats"
+            "main_link_list": "cat-food"
           }
         },
         "7c970b5b-c885-494b-a079-972908be1ffb": {
           "type": "link_list",
-          "disabled": true,
           "settings": {
-            "main_link_list": "health-care"
+            "main_link_list": "cat-treats"
           }
         },
         "517a03a6-8716-4e9d-a953-6369c0e74894": {
           "type": "link_list",
           "settings": {
-            "main_link_list": "cats-products"
+            "main_link_list": "cat-health-care"
+          }
+        },
+        "f6616dfe-2b22-4280-9781-8c7a1342c952": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "cat-litter-clean-up"
+          }
+        },
+        "e4433704-f4ee-4cb5-8975-81ae4326f0fa": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "cat-grooming"
+          }
+        },
+        "3f0ffbc2-f0b3-41d2-a855-6f9b1ea6f4f9": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "cat-toys"
+          }
+        },
+        "2b065eb8-d4eb-4a0c-b186-4350d4842b1b": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "cat-supplies"
           }
         }
       },
       "block_order": [
         "2f363a43-b55b-436a-9adc-8deacf1882d0",
         "7c970b5b-c885-494b-a079-972908be1ffb",
-        "517a03a6-8716-4e9d-a953-6369c0e74894"
+        "517a03a6-8716-4e9d-a953-6369c0e74894",
+        "f6616dfe-2b22-4280-9781-8c7a1342c952",
+        "e4433704-f4ee-4cb5-8975-81ae4326f0fa",
+        "3f0ffbc2-f0b3-41d2-a855-6f9b1ea6f4f9",
+        "2b065eb8-d4eb-4a0c-b186-4350d4842b1b"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/PetPage_01_TopBanner_Cat_Desktop.jpg",
