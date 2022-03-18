@@ -3,6 +3,12 @@
     "mainCollectioPage": {
       "type": "main-collection-page",
       "blocks": {
+        "e2f96e42-d740-4787-b20a-ea0f5bd80368": {
+          "type": "link_list",
+          "settings": {
+            "main_link_list": "cat-new-arrivals"
+          }
+        },
         "2f363a43-b55b-436a-9adc-8deacf1882d0": {
           "type": "link_list",
           "settings": {
@@ -47,6 +53,7 @@
         }
       },
       "block_order": [
+        "e2f96e42-d740-4787-b20a-ea0f5bd80368",
         "2f363a43-b55b-436a-9adc-8deacf1882d0",
         "7c970b5b-c885-494b-a079-972908be1ffb",
         "517a03a6-8716-4e9d-a953-6369c0e74894",
