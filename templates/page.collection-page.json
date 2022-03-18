@@ -200,12 +200,72 @@
         "page_title": false,
         "section_width": 100
       }
+    },
+    "16475753330636ffd0": {
+      "type": "faq",
+      "blocks": {
+        "212db620-d869-477a-871d-1c6346e9fc22": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to choose a dog bed?",
+            "content": "<p>There are different shapes and sizes of <a href=\"\/collections\/dog-beds\" title=\"Dog Beds\">dog bed<\/a>. You can start by observing your dog's sleeping habits first. Oval and orthopedic dog beds suit best for dogs that like curling their bodies. Cushion beds are suitable for dogs that prefer laying on the floor. Box beds allow dogs to relax, keep warmth and protect them.<\/p>"
+          }
+        },
+        "2369b044-c76a-4bd8-9b69-49e0dfd2c193": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How should dog bedding be cleaned?",
+            "content": "<p>Vacuum the dog hair and dust on the bed's surface. If it is a detachable dog bed, it is recommended to wash it by hand and soak it in warm water with 1\/4 cup of baking powder for 15 minutes. If there are stains on the surface, you can apply animal-friendly cleaning tincture, and use a towel soaked with clean water to wipe it off.<\/p>"
+          }
+        },
+        "ab49e1fb-3546-4fc1-b7be-91d4f05b6dbf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Is chest strap better for dogs or a collar?",
+            "content": "<p>vBoth have their advantages. <a href=\"\/collections\/dog-collars-harness-leashes\" title=\"Dog Collars, Harness & Leashes\">Dog collars<\/a> allows the owners to put on a name tag, but you should also consider the chances of hurting the trachea when you pull the leash of small breeds dogs. <a href=\"\/collections\/dog-collars-harness-leashes\" title=\"Dog Collars, Harness & Leashes\">Chest strap<\/a> causes less pain or discomfort when pulling as it evens out the force exerted on a dog. Beware if the dog is stronger than the owner as the owner can be easily pulled away.<\/p>"
+          }
+        },
+        "c335854a-fb72-46ee-9421-4324f539f9f1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to choose a dog carrier?",
+            "content": "<p>Measure the size of your dog first, then choose from the following <a href=\"\/collections\/dog-carriers\" title=\"Dog Carriers\">dog bags<\/a> : 1. Hard surface dog travel carrier: durable and has a firm shell, easy to clean. 2. Soft-sided dog bag: You can carry your dog sideways and it's convenient to carry with. Comes with a zipper and is easy to wash. The sides are reticulated. 3. Dog Stroller: Carrying a puppy for a long time can be tiring. Stroller helps to save owners' effort to carry their dogs. But if it's for hiking, stroller can be tricky for rugged trails.<\/p>"
+          }
+        },
+        "cfe21a4e-b484-4479-8765-f19b65cac072": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How often should dogs be bathed?",
+            "content": "<p>Normally, it is recommended to shower your dog once a month. There are several factors that affect the frequency of having a bath: Hair length, skin & health conditions. Long-haired dog breeds may need to take a bath every 4 to 6 weeks. Owner should brush your dog regularly to remove tangles. <a href=\"\/collections\/dog-combs-brushes\" title=\"Dog Combs & Brushes\">Brushing<\/a> also helps with the distribution of natural oil on your dog's coat.<\/p>"
+          }
+        },
+        "d9482742-0f88-40cf-9883-1ecbeedb4038": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How many servings of dog food should I feed?",
+            "content": "<p>The feeding amount depends on the breeds of dog. For example, toy breed dogs under ten pounds need 1\/3 to 2\/1 cups of food, and medium-sized dogs require 1 & 3\/4 cups to 2 & 2\/3 cups of food. Please pay attention to the recommended servings shown on the back of package. The suggestion does not refer to the serving size per meal, but the total amount of servings a dog needs per day.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "212db620-d869-477a-871d-1c6346e9fc22",
+        "2369b044-c76a-4bd8-9b69-49e0dfd2c193",
+        "ab49e1fb-3546-4fc1-b7be-91d4f05b6dbf",
+        "c335854a-fb72-46ee-9421-4324f539f9f1",
+        "cfe21a4e-b484-4479-8765-f19b65cac072",
+        "d9482742-0f88-40cf-9883-1ecbeedb4038"
+      ],
+      "settings": {
+        "title": "Frequently Asked Question - Dogs",
+        "section_width": 100
+      }
     }
   },
   "order": [
     "mainCollectioPage",
     "1638951039c767e2d1",
     "16389585667234d795",
-    "main"
+    "main",
+    "16475753330636ffd0"
   ]
 }
