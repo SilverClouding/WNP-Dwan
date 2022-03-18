@@ -152,12 +152,72 @@
         "page_title": false,
         "section_width": 100
       }
+    },
+    "1647575633376b0d40": {
+      "type": "faq",
+      "blocks": {
+        "09d7b20a-284d-43d1-afb0-f3dd7af4223b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to choose Cat Climbing Tree?",
+            "content": "<p>To choose the suitable material, you can observe which materials your cat is interested in, such as scratching wood, cloth, carpet or rope. If the cat does not resist outdoor environment, you can choose a <a href=\"https:\/\/www.wnp.com.hk\/collections\/cat-beds-climbers\/c03_climbers\" target=\"_blank\" title=\"Shop Cat Climbers at WNP\">cat climbing tree<\/a> made of logs to make your cat feel like being outdoors. In addition, when choosing the material of a cat scratcher, you go with sisal fabric, which is durable and rough, not easy to be damaged. Meanwhile, choose a sturdy cat climbing tree if your cat is used to scratching on carpets, a horizontal cat climbing frame would be a nice option. If your cat likes to climb on furniture feet or scratching on the wall, you can choose an upright cat climbing frame.<\/p>"
+          }
+        },
+        "e362888e-68d8-47e9-b451-09ae419ef5aa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What is the difference between catnip and cat wheatgrass?",
+            "content": "<p>It is easy to mix up cat wheatgrass with <a href=\"\/collections\/cat-catnip-cat-grass\" target=\"_blank\" title=\"Catnip & Cat Grass\">catnip<\/a>. The use of wheatgrass is similar to the hairball remedy. Catnip can help cats to relax. Owners do not have to get your kitten catnips at early stages as kitten may not respond to it. You can buy it for your cat when they are fully grown.<\/p>"
+          }
+        },
+        "eb29b925-03c7-429f-b27d-a025e26135fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How often should cats be bathed?",
+            "content": "<p>For now, there is no absolute answer to the frequency of bathing a cat, and it is okay to be done once a year. If there are lots of fleas on your cat, take a bath immediately. It is recommended to bathe your cat at early age to let them get used to it. Avoid bathing your cat in winter. There are two types of <a href=\"\/collections\/cat-shampoos-wipes\" target=\"_blank\" title=\"Cat Shampoos & Wipes\">shower gel<\/a>: flushed or sprayed for dry cleaning.<\/p>"
+          }
+        },
+        "22e76166-fb19-41cd-8974-d40c81630432": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What food should I feed my cat?",
+            "content": "<p>Owner can measure the choice of cat food according to your cat's preferences and nutritional needs. And your own financial ability or the degree of convenient handling. It is recommended to feed cats with dry food mixed with wet food (<a href=\"\/collections\/cat-complete-diet-wet-food\" target=\"_blank\" title=\"Wet Cat Food\">canned food<\/a> \/ <a href=\"\/collections\/cat-frozen-food\" target=\"_blank\" title=\"Frozen Cat Food\">frozen raw food<\/a> \/ <a href=\"\/collections\/freeze-dried-cat-treats\" target=\"_blank\" title=\"Freeze Dried Cat Treats\">freeze dried food<\/a>). <a href=\"\/collections\/cat-complete-diet-wet-food\" target=\"_blank\" title=\"Wet Cat Food\">Wet food<\/a> helps to keep cats hydrated in order to avoid kidney failure. <a href=\"\/collections\/cat-frozen-food\" target=\"_blank\" title=\"Frozen Cat Food\">Frozen raw food<\/a> and <a href=\"\/collections\/cat-freeze-dried\" target=\"_blank\" title=\"Freeze-Dried Cat Food\">freeze dried food<\/a> have higher meat protein, they can increase the appetite either by feeding as main meal or as topper. Owner should also observe the frequency of your cat drinking water and always provide clean, fresh water at mealtime.<\/p>"
+          }
+        },
+        "8236670e-6845-48c1-b84b-f92cd915b4ca": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Should I brush my cat's teeth?",
+            "content": "<p>Yes. Periodontal disease is a common illness for cats. Thus, owner should help to develop a habit of <a href=\"\/collections\/cat-dental-care\" target=\"_blank\" title=\"Cat Dental Care Products\">teeth brushing<\/a> regularly. It is recommended that the owner should train the cat from an early age to avoid the cat from getting annoyed. Once a cat has got periodontal disease, they will have to go to the hospital to wash their teeth under general anesthesia. If your cat do not like teeth brushing, you can buy some <a href=\"\/collections\/cat-dental-treats\" target=\"_blank\" title=\"Dental Cat Treats\">dental treats<\/a> instead, but it's less effective than teeth brushing.<\/p>"
+          }
+        },
+        "d8f846b8-0e7a-4ef9-9929-d182ffbead14": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Tips for having a cat",
+            "content": "<p>It is recommended that owner should put a name tag on your <a href=\"\/collections\/cat-collars-leashes\" target=\"_blank\" title=\"Cat Collars & Leashes\">cat's collar<\/a> as Hong Kong does not have cat microchip database. When a cat is lost, other people can use the name tag for tracing the cat. In addition, you should trim your <a href=\"\/collections\/cat-brushes-nail-care\" target=\"_blank\" title=\"Cat Brushes & Nail Care\">cat’s nails<\/a> gently & regularly. Cat nails grow in barb-like shape which might cause discomfort to your cat if the nails grow too long.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09d7b20a-284d-43d1-afb0-f3dd7af4223b",
+        "e362888e-68d8-47e9-b451-09ae419ef5aa",
+        "eb29b925-03c7-429f-b27d-a025e26135fd",
+        "22e76166-fb19-41cd-8974-d40c81630432",
+        "8236670e-6845-48c1-b84b-f92cd915b4ca",
+        "d8f846b8-0e7a-4ef9-9929-d182ffbead14"
+      ],
+      "settings": {
+        "title": "Frequently Asked Question - Cats",
+        "section_width": 100
+      }
     }
   },
   "order": [
     "mainCollectioPage",
     "1638951039c767e2d1",
     "16389585667234d795",
-    "main"
+    "main",
+    "1647575633376b0d40"
   ]
 }
