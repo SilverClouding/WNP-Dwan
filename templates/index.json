@@ -162,7 +162,7 @@
       "settings": {
         "showpagination": true,
         "showscrollbar": true,
-        "shownextPrevButtom": false
+        "shownextPrevButtom": true
       }
     },
     "164724785011ac9c44": {
