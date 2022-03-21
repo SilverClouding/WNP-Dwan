@@ -161,7 +161,7 @@
       ],
       "settings": {
         "showpagination": true,
-        "showscrollbar": false,
+        "showscrollbar": true,
         "shownextPrevButtom": false
       }
     },
