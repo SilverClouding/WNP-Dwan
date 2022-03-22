@@ -78,61 +78,133 @@
         "1638951039bab36fc0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Beasty_logo.png",
-            "img_link": ""
-          }
-        },
-        "1638951039bab36fc0-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Greenies.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/kakato.png",
+            "img_link": "shopify:\/\/collections\/kakato"
           }
         },
         "1638951039bab36fc0-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Orijen.png",
-            "img_link": ""
+            "img_link": "shopify:\/\/collections\/orijen"
           }
         },
         "1638951039bab36fc0-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/applaws.png",
+            "img_link": "shopify:\/\/collections\/applaws"
           }
         },
         "1638951039bab36fc0-4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/K9_Natural.jpg",
+            "img_link": "shopify:\/\/collections\/k9-natural"
+          }
+        },
+        "1638951039bab36fc0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greenies.png",
+            "img_link": "shopify:\/\/collections\/greenies"
           }
         },
         "1638951039bab36fc0-5": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Stella_n_Chewy.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Instinct_logo_new.jpg",
+            "img_link": "shopify:\/\/collections\/natures-variety-instinct"
           }
         },
         "1638951039bab36fc0-6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nutro_logo.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/almo_nature_ab179d23-15d3-4b54-b74c-357821b4b7fb.png",
+            "img_link": "shopify:\/\/collections\/almo-nature"
+          }
+        },
+        "b368a52d-617d-493c-8d61-deb86cedbe49": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/World_Best.png",
+            "img_link": "shopify:\/\/collections\/worlds-best"
+          }
+        },
+        "3c70f11d-a9e2-4249-8962-a13cb9386c7d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stella_n_Chewy_6a303b79-5d29-47f9-8ed9-0545d06db9f5.png",
+            "img_link": "shopify:\/\/collections\/stella-chewys"
+          }
+        },
+        "e8f8ebdb-701e-4754-944e-14b54a1db56c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thrive_3115f561-c46d-4a35-8530-87b63ebc8bec.png",
+            "img_link": "shopify:\/\/collections\/thrive"
+          }
+        },
+        "8da95b9c-3ca6-433b-a8f6-c867f5e2caca": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ziwi_53733a5e-a409-4793-b8b6-191f6caa41d7.png",
+            "img_link": "shopify:\/\/collections\/ziwipeak"
+          }
+        },
+        "39565d5d-0d69-48c1-a286-ffcad290d4a9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fussie_Cat.png",
+            "img_link": "shopify:\/\/collections\/fussie-cat"
+          }
+        },
+        "d05c749a-3da9-4666-9996-7b5df42d8739": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WEllness_Core_e89358c6-fcf0-4915-b532-dbd70de21cc6.png",
+            "img_link": "shopify:\/\/collections\/wellness-core"
+          }
+        },
+        "be0dbdb6-2f6e-42ef-9cb4-157005737ae5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Canidae_392a5627-7433-4d1e-9efd-f2dbb418534e.png",
+            "img_link": "shopify:\/\/collections\/canidae"
+          }
+        },
+        "2d92a6d1-cb2a-432d-8f32-7de7f4027d1d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RAWZ.jpg",
+            "img_link": "shopify:\/\/collections\/rawz"
+          }
+        },
+        "acfa1fa4-720c-46d6-9996-c78f7e14470b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tiki_Pet.jpg",
+            "img_link": "shopify:\/\/collections\/tiki-pets"
           }
         }
       },
       "block_order": [
         "1638951039bab36fc0-0",
-        "1638951039bab36fc0-1",
         "1638951039bab36fc0-2",
         "1638951039bab36fc0-3",
         "1638951039bab36fc0-4",
+        "1638951039bab36fc0-1",
         "1638951039bab36fc0-5",
-        "1638951039bab36fc0-6"
+        "1638951039bab36fc0-6",
+        "b368a52d-617d-493c-8d61-deb86cedbe49",
+        "3c70f11d-a9e2-4249-8962-a13cb9386c7d",
+        "e8f8ebdb-701e-4754-944e-14b54a1db56c",
+        "8da95b9c-3ca6-433b-a8f6-c867f5e2caca",
+        "39565d5d-0d69-48c1-a286-ffcad290d4a9",
+        "d05c749a-3da9-4666-9996-7b5df42d8739",
+        "be0dbdb6-2f6e-42ef-9cb4-157005737ae5",
+        "2d92a6d1-cb2a-432d-8f32-7de7f4027d1d",
+        "acfa1fa4-720c-46d6-9996-c78f7e14470b"
       ],
       "settings": {
         "column_alignment": "left",
