@@ -89,64 +89,136 @@
     "1638951039c767e2d1": {
       "type": "brand_logos",
       "blocks": {
-        "1638951039bab36fc0-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Beasty_logo.png",
-            "img_link": ""
-          }
-        },
-        "1638951039bab36fc0-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Greenies.png",
-            "img_link": ""
-          }
-        },
         "1638951039bab36fc0-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Orijen.png",
-            "img_link": ""
-          }
-        },
-        "1638951039bab36fc0-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
-          }
-        },
-        "1638951039bab36fc0-4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
+            "img_link": "shopify:\/\/collections\/orijen"
           }
         },
         "1638951039bab36fc0-5": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Stella_n_Chewy.png",
-            "img_link": ""
+            "img_link": "shopify:\/\/collections\/stella-chewys"
+          }
+        },
+        "eca2a764-18a6-40f7-979a-88b3bdede2c4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Earth_Rated_a924bc6e-75fe-49c2-b10c-1b82efffe06c.png",
+            "img_link": "shopify:\/\/collections\/earth-rated"
+          }
+        },
+        "77c573d0-4859-4bbc-a9bc-093dd5e37cbd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fish4Dogs_fde4587f-8610-4809-8e3a-f0c6f504c962.png",
+            "img_link": "shopify:\/\/collections\/fish4dogs"
+          }
+        },
+        "0d3a92dc-2cbb-4740-b0df-3724c737747b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ziwi_4bb91d3d-0628-4e40-8e3b-2c8ab2f12826.png",
+            "img_link": "shopify:\/\/collections\/ziwipeak"
+          }
+        },
+        "28e8bf91-34cd-4295-98d1-963aba9e892e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wellnesss_41f48276-b24d-4179-a2c7-de20aafef69c.png",
+            "img_link": "shopify:\/\/collections\/wellness"
+          }
+        },
+        "0ddd4cd6-f380-4124-a48e-f1004405b1b1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Polkadog_Bakery.png",
+            "img_link": "shopify:\/\/collections\/polkadog-bakery"
+          }
+        },
+        "1638951039bab36fc0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greenies.png",
+            "img_link": "shopify:\/\/collections\/greenies"
+          }
+        },
+        "1638951039bab36fc0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Monster_Paw.png",
+            "img_link": "shopify:\/\/collections\/monster-paws"
+          }
+        },
+        "1638951039bab36fc0-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
+            "img_link": "shopify:\/\/collections\/wellness-core"
+          }
+        },
+        "1638951039bab36fc0-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Open_Foarm_logo.jpg",
+            "img_link": "shopify:\/\/collections\/open-farm"
           }
         },
         "1638951039bab36fc0-6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nutro_logo.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Etta_Says_logo.jpg",
+            "img_link": "shopify:\/\/collections\/etta-says"
+          }
+        },
+        "36a3d7db-d409-4e99-b3e2-7b36aaf59973": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KONG_aa613fc3-59c4-41ad-82e3-4c0208766610.png",
+            "img_link": "shopify:\/\/collections\/kong"
+          }
+        },
+        "5666c140-e541-41b4-b480-d3ce3fd89f5e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Canidae_392a5627-7433-4d1e-9efd-f2dbb418534e.png",
+            "img_link": "shopify:\/\/collections\/canidae"
+          }
+        },
+        "7bead103-350a-4429-aebc-ed0fd3a913f5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cloud_Star.png",
+            "img_link": "shopify:\/\/collections\/cloud-star"
+          }
+        },
+        "83b8e47a-5112-47d1-802d-ecc974c3c934": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Earth_Bath_963e6374-ced8-4f23-ad89-b6dafd344e4d.png",
+            "img_link": "shopify:\/\/collections\/earthbath"
           }
         }
       },
       "block_order": [
-        "1638951039bab36fc0-0",
-        "1638951039bab36fc0-1",
         "1638951039bab36fc0-2",
+        "1638951039bab36fc0-5",
+        "eca2a764-18a6-40f7-979a-88b3bdede2c4",
+        "77c573d0-4859-4bbc-a9bc-093dd5e37cbd",
+        "0d3a92dc-2cbb-4740-b0df-3724c737747b",
+        "28e8bf91-34cd-4295-98d1-963aba9e892e",
+        "0ddd4cd6-f380-4124-a48e-f1004405b1b1",
+        "1638951039bab36fc0-1",
+        "1638951039bab36fc0-0",
         "1638951039bab36fc0-3",
         "1638951039bab36fc0-4",
-        "1638951039bab36fc0-5",
-        "1638951039bab36fc0-6"
+        "1638951039bab36fc0-6",
+        "36a3d7db-d409-4e99-b3e2-7b36aaf59973",
+        "5666c140-e541-41b4-b480-d3ce3fd89f5e",
+        "7bead103-350a-4429-aebc-ed0fd3a913f5",
+        "83b8e47a-5112-47d1-802d-ecc974c3c934"
       ],
       "settings": {
         "column_alignment": "left",
