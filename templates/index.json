@@ -261,6 +261,62 @@
             "image": "shopify:\/\/shop_images\/WEllness_Core_79cbcbc2-37d8-450f-9dc3-04989ebb94d9.png",
             "img_link": "shopify:\/\/collections\/wellness-core"
           }
+        },
+        "37de5910-56aa-45dd-a059-6610b9ed8f12": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Polkadog_Bakery.png",
+            "img_link": "shopify:\/\/collections\/polkadog-bakery"
+          }
+        },
+        "f452aac1-2e99-45fe-a023-a4210729763b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Monster_Paw.png",
+            "img_link": "shopify:\/\/collections\/monster-paws"
+          }
+        },
+        "d14aec6a-fed3-4f91-aa99-d79eb6def186": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PLAY.png",
+            "img_link": "shopify:\/\/collections\/p-l-a-y"
+          }
+        },
+        "ecb31ffb-856d-47f2-898e-d47fd0ca8492": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Canidae_392a5627-7433-4d1e-9efd-f2dbb418534e.png",
+            "img_link": "shopify:\/\/collections\/canidae"
+          }
+        },
+        "0cc06bb1-afc5-40f4-be90-a709f89afc76": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/K9_Natural.jpg",
+            "img_link": "shopify:\/\/collections\/k9-natural"
+          }
+        },
+        "38b09e1a-6ac5-4c04-b80e-dc2446b13079": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Open_Foarm_logo.jpg",
+            "img_link": "shopify:\/\/collections\/open-farm"
+          }
+        },
+        "9516ac6c-20d2-47fd-bca6-419e56ac2184": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KONG_aa613fc3-59c4-41ad-82e3-4c0208766610.png",
+            "img_link": "shopify:\/\/collections\/kong"
+          }
+        },
+        "15fc9d41-c90b-4a54-8cea-6a366856210b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Northwest_Naturals.jpg",
+            "img_link": "shopify:\/\/collections\/northwest-naturals"
+          }
         }
       },
       "block_order": [
@@ -271,7 +327,15 @@
         "163646666171e43149-7",
         "163646666171e43149-4",
         "163646666171e43149-6",
-        "163646666171e43149-8"
+        "163646666171e43149-8",
+        "37de5910-56aa-45dd-a059-6610b9ed8f12",
+        "f452aac1-2e99-45fe-a023-a4210729763b",
+        "d14aec6a-fed3-4f91-aa99-d79eb6def186",
+        "ecb31ffb-856d-47f2-898e-d47fd0ca8492",
+        "0cc06bb1-afc5-40f4-be90-a709f89afc76",
+        "38b09e1a-6ac5-4c04-b80e-dc2446b13079",
+        "9516ac6c-20d2-47fd-bca6-419e56ac2184",
+        "15fc9d41-c90b-4a54-8cea-6a366856210b"
       ],
       "settings": {
         "column_alignment": "left",
