@@ -262,7 +262,7 @@
     
     {{ 'quickview.css' | asset_url | stylesheet_tag }}
     <script>
-      {% capture content %}{% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}{% include 'quickview' %}{% endcapture %}
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
       var content = {{ content | json }};
     </script>
 
@@ -532,6 +532,4 @@ ratingSnippet("ruk_rating_snippet",{
     </script>
     
 
-    
-<!-- langify-v2-scripts-begin -->{% comment %}ly_liquid_scripts_begin{% endcomment %}{% endcapture %}{% render 'ly-liquid-scripts' content: ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}{% comment %}ly_core_scripts_begin{% endcomment %}{% render 'ly-core-scripts' %}{% comment %}ly_core_scripts_end{% endcomment %}{% comment %}ly_switcher_factory_begin{% endcomment %}{% render 'ly-switcher-factory' %}{% comment %}ly_switcher_factory_end{% endcomment %}<!-- langify-v2-scripts-end --></body>
 </html>
