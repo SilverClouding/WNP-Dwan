@@ -206,25 +206,39 @@
     "163646666171e43149": {
       "type": "brand_logos",
       "blocks": {
-        "163646666171e43149-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beasty.png",
-            "img_link": "shopify:\/\/collections\/beasty"
-          }
-        },
-        "163646666171e43149-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/greenies_709034d1-8bd9-451d-9015-bbffb3111a7e.png",
-            "img_link": "shopify:\/\/collections\/greenies"
-          }
-        },
         "163646666171e43149-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/orijen_e2238d43-3f69-451f-a241-24c9c9d26f1b.png",
             "img_link": "shopify:\/\/collections\/orijen"
+          }
+        },
+        "163646666171e43149-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stella.png",
+            "img_link": "shopify:\/\/collections\/stella-chewys"
+          }
+        },
+        "163646666171e43149-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ziwi_4bb91d3d-0628-4e40-8e3b-2c8ab2f12826.png",
+            "img_link": "shopify:\/\/collections\/ziwipeak"
+          }
+        },
+        "163646666171e43149-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Earth_Rated_a924bc6e-75fe-49c2-b10c-1b82efffe06c.png",
+            "img_link": "shopify:\/\/collections\/earth-rated"
+          }
+        },
+        "163646666171e43149-7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/greenies_709034d1-8bd9-451d-9015-bbffb3111a7e.png",
+            "img_link": "shopify:\/\/collections\/greenies"
           }
         },
         "163646666171e43149-4": {
@@ -234,24 +248,10 @@
             "img_link": ""
           }
         },
-        "163646666171e43149-5": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stella.png",
-            "img_link": ""
-          }
-        },
         "163646666171e43149-6": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/beasty.png",
-            "img_link": ""
-          }
-        },
-        "163646666171e43149-7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/greenies_709034d1-8bd9-451d-9015-bbffb3111a7e.png",
             "img_link": ""
           }
         },
@@ -264,13 +264,13 @@
         }
       },
       "block_order": [
+        "163646666171e43149-2",
+        "163646666171e43149-5",
         "163646666171e43149-0",
         "163646666171e43149-1",
-        "163646666171e43149-2",
-        "163646666171e43149-4",
-        "163646666171e43149-5",
-        "163646666171e43149-6",
         "163646666171e43149-7",
+        "163646666171e43149-4",
+        "163646666171e43149-6",
         "163646666171e43149-8"
       ],
       "settings": {
