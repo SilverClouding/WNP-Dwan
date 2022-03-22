@@ -41,56 +41,88 @@
     "1638951039c767e2d1": {
       "type": "brand_logos",
       "blocks": {
+        "93580468-cd50-48e0-92ee-9e6880361e36": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oxbow.png",
+            "img_link": "shopify:\/\/collections\/oxbow"
+          }
+        },
         "1638951039bab36fc0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Beasty_logo.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Kaytee.png",
+            "img_link": "shopify:\/\/collections\/kaytee"
           }
         },
         "1638951039bab36fc0-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Greenies.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Lixit.png",
+            "img_link": "shopify:\/\/collections\/lixit"
           }
         },
         "1638951039bab36fc0-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Orijen.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Natures_Miracle.png",
+            "img_link": "shopify:\/\/collections\/natures-miracle"
           }
         },
         "1638951039bab36fc0-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WEllness_Core.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Vitakraft.png",
+            "img_link": "shopify:\/\/collections\/vitakraft"
           }
         },
         "1638951039bab36fc0-5": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Stella_n_Chewy.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Habitrail_logo.jpg",
+            "img_link": "shopify:\/\/collections\/habitrail"
           }
         },
         "1638951039bab36fc0-6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nutro_logo.png",
-            "img_link": ""
+            "image": "shopify:\/\/shop_images\/Healthy_Pet.png",
+            "img_link": "shopify:\/\/collections\/healthy-pet"
+          }
+        },
+        "02e022da-aea2-4ee1-add3-eaa62c2fdb50": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Living_World_grande_1.jpg",
+            "img_link": "shopify:\/\/collections\/living-world"
+          }
+        },
+        "652ad977-3f20-4b08-8911-d630bd25293b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prevue_Pet.png",
+            "img_link": "shopify:\/\/collections\/prevue-pet"
+          }
+        },
+        "181ac5d8-db9b-4120-9996-2e0992751f05": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eight_in_One.png",
+            "img_link": "shopify:\/\/collections\/eight-in-one"
           }
         }
       },
       "block_order": [
+        "93580468-cd50-48e0-92ee-9e6880361e36",
         "1638951039bab36fc0-0",
         "1638951039bab36fc0-1",
         "1638951039bab36fc0-2",
         "1638951039bab36fc0-3",
         "1638951039bab36fc0-5",
-        "1638951039bab36fc0-6"
+        "1638951039bab36fc0-6",
+        "02e022da-aea2-4ee1-add3-eaa62c2fdb50",
+        "652ad977-3f20-4b08-8911-d630bd25293b",
+        "181ac5d8-db9b-4120-9996-2e0992751f05"
       ],
       "settings": {
         "column_alignment": "left",
