@@ -99,7 +99,7 @@
             "image_height": "large",
             "two_col_banner": true,
             "desktop_text_box_position": "center",
-            "banner_content": true,
+            "banner_content": false,
             "show_text_box": true,
             "image_overlay_opacity": 0,
             "bg_color": "#fff9ee",
