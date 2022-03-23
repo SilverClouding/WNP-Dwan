@@ -2,7 +2,12 @@ slider-component {
   position: relative;
   display: block;
 }
-
+.swiper-slide .multicolumn-card__image-wrapper  > a {
+	display: block;
+}
+.multicolumn_Swiper .swiper-slide {
+	margin-left: 0 !important;
+}
 @media screen and (max-width: 989px) {
   .no-js slider-component .slider {
     padding-bottom: 3rem;
