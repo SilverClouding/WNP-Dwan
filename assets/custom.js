@@ -171,7 +171,7 @@ multicolumn_Swiper.on('slideChange', function () {
 
 // main-collection-page_Swiper
 const main_collection_page_Swiper = new Swiper(".main-collection-page_Swiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
 //     loop: true,
   pagination: {
