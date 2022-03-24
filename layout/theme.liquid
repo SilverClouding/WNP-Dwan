@@ -208,7 +208,7 @@
     {% section 'newsletter-popup' %}
     {% endunless %}
     
-    {% comment %}{% endcomment %}
+ 
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
       {% section 'cart-items' %}
@@ -216,16 +216,6 @@
     {% endif %}
     
   
-    <script>
-//       jQuery('[id^=qv_]').filter((idx,element)=>{
-//         let indexInParent = getElementIndex(element);
-//         console.log(element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/));
-//         return element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/) && ![0,1].includes(indexInParent);
-//       }).remove();
-//       function getElementIndex (element) {
-//         return Array.from(element.parentNode.children).indexOf(element);
-//       }
-    </script>
     
     
     <ul hidden>
@@ -270,7 +260,7 @@
     {% unless template contains 'cart' %}
     {% render 'minicart' %}
     {% endunless %}
- {% comment %}   {% endcomment %}
+
     
     <div  id="one"  class="open_popup_minq">
       <div  class="open_popup_minq_cont">
@@ -302,8 +292,7 @@
     </script>
    
 
-  {%comment%}
-  {% render 'linked-options' %}{%endcomment%}
+ 
   
     
 
