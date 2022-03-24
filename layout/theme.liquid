@@ -253,16 +253,16 @@
     {%- endif -%}
     
     {{ 'quickview.css' | asset_url | stylesheet_tag }}
-      {% capture content %}
+    
     <script>
-      
+      {% capture content %}
       {% comment %}ly_liquid_scripts_begin{% endcomment %}
       {% capture ly_liquid_content %}
       {% comment %}ly_liquid_scripts_end{% endcomment %}
       {% include 'quickview' %}
       {% endcapture %}
       var content = {{ content | json }};
-     
+      {% endcapture %}
     </script>
 
     {% unless template contains 'cart' %}
@@ -391,7 +391,7 @@ letter-spacing: 0;
      
   <!-- langify-v2-scripts-begin -->
     {% comment %}ly_liquid_scripts_begin{% endcomment %}
-    {% endcapture %}
+   
     {% render 'ly-liquid-scripts' content: ly_liquid_content %}
     {% comment %}ly_liquid_scripts_end{% endcomment %}
     {% comment %}ly_core_scripts_begin{% endcomment %}
