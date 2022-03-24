@@ -262,7 +262,10 @@
     {%- endif -%}
     
     {{ 'quickview.css' | asset_url | stylesheet_tag }}
-   
+    <script>
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+    </script>
 
     {% unless template contains 'cart' %}
     {% render 'minicart' %}
