@@ -208,7 +208,7 @@
     {% section 'newsletter-popup' %}
     {% endunless %}
     
- 
+    {% comment %}{% endcomment %}
     {% if settings.minicart %}
     <div class="hide" style="display:none!important;">
       {% section 'cart-items' %}
@@ -216,6 +216,16 @@
     {% endif %}
     
   
+    <script>
+//       jQuery('[id^=qv_]').filter((idx,element)=>{
+//         let indexInParent = getElementIndex(element);
+//         console.log(element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/));
+//         return element.id.match(/qv_\d\d\d\d\d\d\d\d\d\d\d\d\d/) && ![0,1].includes(indexInParent);
+//       }).remove();
+//       function getElementIndex (element) {
+//         return Array.from(element.parentNode.children).indexOf(element);
+//       }
+    </script>
     
     
     <ul hidden>
@@ -253,27 +263,26 @@
     
     {{ 'quickview.css' | asset_url | stylesheet_tag }}
     <script>
-    
-      {% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}{% include 'quickview' %}{% endcapture %}
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
       var content = {{ content | json }};
     </script>
 
     {% unless template contains 'cart' %}
     {% render 'minicart' %}
     {% endunless %}
-
+ {% comment %}   {% endcomment %}
     
     <div  id="one"  class="open_popup_minq">
       <div  class="open_popup_minq_cont">
-        <a href="#" class="open_popup_minq_close">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.6387 13.7664C12.9501 14.0779 13.455 14.0779 13.7664 13.7664C14.0779 13.455 14.0779 12.9501 13.7664 12.6387L8.12774 7L13.7664 1.3613C14.0779 1.04989 14.0779 0.544979 13.7664 0.233562C13.455 -0.0778541 12.9501 -0.0778541 12.6387 0.233562L7 5.87226L1.3613 0.233563C1.04989 -0.0778534 0.544979 -0.0778541 0.233562 0.233563C-0.0778541 0.544979 -0.0778541 1.04989 0.233562 1.3613L5.87226 7L0.233563 12.6387C-0.0778537 12.9501 -0.0778534 13.455 0.233563 13.7664C0.544979 14.0779 1.04989 14.0779 1.3613 13.7664L7 8.12774L12.6387 13.7664Z" fill="#44444D"/>
-          </svg>
+      <a href="#" class="open_popup_minq_close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6387 13.7664C12.9501 14.0779 13.455 14.0779 13.7664 13.7664C14.0779 13.455 14.0779 12.9501 13.7664 12.6387L8.12774 7L13.7664 1.3613C14.0779 1.04989 14.0779 0.544979 13.7664 0.233562C13.455 -0.0778541 12.9501 -0.0778541 12.6387 0.233562L7 5.87226L1.3613 0.233563C1.04989 -0.0778534 0.544979 -0.0778541 0.233562 0.233563C-0.0778541 0.544979 -0.0778541 1.04989 0.233562 1.3613L5.87226 7L0.233563 12.6387C-0.0778537 12.9501 -0.0778534 13.455 0.233563 13.7664C0.544979 14.0779 1.04989 14.0779 1.3613 13.7664L7 8.12774L12.6387 13.7664Z" fill="#44444D"/>
+</svg>
         </a>
-        <h2>WOOF!</h2>
-        <p> Some products have a minimum quantity rule. This is to ensure the product retains its coldness when it reaches you. The multiples of quantity can be made up of any combination of products in that product category.</p>
-      </div>
+      <h2>WOOF!</h2>
+      <p> Some products have a minimum quantity rule. This is to ensure the product retains its coldness when it reaches you. The multiples of quantity can be made up of any combination of products in that product category.</p>
     </div>
+     </div>
 <!--      <div class="qv-product-options_html"></div> -->
     <script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
@@ -281,19 +290,20 @@
     
 
     <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
-    <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
-    <script>
-      ratingSnippet("ruk_rating_snippet",{
-        store: "wnp.pet",
-        color: "#0E1311",
-        linebreak: true,
-        usePolaris: true,
-        text: "Reviews"
-      });
-    </script>
+<link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
+<script>
+ratingSnippet("ruk_rating_snippet",{
+  store: "wnp.pet",
+  color: "#0E1311",
+  linebreak: true,
+  usePolaris: true,
+  text: "Reviews"
+});
+</script>
    
 
- 
+  {%comment%}
+  {% render 'linked-options' %}{%endcomment%}
   
     
 
@@ -306,8 +316,122 @@
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {% comment %}{% endcomment %}
     <script src="{{ 'stx_custom.js' | asset_url }}" defer="defer"></script>
- 
-    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+    
+    {% comment %}
+    <script>
+      {%- if customer -%}
+
+      (function(){
+
+        "use strict";
+
+        /* In case you want to output a bunch of things to the debug console */
+        var debug = false;
+
+        /* the cookie value var */
+        var cartCookieValue;
+
+        /* you should leave this as is, but if you want to experiement with larger values you can */
+        var cookieExpireDays = 14;
+
+        /* 
+		IMPORTANT. 
+		YOU MUST CHANGE THE YOUR_SECRET_KEY VALUE BELOW TO SOMETHING ELSE.
+		The value will look something like this: 30ab3459e46e7b209b45dba8378fcbba67297304
+		*/
+        var customerCookieValue = {{ customer.id | hmac_sha256: "30ab3459e46e7b209b45dba8378fcbba67297304" | json }};
+
+        /* A console logging function */
+        var log = function(a){
+          if(!debug){ return }
+          console.log(a);
+        };
+
+        /* get cookie by name */
+        var getCookie = function(name) {
+          var value = "; " + document.cookie;
+          var parts = value.split('; '+name+'=');
+          if (parts.length == 2) return parts.pop().split(";").shift();
+        };
+
+        /* update the cart cookie value */
+        var setCartCookie = function(a) {
+          var date = new Date();
+          date.setTime(date.getTime()+(cookieExpireDays*86400000));
+          var expires = '; expires='+date.toGMTString();
+          document.cookie = 'cart='+a+expires+'; path=/';
+        };
+
+        var init = function(){
+          /* get the current value of the cart cookie */
+          cartCookieValue = getCookie('cart');
+
+          if(!cartCookieValue){ 
+            /* cookie not found so we don't have a cart at all. Let's make a new one */
+            setCartCookie(customerCookieValue);
+            return;
+          }
+
+          if(cartCookieValue === customerCookieValue){
+            /* the customer is already using the correct cookie. Do nothing */
+            return;
+          }
+
+          /* 
+				If we've got this far we either don't have a cookie or the cookie is
+				already set to be hmac_sha256 value.
+
+				Cookies do not match. 
+				Do we have products already in the cart? 
+			*/
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', '/cart.js');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var cartJson = JSON.parse(xhr.responseText);
+              console.log(cartJson);
+              if(cartJson && cartJson.item_count){ 
+
+                /* 
+						Do nothing as there's already items in the cart.
+
+						If you want to extend the code this is where you'd take the items 
+						in the current cart and move them into the persistant cart. In other
+						words - change the cookie value and re-add all the existing products.
+						*/
+                return;
+              }
+
+              /* 
+						we don't have items in the cart so this means that we can easily 
+						change the cart cookie value.
+
+						Once set, all products added will be to a cart with this value.
+						(in theory)
+					*/
+              setCartCookie(customerCookieValue);
+
+              /*
+						With the cookie value changed the next step would be to check to see
+						if the cart now has products or not. If it does, it would be worth 
+						reloading the page (or better - trigger an on screen cart notifications).
+
+						Visit the cart page manually for now and see if you have items from the
+						other shipping session.
+					*/
+            }
+          };
+          xhr.send();
+        };
+
+        init();
+
+      })();
+
+      {%- endif -%}
+    </script>
+    {% endcomment %}
+<!--     <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script> -->
     <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XmTPAH"></script>
     <script src="{{ 'klaviyo.js' | asset_url }}"></script>
     <script>
@@ -371,7 +495,35 @@
     {% include 'swym-header-counter'%}
    
     {%include 'swym-custom'%}
+   {% comment %}  <script> 
+      //       if(window._swat){
+      //         window._swat.initializeActionButtons(".save-whishlist"); 
+      //       }else{ 
+      //         window.SwymCallbacks = window.SwymCallbacks || []; 
+      //         window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".save-whishlist"); }); 
+      //       } console.log(window._swat);
+    </script>
+    {% endcomment %} 
 
+    
+    
+   {% comment %}
+   {% if template contains 'collection'  %}
+    <script>
+      var collection = [];
+      var data = {
+        template:{{template | json}},
+        name: {{collection.title | json}},
+        url:{{collection.url | json }},
+      };
+      collection.push(data);
+      localStorage.setItem('breadcrumbCollection',JSON.stringify(collection) );
+    </script>
+    
+    
+     {% else %}
+    {% endif %}
+   {% endcomment %}
     
     <script> 
       {% if template contains 'product' or template contains 'collection'  %}
@@ -380,18 +532,5 @@
       {% endif %}
     </script>
     
-   
-  <!-- langify-v2-scripts-begin -->
-    {% comment %}ly_liquid_scripts_begin{% endcomment %}
-   
-    {% render 'ly-liquid-scripts' content: ly_liquid_content %}
-    {% comment %}ly_liquid_scripts_end{% endcomment %}
-    {% comment %}ly_core_scripts_begin{% endcomment %}
-    {% render 'ly-core-scripts' %}
-    {% comment %}ly_core_scripts_end{% endcomment %}
-    {% comment %}ly_switcher_factory_begin{% endcomment %}
-    {% render 'ly-switcher-factory' %}
-    {% comment %}ly_switcher_factory_end{% endcomment %}
-    <!-- langify-v2-scripts-end -->
- </body>  
+
 </html>
