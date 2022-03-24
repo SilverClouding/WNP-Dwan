@@ -285,6 +285,10 @@
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
      <script src="{{ 'store_locator.js' | asset_url }}" defer="defer"></script>
     
+    <script>
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+    </script>
 
     <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
     <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
