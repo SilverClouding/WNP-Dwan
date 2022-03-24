@@ -1,5 +1,5 @@
-{% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}<!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %} {%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}dir="rtl" {%- endif -%}{% comment %}ly_dir_replace_end{% endcomment %}>
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %}{%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%} dir="rtl" {%- endif -%}{% comment %}ly_dir_replace_end{% endcomment %}>
   <head>{% render 'pagefly-head' %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,10 +138,9 @@
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
     
-  {% comment %}
+  
   {% render 'weglot_hreftags' %}
 {% render 'weglot_switcher' %}
-    {% endcomment %}
 
 <!--begin-boost-pfs-filter-css-->
   {% render 'boost-pfs-style' %}
@@ -262,7 +261,10 @@
     {%- endif -%}
     
     {{ 'quickview.css' | asset_url | stylesheet_tag }}
-  
+    <script>
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+    </script>
 
     {% unless template contains 'cart' %}
     {% render 'minicart' %}
@@ -285,39 +287,149 @@
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
      <script src="{{ 'store_locator.js' | asset_url }}" defer="defer"></script>
     
-    <script>
-      {% capture content %}{% include 'quickview' %}{% endcapture %}
-      var content = {{ content | json }};
-    </script>
 
     <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
-    <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
-    <script>
-      ratingSnippet("ruk_rating_snippet",{
-        store: "wnp.pet",
-        color: "#0E1311",
-        linebreak: true,
-        usePolaris: true,
-        text: "Reviews"
-      });
-    </script>
+<link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css" />
+<script>
+ratingSnippet("ruk_rating_snippet",{
+  store: "wnp.pet",
+  color: "#0E1311",
+  linebreak: true,
+  usePolaris: true,
+  text: "Reviews"
+});
+</script>
    
+
+  {%comment%}
+  {% render 'linked-options' %}{%endcomment%}
+  
+    
 
 
 <!--begin-boost-pfs-js-->
   {% render 'boost-pfs' %}
 <!--end-boost-pfs-js-->
-    {% include 'swymSnippet' %}
-    {% include 'swym-header-counter'%}
-
-    {%include 'swym-custom'%}
-
+    
    
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {% comment %}{% endcomment %}
     <script src="{{ 'stx_custom.js' | asset_url }}" defer="defer"></script>
     
-   
+    {% comment %}
+    <script>
+      {%- if customer -%}
+
+      (function(){
+
+        "use strict";
+
+        /* In case you want to output a bunch of things to the debug console */
+        var debug = false;
+
+        /* the cookie value var */
+        var cartCookieValue;
+
+        /* you should leave this as is, but if you want to experiement with larger values you can */
+        var cookieExpireDays = 14;
+
+        /* 
+		IMPORTANT. 
+		YOU MUST CHANGE THE YOUR_SECRET_KEY VALUE BELOW TO SOMETHING ELSE.
+		The value will look something like this: 30ab3459e46e7b209b45dba8378fcbba67297304
+		*/
+        var customerCookieValue = {{ customer.id | hmac_sha256: "30ab3459e46e7b209b45dba8378fcbba67297304" | json }};
+
+        /* A console logging function */
+        var log = function(a){
+          if(!debug){ return }
+          console.log(a);
+        };
+
+        /* get cookie by name */
+        var getCookie = function(name) {
+          var value = "; " + document.cookie;
+          var parts = value.split('; '+name+'=');
+          if (parts.length == 2) return parts.pop().split(";").shift();
+        };
+
+        /* update the cart cookie value */
+        var setCartCookie = function(a) {
+          var date = new Date();
+          date.setTime(date.getTime()+(cookieExpireDays*86400000));
+          var expires = '; expires='+date.toGMTString();
+          document.cookie = 'cart='+a+expires+'; path=/';
+        };
+
+        var init = function(){
+          /* get the current value of the cart cookie */
+          cartCookieValue = getCookie('cart');
+
+          if(!cartCookieValue){ 
+            /* cookie not found so we don't have a cart at all. Let's make a new one */
+            setCartCookie(customerCookieValue);
+            return;
+          }
+
+          if(cartCookieValue === customerCookieValue){
+            /* the customer is already using the correct cookie. Do nothing */
+            return;
+          }
+
+          /* 
+				If we've got this far we either don't have a cookie or the cookie is
+				already set to be hmac_sha256 value.
+
+				Cookies do not match. 
+				Do we have products already in the cart? 
+			*/
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', '/cart.js');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var cartJson = JSON.parse(xhr.responseText);
+              console.log(cartJson);
+              if(cartJson && cartJson.item_count){ 
+
+                /* 
+						Do nothing as there's already items in the cart.
+
+						If you want to extend the code this is where you'd take the items 
+						in the current cart and move them into the persistant cart. In other
+						words - change the cookie value and re-add all the existing products.
+						*/
+                return;
+              }
+
+              /* 
+						we don't have items in the cart so this means that we can easily 
+						change the cart cookie value.
+
+						Once set, all products added will be to a cart with this value.
+						(in theory)
+					*/
+              setCartCookie(customerCookieValue);
+
+              /*
+						With the cookie value changed the next step would be to check to see
+						if the cart now has products or not. If it does, it would be worth 
+						reloading the page (or better - trigger an on screen cart notifications).
+
+						Visit the cart page manually for now and see if you have items from the
+						other shipping session.
+					*/
+            }
+          };
+          xhr.send();
+        };
+
+        init();
+
+      })();
+
+      {%- endif -%}
+    </script>
+    {% endcomment %}
 <!--     <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script> -->
     <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XmTPAH"></script>
     <script src="{{ 'klaviyo.js' | asset_url }}"></script>
@@ -378,7 +490,39 @@
     
 
     
-  
+    {% include 'swymSnippet' %}
+    {% include 'swym-header-counter'%}
+   
+    {%include 'swym-custom'%}
+   {% comment %}  <script> 
+      //       if(window._swat){
+      //         window._swat.initializeActionButtons(".save-whishlist"); 
+      //       }else{ 
+      //         window.SwymCallbacks = window.SwymCallbacks || []; 
+      //         window.SwymCallbacks.push(function(){ window._swat.initializeActionButtons(".save-whishlist"); }); 
+      //       } console.log(window._swat);
+    </script>
+    {% endcomment %} 
+
+    
+    
+   {% comment %}
+   {% if template contains 'collection'  %}
+    <script>
+      var collection = [];
+      var data = {
+        template:{{template | json}},
+        name: {{collection.title | json}},
+        url:{{collection.url | json }},
+      };
+      collection.push(data);
+      localStorage.setItem('breadcrumbCollection',JSON.stringify(collection) );
+    </script>
+    
+    
+     {% else %}
+    {% endif %}
+   {% endcomment %}
     
     <script> 
       {% if template contains 'product' or template contains 'collection'  %}
@@ -387,5 +531,5 @@
       {% endif %}
     </script>
     
-  <!-- langify-v2-scripts-begin -->{% comment %}ly_liquid_scripts_begin{% endcomment %}{% endcapture %}{% render 'ly-liquid-scripts' content: ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}{% comment %}ly_core_scripts_begin{% endcomment %}{% render 'ly-core-scripts' %}{% comment %}ly_core_scripts_end{% endcomment %}{% comment %}ly_switcher_factory_begin{% endcomment %}{% render 'ly-switcher-factory' %}{% comment %}ly_switcher_factory_end{% endcomment %}<!-- langify-v2-scripts-end --></body>
+  </body>
 </html>
