@@ -630,6 +630,7 @@ console.log('click qv');
       openEffect: 'none',
       closeEffect: 'none',
       'afterShow': function () {
+        console.log(content);
         $("#qv_"+$(this).attr('data-productid')).hide().html(content).css('opacity', '1').fadeIn(function () {
           $('.qv-product-main-images').addClass('loaded');
           $('.slider-nav').addClass('loaded');
