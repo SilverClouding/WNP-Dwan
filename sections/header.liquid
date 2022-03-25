@@ -13,7 +13,10 @@
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
-
+<script>
+  {% capture content %}{% include 'quickview' %}{% endcapture %}
+  var content = {{ content | json }};
+</script>
 <style>
   header-drawer {
     justify-self: start;

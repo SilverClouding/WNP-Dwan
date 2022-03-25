@@ -280,10 +280,7 @@
       <p> Some products have a minimum quantity rule. This is to ensure the product retains its coldness when it reaches you. The multiples of quantity can be made up of any combination of products in that product category.</p>
     </div>
      </div>
-     <script>
-      {% capture content %}{% include 'quickview' %}{% endcapture %}
-      var content = {{ content | json }};
-    </script>
+   
 <!--      <div class="qv-product-options_html"></div> -->
     <script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'minicart.js' | asset_url }}" defer="defer"></script>
