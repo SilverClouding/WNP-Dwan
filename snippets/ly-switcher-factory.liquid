@@ -123,7 +123,7 @@
 
     <div data-breakpoint="{{ breakpoint.key }}" class="ly-switcher-wrapper ly-breakpoint-{{ forloop.index }} {{ position }} {% if position != 'custom' %}{{ corner }}{% else %}ly-custom{% endif %}{% if is_transparent %} ly-is-transparent{% endif %} ly-hide" style="font-size: {{ fontsize }}px; {% if position != 'custom' %}margin: {{ v_space }}px {{ h_space }}px; {% endif %}">
 
-      {%- if country_switcher_enabled -%}
+      {%- if country_switcher_enabled and type != 'none' -%}
         {%- if type == 'native_select' -%}
           <select name="country_code" class="ly-country-switcher ly-native-select" style="{{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
             {% for country in localization.available_countries %}
@@ -248,7 +248,7 @@
             </li>
           {%- endfor -%}
         </ul>
-      {%- else -%}
+      {%- when 'links' -%}
         <div data-breakpoint="{{ breakpoint.key }}" class="ly-languages-switcher ly-links {% unless is_dark %} ly-bright-theme{% endunless %}" style="color: {{ text_color }};">
           {%- for language in languages -%}
             <a href="#" data-language-code="{{ language.iso_code }}" data-ly-locked="true" class="ly-languages-switcher-link{% if language.iso_code == localization.language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
@@ -259,9 +259,10 @@
             </a>
           {%- endfor -%}
         </div>
+      {%- else -%}
       {%- endcase -%}
 
-      {%- if currency_switcher_enabled -%}
+      {%- if currency_switcher_enabled and type != 'none' -%}
         {%- if type == 'native_select' -%}
           <select name="currency_code" class="ly-currency-switcher ly-native-select" style="{{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
             {% for currency in shop.enabled_currencies %}
