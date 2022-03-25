@@ -93,6 +93,7 @@
         },
         "3cbe7d2c-90b1-4bed-8434-a2112240a512": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CNY_delivery_ENG_Homepage_Mobile_732x340_a879681e-aa29-48f0-9937-d206c720b8f3.jpg",
             "image_2": "shopify:\/\/shop_images\/Homepage_01_TopBanner_High5Dogs_Mobile.jpg",
