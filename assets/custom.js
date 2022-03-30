@@ -716,7 +716,7 @@ jQuery(function($){
   console.log($("body").hasClass("product"));
   if($("body").hasClass("product")){
     var url = window.location.href;
-    var removeurlContent = url.slice( 1, url.indexOf('?') );
+    var removeurlContent = url.split( '?' )[1];
 //     window.location.replace(url);
     console.log(removeurlContent);
   }
