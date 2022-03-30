@@ -1063,3 +1063,24 @@ width: 100%;
 
 
 
+
+.soldout+label:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  background: #0d0de9!important;
+  transform: rotate(-12deg);
+  height: 1px;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+}
+
+.available+label:before {
+  content: "";
+  display: none;
+}
+.available+label{
+  opacity:1!important;
+  color:#000000!important;
+}
