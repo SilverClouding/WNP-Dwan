@@ -606,11 +606,11 @@ jQuery(function($){
 
   //   new quickview
 jQuery(function($){
-  
-  
-  
+
+
+
   $(document).on('click',".quick-view_new", function () {
-console.log('click qv');
+    console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
 
     $.fancybox({
@@ -638,12 +638,12 @@ console.log('click qv');
         $("#qv_"+$(this).attr('data-productid')).removeClass().empty();
         $('.qv-product-main-images').slick('unslick');
         $('.slider-nav').slick('unslick');
-//         $.fancybox.defaults.hash = false;
+        //         $.fancybox.defaults.hash = false;
         $('.open_popup_minq').removeClass('active');
         console.log('close');
       },
       'beforeLoad': function () {
-		$('.qv-product-main-images').slick({
+        $('.qv-product-main-images').slick({
           dots: false,
           arrows: true,
           respondTo: 'min',
