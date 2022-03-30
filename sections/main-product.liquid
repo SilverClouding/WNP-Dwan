@@ -622,9 +622,9 @@
                                  {{product.selected_variant.title}}
                                   {% assign current_option1_array = product.selected_variant.title | split:" " %}
                                  {% assign valueHandle = value | handle %}
-                                  {% if option.position == 1 %} {% if current_option1_array[0] == valueHandle %}checked {% endif %}  {% endif %}
-                                 {% if option.position == 2 %} {% if current_option2_array[1] == valueHandle %}checked {% endif %}  {% endif %}
-                                 {% if option.position == 3 %} {% if current_option3_array[2] == valueHandle %}checked {% endif %}  {% endif %}
+                                  {% if option.position == 1 %} {% if current_option1_array[0] == valueHandle %}checked 0{% endif %}  {% endif %}
+                                 {% if option.position == 2 %} {% if current_option2_array[1] == valueHandle %}checked 1 {% endif %}  {% endif %}
+                                 {% if option.position == 3 %} {% if current_option3_array[2] == valueHandle %}checked 2{% endif %}  {% endif %}
                                  
                                  {% comment %}
                                  {% assign current_option1_array = current_option1 | split:"," %}
