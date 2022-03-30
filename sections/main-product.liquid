@@ -551,7 +551,7 @@
         
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
-                <variant-radios {% if minTag %} data-min-qty="{{qty | plus: 0}}" {% endif %} 
+                <variant-radios {% if minTag %} data-min-qty="{{qty | plus: 0}}" {% else %}  data-min-qty=1{% endif %} 
                                 {% for var in product.variants %}data_{{- var.id -}} = "{{ var.inventory_quantity | default: 0}}"
                                 {% endfor %} 
                                 class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
