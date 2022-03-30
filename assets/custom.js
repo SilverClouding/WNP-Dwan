@@ -712,7 +712,8 @@ if(breadcrumbObject.template == "collection"){
 //   window.location.replace(url);
 // }
 
-jQuery(function(){
+jQuery(function($){
+  console.log($("body").hasClass(".product"));
   if($("body").hasClass(".product")){
     console.log('product');
   }
