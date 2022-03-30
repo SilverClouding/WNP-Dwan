@@ -713,13 +713,13 @@ if(breadcrumbObject.template == "collection"){
 // }
 
 jQuery(function($){
-  console.log($("body").hasClass("product"));
-  if($("body").hasClass("product")){
-    var url = window.location.href;
-    var removeurlContent = url.split( '?' )[0];
-    $(window).load(function(){
-    window.location.replace(removeurlContent);
-    console.log(removeurlContent);
-    });
-  }
+  $(window).load(function(){
+    console.log($("body").hasClass("product"));
+    if($("body").hasClass("product")){
+      var url = window.location.href;
+      url = url.split( '?' )[0];
+       window.history.replaceState({ }, '', `${url}`);
+      console.log(url);
+    }
+  });
 });
