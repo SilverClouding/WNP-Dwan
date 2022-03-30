@@ -716,8 +716,10 @@ jQuery(function($){
   console.log($("body").hasClass("product"));
   if($("body").hasClass("product")){
     var url = window.location.href;
-    var removeurlContent = url.split( '?' )[1];
-//     window.location.replace(url);
+    var removeurlContent = url.split( '?' )[0];
+    $(window).load(function(){
+    window.location.replace(removeurlContent);
     console.log(removeurlContent);
+    });
   }
 });
