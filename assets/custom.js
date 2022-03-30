@@ -715,6 +715,8 @@ if(breadcrumbObject.template == "collection"){
 jQuery(function($){
   console.log($("body").hasClass("product"));
   if($("body").hasClass("product")){
-    console.log('product');
+    var url = window.location.href;
+    url = url.substring(0 , url.indexOf('?')+1);
+    console.log(url);
   }
 });
