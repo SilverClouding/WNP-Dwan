@@ -1068,7 +1068,7 @@ width: 100%;
   position: absolute;
   content: '';
   top: 50%;
-  background: #0d0de9!important;
+  background:rgba(68, 68, 77, 0.5) !important;
   transform: rotate(-12deg);
   height: 1px;
   z-index: 99;
