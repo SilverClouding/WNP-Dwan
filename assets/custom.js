@@ -722,7 +722,7 @@ jQuery(function($){
         url = url.split( '?' )[0];
         window.history.replaceState({ }, '', `${url}`);
         console.log(url);
-        location.reload();
+//         location.reload();
       }else{
         console.log("else");
 //         break;
