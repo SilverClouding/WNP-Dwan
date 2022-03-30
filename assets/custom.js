@@ -612,12 +612,7 @@ jQuery(function($){
   $(document).on('click',".quick-view_new", function () {
 console.log('click qv');
     var openId = "#qv_"+$(this).attr('data-productid');
-//     console.log(openId.size);
-    
-//     $(openId).each(function(i){
-//     console.log(this);
-//     });
-    
+
     $.fancybox({
       href: "#qv_"+$(this).attr('data-productid'),
       maxWidth: 1040,
