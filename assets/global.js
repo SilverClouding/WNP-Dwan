@@ -852,8 +852,8 @@ class VariantSelects extends HTMLElement {
     var inventoryQty =this.getAttribute('data_'+this.currentVariant.id);
 
     var minQty = this.getAttribute('data-min-qty');
-
-    console.log(disable+'-toggle button-'+inventoryQty+'='+minQty);
+console.log(this);
+//     console.log(disable+'-toggle button-'+inventoryQty+'='+minQty);
 
     if( parseInt(inventoryQty) < minQty){
     disable = true;
