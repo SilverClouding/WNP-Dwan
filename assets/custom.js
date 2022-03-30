@@ -725,7 +725,7 @@ jQuery(function($){
         location.reload();
       }else{
         console.log("else");
-        break;
+//         break;
       }
     }
   }
