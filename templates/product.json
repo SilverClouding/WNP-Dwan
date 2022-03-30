@@ -159,10 +159,9 @@
         },
         "35016f0b-244a-4bef-9949-cd00119b63b6": {
           "type": "content",
-          "disabled": true,
           "settings": {
-            "heading": "{{ product.metafields.my_fields.tab_4_title.value }}",
-            "text": "<p>{{ product.metafields.my_fields.tab_4_content.value }}<\/p>",
+            "heading": "Delivery & Returns",
+            "text": "<p>text content<\/p>",
             "show_desc": false
           }
         }
