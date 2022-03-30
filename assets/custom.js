@@ -711,3 +711,9 @@ if(breadcrumbObject.template == "collection"){
 //   return url.split("?")[0];
 //   window.location.replace(url);
 // }
+
+jQuery(function(){
+  if($("body").hasClass(".product")){
+    console.log('product');
+  }
+});
