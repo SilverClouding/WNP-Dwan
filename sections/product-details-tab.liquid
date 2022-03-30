@@ -12,10 +12,6 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
  <div class="product-detailscon">
   <h2>Product details</h2>
 
-   {% comment %} {% endcomment %}
-  
-   
- 
    <div class="tab-for-desktop">
      <div class="tab-customize">
        {% if data.tab_1_title != blank and data.tab_1_content != blank %}
@@ -30,6 +26,11 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
         {% if data.tab_4_title != blank and data.tab_4_content != blank %}
        <div class="tablinks-cus" onclick="openTab(event, 'tab-4')"id="tab-cus-active">{{data.tab_4_title}}</div>
        {% endif %}
+       
+       {% for block in section.blocks %}
+       <div class="tablinks-cus" onclick="openTab(event, 'tab-{{forloop.index}}')" {% if forloop.index == 1 %}id="tab-cus-active" {% endif %} >{{block.settings.heading}}</div>
+       {% endfor %}
+       
      </div>
      {% if data.tab_1_content != blank and data.tab_1_title != blank  %}
      <div id="tab-1" class="tabcontent-cus">{{data.tab_1_content}}</div>
@@ -43,6 +44,9 @@ if combine_pretext is false, the text before the first <H6> will be shown above 
      {% if data.tab_4_content != blank and data.tab_4_title != blank %}
      <div id="tab-4" class="tabcontent-cus ingredients">{{data.tab_4_content}}</div>
      {% endif %}
+     {% for block in section.blocks %}
+     <div id="tab-{{forloop.index}}" class="tabcontent-cus ingredients">{% if block.settings.show_desc %} {{product.description}} {% else %}{{ block.settings.text }}{% endif %}</div>
+     {% endfor %}
    </div>
    <div class="accordion-for-mobile">
      {% if data.tab_1_title != blank and data.tab_1_content != blank %}
