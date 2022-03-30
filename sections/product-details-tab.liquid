@@ -1,12 +1,10 @@
 {% comment %}
 {% assign data = product.metafields.my_fields.description %}
-
-
-{{section.blocks.size}}
 if combine_pretext is false, the text before the first <H6> will be shown above all tabs, otherwise added to the first tab
 {% endcomment %} 
 
 {% assign data = product.metafields.my_fields.product_info.value %}
+{{section.blocks.size}}
   {% if data.size > 0  %}
 <div class="product-tabs {% if section.settings.full_width %}product-tabs--full-width{% else %}page-width{% endif %} color-{{ section.settings.color_scheme }}  gradient color-scheme-{{ section.settings.color_scheme }}">
  <div class="product-detailscon">
