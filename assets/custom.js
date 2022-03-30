@@ -720,7 +720,7 @@ jQuery(function($){
       if (url.indexOf("?variant") > -1) {
         console.log("if");
         url = url.split( '?' )[0];
-        window.history.replaceState({ }, '', `${url}`);
+//         window.history.replaceState({ }, '', `${url}`);
         console.log(url);
 //         location.reload();
       }else{
