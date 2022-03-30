@@ -717,12 +717,14 @@ jQuery(function($){
     console.log($("body").hasClass("product"));
     if($("body").hasClass("product")){
       var url = window.location.href;
-      if (url.indexOf("?") > -1) {
+      if (url.indexOf("?variant") > -1) {
+        console.log("if");
         url = url.split( '?' )[0];
         window.history.replaceState({ }, '', `${url}`);
         console.log(url);
         location.reload();
       }else{
+        console.log("else");
         break;
       }
     }
