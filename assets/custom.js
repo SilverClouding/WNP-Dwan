@@ -716,8 +716,8 @@ jQuery(function($){
   console.log($("body").hasClass("product"));
   if($("body").hasClass("product")){
     var url = window.location.href;
-    url = url.substring(0 , url.indexOf('?')+1);
-    window.location.replace(url);
+    url = url.slice( 0, url.indexOf('?') );
+//     window.location.replace(url);
     console.log(url);
   }
 });
