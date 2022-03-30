@@ -718,12 +718,13 @@ jQuery(function($){
     if($("body").hasClass("product")){
       var url = window.location.href;
       url = url.split( '?' )[0];
-       window.history.replaceState({ }, '', `${url}`);
+      window.history.replaceState({ }, '', `${url}`);
       console.log(url);
     }
   }
-});
 
-window.onload = (event) => {
-  removeStringUrl()
-};
+
+  window.onload = (event) => {
+    removeStringUrl()
+  };
+});
