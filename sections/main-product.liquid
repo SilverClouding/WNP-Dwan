@@ -619,7 +619,7 @@
                                          {% if option.position == 3 %} {% if current_option3 contains value %}available{% else %} soldout {% endif %}  {% endif %} 
                                        "
                                 dataselectedvartitle="{{product.selected_variant.title}}"
-                                 {% assign current_option1_array = product.selected_variant.title | split:" " %}
+                                 {% assign current_option1_array = product.selected_variant.title | split:"/" %}
                                  {% assign valueHandle = value | strip %}
                                  
                                  {% if option.position == 1 %} 
