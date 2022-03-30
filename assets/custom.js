@@ -721,6 +721,7 @@ jQuery(function($){
       window.history.replaceState({ }, '', `${url}`);
       console.log(url);
       location.reload();
+      break;
     }
   }
 
