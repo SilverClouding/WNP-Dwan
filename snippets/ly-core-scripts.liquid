@@ -24,6 +24,9 @@
 {%- assign key = 'ly_switcher_data_' | append: theme.id -%}
 {%- assign switcherSettings = shop.metafields.global[key] -%}
 {%- assign languages = localization.available_languages -%}
+{%- if shop.metafields.langify_v2.cross_domain_links and languages.size <= 1 and switcherSettings.languages.size > 1 -%}
+  {%- assign languages = switcherSettings.languages -%} 
+{%- endif -%}
 {%- assign countries = localization.available_countries -%}
 {%- assign languageDetectionDefault = switcherSettings.languageDetectionDefault %}
 
@@ -856,11 +859,22 @@
     }
     
     bindLanguageSwitchers() {
+      var root = this;
       var links = document.getElementsByClassName('ly-languages-switcher-link');
       for(var l = 0; l < links.length; l++) {
         links[l].addEventListener('click', function(event) {
+          var additionalFields = [];
+          if(Helper.isDomainFeatureEnabled()) {
+            var country_code = root._getCountryCodeFromHreflang(this.getAttribute('data-language-code'));
+            if(country_code) {
+              additionalFields.push({
+                name: 'country_code',
+                value: country_code
+              })              
+            }
+          }
           Helper.setCookie('ly-lang-selected', this.getAttribute('data-language-code'), 365);
-          Helper.localizationRedirect('language_code', this.getAttribute('data-language-code'));
+          Helper.localizationRedirect('language_code', this.getAttribute('data-language-code'), additionalFields);
         });
       }
 
@@ -868,6 +882,16 @@
       var nativeLangifySelects = document.querySelectorAll('select.ly-languages-switcher');
       for(var i = 0; i < nativeLangifySelects.length; i++) {
         nativeLangifySelects[i].onchange = function() {
+          var additionalFields = [];
+          if(Helper.isDomainFeatureEnabled()) {
+            var country_code = root._getCountryCodeFromHreflang(this[this.selectedIndex].getAttribute('data-language-code'));
+            if(country_code) {
+              additionalFields.push({
+                name: 'country_code',
+                value: country_code
+              })              
+            }
+          }
           Helper.setCookie('ly-lang-selected', this[this.selectedIndex].getAttribute('data-language-code'), 365);
           Helper.localizationRedirect('language_code', this[this.selectedIndex].getAttribute('data-language-code'));
         };
@@ -942,6 +966,25 @@
 
     togglePopupOpen(e) {
       e.closest('.ly-popup-switcher').classList.toggle('ly-is-open');
+    }
+
+    _getCountryCodeFromHreflang(language_code) {
+      var hreflangTags = document.querySelectorAll('link[hreflang]');
+      var languageDomains = {};
+      var countryCode = false;
+      for(var i = 0; i < hreflangTags.length; i++) {
+        if(hreflangTags[i].getAttribute('hreflang').indexOf(language_code) === 0) {
+          if(!languageDomains[hreflangTags[i].getAttribute('href')]) {
+            languageDomains[hreflangTags[i].getAttribute('href')] = hreflangTags[i];
+          }
+        }
+      }
+      if(Object.keys(languageDomains).length > 0) {
+        countryCode = Object.values(languageDomains)[0].getAttribute('hreflang');
+        countryCode = countryCode.split('-');
+        countryCode = countryCode[1]
+      }
+      return countryCode;
     }
   }
 
@@ -1353,12 +1396,12 @@
           {%- if lang.last == language.iso_code  -%}
             {%- assign language_id_num = lang.first | replace: "ly", "" | plus: 0 %}
             {%- if current_language_num < language_id_num  -%}
-              {%- assign current_language = lang.first -%}
+              {%- assign each_current_language = lang.first -%}
               {%- assign current_language_num = language_id_num -%}
             {%- endif -%}
           {%- endif -%}
         {% endfor %}
-        language_id: {{ current_language | json }},
+        language_id: {{ each_current_language | json }},
         domain: {{ used_domain | json }},
       },
       {%- endif -%}
@@ -1403,7 +1446,7 @@
     {%- assign src = used_custom | first -%}
     {%- assign dst = used_custom | last -%}
     {%- if dst -%}
-    customContents[{{ src | downcase | json }}.trim().replace(/(\r\n|\n|\r)/gim,"").replace(/\s+/g," ")] = {{ dst | replace: "\", "\\\" |  replace: "'", "\\'" | json }};
+    customContents[{{ src | downcase | json }}.trim().replace(/(\r\n|\n|\r)/gim,"").replace(/\s+/g," ")] = '{{ dst | replace: "\", "\\\" |  replace: "'", "\\'" }}';
     {%- endif -%}
     {% endfor %}
 
