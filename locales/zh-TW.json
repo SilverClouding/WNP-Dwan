@@ -224,7 +224,9 @@
         "deferred_payment_info": {
           "title": "%{amount_due} 的付款於 %{due_at} 到期",
           "description": "付款到期時，您將會收到提醒電子郵件。"
-        }
+        },
+        "percent_off_shipping": "%{percent}% 的運費優惠",
+        "amount_off_shipping": "運費折扣 %{amount}"
       },
       "shipping": {
         "title": "運送",
@@ -425,7 +427,8 @@
           "not_available": "無法在此瀏覽器中使用 Apple Pay。如要連接您的 Apple Pay 帳戶，請在 Apple 裝置上使用 Safari。",
           "email_connected": "帳戶已連結： "
         },
-        "account_connected": "帳戶已連結"
+        "account_connected": "帳戶已連結",
+        "paypal_label": "PayPal"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "目前餘額：%{amount}",
