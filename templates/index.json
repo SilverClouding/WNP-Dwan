@@ -480,7 +480,18 @@
             "header_bg_colour": "#fff9ee",
             "header_colour": "#44444d",
             "header_star_colour": "#f5694d",
+            "heading_text_colour": "#0E1311",
             "heading_font": "avenir_next_n4",
+            "body_text_colour": "#0E1311",
+            "badge_icon_colour": "#0E1311",
+            "badge_text_colour": "#0E1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "rgba(0,0,0,0.05)",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "rgba(0,0,0,0.05)",
             "enable_rich_snippets": false,
             "logo_colour": "var(--logo-inverted)"
           }
@@ -722,18 +733,18 @@
     "16364545883ef8672a": {
       "type": "faq",
       "blocks": {
-        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Can I track my order?",
-            "content": "<p>Yes, you can track the status your order by logging into the \"My Order\" section of our online store. Just click on your order history and you will be able to see which stage your delivery is at.<\/p>"
-          }
-        },
         "dff0aac7-5075-4660-872e-9f4345bc5989": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Do you sell pets?",
             "content": "<p>This is a great question. You might assume that a pet shop must sell pets but at Whiskers N Paws we would much rather encourage adoption through one of the rescue charities that we support or though any of the wonderful rescues and shelters in HK.<\/p>"
+          }
+        },
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I track my order?",
+            "content": "<p>Yes, you can track the status your order by logging into the<a href=\"https:\/\/www.wnp.com.hk\/account\/login\" target=\"_blank\" title=\"https:\/\/www.wnp.com.hk\/account\/login\">\"My Order\"<\/a>section of our online store. Just click on your order history and you will be able to see which stage your delivery is at.<\/p>"
           }
         },
         "886f17c3-f7eb-4e19-864c-819fbe70926a": {
@@ -801,8 +812,8 @@
         }
       },
       "block_order": [
-        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
         "dff0aac7-5075-4660-872e-9f4345bc5989",
+        "b24e59a5-5d25-45b7-aa0f-0fa32a6c1e2f",
         "886f17c3-f7eb-4e19-864c-819fbe70926a",
         "fc03c057-63d9-4c86-b78b-1b8be5ef0723",
         "53aab69f-4b9f-481a-b12a-ed1a8f09338b",
