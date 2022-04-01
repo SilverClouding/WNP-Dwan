@@ -424,11 +424,15 @@
         },
         "apple": {
           "connect": "點擊以連結您的 Apple Pay 帳戶",
-          "not_available": "無法在此瀏覽器中使用 Apple Pay。如要連接您的 Apple Pay 帳戶，請在 Apple 裝置上使用 Safari。",
-          "email_connected": "帳戶已連結： "
+          "not_available": "無法在此瀏覽器中使用 Apple Pay。如要連接您的 Apple Pay 帳戶，請在 Apple 裝置上使用 Safari。"
         },
         "account_connected": "帳戶已連結",
-        "paypal_label": "PayPal"
+        "paypal_label": "PayPal",
+        "google": {
+          "connect": "點擊以連結您的 Google Pay 帳戶",
+          "error_authorizing": "授權付款時發生錯誤"
+        },
+        "email_connected": "已連結帳戶： "
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "目前餘額：%{amount}",
@@ -1393,7 +1397,7 @@
     "product": {
       "add_to_cart": "加入購物車",
       "description": "說明",
-      "on_sale": "銷售額",
+      "on_sale": "折扣優惠",
       "product_variants": "產品子類",
       "media": {
         "open_featured_media": "開啟圖庫檢視中的精選多媒體檔案",
