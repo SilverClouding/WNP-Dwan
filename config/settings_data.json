@@ -18,7 +18,7 @@
     "colors_text": "#f58220",
     "colors_outline_button_labels": "#8cff00",
     "colors_background_1": "rgba(0,0,0,0)",
-    "colors_background_2": "rgba(0,0,0,0)",
+    "colors_background_2": "#f2f2f2",
     "mega_menu_1": true,
     "mega_menu_2": true,
     "mega_menu_3": true,
