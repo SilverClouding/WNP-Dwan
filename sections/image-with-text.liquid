@@ -9,10 +9,10 @@
     background:{{ section.settings.bg_color}};
   }
   .image-with-text.img-text-custom .image-with-text__heading{
-  color: {{ section.settings.heading_color}};
+  color: {{ block.settings.heading_color}};
   }
   .image-with-text.img-text-custom .image-with-text__text p{
-  color: {{ section.settings.text_color}};
+  color: {{ block.settings.text_color}};
   }
 
 </style>
@@ -174,7 +174,19 @@
           "id": "heading",
           "default": "Image with text",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
-        }
+        },
+		{
+          "type": "color",
+          "id": "heading_color",
+          "default":"#F58220",
+          "label": "Text Heading Color"
+     },
+	{
+          "type": "color",
+          "id": "text_color",
+          "default":"#44444d",
+          "label": "Description Color"
+     }
       ]
     },
     {
