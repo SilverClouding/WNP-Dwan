@@ -22,10 +22,10 @@
         {% case block.type %}
         {%- when 'content' -%}
         <style>
-		  .image-with-text__contentt .swiper-slide .image-with-text__text p{
+		  .image-with-text__contentt #text-{{block.id}} .image-with-text__text p{
     color:{{ block.settings.description_color }};}       
        </style>
-        <div class="swiper-slide grid grid--gapless grid--1-col grid--2-col-tablet">
+        <div id="text-{{block.id}}" class="swiper-slide grid grid--gapless grid--1-col grid--2-col-tablet">
           <div class="grid__item" >
             <div class="image__section_img_text_slider">
               <a href="{{block.settings.image_link}}">     
