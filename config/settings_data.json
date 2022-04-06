@@ -36,6 +36,8 @@
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCLyyLMloqg1vAgM9YfNbf7Q",
     "favicon": "shopify:\/\/shop_images\/fav_9d2c1770-6746-47f4-bdba-d335ae2d4412.png",
     "currency_code_enabled": true,
+    "checkout_accent_color": "#f58220",
+    "checkout_button_color": "#f58220",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
