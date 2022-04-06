@@ -556,11 +556,11 @@
             "image_link": "",
             "bg_color": "#fdd538",
             "preheading": "Café",
-            "preheading_color": "",
+            "preheading_color": "#f5694d",
             "heading": "Pet-Friendly Plant-Based Café",
-            "heading_color": "",
+            "heading_color": "#f5694d",
             "text": "<p>Visit our 20,000sq ft space featuring our store, outdoor terrace & plant-based pet-friendly Café. Bring your furry friends along to mingle and run around outside.<\/p>",
-            "description_color": "",
+            "description_color": "#59595b",
             "button_label": "Learn More",
             "button_link": "shopify:\/\/pages\/cafe"
           }
