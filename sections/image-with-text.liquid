@@ -8,12 +8,6 @@
   #shopify-section-{{section.id}} .grid__item .image-with-text__content{
     background:{{ section.settings.bg_color}};
   }
-  .image-with-text.img-text-custom .image-with-text__heading{
-  color: {{ block.settings.heading_color }};
-  }
-  .image-with-text.img-text-custom .image-with-text__text p{
-  color: {{ block.settings.text_color }};
-  }
 
 </style>
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} section_width color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
@@ -46,6 +40,15 @@
     <div class="grid__item">
       <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
         {%- for block in section.blocks -%}
+        <style>
+  .image-with-text.img-text-custom .image-with-text__heading{
+  color: {{ block.settings.heading_color }};
+  }
+  .image-with-text.img-text-custom .image-with-text__text p{
+  color: {{ block.settings.text_color }};
+  }
+
+</style>
           {% case block.type %}
             {%- when 'heading' -%}
               <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
