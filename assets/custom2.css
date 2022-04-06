@@ -267,9 +267,6 @@ display:none;
   opacity: 0.5;
 }
 
-.available+label {
-    color: #59595B!important;
-}
 
 /* wishlist */
 i.icon-swym-wishlist {
@@ -1084,5 +1081,5 @@ width: 100%;
 }
 .available+label{
   opacity:1!important;
-  color:#000000!important;
+  color: #59595B!important;
 }
