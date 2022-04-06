@@ -5,6 +5,7 @@
     "reorde_link": "shopify:\/\/pages\/reorder-1",
     "minicart": true,
     "freeshipping": "300",
+    "above_description_icon_text_bg_color": "#f58220",
     "image_bottom": "shopify:\/\/shop_images\/CollectionPage_Marketing_Grid_Adoption.jpg",
     "image_caption_bottom": "WNP Adoption Program",
     "richtext_bottom": "<p>Starting a companionship is easier than you think!<\/p>",
