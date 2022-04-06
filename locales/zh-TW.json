@@ -46,7 +46,10 @@
         "checkout_context": {
           "step_one": "%{shop_name} - 結帳"
         },
-        "tooltip_accessibility_label": "詳細資訊"
+        "tooltip_accessibility_label": "詳細資訊",
+        "errors": {
+          "session_identifier_not_unique_error": "您的訂單發生錯誤，請嘗試再次結帳。"
+        }
       },
       "contact": {
         "title": "須知",
