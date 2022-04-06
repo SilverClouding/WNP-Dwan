@@ -7,13 +7,9 @@
 {%- assign key = 'ly_switcher_data_' | append: theme.id -%}
 {%- assign switcherSettings = shop.metafields.global[key] -%}
 
-{%- if localization.available_languages.size > 1 -%} 
-  {%- assign languages = localization.available_languages -%}
-{%- else -%}
-  {%- assign languages = shop.published_locales -%}
-  {%- if switcherSettings.languages.size > 0 -%}
-    {%- assign languages = switcherSettings.languages -%}
-  {%- endif -%}
+{%- assign languages = localization.available_languages -%}
+{%- if shop.metafields.langify_v2.cross_domain_links and switcherSettings.languages.size > 1 -%}
+  {%- assign languages = switcherSettings.languages -%} 
 {%- endif -%}
 
 {%- if switcherSettings -%}
@@ -172,8 +168,9 @@
           <ul class="ly-custom-dropdown-list ly-is-open {% unless is_dark %}ly-bright-theme{% endunless %}" style="{% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ border_style }}">
             {%- assign flippedLanguages = languages | reverse -%}
             {%- for language in flippedLanguages -%}
+              {%- assign current_root_url = request.locale.root_url | downcase | append: '/' -%}{%- assign path = request.path | split: "'" -%}{%- assign unlocalized_path = path[0] | downcase | replace_first: current_root_url, '/' -%}{%- if unlocalized_path == request.locale.root_url -%}{%- assign unlocalized_path = '' -%}{%- endif -%}
               <li key="{{language.iso_code}}" {% if language.iso_code == localization.language.iso_code %}class="current"{% endif %} style="color: {{ text_color }}; {{ item_spacing_style }}{{ item_padding_style }}">
-                <a class="ly-custom-dropdown-list-element ly-languages-switcher-link{% unless is_dark %} ly-bright-theme{% endunless %}{% if request.locale.iso_code == language.iso_code %} current_lang{% endif %}" href="#" data-language-code="{{language.iso_code}}" data-ly-locked="true">
+                <a class="ly-custom-dropdown-list-element ly-languages-switcher-link{% unless is_dark %} ly-bright-theme{% endunless %}{% if request.locale.iso_code == language.iso_code %} current_lang{% endif %}" href="{% if language.domain %}{{ 'https://' | append: language.domain | append: unlocalized_path }}{% else %}#{% endif %}" data-language-code="{{language.iso_code}}" data-ly-locked="true">
                   {%- if rectangle_icons or square_icons or round_icons -%}
                   	<i class="ly-icon ly-flag-icon ly-flag-icon-{{ language.iso_code }}{% if square_icons %} ly-flag-squared{% endif %}{% if round_icons %} ly-flag-rounded{% endif %}"></i>
                   {%- endif -%}
@@ -192,7 +189,8 @@
       {%- when 'native_select' -%}
         <select data-breakpoint="{{ breakpoint.key }}" class="ly-languages-switcher ly-native-select {% unless is_dark %} ly-bright-theme{% endunless %}{% if is_transparent %} ly-is-transparent{% endif %}" style="{% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
           {%- for language in languages -%}
-            <option data-language-code="{{language.iso_code}}" {% if request.locale.iso_code == language.iso_code %}selected="selected"{% endif %} class="{% if request.locale.iso_code == language.iso_code %}current_lang{% endif %}" value="{{language.iso_code}}" style="{{ item_padding_style }}">
+            {%- assign current_root_url = request.locale.root_url | downcase | append: '/' -%}{%- assign path = request.path | split: "'" -%}{%- assign unlocalized_path = path[0] | downcase | replace_first: current_root_url, '/' -%}{%- if unlocalized_path == request.locale.root_url -%}{%- assign unlocalized_path = '' -%}{%- endif -%}
+            <option data-language-code="{{language.iso_code}}"{% if language.domain %} data-domain="{{ 'https://' | append: language.domain | append: unlocalized_path }}"{% endif %}{% if request.locale.iso_code == language.iso_code %} selected="selected"{% endif %} class="{% if request.locale.iso_code == language.iso_code %}current_lang{% endif %}" value="{{language.iso_code}}" style="{{ item_padding_style }}">
               {%- if show_name %}{{ language.endonym_name | capitalize }}{% endif -%}
               {%- if show_custom_name -%}{% for lang in switcherSettings.languages %}{% if lang.iso_code == language.iso_code %}{% if lang.custom_name != false and lang.custom_name != '' %}{{ lang.custom_name }}{% else %}{{ language.endonym_name | capitalize }}{% endif %}{% endif %}{% endfor %}{%- endif -%}
               {%- if show_iso_code %}{{ language.iso_code | upcase }}{% endif -%}
@@ -222,8 +220,9 @@
               <a href="#" class="ly-close" onclick="langify.switcher.togglePopupOpen(this)"></a>
               <ul data-breakpoint="{{ breakpoint.key }}" style="font-size: {{ fontsize }}px;  {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }};">
               {%- for language in languages -%}
+                {%- assign current_root_url = request.locale.root_url | downcase | append: '/' -%}{%- assign path = request.path | split: "'" -%}{%- assign unlocalized_path = path[0] | downcase | replace_first: current_root_url, '/' -%}{%- if unlocalized_path == request.locale.root_url -%}{%- assign unlocalized_path = '' -%}{%- endif -%}
                 <li key="{{language.iso_code}}" style="{{ item_spacing_style }} {{ item_padding_style }}">
-                  <a href="#" data-language-code="{{language.iso_code}}" data-ly-locked="true" class="ly-languages-switcher-link{% if used_request_locale_iso_code == language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }};">
+                  <a href="{% if language.domain %}{{ 'https://' | append: language.domain | append: unlocalized_path }}{% else %}#{% endif %}" data-language-code="{{language.iso_code}}" data-ly-locked="true" class="ly-languages-switcher-link{% if used_request_locale_iso_code == language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }};">
                     {%- if rectangle_icons or square_icons or round_icons -%}<i class="ly-icon ly-flag-icon ly-flag-icon-{{ language.iso_code }}{% if square_icons %} ly-flag-squared{% endif %}{% if round_icons %} ly-flag-rounded{% endif %}"></i>{% endif -%}
                     {%- if show_name %}{{ language.endonym_name | capitalize }}{% endif -%}
                     {%- if show_custom_name -%}{% for lang in switcherSettings.languages %}{% if lang.iso_code == language.iso_code %}{% if lang.custom_name != false and lang.custom_name != '' %}{{ lang.custom_name }}{% else %}{{ language.endonym_name | capitalize }}{% endif %}{% endif %}{% endfor %}{%- endif -%}
@@ -238,8 +237,9 @@
       {%- when 'links_list' -%}
         <ul data-breakpoint="{{ breakpoint.key }}" class="ly-languages-switcher ly-list {% unless is_dark %} ly-bright-theme{% endunless %}{% if is_transparent %} ly-is-transparent{% endif %}" style="{% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ border_style }}">
           {%- for language in languages -%}
+            {%- assign current_root_url = request.locale.root_url | downcase | append: '/' -%}{%- assign path = request.path | split: "'" -%}{%- assign unlocalized_path = path[0] | downcase | replace_first: current_root_url, '/' -%}{%- if unlocalized_path == request.locale.root_url -%}{%- assign unlocalized_path = '' -%}{%- endif -%}
             <li key="{{language.iso_code}}" style="{{ item_spacing_style }} {{ item_padding_style }}">
-              <a href="#" data-language-code="{{language.iso_code}}" data-ly-locked="true" class="ly-languages-switcher-link{% if used_request_locale_iso_code == language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }};">
+              <a href="{% if language.domain %}{{ 'https://' | append: language.domain | append: unlocalized_path }}{% else %}#{% endif %}" data-language-code="{{language.iso_code}}" data-ly-locked="true" class="ly-languages-switcher-link{% if used_request_locale_iso_code == language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }};">
                 {%- if rectangle_icons or square_icons or round_icons -%}<i class="ly-icon ly-flag-icon ly-flag-icon-{{ language.iso_code }}{% if square_icons %} ly-flag-squared{% endif %}{% if round_icons %} ly-flag-rounded{% endif %}"></i>{%- endif -%}
                 {%- if show_name -%}<span class="ly-inner-text">{{ language.endonym_name | capitalize }}</span>{%- endif -%}
                 {%- if show_custom_name -%}<span class="ly-inner-text">{% for lang in switcherSettings.languages %}{% if lang.iso_code == language.iso_code %}{% if lang.custom_name != false and lang.custom_name != '' %}{{ lang.custom_name }}{% else %}{{ language.endonym_name | capitalize }}{% endif %}{% endif %}{% endfor %}</span>{%- endif -%}
@@ -251,7 +251,8 @@
       {%- when 'links' -%}
         <div data-breakpoint="{{ breakpoint.key }}" class="ly-languages-switcher ly-links {% unless is_dark %} ly-bright-theme{% endunless %}" style="color: {{ text_color }};">
           {%- for language in languages -%}
-            <a href="#" data-language-code="{{ language.iso_code }}" data-ly-locked="true" class="ly-languages-switcher-link{% if language.iso_code == localization.language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
+            {%- assign current_root_url = request.locale.root_url | downcase | append: '/' -%}{%- assign path = request.path | split: "'" -%}{%- assign unlocalized_path = path[0] | downcase | replace_first: current_root_url, '/' -%}{%- if unlocalized_path == request.locale.root_url -%}{%- assign unlocalized_path = '' -%}{%- endif -%}
+            <a href="{% if language.domain %}{{ 'https://' | append: language.domain | append: unlocalized_path }}{% else %}#{% endif %}" data-language-code="{{ language.iso_code }}" data-ly-locked="true" class="ly-languages-switcher-link{% if language.iso_code == localization.language.iso_code %} current_lang{% endif %}" style=" {% unless is_transparent %}background: {{ bg_color }}; {% endunless %}color: {{ text_color }}; {{ item_spacing_style }} {{ item_padding_style }} {{ border_style }}">
               {%- if rectangle_icons or square_icons or round_icons -%}<i class="ly-icon ly-flag-icon ly-flag-icon-{{ language.iso_code }}{% if square_icons %} ly-flag-squared{% endif %}{% if round_icons %} ly-flag-rounded{% endif %}"></i>{%- endif -%}
               {%- if show_name -%}<span class="ly-inner-text">{{ language.endonym_name | capitalize }}</span>{%- endif -%}
               {%- if show_custom_name -%}<span class="ly-inner-text">{% for lang in switcherSettings.languages %}{% if lang.iso_code == language.iso_code %}{% if lang.custom_name != false and lang.custom_name != '' %}{{ lang.custom_name }}{% else %}{{ language.endonym_name | capitalize }}{% endif %}{% endif %}{% endfor %}</span>{%- endif -%}

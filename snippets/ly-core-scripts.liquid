@@ -24,7 +24,7 @@
 {%- assign key = 'ly_switcher_data_' | append: theme.id -%}
 {%- assign switcherSettings = shop.metafields.global[key] -%}
 {%- assign languages = localization.available_languages -%}
-{%- if shop.metafields.langify_v2.cross_domain_links and languages.size <= 1 and switcherSettings.languages.size > 1 -%}
+{%- if shop.metafields.langify_v2.cross_domain_links and switcherSettings.languages.size > 1 -%}
   {%- assign languages = switcherSettings.languages -%} 
 {%- endif -%}
 {%- assign countries = localization.available_countries -%}
@@ -56,8 +56,8 @@
         inIframe: function() { return Helper.inIframe(); },
         shopifyAPI: function() { return Helper.shopifyAPI(); },
         loadScript: function(url, callback) { return Helper.loadScript(url, callback); },
-        localizationRedirect: function(url, callback) { return Helper.localizationRedirect(type, code, additionalFields, additionalParams); },
-        changeCurrency: function(url, callback) { return Helper.changeCurrency(code); },
+        localizationRedirect: function(type, code, additionalFields, additionalParams, domain) { return Helper.localizationRedirect(type, code, additionalFields, additionalParams, domain); },
+        changeCurrency: function(code) { return Helper.changeCurrency(code); },
         log: function(title, data, type) { return Helper.log(title, data, type); },
       }
     }
@@ -228,13 +228,21 @@
       script.src = url;
       document.getElementsByTagName('head')[0].appendChild(script);
     }
-    static localizationRedirect(type, code, additionalFields, additionalParams) {
+    static localizationRedirect(type, code, additionalFields, additionalParams, domain) {
       if(type !== 'country_code' && type !== 'language_code') { 
         return false; 
       }
       if(!additionalParams) {
         var additionalParams = '';
       }
+      /*
+      if(!domain) {
+        var domain = '';
+      }
+      if(domain.indexOf('https://') === -1) {
+        domain = 'https://' + domain;
+      }
+      */
       var params = [
         {
           name: type,
@@ -347,7 +355,7 @@
       return this;
     }
 
-    langifyObserverCore = function() {
+    langifyObserverCore() {
       var observedNodes = [];
       var intersectionObs = null;
       var mutationCount = 0;
@@ -863,18 +871,16 @@
       var links = document.getElementsByClassName('ly-languages-switcher-link');
       for(var l = 0; l < links.length; l++) {
         links[l].addEventListener('click', function(event) {
-          var additionalFields = [];
-          if(Helper.isDomainFeatureEnabled()) {
-            var country_code = root._getCountryCodeFromHreflang(this.getAttribute('data-language-code'));
-            if(country_code) {
-              additionalFields.push({
-                name: 'country_code',
-                value: country_code
-              })              
-            }
+          if(Helper.isDomainFeatureEnabled() && this.getAttribute('href') !== '#') {
+            // Cookie handling when language detection is enabled
+            Helper.setCookie('ly-lang-selected', this.getAttribute('data-language-code'), 365);
+
+            return true;
+          } else {
+            event.preventDefault();
+            Helper.setCookie('ly-lang-selected', this.getAttribute('data-language-code'), 365);
+            Helper.localizationRedirect('language_code', this.getAttribute('data-language-code'));
           }
-          Helper.setCookie('ly-lang-selected', this.getAttribute('data-language-code'), 365);
-          Helper.localizationRedirect('language_code', this.getAttribute('data-language-code'), additionalFields);
         });
       }
 
@@ -882,18 +888,20 @@
       var nativeLangifySelects = document.querySelectorAll('select.ly-languages-switcher');
       for(var i = 0; i < nativeLangifySelects.length; i++) {
         nativeLangifySelects[i].onchange = function() {
-          var additionalFields = [];
-          if(Helper.isDomainFeatureEnabled()) {
-            var country_code = root._getCountryCodeFromHreflang(this[this.selectedIndex].getAttribute('data-language-code'));
-            if(country_code) {
-              additionalFields.push({
-                name: 'country_code',
-                value: country_code
-              })              
+          if(Helper.isDomainFeatureEnabled() && this[this.selectedIndex].getAttribute('data-domain') !== '#') {
+            // Cookie handling when language detection is enabled
+            Helper.setCookie('ly-lang-selected', this[this.selectedIndex].getAttribute('data-language-code'), 365);
+            var url = this[this.selectedIndex].getAttribute('data-domain');
+            var appendix = '?redirected=true';
+            if(url.indexOf('?') >= 0) {
+              var appendix = '&redirected=true';
             }
+            window.location.href = url + appendix;
+          } else {
+            event.preventDefault();
+            Helper.setCookie('ly-lang-selected', this[this.selectedIndex].getAttribute('data-language-code'), 365);
+            Helper.localizationRedirect('language_code', this[this.selectedIndex].getAttribute('data-language-code'));
           }
-          Helper.setCookie('ly-lang-selected', this[this.selectedIndex].getAttribute('data-language-code'), 365);
-          Helper.localizationRedirect('language_code', this[this.selectedIndex].getAttribute('data-language-code'));
         };
       }
     }
@@ -982,7 +990,11 @@
       if(Object.keys(languageDomains).length > 0) {
         countryCode = Object.values(languageDomains)[0].getAttribute('hreflang');
         countryCode = countryCode.split('-');
-        countryCode = countryCode[1]
+        if(countryCode[1]) {
+          countryCode = countryCode[1]
+        } else {
+          
+        }
       }
       return countryCode;
     }
