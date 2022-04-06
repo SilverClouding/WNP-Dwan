@@ -302,7 +302,7 @@ border: 1px solid #d3d6d9!important;
 } */
 .product-form__input input[type=radio]:checked+label.available{
     border: 1px solid #F58220!important;
-  color:#F58220;
+  color:#F58220 !important;
 }
 
 .swym-wishlist-notifications-container.swym-ui-component.swym-is-safari {
