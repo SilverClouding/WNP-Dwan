@@ -8,6 +8,12 @@
   #shopify-section-{{section.id}} .grid__item .image-with-text__content{
     background:{{ section.settings.bg_color}};
   }
+  .image-with-text.img-text-custom .image-with-text__heading{
+  color: {{ section.settings.heading_color}};
+  }
+  .image-with-text.img-text-custom .image-with-text__text p{
+  color: {{ section.settings.text_color}};
+  }
 
 </style>
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} section_width color-scheme-{{ section.settings.color_scheme }} {{ section.settings.sec_class }}">
