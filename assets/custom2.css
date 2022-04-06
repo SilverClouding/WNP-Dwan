@@ -32,7 +32,7 @@ table td, table tr, table th, table, tbody {border: none;box-shadow: none!import
 
 .product-form__input input[type=radio]:checked+label {
     border: 1px solid #F58220!important;
-  color:#F58220;
+  color:#F58220 !important;
 }
 
 .bottom-part svg {
