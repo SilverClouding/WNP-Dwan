@@ -29,13 +29,15 @@
         "16425885018de76426-0": {
           "type": "heading",
           "settings": {
-            "heading": "WNP Adoption Program"
+            "heading": "WNP Adoption Program",
+            "heading_color": "#F58220"
           }
         },
         "16425885018de76426-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Everyday is adoption day at Whiskers N Paws! This dedicated space is for pets to meet & greet their new families. Come over any day of the week and meet your potential soul-mate.<\/p>"
+            "text": "<p>Everyday is adoption day at Whiskers N Paws! This dedicated space is for pets to meet & greet their new families. Come over any day of the week and meet your potential soul-mate.<\/p>",
+            "text_color": "#59595b"
           }
         },
         "16425885018de76426-2": {
@@ -56,6 +58,7 @@
         "section_width": 100,
         "height": "adapt",
         "color_scheme": "accent-1",
+        "bg_color": "#ffd539",
         "layout": "text_first",
         "sec_class": "dine-sec"
       }
