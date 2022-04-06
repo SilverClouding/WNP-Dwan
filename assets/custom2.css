@@ -317,6 +317,7 @@ a#notifyme, .notifyme {
     max-width: 380px;
     margin-bottom: 0;
     width: 100%;
+  border:none;
       cursor: pointer!important;
 }
 .product .price .badge{
