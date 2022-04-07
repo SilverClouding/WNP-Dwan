@@ -121,10 +121,7 @@
     {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     
-    {% if request.locale.iso_code == 'zh-TW' %}
-    {{ 'zh-tw.css' | asset_url | stylesheet_tag }}
    
-    {% endif %}
    
       {{ 'megamenu.css' | asset_url | stylesheet_tag }}
     
@@ -154,6 +151,9 @@
 
  {{ 'custom2.css' | asset_url | stylesheet_tag }}
     {{ 'color.css' | asset_url | stylesheet_tag }}
+     {% if request.locale.iso_code == 'zh-TW' %}
+    {{ 'zh-tw.css' | asset_url | stylesheet_tag }}
+    {% endif %}
 {% comment %}ly_dir_styles_begin{% endcomment %}{%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}{{- 'ly-rtl.css' | asset_url | stylesheet_tag -}}{%- endif -%}{% comment %}ly_dir_styles_end{% endcomment %}</head>
 
   <body class="gradient template_name_js {{template | replace:".","_"}}" template="{{template}}" currentUrl={{request.path}} >
