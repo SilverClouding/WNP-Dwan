@@ -778,7 +778,8 @@
           "sms": {
             "title": "或傳送連結至手機"
           }
-        }
+        },
+        "view_business_customer_account": "檢視帳號"
       },
       "review": {
         "title": "評論",
