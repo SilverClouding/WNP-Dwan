@@ -1329,7 +1329,7 @@
       "search": "搜尋"
     },
     "cart": {
-      "view": "檢視我的購物車 ({{ count }})",
+      "view": "檢視我的購物車",
       "item_added": "商品已加入購物車",
       "eligible": "完成，您有資格獲得",
       "spend": "花費 {{  needAmmount }} 收到更多"
