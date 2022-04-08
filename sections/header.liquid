@@ -535,6 +535,7 @@
                        >
 
                   {%- if section.settings.sticky_logo  != blank -%}
+                   {%- assign image_size = section.settings.mob_logo_width | append: 'x' -%}
                   <img srcset="{{ section.settings.sticky_logo | img_url: image_size }} 1x, {{ section.settings.sticky_logo | img_url: image_size, scale: 2 }} 2x"
                        src="{{ section.settings.sticky_logo | img_url: image_size }}"
                        loading="lazy"
