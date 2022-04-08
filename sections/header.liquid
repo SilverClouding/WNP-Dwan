@@ -1022,12 +1022,7 @@ requestAnimationFrame(this.reset.bind(this));
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
     },
-            {
-      "type": "image_picker",
-      "id": "sticky_logo",
-      "label": "Logo for sticky"
-    },
-    {
+	{
       "type": "range",
       "id": "logo_width",
       "min": 50,
@@ -1036,6 +1031,21 @@ requestAnimationFrame(this.reset.bind(this));
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticky_logo",
+      "label": "Logo for sticky"
+    },
+    {
+      "type": "range",
+      "id": "mob_logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Mobile Logo Width"
     },
     {
       "type": "select",
