@@ -68,14 +68,16 @@
         "68f7cf92-afae-4b54-9069-8f98031c3dbd"
       ],
       "settings": {
-        "show_cart_note": false
+        "show_cart_note": true
       }
     },
     "164164139832cf5bc7": {
       "type": "featured-collection",
       "settings": {
         "title": "Recently viewed",
+        "col_title1": "",
         "collection": "new-arrivals",
+        "col_title2": "",
         "collection2": "",
         "products_to_show": 12,
         "show_view_all": false,
