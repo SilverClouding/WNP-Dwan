@@ -2004,13 +2004,9 @@ select:focus, select:hover{
     line-height:20px;
     letter-spacing: 0;
   }
+  
+   
   @media(max-width:992px){
-    #shopify-section-featured-content-block .image-with-text{
-      flex-direction:column;
-      padding-top: 2.5rem;
-      margin-top: 0;
-      margin-bottom: 25px;
-    }
     .four-icons-sec .image-with-text .icon__text_item {
       width: calc(85% - 30px);
       margin-bottom:39px;
@@ -2019,6 +2015,14 @@ select:focus, select:hover{
       margin-bottom:0;
     }
   }
+  @media(max-width:767px){
+    #shopify-section-featured-content-block .image-with-text{
+      flex-direction:column;
+      padding-top: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+   }
   /* newsletter  */
   .newsletter .newsletter__wrapper{
     padding:28px 0rem !important; 
@@ -9860,4 +9864,8 @@ select:focus, select:hover{
    .mySwiper .banner__media-for-mobile.media>img{
    object-fit:unset;
    }
+   #shopify-section-featured-content-block .image-with-text{
+      flex-direction:row;
+     flex-wrap:wrap;
+    }
  }
