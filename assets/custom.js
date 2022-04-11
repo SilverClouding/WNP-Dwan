@@ -140,8 +140,13 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
     type: "progressbar",
   },
   breakpoints: {
-    640: {
+    480: {
       slidesPerView: 1,
+      spaceBetween: 10,
+//              loop: true,
+    },
+    640: {
+      slidesPerView: 2,
       spaceBetween: 10,
 //              loop: true,
     },
