@@ -145,7 +145,7 @@ const multicolumn_Swiper = new Swiper(".multicolumn_Swiper", {
       spaceBetween: 10,
 //              loop: true,
     },
-    640: {
+    481: {
       slidesPerView: 2,
       spaceBetween: 10,
 //              loop: true,
