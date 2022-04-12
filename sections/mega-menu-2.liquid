@@ -24,7 +24,7 @@
 {% endfor%}
 
 {% if section.blocks.size > 0 %}{% endif %}
-  <div class="dropdown_container mega-menu mega-menu-2" data-dropdown="_{{ section.settings.parent | handleize }}">
+  <div class="dropdown_container mega-menu mega-menu-2" data-dropdown="{{ section.settings.parent | handleize }}">
     <div class="dropdown menu">
       <div class="dropdown_content {% if section.blocks < 4 %}dropdown_narrow{% endif %}">
          <div class="dropdown_column block_{{section.blocks.size}}" {{ block.shopify_attributes }}>
