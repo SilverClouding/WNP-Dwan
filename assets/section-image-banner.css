@@ -110,6 +110,11 @@
     position: unset;
   }
 }
+@media (max-width: 992px){
+.content-for-layout .swiper.swiper-autoheight .swiper-wrapper {
+    height: auto!important;
+}
+}
 
 .banner--adapt {
   height: auto;
