@@ -114,6 +114,7 @@
 @media (min-width: 768px) and (max-width: 992px){
   .mySwiper .banner--large:not(.banner--adapt) {
     height: auto!important;
+    flex-direction: column;
   }
 }
 
