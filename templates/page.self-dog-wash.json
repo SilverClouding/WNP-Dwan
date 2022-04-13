@@ -135,7 +135,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book An Appointment",
-            "button_link": "shopify:\/\/products\/copy-of-wash-a-dog-help-a-dog",
+            "button_link": "shopify:\/\/products\/dog-wash-service",
             "button_style_secondary": true
           }
         }
