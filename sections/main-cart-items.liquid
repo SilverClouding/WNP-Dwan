@@ -387,7 +387,7 @@
   </form>
   {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
-          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+          <label class="title title--primary" for="Cart-note" >{{ 'sections.cart.note' | t }}</label>
           <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
@@ -395,6 +395,7 @@
 </cart-items> 
 
 </div>
+
 
 
 
