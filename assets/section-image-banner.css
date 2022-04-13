@@ -121,12 +121,12 @@
     bottom: 0;
   }
 }
-@media (max-width: 767px){
+/* @media (max-width: 767px){
 .swiper .banner__content {
     position: absolute;
     bottom: 0;
   }
-}
+} */
 
 @media (max-width: 992px){
 .content-for-layout .swiper.swiper-autoheight .swiper-wrapper {
