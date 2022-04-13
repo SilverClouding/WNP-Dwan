@@ -385,7 +385,13 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
   </form>
- 
+  {%- if section.settings.show_cart_note -%}
+        <cart-note class="cart__note field">
+          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+          <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
+        </cart-note>
+      {%- endif -%}
+  
 </cart-items> 
 
 </div>
@@ -413,6 +419,12 @@
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.main-cart-items.settings.show_vendor.label"
+    },
+{
+      "type": "checkbox",
+      "id": "show_cart_note",
+      "default": false,
+      "label": "t:sections.main-cart-footer.settings.show_cart_note.label"
     }
   ],
 "blocks": [
