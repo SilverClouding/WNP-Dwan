@@ -31,7 +31,8 @@
         "12a7c47c-611b-4563-bf2f-83758ad1276d"
       ],
       "settings": {
-        "show_vendor": false
+        "show_vendor": false,
+        "show_cart_note": true
       }
     },
     "cart-footer": {
@@ -68,7 +69,6 @@
         "68f7cf92-afae-4b54-9069-8f98031c3dbd"
       ],
       "settings": {
-        "show_cart_note": true
       }
     },
     "164164139832cf5bc7": {
