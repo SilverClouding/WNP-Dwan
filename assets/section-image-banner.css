@@ -97,7 +97,6 @@
   .banner__media {
 /*     height: 100%; */
     height:auto;
-    position:unset;
   }
   .banner__media.media.banner__media-for-desktop img {
     position: unset;
@@ -110,8 +109,9 @@
     object-fit: contain;
     position: unset;
   }
-}
-@media (min-width: 768px) and (max-width: 992px){
+  .banner__media {
+    position:unset;
+  }
   .mySwiper .banner--large:not(.banner--adapt) {
     height: auto!important;
     flex-direction: column;
