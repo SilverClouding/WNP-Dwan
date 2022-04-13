@@ -55,7 +55,7 @@
              alt="{{ block.settings.image.alt | escape }}"
              width="{{ block.settings.image.width }}"
              height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
-             {% if block.settings.image_2 != blank %}class="banner__media-image-half banner__media-for-desktop"{% endif %}
+             {% if block.settings.image_2 != blank %}class="banner__media-for-desktop"{% endif %}
              >
         
         <img
