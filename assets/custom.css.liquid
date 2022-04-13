@@ -9867,10 +9867,11 @@ select:focus, select:hover{
   }
  @media (min-width: 768px) and (max-width: 992px){ 
   .mySwiper .banner--large:not(.banner--adapt) {
-      height: 550px!important;
+      height: auto!important;
     }
    .mySwiper .banner__media-for-mobile.media>img{
-   object-fit:unset;
+       object-fit: contain;
+    position: unset;
    }
    #shopify-section-featured-content-block .image-with-text{
       flex-direction:row;
