@@ -38,7 +38,7 @@
 
 
       {%- if block.settings.image != blank -%}
-      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}">
+      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-for-desktop{% endif %}">
         <img
              srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | img_url: '375x' }} 375w,{%- endif -%}
                      {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
@@ -55,9 +55,16 @@
              alt="{{ block.settings.image.alt | escape }}"
              width="{{ block.settings.image.width }}"
              height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
-             {% if block.settings.image_2 != blank %}class="banner__media-for-desktop"{% endif %}
+             {% if block.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
              >
-        
+      </div>
+      {%- elsif block.settings.image_2 == blank -%}
+      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-for-desktop{% endif %}">
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+      {%- endif -%}
+      {%- if block.settings.image_2 != blank -%}
+      <div class="banner__media media{% if block.settings.image != blank %}  banner__media-for-mobile {% endif %}">
         <img
              srcset="{%- if block.settings.image_2.width >= 375 -%}{{ block.settings.image_2 | img_url: '375x' }} 375w,{%- endif -%}
                      {%- if block.settings.image_2.width >= 750 -%}{{ block.settings.image_2 | img_url: '750x' }} 750w,{%- endif -%}
@@ -74,16 +81,10 @@
              alt="{{ block.settings.image_2.alt | escape }}"
              width="{{ block.settings.image_2.width }}"
              height="{{ block.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}"
-             {% if block.settings.image != blank %}class="banner__media-for-mobile"{% endif %}
+             {% if block.settings.image != blank %}class="banner__media-image-half"{% endif %}
              >
-        
-      </div>
-      {%- elsif block.settings.image_2 == blank -%}
-      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-for-desktop{% endif %}">
-        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
       </div>
       {%- endif -%}
-      
       
     
       <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width" style="background: {{ block.settings.bg_color }}">
