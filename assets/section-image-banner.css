@@ -98,6 +98,10 @@
 /*     height: 100%; */
     height:auto;
   }
+  .banner__media.media.banner__media-for-desktop img {
+    position: unset;
+    object-fit: contain!important;
+}
 }
 
 .banner--adapt {
