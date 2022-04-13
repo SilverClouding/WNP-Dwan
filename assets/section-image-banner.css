@@ -102,6 +102,13 @@
     position: unset;
     object-fit: contain!important;
 }
+  
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .mySwiper .banner__media-for-mobile.media>img {
+    object-fit: contain;
+    position: unset;
+  }
 }
 
 .banner--adapt {
