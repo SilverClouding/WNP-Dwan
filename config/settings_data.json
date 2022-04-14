@@ -36,6 +36,7 @@
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCLyyLMloqg1vAgM9YfNbf7Q",
     "favicon": "shopify:\/\/shop_images\/fav_9d2c1770-6746-47f4-bdba-d335ae2d4412.png",
     "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_2592b5a7-2eeb-482b-b8f8-46de462c3857.png",
     "checkout_accent_color": "#f58220",
     "checkout_button_color": "#f58220",
     "sections": {
@@ -108,6 +109,7 @@
           "logo": "shopify:\/\/shop_images\/logo_2592b5a7-2eeb-482b-b8f8-46de462c3857.png",
           "logo_width": 150,
           "sticky_logo": "shopify:\/\/shop_images\/logo-sticky5_d7e0db2b-e82b-4830-ac8a-ffba0b199c0b.png",
+          "mob_logo_width": 100,
           "logo_position": "top-left",
           "show_line_separator": true,
           "enable_sticky_header": true
