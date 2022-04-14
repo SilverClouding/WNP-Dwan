@@ -104,6 +104,8 @@
   }
 
 }
+
+/* new code for banner */
 @media (min-width: 768px) and (max-width: 992px){
   .mySwiper .banner__media-for-mobile.media>img {
     object-fit: contain;
@@ -122,9 +124,15 @@
   }
 }
 @media (max-width: 767px){
-.swiper .banner__content {
+  .swiper .banner__content {
     position: absolute;
     bottom: 0;
+  }
+  .banner--large.banner--mobile-bottom:not(.banner--adapt)>.banner__media{
+    height: auto!important;
+  }
+  .banner__media.media.banner__media-for-mobile img {
+    position: unset;
   }
 }
 
