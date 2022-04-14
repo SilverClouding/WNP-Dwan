@@ -19,7 +19,7 @@ var contryObject = {
       "Southern","Wan Chai","Hong Kong"
     ]
   },
-}
+};
 window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
       stateSel = document.getElementById("checkout_shipping_address_province"),
@@ -85,4 +85,4 @@ window.onload = function () {
 
 
 
-}
+};
