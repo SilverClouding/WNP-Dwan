@@ -129,7 +129,7 @@
     bottom: 0;
    
   }
-  .single-block-section .swiper .banner__content .banner__box  {
+  .single-block-section .banner__box  {
      background-color:transparent!important;
   }
   .banner--large.banner--mobile-bottom:not(.banner--adapt)>.banner__media{
