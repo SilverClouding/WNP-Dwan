@@ -33,7 +33,7 @@
     }
     {%- endstyle -%}
 
-    <div id="Banner-{{ block.id }}" class="swiper-slide {% if block.settings.two_col_banner %} two-block-section  {% endif %} banner banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+    <div id="Banner-{{ block.id }}" class="swiper-slide {% if block.settings.two_col_banner %} two-block-section {% else %} single-block-section {% endif %} banner banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
 
 
 
