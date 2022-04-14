@@ -1,11 +1,11 @@
 var contryObject = {
-//   "India": { 
-//     "Delhi": ["new Delhi", "North Delhi"],
-//     "Kerala": ["Thiruvananthapuram", "Palakkad"],
-//     "Goa": ["North Goa", "South Goa"],
-//   },
-//   "Canada": { 
-//   },
+  //   "India": { 
+  //     "Delhi": ["new Delhi", "North Delhi"],
+  //     "Kerala": ["Thiruvananthapuram", "Palakkad"],
+  //     "Goa": ["North Goa", "South Goa"],
+  //   },
+  //   "Canada": { 
+  //   },
   "Hong Kong": {
     "district": [
       "Kwai Tsing","North",
@@ -19,15 +19,15 @@ var contryObject = {
       "Southern","Wan Chai","Hong Kong"
     ]
   },
-}
+};
 window.onload = function () {
   var countySel = document.getElementById("checkout_shipping_address_country"),
       stateSel = document.getElementById("checkout_shipping_address_province"),
       districtSel = document.getElementById("checkout_shipping_address_city");
   var cuntryVal = countySel.value;
-//   for (var country in contryObject) {
-//     countySel.options[countySel.options.length] = new Option(country, country);
-//   }
+  //   for (var country in contryObject) {
+  //     countySel.options[countySel.options.length] = new Option(country, country);
+  //   }
 
   if(cuntryVal == 'Hong Kong'){ 
     forhongkong();
@@ -36,18 +36,18 @@ window.onload = function () {
   countySel.onchange = function () {
 
     cuntryVal = this.value; 
-    
+
     if(cuntryVal == 'Hong Kong'){ 
       forhongkong();
     }else{
-    console.log(districtSel);
+      console.log(districtSel);
       document.querySelector('[data-address-field="city"]').classList.remove('field--show-floating-label');
-        document.querySelector('[data-address-field="city"]').innerHTML = `
+      document.querySelector('[data-address-field="city"]').innerHTML = `
 <label for="checkout_shipping_address_city" class="field__label field__label--visible">City</label>
 <input placeholder="City" autocomplete="shipping address-level2" autocorrect="off" data-backup="city" class="field__input" aria-required="true" size="30" type="text" name="checkout[shipping_address][city]" id="checkout_shipping_address_city">`;
     }
   }
-console.log(cuntryVal);
+  console.log(cuntryVal);
 
 
 
@@ -85,4 +85,4 @@ console.log(cuntryVal);
 
 
 
-}
+};
