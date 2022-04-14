@@ -127,7 +127,10 @@
   .swiper .banner__content {
     position: absolute;
     bottom: 0;
-    background-color:transparent!important;
+   
+  }
+  .single-block-section .swiper .banner__content .banner__box  {
+     background-color:transparent!important;
   }
   .banner--large.banner--mobile-bottom:not(.banner--adapt)>.banner__media{
     height: auto!important;
