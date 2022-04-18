@@ -316,7 +316,7 @@
       "settings": {
         "custom_liquid": "<!--Yotpo Reviews Widget-->\n  <div class=\"yotpo yotpo-main-widget\" style=\"max-width:1600px; margin:auto\"\n  data-product-id=\"{{ product.id }}\"\n  data-name=\"{{ product.title | escape }}\"\n  data-url=\"{{ shop.url }}{{ product.url }}\"\n  data-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\n  data-price=\"{{ variant.price | money_without_currency }}\"\n  data-currency=\"{{ shop.currency }}\"\n  data-description=\"{{ product.description | escape }}\">\n  <\/div>\n  <!--End of Yotpo Reviews Widget-->",
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": false
       }
     }
   },
