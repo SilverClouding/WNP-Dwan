@@ -271,6 +271,7 @@
     },
     "1637740585579a4231": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "19b5bf93-6632-436d-b16a-940301bbd777": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
