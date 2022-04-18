@@ -37,6 +37,8 @@
     "favicon": "shopify:\/\/shop_images\/fav_9d2c1770-6746-47f4-bdba-d335ae2d4412.png",
     "currency_code_enabled": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_2592b5a7-2eeb-482b-b8f8-46de462c3857.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
     "checkout_accent_color": "#f58220",
     "checkout_button_color": "#f58220",
     "sections": {
@@ -529,6 +531,12 @@
           "line_break": false,
           "show_popup": false,
           "anchor_to_reviews_widget": true
+        }
+      },
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
         }
       }
     }
