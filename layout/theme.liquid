@@ -155,7 +155,13 @@
     {{ 'zh-tw.css' | asset_url | stylesheet_tag }}
     {% endif %}
 {% comment %}ly_dir_styles_begin{% endcomment %}{%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}{{- 'ly-rtl.css' | asset_url | stylesheet_tag -}}{%- endif -%}{% comment %}ly_dir_styles_end{% endcomment %}</head>
-
+ 
+  <!--Yotpo JavaScript-->
+    <script type="text/javascript">
+    (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/bGAjARPaxbvztboVE5IS7Bu4v0ev4iydj4CNJsFa/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+    </script>
+    <!--End of Yotpo JavaScript-->
+    
   <body class="gradient template_name_js {{template | replace:".","_"}}" template="{{template}}" currentUrl={{request.path}} >
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
