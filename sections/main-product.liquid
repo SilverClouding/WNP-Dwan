@@ -260,7 +260,16 @@
             <p class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </p>
-        
+        <!--Yotpo Star Rating - Product Page-->
+        <div class="yotpo bottomLine" style="padding-bottom:5px"
+        data-product-id="{{ product.id }}">
+        </div>
+        <style>
+        .yotpo-bottomline.pull-left.star-clickable .text-m {
+        	margin-left: 5px;
+        }
+        </style>
+        <!--End of Yotpo Star Rating - Product Page--> 
          
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
