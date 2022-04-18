@@ -475,6 +475,7 @@
     },
     "1640771118fe09f2d8": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "49bcfbfb-1cb9-4919-94ab-4297d839abff": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
