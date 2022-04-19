@@ -347,6 +347,7 @@
     },
     "16364684436965f7cf": {
       "type": "icon-text-section",
+      "disabled": true,
       "blocks": {
         "86c4d9b0-660f-4b82-8e3e-cc3173289ac0": {
           "type": "column",
@@ -453,7 +454,7 @@
         "0b0bc208-f580-4995-90c4-9232c2fd9c6f"
       ],
       "settings": {
-        "title": "",
+        "title": "Shop By Pets",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
