@@ -226,10 +226,14 @@
         "higher_value_discount_already_applied": "已套用較高折扣。",
         "deferred_payment_info": {
           "title": "%{amount_due} 的付款於 %{due_at} 到期",
-          "description": "付款到期時，您將會收到提醒電子郵件。"
+          "description_html": "如果對您的訂單有任何疑問，請聯絡 %{contact_us}。"
         },
         "percent_off_shipping": "%{percent}% 的運費優惠",
-        "amount_off_shipping": "運費折扣 %{amount}"
+        "amount_off_shipping": "運費折扣 %{amount}",
+        "payment_terms_totals": {
+          "due_today": "本日應收總金額",
+          "due_later": "%{due_at}應收總金額"
+        }
       },
       "shipping": {
         "title": "運送",
@@ -311,7 +315,9 @@
             "other": "前 %{count} 筆訂單適用"
           }
         },
-        "one_time_purchase_shipping": "一次性運送"
+        "one_time_purchase_shipping": "一次性運送",
+        "estimated_time": "預估時間：%{time}",
+        "estimated_time_range": "預估為 %{min_time}–%{max_time}"
       },
       "localized_fields": {
         "additional_information": {
@@ -435,7 +441,9 @@
           "connect": "點擊以連結您的 Google Pay 帳戶",
           "error_authorizing": "授權付款時發生錯誤"
         },
-        "email_connected": "已連結帳戶： "
+        "email_connected": "已連結帳戶： ",
+        "klarna_label": "Klarna",
+        "mor_disclaimer_html": "點擊下方並完成訂單，即表示您同意 Flow.io 做為此次交易的記錄商家 (MOR) 並向其購買商品，\n而且您也同意遵守 Flow.io 的<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">條款及條件<\/a>\n和<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">隱私權政策<\/a>。Flow.io 是 %{shop_name} 的國際\n出貨服務供應商\n"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "目前餘額：%{amount}",
@@ -941,6 +949,10 @@
           "generic_error": "處理要求的過程中發生問題。",
           "success_message": "您的付款方式已成功刪除"
         }
+      },
+      "mor_policies": {
+        "terms_and_conditions": "記錄商家 (MOR) 條款及條件",
+        "privacy_policy": "記錄商家 (MOR) 隱私權政策"
       }
     },
     "pagination": {
