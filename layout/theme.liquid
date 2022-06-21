@@ -1,3 +1,9 @@
+<head>
+  <!-- head element content -->
+
+  <link rel="alternate" hreflang="en-hk" href="wnp-store-dev.myshopify.com" />
+  <link rel="alternate" hreflang="zh-hant-hk" href="zh.wnp-store-dev.myshopify.com" />
+</head>
 {% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}<!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %} {%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}dir="rtl" {%- endif -%}{% comment %}ly_dir_replace_end{% endcomment %}>
   <head>{% render 'pagefly-head' %}
