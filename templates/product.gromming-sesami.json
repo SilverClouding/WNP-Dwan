@@ -41,7 +41,6 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false
           }
@@ -58,7 +57,7 @@
             "font_size": 16,
             "border_width": 1,
             "border_radius": 4,
-            "border_color": "#000",
+            "border_color": "#000000",
             "width": "300px",
             "height": "45px"
           }
@@ -227,6 +226,7 @@
     },
     "1637669479d78c349e": {
       "type": "img-with-text-slider",
+      "disabled": true,
       "blocks": {
         "1637669479a8e4be19-0": {
           "type": "content",
