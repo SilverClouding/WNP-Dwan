@@ -38,12 +38,6 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
         "9cbe8647-9fd7-426f-8df5-855878189014": {
           "type": "shopify:\/\/apps\/sesami-appointment-booking\/blocks\/app-block\/dc3b1344-0a53-477e-93d0-4b8a473ab587",
           "settings": {
@@ -60,6 +54,12 @@
             "width": "300px",
             "height": "45px"
           }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
         }
       },
       "block_order": [
@@ -69,8 +69,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "9cbe8647-9fd7-426f-8df5-855878189014"
+        "9cbe8647-9fd7-426f-8df5-855878189014",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
