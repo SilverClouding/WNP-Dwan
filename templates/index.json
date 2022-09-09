@@ -1,25 +1,42 @@
 {
   "sections": {
-    "166268981044c6f765": {
-      "type": "otto-image",
+    "1662691472bc644edc": {
+      "type": "otto-slideshow",
+      "blocks": {
+        "9352b094-9028-4a5f-aaeb-9d2112017d39": {
+          "type": "image",
+          "settings": {
+            "image_name": "homepage-banner",
+            "show_content": false,
+            "content_width": 60,
+            "content_background_color": "#ffffff",
+            "content_text_color": "#000000",
+            "content_horizontal_alignment": "center",
+            "content_vertical_alignment": "center",
+            "header_font_size": 2,
+            "subheader_font_size": 1,
+            "body_font_size": 1,
+            "button_background_color": "#000000",
+            "button_background_hover_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_text_hover_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "9352b094-9028-4a5f-aaeb-9d2112017d39"
+      ],
       "settings": {
-        "image_name": "homepage-banner",
-        "image_width_desktop": 100,
-        "image_width_mobile": 100,
-        "image_margin_bottom": 20,
-        "show_content": false,
-        "content_width": 20,
-        "content_background_color": "#59595b",
-        "content_text_color": "#000000",
-        "content_horizontal_alignment": "center",
-        "content_vertical_alignment": "center",
-        "header_font_size": 2,
-        "subheader_font_size": 1,
-        "body_font_size": 1,
-        "button_background_color": "#000000",
-        "button_background_hover_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "button_text_hover_color": "#000000"
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "slideshow_width_desktop": 100,
+        "slideshow_width_mobile": 100,
+        "slideshow_margin_top": 0,
+        "slideshow_margin_bottom": 20,
+        "show_arrow_nav": true,
+        "arrow_navigation_color": "#000000",
+        "show_dot_nav": true,
+        "dot_navigation_color": "#000000"
       }
     },
     "1635762495f8f522da": {
@@ -830,7 +847,7 @@
     }
   },
   "order": [
-    "166268981044c6f765",
+    "1662691472bc644edc",
     "1635762495f8f522da",
     "164724785011ac9c44",
     "featured_products",
