@@ -2,7 +2,6 @@
   "sections": {
     "166268981044c6f765": {
       "type": "otto-image",
-      "disabled": true,
       "settings": {
         "image_name": "homepage-banner",
         "image_width_desktop": 100,
@@ -25,6 +24,7 @@
     },
     "1635762495f8f522da": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "6487ae94-099f-4418-b69d-16dbd23fec1d": {
           "type": "heading",
