@@ -1,5 +1,28 @@
 {
   "sections": {
+    "166268981044c6f765": {
+      "type": "otto-image",
+      "disabled": true,
+      "settings": {
+        "image_name": "homepage-banner",
+        "image_width_desktop": 100,
+        "image_width_mobile": 100,
+        "image_margin_bottom": 20,
+        "show_content": false,
+        "content_width": 60,
+        "content_background_color": "#ffffff",
+        "content_text_color": "#000000",
+        "content_horizontal_alignment": "center",
+        "content_vertical_alignment": "center",
+        "header_font_size": 2,
+        "subheader_font_size": 1,
+        "body_font_size": 1,
+        "button_background_color": "#000000",
+        "button_background_hover_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "button_text_hover_color": "#000000"
+      }
+    },
     "1635762495f8f522da": {
       "type": "slideshow",
       "blocks": {
@@ -807,6 +830,7 @@
     }
   },
   "order": [
+    "166268981044c6f765",
     "1635762495f8f522da",
     "164724785011ac9c44",
     "featured_products",
