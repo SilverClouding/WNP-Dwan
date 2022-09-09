@@ -21,10 +21,30 @@
             "button_text_color": "#ffffff",
             "button_text_hover_color": "#000000"
           }
+        },
+        "460dbf05-6e0c-4d24-b56e-98e68af93d57": {
+          "type": "image",
+          "settings": {
+            "image_name": "",
+            "show_content": false,
+            "content_width": 60,
+            "content_background_color": "#ffffff",
+            "content_text_color": "#000000",
+            "content_horizontal_alignment": "center",
+            "content_vertical_alignment": "center",
+            "header_font_size": 2,
+            "subheader_font_size": 1,
+            "body_font_size": 1,
+            "button_background_color": "#000000",
+            "button_background_hover_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_text_hover_color": "#000000"
+          }
         }
       },
       "block_order": [
-        "9352b094-9028-4a5f-aaeb-9d2112017d39"
+        "9352b094-9028-4a5f-aaeb-9d2112017d39",
+        "460dbf05-6e0c-4d24-b56e-98e68af93d57"
       ],
       "settings": {
         "autoplay": true,
@@ -33,9 +53,9 @@
         "slideshow_width_mobile": 100,
         "slideshow_margin_top": 0,
         "slideshow_margin_bottom": 20,
-        "show_arrow_nav": true,
+        "show_arrow_nav": false,
         "arrow_navigation_color": "#000000",
-        "show_dot_nav": true,
+        "show_dot_nav": false,
         "dot_navigation_color": "#000000"
       }
     },
